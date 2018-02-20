@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<assessmentItem xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 http://www.imsglobal.org/xsd/qti/qtiv3p0/imsqti_itemv3p0_v1p0.xsd" 
+	identifier="qti3-choice-multiple-04" title="Composition of Water qti3 - labels and suffixes" adaptive="false" timeDependent="false">
+	<responseDeclaration identifier="RESPONSE1" cardinality="multiple" baseType="identifier"/>
+	<responseDeclaration identifier="RESPONSE2" cardinality="multiple" baseType="identifier"/>
+	<responseDeclaration identifier="RESPONSE3" cardinality="multiple" baseType="identifier"/>
+	<responseDeclaration identifier="RESPONSE4" cardinality="multiple" baseType="identifier"/>
+	<responseDeclaration identifier="RESPONSE5" cardinality="multiple" baseType="identifier"/>
+	<responseDeclaration identifier="RESPONSE6" cardinality="multiple" baseType="identifier"/>
+	<responseDeclaration identifier="RESPONSE7" cardinality="multiple" baseType="identifier"/>
+	<outcomeDeclaration identifier="SCORE" cardinality="single" baseType="float"/>
+	<itemBody>
+		<p>Which of the following elements are used to form water?</p>
+		
+		<qti-choice-interaction class="qti-labels-lower-alpha" response-identifier="RESPONSE1" max-choices="0">
+			<qti-prompt>Demonstrates qti-labels-lower-alpha.</qti-prompt>
+			<qti-simple-choice identifier="H" fixed="false">Hydrogen</qti-simple-choice>
+			<qti-simple-choice identifier="He" fixed="false">Helium</qti-simple-choice>
+			<qti-simple-choice identifier="C" fixed="false">Carbon</qti-simple-choice>
+			<qti-simple-choice identifier="O" fixed="false">Oxygen</qti-simple-choice>
+			<qti-simple-choice identifier="N" fixed="false">Nitrogen</qti-simple-choice>
+			<qti-simple-choice identifier="Cl" fixed="false">Chlorine</qti-simple-choice>
+		</qti-choice-interaction>
+		
+		<qti-choice-interaction class="qti-labels-upper-alpha" response-identifier="RESPONSE2" max-choices="0">
+			<qti-prompt>Demonstrates qti-labels-upper-alpha.</qti-prompt>
+			<qti-simple-choice identifier="H" fixed="false">Hydrogen</qti-simple-choice>
+			<qti-simple-choice identifier="He" fixed="false">Helium</qti-simple-choice>
+			<qti-simple-choice identifier="C" fixed="false">Carbon</qti-simple-choice>
+			<qti-simple-choice identifier="O" fixed="false">Oxygen</qti-simple-choice>
+			<qti-simple-choice identifier="N" fixed="false">Nitrogen</qti-simple-choice>
+			<qti-simple-choice identifier="Cl" fixed="false">Chlorine</qti-simple-choice>
+		</qti-choice-interaction>
+		
+		<qti-choice-interaction class="qti-labels-upper-alpha qti-labels-suffix-none" response-identifier="RESPONSE3" max-choices="0">
+			<qti-prompt>Demonstrates qti-labels-upper-alpha and qti-labels-suffix-none.</qti-prompt>
+			<qti-simple-choice identifier="H" fixed="false">Hydrogen</qti-simple-choice>
+			<qti-simple-choice identifier="He" fixed="false">Helium</qti-simple-choice>
+			<qti-simple-choice identifier="C" fixed="false">Carbon</qti-simple-choice>
+			<qti-simple-choice identifier="O" fixed="false">Oxygen</qti-simple-choice>
+			<qti-simple-choice identifier="N" fixed="false">Nitrogen</qti-simple-choice>
+			<qti-simple-choice identifier="Cl" fixed="false">Chlorine</qti-simple-choice>
+		</qti-choice-interaction>
+		
+		<qti-choice-interaction class="qti-labels-decimal" response-identifier="RESPONSE4" max-choices="0">
+			<qti-prompt>Demonstrates qti-labels-decimal.</qti-prompt>
+			<qti-simple-choice identifier="H" fixed="false">Hydrogen</qti-simple-choice>
+			<qti-simple-choice identifier="He" fixed="false">Helium</qti-simple-choice>
+			<qti-simple-choice identifier="C" fixed="false">Carbon</qti-simple-choice>
+			<qti-simple-choice identifier="O" fixed="false">Oxygen</qti-simple-choice>
+			<qti-simple-choice identifier="N" fixed="false">Nitrogen</qti-simple-choice>
+			<qti-simple-choice identifier="Cl" fixed="false">Chlorine</qti-simple-choice>
+		</qti-choice-interaction>
+
+		<qti-choice-interaction class="qti-labels-decimal qti-labels-suffix-parenthesis" response-identifier="RESPONSE5" max-choices="0">
+			<qti-prompt>Demonstrates qti-labels-decimal and qti-labels-suffix-parenthesis.</qti-prompt>
+			<qti-simple-choice identifier="H" fixed="false">Hydrogen</qti-simple-choice>
+			<qti-simple-choice identifier="He" fixed="false">Helium</qti-simple-choice>
+			<qti-simple-choice identifier="C" fixed="false">Carbon</qti-simple-choice>
+			<qti-simple-choice identifier="O" fixed="false">Oxygen</qti-simple-choice>
+			<qti-simple-choice identifier="N" fixed="false">Nitrogen</qti-simple-choice>
+			<qti-simple-choice identifier="Cl" fixed="false">Chlorine</qti-simple-choice>
+		</qti-choice-interaction>
+		
+		<qti-choice-interaction class="qti-labels-none" response-identifier="RESPONSE6" max-choices="0">
+			<qti-prompt>Demonstrates qti-labels-none.</qti-prompt>
+			<qti-simple-choice identifier="H" fixed="false">Hydrogen</qti-simple-choice>
+			<qti-simple-choice identifier="He" fixed="false">Helium</qti-simple-choice>
+			<qti-simple-choice identifier="C" fixed="false">Carbon</qti-simple-choice>
+			<qti-simple-choice identifier="O" fixed="false">Oxygen</qti-simple-choice>
+			<qti-simple-choice identifier="N" fixed="false">Nitrogen</qti-simple-choice>
+			<qti-simple-choice identifier="Cl" fixed="false">Chlorine</qti-simple-choice>
+		</qti-choice-interaction>
+
+		<qti-choice-interaction class="qti-labels-none qti-input-control-hidden" response-identifier="RESPONSE7" max-choices="0">
+			<qti-prompt>Demonstrates qti-labels-none qti-input-control-hidden</qti-prompt>
+			<qti-simple-choice identifier="H" fixed="false">Hydrogen</qti-simple-choice>
+			<qti-simple-choice identifier="He" fixed="false">Helium</qti-simple-choice>
+			<qti-simple-choice identifier="C" fixed="false">Carbon</qti-simple-choice>
+			<qti-simple-choice identifier="O" fixed="false">Oxygen</qti-simple-choice>
+			<qti-simple-choice identifier="N" fixed="false">Nitrogen</qti-simple-choice>
+			<qti-simple-choice identifier="Cl" fixed="false">Chlorine</qti-simple-choice>
+		</qti-choice-interaction>
+		
+	</itemBody>
+</assessmentItem>

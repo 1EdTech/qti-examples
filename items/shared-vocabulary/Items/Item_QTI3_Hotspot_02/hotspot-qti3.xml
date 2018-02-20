@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<assessmentItem xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 http://www.imsglobal.org/xsd/qti/qtiv3p0/imsqti_itemv3p0_v1p0.xsd" 
+  identifier="qti3-hotspot-02" timeDependent="false" title="Composite UK Airports 2 - QTI3" adaptive="false">
+  <responseDeclaration baseType="identifier" cardinality="multiple" identifier="RESPONSE1">
+    <correctResponse>
+      <value>A</value>
+      <value>B</value>
+      <value>D</value>
+    </correctResponse>
+  </responseDeclaration>
+  <responseDeclaration baseType="identifier" cardinality="single" identifier="RESPONSE2">
+    <correctResponse>
+      <value>C</value>
+    </correctResponse>
+  </responseDeclaration>
+  <responseDeclaration baseType="identifier" cardinality="multiple" identifier="RESPONSE3" />
+  <responseDeclaration baseType="identifier" cardinality="multiple" identifier="RESPONSE4" />
+
+  <outcomeDeclaration baseType="float" cardinality="single" identifier="SCORE"/>
+  <itemBody>
+    <div class="row">
+      <div class="span6">
+      
+        <h3 class="semantic-marker">Hotspot Selections Light</h3>
+        <hr/>
+        
+        <p>
+          The picture below illustrates four of the most popular destinations for air travelers arriving
+          in the United Kingdom: London, Manchester, Edinburgh and Glasgow.
+          Please <span class="underline">choose all of the cities North of London</span>.
+        </p>
+        
+        <qti-hotspot-interaction class="qti-selections-light margin0auto" max-choices="0" response-identifier="RESPONSE1">
+          <object data="ukair.png" height="280" type="image/png" width="206">UK Map</object>
+          <qti-hotspot-choice coords="77,115,10" identifier="A" shape="circle"/>
+          <qti-hotspot-choice coords="118,184,10" identifier="B" shape="circle"/>
+          <qti-hotspot-choice coords="150,235,10" identifier="C" shape="circle"/>
+          <qti-hotspot-choice coords="96,114,10" identifier="D" shape="circle"/>
+        </qti-hotspot-interaction>	
+        
+      </div>
+      <div class="span6">
+      
+        <h3 class="semantic-marker">Hotspot Selections Dark</h3>
+        <hr/>
+        
+        <p>
+          The picture below illustrates four of the most popular destinations for air travelers arriving
+          in the United Kingdom: London, Manchester, Edinburgh and Glasgow. 
+          Please <span class="underline">choose London</span>.
+        </p>
+        
+        <qti-hotspot-interaction class="qti-selections-dark margin0auto" max-choices="1" response-identifier="RESPONSE2">
+          <object data="ukair.png" height="280" type="image/png" width="206">UK Map</object>
+          <qti-hotspot-choice coords="77,115,10" identifier="A" shape="circle"/>
+          <qti-hotspot-choice coords="118,184,10" identifier="B" shape="circle"/>
+          <qti-hotspot-choice coords="150,235,10" identifier="C" shape="circle"/>
+          <qti-hotspot-choice coords="96,114,10" identifier="D" shape="circle"/>
+        </qti-hotspot-interaction>
+
+      </div>
+    </div>
+    
+    <br /><br />
+    
+    <div class="row">
+      <div class="span6">
+    
+        <h3 class="semantic-marker">Hotspot Selections Light - Unselected Hidden</h3>
+        <hr/>
+        
+        <p>
+          The picture below illustrates four of the most popular destinations for air travelers arriving
+          in the United Kingdom: London, Manchester, Edinburgh and Glasgow.
+          Please <span class="underline">choose all of the cities North of London</span>.
+        </p>
+        
+        <qti-hotspot-interaction class="qti-selections-light qti-unselected-hidden margin0auto" max-choices="0" response-identifier="RESPONSE3">
+          <object data="ukair.png" height="280" type="image/png" width="206">UK Map</object>
+          <qti-hotspot-choice coords="77,115,10" identifier="A" shape="circle"/>
+          <qti-hotspot-choice coords="118,184,10" identifier="B" shape="circle"/>
+          <qti-hotspot-choice coords="150,235,10" identifier="C" shape="circle"/>
+          <qti-hotspot-choice coords="96,114,10" identifier="D" shape="circle"/>
+        </qti-hotspot-interaction>	
+        
+      </div>
+      <div class="span6">
+      
+        <h3 class="semantic-marker">Hotspot Selections Dark - Unselected Hidden</h3>
+        <hr/>
+        
+        <p>
+          The picture below illustrates four of the most popular destinations for air travelers arriving
+          in the United Kingdom: London, Manchester, Edinburgh and Glasgow.
+          Please <span class="underline">choose all of the cities North of London</span>.
+        </p>
+        
+        <qti-hotspot-interaction class="qti-selections-dark qti-unselected-hidden margin0auto" max-choices="0" response-identifier="RESPONSE4">
+          <object data="ukair.png" height="280" type="image/png" width="206">UK Map</object>
+          <qti-hotspot-choice coords="77,115,10" identifier="A" shape="circle"/>
+          <qti-hotspot-choice coords="118,184,10" identifier="B" shape="circle"/>
+          <qti-hotspot-choice coords="150,235,10" identifier="C" shape="circle"/>
+          <qti-hotspot-choice coords="96,114,10" identifier="D" shape="circle"/>
+        </qti-hotspot-interaction>
+
+      </div>
+    </div>
+    
+  </itemBody>
+</assessmentItem>

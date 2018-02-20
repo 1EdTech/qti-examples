@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<assessmentItem xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 http://www.imsglobal.org/xsd/qti/qtiv3p0/imsqti_itemv3p0_v1p0.xsd" 
+  identifier="qti3-match-02" timeDependent="false" title="Match Item 2 - QTI3" adaptive="false">
+  <responseDeclaration baseType="directedPair" cardinality="multiple" identifier="RESPONSE1">
+    <correctResponse>
+      <value>C R</value>
+      <value>D M</value>
+      <value>L M</value>
+      <value>P T</value>
+    </correctResponse>
+    <mapping defaultValue="0">
+      <mapEntry mapKey="C R" mappedValue="1"/>
+      <mapEntry mapKey="D M" mappedValue="0.5"/>
+      <mapEntry mapKey="L M" mappedValue="0.5"/>
+      <mapEntry mapKey="P T" mappedValue="1"/>
+    </mapping>
+  </responseDeclaration>
+  <responseDeclaration baseType="directedPair" cardinality="multiple" identifier="RESPONSE2">
+    <correctResponse>
+      <value>C R</value>
+      <value>D M</value>
+      <value>L M</value>
+      <value>P T</value>
+    </correctResponse>
+    <mapping defaultValue="0">
+      <mapEntry mapKey="C R" mappedValue="1"/>
+      <mapEntry mapKey="D M" mappedValue="0.5"/>
+      <mapEntry mapKey="L M" mappedValue="0.5"/>
+      <mapEntry mapKey="P T" mappedValue="1"/>
+    </mapping>
+  </responseDeclaration>
+  <responseDeclaration baseType="directedPair" cardinality="multiple" identifier="RESPONSE3">
+    <correctResponse>
+      <value>C R</value>
+      <value>D M</value>
+      <value>L M</value>
+      <value>P T</value>
+    </correctResponse>
+    <mapping defaultValue="0">
+      <mapEntry mapKey="C R" mappedValue="1"/>
+      <mapEntry mapKey="D M" mappedValue="0.5"/>
+      <mapEntry mapKey="L M" mappedValue="0.5"/>
+      <mapEntry mapKey="P T" mappedValue="1"/>
+    </mapping>
+  </responseDeclaration>
+  <responseDeclaration baseType="directedPair" cardinality="multiple" identifier="RESPONSE4">
+    <correctResponse>
+      <value>C R</value>
+      <value>D M</value>
+      <value>L M</value>
+      <value>P T</value>
+    </correctResponse>
+    <mapping defaultValue="0">
+      <mapEntry mapKey="C R" mappedValue="1"/>
+      <mapEntry mapKey="D M" mappedValue="0.5"/>
+      <mapEntry mapKey="L M" mappedValue="0.5"/>
+      <mapEntry mapKey="P T" mappedValue="1"/>
+    </mapping>
+  </responseDeclaration>  
+  <outcomeDeclaration baseType="float" cardinality="single" identifier="SCORE">
+    <defaultValue>
+      <value>0.0</value>
+    </defaultValue>
+  </outcomeDeclaration>
+  <itemBody>
+
+    <p>
+      Delivery systems may implement Match Interaction's in a <em>visual non-tabular</em> fashion.  When they do so, the shared 
+      vocabulary is intended to provide clarity regarding the visual positioning of the two Simple Match Sets.
+    </p>
+    
+    <p>
+      The following examples demonstrate shared vocabulary describing the visual orientation of the list of match <em>choices</em>; i.e., the 
+      choices of the first Simple Match Set, with respect to the list of match targets; i.e., the choices of the second Simple Match Set.
+    </p>
+    
+    <qti-match-interaction class="qti-choices-top" max-associations="4" response-identifier="RESPONSE1">
+      <qti-prompt>Demonstrates qti-choices-top</qti-prompt>
+      <qti-simple-match-set>
+        <qti-simple-associable-choice identifier="C" match-max="1" aria-label="Capulet">Capulet</qti-simple-associable-choice>
+        <qti-simple-associable-choice identifier="D" match-max="1" aria-label="Demetrius">Demetrius</qti-simple-associable-choice>
+        <qti-simple-associable-choice identifier="L" match-max="1" aria-label="Lysander">Lysander</qti-simple-associable-choice>
+        <qti-simple-associable-choice identifier="P" match-max="1" aria-label="Prospero">Prospero</qti-simple-associable-choice>
+      </qti-simple-match-set>
+      <qti-simple-match-set>
+        <qti-simple-associable-choice identifier="M" match-max="4" aria-label="A Midsummer-Night's Dream">A Midsummer-Night's Dream</qti-simple-associable-choice>
+        <qti-simple-associable-choice identifier="R" match-max="4" aria-label="Romeo and Juliet">Romeo and Juliet</qti-simple-associable-choice>
+        <qti-simple-associable-choice identifier="T" match-max="4" aria-label="The Tempest">The Tempest</qti-simple-associable-choice>
+      </qti-simple-match-set>
+    </qti-match-interaction>
+    
+    <qti-match-interaction class="qti-choices-bottom" max-associations="4" response-identifier="RESPONSE2">
+      <qti-prompt>Demonstrates qti-choices-bottom</qti-prompt>
+      <qti-simple-match-set>
+        <qti-simple-associable-choice identifier="C" match-max="1" aria-label="Capulet">Capulet</qti-simple-associable-choice>
+        <qti-simple-associable-choice identifier="D" match-max="1" aria-label="Demetrius">Demetrius</qti-simple-associable-choice>
+        <qti-simple-associable-choice identifier="L" match-max="1" aria-label="Lysander">Lysander</qti-simple-associable-choice>
+        <qti-simple-associable-choice identifier="P" match-max="1" aria-label="Prospero">Prospero</qti-simple-associable-choice>
+      </qti-simple-match-set>
+      <qti-simple-match-set>
+        <qti-simple-associable-choice identifier="M" match-max="4" aria-label="A Midsummer-Night's Dream">A Midsummer-Night's Dream</qti-simple-associable-choice>
+        <qti-simple-associable-choice identifier="R" match-max="4" aria-label="Romeo and Juliet">Romeo and Juliet</qti-simple-associable-choice>
+        <qti-simple-associable-choice identifier="T" match-max="4" aria-label="The Tempest">The Tempest</qti-simple-associable-choice>
+      </qti-simple-match-set>
+    </qti-match-interaction>
+
+    <qti-match-interaction class="qti-choices-left" max-associations="4" response-identifier="RESPONSE3">
+      <qti-prompt>Demonstrates qti-choices-left</qti-prompt>
+      <qti-simple-match-set>
+        <qti-simple-associable-choice identifier="C" match-max="1" aria-label="Capulet">Capulet</qti-simple-associable-choice>
+        <qti-simple-associable-choice identifier="D" match-max="1" aria-label="Demetrius">Demetrius</qti-simple-associable-choice>
+        <qti-simple-associable-choice identifier="L" match-max="1" aria-label="Lysander">Lysander</qti-simple-associable-choice>
+        <qti-simple-associable-choice identifier="P" match-max="1" aria-label="Prospero">Prospero</qti-simple-associable-choice>
+      </qti-simple-match-set>
+      <qti-simple-match-set>
+        <qti-simple-associable-choice identifier="M" match-max="4" aria-label="A Midsummer-Night's Dream">A Midsummer-Night's Dream</qti-simple-associable-choice>
+        <qti-simple-associable-choice identifier="R" match-max="4" aria-label="Romeo and Juliet">Romeo and Juliet</qti-simple-associable-choice>
+        <qti-simple-associable-choice identifier="T" match-max="4" aria-label="The Tempest">The Tempest</qti-simple-associable-choice>
+      </qti-simple-match-set>
+    </qti-match-interaction>
+    
+    <qti-match-interaction class="qti-choices-right" max-associations="4" response-identifier="RESPONSE4">
+      <qti-prompt>Demonstrates qti-choices-right</qti-prompt>
+      <qti-simple-match-set>
+        <qti-simple-associable-choice identifier="C" match-max="1" aria-label="Capulet">Capulet</qti-simple-associable-choice>
+        <qti-simple-associable-choice identifier="D" match-max="1" aria-label="Demetrius">Demetrius</qti-simple-associable-choice>
+        <qti-simple-associable-choice identifier="L" match-max="1" aria-label="Lysander">Lysander</qti-simple-associable-choice>
+        <qti-simple-associable-choice identifier="P" match-max="1" aria-label="Prospero">Prospero</qti-simple-associable-choice>
+      </qti-simple-match-set>
+      <qti-simple-match-set>
+        <qti-simple-associable-choice identifier="M" match-max="4" aria-label="A Midsummer-Night's Dream">A Midsummer-Night's Dream</qti-simple-associable-choice>
+        <qti-simple-associable-choice identifier="R" match-max="4" aria-label="Romeo and Juliet">Romeo and Juliet</qti-simple-associable-choice>
+        <qti-simple-associable-choice identifier="T" match-max="4" aria-label="The Tempest">The Tempest</qti-simple-associable-choice>
+      </qti-simple-match-set>
+    </qti-match-interaction>
+    
+  </itemBody>
+</assessmentItem>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<assessmentItem xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 http://www.imsglobal.org/xsd/qti/qtiv3p0/imsqti_itemv3p0_v1p0.xsd" 
+  identifier="qti3-gap-match-02" title="Gap Match 2 - QTI3" adaptive="false" timeDependent="false">
+  <responseDeclaration identifier="RESPONSE1" cardinality="multiple" baseType="directedPair">
+    <correctResponse>
+      <value>W G1</value>
+      <value>Su G2</value>
+    </correctResponse>
+    <mapping defaultValue="-1" lowerBound="0">
+      <mapEntry mapKey="W G1" mappedValue="1"/>
+      <mapEntry mapKey="Su G2" mappedValue="2"/>
+    </mapping>
+  </responseDeclaration>
+  <responseDeclaration identifier="RESPONSE2" cardinality="multiple" baseType="directedPair"/>
+  <responseDeclaration identifier="RESPONSE3" cardinality="multiple" baseType="directedPair"/>
+  <responseDeclaration identifier="RESPONSE4" cardinality="multiple" baseType="directedPair"/>
+  <outcomeDeclaration identifier="SCORE" cardinality="single" baseType="float"/>
+  <itemBody>
+    <qti-gap-match-interaction class="qti-choices-top" response-identifier="RESPONSE1">
+      <qti-prompt>Demonstrates qti-choices-top</qti-prompt>
+      <qti-gap-text identifier="W" match-max="1">winter</qti-gap-text>
+      <qti-gap-text identifier="Sp" match-max="1">spring</qti-gap-text>
+      <qti-gap-text identifier="Su" match-max="1">summer</qti-gap-text>
+      <qti-gap-text identifier="A" match-max="1">autumn</qti-gap-text>
+      <blockquote>
+        <p>
+          Now is the <qti-gap identifier="G1"/> of our discontent<br/>
+          Made glorious <qti-gap identifier="G2"/> by this sun of York;<br/> 
+          And all the clouds that lour'd upon our house<br/>
+          In the deep bosom of the ocean buried.
+        </p>
+      </blockquote>
+    </qti-gap-match-interaction>
+    
+    <qti-gap-match-interaction class="qti-choices-bottom" response-identifier="RESPONSE2">
+      <qti-prompt>Demonstrates qti-choices-bottom</qti-prompt>
+      <qti-gap-text identifier="W" match-max="1">winter</qti-gap-text>
+      <qti-gap-text identifier="Sp" match-max="1">spring</qti-gap-text>
+      <qti-gap-text identifier="Su" match-max="1">summer</qti-gap-text>
+      <qti-gap-text identifier="A" match-max="1">autumn</qti-gap-text>
+      <blockquote>
+        <p>
+          Now is the <qti-gap identifier="G1"/> of our discontent<br/>
+          Made glorious <qti-gap identifier="G2"/> by this sun of York;<br/> 
+          And all the clouds that lour'd upon our house<br/>
+          In the deep bosom of the ocean buried.
+        </p>
+      </blockquote>
+    </qti-gap-match-interaction>
+
+    <qti-gap-match-interaction class="qti-choices-left" response-identifier="RESPONSE3">
+      <qti-prompt>Demonstrates qti-choices-left</qti-prompt>
+      <qti-gap-text identifier="W" match-max="1">winter</qti-gap-text>
+      <qti-gap-text identifier="Sp" match-max="1">spring</qti-gap-text>
+      <qti-gap-text identifier="Su" match-max="1">summer</qti-gap-text>
+      <qti-gap-text identifier="A" match-max="1">autumn</qti-gap-text>
+      <blockquote>
+        <p>
+          Now is the <qti-gap identifier="G1"/> of our discontent<br/>
+          Made glorious <qti-gap identifier="G2"/> by this sun of York;<br/> 
+          And all the clouds that lour'd upon our house<br/>
+          In the deep bosom of the ocean buried.
+        </p>
+      </blockquote>
+    </qti-gap-match-interaction>
+    
+    <qti-gap-match-interaction class="qti-choices-right" response-identifier="RESPONSE4">
+      <qti-prompt>Demonstrates qti-choices-right</qti-prompt>
+      <qti-gap-text identifier="W" match-max="1">winter</qti-gap-text>
+      <qti-gap-text identifier="Sp" match-max="1">spring</qti-gap-text>
+      <qti-gap-text identifier="Su" match-max="1">summer</qti-gap-text>
+      <qti-gap-text identifier="A" match-max="1">autumn</qti-gap-text>
+      <blockquote>
+        <p>
+          Now is the <qti-gap identifier="G1"/> of our discontent<br/>
+          Made glorious <qti-gap identifier="G2"/> by this sun of York;<br/> 
+          And all the clouds that lour'd upon our house<br/>
+          In the deep bosom of the ocean buried.
+        </p>
+      </blockquote>
+    </qti-gap-match-interaction>
+    
+  </itemBody>
+</assessmentItem>
+

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<assessmentItem xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 http://www.imsglobal.org/xsd/qti/qtiv3p0/imsqti_itemv3p0_v1p0.xsd" 
+  identifier="qti3-match-01" timeDependent="false" title="Match Item 1 - QTI3" adaptive="false">
+  <responseDeclaration baseType="directedPair" cardinality="multiple" identifier="RESPONSE">
+    <correctResponse>
+      <value>C R</value>
+      <value>D M</value>
+      <value>L M</value>
+      <value>P T</value>
+    </correctResponse>
+    <mapping defaultValue="0">
+      <mapEntry mapKey="C R" mappedValue="1"/>
+      <mapEntry mapKey="D M" mappedValue="0.5"/>
+      <mapEntry mapKey="L M" mappedValue="0.5"/>
+      <mapEntry mapKey="P T" mappedValue="1"/>
+    </mapping>
+  </responseDeclaration>
+  <outcomeDeclaration baseType="float" cardinality="single" identifier="SCORE">
+    <defaultValue>
+      <value>0.0</value>
+    </defaultValue>
+  </outcomeDeclaration>
+  <itemBody>
+    <qti-match-interaction max-associations="4" response-identifier="RESPONSE" shuffle="false">
+      <qti-prompt id="c">Match the following characters to the Shakespeare play they appeared in:</qti-prompt>
+      <qti-simple-match-set>
+        <qti-simple-associable-choice id="c1" identifier="C" match-max="1" aria-label="Capulet">Capulet</qti-simple-associable-choice>
+        <qti-simple-associable-choice id="c2" identifier="D" match-max="1" aria-label="Demetrius">Demetrius</qti-simple-associable-choice>
+        <qti-simple-associable-choice id="c3" identifier="L" match-max="1" aria-label="Lysander">Lysander</qti-simple-associable-choice>
+        <qti-simple-associable-choice id="c4" identifier="P" match-max="1" aria-label="Prospero">Prospero</qti-simple-associable-choice>
+      </qti-simple-match-set>
+      <qti-simple-match-set>
+        <qti-simple-associable-choice id="c5" identifier="M" match-max="4" aria-label="A Midsummer-Night's Dream">A Midsummer-Night's Dream</qti-simple-associable-choice>
+        <qti-simple-associable-choice id="c6" identifier="R" match-max="4" aria-label="Romeo and Juliet">Romeo and Juliet</qti-simple-associable-choice>
+        <qti-simple-associable-choice id="c7" identifier="T" match-max="4" aria-label="The Tempest">The Tempest</qti-simple-associable-choice>
+      </qti-simple-match-set>
+    </qti-match-interaction>
+  </itemBody>
+  <responseProcessing>
+    <responseCondition>
+      <responseIf>
+        <isNull>
+          <variable identifier="RESPONSE"/>
+        </isNull>
+        <setOutcomeValue identifier="SCORE">
+          <baseValue baseType="float">0.0</baseValue>
+        </setOutcomeValue>
+      </responseIf>
+      <responseElse>
+        <setOutcomeValue identifier="SCORE">
+          <mapResponse identifier="RESPONSE"/>
+        </setOutcomeValue>
+      </responseElse>
+    </responseCondition>
+  </responseProcessing>
+</assessmentItem>

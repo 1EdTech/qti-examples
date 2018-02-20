@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<assessmentItem xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 http://www.imsglobal.org/xsd/qti/qtiv3p0/imsqti_itemv3p0_v1p0.xsd" 
+  adaptive="false" identifier="qti3-extended-text-02" timeDependent="false" title="Writing a Postcard 2 - Extended Text qti3">
+  <responseDeclaration baseType="string" cardinality="single" identifier="RESPONSE1"/>
+  <responseDeclaration baseType="string" cardinality="single" identifier="RESPONSE2"/>
+  <responseDeclaration baseType="string" cardinality="single" identifier="RESPONSE3"/>
+  <responseDeclaration baseType="string" cardinality="single" identifier="RESPONSE4"/>
+  <responseDeclaration baseType="string" cardinality="single" identifier="RESPONSE5"/>
+  <responseDeclaration baseType="string" cardinality="single" identifier="RESPONSE6"/>
+  <responseDeclaration baseType="string" cardinality="single" identifier="RESPONSE7"/>
+  <responseDeclaration baseType="string" cardinality="single" identifier="RESPONSE8"/>
+  <responseDeclaration baseType="string" cardinality="single" identifier="RESPONSE9"/>  
+  <responseDeclaration baseType="string" cardinality="single" identifier="RESPONSE10"/>
+  <outcomeDeclaration baseType="integer" cardinality="single" identifier="SCORE"/>
+  <itemBody>
+    <div class="row">
+      <div class="span8">
+        <p>Read this postcard from your English pen-friend, Sam.</p>
+        <div>
+          <object data="images/postcard.png" type="image/png">
+            <blockquote class="postcard">
+              <p>
+                Here is a postcard of my town. Please send me<br/> a postcard from your town.
+                What size is your<br/> town? What is the nicest part of your town?<br/>
+                Where do you go in the evenings?<br/> Sam.
+              </p>
+            </blockquote>
+          </object>
+        </div>
+
+        <qti-extended-text-interaction class="qti-height-lines-3" format="plain" expected-length="200" response-identifier="RESPONSE1">
+          <qti-prompt>
+            <p>
+              <br />Demonstrates qti-height-lines-3 format: plain
+            </p>
+          </qti-prompt>
+        </qti-extended-text-interaction>
+        
+        <qti-extended-text-interaction class="qti-height-lines-6" format="plain" expected-length="200" response-identifier="RESPONSE2">
+	   <qti-prompt>
+	     <p>
+	       <br />Demonstrates qti-height-lines-6 format: plain
+	     </p>
+	   </qti-prompt>
+        </qti-extended-text-interaction>
+        
+        <qti-extended-text-interaction class="qti-height-lines-15" format="plain" expected-length="200" response-identifier="RESPONSE3">
+	   <qti-prompt>
+	     <p>
+	       <br />Demonstrates qti-height-lines-15 format: plain
+	     </p>
+	   </qti-prompt>
+        </qti-extended-text-interaction>
+
+        <qti-extended-text-interaction class="qti-height-lines-3" format="xhtml" expected-length="200" response-identifier="RESPONSE4">
+          <qti-prompt>
+            <p>
+              <br />Demonstrates qti-height-lines-3 format: xhtml
+            </p>
+          </qti-prompt>
+        </qti-extended-text-interaction>
+        
+        <qti-extended-text-interaction class="qti-height-lines-6" format="xhtml" expected-length="200" response-identifier="RESPONSE5">
+	   <qti-prompt>
+	     <p>
+	       <br />Demonstrates qti-height-lines-6 format: xhtml
+	     </p>
+	   </qti-prompt>
+        </qti-extended-text-interaction>
+        
+        <qti-extended-text-interaction class="qti-height-lines-15" format="xhtml" expected-length="200" response-identifier="RESPONSE6">
+	   <qti-prompt>
+	     <p>
+	       <br />Demonstrates qti-height-lines-15 format: xhtml
+	     </p>
+	   </qti-prompt>
+        </qti-extended-text-interaction>
+        
+        <qti-extended-text-interaction class="qti-height-lines-3 qti-counter-down" format="plain" expected-length="200" response-identifier="RESPONSE7">
+	   <qti-prompt>
+	     <p>
+	       <br />Demonstrates qti-height-lines-3, qti-counter-down, format: plain
+	     </p>
+	   </qti-prompt>
+        </qti-extended-text-interaction>
+
+        <qti-extended-text-interaction class="qti-height-lines-3 qti-counter-up" format="plain" expected-length="200" response-identifier="RESPONSE8">
+          <qti-prompt>
+            <p>
+              <br />Demonstrates qti-height-lines-3, qti-counter-up, format: plain
+            </p>
+          </qti-prompt>
+        </qti-extended-text-interaction>
+        
+        <qti-extended-text-interaction class="qti-height-lines-3 qti-counter-down" format="xhtml" expected-length="200" response-identifier="RESPONSE9">
+	   <qti-prompt>
+	     <p>
+	       <br />Demonstrates qti-height-lines-3, qti-counter-down, format: xhtml
+	     </p>
+	   </qti-prompt>
+        </qti-extended-text-interaction>
+        
+        <qti-extended-text-interaction class="qti-height-lines-3 qti-counter-up" format="xhtml" expected-length="200" response-identifier="RESPONSE10">
+	   <qti-prompt>
+	     <p>
+	       <br />Demonstrates qti-height-lines-3, qti-counter-up, format: xhtml
+	     </p>
+	   </qti-prompt>
+        </qti-extended-text-interaction>          
+        
+      </div>
+    </div>
+  </itemBody>
+</assessmentItem>

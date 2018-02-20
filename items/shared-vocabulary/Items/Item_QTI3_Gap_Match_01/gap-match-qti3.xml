@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<assessmentItem xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 http://www.imsglobal.org/xsd/qti/qtiv3p0/imsqti_itemv3p0_v1p0.xsd" 
+  identifier="qti3-gap-match-01" title="Gap Match 1 - QTI3" adaptive="false" timeDependent="false">
+  <responseDeclaration identifier="RESPONSE" cardinality="multiple" baseType="directedPair">
+    <correctResponse>
+      <value>W G1</value>
+      <value>Su G2</value>
+    </correctResponse>
+    <mapping defaultValue="-1" lowerBound="0">
+      <mapEntry mapKey="W G1" mappedValue="1"/>
+      <mapEntry mapKey="Su G2" mappedValue="2"/>
+    </mapping>
+  </responseDeclaration>
+  <outcomeDeclaration identifier="SCORE" cardinality="single" baseType="float"/>
+  <itemBody>
+    <qti-gap-match-interaction response-identifier="RESPONSE">
+      <qti-prompt>Identify the missing words in this famous quote from Shakespeare's Richard III.</qti-prompt>
+      <qti-gap-text identifier="W" match-max="1">winter</qti-gap-text>
+      <qti-gap-text identifier="Sp" match-max="1">spring</qti-gap-text>
+      <qti-gap-text identifier="Su" match-max="1">summer</qti-gap-text>
+      <qti-gap-text identifier="A" match-max="1">autumn</qti-gap-text>
+      <blockquote>
+        <p>
+          Now is the <qti-gap identifier="G1"/> of our discontent<br/>
+          Made glorious <qti-gap identifier="G2"/> by this sun of York;<br/> 
+          And all the clouds that lour'd upon our house<br/>
+          In the deep bosom of the ocean buried.
+        </p>
+      </blockquote>
+    </qti-gap-match-interaction>
+  </itemBody>
+  <responseProcessing template="http://www.imsglobal.org/question/qti_v2p1/rptemplates/map_response"/>
+</assessmentItem>
+

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns="http://www.imsglobal.org/xsd/apip/apipv1p0/imscp_v1p2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" identifier="Manifest_QTIv3p0_Item_Interaction_Vocab_Test" xsi:schemaLocation="http://www.imsglobal.org/xsd/apip/apipv1p0/imscp_v1p2 http://www.imsglobal.org/profile/apip/apipv1p0/apipv1p0_imscpv1p2_v1p0.xsd   http://ltsc.ieee.org/xsd/apipv1p0/LOM/manifest http://www.imsglobal.org/profile/apip/apipv1p0/apipv1p0_lommanifestv1p0_v1p0.xsd   http://ltsc.ieee.org/xsd/apipv1p0/LOM/resource http://www.imsglobal.org/profile/apip/apipv1p0/apipv1p0_lomresourcev1p0_v1p0.xsd   http://www.imsglobal.org/xsd/apip/apipv1p0/qtimetadata/imsqti_v2p1 http://www.imsglobal.org/profile/apip/apipv1p0/apipv1p0_qtimetadatav2p1_v1p0.xsd">
+  <organizations/>   
+  <resources>
+    <!-- qti-choice-interaction card=single -->
+    <resource href="Items/Item_QTI3_Luggage_01/unattended_luggage_qti3.xml" identifier="qti3-unattended-luggage-01" type="imsqti_item_xmlv3p0">
+      <file href="Items/Item_QTI3_Luggage_01/unattended_luggage_qti3.xml" />
+      <file href="Items/Item_QTI3_Luggage_01/images/sign.png"/>
+    </resource>
+    <resource href="Items/Item_QTI3_Luggage_02/unattended_luggage_qti3.xml" identifier="qti3-unattended-luggage-02" type="imsqti_item_xmlv3p0">
+      <file href="Items/Item_QTI3_Luggage_02/unattended_luggage_qti3.xml" />
+      <file href="Items/Item_QTI3_Luggage_02/images/sign.png"/>
+    </resource>
+    <resource href="Items/Item_QTI3_Luggage_03/unattended_luggage_qti3.xml" identifier="qti3-unattended-luggage-03" type="imsqti_item_xmlv3p0">
+      <file href="Items/Item_QTI3_Luggage_03/unattended_luggage_qti3.xml" />
+      <file href="Items/Item_QTI3_Luggage_03/images/sign.png"/>
+    </resource>
+    <resource href="Items/Item_QTI3_Luggage_04/unattended_luggage_qti3.xml" identifier="qti3-unattended-luggage-04" type="imsqti_item_xmlv3p0">
+      <file href="Items/Item_QTI3_Luggage_04/unattended_luggage_qti3.xml" />
+      <file href="Items/Item_QTI3_Luggage_04/images/sign.png"/>
+    </resource>
+    <resource href="Items/Item_QTI3_Luggage_05/unattended_luggage_qti3.xml" identifier="qti3-unattended-luggage-05" type="imsqti_item_xmlv3p0">
+      <file href="Items/Item_QTI3_Luggage_05/unattended_luggage_qti3.xml" />
+      <file href="Items/Item_QTI3_Luggage_05/images/sign.png"/>
+    </resource>
+    
+    <!-- qti-choice-interaction card=multiple -->
+    <resource href="Items/Item_QTI3_CompWater_01/composition_of_water_qti3.xml" identifier="qti3-choice-multiple-01" type="imsqti_item_xmlv3p0">
+      <file href="Items/Item_QTI3_CompWater_01/composition_of_water_qti3.xml" />
+    </resource>
+    <resource href="Items/Item_QTI3_CompWater_02/composition_of_water_qti3.xml" identifier="qti3-choice-multiple-02" type="imsqti_item_xmlv3p0">
+      <file href="Items/Item_QTI3_CompWater_02/composition_of_water_qti3.xml" />
+    </resource>
+    <resource href="Items/Item_QTI3_CompWater_03/composition_of_water_qti3.xml" identifier="qti3-choice-multiple-03" type="imsqti_item_xmlv3p0">
+      <file href="Items/Item_QTI3_CompWater_03/composition_of_water_qti3.xml" />
+    </resource>
+    <resource href="Items/Item_QTI3_CompWater_04/composition_of_water_qti3.xml" identifier="qti3-choice-multiple-04" type="imsqti_item_xmlv3p0">
+      <file href="Items/Item_QTI3_CompWater_04/composition_of_water_qti3.xml" />
+    </resource>
+    
+    <!-- qti-inline-choice-interaction -->
+    <resource href="Items/Item_QTI3_RichardTake2_01/inline_choice_qti3.xml" identifier="qti3-inline-choice-01" type="imsqti_item_xmlv3p0">
+      <file href="Items/Item_QTI3_RichardTake2_01/inline_choice_qti3.xml" />
+    </resource>
+    
+    <!-- qti-text-entry-interaction -->
+    <resource href="Items/Item_QTI3_RichardTake3_01/text_entry_qti3.xml" identifier="qti3-text-entry-01" type="imsqti_item_xmlv3p0">
+      <file href="Items/Item_QTI3_RichardTake3_01/text_entry_qti3.xml" />
+    </resource>
+    
+    <!-- qti-extended-text-interaction -->
+    <resource href="Items/Item_QTI3_WritingPostcard_01/extended_text_qti3.xml" identifier="qti3-extended-text-01" type="imsqti_item_xmlv3p0">
+      <file href="Items/Item_QTI3_WritingPostcard_01/extended_text_qti3.xml" />
+      <file href="Items/Item_QTI3_WritingPostcard_01/images/postcard.png"/>
+    </resource>
+    <resource href="Items/Item_QTI3_WritingPostcard_02/extended_text_qti3.xml" identifier="qti3-extended-text-02" type="imsqti_item_xmlv3p0">
+      <file href="Items/Item_QTI3_WritingPostcard_02/extended_text_qti3.xml" />
+      <file href="Items/Item_QTI3_WritingPostcard_02/images/postcard.png"/>
+    </resource>
+    <resource href="Items/Item_QTI3_WritingPostcard_03/extended_text_qti3.xml" identifier="qti3-extended-text-03" type="imsqti_item_xmlv3p0">
+      <file href="Items/Item_QTI3_WritingPostcard_03/extended_text_qti3.xml" />
+      <file href="Items/Item_QTI3_WritingPostcard_03/images/postcard.png"/>
+    </resource>
+    
+    <!-- qti-match-interaction -->
+    <resource href="Items/Item_QTI3_Match_01/match_qti3.xml" identifier="qti3-match-01" type="imsqti_item_xmlv3p0">
+      <file href="Items/Item_QTI3_Match_01/match_qti3.xml"/>
+    </resource>
+    <resource href="Items/Item_QTI3_Match_02/match_qti3.xml" identifier="qti3-match-02" type="imsqti_item_xmlv3p0">
+      <file href="Items/Item_QTI3_Match_02/match_qti3.xml"/>
+    </resource>
+    <resource href="Items/Item_QTI3_Match_03/match_qti3.xml" identifier="qti3-match-03" type="imsqti_item_xmlv3p0">
+      <file href="Items/Item_QTI3_Match_03/match_qti3.xml"/>
+    </resource>
+    
+    <!-- qti-gap-match-interaction -->
+    <resource href="Items/Item_QTI3_Gap_Match_01/gap-match-qti3.xml" identifier="qti3-gap-match-01" type="imsqti_item_xmlv3p0">
+      <file href="Items/Item_QTI3_Gap_Match_01/gap-match-qti3.xml"/>
+    </resource>
+    <resource href="Items/Item_QTI3_Gap_Match_02/gap-match-qti3.xml" identifier="qti3-gap-match-02" type="imsqti_item_xmlv3p0">
+      <file href="Items/Item_QTI3_Gap_Match_02/gap-match-qti3.xml"/>
+    </resource>
+    <resource href="Items/Item_QTI3_Gap_Match_03/gap-match-qti3.xml" identifier="qti3-gap-match-03" type="imsqti_item_xmlv3p0">
+      <file href="Items/Item_QTI3_Gap_Match_03/gap-match-qti3.xml"/>
+    </resource>
+
+    <!-- qti-graphic-gap-match-interaction -->
+    <resource href="Items/Item_QTI3_Graphic_Gap_Match_01/graphic-gap-match-qti3.xml" identifier="qti3-graphic-gap-match-01" type="imsqti_item_xmlv3p0">
+      <file href="Items/Item_QTI3_Graphic_Gap_Match_01/graphic-gap-match-qti3.xml"/>
+      <file href="Items/Item_QTI3_Graphic_Gap_Match_01/images/a-cw.png"/>
+      <file href="Items/Item_QTI3_Graphic_Gap_Match_01/images/b-ww2.png"/>
+      <file href="Items/Item_QTI3_Graphic_Gap_Match_01/images/c-vietnam.png"/>
+      <file href="Items/Item_QTI3_Graphic_Gap_Match_01/images/d-bay.png"/>
+      <file href="Items/Item_QTI3_Graphic_Gap_Match_01/images/timeline-558.png"/>
+    </resource>
+    <resource href="Items/Item_QTI3_Graphic_Gap_Match_02/graphic-gap-match-qti3.xml" identifier="qti3-graphic-gap-match-02" type="imsqti_item_xmlv3p0">
+      <file href="Items/Item_QTI3_Graphic_Gap_Match_02/graphic-gap-match-qti3.xml"/>
+      <file href="Items/Item_QTI3_Graphic_Gap_Match_02/images/a-cw.png"/>
+      <file href="Items/Item_QTI3_Graphic_Gap_Match_02/images/b-ww2.png"/>
+      <file href="Items/Item_QTI3_Graphic_Gap_Match_02/images/c-vietnam.png"/>
+      <file href="Items/Item_QTI3_Graphic_Gap_Match_02/images/d-bay.png"/>
+      <file href="Items/Item_QTI3_Graphic_Gap_Match_02/images/timeline-558.png"/>
+    </resource>
+    <resource href="Items/Item_QTI3_Graphic_Gap_Match_03/graphic-gap-match-qti3.xml" identifier="qti3-graphic-gap-match-03" type="imsqti_item_xmlv3p0">
+      <file href="Items/Item_QTI3_Graphic_Gap_Match_03/graphic-gap-match-qti3.xml"/>
+      <file href="Items/Item_QTI3_Graphic_Gap_Match_03/images/a-cw.png"/>
+      <file href="Items/Item_QTI3_Graphic_Gap_Match_03/images/b-ww2.png"/>
+      <file href="Items/Item_QTI3_Graphic_Gap_Match_03/images/c-vietnam.png"/>
+      <file href="Items/Item_QTI3_Graphic_Gap_Match_03/images/d-bay.png"/>
+      <file href="Items/Item_QTI3_Graphic_Gap_Match_03/images/timeline-558.png"/>
+    </resource>
+    
+    <!-- qti-hotspot-interaction -->
+    <resource href="Items/Item_QTI3_Hotspot_01/hotspot-qti3.xml" identifier="qti3-hotspot-01" type="imsqti_item_xmlv3p0">
+      <file href="Items/Item_QTI3_Hotspot_01/hotspot-qti3.xml"/>
+      <file href="Items/Item_QTI3_Hotspot_01/ukair.png"/>
+    </resource>
+    <resource href="Items/Item_QTI3_Hotspot_02/hotspot-qti3.xml" identifier="qti3-hotspot-02" type="imsqti_item_xmlv3p0">
+      <file href="Items/Item_QTI3_Hotspot_02/hotspot-qti3.xml"/>
+      <file href="Items/Item_QTI3_Hotspot_02/ukair.png"/>
+    </resource>
+    <resource href="Items/Item_QTI3_Hotspot_03/hotspot-qti3.xml" identifier="qti3-hotspot-03" type="imsqti_item_xmlv3p0">
+      <file href="Items/Item_QTI3_Hotspot_03/hotspot-qti3.xml"/>
+      <file href="Items/Item_QTI3_Hotspot_03/ukair.png"/>
+    </resource>
+
+    <!-- qti-hottext-interaction -->
+    <resource href="Items/Item_QTI3_Hottext_01/hottext-qti3.xml" identifier="qti3-hottext-01" type="imsqti_item_xmlv3p0">
+      <file href="Items/Item_QTI3_Hottext_01/hottext-qti3.xml"/>
+    </resource>
+    <resource href="Items/Item_QTI3_Hottext_02/hottext-qti3.xml" identifier="qti3-hottext-02" type="imsqti_item_xmlv3p0">
+      <file href="Items/Item_QTI3_Hottext_02/hottext-qti3.xml"/>
+    </resource>
+    
+  </resources>
+</manifest>

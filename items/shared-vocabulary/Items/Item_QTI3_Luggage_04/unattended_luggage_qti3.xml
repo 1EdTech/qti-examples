@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<assessmentItem xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 http://www.imsglobal.org/xsd/qti/qtiv3p0/imsqti_itemv3p0_v1p0.xsd" 
+	identifier="qti3-unattended-luggage-04" title="Unattended Luggage QTI3 - orientation options" adaptive="false" timeDependent="false">
+	<responseDeclaration identifier="RESPONSE" cardinality="single" baseType="identifier">
+		<correctResponse>
+			<value>ChoiceA</value>
+		</correctResponse>
+	</responseDeclaration>
+	<responseDeclaration identifier="RESPONSE1" cardinality="single" baseType="identifier">
+		<correctResponse>
+			<value>ChoiceA</value>
+		</correctResponse>
+	</responseDeclaration>
+	<outcomeDeclaration identifier="SCORE" cardinality="single" baseType="float">
+		<defaultValue>
+			<value>0</value>
+		</defaultValue>
+	</outcomeDeclaration>
+	<itemBody>
+		<p>Look at the text in the picture.  What does it say?</p>
+		<p>
+			<img src="images/sign.png" alt="NEVER LEAVE LUGGAGE UNATTENDED" />
+		</p>
+
+		<qti-choice-interaction class="qti-orientation-horizontal" max-choices="1" shuffle="false" response-identifier="RESPONSE">
+			<qti-prompt>Demonstrates <em>qti-orientation-horizontal</em>.</qti-prompt>
+			<qti-simple-choice identifier="ChoiceA">You must stay with your luggage at all times.</qti-simple-choice>
+			<qti-simple-choice identifier="ChoiceB">Do not let someone else look after your luggage.</qti-simple-choice>
+			<qti-simple-choice identifier="ChoiceC">Remember your luggage when you leave.</qti-simple-choice>
+		</qti-choice-interaction>
+		
+		<qti-choice-interaction class="qti-orientation-vertical" max-choices="1" shuffle="false" response-identifier="RESPONSE1">
+			<qti-prompt>Demonstrates <em>qti-orientation-vertical</em>.</qti-prompt>
+			<qti-simple-choice identifier="ChoiceA">You must stay with your luggage at all times.</qti-simple-choice>
+			<qti-simple-choice identifier="ChoiceB">Do not let someone else look after your luggage.</qti-simple-choice>
+			<qti-simple-choice identifier="ChoiceC">Remember your luggage when you leave.</qti-simple-choice>
+		</qti-choice-interaction>
+	
+	</itemBody>
+</assessmentItem>

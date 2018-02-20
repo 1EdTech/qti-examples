@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<assessmentItem xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 http://www.imsglobal.org/xsd/qti/qtiv3p0/imsqti_itemv3p0_v1p0.xsd" 
+	identifier="qti3-choice-multiple-01" title="Composition of Water qti3" adaptive="false" timeDependent="false">
+	<responseDeclaration identifier="RESPONSE" cardinality="multiple" baseType="identifier">
+		<correctResponse>
+			<value>H</value>
+			<value>O</value>
+		</correctResponse>
+		<mapping lowerBound="0" upperBound="2" defaultValue="-2">
+			<mapEntry mapKey="H" mappedValue="1"/>
+			<mapEntry mapKey="O" mappedValue="1"/>
+			<mapEntry mapKey="Cl" mappedValue="-1"/>
+		</mapping>
+	</responseDeclaration>
+	<outcomeDeclaration identifier="SCORE" cardinality="single" baseType="float"/>
+	<itemBody>
+		<qti-choice-interaction response-identifier="RESPONSE" shuffle="true" max-choices="0">
+			<qti-prompt>Which of the following elements are used to form water?</qti-prompt>
+			<qti-simple-choice identifier="H" fixed="false">Hydrogen</qti-simple-choice>
+			<qti-simple-choice identifier="He" fixed="false">Helium</qti-simple-choice>
+			<qti-simple-choice identifier="C" fixed="false">Carbon</qti-simple-choice>
+			<qti-simple-choice identifier="O" fixed="false">Oxygen</qti-simple-choice>
+			<qti-simple-choice identifier="N" fixed="false">Nitrogen</qti-simple-choice>
+			<qti-simple-choice identifier="Cl" fixed="false">Chlorine</qti-simple-choice>
+		</qti-choice-interaction>
+	</itemBody>
+	<responseProcessing
+		template="http://www.imsglobal.org/question/qti_v2p1/rptemplates/map_response"/>
+</assessmentItem>
