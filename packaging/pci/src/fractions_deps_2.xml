@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  
+ Copyright 2016, 2017 Houghton Mifflin Harcourt Publishing Company.
+ 
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+ 
+       http://www.apache.org/licenses/LICENSE-2.0
+ 
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+-->
+<assessmentItem
+  xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 http://www.imsglobal.org/xsd/qti/qtiv3p0/imsqti_asiv3p0_v1p0.xsd"
+  identifier="fractions-primary-configuration"
+  title="Simple Shaded Grid Interaction this time with a primary-configuration"
+  adaptive="false"
+  timeDependent="false">
+  <responseDeclaration identifier="RESPONSE" cardinality="single" baseType="identifier">
+    <correctResponse>
+      <value>1</value>
+    </correctResponse>
+  </responseDeclaration>
+  <responseDeclaration identifier="EXAMPLE" cardinality="single" baseType="identifier">
+    <correctResponse>
+      <value>6</value>
+    </correctResponse>
+  </responseDeclaration>  
+  <outcomeDeclaration identifier="SCORE" cardinality="single" baseType="float">
+    <defaultValue>
+      <value>0.0</value>
+    </defaultValue>
+  </outcomeDeclaration>
+  <itemBody>
+    <span>
+      Mary is saving to buy a birthday present for her mother. 
+      Every week she counts the money she has saved into piles of $5. 
+      At the end of the first week Mary had saved $10 and was planning to
+      buy her mother a present worth $30.
+      <p> </p>
+      She represented this in the following shaded chart with a shaded square
+      for every $5 saved and a target of $30.
+      <p> </p>
+      
+    <qti-portable-custom-interaction custom-interaction-type-identifier="urn:fdc:hmhco.com:pci:shading"
+        response-identifier="EXAMPLE"
+        data-controls="none" data-render="grid" data-selected="0.0,1.0" data-selected_color="blue"
+        data-unselected_color="white" data-dimension1_initial="3" data-dimension2_initial="2" 
+        data-element_diameter="60" data-value="numShaded" data-active="0">        
+        <!-- the primary-configuration URL is deliberately incorrect to 
+            demonstrate the use of fallback-configuration -->
+        <qti-interaction-modules primary-configuration="modules/hmh_co_comXX.js" fallback-configuration="modules/hmh_co_com.js">
+          <qti-interaction-module id="eve"/>
+          <qti-interaction-module id="raphael"/>
+          <qti-interaction-module id="shadingD" primary-path="modules/shading_depsXX.js" fallback-path="modules/shading_deps.js"/>
+        </qti-interaction-modules>
+        <qti-interaction-markup>
+            
+        </qti-interaction-markup>
+    </qti-portable-custom-interaction>      
+    
+      <p>By the second week she has already saved the exact amount she planned 
+      on spending on the present ($30) and is trying to work out if she will be able
+      to afford a more expensive present costing $45.</p>
+      <p>To help her do this use the buttons below to create a chart representing
+      $45 assuming that each square represents $5 and then click to shade the 
+      fraction of the chart representing the amount saved in two weeks.</p>
+      
+      
+    <qti-portable-custom-interaction custom-interaction-type-identifier="urn:fdc:hmhco.com:pci:shading" 
+        module="shadingD"
+        response-identifier="RESPONSE"
+        data-controls="full" data-render="grid" data-selected_color="blue"
+        data-unselected_color="white" data-dimension1_initial="2" data-dimension2_initial="2" 
+        data-element_diameter="60" data-value="numShaded" >   
+        <qti-interaction-markup>
+        </qti-interaction-markup>
+    </qti-portable-custom-interaction>
+    </span>
+  </itemBody>
+  <responseProcessing template="http://www.imsglobal.org/question/qti_v2p1/rptemplates/match_correct"/>
+</assessmentItem>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest xmlns="http://www.imsglobal.org/xsd/imscp_v1p3" xmlns:imsmd="http://ltsc.ieee.org/xsd/LOM" 
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+          xmlns:imsqti="http://www.imsglobal.org/xsd/imsqti_metadata_v2p2" 
+          xsi:schemaLocation="http://ltsc.ieee.org/xsd/LOM http://www.imsglobal.org/xsd/imsmd_loose_v1p3p2.xsd
+    http://www.imsglobal.org/xsd/imscp_v1p3 https://www.imsglobal.org/xsd/qti/qtiv3p0/qtiv3p0_imscpv1p3_v1p0.xsd
+    http://www.imsglobal.org/xsd/imsqti_metadata_v2p2 https://www.imsglobal.org/xsd/qti/qtiv2p2/imsqti_metadata_v2p2p1.xsd" 
+          identifier="PCI_Example">
+    <metadata>
+        <schema>QTIv3.0 Package</schema>
+        <schemaversion>1.0.0</schemaversion>
+        <imsmd:lom xmlns:imsmd="http://ltsc.ieee.org/xsd/LOM">
+            <imsmd:general>
+                <imsmd:identifier>
+                    <imsmd:catalog>urn:fdc:hmhco.com:contentPackage:tapToRevealExample</imsmd:catalog>
+                </imsmd:identifier>
+                <imsmd:title>
+                    <imsmd:string language="en">Example of Packaging a PCI in QTI 3.0</imsmd:string>
+                </imsmd:title>
+                <imsmd:language>en</imsmd:language>
+                <imsmd:description>
+                    <imsmd:string language="en">This package contains a multiple items
+                        each using one or more PCIs and shows how the PCI AMD modules and
+                        module resolution configuration files may be packaged.
+                    </imsmd:string>
+                </imsmd:description>
+            </imsmd:general>
+            <imsmd:lifeCycle>
+                <imsmd:version>
+                    <imsmd:string language="en">1.0</imsmd:string>
+                </imsmd:version>
+                <imsmd:status>
+                    <imsmd:source>LOMv1.0</imsmd:source>
+                    <imsmd:value>Final</imsmd:value>
+                </imsmd:status>
+            </imsmd:lifeCycle>
+            <imsmd:metaMetadata>
+                <imsmd:metadataschema>LOMv1.0</imsmd:metadataschema>
+                <imsmd:metadataschema>QTIv3.0</imsmd:metadataschema>
+                <imsmd:language>en</imsmd:language>
+            </imsmd:metaMetadata>
+            <imsmd:technical>
+                <imsmd:format>text/x-imsqti-item-xml</imsmd:format>
+            </imsmd:technical>
+            <imsmd:rights>
+                <imsmd:description>
+                    <imsmd:string language="en">(c) 2017,2018 Houghton Mifflin Harcourt. (9780544727984)</imsmd:string>
+                </imsmd:description>
+            </imsmd:rights>
+        </imsmd:lom>
+    </metadata>
+    <organizations />
+    <resources>
+        <resource type="imsqti_item_xmlv3p0" identifier="measuringPh" href="measuring_ph.xml">
+            <file href="measuring_ph.xml" />
+            <file href="ammonia.svg" />
+            <file href="baking_soda.svg" />
+            <file href="vinegar.svg" />
+            <dependency identifierref="pci_module_tap" />
+            <dependency identifierref="pci_module_resolution" />
+        </resource>
+        <resource type="webcontent" identifier="pci_module_resolution" 
+                  href="modules/module_resolution.js">
+            <file href="modules/module_resolution.js" />
+        </resource>
+        <resource type="webcontent" identifier="pci_module_tap" href="modules/tap.js">
+            <file href="modules/tap.js" />
+        </resource>
+        <resource type="imsqti_item_xmlv3p0" identifier="fractions-no-dependencies" href="fractions1.xml">
+            <file href="fractions1.xml" />
+            <dependency identifierref="pci_module_shading" />
+            <!-- no module resolution file referenced -->
+        </resource>
+        <resource type="webcontent" identifier="pci_module_shading" href="modules/shading.js">
+            <file href="modules/shading.js" />
+        </resource>
+        <resource type="imsqti_item_xmlv3p0" identifier="fractions-dependencies-module-path" 
+                  href="fractions_deps.xml">
+            <file href="fractions_deps.xml" />
+            <dependency identifierref="pci_module_shading_deps" />
+            <!-- no module resolution file referenced -->
+        </resource>
+        <resource type="webcontent" identifier="pci_module_shading_deps" href="modules/shading_deps.js">
+            <file href="modules/shading_deps.js" />
+            <file href="modules/lib/eve.js" />
+            <file href="modules/lib/raphael.js"/>
+            <!-- jQuery is loaded from a CDN, not referenced from the package.
+                 No module resolution configuration file is referenced -->
+        </resource>
+        <resource type="imsqti_item_xmlv3p0" identifier="fractions-primary-configuration" 
+                  href="fractions_deps_2.xml">
+            <file href="fractions_deps_2.xml" />
+            <dependency identifierref="pci_module_shading_deps_2" />
+            <!-- no module resolution file referenced -->
+        </resource>
+        <resource type="webcontent" identifier="pci_module_shading_deps_2" href="modules/shading_deps.js">
+            <file href="modules/shading_deps.js" />
+            <file href="modules/lib/eve.js" />
+            <file href="modules/lib/raphael.js"/>
+            <file href="modules/lib/jquery-2.2.2.min.js/>
+            <dependency identifierref="hmh_pci_module_resolution" />
+            <!-- jQuery is loaded from a CDN, not referenced from the package.
+                 No module resolution configuration file is referenced -->
+        </resource>
+        <resource type="webcontent" identifier="hmh_pci_module_resolution" 
+                  href="modules/hmh_co_com.js">
+            <file href="modules/hmh_co_com.js" />
+            <file href="modules/hmh_co_com_fallback.json" />
+        </resource>
+    </resources>
+</manifest>
