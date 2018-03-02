@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest 
+    xmlns="http://www.imsglobal.org/xsd/imscp_v1p2"    
+    xmlns:imsmd="http://ltsc.ieee.org/xsd/LOM" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:imsqti="http://www.imsglobal.org/xsd/imsqti_metadata_v2p2" 
+    xsi:schemaLocation="http://ltsc.ieee.org/xsd/LOM http://www.imsglobal.org/xsd/imsmd_loose_v1p3p2.xsd
+    http://www.imsglobal.org/xsd/imscp_v1p2 https://www.imsglobal.org/xsd/qti/qtiv3p0/qtiv3p0_imscpv1p3_v1p0.xsd
+    http://www.imsglobal.org/xsd/imsqti_metadata_v2p2 https://www.imsglobal.org/xsd/qti/qtiv2p2/imsqti_metadata_v2p2p1.xsd" 
+          identifier="PCI_Example">
+    <metadata>
+        <schema>QTIv3.0 Package</schema>
+        <schemaversion>1.0.0</schemaversion>
+        <imsmd:lom xmlns:imsmd="http://ltsc.ieee.org/xsd/LOM">
+            <imsmd:general>
+                <imsmd:identifier>
+                    <imsmd:catalog>
+                        urn:fdc:hmhco.com:contentPackage:tapToRevealExample
+                    </imsmd:catalog>
+                </imsmd:identifier>
+                <imsmd:title>
+                    <imsmd:string language="en">
+                        Example of Packaging a PCI in QTI 3.0
+                    </imsmd:string>
+                </imsmd:title>
+                <imsmd:language>en</imsmd:language>
+                <imsmd:description>
+                    <imsmd:string language="en">This package contains a single item 
+                        containing a PCI and shows how the PCI AMD module and module resolution
+                        configuration may be packaged.
+                    </imsmd:string>
+                </imsmd:description>
+            </imsmd:general>
+            <imsmd:lifeCycle>
+                <imsmd:version>
+                    <imsmd:string language="en">1.0</imsmd:string>
+                </imsmd:version>
+                <imsmd:status>
+                    <imsmd:source>LOMv1.0</imsmd:source>
+                    <imsmd:value>Final</imsmd:value>
+                </imsmd:status>
+            </imsmd:lifeCycle>
+            <imsmd:metaMetadata>
+                <imsmd:metadataschema>LOMv1.0</imsmd:metadataschema>
+                <imsmd:metadataschema>QTIv3.0</imsmd:metadataschema>
+                <imsmd:language>en</imsmd:language>
+            </imsmd:metaMetadata>
+            <imsmd:technical>
+                <imsmd:format>text/x-imsqti-item-xml</imsmd:format>
+            </imsmd:technical>
+            <imsmd:rights>
+                <imsmd:description>
+                    <imsmd:string language="en">(c) 2017,2018 Houghton Mifflin Harcourt. (9780544727984)</imsmd:string>
+                </imsmd:description>
+            </imsmd:rights>
+        </imsmd:lom>
+    </metadata>
+    <organizations />
+
+    <resources>
+        <resource type="imsqti_item_xmlv3p0" identifier="measuringPh" href="measuring_ph.xml">
+            <file href="measuring_ph.xml" />
+            <file href="ammonia.svg" />
+            <file href="baking_soda.svg" />
+            <file href="vinegar.svg" />
+            <dependency identifierref="pci_module_tap" />
+            <dependency identifierref="pci_module_resolution" />
+        </resource>
+
+
+        <resource type="webcontent" identifier="pci_module_tap" href="modules/tap.js">
+            <file href="modules/tap.js" />
+        </resource>
+
+        <resource type="webcontent" identifier="pci_module_resolution" 
+                  href="modules/module_resolution.js">
+            <file href="modules/module_resolution.js" />
+        </resource>
+
+    </resources>
+</manifest>
