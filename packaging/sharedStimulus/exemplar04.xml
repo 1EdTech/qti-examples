@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<assessmentItem xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 http://www.imsglobal.org/xsd/qti/qtiv3p0/imsqti_itemv3p0_v1p0.xsd" 
+	identifier="exemplar04" title="Put the following sentences in order" 
+        adaptive="false" timeDependent="false">
+    <responseDeclaration identifier="RESPONSE" baseType="identifier" cardinality="single">
+        <correctResponse>
+            <value>fourthSentence</value>
+        </correctResponse>
+    </responseDeclaration>
+    <outcomeDeclaration identifier="SCORE" cardinality="single" baseType="float">
+        <defaultValue>
+            <value>0</value>
+        </defaultValue>
+    </outcomeDeclaration>
+    <outcomeDeclaration identifier="MAXSCORE" cardinality="single" baseType="float">
+        <defaultValue>
+            <value>1</value>
+        </defaultValue>
+    </outcomeDeclaration>
+
+    <assessmentStimulusRef href="passages/unbelievableNight.xml" title="Common Stimulus" /> 
+    <itemBody>
+        <qti-order-interaction max-choices="5" min-choices="0" shuffle="false"
+            orientation="vertical" response-identifier="RESPONSE">
+            <qti-prompt data-catalog-idref="content2"> Put the following sentences in the order in which they happened
+                in the story. </qti-prompt>
+            <qti-simple-choice showHide="show" identifier="firstSentence" data-catalog-idref="content5" fixed="true">
+                Anina saw the crocodile. </qti-simple-choice>
+            <qti-simple-choice showHide="show" identifier="secondSentence" data-catalog-idref="content3" fixed="true">
+                The crocodile ate two flamingos. </qti-simple-choice>
+            <qti-simple-choice showHide="show" identifier="thirdSentence" data-catalog-idref="content6" fixed="true">
+                Anina tried to explain the broken door to her parents. </qti-simple-choice>
+            <qti-simple-choice showHide="show" identifier="fourthSentence" data-catalog-idref="content8" fixed="true">
+                Anina started to walk to the bathroom. </qti-simple-choice>
+            <qti-simple-choice showHide="show" identifier="fifthSentence" data-catalog-idref="content7" fixed="true">
+                Anina ran to the bedroom and slammed the door. </qti-simple-choice>
+        </qti-order-interaction>
+    </itemBody>
+    <qti-catalog-info>
+        <qti-catalog id="content2">
+            <qti-card support="braille">
+                <qti-html-content>Put the following sentences in the order 
+                    in which they happened in the story.</qti-html-content>
+            </qti-card>
+            <qti-card support="spoken">
+                <qti-card-entry data-reading-type="computer-read-aloud">
+                    <qti-html-content>Put the following sentences in the order 
+                        in which they happened in the story.</qti-html-content>
+                </qti-card-entry>
+            </qti-card>
+        </qti-catalog>
+        <qti-catalog id="content5">
+            <qti-card support="braille">
+                <qti-html-content>Anina saw the crocodile.</qti-html-content>
+            </qti-card>
+            <qti-card support="spoken">
+                <qti-card-entry data-reading-type="computer-read-aloud">
+                    <qti-html-content>Anina saw the crocodile.</qti-html-content>
+                </qti-card-entry>
+            </qti-card>
+        </qti-catalog>
+        <qti-catalog id="content3">
+            <qti-card support="braille">
+                <qti-html-content>The crocodile ate two flamingos.</qti-html-content>
+            </qti-card>
+            <qti-card support="spoken">
+                <qti-card-entry data-reading-type="computer-read-aloud">
+                    <qti-html-content>The crocodile ate two flamingos.</qti-html-content>
+                </qti-card-entry>
+            </qti-card>
+        </qti-catalog>
+        <qti-catalog id="content8">
+            <qti-card support="braille">
+                <qti-html-content>The crocodile ate two flamingos.</qti-html-content>
+            </qti-card>
+            <qti-card support="spoken">
+                <qti-card-entry data-reading-type="computer-read-aloud">
+                    <qti-html-content>The crocodile ate two flamingos.</qti-html-content>
+                </qti-card-entry>
+            </qti-card>
+        </qti-catalog>
+        <qti-catalog id="content6">
+            <qti-card support="braille">
+                <qti-html-content>Anina tried to explain the broken door to her parents.</qti-html-content>
+            </qti-card>
+            <qti-card support="spoken">
+                <qti-card-entry data-reading-type="computer-read-aloud">
+                    <qti-html-content>Anina tried to explain the broken door to her parents.</qti-html-content>
+                </qti-card-entry>
+            </qti-card>
+        </qti-catalog>
+        <qti-catalog id="content8">
+            <qti-card support="braille">
+                <qti-html-content>Anina started to walk to the bathroom.</qti-html-content>
+            </qti-card>
+            <qti-card support="spoken">
+                <qti-card-entry data-reading-type="computer-read-aloud">
+                    <qti-html-content>Anina started to walk to the bathroom.</qti-html-content>
+                </qti-card-entry>
+            </qti-card>
+        </qti-catalog>
+        <qti-catalog id="content7">
+            <qti-card support="braille">
+                <qti-html-content>Anina ran to the bedroom and slammed the door.</qti-html-content>
+            </qti-card>
+            <qti-card support="spoken">
+                <qti-card-entry data-reading-type="computer-read-aloud">
+                    <qti-html-content>Anina ran to the bedroom and slammed the door.</qti-html-content>
+                </qti-card-entry>
+            </qti-card>
+        </qti-catalog>
+    </qti-catalog-info>
+    <responseProcessing>
+        <responseCondition>
+            <responseIf>
+                <match>
+                    <variable identifier="RESPONSE"/>
+                    <correct identifier="RESPONSE"/>
+                </match>
+                <setOutcomeValue identifier="SCORE">
+                    <variable identifier="MAXSCORE"/>
+                </setOutcomeValue>
+            </responseIf>
+        </responseCondition>
+    </responseProcessing>
+</assessmentItem>

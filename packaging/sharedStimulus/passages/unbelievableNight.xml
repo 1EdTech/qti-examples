@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<assessmentStimulus xmlns="http://www.imsglobal.org/xsd/qti/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.imsglobal.org/xsd/qti/imsqti_stimulusv3p0_v1p0 https://www.imsglobal.org/xsd/qti/qtiv3p0/imsqti_asiv3p0_v1p0.xsd" identifier="qti_sharedstimulus1" xml:lang="eng"> 
+
+  <stylesheet href="styles/passages/unbelievable_night.css" type="text/css" />
+
+  <stimulusBody id="abcd"> 
+      <div> 
+        <img id="content4" height="210" width="400" 
+          alt="Picture of a door opening to a hallway. A person's shadow is cast on the
+          door and hallway." src="images/exemplarSection01_title.png"/> 
+      </div>
+        <h2 class="passage-title" id="content18">An Unbelievable Night</h2> 
+<p class="author-line" id="content20">by Franz Hohler</p> 
+<p id="content6"><span data-catalog-idref=“1234”>Anina</span> was ten years old, 
+so even half asleep she could find her way from her room to the bathroom. 
+The door to her room was usually open a crack, and the nightlight in the hallway 
+made it light enough to get to the bathroom past the telephone stand. </p> 
+<p id="content7">
+One night, as she passed the telephone stand on her way to the bathroom, Anina 
+heard something that sounded like a quiet hissing. But, because she was half asleep, 
+she didn t really pay any attention to it. Anyway, it came from pretty far away. 
+Not until she was on her way back to her room did she see where it came from. 
+Under the telephone stand there was a large pile of old newspapers and magazines, 
+and this pile now began to move. That was where the noise was coming from. 
+All of a sudden the pile started to fall over - right, left, forwards, backwards - 
+then there were newspapers and magazines all over the floor.</p>
+<p id="content21">Anina could not believe her eyes as she watched a grunting and 
+snorting crocodile come out from under the telephone stand.</p> 
+<p id="content9">Anina was frozen to the spot. Her eyes wide as saucers, 
+she watched the crocodile crawl completely out of the newspapers and slowly look 
+around the apartment. It seemed to have just come out of the water because its 
+whole body was dripping wet. Wherever the crocodile stepped, the carpet under it 
+became drenched.</p>
+<img src="images/apip_VE_IP_05_croc.png" />
+<p id="content10">
+    The crocodile moved its head back and forth letting out a loud hissing sound. 
+Anina swallowed hard, looking at the crocodile s snout with its terribly long 
+row of teeth. It swung its tail slowly back and forth. Anina had read about that 
+in 'Animal Magazine' - how the crocodile whips the water with its tail to chase 
+away or attack its enemies.
+</p>
+<p>
+    Her gaze fell on the last issue of 'Animal Magazine', which had fallen from 
+the pile and was lying at her feet. She got another shock. The cover of the 
+magazine used to have a picture of a big crocodile on a river bank. The river 
+bank was now empty!
+</p>
+<p>
+    Anina bent down and picked up the magazine. At that moment the crocodile 
+whipped his tail so hard that he cracked the big vase of sunflowers on the floor 
+and the sunflowers scattered everywhere. With a quick jump Anina was in her 
+bedroom. She slammed the door shut, grabbed her bed and pushed it up against the 
+door. She had built a barricade that would keep her safe from the crocodile. 
+Relieved, she let her breath out. But then she hesitated. What if the beast was 
+simply hungry? Maybe to make the crocodile go away you had to give it something to eat?
+</p>
+<p>
+    Anina looked again at the animal magazine. If the crocodile could crawl out 
+of a picture then perhaps other animals could too. Anina hastily flipped through 
+the magazine and stopped at a swarm of flamingos in a jungle swamp. Just right, 
+she thought. They look like a birthday cake for crocodiles.
+</p>
+<p>
+    Suddenly there was a loud crack and the tip of the crocodile s tail pushed 
+through the splintered door. Quickly, Anina held the picture of the flamingos up 
+to the hole in the door and called as loud as she could, 'Get out of the swamp! 
+Shoo! Shoo!' Then she threw the magazine through the hole into the hallway, 
+clapped her hands and yelled and screamed.
+</p>
+<p>
+    She could hardly believe what happened next. The entire hallway was suddenly 
+filled with screeching flamingos wildly flapping their wings and running around 
+all over the place on their long, skinny legs. Anina saw one bird with a sunflower 
+in its beak and another grabbing her mother's hat from its hook. She also saw a 
+flamingo disappear into the crocodile's mouth. With two quick bites he swallowed
+ the flamingo and quickly followed it with another, the one with the sunflower 
+in its beak.
+</p>
+<img id="content4" height="210" width="400" 
+          alt="Picture of a door opening to a hallway. A person's shadow is cast on the
+          door and hallway." src="images/apip_VE_IP_05_flamingos.png"/> 
+<p>
+    After two portions of flamingo the crocodile seemed to have had enough and 
+lay down contentedly in the middle of the hallway. When he had closed his eyes 
+and no longer moved, Anina quietly opened her door and slipped through it into 
+the hallway. She placed the empty magazine cover in front of the crocodile s nose. 
+'Please', she whispered, 'please go back home'. She crept back into the bedroom 
+and looked through the hole in the door. She saw the crocodile back on the cover 
+of the magazine.
+</p>
+<p>
+    She now went cautiously into the living room where the flamingos were crowded
+ around the sofa and standing on the television. Anina opened the magazine to the 
+page with the empty picture. 'Thank you', she said, 'thank you very much. You 
+may now go back to your swamp'.
+</p>
+<p>
+    In the morning, it was very difficult for her to explain the giant wet spot 
+on the floor and the broken door to her parents. They weren't convinced about 
+the crocodile even though her mother's hat was nowhere to be found.
+</p>
+<p class="passage-credit" id="content19">Adapted from Eine Wilde Nacht in Der Große Zwerg und Andere Geschichten by Franz Hohler. 
+Published 2003 by Deutscher Taschenbuch Verlag, Munchen, Germany. Illustrations by Thomas Hoffmann.</p>   
+  </stimulusBody>
+ 
+  <qti-catalog-info> 
+          <qti-catalog id="1234">
+            <qti-card support="linguistic-guidance">
+               <html-content>Anina is the name of a girl.</html-content>
+            </qti-card>
+          </qti-catalog>
+  </qti-catalog-info> 
+
+</assessmentStimulus>

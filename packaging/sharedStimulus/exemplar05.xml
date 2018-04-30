@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<assessmentItem xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 http://www.imsglobal.org/xsd/qti/qtiv3p0/imsqti_itemv3p0_v1p0.xsd" 
+	identifier="exemplar05" title="Where did the crocodile come from" 
+        adaptive="false" timeDependent="false">
+    <responseDeclaration identifier="RESPONSE" baseType="identifier" cardinality="single">
+        <correctResponse>
+            <value>B</value>
+        </correctResponse>
+    </responseDeclaration>
+    <outcomeDeclaration identifier="SCORE" cardinality="single" baseType="float">
+        <defaultValue>
+            <value>0</value>
+        </defaultValue>
+    </outcomeDeclaration>
+    <outcomeDeclaration identifier="MAXSCORE" cardinality="single" baseType="float">
+        <defaultValue>
+            <value>1</value>
+        </defaultValue>
+    </outcomeDeclaration>
+
+    <assessmentStimulusRef href="passages/unbelievableNight.xml" title="Common Stimulus" /> 
+    <itemBody>
+        <qti-choice-interaction max-choices="1" min-choices="0" shuffle="false"
+            response-identifier="RESPONSE">
+            <qti-prompt data-catalog-idref="content4">Where did the crocodile come from?</qti-prompt>
+            <qti-simple-choice showHide="show" identifier="A" data-catalog-idref="content3" fixed="true"> the bathroom </qti-simple-choice>
+            <qti-simple-choice showHide="show" identifier="B" data-catalog-idref="content6" fixed="true"> a magazine cover </qti-simple-choice>
+            <qti-simple-choice showHide="show" identifier="C" data-catalog-idref="content7" fixed="true"> under the bed </qti-simple-choice>
+            <qti-simple-choice showHide="show" identifier="D" data-catalog-idref="content5" fixed="true"> a nearby river</qti-simple-choice>
+        </qti-choice-interaction>
+    </itemBody>
+    <qti-catalog-info>
+        <qti-catalog id="content4">
+            <qti-card support="braille">
+                <qti-html-content>Where did the crocodile come from?</qti-html-content>
+            </qti-card>
+            <qti-card support="spoken">
+                <qti-card-entry data-reading-type="computer-read-aloud">
+                    <qti-html-content>Where did the crocodile come from?</qti-html-content>
+                </qti-card-entry>
+            </qti-card>
+        </qti-catalog>
+        <qti-catalog id="content3">
+            <qti-card support="braille">
+                <qti-html-content>the bathroom</qti-html-content>
+            </qti-card>
+            <qti-card support="spoken">
+                <qti-card-entry data-reading-type="computer-read-aloud">
+                    <qti-html-content>the bathroom</qti-html-content>
+                </qti-card-entry>
+            </qti-card>
+        </qti-catalog>
+        <qti-catalog id="content6">
+            <qti-card support="braille">
+                <qti-html-content>a magazine cover</qti-html-content>
+            </qti-card>
+            <qti-card support="spoken">
+                <qti-card-entry data-reading-type="computer-read-aloud">
+                    <qti-html-content>a magazine cover</qti-html-content>
+                </qti-card-entry>
+            </qti-card>
+        </qti-catalog>
+        <qti-catalog id="content7">
+            <qti-card support="braille">
+                <qti-html-content>under the bed</qti-html-content>
+            </qti-card>
+            <qti-card support="spoken">
+                <qti-card-entry data-reading-type="computer-read-aloud">
+                    <qti-html-content>under the bed</qti-html-content>
+                </qti-card-entry>
+            </qti-card>
+        </qti-catalog>
+        <qti-catalog id="content5">
+            <qti-card support="braille">
+                <qti-html-content>a nearby river</qti-html-content>
+            </qti-card>
+            <qti-card support="spoken">
+                <qti-card-entry data-reading-type="computer-read-aloud">
+                    <qti-html-content>a nearby river</qti-html-content>
+                </qti-card-entry>
+            </qti-card>
+        </qti-catalog>
+    <qti-catalog-info>
+    <responseProcessing>
+        <responseCondition>
+            <responseIf>
+                <match>
+                    <variable identifier="RESPONSE"/>
+                    <correct identifier="RESPONSE"/>
+                </match>
+                <setOutcomeValue identifier="SCORE">
+                    <variable identifier="MAXSCORE"/>
+                </setOutcomeValue>
+            </responseIf>
+        </responseCondition>
+    </responseProcessing>
+</assessmentItem>

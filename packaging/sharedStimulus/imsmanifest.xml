@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest xmlns="http://www.imsglobal.org/xsd/qti/qtiv3p0/imscp_v1p1"> 
+    <metadata xmlns="http://ltsc.ieee.org/xsd/LOM">
+        <schema>QTIv3.0 Package</schema>
+        <schemaversion>1.0.0</schemaversion>
+        <imsmd:lom xmlns:imsmd="http://ltsc.ieee.org/xsd/LOM">
+            <imsmd:general>
+                <imsmd:identifier>
+                    <imsmd:catalog>urn:fdc:imsglobal.org:contentPackage:sharedStimulusExampleQTI3</imsmd:catalog>
+                </imsmd:identifier>
+                <imsmd:title>
+                    <imsmd:string language="en">Example of Packaging a shared stimulus in QTI 3.0</imsmd:string>
+                </imsmd:title>
+                <imsmd:language>en</imsmd:language>
+                <imsmd:description>
+                    <imsmd:string language="en">This package contains a passage
+                        packaged as a QTI 3 assessmentStimulus and referenced in
+                        the 3 items included in the package
+                    </imsmd:string>
+                </imsmd:description>
+            </imsmd:general>
+            <imsmd:lifeCycle>
+                <imsmd:version>
+                    <imsmd:string language="en">1.0</imsmd:string>
+                </imsmd:version>
+                <imsmd:status>
+                    <imsmd:source>LOMv1.0</imsmd:source>
+                    <imsmd:value>Final</imsmd:value>
+                </imsmd:status>
+            </imsmd:lifeCycle>
+            <imsmd:metaMetadata>
+                <imsmd:metadataschema>LOMv1.0</imsmd:metadataschema>
+                <imsmd:metadataschema>QTIv3.0</imsmd:metadataschema>
+                <imsmd:language>en</imsmd:language>
+            </imsmd:metaMetadata>
+    </metadata> 
+    <organizations/> 
+    <resources> 
+        <resource identifier="Stimulus1" type="imsqti_qtistimulus_xmlv3p0"
+            href="passages/unbelievableNight.xml"> 
+            <file href="passages/unbelievableNight.xml"/> 
+            <file href="passages/images/exemplarSection01_title.png"/> 
+            <file href="passages/images/exemplarSection01_croc.png"/> 
+            <file href= "passages/images/exemplarSection01_flamingos.png"/> 
+        </resource>    
+        <resource identifier="Item1" href="exemplar06.xml" type="imsqti_qtiitem_xmlv3p0"> 
+            <file href="exemplar06.xml"/> 
+            <dependency identifierref="Stimulus1"/> 
+        </resource> 
+        <resource identifier="Item2" href="exemplar04.xml" type="imsqti_qtiitem_xmlv3p0"> 
+            <file href="exemplar04.xml"/> 
+            <dependency identifierref="Stimulus1"/> 
+        </resource> 
+        <resource identifier="Item3" href="exemplar05.xml"
+                type="imsqti_qtiitem_xmlv3p0">
+            <file href="exemplar05.xml"/> 
+            <dependency identifierref="Stimulus1"/> 
+        </resource> 
+    </resources> 
+</manifest>
