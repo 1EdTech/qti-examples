@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cartridge_basiclti_link
+  xmlns="http://www.imsglobal.org/xsd/imslticc_v1p0"
+  xmlns:blti="http://www.imsglobal.org/xsd/imsbasiclti_v1p0"
+  xmlns:lticm="http://www.imsglobal.org/xsd/imslticm_v1p0"
+  xmlns:lticp="http://www.imsglobal.org/xsd/imslticp_v1p0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imslticc_v1p0 http://www.imsglobal.org/xsd/lti/ltiv1p0/imslticc_v1p0p1.xsd http://www.imsglobal.org/xsd/imsbasiclti_v1p0 http://www.imsglobal.org/xsd/lti/ltiv1p0/imsbasiclti_v1p0p1.xsd http://www.imsglobal.org/xsd/imslticm_v1p0 http://www.imsglobal.org/xsd/lti/ltiv1p0/imslticm_v1p0.xsd http://www.imsglobal.org/xsd/imslticp_v1p0 http://www.imsglobal.org/xsd/lti/ltiv1p0/imslticp_v1p0.xsd">
+  <blti:title>Student Edition</blti:title>
+  <blti:description>Luggage</blti:description>
+  <blti:custom>
+    <lticm:property name="item_id">item1</lticm:property>
+    <lticm:property name="video_id">af70229b-c371-48b3-8113-9a6607992dfa</lticm:property>
+    <lticm:property name="QTI_CONTEXT_candidateIdentifier">$User.id</lticm:property>
+    <lticm:property name="QTI_CONTEXT_environmentIdentifier">ELA-7</lticm:property>
+    <lticm:property name="username">$User.username</lticm:property>
+    <lticm:property name="username">$Person.sourcedId</lticm:property>
+    <lticm:property name="line_item">$LineItem.sourcedId</lticm:property>
+    <lticm:property name="section_id">$CourseSection.sourceSectionId</lticm:property>
+  </blti:custom>
+  <blti:extensions platform="my.lms.com">
+    <lticm:property name="keyname">value</lticm:property>
+  </blti:extensions>
+  <blti:extensions platform="IMSGlobal.org">
+    <lticm:property name="state">review</lticm:property>
+    <lticm:property name="item_state">{}</lticm:property>
+  </blti:extensions>
+  <blti:launch_url>http://localhost:8085/provider</blti:launch_url>
+  <blti:secure_launch_url>https://localhost:8085/provider</blti:secure_launch_url>
+  <blti:icon>url to an icon for this tool (optional)</blti:icon>
+
+  <blti:secure_icon>secure url to an icon for this tool (optional)></blti:secure_icon>
+  <blti:vendor>
+    <lticp:code>IMSGlobal.org</lticp:code>
+    <lticp:name>IMS</lticp:name>
+  </blti:vendor>
+  <cartridge_bundle identifierref="BLTI001_Bundle"/>
+  <cartridge_icon identifierref="BLTI001_Icon"/>
+</cartridge_basiclti_link>

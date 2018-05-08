@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest xmlns="http://www.imsglobal.org/xsd/qti/qtiv3p0/imscp_v1p1" xmlns:qti="http://www.imsglobal.org/xsd/apip/apipv1p0/qtimetadata/imsqti_v2p2" 
+          xmlns:imsmd="http://ltsc.ieee.org/xsd/LOM"> 
+    <metadata xmlns="http://ltsc.ieee.org/xsd/LOM">
+        <schema>QTIv3.0 Package</schema>
+        <schemaversion>1.0.0</schemaversion>
+        <imsmd:lom >
+            <imsmd:general>
+                <imsmd:identifier>
+                    <imsmd:catalog>urn:fdc:imsglobal.org:contentPackage:LTIExampleQTI3</imsmd:catalog>
+                </imsmd:identifier>
+                <imsmd:title>
+                    <imsmd:string language="en">Example of Packaging an item launched via LTI in a QTI content package</imsmd:string>
+                </imsmd:title>
+                <imsmd:language>en</imsmd:language>
+                <imsmd:description>
+                    <imsmd:string language="en">This package contains an LTI link to an item
+                    </imsmd:string>
+                </imsmd:description>
+            </imsmd:general>
+            <imsmd:lifeCycle>
+                <imsmd:version>
+                    <imsmd:string language="en">1.0</imsmd:string>
+                </imsmd:version>
+                <imsmd:status>
+                    <imsmd:source>LOMv1.0</imsmd:source>
+                    <imsmd:value>Final</imsmd:value>
+                </imsmd:status>
+            </imsmd:lifeCycle>
+            <imsmd:metaMetadata>
+                <imsmd:metadataschema>LOMv1.0</imsmd:metadataschema>
+                <imsmd:metadataschema>QTIv3.0</imsmd:metadataschema>
+                <imsmd:language>en</imsmd:language>
+            </imsmd:metaMetadata>
+    </metadata> 
+    <organizations/> 
+    <resources> 
+        <resource identifier="Stimulus1" type="imsbasiclti_xmlv1p3">
+            <metadata>
+                <imsmd:lom>
+                    <imsmd:technical>
+                        <imsmd:location>https://assessment.example.com/provider</imsmd:location>
+                    </imsmd:technical>         
+                </imsmd:lom>
+                <qti:qtiMetadata>
+                    <qti:composite>false</qti:composite>
+                    <qti:interactionType>mediaInteraction</qti:interactionType>
+                    <qti:toolName>Example Streaming Video Tool Provider</qti:toolName>
+                    <qti:toolVersion>1.0</qti:toolVersion>
+                    <qti:toolVendor>example.com</qti:toolVendor>
+                </qti:qtiMetadata>
+            </metadata>
+            <file href="links/streaming_video_experiment101.xml"/> 
+        </resource>    
+    </resources> 
+</manifest>
