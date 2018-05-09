@@ -82,7 +82,7 @@
                 </qti-card-entry>
             </qti-card>
         </qti-catalog>
-    <qti-catalog-info>
+    </qti-catalog-info>
     <responseProcessing>
         <responseCondition>
             <responseIf>

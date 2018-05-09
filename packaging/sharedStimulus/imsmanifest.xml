@@ -33,6 +33,7 @@
                 <imsmd:metadataschema>QTIv3.0</imsmd:metadataschema>
                 <imsmd:language>en</imsmd:language>
             </imsmd:metaMetadata>
+        </imsmd:lom>
     </metadata> 
     <organizations/> 
     <resources> 
