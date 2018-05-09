@@ -4,7 +4,7 @@
 	xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 http://www.imsglobal.org/xsd/qti/qtiv3p0/imsqti_itemv3p0_v1p0.xsd" 
 	identifier="exemplar04" title="Put the following sentences in order" 
         adaptive="false" timeDependent="false">
-    <responseDeclaration identifier="RESPONSE" baseType="identifier" cardinality="single">
+    <responseDeclaration identifier="RESPONSE" baseType="identifier" cardinality="ordered">
         <correctResponse>
             <value>fourthSentence</value>
         </correctResponse>
@@ -22,7 +22,7 @@
 
     <assessmentStimulusRef href="passages/unbelievableNight.xml" title="Common Stimulus" /> 
     <itemBody>
-        <qti-order-interaction max-choices="5" min-choices="0" shuffle="false"
+        <qti-order-interaction max-choices="5" min-choices="1" shuffle="false"
             orientation="vertical" response-identifier="RESPONSE">
             <qti-prompt data-catalog-idref="content2"> Put the following sentences in the order in which they happened
                 in the story. </qti-prompt>
