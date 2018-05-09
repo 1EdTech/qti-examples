@@ -20,7 +20,7 @@
         </defaultValue>
     </outcomeDeclaration>
 
-    <assessmentStimulusRef href="passages/unbelievableNight.xml" title="Common Stimulus" /> 
+    <assessmentStimulusRef identifier="Stimulus1" href="passages/unbelievableNight.xml" title="Common Stimulus" /> 
     <itemBody>
         <qti-order-interaction max-choices="5" min-choices="1" shuffle="false"
             orientation="vertical" response-identifier="RESPONSE">
