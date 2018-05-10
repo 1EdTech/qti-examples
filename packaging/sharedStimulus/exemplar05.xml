@@ -20,9 +20,9 @@
         </defaultValue>
     </outcomeDeclaration>
 
-    <assessmentStimulusRef href="passages/unbelievableNight.xml" title="Common Stimulus" /> 
+    <assessmentStimulusRef identifier="Stimulus1" href="passages/unbelievableNight.xml" title="Common Stimulus" /> 
     <itemBody>
-        <qti-choice-interaction max-choices="1" min-choices="0" shuffle="false"
+        <qti-choice-interaction max-choices="1" shuffle="false"
             response-identifier="RESPONSE">
             <qti-prompt data-catalog-idref="content4">Where did the crocodile come from?</qti-prompt>
             <qti-simple-choice showHide="show" identifier="A" data-catalog-idref="content3" fixed="true"> the bathroom </qti-simple-choice>
@@ -82,7 +82,7 @@
                 </qti-card-entry>
             </qti-card>
         </qti-catalog>
-    <qti-catalog-info>
+    </qti-catalog-info>
     <responseProcessing>
         <responseCondition>
             <responseIf>
