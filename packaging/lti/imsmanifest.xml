@@ -35,7 +35,7 @@
     </metadata> 
     <organizations/> 
     <resources> 
-        <resource identifier="Stimulus1" type="imsbasiclti_xmlv1p3">
+        <resource identifier="experiment101" type="imsbasiclti_xmlv1p3">
             <metadata>
                 <imsmd:lom>
                     <imsmd:technical>
