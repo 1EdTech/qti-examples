@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<manifest xmlns="http://www.imsglobal.org/xsd/qti/qtiv3p0/imscp_v1p1"> 
+<manifest xmlns="http://www.imsglobal.org/xsd/qti/qtiv3p0/imsqtiv3p0_imscpv1p2_v1p1" xmlns:lom="http://ltsc.ieee.org/xsd/LOM" schemaLocation="http://www.imsglobal.org/xsd/qti/qtiv3p0/imsqtiv3p0_imscpv1p2_v1p1 https://www.imsglobal.org/xsd/qti/qtiv3p0/imsqtiv3p0_imscpv1p2_v1p0.xsd http://ltsc.ieee.org/xsd/LOM https://www.imsglobal.org/xsd/imsmd_loose_v1p3p2.xsd"> 
     <metadata xmlns="http://ltsc.ieee.org/xsd/LOM">
         <schema>QTIv3.0 Package</schema>
         <schemaversion>1.0.0</schemaversion>
