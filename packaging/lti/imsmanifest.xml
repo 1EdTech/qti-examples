@@ -1,47 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<manifest xmlns="http://www.imsglobal.org/xsd/qti/qtiv3p0/imscp_v1p1" xmlns:qti="http://www.imsglobal.org/xsd/apip/apipv1p0/qtimetadata/imsqti_v2p2" 
-          xmlns:imsmd="http://ltsc.ieee.org/xsd/LOM"> 
-    <metadata xmlns="http://ltsc.ieee.org/xsd/LOM">
+<manifest 
+    xmlns="http://www.imsglobal.org/xsd/imscp_v1p3" xmlns:lom="http://ltsc.ieee.org/xsd/LOM" 
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+          xmlns:imsqti="http://www.imsglobal.org/xsd/imsqti_metadata_v2p2" 
+          xsi:schemaLocation="http://ltsc.ieee.org/xsd/LOM http://www.imsglobal.org/xsd/imsmd_loose_v1p3p2.xsd
+    http://www.imsglobal.org/xsd/imscp_v1p3 https://www.imsglobal.org/xsd/qti/qtiv3p0/qtiv3p0_imscpv1p3_v1p0.xsd
+    http://www.imsglobal.org/xsd/imsqti_metadata_v2p2 https://www.imsglobal.org/xsd/qti/qtiv2p2/imsqti_metadata_v2p2p1.xsd" 
+> 
+    <lom:metadata xmlns="http://ltsc.ieee.org/xsd/LOM">
         <schema>QTIv3.0 Package</schema>
         <schemaversion>1.0.0</schemaversion>
-        <imsmd:lom >
-            <imsmd:general>
-                <imsmd:identifier>
-                    <imsmd:catalog>urn:fdc:imsglobal.org:contentPackage:LTIExampleQTI3</imsmd:catalog>
-                </imsmd:identifier>
-                <imsmd:title>
-                    <imsmd:string language="en">Example of Packaging an item launched via LTI in a QTI content package</imsmd:string>
-                </imsmd:title>
-                <imsmd:language>en</imsmd:language>
-                <imsmd:description>
-                    <imsmd:string language="en">This package contains an LTI link to an item
-                    </imsmd:string>
-                </imsmd:description>
-            </imsmd:general>
-            <imsmd:lifeCycle>
-                <imsmd:version>
-                    <imsmd:string language="en">1.0</imsmd:string>
-                </imsmd:version>
-                <imsmd:status>
-                    <imsmd:source>LOMv1.0</imsmd:source>
-                    <imsmd:value>Final</imsmd:value>
-                </imsmd:status>
-            </imsmd:lifeCycle>
-            <imsmd:metaMetadata>
-                <imsmd:metadataschema>LOMv1.0</imsmd:metadataschema>
-                <imsmd:metadataschema>QTIv3.0</imsmd:metadataschema>
-                <imsmd:language>en</imsmd:language>
-            </imsmd:metaMetadata>
-    </metadata> 
+        <lom:lom>
+            <lom:general>
+                <lom:identifier>
+                    <lom:catalog>urn:fdc:imsglobal.org:contentPackage:LTIExampleQTI3</lom:catalog>
+                </lom:identifier>
+                <lom:title>
+                    <lom:string language="en">Example of Packaging an item launched via LTI in a QTI content package</lom:string>
+                </lom:title>
+                <lom:language>en</lom:language>
+                <lom:description>
+                    <lom:string language="en">This package contains an LTI link to an item
+                    </lom:string>
+                </lom:description>
+            </lom:general>
+            <lom:lifeCycle>
+                <lom:version>
+                    <lom:string language="en">1.0</lom:string>
+                </lom:version>
+                <lom:status>
+                    <lom:source>LOMv1.0</lom:source>
+                    <lom:value>Final</lom:value>
+                </lom:status>
+            </lom:lifeCycle>
+            <lom:metaMetadata>
+                <lom:metadataschema>LOMv1.0</lom:metadataschema>
+                <lom:metadataschema>QTIv3.0</lom:metadataschema>
+                <lom:language>en</lom:language>
+            </lom:metaMetadata>
+        </lom:lom>
+    </lom:metadata> 
     <organizations/> 
     <resources> 
         <resource identifier="experiment101" type="imsbasiclti_xmlv1p3">
             <metadata>
-                <imsmd:lom>
-                    <imsmd:technical>
-                        <imsmd:location>https://assessment.example.com/provider</imsmd:location>
-                    </imsmd:technical>         
-                </imsmd:lom>
+                <lom:lom>
+                    <lom:technical>
+                        <lom:location>https://assessment.example.com/provider</lom:location>
+                    </lom:technical>         
+                </lom:lom>
                 <qti:qtiMetadata>
                     <qti:composite>false</qti:composite>
                     <qti:interactionType>mediaInteraction</qti:interactionType>
