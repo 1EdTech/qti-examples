@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<manifest xmlns="http://www.imsglobal.org/xsd/imscp_v1p3" xmlns:imsmd="http://ltsc.ieee.org/xsd/LOM" 
+<manifest 
+    xmlns="http://www.imsglobal.org/xsd/imscp_v1p3" xmlns:lom="http://ltsc.ieee.org/xsd/LOM" 
           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
           xmlns:imsqti="http://www.imsglobal.org/xsd/imsqti_metadata_v2p2" 
           xsi:schemaLocation="http://ltsc.ieee.org/xsd/LOM http://www.imsglobal.org/xsd/imsmd_loose_v1p3p2.xsd
@@ -9,45 +10,45 @@
     <metadata>
         <schema>QTIv3.0 Package</schema>
         <schemaversion>1.0.0</schemaversion>
-        <imsmd:lom xmlns:imsmd="http://ltsc.ieee.org/xsd/LOM">
-            <imsmd:general>
-                <imsmd:identifier>
-                    <imsmd:catalog>urn:fdc:hmhco.com:contentPackage:tapToRevealExample</imsmd:catalog>
-                </imsmd:identifier>
-                <imsmd:title>
-                    <imsmd:string language="en">Example of Packaging a PCI in QTI 3.0</imsmd:string>
-                </imsmd:title>
-                <imsmd:language>en</imsmd:language>
-                <imsmd:description>
-                    <imsmd:string language="en">This package contains a multiple items
+        <lom:lom xmlns:lom="http://ltsc.ieee.org/xsd/LOM">
+            <lom:general>
+                <lom:identifier>
+                    <lom:catalog>urn:fdc:hmhco.com:contentPackage:tapToRevealExample</lom:catalog>
+                </lom:identifier>
+                <lom:title>
+                    <lom:string language="en">Example of Packaging a PCI in QTI 3.0</lom:string>
+                </lom:title>
+                <lom:language>en</lom:language>
+                <lom:description>
+                    <lom:string language="en">This package contains a multiple items
                         each using one or more PCIs and shows how the PCI AMD modules and
                         module resolution configuration files may be packaged.
-                    </imsmd:string>
-                </imsmd:description>
-            </imsmd:general>
-            <imsmd:lifeCycle>
-                <imsmd:version>
-                    <imsmd:string language="en">1.0</imsmd:string>
-                </imsmd:version>
-                <imsmd:status>
-                    <imsmd:source>LOMv1.0</imsmd:source>
-                    <imsmd:value>Final</imsmd:value>
-                </imsmd:status>
-            </imsmd:lifeCycle>
-            <imsmd:metaMetadata>
-                <imsmd:metadataschema>LOMv1.0</imsmd:metadataschema>
-                <imsmd:metadataschema>QTIv3.0</imsmd:metadataschema>
-                <imsmd:language>en</imsmd:language>
-            </imsmd:metaMetadata>
-            <imsmd:technical>
-                <imsmd:format>text/x-imsqti-item-xml</imsmd:format>
-            </imsmd:technical>
-            <imsmd:rights>
-                <imsmd:description>
-                    <imsmd:string language="en">(c) 2017,2018 Houghton Mifflin Harcourt. (9780544727984)</imsmd:string>
-                </imsmd:description>
-            </imsmd:rights>
-        </imsmd:lom>
+                    </lom:string>
+                </lom:description>
+            </lom:general>
+            <lom:lifeCycle>
+                <lom:version>
+                    <lom:string language="en">1.0</lom:string>
+                </lom:version>
+                <lom:status>
+                    <lom:source>LOMv1.0</lom:source>
+                    <lom:value>Final</lom:value>
+                </lom:status>
+            </lom:lifeCycle>
+            <lom:metaMetadata>
+                <lom:metadataschema>LOMv1.0</lom:metadataschema>
+                <lom:metadataschema>QTIv3.0</lom:metadataschema>
+                <lom:language>en</lom:language>
+            </lom:metaMetadata>
+            <lom:technical>
+                <lom:format>text/x-imsqti-item-xml</lom:format>
+            </lom:technical>
+            <lom:rights>
+                <lom:description>
+                    <lom:string language="en">(c) 2017,2018 Houghton Mifflin Harcourt. (9780544727984)</lom:string>
+                </lom:description>
+            </lom:rights>
+        </lom:lom>
     </metadata>
     <organizations />
     <resources>
@@ -97,7 +98,7 @@
             <file href="modules/shading_deps.js" />
             <file href="modules/lib/eve.js" />
             <file href="modules/lib/raphael.js"/>
-            <file href="modules/lib/jquery-2.2.2.min.js/>
+            <file href="modules/lib/jquery-2.2.2.min.js"/>
             <dependency identifierref="hmh_pci_module_resolution" />
             <!-- jQuery is loaded from a CDN, not referenced from the package.
                  No module resolution configuration file is referenced -->
