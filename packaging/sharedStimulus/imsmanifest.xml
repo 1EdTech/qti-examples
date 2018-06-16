@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<manifest xmlns="http://www.imsglobal.org/xsd/qti/qtiv3p0/imsqtiv3p0_imscpv1p2_v1p1" xmlns:lom="http://ltsc.ieee.org/xsd/LOM" schemaLocation="http://www.imsglobal.org/xsd/qti/qtiv3p0/imsqtiv3p0_imscpv1p2_v1p1 https://www.imsglobal.org/xsd/qti/qtiv3p0/imsqtiv3p0_imscpv1p2_v1p0.xsd http://ltsc.ieee.org/xsd/LOM https://www.imsglobal.org/xsd/imsmd_loose_v1p3p2.xsd"> 
+<manifest xmlns="http://www.imsglobal.org/xsd/qti/qtiv3p0/imsqtiv3p0_imscpv1p2_v1p1" xmlns:lom="http://ltsc.ieee.org/xsd/LOM" schemaLocation="http://www.imsglobal.org/xsd/qti/qtiv3p0/imsqtiv3p0_imscpv1p2_v1p1 https://www.imsglobal.org/xsd/qti/qtiv3p0/imsqtiv3p0_imscpv1p2_v1p0.xsd http://ltsc.ieee.org/xsd/LOM https://www.imsglobal.org/xsd/imsmd_loose_v1p3p2.xsd">
     <metadata xmlns="http://ltsc.ieee.org/xsd/LOM">
         <schema>QTIv3.0 Package</schema>
         <schemaversion>1.0.0</schemaversion>
@@ -36,24 +36,25 @@
         </imsmd:lom>
     </metadata> 
     <organizations/> 
-    <resources> 
+    <resources>
+        <!-- This shared stimulus is referenced by Item1, Item2, and Item3 -->
         <resource identifier="Stimulus1" type="imsqti_qtistimulus_xmlv3p0"
             href="passages/unbelievableNight.xml"> 
             <file href="passages/unbelievableNight.xml"/> 
             <file href="passages/images/exemplarSection01_title.png"/> 
             <file href="passages/images/exemplarSection01_croc.png"/> 
-            <file href= "passages/images/exemplarSection01_flamingos.png"/> 
+            <file href="passages/images/exemplarSection01_flamingos.png"/>
+            <file href="passages/stylesheets/unbelievable_night.css"/>
         </resource>    
         <resource identifier="Item1" href="exemplar06.xml" type="imsqti_qtiitem_xmlv3p0"> 
             <file href="exemplar06.xml"/> 
             <dependency identifierref="Stimulus1"/> 
         </resource> 
-        <resource identifier="Item2" href="exemplar04.xml" type="imsqti_qtiitem_xmlv3p0"> 
+        <resource identifier="Item2" type="imsqti_qtiitem_xmlv3p0" href="exemplar04.xml"> 
             <file href="exemplar04.xml"/> 
             <dependency identifierref="Stimulus1"/> 
         </resource> 
-        <resource identifier="Item3" href="exemplar05.xml"
-                type="imsqti_qtiitem_xmlv3p0">
+        <resource identifier="Item3" type="imsqti_qtiitem_xmlv3p0" href="exemplar05.xml">
             <file href="exemplar05.xml"/> 
             <dependency identifierref="Stimulus1"/> 
         </resource> 

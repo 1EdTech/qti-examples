@@ -20,21 +20,22 @@
         </defaultValue>
     </outcomeDeclaration>
 
-    <assessmentStimulusRef identifier="Stimulus1" href="passages/unbelievableNight.xml" title="Common Stimulus" /> 
+    <assessmentStimulusRef identifier="Stimulus1" href="passages/unbelievableNight.xml" title="Common Stimulus" />
+    
     <itemBody>
         <qti-order-interaction max-choices="5" min-choices="1" shuffle="false"
             orientation="vertical" response-identifier="RESPONSE">
             <qti-prompt data-catalog-idref="content2"> Put the following sentences in the order in which they happened
                 in the story. </qti-prompt>
-            <qti-simple-choice showHide="show" identifier="firstSentence" data-catalog-idref="content5" fixed="true">
+            <qti-simple-choice identifier="firstSentence" data-catalog-idref="content5">
                 Anina saw the crocodile. </qti-simple-choice>
-            <qti-simple-choice showHide="show" identifier="secondSentence" data-catalog-idref="content3" fixed="true">
+            <qti-simple-choice identifier="secondSentence" data-catalog-idref="content3">
                 The crocodile ate two flamingos. </qti-simple-choice>
-            <qti-simple-choice showHide="show" identifier="thirdSentence" data-catalog-idref="content6" fixed="true">
+            <qti-simple-choice identifier="thirdSentence" data-catalog-idref="content6">
                 Anina tried to explain the broken door to her parents. </qti-simple-choice>
-            <qti-simple-choice showHide="show" identifier="fourthSentence" data-catalog-idref="content8" fixed="true">
+            <qti-simple-choice identifier="fourthSentence" data-catalog-idref="content8">
                 Anina started to walk to the bathroom. </qti-simple-choice>
-            <qti-simple-choice showHide="show" identifier="fifthSentence" data-catalog-idref="content7" fixed="true">
+            <qti-simple-choice identifier="fifthSentence" data-catalog-idref="content7">
                 Anina ran to the bedroom and slammed the door. </qti-simple-choice>
         </qti-order-interaction>
     </itemBody>

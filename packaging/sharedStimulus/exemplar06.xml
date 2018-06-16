@@ -19,7 +19,8 @@
         </defaultValue>
     </outcomeDeclaration>
 
-    <assessmentStimulusRef identifier="Stimulus1" href="passages/unbelievableNight.xml" title="Common Stimulus" /> 
+    <assessmentStimulusRef identifier="Stimulus1" href="passages/unbelievableNight.xml" title="Common Stimulus" />
+    
     <itemBody>
         <qti-extended-text-interaction expected-length="300" expected-lines="4" format="plain"
             max-strings="1" min-strings="1" response-identifier="RESPONSE">

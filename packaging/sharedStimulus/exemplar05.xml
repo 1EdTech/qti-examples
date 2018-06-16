@@ -20,16 +20,30 @@
         </defaultValue>
     </outcomeDeclaration>
 
-    <assessmentStimulusRef identifier="Stimulus1" href="passages/unbelievableNight.xml" title="Common Stimulus" /> 
+    <assessmentStimulusRef identifier="Stimulus1" href="passages/unbelievableNight.xml" title="Common Stimulus" />
+    
     <itemBody>
-        <qti-choice-interaction max-choices="1" shuffle="false"
-            response-identifier="RESPONSE">
-            <qti-prompt data-catalog-idref="content4">Where did the crocodile come from?</qti-prompt>
-            <qti-simple-choice showHide="show" identifier="A" data-catalog-idref="content3" fixed="true"> the bathroom </qti-simple-choice>
-            <qti-simple-choice showHide="show" identifier="B" data-catalog-idref="content6" fixed="true"> a magazine cover </qti-simple-choice>
-            <qti-simple-choice showHide="show" identifier="C" data-catalog-idref="content7" fixed="true"> under the bed </qti-simple-choice>
-            <qti-simple-choice showHide="show" identifier="D" data-catalog-idref="content5" fixed="true"> a nearby river</qti-simple-choice>
-        </qti-choice-interaction>
+        <!-- Use QTI 3 Shared CSS vocabulary to make this a two-column layout where the stimulus is in the 
+             left column and the stem + interaction are in the right column. 
+        -->
+        <div class="qti-layout-row">
+            <div class="qti-layout-col6">
+            
+                 <!-- Be explicit about the placement of the stimulus in the itemBody.  Here, we place the
+                      stimulus in the left-most column of the two-column item layout by specifying a docking <div> with 
+                      data-stimulus-idref that refers to the identifier of the above assessmentStimulusRef.
+                 -->
+                 <div class="qti-shared-stimulus" data-stimulus-idref="Stimulus1"></div>
+                 
+            </div> <!-- /left col6 -->
+            
+            <div class="qti-layout-col6">
+                 <qti-choice-interaction max-choices="1" shuffle="false" response-identifier="RESPONSE">
+                      <qti-prompt data-catalog-idref="content4">Where did the crocodile come from?</qti-prompt>
+                 </qti-choice-interaction>
+            </div> <!-- /right col6 -->
+            
+        </div> <!-- /row -->
     </itemBody>
     <qti-catalog-info>
         <qti-catalog id="content4">
