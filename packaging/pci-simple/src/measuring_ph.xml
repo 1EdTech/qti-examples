@@ -19,7 +19,7 @@
   identifier="measuringPh" adaptive="false" timeDependent="false"
   title="Exploring the measurement of pH using red cabbage extract"
 >
-  <responseDeclaration identifier="RESPONSE" cardinality="single" baseType="identifier"></responseDeclaration>
+  <responseDeclaration identifier="RESPONSE" cardinality="single" baseType="integer"></responseDeclaration>
   <outcomeDeclaration identifier="SCORE" cardinality="single" baseType="float">
     <defaultValue>
       <value>1.0</value>
