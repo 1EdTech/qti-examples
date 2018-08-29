@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <assessmentStimulus 
-	xmlns="http://www.imsglobal.org/xsd/qti/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://www.imsglobal.org/xsd/qti/imsqti_stimulusv3p0_v1p0 https://www.imsglobal.org/xsd/qti/qtiv3p0/imsqti_asiv3p0_v1p0.xsd" 
-	identifier="Stimulus1" xml:lang="eng"> 
+	xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://www.imsglobal.org/xsd/qti/qtiv3p0/imsqti_stimulusv3p0_v1p0.xsd" 
+	identifier="Stimulus1" title="Common Stimulus" xml:lang="eng"> 
 
   <stylesheet href="stylesheets/unbelievable_night.css" type="text/css" />
 
@@ -17,7 +17,7 @@
       </div>
       <h2 class="passage-title">An Unbelievable Night</h2> 
       <p class="author-line">by Franz Hohler</p> 
-      <p><span data-catalog-idref="1234">Anina</span> was ten years old, 
+      <p><span data-catalog-idref="c1234">Anina</span> was ten years old, 
         so even half asleep she could find her way from her room to the bathroom. 
         The door to her room was usually open a crack, and the nightlight in the hallway 
         made it light enough to get to the bathroom past the telephone stand.
@@ -43,7 +43,7 @@
         whole body was dripping wet. Wherever the crocodile stepped, the carpet under it 
         became drenched.
       </p>
-      <img src="images/apip_VE_IP_05_croc.png" />
+      <img src="images/apip_VE_IP_05_croc.png" alt="Picture of a dripping wet crocodile crawling down a hallway."/>
       <p>
         The crocodile moved its head back and forth letting out a loud hissing sound. 
         Anina swallowed hard, looking at the crocodile s snout with its terribly long 
@@ -119,9 +119,9 @@
   </stimulusBody>
  
   <qti-catalog-info> 
-    <qti-catalog id="1234">
+    <qti-catalog id="c1234">
       <qti-card support="linguistic-guidance">
-        <html-content>Anina is the name of a girl.</html-content>
+        <qti-html-content>Anina is the name of a girl.</qti-html-content>
       </qti-card>
     </qti-catalog>
   </qti-catalog-info> 

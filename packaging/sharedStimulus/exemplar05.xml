@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <assessmentItem xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 http://www.imsglobal.org/xsd/qti/qtiv3p0/imsqti_itemv3p0_v1p0.xsd" 
+	xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://www.imsglobal.org/xsd/qti/qtiv3p0/imsqti_asiv3p0_v1p0.xsd" 
 	identifier="exemplar05" title="Where did the crocodile come from" 
         adaptive="false" timeDependent="false">
     <responseDeclaration identifier="RESPONSE" baseType="identifier" cardinality="single">
@@ -20,7 +20,7 @@
         </defaultValue>
     </outcomeDeclaration>
 
-    <assessmentStimulusRef identifier="Stimulus1" href="passages/unbelievableNight.xml" title="Common Stimulus" />
+    <assessmentStimulusRef identifier="Stimulus1" href="passages/unbelievableNight.xml"/>
     
     <itemBody>
         <!-- Use QTI 3 Shared CSS vocabulary to make this a two-column layout where the stimulus is in the 

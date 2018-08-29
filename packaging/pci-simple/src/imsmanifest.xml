@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest 
-    xmlns="http://www.imsglobal.org/xsd/qti/qtiv3p0/imsqtiv3p0_imscpv1p2_v1p1" 
+    xmlns="http://www.imsglobal.org/xsd/qti/qtiv3p0/imscp_v1p1" 
     xmlns:lom="http://ltsc.ieee.org/xsd/LOM" 
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-    xmlns:imsqti="http://www.imsglobal.org/xsd/imsqti_metadata_v2p2" 
+    xmlns:imsqti="http://www.imsglobal.org/xsd/imsqti_metadata_v3p0" 
     xsi:schemaLocation="http://ltsc.ieee.org/xsd/LOM https://www.imsglobal.org/xsd/imsmd_loose_v1p3p2.xsd
-    http://www.imsglobal.org/xsd/qti/qtiv3p0/imsqtiv3p0_imscpv1p2_v1p1 https://www.imsglobal.org/xsd/qti/qtiv3p0/imsqtiv3p0_csmv1p1_v1p0.xsd
-    http://www.imsglobal.org/xsd/imsqti_metadata_v2p2 https://www.imsglobal.org/xsd/qti/qtiv2p2/imsqti_metadata_v2p2p1.xsd" 
+    http://www.imsglobal.org/xsd/qti/qtiv3p0/imscp_v1p1 https://www.imsglobal.org/xsd/qti/qtiv3p0/imsqtiv3p0_imscpv1p2_v1p0.xsd
+    http://www.imsglobal.org/xsd/imsqti_metadata_v3p0 https://www.imsglobal.org/xsd/qti/qtiv3p0/imsqti_metadatav3p0_v1p0.xsd" 
     identifier="PCI_Example">
     <metadata>
-        <schema>QTIv3.0 Package</schema>
-        <schemaversion>1.0.0</schemaversion>
+        <schema>QTI Package</schema>
+        <schemaversion>3.0.0</schemaversion>
         <lom:lom xmlns:lom="http://ltsc.ieee.org/xsd/LOM">
             <lom:general>
                 <lom:identifier>

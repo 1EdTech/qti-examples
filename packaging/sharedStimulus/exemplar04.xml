@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <assessmentItem xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 http://www.imsglobal.org/xsd/qti/qtiv3p0/imsqti_itemv3p0_v1p0.xsd" 
+	xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://www.imsglobal.org/xsd/qti/qtiv3p0/imsqti_asiv3p0_v1p0.xsd" 
 	identifier="exemplar04" title="Put the following sentences in order" 
         adaptive="false" timeDependent="false">
     <responseDeclaration identifier="RESPONSE" baseType="identifier" cardinality="ordered">
@@ -20,7 +20,7 @@
         </defaultValue>
     </outcomeDeclaration>
 
-    <assessmentStimulusRef identifier="Stimulus1" href="passages/unbelievableNight.xml" title="Common Stimulus" />
+    <assessmentStimulusRef identifier="Stimulus1" href="passages/unbelievableNight.xml"/>
     
     <itemBody>
         <qti-order-interaction max-choices="5" min-choices="1" shuffle="false"
@@ -63,16 +63,6 @@
             </qti-card>
         </qti-catalog>
         <qti-catalog id="content3">
-            <qti-card support="braille">
-                <qti-html-content>The crocodile ate two flamingos.</qti-html-content>
-            </qti-card>
-            <qti-card support="spoken">
-                <qti-card-entry data-reading-type="computer-read-aloud">
-                    <qti-html-content>The crocodile ate two flamingos.</qti-html-content>
-                </qti-card-entry>
-            </qti-card>
-        </qti-catalog>
-        <qti-catalog id="content8">
             <qti-card support="braille">
                 <qti-html-content>The crocodile ate two flamingos.</qti-html-content>
             </qti-card>

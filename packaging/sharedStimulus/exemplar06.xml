@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <assessmentItem xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xmlns:ssml="http://www.w3.org/2010/10/synthesis"
-	xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 http://www.imsglobal.org/xsd/qti/qtiv3p0/imsqti_itemv3p0_v1p0.xsd 
+        xmlns:ssml="http://www.w3.org/2001/10/synthesis"
+	xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://www.imsglobal.org/xsd/qti/qtiv3p0/imsqti_asiv3p0_v1p0.xsd 
             http://www.w3.org/2001/10/synthesis http://www.w3.org/TR/speech-synthesis11/synthesis.xsd" 
 	identifier="exemplar06" title="Why did Anina call the flamingos" 
         adaptive="false" timeDependent="false">
@@ -19,7 +19,7 @@
         </defaultValue>
     </outcomeDeclaration>
 
-    <assessmentStimulusRef identifier="Stimulus1" href="passages/unbelievableNight.xml" title="Common Stimulus" />
+    <assessmentStimulusRef identifier="Stimulus1" href="passages/unbelievableNight.xml"/>
     
     <itemBody>
         <qti-extended-text-interaction expected-length="300" expected-lines="4" format="plain"
