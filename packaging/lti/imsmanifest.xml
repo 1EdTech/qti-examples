@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest 
-    xmlns="http://www.imsglobal.org/xsd/imscp_v1p3" xmlns:lom="http://ltsc.ieee.org/xsd/LOM" 
+    xmlns="http://www.imsglobal.org/xsd/qti/qtiv3p0/imscp_v1p1" 
+    xmlns:lom="http://ltsc.ieee.org/xsd/LOM" 
           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-          xmlns:imsqti="http://www.imsglobal.org/xsd/imsqti_metadata_v2p2" 
-          xsi:schemaLocation="http://ltsc.ieee.org/xsd/LOM http://www.imsglobal.org/xsd/imsmd_loose_v1p3p2.xsd
-    http://www.imsglobal.org/xsd/imscp_v1p3 https://www.imsglobal.org/xsd/qti/qtiv3p0/qtiv3p0_imscpv1p3_v1p0.xsd
-    http://www.imsglobal.org/xsd/imsqti_metadata_v2p2 https://www.imsglobal.org/xsd/qti/qtiv2p2/imsqti_metadata_v2p2p1.xsd" 
-> 
-    <lom:metadata xmlns="http://ltsc.ieee.org/xsd/LOM">
-        <schema>QTIv3.0 Package</schema>
-        <schemaversion>1.0.0</schemaversion>
-        <lom:lom>
+    xmlns:imsqti="http://www.imsglobal.org/xsd/imsqti_metadata_v3p0" 
+    xsi:schemaLocation="http://ltsc.ieee.org/xsd/LOM https://www.imsglobal.org/xsd/imsmd_loose_v1p3p2.xsd
+    http://www.imsglobal.org/xsd/qti/qtiv3p0/imscp_v1p1 https://www.imsglobal.org/xsd/qti/qtiv3p0/imsqtiv3p0_imscpv1p2_v1p0.xsd
+    http://www.imsglobal.org/xsd/imsqti_metadata_v3p0 https://www.imsglobal.org/xsd/qti/qtiv3p0/imsqti_metadatav3p0_v1p0.xsd" 
+          identifier="PCI_Example">
+    <metadata>
+        <schema>QTI Package</schema>
+        <schemaversion>3.0.0</schemaversion>
+        <lom:lom xmlns:lom="http://ltsc.ieee.org/xsd/LOM">
             <lom:general>
                 <lom:identifier>
                     <lom:catalog>urn:fdc:imsglobal.org:contentPackage:LTIExampleQTI3</lom:catalog>
@@ -39,23 +40,23 @@
                 <lom:language>en</lom:language>
             </lom:metaMetadata>
         </lom:lom>
-    </lom:metadata> 
+    </metadata> 
     <organizations/> 
     <resources> 
-        <resource identifier="experiment101" type="imsbasiclti_xmlv1p3">
+        <resource identifier="experiment101" type="imslti_xmlv1p1">
             <metadata>
                 <lom:lom>
                     <lom:technical>
                         <lom:location>https://assessment.example.com/provider</lom:location>
                     </lom:technical>         
                 </lom:lom>
-                <qti:qtiMetadata>
-                    <qti:composite>false</qti:composite>
-                    <qti:interactionType>mediaInteraction</qti:interactionType>
-                    <qti:toolName>Example Streaming Video Tool Provider</qti:toolName>
-                    <qti:toolVersion>1.0</qti:toolVersion>
-                    <qti:toolVendor>example.com</qti:toolVendor>
-                </qti:qtiMetadata>
+                <imsqti:qtiMetadata>
+                    <imsqti:composite>false</imsqti:composite>
+                    <imsqti:interactionType>mediaInteraction</imsqti:interactionType>
+                    <imsqti:toolName>Example Streaming Video Tool Provider</imsqti:toolName>
+                    <imsqti:toolVersion>1.0</imsqti:toolVersion>
+                    <imsqti:toolVendor>example.com</imsqti:toolVendor>
+                </imsqti:qtiMetadata>
             </metadata>
             <file href="links/streaming_video_experiment101.xml"/> 
         </resource>    
