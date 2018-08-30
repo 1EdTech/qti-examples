@@ -17,7 +17,7 @@
 <assessmentItem
   xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 http://www.imsglobal.org/xsd/qti/qtiv3p0/imsqti_asiv3p0_v1p0.xsd"
+  xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://www.imsglobal.org/xsd/qti/qtiv3p0/imsqti_asiv3p0_v1p0.xsd"
   identifier="fractions-primary-configuration"
   title="Simple Shaded Grid Interaction this time with a primary-configuration"
   adaptive="false"
@@ -38,7 +38,7 @@
     </defaultValue>
   </outcomeDeclaration>
   <itemBody>
-    <span>
+    <div>
       Mary is saving to buy a birthday present for her mother. 
       Every week she counts the money she has saved into piles of $5. 
       At the end of the first week Mary had saved $10 and was planning to
@@ -48,7 +48,7 @@
       for every $5 saved and a target of $30.
       <p> </p>
       
-    <qti-portable-custom-interaction custom-interaction-type-identifier="urn:fdc:hmhco.com:pci:shading"
+    <qti-portable-custom-interaction custom-interaction-type-identifier="urn-fdc-hmhco.com-pci-shading"
         response-identifier="EXAMPLE"
         data-controls="none" data-render="grid" data-selected="0.0,1.0" data-selected_color="blue"
         data-unselected_color="white" data-dimension1_initial="3" data-dimension2_initial="2" 
@@ -73,7 +73,7 @@
       fraction of the chart representing the amount saved in two weeks.</p>
       
       
-    <qti-portable-custom-interaction custom-interaction-type-identifier="urn:fdc:hmhco.com:pci:shading" 
+    <qti-portable-custom-interaction custom-interaction-type-identifier="urn-fdc-hmhco.com-pci-shading" 
         module="shadingD"
         response-identifier="RESPONSE"
         data-controls="full" data-render="grid" data-selected_color="blue"
@@ -82,7 +82,7 @@
         <qti-interaction-markup>
         </qti-interaction-markup>
     </qti-portable-custom-interaction>
-    </span>
+    </div>
   </itemBody>
   <responseProcessing template="http://www.imsglobal.org/question/qti_v2p1/rptemplates/match_correct"/>
 </assessmentItem>

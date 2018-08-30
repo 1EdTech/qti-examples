@@ -14,8 +14,8 @@
  See the License for the specific language governing permissions and
  limitations under the License.
 -->
-<assessmentItem xmlns="http://www.imsglobal.org/xsd/qti/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://www.imsglobal.org/xsd/qti/imsqti_itemv3p0_v1p0 https://www.imsglobal.org/xsd/qti/qtiv3p0/imsqti_asiv3p0_v1p0.xsd"
+<assessmentItem xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://www.imsglobal.org/xsd/qti/qtiv3p0/imsqti_asiv3p0_v1p0.xsd"
   identifier="measuringPh" adaptive="false" timeDependent="false"
   title="Exploring the measurement of pH using red cabbage extract"
 >
@@ -32,17 +32,17 @@
             is an acid or a base? </p>
     
         <qti-portable-custom-interaction response-identifier="RESPONSE" module="tap"
-            custom-interaction-type-identifier="urn:fdc:hmhco.com:pci:tapToReveal"
+            custom-interaction-type-identifier="urn-fdc-hmhco.com-pci-tapToReveal"
             class="hmh-tap-border-rounded"
             data-toggle="true" data-tap-message="Tap to reveal the color of the solution"
         >
             <qti-interaction-markup>
                 <section class="border">
-                    <qti-prompt>
+                    <div class="qti-prompt">
                         <p>Add 30ml of red cabbage solution to 100ml of each of the solutions below.</p>
                         <p>Observe the color change.</p>
                         <p>Click to see if your solution became the expected color.</p>
-                    </qti-prompt>
+                    </div>
                     <div role="grid">
                         <div role="row">
                             <figure role="gridcell">

@@ -1,26 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest 
-    xmlns="http://www.imsglobal.org/xsd/imscp_v1p3" xmlns:lom="http://ltsc.ieee.org/xsd/LOM" 
+    xmlns="http://www.imsglobal.org/xsd/qti/qtiv3p0/imscp_v1p1" 
+    xmlns:lom="http://ltsc.ieee.org/xsd/LOM" 
           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-          xmlns:imsqti="http://www.imsglobal.org/xsd/imsqti_metadata_v2p2" 
-          xsi:schemaLocation="http://ltsc.ieee.org/xsd/LOM http://www.imsglobal.org/xsd/imsmd_loose_v1p3p2.xsd
-    http://www.imsglobal.org/xsd/imscp_v1p3 https://www.imsglobal.org/xsd/qti/qtiv3p0/qtiv3p0_imscpv1p3_v1p0.xsd
-    http://www.imsglobal.org/xsd/imsqti_metadata_v2p2 https://www.imsglobal.org/xsd/qti/qtiv2p2/imsqti_metadata_v2p2p1.xsd" 
+    xmlns:imsqti="http://www.imsglobal.org/xsd/imsqti_metadata_v3p0" 
+    xsi:schemaLocation="http://ltsc.ieee.org/xsd/LOM https://www.imsglobal.org/xsd/imsmd_loose_v1p3p2.xsd
+    http://www.imsglobal.org/xsd/qti/qtiv3p0/imscp_v1p1 https://www.imsglobal.org/xsd/qti/qtiv3p0/imsqtiv3p0_imscpv1p2_v1p0.xsd
+    http://www.imsglobal.org/xsd/imsqti_metadata_v3p0 https://www.imsglobal.org/xsd/qti/qtiv3p0/imsqti_metadatav3p0_v1p0.xsd" 
           identifier="PCI_Example">
     <metadata>
-        <schema>QTIv3.0 Package</schema>
-        <schemaversion>1.0.0</schemaversion>
+        <schema>QTI Package</schema>
+        <schemaversion>3.0.0</schemaversion>
         <lom:lom xmlns:lom="http://ltsc.ieee.org/xsd/LOM">
             <lom:general>
                 <lom:identifier>
-                    <lom:catalog>urn:fdc:hmhco.com:contentPackage:tapToRevealExample</lom:catalog>
+                    <lom:catalog>
+                        urn:fdc:hmhco.com:contentPackage:tapToRevealExample
+                    </lom:catalog>
                 </lom:identifier>
                 <lom:title>
-                    <lom:string language="en">Example of Packaging a PCI in QTI 3.0</lom:string>
+                    <lom:string language="en">
+                        Example of Packaging a PCI in QTI 3.0
+                    </lom:string>
                 </lom:title>
                 <lom:language>en</lom:language>
                 <lom:description>
-                    <lom:string language="en">This package contains a multiple items
+                    <lom:string language="en">This package contains multiple items
                         each using one or more PCIs and shows how the PCI AMD modules and
                         module resolution configuration files may be packaged.
                     </lom:string>
@@ -51,6 +56,7 @@
         </lom:lom>
     </metadata>
     <organizations />
+
     <resources>
         <resource type="imsqti_item_xmlv3p0" identifier="measuringPh" href="measuring_ph.xml">
             <file href="measuring_ph.xml" />
