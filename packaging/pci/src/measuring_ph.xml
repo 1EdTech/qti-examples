@@ -14,18 +14,18 @@
  See the License for the specific language governing permissions and
  limitations under the License.
 -->
-<assessmentItem xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://www.imsglobal.org/xsd/qti/qtiv3p0/imsqti_asiv3p0_v1p0.xsd"
-  identifier="measuringPh" adaptive="false" timeDependent="false"
+  identifier="measuringPh" adaptive="false" time-dependent="false"
   title="Exploring the measurement of pH using red cabbage extract"
 >
-  <responseDeclaration identifier="RESPONSE" cardinality="single" baseType="integer"></responseDeclaration>
-  <outcomeDeclaration identifier="SCORE" cardinality="single" baseType="float">
-    <defaultValue>
-      <value>1.0</value>
-    </defaultValue>
-  </outcomeDeclaration>
-  <itemBody>
+  <qti-response-declaration identifier="RESPONSE" cardinality="single" base-type="integer"></qti-response-declaration>
+  <qti-outcome-declaration identifier="SCORE" cardinality="single" base-type="float">
+    <qti-default-value>
+      <qti-value>1.0</qti-value>
+    </qti-default-value>
+  </qti-outcome-declaration>
+  <qti-item-body>
     <div>
         <h1>Measuring pH</h1>
         <p>Did you know that red cabbage juice can be used to determine if a liquid
@@ -69,5 +69,5 @@
             </qti-interaction-markup>
         </qti-portable-custom-interaction>      
     </div>
- </itemBody>
-</assessmentItem>
+ </qti-item-body>
+</qti-assessment-item>
