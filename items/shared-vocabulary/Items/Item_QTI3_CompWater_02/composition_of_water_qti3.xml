@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 http://www.imsglobal.org/xsd/qti/qtiv3p0/imsqti_itemv3p0_v1p0.xsd" identifier="qti3-choice-multiple-02" title="Composition of Water qti3 - stacking / orientation options" adaptive="false" time-dependent="false">
+<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://www.imsglobal.org/xsd/qti/qtiv3p0/imsqti_asiv3p0_v1p0.xsd" identifier="qti3-choice-multiple-02" title="Composition of Water qti3 - stacking / orientation options" adaptive="false" time-dependent="false">
 	<qti-response-declaration identifier="RESPONSE1" cardinality="multiple" base-type="identifier"/>
 	<qti-response-declaration identifier="RESPONSE2" cardinality="multiple" base-type="identifier"/>
 	<qti-response-declaration identifier="RESPONSE3" cardinality="multiple" base-type="identifier"/>
