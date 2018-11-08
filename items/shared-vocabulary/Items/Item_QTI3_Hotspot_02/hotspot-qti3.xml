@@ -17,6 +17,7 @@
 
   <qti-outcome-declaration base-type="float" cardinality="single" identifier="SCORE"/>
   <qti-item-body>
+    <div>
     <div class="row">
       <div class="span6">
       
@@ -104,6 +105,6 @@
 
       </div>
     </div>
-    
+    </div>
   </qti-item-body>
 </qti-assessment-item>
