@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-                     xsi:schema-location="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 http://www.imsglobal.org/xsd/qti/qtiv3p0/imsqti_itemv3p0_v1p0.xsd" identifier="qti3-graphic-gap-match-03" title="Graphic Gap Match 3 - QTI3" adaptive="false" time-dependent="false">
+                     xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 http://www.imsglobal.org/xsd/qti/qtiv3p0/imsqti_itemv3p0_v1p0.xsd" identifier="qti3-graphic-gap-match-03" title="Graphic Gap Match 3 - QTI3" adaptive="false" time-dependent="false">
   <qti-response-declaration base-type="directedPair" cardinality="multiple" identifier="RESPONSE1">
     <qti-correct-response>
       <qti-value>DraggerD B</qti-value>
