@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<assessmentItem xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0"
+<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://www.imsglobal.org/xsd/qti/qtiv3p0/imsqti_asiv3p0_v1p0.xsd" 
 	identifier="exemplar04" title="Put the following sentences in order" 
-        adaptive="false" timeDependent="false">
-    <responseDeclaration identifier="RESPONSE" baseType="identifier" cardinality="ordered">
-        <correctResponse>
-            <value>fourthSentence</value>
-        </correctResponse>
-    </responseDeclaration>
-    <outcomeDeclaration identifier="SCORE" cardinality="single" baseType="float">
-        <defaultValue>
-            <value>0</value>
-        </defaultValue>
-    </outcomeDeclaration>
-    <outcomeDeclaration identifier="MAXSCORE" cardinality="single" baseType="float">
-        <defaultValue>
-            <value>1</value>
-        </defaultValue>
-    </outcomeDeclaration>
+        adaptive="false" time-dependent="false">
+    <qti-response-declaration identifier="RESPONSE" base-type="identifier" cardinality="ordered">
+        <qti-correct-response>
+            <qti-value>fourthSentence</qti-value>
+        </qti-correct-response>
+    </qti-response-declaration>
+    <qti-outcome-declaration identifier="SCORE" cardinality="single" base-type="float">
+        <qti-default-value>
+            <qti-value>0</qti-value>
+        </qti-default-value>
+    </qti-outcome-declaration>
+    <qti-outcome-declaration identifier="MAXSCORE" cardinality="single" base-type="float">
+        <qti-default-value>
+            <qti-value>1</qti-value>
+        </qti-default-value>
+    </qti-outcome-declaration>
 
-    <assessmentStimulusRef identifier="Stimulus1" href="passages/unbelievableNight.xml"/>
+    <qti-assessment-stimulus-ref identifier="Stimulus1" href="passages/unbelievableNight.xml"/>
     
-    <itemBody>
+    <qti-item-body>
         <qti-order-interaction max-choices="5" min-choices="1" shuffle="false"
             orientation="vertical" response-identifier="RESPONSE">
             <qti-prompt data-catalog-idref="content2"> Put the following sentences in the order in which they happened
@@ -38,7 +38,7 @@
             <qti-simple-choice identifier="fifthSentence" data-catalog-idref="content7">
                 Anina ran to the bedroom and slammed the door. </qti-simple-choice>
         </qti-order-interaction>
-    </itemBody>
+    </qti-item-body>
     <qti-catalog-info>
         <qti-catalog id="content2">
             <qti-card support="braille">
@@ -103,17 +103,17 @@
             </qti-card>
         </qti-catalog>
     </qti-catalog-info>
-    <responseProcessing>
-        <responseCondition>
-            <responseIf>
-                <match>
-                    <variable identifier="RESPONSE"/>
-                    <correct identifier="RESPONSE"/>
-                </match>
-                <setOutcomeValue identifier="SCORE">
-                    <variable identifier="MAXSCORE"/>
-                </setOutcomeValue>
-            </responseIf>
-        </responseCondition>
-    </responseProcessing>
-</assessmentItem>
+    <qti-response-processing>
+        <qti-response-condition>
+            <qti-response-if>
+                <qti-match>
+                    <qti-variable identifier="RESPONSE"/>
+                    <qti-correct identifier="RESPONSE"/>
+                </qti-match>
+                <qti-set-outcome-value identifier="SCORE">
+                    <qti-variable identifier="MAXSCORE"/>
+                </qti-set-outcome-value>
+            </qti-response-if>
+        </qti-response-condition>
+    </qti-response-processing>
+</qti-assessment-item>

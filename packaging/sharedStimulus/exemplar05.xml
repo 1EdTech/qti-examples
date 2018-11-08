@@ -1,37 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<assessmentItem xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0"
+<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://www.imsglobal.org/xsd/qti/qtiv3p0/imsqti_asiv3p0_v1p0.xsd" 
 	identifier="exemplar05" title="Where did the crocodile come from" 
-        adaptive="false" timeDependent="false">
-    <responseDeclaration identifier="RESPONSE" baseType="identifier" cardinality="single">
-        <correctResponse>
-            <value>B</value>
-        </correctResponse>
-    </responseDeclaration>
-    <outcomeDeclaration identifier="SCORE" cardinality="single" baseType="float">
-        <defaultValue>
-            <value>0</value>
-        </defaultValue>
-    </outcomeDeclaration>
-    <outcomeDeclaration identifier="MAXSCORE" cardinality="single" baseType="float">
-        <defaultValue>
-            <value>1</value>
-        </defaultValue>
-    </outcomeDeclaration>
+        adaptive="false" time-dependent="false">
+    <qti-response-declaration identifier="RESPONSE" base-type="identifier" cardinality="single">
+        <qti-correct-response>
+            <qti-value>B</qti-value>
+        </qti-correct-response>
+    </qti-response-declaration>
+    <qti-outcome-declaration identifier="SCORE" cardinality="single" base-type="float">
+        <qti-default-value>
+            <qti-value>0</qti-value>
+        </qti-default-value>
+    </qti-outcome-declaration>
+    <qti-outcome-declaration identifier="MAXSCORE" cardinality="single" base-type="float">
+        <qti-default-value>
+            <qti-value>1</qti-value>
+        </qti-default-value>
+    </qti-outcome-declaration>
 
-    <assessmentStimulusRef identifier="Stimulus1" href="passages/unbelievableNight.xml"/>
+    <qti-assessment-stimulus-ref identifier="Stimulus1" href="passages/unbelievableNight.xml"/>
     
-    <itemBody>
+    <qti-item-body>
         <!-- Use QTI 3 Shared CSS vocabulary to make this a two-column layout where the stimulus is in the 
              left column and the stem + interaction are in the right column. 
         -->
         <div class="qti-layout-row">
             <div class="qti-layout-col6">
             
-                 <!-- Be explicit about the placement of the stimulus in the itemBody.  Here, we place the
+                 <!-- Be explicit about the placement of the stimulus in the qti-item-body.  Here, we place the
                       stimulus in the left-most column of the two-column item layout by specifying a docking <div> with 
-                      data-stimulus-idref that refers to the identifier of the above assessmentStimulusRef.
+                      data-stimulus-idref that refers to the identifier of the above qti-assessment-stimulus-ref.
                  -->
                  <div class="qti-shared-stimulus" data-stimulus-idref="Stimulus1"></div>
                  
@@ -48,7 +48,7 @@
             </div> <!-- /right col6 -->
             
         </div> <!-- /row -->
-    </itemBody>
+    </qti-item-body>
     <qti-catalog-info>
         <qti-catalog id="content4">
             <qti-card support="braille">
@@ -101,17 +101,17 @@
             </qti-card>
         </qti-catalog>
     </qti-catalog-info>
-    <responseProcessing>
-        <responseCondition>
-            <responseIf>
-                <match>
-                    <variable identifier="RESPONSE"/>
-                    <correct identifier="RESPONSE"/>
-                </match>
-                <setOutcomeValue identifier="SCORE">
-                    <variable identifier="MAXSCORE"/>
-                </setOutcomeValue>
-            </responseIf>
-        </responseCondition>
-    </responseProcessing>
-</assessmentItem>
+    <qti-response-processing>
+        <qti-response-condition>
+            <qti-response-if>
+                <qti-match>
+                    <qti-variable identifier="RESPONSE"/>
+                    <qti-correct identifier="RESPONSE"/>
+                </qti-match>
+                <qti-set-outcome-value identifier="SCORE">
+                    <qti-variable identifier="MAXSCORE"/>
+                </qti-set-outcome-value>
+            </qti-response-if>
+        </qti-response-condition>
+    </qti-response-processing>
+</qti-assessment-item>

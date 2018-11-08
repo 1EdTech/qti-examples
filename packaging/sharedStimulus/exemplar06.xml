@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<assessmentItem xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0"
+<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xmlns:ssml="http://www.w3.org/2001/10/synthesis"
 	xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://www.imsglobal.org/xsd/qti/qtiv3p0/imsqti_asiv3p0_v1p0.xsd 
             http://www.w3.org/2001/10/synthesis http://www.w3.org/TR/speech-synthesis11/synthesis.xsd" 
 	identifier="exemplar06" title="Why did Anina call the flamingos" 
-        adaptive="false" timeDependent="false">
-    <responseDeclaration identifier="RESPONSE" cardinality="single" baseType="string"/>
+        adaptive="false" time-dependent="false">
+    <qti-response-declaration identifier="RESPONSE" cardinality="single" base-type="string"/>
     
-    <outcomeDeclaration identifier="SCORE" cardinality="single" baseType="float">
-        <defaultValue>
-            <value>0</value>
-        </defaultValue>
-    </outcomeDeclaration>
-    <outcomeDeclaration identifier="MAXSCORE" cardinality="single" baseType="float">
-        <defaultValue>
-            <value>1</value>
-        </defaultValue>
-    </outcomeDeclaration>
+    <qti-outcome-declaration identifier="SCORE" cardinality="single" base-type="float">
+        <qti-default-value>
+            <qti-value>0</qti-value>
+        </qti-default-value>
+    </qti-outcome-declaration>
+    <qti-outcome-declaration identifier="MAXSCORE" cardinality="single" base-type="float">
+        <qti-default-value>
+            <qti-qti-value>1</qti-qti-value>
+        </qti-default-value>
+    </qti-outcome-declaration>
 
-    <assessmentStimulusRef identifier="Stimulus1" href="passages/unbelievableNight.xml"/>
+    <qti-assessment-stimulus-ref identifier="Stimulus1" href="passages/unbelievableNight.xml"/>
     
-    <itemBody>
+    <qti-item-body>
         <qti-extended-text-interaction expected-length="300" expected-lines="4" format="plain"
             max-strings="1" min-strings="1" response-identifier="RESPONSE">
             <qti-prompt data-catalog-idref="content3">Why did Anina call the flamingos?</qti-prompt>
         </qti-extended-text-interaction>
-    </itemBody>
+    </qti-item-body>
     <qti-catalog-info>
         <qti-catalog id="content3">
             <qti-card support="braille">
@@ -40,18 +40,18 @@
         </qti-catalog>
     </qti-catalog-info>
 
-    <responseProcessing>
-        <responseCondition>
-            <responseIf>
-                <match>
-                    <variable identifier="RESPONSE"/>
-                    <correct identifier="RESPONSE"/>
-                </match>
-                <setOutcomeValue identifier="SCORE">
-                    <variable identifier="MAXSCORE"/>
-                </setOutcomeValue>
-            </responseIf>
-        </responseCondition>
-    </responseProcessing>
-</assessmentItem>
+    <qti-response-processing>
+        <qti-response-condition>
+            <qti-response-if>
+                <qti-match>
+                    <qti-variable identifier="RESPONSE"/>
+                    <qti-correct identifier="RESPONSE"/>
+                </qti-match>
+                <qti-set-outcome-value identifier="SCORE">
+                    <qti-variable identifier="MAXSCORE"/>
+                </qti-set-outcome-value>
+            </qti-response-if>
+        </qti-response-condition>
+    </qti-response-processing>
+</qti-assessment-item>
 

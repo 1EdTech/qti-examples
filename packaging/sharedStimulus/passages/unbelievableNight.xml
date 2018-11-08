@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<assessmentStimulus 
+<qti-assessment-stimulus 
 	xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://www.imsglobal.org/xsd/qti/qtiv3p0/imsqti_stimulusv3p0_v1p0.xsd" 
 	identifier="Stimulus1" title="Common Stimulus" xml:lang="eng"> 
 
-  <stylesheet href="stylesheets/unbelievable_night.css" type="text/css" />
+  <qti-stylesheet href="stylesheets/unbelievable_night.css" type="text/css" />
 
-  <stimulusBody>
+  <qti-stimulus-body>
     <!-- Use this div  to constrain the styles in the injected stylesheet and
          avoid style collisions in the delivery platform. -->
     <div class="qti-shared-stimulus-wrapper">
@@ -116,7 +116,7 @@
         Published 2003 by Deutscher Taschenbuch Verlag, Munchen, Germany. Illustrations by Thomas Hoffmann.
       </p>
     </div> <!-- /stimulus-wrapper -->
-  </stimulusBody>
+  </qti-stimulus-body>
  
   <qti-catalog-info> 
     <qti-catalog id="c1234">
@@ -125,4 +125,4 @@
       </qti-card>
     </qti-catalog>
   </qti-catalog-info> 
-</assessmentStimulus>
+</qti-assessment-stimulus>
