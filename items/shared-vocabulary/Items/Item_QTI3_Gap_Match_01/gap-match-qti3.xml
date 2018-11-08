@@ -1,20 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<assessmentItem xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 http://www.imsglobal.org/xsd/qti/qtiv3p0/imsqti_itemv3p0_v1p0.xsd" 
-  identifier="qti3-gap-match-01" title="Gap Match 1 - QTI3" adaptive="false" timeDependent="false">
-  <responseDeclaration identifier="RESPONSE" cardinality="multiple" baseType="directedPair">
-    <correctResponse>
-      <value>W G1</value>
-      <value>Su G2</value>
-    </correctResponse>
-    <mapping defaultValue="-1" lowerBound="0">
-      <mapEntry mapKey="W G1" mappedValue="1"/>
-      <mapEntry mapKey="Su G2" mappedValue="2"/>
-    </mapping>
-  </responseDeclaration>
-  <outcomeDeclaration identifier="SCORE" cardinality="single" baseType="float"/>
-  <itemBody>
+<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schema-location="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 http://www.imsglobal.org/xsd/qti/qtiv3p0/imsqti_itemv3p0_v1p0.xsd" identifier="qti3-gap-match-01" title="Gap Match 1 - QTI3" adaptive="false" time-dependent="false">
+  <qti-response-declaration identifier="RESPONSE" cardinality="multiple" base-type="directedPair">
+    <qti-correct-response>
+      <qti-value>W G1</qti-value>
+      <qti-value>Su G2</qti-value>
+    </qti-correct-response>
+    <qti-mapping default-value="-1" lower-bound="0">
+      <qti-map-entry map-key="W G1" mapped-value="1"/>
+      <qti-map-entry map-key="Su G2" mapped-value="2"/>
+    </qti-mapping>
+  </qti-response-declaration>
+  <qti-outcome-declaration identifier="SCORE" cardinality="single" base-type="float"/>
+  <qti-item-body>
     <qti-gap-match-interaction response-identifier="RESPONSE">
       <qti-prompt>Identify the missing words in this famous quote from Shakespeare's Richard III.</qti-prompt>
       <qti-gap-text identifier="W" match-max="1">winter</qti-gap-text>
@@ -30,7 +27,6 @@
         </p>
       </blockquote>
     </qti-gap-match-interaction>
-  </itemBody>
-  <responseProcessing template="http://www.imsglobal.org/question/qti_v2p1/rptemplates/map_response"/>
-</assessmentItem>
-
+  </qti-item-body>
+  <qti-response-processing template="https://www.imsglobal.org/question/qti_v3p0/rptemplates/map_response.xml"/>
+</qti-assessment-item>

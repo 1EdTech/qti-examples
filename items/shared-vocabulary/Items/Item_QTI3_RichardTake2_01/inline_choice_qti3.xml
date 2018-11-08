@@ -1,25 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<assessmentItem xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 http://www.imsglobal.org/xsd/qti/qtiv3p0/imsqti_itemv3p0_v1p0.xsd" 
-  adaptive="false" identifier="qti3-inline-choice-01" timeDependent="false" title="Richard III (take 2) Inline Choice qti3">
-  <responseDeclaration baseType="identifier" cardinality="single" identifier="RESPONSE">
-    <correctResponse>
-      <value>Y</value>
-    </correctResponse>
-  </responseDeclaration>
-  <responseDeclaration baseType="identifier" cardinality="single" identifier="RESPONSE1"/>
-  <responseDeclaration baseType="identifier" cardinality="single" identifier="RESPONSE2"/>
-  <responseDeclaration baseType="identifier" cardinality="single" identifier="RESPONSE3"/>
-  <responseDeclaration baseType="identifier" cardinality="single" identifier="RESPONSE4"/>
-  <responseDeclaration baseType="identifier" cardinality="single" identifier="RESPONSE5"/>
-  <responseDeclaration baseType="identifier" cardinality="single" identifier="RESPONSE6"/>
-  <responseDeclaration baseType="identifier" cardinality="single" identifier="RESPONSE7"/>
-  <responseDeclaration baseType="identifier" cardinality="single" identifier="RESPONSE8"/>
-  <responseDeclaration baseType="identifier" cardinality="single" identifier="RESPONSE9"/>
-  <responseDeclaration baseType="identifier" cardinality="single" identifier="RESPONSE10"/>
-  <outcomeDeclaration baseType="float" cardinality="single" identifier="SCORE"/>
-  <itemBody>
+<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schema-location="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 http://www.imsglobal.org/xsd/qti/qtiv3p0/imsqti_itemv3p0_v1p0.xsd" adaptive="false" identifier="qti3-inline-choice-01" time-dependent="false" title="Richard III (take 2) Inline Choice qti3">
+  <qti-response-declaration base-type="identifier" cardinality="single" identifier="RESPONSE">
+    <qti-correct-response>
+      <qti-value>Y</qti-value>
+    </qti-correct-response>
+  </qti-response-declaration>
+  <qti-response-declaration base-type="identifier" cardinality="single" identifier="RESPONSE1"/>
+  <qti-response-declaration base-type="identifier" cardinality="single" identifier="RESPONSE2"/>
+  <qti-response-declaration base-type="identifier" cardinality="single" identifier="RESPONSE3"/>
+  <qti-response-declaration base-type="identifier" cardinality="single" identifier="RESPONSE4"/>
+  <qti-response-declaration base-type="identifier" cardinality="single" identifier="RESPONSE5"/>
+  <qti-response-declaration base-type="identifier" cardinality="single" identifier="RESPONSE6"/>
+  <qti-response-declaration base-type="identifier" cardinality="single" identifier="RESPONSE7"/>
+  <qti-response-declaration base-type="identifier" cardinality="single" identifier="RESPONSE8"/>
+  <qti-response-declaration base-type="identifier" cardinality="single" identifier="RESPONSE9"/>
+  <qti-response-declaration base-type="identifier" cardinality="single" identifier="RESPONSE10"/>
+  <qti-outcome-declaration base-type="float" cardinality="single" identifier="SCORE"/>
+  <qti-item-body>
     <p>Identify the missing word in this famous quote from Shakespeare's Richard III.</p>
     <blockquote>
       <p>Now is the winter of our discontent
@@ -90,7 +87,7 @@
       </qti-inline-choice-interaction></p>
       
     <p>
-      qti-input-width-10, data-prompt:Select an Answer<br />
+      qti-input-width-10, data-prompt:Select an Answer<br/>
       <math xmlns="http://www.w3.org/1998/Math/MathML">
         <mrow> <mn>14</mn> <mo class="sign">×</mo> <mrow> <mi>tan</mi> <mo>⁡</mo> <mfenced> <mrow> <mn>67</mn> </mrow> </mfenced> </mrow>
         </mrow> 
@@ -101,7 +98,7 @@
       </qti-inline-choice-interaction>      
     </p>
     
-    <br /><br />
+    <br/><br/>
     
-  </itemBody>
-</assessmentItem>
+  </qti-item-body>
+</qti-assessment-item>

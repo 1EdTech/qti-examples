@@ -1,29 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<assessmentItem xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 http://www.imsglobal.org/xsd/qti/qtiv3p0/imsqti_itemv3p0_v1p0.xsd" 
-	identifier="qti3-unattended-luggage-05" title="Unattended Luggage QTI3 - stacking / orientation options" adaptive="false" timeDependent="false">
-	<responseDeclaration identifier="RESPONSE1" cardinality="single" baseType="identifier"/>
-	<responseDeclaration identifier="RESPONSE2" cardinality="single" baseType="identifier"/>
-	<responseDeclaration identifier="RESPONSE3" cardinality="single" baseType="identifier"/>
-	<responseDeclaration identifier="RESPONSE4" cardinality="single" baseType="identifier"/>
-	<responseDeclaration identifier="RESPONSE5" cardinality="single" baseType="identifier"/>
-	<responseDeclaration identifier="RESPONSE6" cardinality="single" baseType="identifier"/>
-	<responseDeclaration identifier="RESPONSE7" cardinality="single" baseType="identifier"/>
-	<responseDeclaration identifier="RESPONSE8" cardinality="single" baseType="identifier"/>
-	<responseDeclaration identifier="RESPONSE9" cardinality="single" baseType="identifier"/>
-	<responseDeclaration identifier="RESPONSE10" cardinality="single" baseType="identifier"/>
-	<responseDeclaration identifier="RESPONSE11" cardinality="single" baseType="identifier"/>
-	<responseDeclaration identifier="RESPONSE12" cardinality="single" baseType="identifier"/>
-	<outcomeDeclaration identifier="SCORE" cardinality="single" baseType="float">
-		<defaultValue>
-			<value>0</value>
-		</defaultValue>
-	</outcomeDeclaration>
-	<itemBody>
+<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schema-location="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 http://www.imsglobal.org/xsd/qti/qtiv3p0/imsqti_itemv3p0_v1p0.xsd" identifier="qti3-unattended-luggage-05" title="Unattended Luggage QTI3 - stacking / orientation options" adaptive="false" time-dependent="false">
+	<qti-response-declaration identifier="RESPONSE1" cardinality="single" base-type="identifier"/>
+	<qti-response-declaration identifier="RESPONSE2" cardinality="single" base-type="identifier"/>
+	<qti-response-declaration identifier="RESPONSE3" cardinality="single" base-type="identifier"/>
+	<qti-response-declaration identifier="RESPONSE4" cardinality="single" base-type="identifier"/>
+	<qti-response-declaration identifier="RESPONSE5" cardinality="single" base-type="identifier"/>
+	<qti-response-declaration identifier="RESPONSE6" cardinality="single" base-type="identifier"/>
+	<qti-response-declaration identifier="RESPONSE7" cardinality="single" base-type="identifier"/>
+	<qti-response-declaration identifier="RESPONSE8" cardinality="single" base-type="identifier"/>
+	<qti-response-declaration identifier="RESPONSE9" cardinality="single" base-type="identifier"/>
+	<qti-response-declaration identifier="RESPONSE10" cardinality="single" base-type="identifier"/>
+	<qti-response-declaration identifier="RESPONSE11" cardinality="single" base-type="identifier"/>
+	<qti-response-declaration identifier="RESPONSE12" cardinality="single" base-type="identifier"/>
+	<qti-outcome-declaration identifier="SCORE" cardinality="single" base-type="float">
+		<qti-default-value>
+			<qti-value>0</qti-value>
+		</qti-default-value>
+	</qti-outcome-declaration>
+	<qti-item-body>
 		<p>Look at the text in the picture.  What does it say?</p>
 		<p>
-			<img src="images/sign.png" alt="NEVER LEAVE LUGGAGE UNATTENDED" />
+			<img src="images/sign.png" alt="NEVER LEAVE LUGGAGE UNATTENDED"/>
 		</p>
 
 		<qti-choice-interaction class="qti-choices-stacking-4" max-choices="1" shuffle="false" response-identifier="RESPONSE1">
@@ -122,5 +119,5 @@
 			<qti-simple-choice identifier="ChoiceD">It's a good idea to leave your luggage unattended.</qti-simple-choice>
 		</qti-choice-interaction>
 		
-	</itemBody>
-</assessmentItem>
+	</qti-item-body>
+</qti-assessment-item>

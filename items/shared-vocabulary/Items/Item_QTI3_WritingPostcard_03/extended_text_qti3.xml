@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<assessmentItem xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 http://www.imsglobal.org/xsd/qti/qtiv3p0/imsqti_itemv3p0_v1p0.xsd" 
-  adaptive="false" identifier="qti3-extended-text-03" timeDependent="false" title="Writing a Postcard 3 - Extended Text - qti3">
-  <responseDeclaration baseType="string" cardinality="single" identifier="RESPONSE"/>
-  <outcomeDeclaration baseType="float" cardinality="single" identifier="SCORE"/>
-  <itemBody>
+<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schema-location="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 http://www.imsglobal.org/xsd/qti/qtiv3p0/imsqti_itemv3p0_v1p0.xsd" adaptive="false" identifier="qti3-extended-text-03" time-dependent="false" title="Writing a Postcard 3 - Extended Text - qti3">
+  <qti-response-declaration base-type="string" cardinality="single" identifier="RESPONSE"/>
+  <qti-outcome-declaration base-type="float" cardinality="single" identifier="SCORE"/>
+  <qti-item-body>
     <div class="row">
       <div class="span8">
         <p>Read this postcard from your English pen-friend, Sam.</p>
@@ -22,11 +19,11 @@
         </div>
 
         <p>
-          <br />qti-expected-length=6<br />
-          patternmask=[0-9\.]+<br />
-          data-patternmask-message=Maximum of 6 digits or a decimal point permitted<br />
+          <br/>qti-expected-length=6<br/>
+          patternmask=[0-9\.]+<br/>
+          data-patternmask-message=Maximum of 6 digits or a decimal point permitted<br/>
         </p>
-        <qti-extended-text-interaction class="qti-height-lines-3" patternMask="[0-9\.]+" data-patternmask-message="Maximum of 6 digits or a decimal point permitted" format="plain"  expected-length="6" response-identifier="RESPONSE">
+        <qti-extended-text-interaction class="qti-height-lines-3" patternMask="[0-9\.]+" data-patternmask-message="Maximum of 6 digits or a decimal point permitted" format="plain" expected-length="6" response-identifier="RESPONSE">
           <qti-prompt>
             <p>
               <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>14</mn><mo class="sign">×</mo><mrow><mi>tan</mi><mo>⁡</mo><mfenced><mrow><mn>67</mn></mrow></mfenced></mrow></mrow></math> =
@@ -35,5 +32,5 @@
         </qti-extended-text-interaction>
       </div>
     </div>
-  </itemBody>
-</assessmentItem>
+  </qti-item-body>
+</qti-assessment-item>

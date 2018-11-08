@@ -1,19 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<assessmentItem xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 http://www.imsglobal.org/xsd/qti/qtiv3p0/imsqti_itemv3p0_v1p0.xsd" 
-	identifier="qti3-choice-multiple-02" title="Composition of Water qti3 - stacking / orientation options" adaptive="false" timeDependent="false">
-	<responseDeclaration identifier="RESPONSE1" cardinality="multiple" baseType="identifier"/>
-	<responseDeclaration identifier="RESPONSE2" cardinality="multiple" baseType="identifier"/>
-	<responseDeclaration identifier="RESPONSE3" cardinality="multiple" baseType="identifier"/>
-	<responseDeclaration identifier="RESPONSE4" cardinality="multiple" baseType="identifier"/>
-	<responseDeclaration identifier="RESPONSE5" cardinality="multiple" baseType="identifier"/>
-	<responseDeclaration identifier="RESPONSE6" cardinality="multiple" baseType="identifier"/>
-	<responseDeclaration identifier="RESPONSE7" cardinality="multiple" baseType="identifier"/>
-	<responseDeclaration identifier="RESPONSE8" cardinality="multiple" baseType="identifier"/>
-	<responseDeclaration identifier="RESPONSE9" cardinality="multiple" baseType="identifier"/>
-	<outcomeDeclaration identifier="SCORE" cardinality="single" baseType="float"/>
-	<itemBody>
+<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schema-location="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 http://www.imsglobal.org/xsd/qti/qtiv3p0/imsqti_itemv3p0_v1p0.xsd" identifier="qti3-choice-multiple-02" title="Composition of Water qti3 - stacking / orientation options" adaptive="false" time-dependent="false">
+	<qti-response-declaration identifier="RESPONSE1" cardinality="multiple" base-type="identifier"/>
+	<qti-response-declaration identifier="RESPONSE2" cardinality="multiple" base-type="identifier"/>
+	<qti-response-declaration identifier="RESPONSE3" cardinality="multiple" base-type="identifier"/>
+	<qti-response-declaration identifier="RESPONSE4" cardinality="multiple" base-type="identifier"/>
+	<qti-response-declaration identifier="RESPONSE5" cardinality="multiple" base-type="identifier"/>
+	<qti-response-declaration identifier="RESPONSE6" cardinality="multiple" base-type="identifier"/>
+	<qti-response-declaration identifier="RESPONSE7" cardinality="multiple" base-type="identifier"/>
+	<qti-response-declaration identifier="RESPONSE8" cardinality="multiple" base-type="identifier"/>
+	<qti-response-declaration identifier="RESPONSE9" cardinality="multiple" base-type="identifier"/>
+	<qti-outcome-declaration identifier="SCORE" cardinality="single" base-type="float"/>
+	<qti-item-body>
 		<p>Which of the following elements are used to form water?</p>
 		
 		<qti-choice-interaction class="qti-choices-stacking-5" response-identifier="RESPONSE1" shuffle="true" max-choices="0">
@@ -106,5 +103,5 @@
 			<qti-simple-choice identifier="Cl" fixed="false">Chlorine</qti-simple-choice>
 		</qti-choice-interaction>
 		
-	</itemBody>
-</assessmentItem>
+	</qti-item-body>
+</qti-assessment-item>

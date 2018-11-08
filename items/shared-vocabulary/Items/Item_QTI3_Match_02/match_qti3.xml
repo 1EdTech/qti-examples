@@ -1,70 +1,67 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<assessmentItem xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 http://www.imsglobal.org/xsd/qti/qtiv3p0/imsqti_itemv3p0_v1p0.xsd" 
-  identifier="qti3-match-02" timeDependent="false" title="Match Item 2 - QTI3" adaptive="false">
-  <responseDeclaration baseType="directedPair" cardinality="multiple" identifier="RESPONSE1">
-    <correctResponse>
-      <value>C R</value>
-      <value>D M</value>
-      <value>L M</value>
-      <value>P T</value>
-    </correctResponse>
-    <mapping defaultValue="0">
-      <mapEntry mapKey="C R" mappedValue="1"/>
-      <mapEntry mapKey="D M" mappedValue="0.5"/>
-      <mapEntry mapKey="L M" mappedValue="0.5"/>
-      <mapEntry mapKey="P T" mappedValue="1"/>
-    </mapping>
-  </responseDeclaration>
-  <responseDeclaration baseType="directedPair" cardinality="multiple" identifier="RESPONSE2">
-    <correctResponse>
-      <value>C R</value>
-      <value>D M</value>
-      <value>L M</value>
-      <value>P T</value>
-    </correctResponse>
-    <mapping defaultValue="0">
-      <mapEntry mapKey="C R" mappedValue="1"/>
-      <mapEntry mapKey="D M" mappedValue="0.5"/>
-      <mapEntry mapKey="L M" mappedValue="0.5"/>
-      <mapEntry mapKey="P T" mappedValue="1"/>
-    </mapping>
-  </responseDeclaration>
-  <responseDeclaration baseType="directedPair" cardinality="multiple" identifier="RESPONSE3">
-    <correctResponse>
-      <value>C R</value>
-      <value>D M</value>
-      <value>L M</value>
-      <value>P T</value>
-    </correctResponse>
-    <mapping defaultValue="0">
-      <mapEntry mapKey="C R" mappedValue="1"/>
-      <mapEntry mapKey="D M" mappedValue="0.5"/>
-      <mapEntry mapKey="L M" mappedValue="0.5"/>
-      <mapEntry mapKey="P T" mappedValue="1"/>
-    </mapping>
-  </responseDeclaration>
-  <responseDeclaration baseType="directedPair" cardinality="multiple" identifier="RESPONSE4">
-    <correctResponse>
-      <value>C R</value>
-      <value>D M</value>
-      <value>L M</value>
-      <value>P T</value>
-    </correctResponse>
-    <mapping defaultValue="0">
-      <mapEntry mapKey="C R" mappedValue="1"/>
-      <mapEntry mapKey="D M" mappedValue="0.5"/>
-      <mapEntry mapKey="L M" mappedValue="0.5"/>
-      <mapEntry mapKey="P T" mappedValue="1"/>
-    </mapping>
-  </responseDeclaration>  
-  <outcomeDeclaration baseType="float" cardinality="single" identifier="SCORE">
-    <defaultValue>
-      <value>0.0</value>
-    </defaultValue>
-  </outcomeDeclaration>
-  <itemBody>
+<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schema-location="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 http://www.imsglobal.org/xsd/qti/qtiv3p0/imsqti_itemv3p0_v1p0.xsd" identifier="qti3-match-02" time-dependent="false" title="Match Item 2 - QTI3" adaptive="false">
+  <qti-response-declaration base-type="directedPair" cardinality="multiple" identifier="RESPONSE1">
+    <qti-correct-response>
+      <qti-value>C R</qti-value>
+      <qti-value>D M</qti-value>
+      <qti-value>L M</qti-value>
+      <qti-value>P T</qti-value>
+    </qti-correct-response>
+    <qti-mapping default-value="0">
+      <qti-map-entry map-key="C R" mapped-value="1"/>
+      <qti-map-entry map-key="D M" mapped-value="0.5"/>
+      <qti-map-entry map-key="L M" mapped-value="0.5"/>
+      <qti-map-entry map-key="P T" mapped-value="1"/>
+    </qti-mapping>
+  </qti-response-declaration>
+  <qti-response-declaration base-type="directedPair" cardinality="multiple" identifier="RESPONSE2">
+    <qti-correct-response>
+      <qti-value>C R</qti-value>
+      <qti-value>D M</qti-value>
+      <qti-value>L M</qti-value>
+      <qti-value>P T</qti-value>
+    </qti-correct-response>
+    <qti-mapping default-value="0">
+      <qti-map-entry map-key="C R" mapped-value="1"/>
+      <qti-map-entry map-key="D M" mapped-value="0.5"/>
+      <qti-map-entry map-key="L M" mapped-value="0.5"/>
+      <qti-map-entry map-key="P T" mapped-value="1"/>
+    </qti-mapping>
+  </qti-response-declaration>
+  <qti-response-declaration base-type="directedPair" cardinality="multiple" identifier="RESPONSE3">
+    <qti-correct-response>
+      <qti-value>C R</qti-value>
+      <qti-value>D M</qti-value>
+      <qti-value>L M</qti-value>
+      <qti-value>P T</qti-value>
+    </qti-correct-response>
+    <qti-mapping default-value="0">
+      <qti-map-entry map-key="C R" mapped-value="1"/>
+      <qti-map-entry map-key="D M" mapped-value="0.5"/>
+      <qti-map-entry map-key="L M" mapped-value="0.5"/>
+      <qti-map-entry map-key="P T" mapped-value="1"/>
+    </qti-mapping>
+  </qti-response-declaration>
+  <qti-response-declaration base-type="directedPair" cardinality="multiple" identifier="RESPONSE4">
+    <qti-correct-response>
+      <qti-value>C R</qti-value>
+      <qti-value>D M</qti-value>
+      <qti-value>L M</qti-value>
+      <qti-value>P T</qti-value>
+    </qti-correct-response>
+    <qti-mapping default-value="0">
+      <qti-map-entry map-key="C R" mapped-value="1"/>
+      <qti-map-entry map-key="D M" mapped-value="0.5"/>
+      <qti-map-entry map-key="L M" mapped-value="0.5"/>
+      <qti-map-entry map-key="P T" mapped-value="1"/>
+    </qti-mapping>
+  </qti-response-declaration>  
+  <qti-outcome-declaration base-type="float" cardinality="single" identifier="SCORE">
+    <qti-default-value>
+      <qti-value>0.0</qti-value>
+    </qti-default-value>
+  </qti-outcome-declaration>
+  <qti-item-body>
 
     <p>
       Delivery systems may implement Match Interaction's in a <em>visual non-tabular</em> fashion.  When they do so, the shared 
@@ -136,5 +133,5 @@
       </qti-simple-match-set>
     </qti-match-interaction>
     
-  </itemBody>
-</assessmentItem>
+  </qti-item-body>
+</qti-assessment-item>

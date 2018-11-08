@@ -1,22 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<assessmentItem xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 http://www.imsglobal.org/xsd/qti/qtiv3p0/imsqti_itemv3p0_v1p0.xsd" 
-  identifier="qti3-hotspot-03" timeDependent="false" title="Composite UK Airports 3 - QTI3" adaptive="false">
-  <responseDeclaration baseType="identifier" cardinality="multiple" identifier="RESPONSE1">
-    <correctResponse>
-      <value>A</value>
-      <value>B</value>
-      <value>D</value>
-    </correctResponse>
-  </responseDeclaration>
-  <responseDeclaration baseType="identifier" cardinality="single" identifier="RESPONSE2">
-    <correctResponse>
-      <value>C</value>
-    </correctResponse>
-  </responseDeclaration>	
-  <outcomeDeclaration baseType="float" cardinality="single" identifier="SCORE"/>
-  <itemBody>
+<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schema-location="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 http://www.imsglobal.org/xsd/qti/qtiv3p0/imsqti_itemv3p0_v1p0.xsd" identifier="qti3-hotspot-03" time-dependent="false" title="Composite UK Airports 3 - QTI3" adaptive="false">
+  <qti-response-declaration base-type="identifier" cardinality="multiple" identifier="RESPONSE1">
+    <qti-correct-response>
+      <qti-value>A</qti-value>
+      <qti-value>B</qti-value>
+      <qti-value>D</qti-value>
+    </qti-correct-response>
+  </qti-response-declaration>
+  <qti-response-declaration base-type="identifier" cardinality="single" identifier="RESPONSE2">
+    <qti-correct-response>
+      <qti-value>C</qti-value>
+    </qti-correct-response>
+  </qti-response-declaration>	
+  <qti-outcome-declaration base-type="float" cardinality="single" identifier="SCORE"/>
+  <qti-item-body>
     <div class="row">
       <div class="span6">
       
@@ -34,10 +31,7 @@
           and data-min-selections-message</strong>
         </p>
         
-        <qti-hotspot-interaction class="" max-choices="3" min-choices="1" 
-          data-max-selections-message="You've chosen too many cities!" 
-          data-min-selections-message="Please choose at least one city."
-          response-identifier="RESPONSE1">
+        <qti-hotspot-interaction class="" max-choices="3" min-choices="1" data-max-selections-message="You've chosen too many cities!" data-min-selections-message="Please choose at least one city." response-identifier="RESPONSE1">
           <object data="ukair.png" height="280" type="image/png" width="206">UK Map</object>
           <qti-hotspot-choice coords="77,115,10" identifier="A" shape="circle"/>
           <qti-hotspot-choice coords="118,184,10" identifier="B" shape="circle"/>
@@ -47,5 +41,5 @@
         
       </div>
     </div>
-  </itemBody>
-</assessmentItem>
+  </qti-item-body>
+</qti-assessment-item>

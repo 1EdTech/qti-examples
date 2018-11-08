@@ -1,25 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<assessmentItem xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 http://www.imsglobal.org/xsd/qti/qtiv3p0/imsqti_itemv3p0_v1p0.xsd" 
-  identifier="qti3-hotspot-02" timeDependent="false" title="Composite UK Airports 2 - QTI3" adaptive="false">
-  <responseDeclaration baseType="identifier" cardinality="multiple" identifier="RESPONSE1">
-    <correctResponse>
-      <value>A</value>
-      <value>B</value>
-      <value>D</value>
-    </correctResponse>
-  </responseDeclaration>
-  <responseDeclaration baseType="identifier" cardinality="single" identifier="RESPONSE2">
-    <correctResponse>
-      <value>C</value>
-    </correctResponse>
-  </responseDeclaration>
-  <responseDeclaration baseType="identifier" cardinality="multiple" identifier="RESPONSE3" />
-  <responseDeclaration baseType="identifier" cardinality="multiple" identifier="RESPONSE4" />
+<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schema-location="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 http://www.imsglobal.org/xsd/qti/qtiv3p0/imsqti_itemv3p0_v1p0.xsd" identifier="qti3-hotspot-02" time-dependent="false" title="Composite UK Airports 2 - QTI3" adaptive="false">
+  <qti-response-declaration base-type="identifier" cardinality="multiple" identifier="RESPONSE1">
+    <qti-correct-response>
+      <qti-value>A</qti-value>
+      <qti-value>B</qti-value>
+      <qti-value>D</qti-value>
+    </qti-correct-response>
+  </qti-response-declaration>
+  <qti-response-declaration base-type="identifier" cardinality="single" identifier="RESPONSE2">
+    <qti-correct-response>
+      <qti-value>C</qti-value>
+    </qti-correct-response>
+  </qti-response-declaration>
+  <qti-response-declaration base-type="identifier" cardinality="multiple" identifier="RESPONSE3"/>
+  <qti-response-declaration base-type="identifier" cardinality="multiple" identifier="RESPONSE4"/>
 
-  <outcomeDeclaration baseType="float" cardinality="single" identifier="SCORE"/>
-  <itemBody>
+  <qti-outcome-declaration base-type="float" cardinality="single" identifier="SCORE"/>
+  <qti-item-body>
     <div class="row">
       <div class="span6">
       
@@ -63,7 +60,7 @@
       </div>
     </div>
     
-    <br /><br />
+    <br/><br/>
     
     <div class="row">
       <div class="span6">
@@ -108,5 +105,5 @@
       </div>
     </div>
     
-  </itemBody>
-</assessmentItem>
+  </qti-item-body>
+</qti-assessment-item>

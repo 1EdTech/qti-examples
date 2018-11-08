@@ -1,29 +1,26 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<assessmentItem xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 http://www.imsglobal.org/xsd/qti/qtiv3p0/imsqti_itemv3p0_v1p0.xsd" 
-  adaptive="false" identifier="qti3-text-entry-01" timeDependent="false" title="Richard III (take 3) Text Entry qti3">
-  <responseDeclaration baseType="string" cardinality="single" identifier="RESPONSE">
-    <correctResponse>
-      <value>York</value>
-    </correctResponse>
-    <mapping defaultValue="0">
-      <mapEntry mapKey="York" mappedValue="1"/>
-      <mapEntry mapKey="york" mappedValue="0.5"/>
-    </mapping>
-  </responseDeclaration>
-  <responseDeclaration baseType="string" cardinality="single" identifier="RESPONSE1"/>
-  <responseDeclaration baseType="string" cardinality="single" identifier="RESPONSE2"/>
-  <responseDeclaration baseType="string" cardinality="single" identifier="RESPONSE3"/>
-  <responseDeclaration baseType="string" cardinality="single" identifier="RESPONSE4"/>
-  <responseDeclaration baseType="string" cardinality="single" identifier="RESPONSE5"/>
-  <responseDeclaration baseType="string" cardinality="single" identifier="RESPONSE6"/>
-  <responseDeclaration baseType="string" cardinality="single" identifier="RESPONSE7"/>
-  <responseDeclaration baseType="string" cardinality="single" identifier="RESPONSE8"/>
-  <responseDeclaration baseType="string" cardinality="single" identifier="RESPONSE9"/>
-  <responseDeclaration baseType="string" cardinality="single" identifier="RESPONSE10"/>
-  <outcomeDeclaration baseType="float" cardinality="single" identifier="SCORE"/>
-  <itemBody>
+<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schema-location="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 http://www.imsglobal.org/xsd/qti/qtiv3p0/imsqti_itemv3p0_v1p0.xsd" adaptive="false" identifier="qti3-text-entry-01" time-dependent="false" title="Richard III (take 3) Text Entry qti3">
+  <qti-response-declaration base-type="string" cardinality="single" identifier="RESPONSE">
+    <qti-correct-response>
+      <qti-value>York</qti-value>
+    </qti-correct-response>
+    <qti-mapping default-value="0">
+      <qti-map-entry map-key="York" mapped-value="1"/>
+      <qti-map-entry map-key="york" mapped-value="0.5"/>
+    </qti-mapping>
+  </qti-response-declaration>
+  <qti-response-declaration base-type="string" cardinality="single" identifier="RESPONSE1"/>
+  <qti-response-declaration base-type="string" cardinality="single" identifier="RESPONSE2"/>
+  <qti-response-declaration base-type="string" cardinality="single" identifier="RESPONSE3"/>
+  <qti-response-declaration base-type="string" cardinality="single" identifier="RESPONSE4"/>
+  <qti-response-declaration base-type="string" cardinality="single" identifier="RESPONSE5"/>
+  <qti-response-declaration base-type="string" cardinality="single" identifier="RESPONSE6"/>
+  <qti-response-declaration base-type="string" cardinality="single" identifier="RESPONSE7"/>
+  <qti-response-declaration base-type="string" cardinality="single" identifier="RESPONSE8"/>
+  <qti-response-declaration base-type="string" cardinality="single" identifier="RESPONSE9"/>
+  <qti-response-declaration base-type="string" cardinality="single" identifier="RESPONSE10"/>
+  <qti-outcome-declaration base-type="float" cardinality="single" identifier="SCORE"/>
+  <qti-item-body>
     <p>Identify the missing word in this famous quote from Shakespeare's Richard III.</p>		
     <blockquote>
       <p>
@@ -44,11 +41,11 @@
     <p>qti-input-width-20: <qti-text-entry-interaction class="qti-input-width-20" expected-length="15" response-identifier="RESPONSE8"/></p>
     <p>qti-input-width-72: <qti-text-entry-interaction class="qti-input-width-72" expected-length="15" response-identifier="RESPONSE9"/></p>
     <p>
-      qti-input-width-6, patternmask=[0-9.]+, data-patternmask-message:<br />
+      qti-input-width-6, patternmask=[0-9.]+, data-patternmask-message:<br/>
       <math xmlns="http://www.w3.org/1998/Math/MathML">
         <mrow> <mn>14</mn> <mo class="sign">×</mo> <mrow> <mi>tan</mi> <mo>⁡</mo> <mfenced> <mrow> <mn>67</mn> </mrow> </mfenced> </mrow>
         </mrow> 
-      </math> = <textEntryInteraction class="qti-input-width-6" expectedLength="6" patternMask="[0-9\.]+" data-patternmask-message="Maximum of 6 digits or a decimal point permitted" responseIdentifier="RESPONSE10"/>
+      </math> = <qti-text-entry-interaction class="qti-input-width-6" expected-length="6" pattern-mask="[0-9\.]+" data-patternmask-message="Maximum of 6 digits or a decimal point permitted" response-identifier="RESPONSE10"/>
     </p>   
-  </itemBody>
-</assessmentItem>
+  </qti-item-body>
+</qti-assessment-item>

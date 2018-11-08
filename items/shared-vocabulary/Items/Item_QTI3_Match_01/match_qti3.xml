@@ -1,28 +1,25 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<assessmentItem xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 http://www.imsglobal.org/xsd/qti/qtiv3p0/imsqti_itemv3p0_v1p0.xsd" 
-  identifier="qti3-match-01" timeDependent="false" title="Match Item 1 - QTI3" adaptive="false">
-  <responseDeclaration baseType="directedPair" cardinality="multiple" identifier="RESPONSE">
-    <correctResponse>
-      <value>C R</value>
-      <value>D M</value>
-      <value>L M</value>
-      <value>P T</value>
-    </correctResponse>
-    <mapping defaultValue="0">
-      <mapEntry mapKey="C R" mappedValue="1"/>
-      <mapEntry mapKey="D M" mappedValue="0.5"/>
-      <mapEntry mapKey="L M" mappedValue="0.5"/>
-      <mapEntry mapKey="P T" mappedValue="1"/>
-    </mapping>
-  </responseDeclaration>
-  <outcomeDeclaration baseType="float" cardinality="single" identifier="SCORE">
-    <defaultValue>
-      <value>0.0</value>
-    </defaultValue>
-  </outcomeDeclaration>
-  <itemBody>
+<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schema-location="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 http://www.imsglobal.org/xsd/qti/qtiv3p0/imsqti_itemv3p0_v1p0.xsd" identifier="qti3-match-01" time-dependent="false" title="Match Item 1 - QTI3" adaptive="false">
+  <qti-response-declaration base-type="directedPair" cardinality="multiple" identifier="RESPONSE">
+    <qti-correct-response>
+      <qti-value>C R</qti-value>
+      <qti-value>D M</qti-value>
+      <qti-value>L M</qti-value>
+      <qti-value>P T</qti-value>
+    </qti-correct-response>
+    <qti-mapping default-value="0">
+      <qti-map-entry map-key="C R" mapped-value="1"/>
+      <qti-map-entry map-key="D M" mapped-value="0.5"/>
+      <qti-map-entry map-key="L M" mapped-value="0.5"/>
+      <qti-map-entry map-key="P T" mapped-value="1"/>
+    </qti-mapping>
+  </qti-response-declaration>
+  <qti-outcome-declaration base-type="float" cardinality="single" identifier="SCORE">
+    <qti-default-value>
+      <qti-value>0.0</qti-value>
+    </qti-default-value>
+  </qti-outcome-declaration>
+  <qti-item-body>
     <qti-match-interaction max-associations="4" response-identifier="RESPONSE" shuffle="false">
       <qti-prompt id="c">Match the following characters to the Shakespeare play they appeared in:</qti-prompt>
       <qti-simple-match-set>
@@ -37,22 +34,22 @@
         <qti-simple-associable-choice id="c7" identifier="T" match-max="4" aria-label="The Tempest">The Tempest</qti-simple-associable-choice>
       </qti-simple-match-set>
     </qti-match-interaction>
-  </itemBody>
-  <responseProcessing>
-    <responseCondition>
-      <responseIf>
-        <isNull>
-          <variable identifier="RESPONSE"/>
-        </isNull>
-        <setOutcomeValue identifier="SCORE">
-          <baseValue baseType="float">0.0</baseValue>
-        </setOutcomeValue>
-      </responseIf>
-      <responseElse>
-        <setOutcomeValue identifier="SCORE">
-          <mapResponse identifier="RESPONSE"/>
-        </setOutcomeValue>
-      </responseElse>
-    </responseCondition>
-  </responseProcessing>
-</assessmentItem>
+  </qti-item-body>
+  <qti-response-processing>
+    <qti-response-condition>
+      <qti-response-if>
+        <qti-is-null>
+          <qti-variable identifier="RESPONSE"/>
+        </qti-is-null>
+        <qti-set-outcome-value identifier="SCORE">
+          <qti-base-value base-type="float">0.0</qti-base-value>
+        </qti-set-outcome-value>
+      </qti-response-if>
+      <qti-response-else>
+        <qti-set-outcome-value identifier="SCORE">
+          <qti-map-response identifier="RESPONSE"/>
+        </qti-set-outcome-value>
+      </qti-response-else>
+    </qti-response-condition>
+  </qti-response-processing>
+</qti-assessment-item>
