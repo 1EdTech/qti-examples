@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest xmlns="http://www.imsglobal.org/xsd/qti/qtiv3p0/imscp_v1p1" xmlns:imsmd="http://ltsc.ieee.org/xsd/LOM" 
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:imsqti="http://www.imsglobal.org/xsd/imsqti_metadata_v3p0" 
+          identifier="MANIFEST-85D76736-6D19-9DC0-7C0B-57C31A9FD397" 
+          xsi:schemaLocation="http://www.imsglobal.org/xsd/qti/qtiv3p0/imscp_v1p1 https://www.imsglobal.org/xsd/qti/qtiv3p0/imsqtiv3p0_imscpv1p2_v1p0.xsd http://ltsc.ieee.org/xsd/LOM https://www.imsglobal.org/xsd/imsmd_loose_v1p3p2.xsd http://www.imsglobal.org/xsd/imsqti_metadata_v3p0 https://www.imsglobal.org/xsd/qti/qtiv3p0/imsqti_metadatav3p0_v1p0.xsd">
+    <metadata>
+        <schema>QTI Package</schema>
+        <schemaversion>3.0.0</schemaversion>
+        <imsmd:lom>
+            <imsmd:general>
+                <imsmd:title>
+                    <imsmd:string language="en">Example Contentpackage with QTI v3.0 items (qti-assessment-item) and
+                        a test (qti-assessment-test)</imsmd:string>
+                </imsmd:title>
+                <imsmd:language>en</imsmd:language>
+                <imsmd:description>
+                    <imsmd:string language="en">This is an example Contentpackage containing a
+                        number of QTI v3.0 items and a qti-assessment-test</imsmd:string>
+                </imsmd:description>
+            </imsmd:general>
+            <imsmd:lifeCycle>
+                <imsmd:version>
+                    <imsmd:string language="en">1.0</imsmd:string>
+                </imsmd:version>
+                <imsmd:status>
+                    <imsmd:source>LOMv1.0</imsmd:source>
+                    <imsmd:value>Final</imsmd:value>
+                </imsmd:status>
+            </imsmd:lifeCycle>
+            <imsmd:metaMetadata>
+                <imsmd:metadataschema>LOMv1.0</imsmd:metadataschema>
+                <imsmd:metadataschema>QTIv2.2</imsmd:metadataschema>
+                <imsmd:language>en</imsmd:language>
+            </imsmd:metaMetadata>
+            <imsmd:technical>
+                <imsmd:format>text/x-imsqti-test-xml</imsmd:format>
+                <imsmd:format>text/x-imsqti-item-xml</imsmd:format>
+                <imsmd:format>image/png</imsmd:format>
+            </imsmd:technical>
+            <imsmd:rights>
+                <imsmd:description>
+                    <imsmd:string language="en">(c) 2005 - 2019, IMS Global Learning Consortium;
+                        individual items may have own copyright statement.</imsmd:string>
+                </imsmd:description>
+            </imsmd:rights>
+        </imsmd:lom>
+    </metadata>
+    <organizations/>
+    <resources>
+        <resource identifier="RES-BCA84FC0-53F9-ABBD-C3FE-BDB5B825CA9E" type="imsqti_test_xmlv3p0" href="example/rtest.xml">
+            <metadata>
+                <imsmd:lom>
+                    <imsmd:general>
+                        <imsmd:title>
+                            <imsmd:string language="en">Example
+                                assessmentTest</imsmd:string>
+                        </imsmd:title>
+                        <imsmd:language>en</imsmd:language>
+                        <imsmd:description>
+                            <imsmd:string language="en">This is an example
+                                assessmentTest</imsmd:string>
+                        </imsmd:description>
+                    </imsmd:general>
+                    <imsmd:lifeCycle>
+                        <imsmd:version>
+                            <imsmd:string language="en">1.0</imsmd:string>
+                        </imsmd:version>
+                        <imsmd:status>
+                            <imsmd:source>LOMv1.0</imsmd:source>
+                            <imsmd:value>Final</imsmd:value>
+                        </imsmd:status>
+                    </imsmd:lifeCycle>
+                    <imsmd:metaMetadata>
+                        <imsmd:metadataschema>LOMv1.0</imsmd:metadataschema>
+                        <imsmd:language>en</imsmd:language>
+                    </imsmd:metaMetadata>
+                    <imsmd:technical>
+                        <imsmd:format>text/x-imsqti-test-xml</imsmd:format>
+                    </imsmd:technical>
+                    <imsmd:rights>
+                        <imsmd:description>
+                            <imsmd:string language="en">(c) 2006, IMS Global Learning
+                                Consortium; individual items may have own copyright
+                                statement.</imsmd:string>
+                        </imsmd:description>
+                    </imsmd:rights>
+                </imsmd:lom>
+            </metadata>
+            <file href="example/rtest.xml"/>
+            <dependency identifierref="RES-BCA84FC0-53F9-ABBD-C3FE-BDB5B825CA9E"/>
+            <dependency identifierref="RES-B38DF83F-A291-86DA-4EC3-B2CEBD1515A4"/>
+            <dependency identifierref="RES-3E07BB74-648D-1705-AB43-FC02920B1EAD"/>
+            <dependency identifierref="RES-1CDACE46-DD7B-719F-0D4D-BDA579A862AB"/>
+        </resource>
+        <resource identifier="RES-BCA84FC0-53F9-ABBD-C3FE-BDB5B825CA9F" type="imsqti_item_xmlv3p0" href="example/adaptive.xml">
+            <metadata>
+                <imsmd:lom>
+                    <imsmd:general>
+                        <imsmd:identifier>
+                            <imsmd:entry>adaptive</imsmd:entry>
+                        </imsmd:identifier>
+                        <imsmd:title>
+                            <imsmd:string language="en">Monty Hall (Take 1)</imsmd:string>
+                        </imsmd:title>
+                        <imsmd:description>
+                            <imsmd:string language="en">This example takes a famous mathematical
+                                problem and presents it to the user as a game.</imsmd:string>
+                        </imsmd:description>
+                    </imsmd:general>
+                    <imsmd:lifeCycle>
+                        <imsmd:version>
+                            <imsmd:string language="en">1.0</imsmd:string>
+                        </imsmd:version>
+                        <imsmd:status>
+                            <imsmd:source>LOMv1.0</imsmd:source>
+                            <imsmd:value>Draft</imsmd:value>
+                        </imsmd:status>
+                    </imsmd:lifeCycle>
+                    <imsmd:technical>
+                        <imsmd:format>text/x-imsqti-item-xml</imsmd:format>
+                        <imsmd:format>image/png</imsmd:format>
+                    </imsmd:technical>
+                </imsmd:lom>
+                <imsqti:qtiMetadata>
+                    <imsqti:timeDependent>false</imsqti:timeDependent>
+                    <imsqti:interactionType>choiceInteraction</imsqti:interactionType>
+                    <imsqti:feedbackType>adaptive</imsqti:feedbackType>
+                    <imsqti:solutionAvailable>true</imsqti:solutionAvailable>
+                </imsqti:qtiMetadata>
+            </metadata>
+            <file href="example/adaptive.xml"/>
+            <file href="example/green_door.png"/>
+            <file href="example/open_car.png"/>
+            <file href="example/red_door.png"/>
+            <file href="example/blue_door.png"/>
+            <file href="example/open_goat.png"/>
+        </resource>
+        <resource identifier="RES-B38DF83F-A291-86DA-4EC3-B2CEBD1515A4" type="imsqti_item_xmlv3p0" href="example/choice.xml">
+            <metadata>
+                <imsmd:lom>
+                    <imsmd:general>
+                        <imsmd:identifier>
+                            <imsmd:entry>choice</imsmd:entry>
+                        </imsmd:identifier>
+                        <imsmd:title>
+                            <imsmd:string language="en">Unattended Luggage</imsmd:string>
+                        </imsmd:title>
+                        <imsmd:description>
+                            <imsmd:string language="en">This example illustrates the
+                                choiceInteraction being used to obtain a single response from the
+                                candidate.</imsmd:string>
+                        </imsmd:description>
+                    </imsmd:general>
+                    <imsmd:lifeCycle>
+                        <imsmd:version>
+                            <imsmd:string language="en">1.0</imsmd:string>
+                        </imsmd:version>
+                        <imsmd:status>
+                            <imsmd:source>LOMv1.0</imsmd:source>
+                            <imsmd:value>Draft</imsmd:value>
+                        </imsmd:status>
+                    </imsmd:lifeCycle>
+                    <imsmd:technical>
+                        <imsmd:format>text/x-imsqti-item-xml</imsmd:format>
+                    </imsmd:technical>
+                    <imsmd:rights>
+                        <imsmd:description>
+                            <imsmd:string language="en">This example has been adapted from the
+                                PET Handbook, copyright University of Cambridge ESOL Examinations
+                                .</imsmd:string>
+                        </imsmd:description>
+                    </imsmd:rights>
+                </imsmd:lom>
+                <imsqti:qtiMetadata>
+                    <imsqti:timeDependent>false</imsqti:timeDependent>
+                    <imsqti:interactionType>choiceInteraction</imsqti:interactionType>
+                    <imsqti:feedbackType>none</imsqti:feedbackType>
+                    <imsqti:solutionAvailable>true</imsqti:solutionAvailable>
+                </imsqti:qtiMetadata>
+            </metadata>
+            <file href="example/choice.xml"/>
+            <file href="example/sign.png"/>
+        </resource>
+        <resource identifier="RES-3E07BB74-648D-1705-AB43-FC02920B1EAD" type="imsqti_item_xmlv3p0" href="example/choice_multiple.xml">
+            <metadata>
+                <imsmd:lom>
+                    <imsmd:general>
+                        <imsmd:identifier>
+                            <imsmd:entry>choiceMultiple</imsmd:entry>
+                        </imsmd:identifier>
+                        <imsmd:title>
+                            <imsmd:string language="en">Composition of Water</imsmd:string>
+                        </imsmd:title>
+                        <imsmd:description>
+                            <imsmd:string language="en">This example illustrates the
+                                choiceInteraction being used to obtain multiple responses from the
+                                candidate.</imsmd:string>
+                        </imsmd:description>
+                    </imsmd:general>
+                    <imsmd:lifeCycle>
+                        <imsmd:version>
+                            <imsmd:string language="en">1.0</imsmd:string>
+                        </imsmd:version>
+                        <imsmd:status>
+                            <imsmd:source>LOMv1.0</imsmd:source>
+                            <imsmd:value>Draft</imsmd:value>
+                        </imsmd:status>
+                    </imsmd:lifeCycle>
+                    <imsmd:technical>
+                        <imsmd:format>text/x-imsqti-item-xml</imsmd:format>
+                    </imsmd:technical>
+                </imsmd:lom>
+                <imsqti:qtiMetadata>
+                    <imsqti:timeDependent>false</imsqti:timeDependent>
+                    <imsqti:interactionType>choiceInteraction</imsqti:interactionType>
+                    <imsqti:feedbackType>none</imsqti:feedbackType>
+                    <imsqti:solutionAvailable>true</imsqti:solutionAvailable>
+                </imsqti:qtiMetadata>
+            </metadata>
+            <file href="example/choice_multiple.xml"/>
+        </resource>
+        <resource identifier="RES-1CDACE46-DD7B-719F-0D4D-BDA579A862AB" type="imsqti_item_xmlv3p0" href="example/hotspot.xml">
+            <metadata>
+                <imsmd:lom>
+                    <imsmd:general>
+                        <imsmd:identifier>
+                            <imsmd:entry>hotspot</imsmd:entry>
+                        </imsmd:identifier>
+                        <imsmd:title>
+                            <imsmd:string language="en">UK Airports (Take 1)</imsmd:string>
+                        </imsmd:title>
+                        <imsmd:description>
+                            <imsmd:string language="en">This example illustrates the
+                                qti-hotspot-interaction.</imsmd:string>
+                        </imsmd:description>
+                    </imsmd:general>
+                    <imsmd:lifeCycle>
+                        <imsmd:version>
+                            <imsmd:string>1.0</imsmd:string>
+                        </imsmd:version>
+                        <imsmd:status>
+                            <imsmd:source>LOMv1.0</imsmd:source>
+                            <imsmd:value>Draft</imsmd:value>
+                        </imsmd:status>
+                    </imsmd:lifeCycle>
+                    <imsmd:technical>
+                        <imsmd:format>text/x-imsqti-item-xml</imsmd:format>
+                        <imsmd:format>image/png</imsmd:format>
+                    </imsmd:technical>
+                </imsmd:lom>
+                <imsqti:qtiMetadata>
+                    <imsqti:timeDependent>false</imsqti:timeDependent>
+                    <imsqti:interactionType>hotspotInteraction</imsqti:interactionType>
+                    <imsqti:feedbackType>none</imsqti:feedbackType>
+                    <imsqti:solutionAvailable>true</imsqti:solutionAvailable>
+                </imsqti:qtiMetadata>
+            </metadata>
+            <file href="example/hotspot.xml"/>
+            <file href="example/ukair.png"/>
+        </resource>
+    </resources>
+</manifest>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<qti-assessment-test xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+                     xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://www.imsglobal.org/xsd/qti/qtiv3p0/imsqti_asiv3p0_v1p0.xsd" 
+                     identifier="RTEST-02" title="Steve's Test">
+	<!-- Provide support for aggregating arbitrary collections of item outcomes
+             to create one or more test outcomes (including weighting ref R-TEST/04). -->
+	<qti-outcome-declaration base-type="float" cardinality="single" identifier="SCORE">
+		<qti-default-value>
+			<qti-value>0</qti-value>
+		</qti-default-value>
+	</qti-outcome-declaration>
+	<qti-test-part identifier="part01" navigation-mode="nonlinear" submission-mode="simultaneous">
+		<qti-assessment-section identifier="sectionA" title="Section A" visible="true">
+			<qti-rubric-block view="candidate" use="instructions">
+                            <qti-content-body>
+				<p>Instructions for Section A</p>
+                            </qti-content-body>
+                        </qti-rubric-block>
+			<qti-assessment-item-ref identifier="item034" href="adaptive.xml">
+				<qti-weight identifier="WEIGHT" value="2.0"/>
+			</qti-assessment-item-ref>
+			<qti-assessment-item-ref identifier="item160" href="choice.xml">
+				<qti-weight identifier="WEIGHT" value="0.0"/>
+			</qti-assessment-item-ref>
+		</qti-assessment-section>
+		<qti-assessment-section identifier="sectionB" title="Section B" visible="true">
+			<qti-rubric-block view="candidate" use="instructions">
+                            <qti-content-body>
+				<p>Instructions for Section B</p>
+                            </qti-content-body>
+                        </qti-rubric-block>
+			<qti-assessment-item-ref identifier="item063" href="choice_multiple.xml"/>
+			<qti-assessment-item-ref identifier="item065" href="hotspot.xml"/>
+		</qti-assessment-section>
+	</qti-test-part>
+	<qti-outcome-processing>
+		<qti-set-outcome-value identifier="SCORE">
+			<qti-sum>
+				<qti-variable identifier="item034.SCORE" weight-identifier="WEIGHT"/>
+				<qti-variable identifier="item160.SCORE" weight-identifier="WEIGHT"/>
+				<qti-variable identifier="item063.SCORE"/>
+				<qti-variable identifier="item065.SCORE"/>
+			</qti-sum>
+		</qti-set-outcome-value>
+	</qti-outcome-processing>
+</qti-assessment-test>

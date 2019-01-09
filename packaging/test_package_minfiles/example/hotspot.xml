@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://www.imsglobal.org/xsd/qti/qtiv3p0/imsqti_asiv3p0_v1p0.xsd" identifier="hotspot" title="UK Airports (Take 1)" adaptive="false" time-dependent="false">
+	<qti-response-declaration identifier="RESPONSE" cardinality="single" base-type="identifier">
+		<qti-correct-response>
+			<qti-value>A</qti-value>
+		</qti-correct-response>
+	</qti-response-declaration>
+	<qti-outcome-declaration identifier="SCORE" cardinality="single" base-type="float"/>
+	<qti-item-body>
+		<p>The picture illustrates four of the most popular destinations for air travellers arriving
+			in the United Kingdom: London, Manchester, Edinburgh and Glasgow.</p>
+		<qti-hotspot-interaction response-identifier="RESPONSE" max-choices="1">
+			<qti-prompt>Which one is Glasgow?</qti-prompt>
+			<object type="image/png" width="206" height="280" data="ukair.png">UK Map</object>
+			<qti-hotspot-choice shape="circle" coords="77,115,8" identifier="A"/>
+			<qti-hotspot-choice shape="circle" coords="118,184,8" identifier="B"/>
+			<qti-hotspot-choice shape="circle" coords="150,235,8" identifier="C"/>
+			<qti-hotspot-choice shape="circle" coords="96,114,8" identifier="D"/>
+		</qti-hotspot-interaction>
+	</qti-item-body>
+	<qti-response-processing template="https://www.imsglobal.org/question/qti_v3p0/rptemplates/match_correct.xml" template-location="http://www.imsglobal.org/question/qti_v2p2/rptemplates/match_correct.xml"/>
+</qti-assessment-item>
