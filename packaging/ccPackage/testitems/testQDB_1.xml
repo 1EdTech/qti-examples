@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<qti-assessment-test xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd" identifier="QDB_1" title="Pretest">
+    <qti-outcome-declaration identifier="SCORE" cardinality="single" base-type="float">
+        <qti-default-value>
+            <qti-value>0</qti-value>
+        </qti-default-value>
+    </qti-outcome-declaration>
+    <qti-time-limits max-time="120" allow-late-submission="true"/>
+    <qti-test-part identifier="QDB1_1" navigation-mode="linear" submission-mode="individual">
+        <qti-item-session-control max-attempts="2"/>
+        <qti-assessment-section identifier="QDB1_1_1" title="Section 1" visible="false">
+            <qti-assessment-item-ref identifier="ITEM_102010_shjdfg" href="QUE_102010.xml">
+                <qti-weight identifier="WEIGHT_dhjkfgshasuy" value="2"/>
+            </qti-assessment-item-ref>
+            <qti-assessment-item-ref identifier="ITEM_102011_sadfqwdqwd" href="QUE_102011.xml">
+                <qti-weight identifier="WEIGHT_sdfbmvv" value="2"/>
+            </qti-assessment-item-ref>
+            <qti-assessment-item-ref identifier="ITEM_102012_asdfaefdqw" href="QUE_102012.xml">
+                <qti-weight identifier="WEIGHT_jhsdvfehjv" value="2"/>
+            </qti-assessment-item-ref>
+            <qti-assessment-item-ref identifier="ITEM_102013_asdfqwccc" href="QUE_102013.xml">
+                <qti-weight identifier="WEIGHT_kjbsjhdf" value="2"/>
+            </qti-assessment-item-ref>
+            <qti-assessment-item-ref identifier="ITEM_102015_kjh" href="QUE_102015.xml">
+                <qti-weight identifier="WEIGHT_jblsjhkdfbl" value="2"/>
+            </qti-assessment-item-ref>
+            <qti-assessment-item-ref identifier="ITEM_102016_iuopjkjhk" href="QUE_102016.xml">
+                <qti-weight identifier="WEIGHT_kjbsdjhf" value="25"/>
+            </qti-assessment-item-ref>
+            <qti-assessment-item-ref identifier="ITEM_104045_ghgfcbn" href="QUE_104045.xml">
+                <qti-weight identifier="WEIGHT_sdhjbskjhdfb" value="2"/>
+            </qti-assessment-item-ref>
+            <qti-assessment-item-ref identifier="ITEM_104047_vawdanmnkjasd" href="QUE_104047.xml">
+                <qti-weight identifier="WEIGHT_jkhbdfkjhsdbf" value="2"/>
+            </qti-assessment-item-ref>
+            <qti-assessment-item-ref identifier="ITEM_104048_ugygwern" href="QUE_104048.xml">
+                <qti-weight identifier="WEIGHT_nkjhbhvtyu" value="2"/>
+            </qti-assessment-item-ref>
+            <qti-assessment-item-ref identifier="ITEM_104049_hjsdjahsd" href="QUE_104049.xml">
+                <qti-weight identifier="WEIGHT_jksbdhfwe" value="2"/>
+            </qti-assessment-item-ref>
+            <qti-assessment-item-ref identifier="ITEM_104051_zxcqwdvvc" href="QUE_104051.xml">
+                <qti-weight identifier="WEIGHT_dskjbkjhwbd" value="2"/>
+            </qti-assessment-item-ref>
+        </qti-assessment-section>
+    </qti-test-part>
+    <qti-outcome-processing>
+        <qti-set-outcome-value identifier="SCORE">
+            <qti-divide>
+                <qti-sum>
+                    <qti-test-variables variable-identifier="SCORE"/>
+                </qti-sum>
+                <qti-base-value base-type="float">22</qti-base-value>
+            </qti-divide>
+        </qti-set-outcome-value>
+    </qti-outcome-processing>
+</qti-assessment-test>

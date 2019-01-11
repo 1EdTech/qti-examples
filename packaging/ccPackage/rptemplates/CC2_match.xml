@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<qti-response-processing xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd">
+    <!-- This template gets called by default for matching. It should be used by those systems who can support inline feedback.
+    Those systems that can't should use the processing defined in CC2_match_basic.xml-->
+    <qti-set-outcome-value identifier="FEEDBACK">
+        <qti-variable identifier="RESPONSE"/>
+    </qti-set-outcome-value>  
+    <qti-response-condition>
+        <qti-response-if>
+            <qti-match>
+                <qti-variable identifier="RESPONSE"/>
+                <qti-correct identifier="RESPONSE"/>
+            </qti-match>
+            <qti-set-outcome-value identifier="SCORE">
+                <qti-variable identifier="MAXSCORE"/>
+            </qti-set-outcome-value>
+        </qti-response-if>
+    </qti-response-condition>
+</qti-response-processing>

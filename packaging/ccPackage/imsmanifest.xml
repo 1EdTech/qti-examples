@@ -1,0 +1,546 @@
+<?xml version="1.0"?>
+<manifest identifier="manifest" xmlns="http://www.imsglobal.org/xsd/qti/qtiv3p0/imscp_v1p1" xmlns:imsmd="http://ltsc.ieee.org/xsd/LOM" xmlns:imsqti="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:csm="http://www.imsglobal.org/xsd/qti/qtiv2p2/imscsmd_v1p0" xsi:schemaLocation="http://www.imsglobal.org/xsd/qti/qtiv2p2/imscsmd_v1p0 http://www.imsglobal.org/xsd/qti/qtiv2p2/qtiv2p2_csm_v2p2.xsdhttp://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsdhttp://ltsc.ieee.org/xsd/LOM https://purl.imsglobal.org/spec/md/v1p3/schema/xsd/imsmd_loose_v1p3p2.xsdhttp://www.imsglobal.org/xsd/qti/qtiv3p0/imscp_v1p1 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqtiv3p0_imscpv1p2_v1p0.xsd">
+    <metadata>
+        <schema>QTI Package</schema>
+        <schemaversion>3.0.0</schemaversion>
+    </metadata>
+    <organizations/>
+    <resources>
+        <resource identifier="testQDB_1" type="imsqti_test_xmlv2p2" href="testitems/testQDB_1.xml">
+            <metadata>
+                <csm:curriculumStandardsMetadataSet>
+                    <csm:curriculumStandardsMetadata>
+                        <csm:setOfGUIDs>
+                            <csm:labelledGUID>
+                                <csm:label>ASN PURL for Georgia on Social Studies, Education Level:	9, 10, 11, 12, Statement Notation:	SSPFR1
+                                    "The student will explain selected historical and contemporary perspectives and practices of psychologists."</csm:label>
+                                <csm:GUID>http://purl.org/ASN/resources/S113AA2C</csm:GUID>
+                            </csm:labelledGUID>
+                            <csm:labelledGUID>
+                                <csm:label>ASN PURL for Georgia on Social Studies, Education Level:	9, 10, 11, 12, Statement Notation:	SSPFR2 "The student will explain the research methods and the types of statistics used in the field of psychology."</csm:label>
+                                <csm:GUID>http://purl.org/ASN/resources/S113AA30</csm:GUID>
+                            </csm:labelledGUID>
+                        </csm:setOfGUIDs>
+                    </csm:curriculumStandardsMetadata>
+                </csm:curriculumStandardsMetadataSet>
+                <imsmd:lom>
+                    <imsmd:classification>
+                        <imsmd:taxonPath>
+                            <imsmd:source>
+                                <imsmd:string>qmd_assessmenttype</imsmd:string>
+                            </imsmd:source>
+                            <imsmd:taxon>
+                                <imsmd:entry>
+                                    <imsmd:string>Examination</imsmd:string>
+                                </imsmd:entry>
+                            </imsmd:taxon>
+                        </imsmd:taxonPath>
+                    </imsmd:classification>
+                    <imsqti:qtiMetadata>
+                        <imsqti:solutionAvailable>true</imsqti:solutionAvailable>
+                    </imsqti:qtiMetadata>
+                </imsmd:lom>
+            </metadata>
+            <file href="testitems/testQDB_1.xml"/>
+            <dependency identifierref="QUE_104045"/>
+            <dependency identifierref="QUE_102010"/>
+            <dependency identifierref="QUE_104047"/>
+            <dependency identifierref="QUE_102011"/>
+            <dependency identifierref="QUE_104048"/>
+            <dependency identifierref="QUE_102012"/>
+            <dependency identifierref="QUE_102013"/>
+            <dependency identifierref="QUE_102015"/>
+            <dependency identifierref="QUE_102016"/>
+            <dependency identifierref="QUE_104049"/>
+            <dependency identifierref="QUE_104051"/>
+        </resource>
+        <resource identifier="QUE_104045" type="imsqti_item_xmlv3p0" href="testitems/QUE_104045.xml">
+            <metadata>
+                <imsqti:qtiMetadata>
+                    <imsqti:itemTemplate>false</imsqti:itemTemplate>
+                    <imsqti:composite>false</imsqti:composite>
+                    <imsqti:interactionType>choiceInteraction</imsqti:interactionType>
+                    <imsqti:feedbackType>nonadaptive</imsqti:feedbackType>
+                </imsqti:qtiMetadata>
+                <csm:curriculumStandardsMetadataSet>
+                    <csm:curriculumStandardsMetadata>
+                        <csm:setOfGUIDs>
+                            <csm:labelledGUID>
+                                <csm:label>ASN PURL for Georgia Social Studies, Education Level: 9, 10, 11, 12 "a. Define the field of psychology."</csm:label>
+                                <csm:GUID>http://purl.org/ASN/resources/S113AA2D</csm:GUID>
+                            </csm:labelledGUID>
+                        </csm:setOfGUIDs>
+                    </csm:curriculumStandardsMetadata>
+                </csm:curriculumStandardsMetadataSet>
+                <imsmd:lom>
+                    <imsmd:general>
+                        <imsmd:identifier>
+                            <imsmd:entry>QUE_104045</imsmd:entry>
+                        </imsmd:identifier>
+                        <imsmd:title>
+                            <imsmd:string>Question 01</imsmd:string>
+                        </imsmd:title>
+                    </imsmd:general>
+                    <imsmd:classification>
+                        <imsmd:taxonPath>
+                            <imsmd:source>
+                                <imsmd:string>cc_question_category</imsmd:string>
+                            </imsmd:source>
+                            <imsmd:taxon>
+                                <imsmd:entry>
+                                    <imsmd:string>Chapter 01</imsmd:string>
+                                </imsmd:entry>
+                            </imsmd:taxon>
+                        </imsmd:taxonPath>
+                    </imsmd:classification>
+                </imsmd:lom>
+            </metadata>
+            <file href="testitems/QUE_104045.xml"/>
+            <dependency identifierref="RTEMP_CC2_match1310"/>
+        </resource>
+        <resource identifier="QUE_102010" type="imsqti_item_xmlv3p0" href="testitems/QUE_102010.xml">
+            <metadata>
+                <imsqti:qtiMetadata>
+                    <imsqti:itemTemplate>false</imsqti:itemTemplate>
+                    <imsqti:composite>false</imsqti:composite>
+                    <imsqti:interactionType>choiceInteraction</imsqti:interactionType>
+                    <imsqti:feedbackType>nonadaptive</imsqti:feedbackType>
+                </imsqti:qtiMetadata>
+                <csm:curriculumStandardsMetadataSet>
+                    <csm:curriculumStandardsMetadata>
+                        <csm:setOfGUIDs>
+                            <csm:labelledGUID>
+                                <csm:label>ASN PURL for Georgia Social Studies, Education Level: 9, 10, 11, 12 "b. Identify key figures in the history of the field of psychology and their major contributions; include Wundt, Freud, Skinner, James, Watson and Rogers."</csm:label>
+                                <csm:GUID>http://purl.org/ASN/resources/S113AA2E</csm:GUID>
+                            </csm:labelledGUID>
+                        </csm:setOfGUIDs>
+                    </csm:curriculumStandardsMetadata>
+                </csm:curriculumStandardsMetadataSet>
+                <imsmd:lom>
+                    <imsmd:general>
+                        <imsmd:identifier>
+                            <imsmd:entry>QUE_102010</imsmd:entry>
+                        </imsmd:identifier>
+                        <imsmd:title>
+                            <imsmd:string>Question 02</imsmd:string>
+                        </imsmd:title>
+                    </imsmd:general>
+                </imsmd:lom>
+            </metadata>
+            <file href="testitems/QUE_102010.xml"/>
+            <dependency identifierref="RTEMP_CC2_match1310"/>
+        </resource>
+        <resource identifier="QUE_104047" type="imsqti_item_xmlv3p0" href="testitems/QUE_104047.xml">
+            <metadata>
+                <imsqti:qtiMetadata>
+                    <imsqti:itemTemplate>false</imsqti:itemTemplate>
+                    <imsqti:composite>false</imsqti:composite>
+                    <imsqti:interactionType>choiceInteraction</imsqti:interactionType>
+                    <imsqti:feedbackType>nonadaptive</imsqti:feedbackType>
+                </imsqti:qtiMetadata>
+                <csm:curriculumStandardsMetadataSet>
+                    <csm:curriculumStandardsMetadata>
+                        <csm:setOfGUIDs>
+                            <csm:labelledGUID>
+                                <csm:label>ASN PURL for Georgia Social Studies, Education Level: 9, 10, 11, 12 "c. Identify the basic elements of an experiment; include independent and dependent variables, types of experimental control (blind/double-blind procedures, placebo controls)."</csm:label>
+                                <csm:GUID>http://purl.org/ASN/resources/S113AA33</csm:GUID>
+                            </csm:labelledGUID>
+                        </csm:setOfGUIDs>
+                    </csm:curriculumStandardsMetadata>
+                </csm:curriculumStandardsMetadataSet>
+                <imsmd:lom>
+                    <imsmd:general>
+                        <imsmd:identifier>
+                            <imsmd:entry>QUE_104047</imsmd:entry>
+                        </imsmd:identifier>
+                        <imsmd:title>
+                            <imsmd:string>Question 03</imsmd:string>
+                        </imsmd:title>
+                    </imsmd:general>
+                    <imsmd:classification>
+                        <imsmd:taxonPath>
+                            <imsmd:source>
+                                <imsmd:string>cc_question_category</imsmd:string>
+                            </imsmd:source>
+                            <imsmd:taxon>
+                                <imsmd:entry>
+                                    <imsmd:string>Chapter 01</imsmd:string>
+                                </imsmd:entry>
+                            </imsmd:taxon>
+                        </imsmd:taxonPath>
+                    </imsmd:classification>
+                </imsmd:lom>
+            </metadata>
+            <file href="testitems/QUE_104047.xml"/>
+            <dependency identifierref="RTEMP_CC2_match1310"/>
+        </resource>
+        <resource identifier="QUE_102011" type="imsqti_item_xmlv3p0" href="testitems/QUE_102011.xml">
+            <metadata>
+                <imsqti:qtiMetadata>
+                    <imsqti:itemTemplate>false</imsqti:itemTemplate>
+                    <imsqti:composite>false</imsqti:composite>
+                    <imsqti:interactionType>extendedTextInteraction</imsqti:interactionType>
+                    <imsqti:feedbackType>nonadaptive</imsqti:feedbackType>
+                </imsqti:qtiMetadata>
+                <csm:curriculumStandardsMetadataSet>
+                    <csm:curriculumStandardsMetadata>
+                        <csm:setOfGUIDs>
+                            <csm:labelledGUID>
+                                <csm:label>ASN PURL for Georgia Social Studies, Education Level: 9, 10, 11, 12 "b. Describe the types of research methods used by psychologists; include experiment, survey, case study, and observation."</csm:label>
+                                <csm:GUID>http://purl.org/ASN/resources/S113AA32</csm:GUID>
+                            </csm:labelledGUID>
+                        </csm:setOfGUIDs>
+                    </csm:curriculumStandardsMetadata>
+                </csm:curriculumStandardsMetadataSet>
+                <imsmd:lom>
+                    <imsmd:general>
+                        <imsmd:identifier>
+                            <imsmd:entry>QUE_102011</imsmd:entry>
+                        </imsmd:identifier>
+                        <imsmd:title>
+                            <imsmd:string>Question 04</imsmd:string>
+                        </imsmd:title>
+                    </imsmd:general>
+                    <imsmd:classification>
+                        <imsmd:taxonPath>
+                            <imsmd:source>
+                                <imsmd:string>cc_question_category</imsmd:string>
+                            </imsmd:source>
+                            <imsmd:taxon>
+                                <imsmd:entry>
+                                    <imsmd:string>Chapter 01</imsmd:string>
+                                </imsmd:entry>
+                            </imsmd:taxon>
+                        </imsmd:taxonPath>
+                    </imsmd:classification>
+                </imsmd:lom>
+            </metadata>
+            <file href="testitems/QUE_102011.xml"/>
+            <dependency identifierref="RTEMP_CC2_map_response1290"/>
+        </resource>
+        <resource identifier="QUE_104048" type="imsqti_item_xmlv3p0" href="testitems/QUE_104048.xml">
+            <metadata>
+                <imsqti:qtiMetadata>
+                    <imsqti:itemTemplate>false</imsqti:itemTemplate>
+                    <imsqti:composite>false</imsqti:composite>
+                    <imsqti:interactionType>choiceInteraction</imsqti:interactionType>
+                    <imsqti:feedbackType>nonadaptive</imsqti:feedbackType>
+                </imsqti:qtiMetadata>
+                <csm:curriculumStandardsMetadataSet>
+                    <csm:curriculumStandardsMetadata>
+                        <csm:setOfGUIDs>
+                            <csm:labelledGUID>
+                                <csm:label>ASN PURL for Georgia Social Studies, Education Level: 9, 10, 11, 12 "a. Define the field of psychology."</csm:label>
+                                <csm:GUID>http://purl.org/ASN/resources/S113AA2D</csm:GUID>
+                            </csm:labelledGUID>
+                        </csm:setOfGUIDs>
+                    </csm:curriculumStandardsMetadata>
+                </csm:curriculumStandardsMetadataSet>
+                <imsmd:lom>
+                    <imsmd:general>
+                        <imsmd:identifier>
+                            <imsmd:entry>QUE_104048</imsmd:entry>
+                        </imsmd:identifier>
+                        <imsmd:title>
+                            <imsmd:string>Question 05</imsmd:string>
+                        </imsmd:title>
+                    </imsmd:general>
+                    <imsmd:classification>
+                        <imsmd:taxonPath>
+                            <imsmd:source>
+                                <imsmd:string>cc_question_category</imsmd:string>
+                            </imsmd:source>
+                            <imsmd:taxon>
+                                <imsmd:entry>
+                                    <imsmd:string>Chapter 01</imsmd:string>
+                                </imsmd:entry>
+                            </imsmd:taxon>
+                        </imsmd:taxonPath>
+                    </imsmd:classification>
+                </imsmd:lom>
+            </metadata>
+            <file href="testitems/QUE_104048.xml"/>
+            <dependency identifierref="RTEMP_CC2_match1310"/>
+        </resource>
+        <resource identifier="QUE_102012" type="imsqti_item_xmlv3p0" href="testitems/QUE_102012.xml">
+            <metadata>
+                <imsqti:qtiMetadata>
+                    <imsqti:itemTemplate>false</imsqti:itemTemplate>
+                    <imsqti:composite>false</imsqti:composite>
+                    <imsqti:interactionType>choiceInteraction</imsqti:interactionType>
+                    <imsqti:feedbackType>nonadaptive</imsqti:feedbackType>
+                </imsqti:qtiMetadata>
+                <csm:curriculumStandardsMetadataSet>
+                    <csm:curriculumStandardsMetadata>
+                        <csm:setOfGUIDs>
+                            <csm:labelledGUID>
+                                <csm:label>ASN PURL for Georgia Social Studies, Education Level: 9, 10, 11, 12 "c. List and describe the major occupations and subfields of psychology."</csm:label>
+                                <csm:GUID>http://purl.org/ASN/resources/S113AA2F</csm:GUID>
+                            </csm:labelledGUID>
+                        </csm:setOfGUIDs>
+                    </csm:curriculumStandardsMetadata>
+                </csm:curriculumStandardsMetadataSet>
+                <imsmd:lom>
+                    <imsmd:general>
+                        <imsmd:identifier>
+                            <imsmd:entry>QUE_102012</imsmd:entry>
+                        </imsmd:identifier>
+                        <imsmd:title>
+                            <imsmd:string>Question 06</imsmd:string>
+                        </imsmd:title>
+                    </imsmd:general>
+                    <imsmd:classification>
+                        <imsmd:taxonPath>
+                            <imsmd:source>
+                                <imsmd:string>cc_question_category</imsmd:string>
+                            </imsmd:source>
+                            <imsmd:taxon>
+                                <imsmd:entry>
+                                    <imsmd:string>Chapter 01</imsmd:string>
+                                </imsmd:entry>
+                            </imsmd:taxon>
+                        </imsmd:taxonPath>
+                    </imsmd:classification>
+                </imsmd:lom>
+            </metadata>
+            <file href="testitems/QUE_102012.xml"/>
+            <dependency identifierref="RTEMP_CC2_match1310"/>
+        </resource>
+        <resource identifier="QUE_102013" type="imsqti_item_xmlv3p0" href="testitems/QUE_102013.xml">
+            <metadata>
+                <imsqti:qtiMetadata>
+                    <imsqti:itemTemplate>false</imsqti:itemTemplate>
+                    <imsqti:composite>false</imsqti:composite>
+                    <imsqti:interactionType>choiceInteraction</imsqti:interactionType>
+                    <imsqti:feedbackType>nonadaptive</imsqti:feedbackType>
+                </imsqti:qtiMetadata>
+                <csm:curriculumStandardsMetadataSet>
+                    <csm:curriculumStandardsMetadata>
+                        <csm:setOfGUIDs>
+                            <csm:labelledGUID>
+                                <csm:label>ASN PURL for Georgia Social Studies, Education Level: 9, 10, 11, 12 "d. Explain the differences between a correlation and an experiment."</csm:label>
+                                <csm:GUID>http://purl.org/ASN/resources/S113AA34</csm:GUID>
+                            </csm:labelledGUID>
+                        </csm:setOfGUIDs>
+                    </csm:curriculumStandardsMetadata>
+                </csm:curriculumStandardsMetadataSet>
+                <imsmd:lom>
+                    <imsmd:general>
+                        <imsmd:identifier>
+                            <imsmd:entry>QUE_102013</imsmd:entry>
+                        </imsmd:identifier>
+                        <imsmd:title>
+                            <imsmd:string>Question 07</imsmd:string>
+                        </imsmd:title>
+                    </imsmd:general>
+                </imsmd:lom>
+            </metadata>
+            <file href="testitems/QUE_102013.xml"/>
+            <dependency identifierref="RTEMP_CC2_match1310"/>
+        </resource>
+        <resource identifier="QUE_102015" type="imsqti_item_xmlv3p0" href="testitems/QUE_102015.xml">
+            <metadata>
+                <imsqti:qtiMetadata>
+                    <imsqti:itemTemplate>false</imsqti:itemTemplate>
+                    <imsqti:composite>false</imsqti:composite>
+                    <imsqti:interactionType>extendedTextInteraction</imsqti:interactionType>
+                    <imsqti:feedbackType>nonadaptive</imsqti:feedbackType>
+                </imsqti:qtiMetadata>
+                <csm:curriculumStandardsMetadataSet>
+                    <csm:curriculumStandardsMetadata>
+                        <csm:setOfGUIDs>
+                            <csm:labelledGUID>
+                                <csm:label>ASN PURL for Georgia Social Studies, Education Level: 9, 10, 11, 12 "b. Identify key figures in the history of the field of psychology and their major contributions; include Wundt, Freud, Skinner, James, Watson and Rogers."</csm:label>
+                                <csm:GUID>http://purl.org/ASN/resources/S113AA2E</csm:GUID>
+                            </csm:labelledGUID>
+                        </csm:setOfGUIDs>
+                    </csm:curriculumStandardsMetadata>
+                </csm:curriculumStandardsMetadataSet>
+                <imsmd:lom>
+                    <imsmd:general>
+                        <imsmd:identifier>
+                            <imsmd:entry>QUE_102015</imsmd:entry>
+                        </imsmd:identifier>
+                        <imsmd:title>
+                            <imsmd:string>Question 08</imsmd:string>
+                        </imsmd:title>
+                    </imsmd:general>
+                    <imsmd:classification>
+                        <imsmd:taxonPath>
+                            <imsmd:source>
+                                <imsmd:string>cc_question_category</imsmd:string>
+                            </imsmd:source>
+                            <imsmd:taxon>
+                                <imsmd:entry>
+                                    <imsmd:string>Chapter 01</imsmd:string>
+                                </imsmd:entry>
+                            </imsmd:taxon>
+                        </imsmd:taxonPath>
+                    </imsmd:classification>
+                </imsmd:lom>
+            </metadata>
+            <file href="testitems/QUE_102015.xml"/>
+            <dependency identifierref="RTEMP_CC2_map_response1290"/>
+        </resource>
+        <resource identifier="QUE_102016" type="imsqti_item_xmlv3p0" href="testitems/QUE_102016.xml">
+            <metadata>
+                <imsqti:qtiMetadata>
+                    <imsqti:itemTemplate>false</imsqti:itemTemplate>
+                    <imsqti:composite>false</imsqti:composite>
+                    <imsqti:interactionType>extendedTextInteraction</imsqti:interactionType>
+                    <imsqti:feedbackType>nonadaptive</imsqti:feedbackType>
+                </imsqti:qtiMetadata>
+                <csm:curriculumStandardsMetadataSet>
+                    <csm:curriculumStandardsMetadata>
+                        <csm:setOfGUIDs>
+                            <csm:labelledGUID>
+                                <csm:label>ASN PURL for Georgia Social Studies, Education Level: 9, 10, 11, 12 "g. Explain ethical issues in psychological research."</csm:label>
+                                <csm:GUID>http://purl.org/ASN/resources/S113AA37</csm:GUID>
+                            </csm:labelledGUID>
+                        </csm:setOfGUIDs>
+                    </csm:curriculumStandardsMetadata>
+                </csm:curriculumStandardsMetadataSet>
+                <imsmd:lom>
+                    <imsmd:general>
+                        <imsmd:identifier>
+                            <imsmd:entry>QUE_102016</imsmd:entry>
+                        </imsmd:identifier>
+                        <imsmd:title>
+                            <imsmd:string>Question 09</imsmd:string>
+                        </imsmd:title>
+                    </imsmd:general>
+                    <imsmd:classification>
+                        <imsmd:taxonPath>
+                            <imsmd:source>
+                                <imsmd:string>cc_question_category</imsmd:string>
+                            </imsmd:source>
+                            <imsmd:taxon>
+                                <imsmd:entry>
+                                    <imsmd:string>Chapter 02</imsmd:string>
+                                </imsmd:entry>
+                            </imsmd:taxon>
+                        </imsmd:taxonPath>
+                        <imsmd:taxonPath>
+                            <imsmd:source>
+                                <imsmd:string>qmd_scoringpermitted</imsmd:string>
+                            </imsmd:source>
+                            <imsmd:taxon>
+                                <imsmd:entry>
+                                    <imsmd:string>Yes</imsmd:string>
+                                </imsmd:entry>
+                            </imsmd:taxon>
+                        </imsmd:taxonPath>
+                        <imsmd:taxonPath>
+                            <imsmd:source>
+                                <imsmd:string>qmd_computerscored</imsmd:string>
+                            </imsmd:source>
+                            <imsmd:taxon>
+                                <imsmd:entry>
+                                    <imsmd:string>No</imsmd:string>
+                                </imsmd:entry>
+                            </imsmd:taxon>
+                        </imsmd:taxonPath>
+                    </imsmd:classification>
+                </imsmd:lom>
+            </metadata>
+            <file href="testitems/QUE_102016.xml"/>
+        </resource>
+        <resource identifier="QUE_104049" type="imsqti_item_xmlv3p0" href="testitems/QUE_104049.xml">
+            <metadata>
+                <imsqti:qtiMetadata>
+                    <imsqti:itemTemplate>false</imsqti:itemTemplate>
+                    <imsqti:composite>false</imsqti:composite>
+                    <imsqti:interactionType>choiceInteraction</imsqti:interactionType>
+                    <imsqti:feedbackType>nonadaptive</imsqti:feedbackType>
+                </imsqti:qtiMetadata>
+                <csm:curriculumStandardsMetadataSet>
+                    <csm:curriculumStandardsMetadata>
+                        <csm:setOfGUIDs>
+                            <csm:labelledGUID>
+                                <csm:label>ASN PURL for Georgia Social Studies, Education Level: 9, 10, 11, 12 "c. List and describe the major occupations and subfields of psychology."</csm:label>
+                                <csm:GUID>http://purl.org/ASN/resources/S113AA2F</csm:GUID>
+                            </csm:labelledGUID>
+                        </csm:setOfGUIDs>
+                    </csm:curriculumStandardsMetadata>
+                </csm:curriculumStandardsMetadataSet>
+                <imsmd:lom>
+                    <imsmd:general>
+                        <imsmd:identifier>
+                            <imsmd:entry>QUE_104049</imsmd:entry>
+                        </imsmd:identifier>
+                        <imsmd:title>
+                            <imsmd:string>Question 10</imsmd:string>
+                        </imsmd:title>
+                    </imsmd:general>
+                    <imsmd:classification>
+                        <imsmd:taxonPath>
+                            <imsmd:source>
+                                <imsmd:string>cc_question_category</imsmd:string>
+                            </imsmd:source>
+                            <imsmd:taxon>
+                                <imsmd:entry>
+                                    <imsmd:string>Chapter 01</imsmd:string>
+                                </imsmd:entry>
+                            </imsmd:taxon>
+                        </imsmd:taxonPath>
+                    </imsmd:classification>
+                </imsmd:lom>
+            </metadata>
+            <file href="testitems/QUE_104049.xml"/>
+            <dependency identifierref="RTEMP_CC2_match1310"/>
+        </resource>
+        <resource identifier="QUE_104051" type="imsqti_item_xmlv3p0" href="testitems/QUE_104051.xml">
+            <metadata>
+                <imsqti:qtiMetadata>
+                    <imsqti:itemTemplate>false</imsqti:itemTemplate>
+                    <imsqti:composite>false</imsqti:composite>
+                    <imsqti:interactionType>choiceInteraction</imsqti:interactionType>
+                    <imsqti:feedbackType>nonadaptive</imsqti:feedbackType>
+                </imsqti:qtiMetadata>
+                <csm:curriculumStandardsMetadataSet>
+                    <csm:curriculumStandardsMetadata>
+                        <csm:setOfGUIDs>
+                            <csm:labelledGUID>
+                                <csm:label>ASN PURL for Georgia Social Studies, Education Level: 9, 10, 11, 12 "c. List and describe the major occupations and subfields of psychology."</csm:label>
+                                <csm:GUID>http://purl.org/ASN/resources/S113AA2F</csm:GUID>
+                            </csm:labelledGUID>
+                        </csm:setOfGUIDs>
+                    </csm:curriculumStandardsMetadata>
+                </csm:curriculumStandardsMetadataSet>
+                <imsmd:lom>
+                    <imsmd:general>
+                        <imsmd:identifier>
+                            <imsmd:entry>QUE_104051</imsmd:entry>
+                        </imsmd:identifier>
+                        <imsmd:title>
+                            <imsmd:string>Question 11</imsmd:string>
+                        </imsmd:title>
+                    </imsmd:general>
+                    <imsmd:classification>
+                        <imsmd:taxonPath>
+                            <imsmd:source>
+                                <imsmd:string>cc_question_category</imsmd:string>
+                            </imsmd:source>
+                            <imsmd:taxon>
+                                <imsmd:entry>
+                                    <imsmd:string>Chapter 01</imsmd:string>
+                                </imsmd:entry>
+                            </imsmd:taxon>
+                        </imsmd:taxonPath>
+                    </imsmd:classification>
+                </imsmd:lom>
+            </metadata>
+            <file href="testitems/QUE_104051.xml"/>
+            <dependency identifierref="RTEMP_CC2_match1310"/>
+        </resource>
+        <resource identifier="RTEMP_CC2_map_response1290" type="imsqti_rptemplate_xmlv3p0" href="rptemplates/CC2_map_response.xml">
+            <file href="rptemplates/CC2_map_response.xml"/>
+        </resource>
+        <resource identifier="RTEMP_CC2_match_basic1300" type="imsqti_rptemplate_xmlv3p0" href="rptemplates/CC2_match_basic.xml">
+            <file href="rptemplates/CC2_match_basic.xml"/>
+        </resource>
+        <resource identifier="RTEMP_CC2_match1310" type="imsqti_rptemplate_xmlv3p0" href="rptemplates/CC2_match.xml">
+            <file href="rptemplates/CC2_match.xml"/>
+        </resource>
+    </resources>
+</manifest>

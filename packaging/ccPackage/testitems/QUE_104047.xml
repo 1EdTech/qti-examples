@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This item is multiple choice question with a single response and feedback after submission -->
+<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd" identifier="QUE_104047" title="Question 03" adaptive="false" time-dependent="false">
+ <qti-response-declaration identifier="RESPONSE" cardinality="single" base-type="identifier">
+  <qti-correct-response>
+   <qti-value>QUE_104047_A3</qti-value>
+  </qti-correct-response>
+ </qti-response-declaration>
+ <qti-outcome-declaration identifier="FEEDBACK" cardinality="single" base-type="identifier"/>
+ <qti-outcome-declaration identifier="FEEDBACKBASIC" cardinality="single" base-type="identifier"/>
+ <qti-outcome-declaration identifier="SCORE" cardinality="single" base-type="float"/>
+ <qti-outcome-declaration identifier="MAXSCORE" cardinality="single" base-type="float">
+  <qti-default-value>
+   <qti-value>100</qti-value>
+  </qti-default-value>
+ </qti-outcome-declaration>
+ <qti-item-body>
+  <qti-choice-interaction response-identifier="RESPONSE" shuffle="false" max-choices="1">
+   <qti-prompt>Which of the following is important in conducting survey research?</qti-prompt>
+   <qti-simple-choice identifier="QUE_104047_A1" fixed="true"> the dependent variable <qti-feedback-inline outcome-identifier="FEEDBACK" show-hide="show" identifier="QUE_104047_A1">Feedback for
+     1</qti-feedback-inline>
+   </qti-simple-choice>
+   <qti-simple-choice identifier="QUE_104047_A2" fixed="true"> ensuring random assignment <qti-feedback-inline outcome-identifier="FEEDBACK" show-hide="show" identifier="QUE_104047_A2">Feedback for
+     2</qti-feedback-inline>
+   </qti-simple-choice>
+   <qti-simple-choice identifier="QUE_104047_A3" fixed="true"> using a representative sample
+     <qti-feedback-inline outcome-identifier="FEEDBACK" show-hide="show" identifier="QUE_104047_A3">Feedback for 3</qti-feedback-inline>
+   </qti-simple-choice>
+   <qti-simple-choice identifier="QUE_104047_A4" fixed="true"> a control group <qti-feedback-inline outcome-identifier="FEEDBACK" show-hide="show" identifier="QUE_104047_A4">Feedback for
+     4</qti-feedback-inline>
+   </qti-simple-choice>
+  </qti-choice-interaction>
+ </qti-item-body>
+ <qti-response-processing template="https://www.imsglobal.org/question/qti_v3p0/rptemplates/CC2_match.xml"/>
+ <qti-modal-feedback outcome-identifier="FEEDBACK" show-hide="hide" identifier="general"> This is some
+  general feedback</qti-modal-feedback>
+ <qti-modal-feedback outcome-identifier="FEEDBACKBASIC" show-hide="show" identifier="correct">
+  Congratulations! you got it right.</qti-modal-feedback>
+ <qti-modal-feedback outcome-identifier="FEEDBACKBASIC" show-hide="show" identifier="incorrect"> I am
+  sorry, that is not correct.</qti-modal-feedback>
+</qti-assessment-item>
