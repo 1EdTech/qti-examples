@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:m="http://www.w3.org/1998/Math/MathML" tool-name="Mathqurate" tool-version="1.0" xml:lang="en" identifier="QuizBowl-multi-geometry" title="What sort of triangle" adaptive="false" time-dependent="false">
+    <qti-response-declaration identifier="RESPONSE1" cardinality="single" base-type="identifier"/>
+    <qti-response-declaration identifier="RESPONSE2" cardinality="single" base-type="string"/>
+    <qti-outcome-declaration identifier="SCORE" cardinality="single" base-type="float">
+        <qti-default-value>
+            <qti-value>0.0</qti-value>
+        </qti-default-value>
+    </qti-outcome-declaration>
+    <qti-outcome-declaration identifier="SCORE1" cardinality="single" base-type="float">
+        <qti-default-value>
+            <qti-value>0.0</qti-value>
+        </qti-default-value>
+    </qti-outcome-declaration>
+    <qti-outcome-declaration identifier="SCORE2" cardinality="single" base-type="float">
+        <qti-default-value>
+            <qti-value>0.0</qti-value>
+        </qti-default-value>
+    </qti-outcome-declaration>
+    <qti-outcome-declaration identifier="FEEDBACK" cardinality="single" base-type="identifier"/>
+    <qti-outcome-declaration identifier="Alternatives" cardinality="ordered" base-type="string">
+        <qti-default-value>
+            <qti-value>equilateral triangle</qti-value>
+            <qti-value>isosceles triangle</qti-value>
+            <qti-value>equiangular triangle</qti-value>
+            <qti-value>triangle</qti-value>
+        </qti-default-value>
+    </qti-outcome-declaration>
+
+    <qti-item-body>
+        <div>
+            <p>What is the question to which this is the answer?</p><br/>
+            <blockquote>
+                <p>"It is a triangle with three equal sides."</p>
+            </blockquote>
+            <p><br/>Select the form of question and then enter the rest of the question in the
+                box.</p>
+            <p><qti-inline-choice-interaction response-identifier="RESPONSE1" shuffle="true">
+                    <qti-inline-choice identifier="Q1">What is</qti-inline-choice>
+                    <qti-inline-choice identifier="Q2">How would you define</qti-inline-choice>
+                </qti-inline-choice-interaction>
+                <qti-text-entry-interaction response-identifier="RESPONSE2" expected-length="50"/>?</p>
+        </div>
+        <p>
+            <qti-feedback-inline outcome-identifier="FEEDBACK" show-hide="show" identifier="OK"> Yes,
+                that's correct.</qti-feedback-inline>
+            <qti-feedback-inline outcome-identifier="FEEDBACK" show-hide="show" identifier="Isosceles"> No,
+                an isosceles triangle has only two sides equal; if all three sides are equal we say
+                it is an equilateral triangle.</qti-feedback-inline>
+            <qti-feedback-inline outcome-identifier="FEEDBACK" show-hide="show" identifier="Equiangular">
+                The angles are also equal, but it is called an equilateral
+                triangle.</qti-feedback-inline>
+            <qti-feedback-inline outcome-identifier="FEEDBACK" show-hide="show" identifier="Triangle"> It
+                is a special sort of triangle, called an equilateral triangle.</qti-feedback-inline>
+            <qti-feedback-inline outcome-identifier="FEEDBACK" show-hide="show" identifier="No"> No, that's
+                not correct.</qti-feedback-inline>
+        </p>
+    </qti-item-body>
+    <qti-response-processing>
+        <qti-response-condition>
+            <qti-response-if>
+                <qti-match>
+                    <qti-variable identifier="RESPONSE1"/>
+                    <qti-base-value base-type="identifier">Q1</qti-base-value>
+                </qti-match>
+                <qti-set-outcome-value identifier="SCORE1">
+                    <qti-base-value base-type="float">1.0</qti-base-value>
+                </qti-set-outcome-value>
+            </qti-response-if>
+            <qti-response-else-if>
+                <qti-match>
+                    <qti-variable identifier="RESPONSE1"/>
+                    <qti-base-value base-type="identifier">Q2</qti-base-value>
+                </qti-match>
+                <qti-set-outcome-value identifier="SCORE1">
+                    <qti-base-value base-type="float">1.0</qti-base-value>
+                </qti-set-outcome-value>
+            </qti-response-else-if>
+            <qti-response-else>
+                <qti-set-outcome-value identifier="SCORE1">
+                    <qti-base-value base-type="float">0.0</qti-base-value>
+                </qti-set-outcome-value>
+            </qti-response-else>
+        </qti-response-condition>
+        <qti-response-condition>
+            <qti-response-if>
+                <qti-substring case-sensitive="false">
+                    <qti-index n="1">
+                        <qti-variable identifier="Alternatives"/>
+                    </qti-index>
+                    <qti-variable identifier="RESPONSE2"/>
+                </qti-substring>
+                <qti-set-outcome-value identifier="SCORE2">
+                    <qti-base-value base-type="float">1.0</qti-base-value>
+                </qti-set-outcome-value>
+                <qti-set-outcome-value identifier="FEEDBACK">
+                    <qti-base-value base-type="identifier">OK</qti-base-value>
+                </qti-set-outcome-value>
+            </qti-response-if>
+            <qti-response-else-if>
+                <qti-substring case-sensitive="false">
+                    <qti-index n="2">
+                        <qti-variable identifier="Alternatives"/>
+                    </qti-index>
+                    <qti-variable identifier="RESPONSE2"/>
+                </qti-substring>
+                <qti-set-outcome-value identifier="SCORE2">
+                    <qti-base-value base-type="float">0.5</qti-base-value>
+                </qti-set-outcome-value>
+                <qti-set-outcome-value identifier="FEEDBACK">
+                    <qti-base-value base-type="identifier">Isosceles</qti-base-value>
+                </qti-set-outcome-value>
+            </qti-response-else-if>
+            <qti-response-else-if>
+                <qti-substring case-sensitive="false">
+                    <qti-index n="3">
+                        <qti-variable identifier="Alternatives"/>
+                    </qti-index>
+                    <qti-variable identifier="RESPONSE2"/>
+                </qti-substring>
+                <qti-set-outcome-value identifier="SCORE2">
+                    <qti-base-value base-type="float">0.5</qti-base-value>
+                </qti-set-outcome-value>
+                <qti-set-outcome-value identifier="FEEDBACK">
+                    <qti-base-value base-type="identifier">Equiangular</qti-base-value>
+                </qti-set-outcome-value>
+            </qti-response-else-if>
+            <qti-response-else-if>
+                <qti-substring case-sensitive="false">
+                    <qti-index n="4">
+                        <qti-variable identifier="Alternatives"/>
+                    </qti-index>
+                    <qti-variable identifier="RESPONSE2"/>
+                </qti-substring>
+                <qti-set-outcome-value identifier="SCORE2">
+                    <qti-base-value base-type="float">0.0</qti-base-value>
+                </qti-set-outcome-value>
+                <qti-set-outcome-value identifier="FEEDBACK">
+                    <qti-base-value base-type="identifier">Triangle</qti-base-value>
+                </qti-set-outcome-value>
+            </qti-response-else-if>
+            <qti-response-else>
+                <qti-set-outcome-value identifier="SCORE2">
+                    <qti-base-value base-type="float">0.0</qti-base-value>
+                </qti-set-outcome-value>
+                <qti-set-outcome-value identifier="FEEDBACK">
+                    <qti-base-value base-type="identifier">No</qti-base-value>
+                </qti-set-outcome-value>
+            </qti-response-else>
+        </qti-response-condition>
+        <qti-set-outcome-value identifier="SCORE">
+            <qti-sum>
+                <qti-variable identifier="SCORE1"/>
+                <qti-variable identifier="SCORE2"/>
+            </qti-sum>
+        </qti-set-outcome-value>
+    </qti-response-processing>
+</qti-assessment-item>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd" identifier="matching-match-trigDeriv" title="Match derivatives of trigonometric functions" adaptive="false" time-dependent="false">
+	<qti-response-declaration identifier="RESPONSE" cardinality="multiple" base-type="directedPair">
+		<qti-correct-response>
+			<qti-value>A D</qti-value>
+			<qti-value>B E</qti-value>
+			<qti-value>C F</qti-value>
+		</qti-correct-response>
+		<qti-mapping default-value="0">
+			<qti-map-entry map-key="A D" mapped-value="1"/>
+			<qti-map-entry map-key="B E" mapped-value="1"/>
+			<qti-map-entry map-key="C F" mapped-value="2"/>
+		</qti-mapping>
+	</qti-response-declaration>
+	<qti-outcome-declaration identifier="SCORE" cardinality="single" base-type="float"/>
+	<qti-outcome-declaration identifier="FEEDBACK" cardinality="single" base-type="identifier"/>
+	<qti-item-body>
+		<p>Which expressions in the table below are equivalent?</p>
+		<qti-match-interaction response-identifier="RESPONSE" shuffle="true" max-associations="3">
+			<qti-prompt>Match the expressions: </qti-prompt>
+			<qti-simple-match-set>
+				<qti-simple-associable-choice identifier="A" match-max="1">
+					<math xmlns="http://www.w3.org/1998/Math/MathML">
+						<semantics>
+							<mrow>
+								<mfrac>
+									<mi>d</mi>
+									<mrow>
+										<mi>d</mi>
+										<mi>&#x398;</mi>
+									</mrow>
+								</mfrac>
+								<mfenced close=")" open="(">
+									<mrow>
+										<mi>sin</mi>
+										<mi>&#x398;</mi>
+									</mrow>
+								</mfenced>
+							</mrow>
+							<annotation encoding="SnuggleTeX">\[ \frac{d}{d\theta}(\sin{\theta})
+								\]</annotation>
+						</semantics>
+					</math>
+				</qti-simple-associable-choice>
+				<qti-simple-associable-choice identifier="B" match-max="1">
+					<math xmlns="http://www.w3.org/1998/Math/MathML">
+						<semantics>
+							<mrow>
+								<mfrac>
+									<mi>d</mi>
+									<mrow>
+										<mi>d</mi>
+										<mi>&#x398;</mi>
+									</mrow>
+								</mfrac>
+								<mfenced close=")" open="(">
+									<mrow>
+										<mi>cos</mi>
+										<mi>&#x398;</mi>
+									</mrow>
+								</mfenced>
+							</mrow>
+							<annotation encoding="SnuggleTeX">\[ \frac{d}{d\theta}(\cos{\theta})
+								\]</annotation>
+						</semantics>
+					</math>
+				</qti-simple-associable-choice>
+				<qti-simple-associable-choice identifier="C" match-max="1">
+					<math xmlns="http://www.w3.org/1998/Math/MathML">
+						<semantics>
+							<mrow>
+								<mfrac>
+									<mi>d</mi>
+									<mrow>
+										<mi>d</mi>
+										<mi>&#x398;</mi>
+									</mrow>
+								</mfrac>
+								<mfenced close=")" open="(">
+									<mrow>
+										<mi>tan</mi>
+										<mi>&#x398;</mi>
+									</mrow>
+								</mfenced>
+							</mrow>
+							<annotation encoding="SnuggleTeX">\[ \frac{d}{d\theta}(\tan{\theta})
+								\]</annotation>
+						</semantics>
+					</math>
+				</qti-simple-associable-choice>
+			</qti-simple-match-set>
+			<qti-simple-match-set>
+				<qti-simple-associable-choice identifier="D" match-max="3">
+					<math xmlns="http://www.w3.org/1998/Math/MathML">
+						<semantics>
+							<mrow>
+								<mi>cos</mi>
+								<mi>&#x398;</mi>
+							</mrow>
+							<annotation encoding="SnuggleTeX">\[ \cos{\theta} \]</annotation>
+						</semantics>
+					</math>
+				</qti-simple-associable-choice>
+				<qti-simple-associable-choice identifier="E" match-max="3">
+					<math xmlns="http://www.w3.org/1998/Math/MathML">
+						<semantics>
+							<mrow>
+								<mo>-</mo>
+								<mi>sin</mi>
+								<mi>&#x398;</mi>
+							</mrow>
+							<annotation encoding="SnuggleTeX">\[ -\sin{\theta} \]</annotation>
+						</semantics>
+					</math>
+				</qti-simple-associable-choice>
+				<qti-simple-associable-choice identifier="F" match-max="3">
+					<math xmlns="http://www.w3.org/1998/Math/MathML">
+						<semantics>
+							<mrow>
+								<msup>
+									<mi>sec</mi>
+									<mn>2</mn>
+								</msup>
+								<mi>&#x398;</mi>
+							</mrow>
+							<annotation encoding="SnuggleTeX">\[ \sec^2{\theta} \]</annotation>
+						</semantics>
+					</math>
+				</qti-simple-associable-choice>
+			</qti-simple-match-set>
+		</qti-match-interaction>
+		<p>
+			<qti-feedback-inline outcome-identifier="FEEDBACK" show-hide="show" identifier="OK"> Yes,
+				that's correct.</qti-feedback-inline>
+			<qti-feedback-inline outcome-identifier="FEEDBACK" show-hide="show" identifier="No"> No, that's
+				not correct.</qti-feedback-inline>
+		</p>
+	</qti-item-body>
+	<qti-response-processing>
+		<qti-response-condition>
+			<qti-response-if>
+				<qti-is-null>
+					<qti-variable identifier="RESPONSE"/>
+				</qti-is-null>
+				<qti-set-outcome-value identifier="SCORE">
+					<qti-base-value base-type="float">0.0</qti-base-value>
+				</qti-set-outcome-value>
+			</qti-response-if>
+			<qti-response-else>
+				<qti-set-outcome-value identifier="SCORE">
+					<qti-map-response identifier="RESPONSE"/>
+				</qti-set-outcome-value>
+				<qti-response-condition>
+					<qti-response-if>
+						<qti-equal tolerance-mode="exact">
+							<qti-variable identifier="SCORE"/>
+							<qti-base-value base-type="float">4.0</qti-base-value>
+						</qti-equal>
+						<qti-set-outcome-value identifier="FEEDBACK">
+							<qti-base-value base-type="identifier">OK</qti-base-value>
+						</qti-set-outcome-value>
+					</qti-response-if>
+					<qti-response-else>
+						<qti-set-outcome-value identifier="FEEDBACK">
+							<qti-base-value base-type="identifier">No</qti-base-value>
+						</qti-set-outcome-value>
+					</qti-response-else>
+				</qti-response-condition>
+			</qti-response-else>
+		</qti-response-condition>
+	</qti-response-processing>
+</qti-assessment-item>

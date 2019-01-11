@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd" identifier="Likert-choice-questionSet" title="Question set" adaptive="false" time-dependent="false">
+	<qti-response-declaration identifier="RESPONSE" cardinality="multiple" base-type="directedPair">
+		<qti-correct-response>
+			<qti-value>SA Q1</qti-value>
+		</qti-correct-response>
+		<qti-mapping default-value="0">
+			<qti-map-entry map-key="SA Q1" mapped-value="2"/>
+		</qti-mapping>
+	</qti-response-declaration>
+	<qti-outcome-declaration identifier="SCORE" cardinality="single" base-type="float"/>
+    <qti-outcome-declaration identifier="FEEDBACK" cardinality="single" base-type="identifier"/>
+    <qti-item-body>
+        <!-- the simpleMatchSets will appear as follows:
+        the first set in a vertical list, the second set as headers for the choice columns
+        This is not the usual configuration for Likert questionnaires... -->
+	    <qti-match-interaction response-identifier="RESPONSE" shuffle="false" max-associations="3">
+	        <qti-prompt> </qti-prompt>
+	        <qti-simple-match-set>
+	            <!-- in this set, matchmax should be the number of simpleAssociableChoices in the other set, 
+	                so that users can select the same response for all questions in the questionnaire -->
+	            <qti-simple-associable-choice identifier="SA" match-max="1">Strongly Agree</qti-simple-associable-choice>
+	            <qti-simple-associable-choice identifier="A" match-max="1">Agree</qti-simple-associable-choice>
+	            <qti-simple-associable-choice identifier="NAD" match-max="1">Neither Agree nor Disagree</qti-simple-associable-choice>
+	            <qti-simple-associable-choice identifier="D" match-max="1">Disagree</qti-simple-associable-choice>
+	            <qti-simple-associable-choice identifier="SD" match-max="1">Strongly Disagree</qti-simple-associable-choice>
+	            <qti-simple-associable-choice identifier="NA" match-max="1">Not Applicable</qti-simple-associable-choice>
+	        </qti-simple-match-set>
+	        <qti-simple-match-set>
+	            <qti-simple-associable-choice identifier="Q1" match-max="1">This set of questions covers the capabilities of the main LMSs.</qti-simple-associable-choice>
+	        </qti-simple-match-set>
+	    </qti-match-interaction>
+        <p>
+            <qti-feedback-inline outcome-identifier="FEEDBACK" show-hide="show" identifier="OK">
+                Yes, that's the intention :)</qti-feedback-inline>
+            <qti-feedback-inline outcome-identifier="FEEDBACK" show-hide="show" identifier="No">
+                Oh, that's a pity, we hoped you would Strongly Agree :(</qti-feedback-inline>
+        </p>
+    </qti-item-body>
+	<qti-response-processing>
+	    <qti-response-condition>
+	        <qti-response-if>
+	            <qti-is-null>
+	                <qti-variable identifier="RESPONSE"/>
+	            </qti-is-null>
+	            <qti-set-outcome-value identifier="SCORE">
+	                <qti-base-value base-type="float">0.0</qti-base-value>
+	            </qti-set-outcome-value>
+	        </qti-response-if>
+	        <qti-response-else>
+	            <qti-set-outcome-value identifier="SCORE">
+	                <qti-map-response identifier="RESPONSE"/>
+	            </qti-set-outcome-value>
+	            <qti-response-condition>
+	                <qti-response-if>
+	                    <qti-equal tolerance-mode="exact">
+	                        <qti-variable identifier="SCORE"/>
+	                        <qti-base-value base-type="float">2.0</qti-base-value>
+	                    </qti-equal>
+	                    <qti-set-outcome-value identifier="FEEDBACK">
+	                        <qti-base-value base-type="identifier">OK</qti-base-value>
+	                    </qti-set-outcome-value>
+	                </qti-response-if>
+	                <qti-response-else>
+	                    <qti-set-outcome-value identifier="FEEDBACK">
+	                        <qti-base-value base-type="identifier">No</qti-base-value>
+	                    </qti-set-outcome-value>
+	                </qti-response-else>
+	            </qti-response-condition>
+	        </qti-response-else>
+	    </qti-response-condition>
+	</qti-response-processing>
+</qti-assessment-item>

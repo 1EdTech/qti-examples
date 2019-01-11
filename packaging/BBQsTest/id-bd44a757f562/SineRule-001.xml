@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<qti-assessment-item tool-version="0.5.1" tool-name="Mathqurate" title="Apply the sine rule" time-dependent="false" identifier="SineRule-CalcFormQ-001" adaptive="false" xsi:schemaLocation="http://mathassess.qtitools.org/xsd/mathassess ../mathassess.xsdhttp://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd" xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:ma="http://mathassess.qtitools.org/xsd/mathassess" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <qti-response-declaration identifier="RESPONSE1" cardinality="single" base-type="float"/>
+    <qti-response-declaration identifier="RESPONSE2" cardinality="single" base-type="string"/>
+    <qti-outcome-declaration base-type="identifier" cardinality="single" identifier="FEEDBACK"/>
+    <qti-outcome-declaration base-type="float" cardinality="single" identifier="SCORE" normal-maximum="10.0" normal-minimum="0.0">
+        <qti-default-value>
+            <qti-value>0.0</qti-value>
+        </qti-default-value>
+    </qti-outcome-declaration>
+    <qti-template-declaration identifier="A" cardinality="single" base-type="integer" param-variable="false" math-variable="true"/>
+    <qti-template-declaration identifier="B" cardinality="single" base-type="integer" param-variable="false" math-variable="true"/>
+    <qti-template-declaration identifier="a" cardinality="single" base-type="integer" param-variable="false" math-variable="true"/>
+    <qti-template-declaration identifier="fAns" cardinality="single" base-type="float" param-variable="false" math-variable="true"/>
+    <qti-template-processing>
+        <!-- now do the randomisation and mathematical calculations, using maxima -->
+        <qti-set-template-value identifier="A">
+            <qti-random-integer min="5" max="100"/>
+        </qti-set-template-value>
+        <qti-set-template-value identifier="B">
+            <qti-random-integer min="5" max="70"/>
+        </qti-set-template-value>
+        <qti-set-template-value identifier="a">
+            <qti-random-integer min="5" max="50"/>
+        </qti-set-template-value>
+        <qti-set-template-value identifier="fAns">
+            <qti-custom-operator class="org.qtitools.mathassess.CasProcess" ma:syntax="text/x-maxima" ma:returnType="float">
+                <qti-base-value base-type="string"><![CDATA[ev(a*sin((180-(A+B))*%pi/180)/sin(A*%pi/180),numer,simp);]]></qti-base-value>
+            </qti-custom-operator>
+        </qti-set-template-value>
+        <qti-set-template-value identifier="fAns">
+            <qti-divide>
+                <qti-round>
+                    <qti-product>
+                        <qti-variable identifier="fAns"/>
+                        <qti-base-value base-type="integer">100</qti-base-value>
+                    </qti-product>
+                </qti-round>
+                <qti-base-value base-type="integer">100</qti-base-value>
+            </qti-divide>
+        </qti-set-template-value>
+    </qti-template-processing>
+    <qti-item-body>
+        <p>In triangle ABC, a=<qti-printed-variable identifier="a"/>cm, A=<qti-printed-variable identifier="A"/>&#xb0; and B=<qti-printed-variable identifier="B"/>&#xb0;. Find the length of side c.</p>
+        <div class="">
+            <qti-text-entry-interaction response-identifier="RESPONSE1" expected-length="20"/>
+            <qti-text-entry-interaction response-identifier="RESPONSE2" expected-length="5"/>
+        </div>
+        <div class="">
+            <qti-feedback-inline id="feedbackInline6" show-hide="show" outcome-identifier="FEEDBACK" identifier="Correct"> OK </qti-feedback-inline></div>
+        <div class="">
+            <qti-feedback-inline id="feedbackInline5" show-hide="show" outcome-identifier="FEEDBACK" identifier="Partial"> Not far off... </qti-feedback-inline></div>
+        <div class="">
+            <qti-feedback-inline id="feedbackInline4" show-hide="show" outcome-identifier="FEEDBACK" identifier="Incorrect"> No, but you have the units correct. </qti-feedback-inline></div>
+        <div class="">
+            <qti-feedback-inline id="feedbackInline3" show-hide="show" outcome-identifier="FEEDBACK" identifier="OKNoUnits"> OK, but the units are incorrect</qti-feedback-inline></div>
+        <div class="">
+            <qti-feedback-inline id="feedbackInline2" show-hide="show" outcome-identifier="FEEDBACK" identifier="PartialNoUnits"> Not far off, but the units are incorrect
+            </qti-feedback-inline></div>
+        <div class="">
+            <qti-feedback-inline id="feedbackInline1" show-hide="show" outcome-identifier="FEEDBACK" identifier="IncorrectNoUnits"> Incorrect, and the units are incorrect
+            </qti-feedback-inline></div>
+    </qti-item-body>
+    <qti-response-processing>
+        <qti-response-condition>
+            <qti-response-if>
+                <qti-is-null>
+                    <qti-variable identifier="RESPONSE1"/>
+                </qti-is-null>
+                <qti-set-outcome-value identifier="SCORE">
+                    <qti-base-value base-type="float">0</qti-base-value>
+                </qti-set-outcome-value>
+            </qti-response-if>
+            <qti-response-else>
+                <qti-response-condition>
+                    <qti-response-if>
+                        <qti-equal tolerance-mode="absolute" tolerance="0.01">
+                            <qti-variable identifier="RESPONSE1"/>
+                            <qti-variable identifier="fAns"/>
+                        </qti-equal>
+                        <qti-response-condition>
+                            <qti-response-if>
+                                <qti-or>
+                                    <qti-match>
+                                        <qti-variable identifier="RESPONSE2"/>
+                                        <qti-base-value base-type="string">cm</qti-base-value>
+                                    </qti-match>
+                                    <qti-match>
+                                        <qti-variable identifier="RESPONSE2"/>
+                                        <qti-base-value base-type="string">cms</qti-base-value>
+                                    </qti-match>
+                                </qti-or>
+                                <qti-set-outcome-value identifier="FEEDBACK">
+                                    <qti-base-value base-type="identifier">Correct</qti-base-value>
+                                </qti-set-outcome-value>
+                                <qti-set-outcome-value identifier="SCORE">
+                                    <qti-base-value base-type="float">10.0</qti-base-value>
+                                </qti-set-outcome-value>
+                            </qti-response-if>
+                            <qti-response-else>
+                                <qti-set-outcome-value identifier="FEEDBACK">
+                                    <qti-base-value base-type="identifier">OKNoUnits</qti-base-value>
+                                </qti-set-outcome-value>
+                                <qti-set-outcome-value identifier="SCORE">
+                                    <qti-base-value base-type="float">9.0</qti-base-value>
+                                </qti-set-outcome-value>
+                            </qti-response-else>
+                        </qti-response-condition>
+                    </qti-response-if>
+                    <qti-response-else-if>
+                        <qti-equal tolerance-mode="absolute" tolerance="0.05">
+                            <qti-variable identifier="RESPONSE1"/>
+                            <qti-variable identifier="fAns"/>
+                        </qti-equal>
+                        <qti-response-condition>
+                            <qti-response-if>
+                                <qti-or>
+                                    <qti-match>
+                                        <qti-variable identifier="RESPONSE2"/>
+                                        <qti-base-value base-type="string">cm</qti-base-value>
+                                    </qti-match>
+                                    <qti-match>
+                                        <qti-variable identifier="RESPONSE2"/>
+                                        <qti-base-value base-type="string">cms</qti-base-value>
+                                    </qti-match>
+                                </qti-or>
+                                <qti-set-outcome-value identifier="FEEDBACK">
+                                    <qti-base-value base-type="identifier">Partial</qti-base-value>
+                                </qti-set-outcome-value>
+                                <qti-set-outcome-value identifier="SCORE">
+                                    <qti-base-value base-type="float">5.0</qti-base-value>
+                                </qti-set-outcome-value>
+                            </qti-response-if>
+                            <qti-response-else>
+                                <qti-set-outcome-value identifier="FEEDBACK">
+                                    <qti-base-value base-type="identifier">PartialNoUnits</qti-base-value>
+                                </qti-set-outcome-value>
+                                <qti-set-outcome-value identifier="SCORE">
+                                    <qti-base-value base-type="float">4.0</qti-base-value>
+                                </qti-set-outcome-value>
+                            </qti-response-else>
+                        </qti-response-condition>
+                    </qti-response-else-if>
+                    <qti-response-else>
+                        <qti-response-condition>
+                            <qti-response-if>
+                                <qti-or>
+                                    <qti-match>
+                                        <qti-variable identifier="RESPONSE2"/>
+                                        <qti-base-value base-type="string">cm</qti-base-value>
+                                    </qti-match>
+                                    <qti-match>
+                                        <qti-variable identifier="RESPONSE2"/>
+                                        <qti-base-value base-type="string">cms</qti-base-value>
+                                    </qti-match>
+                                </qti-or>
+                                <qti-set-outcome-value identifier="FEEDBACK">
+                                    <qti-base-value base-type="identifier">Incorrect</qti-base-value>
+                                </qti-set-outcome-value>
+                                <qti-set-outcome-value identifier="SCORE">
+                                    <qti-base-value base-type="float">1.0</qti-base-value>
+                                </qti-set-outcome-value>
+                            </qti-response-if>
+                            <qti-response-else>
+                                <qti-set-outcome-value identifier="FEEDBACK">
+                                    <qti-base-value base-type="identifier">IncorrectNoUnits</qti-base-value>
+                                </qti-set-outcome-value>
+                                <qti-set-outcome-value identifier="SCORE">
+                                    <qti-base-value base-type="float">0.0</qti-base-value>
+                                </qti-set-outcome-value>
+                            </qti-response-else>
+                        </qti-response-condition>
+                    </qti-response-else>
+                </qti-response-condition>
+                <qti-set-outcome-value identifier="completionStatus">
+                    <qti-base-value base-type="identifier">                                            completed                                        </qti-base-value>
+                </qti-set-outcome-value>
+            </qti-response-else>
+        </qti-response-condition>
+    </qti-response-processing>
+</qti-assessment-item>

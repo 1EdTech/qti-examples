@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Thie example adapted from the PET Handbook, copyright University of Cambridge ESOL Examinations -->
+<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd" identifier="Likert-choice-questionSet" title="Question set" adaptive="false" time-dependent="false">
+	<qti-response-declaration identifier="RESPONSE" cardinality="single" base-type="identifier">
+		<qti-correct-response>
+			<qti-value>ChoiceA</qti-value>
+		</qti-correct-response>
+	</qti-response-declaration>
+    <qti-outcome-declaration identifier="SCORE" cardinality="single" base-type="float" normal-maximum="2">
+		<qti-default-value>
+			<qti-value>0.0</qti-value>
+		</qti-default-value>
+	</qti-outcome-declaration>
+    <qti-outcome-declaration identifier="FEEDBACK" cardinality="single" base-type="identifier"/>
+    <qti-item-body>
+        <p>This set of questions covers the capabilities of the main LMSs.</p>
+		<qti-choice-interaction response-identifier="RESPONSE" shuffle="false" max-choices="1">
+			<qti-prompt> </qti-prompt>
+			<qti-simple-choice identifier="ChoiceA">Strongly Agree</qti-simple-choice>
+			<qti-simple-choice identifier="ChoiceB">Agree</qti-simple-choice>
+		    <qti-simple-choice identifier="ChoiceC">Neither Agree nor Disagree</qti-simple-choice>
+		    <qti-simple-choice identifier="ChoiceD">Disagree</qti-simple-choice>
+		    <qti-simple-choice identifier="ChoiceE">Strongly Disagree</qti-simple-choice>
+		    <qti-simple-choice identifier="ChoiceF">Not Applicable</qti-simple-choice>
+		</qti-choice-interaction>
+	    <p>
+	        <qti-feedback-inline outcome-identifier="FEEDBACK" show-hide="show" identifier="OK">
+	            Yes, that's the intention :)</qti-feedback-inline>
+	        <qti-feedback-inline outcome-identifier="FEEDBACK" show-hide="show" identifier="No">
+	            Oh, that's a pity, we hoped you would Strongly Agree :(</qti-feedback-inline>
+	    </p>
+	</qti-item-body>
+    <qti-response-processing>
+        <qti-response-condition>
+            <qti-response-if>
+                <qti-is-null>
+                    <qti-variable identifier="RESPONSE"/>
+                </qti-is-null>
+                <qti-set-outcome-value identifier="SCORE">
+                    <qti-base-value base-type="float">0.0</qti-base-value>
+                </qti-set-outcome-value>
+            </qti-response-if>
+            <qti-response-else>
+                <qti-response-condition>
+                    <qti-response-if>
+                        <qti-match>
+                            <qti-variable identifier="RESPONSE"/>
+                            <qti-correct identifier="RESPONSE"/>
+                        </qti-match>
+                        <qti-set-outcome-value identifier="SCORE">
+                            <qti-base-value base-type="float">2.0</qti-base-value>
+                        </qti-set-outcome-value>
+                        <qti-set-outcome-value identifier="FEEDBACK">
+                            <qti-base-value base-type="identifier">OK</qti-base-value>
+                        </qti-set-outcome-value>
+                    </qti-response-if>
+                    <qti-response-else>
+                        <qti-set-outcome-value identifier="SCORE">
+                            <qti-base-value base-type="float">0.0</qti-base-value>
+                        </qti-set-outcome-value>
+                        <qti-set-outcome-value identifier="FEEDBACK">
+                            <qti-base-value base-type="identifier">No</qti-base-value>
+                        </qti-set-outcome-value>
+                    </qti-response-else>
+                </qti-response-condition>
+            </qti-response-else>
+        </qti-response-condition>
+    </qti-response-processing>
+</qti-assessment-item>

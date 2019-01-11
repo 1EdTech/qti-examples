@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd" identifier="text_entry-Lycidas" title="FIB-Multiple - Lycidas" adaptive="false" time-dependent="false">
+	<qti-response-declaration identifier="RESPONSE1" cardinality="single" base-type="string">
+		<qti-correct-response>
+			<qti-value>fresh woods</qti-value>
+		</qti-correct-response>
+		<qti-mapping default-value="0">
+			<qti-map-entry map-key="fresh woods" mapped-value="1"/>
+			<qti-map-entry map-key="fresh fields" mapped-value="0.5"/>
+		</qti-mapping>
+	</qti-response-declaration>
+	<qti-response-declaration identifier="RESPONSE2" cardinality="single" base-type="string">
+		<qti-correct-response>
+			<qti-value>pastures new</qti-value>
+		</qti-correct-response>
+		<qti-mapping default-value="0">
+			<qti-map-entry map-key="pastures new" mapped-value="1"/>
+			<qti-map-entry map-key="pastures green" mapped-value="0.5"/>
+		</qti-mapping>
+	</qti-response-declaration>
+	<qti-outcome-declaration identifier="SCORE" cardinality="single" base-type="float" normal-maximum="2.0"/>
+	<qti-outcome-declaration identifier="FEEDBACK" cardinality="single" base-type="identifier"/>
+	<qti-outcome-declaration identifier="FEEDBACK1" cardinality="single" base-type="identifier"/>
+	<qti-outcome-declaration identifier="FEEDBACK2" cardinality="single" base-type="identifier"/>
+	<qti-item-body>
+		<p>Complete this excerpt from "Lycidas" by John Milton: </p>
+		<blockquote>
+			<p>"At last he rose, and twitched his mantle blue: <br/> To-morrow to
+					<qti-text-entry-interaction response-identifier="RESPONSE1" expected-length="15"/>, and
+					<qti-text-entry-interaction response-identifier="RESPONSE2" expected-length="15"/>."</p>
+		</blockquote>
+		<qti-feedback-block outcome-identifier="FEEDBACK1" show-hide="show" identifier="Correct1"><qti-content-body>
+			<p> Your first input is correct. </p>
+		
+</qti-content-body></qti-feedback-block>
+		<qti-feedback-block outcome-identifier="FEEDBACK1" show-hide="show" identifier="Incorrect1"><qti-content-body>
+			<p> No, the correct answer for the first box is "fresh woods". </p>
+		
+</qti-content-body></qti-feedback-block>
+		<qti-feedback-block outcome-identifier="FEEDBACK2" show-hide="show" identifier="Correct2"><qti-content-body>
+			<p> Your second input is correct. </p>
+		
+</qti-content-body></qti-feedback-block>
+		<qti-feedback-block outcome-identifier="FEEDBACK2" show-hide="show" identifier="Incorrect2"><qti-content-body>
+			<p> No, the correct answer for the second box is "pastures new". </p>
+		
+</qti-content-body></qti-feedback-block>
+	</qti-item-body>
+	<qti-response-processing>
+		<qti-response-condition>
+			<qti-response-if>
+				<qti-is-null>
+					<qti-variable identifier="RESPONSE1"/>
+				</qti-is-null>
+				<qti-set-outcome-value identifier="SCORE">
+					<qti-base-value base-type="float">0.0</qti-base-value>
+				</qti-set-outcome-value>
+			</qti-response-if>
+			<qti-response-else>
+				<qti-set-outcome-value identifier="SCORE">
+					<qti-map-response identifier="RESPONSE1"/>
+				</qti-set-outcome-value>
+				<qti-response-condition>
+					<qti-response-if>
+						<qti-match>
+							<qti-variable identifier="RESPONSE1"/>
+							<qti-correct identifier="RESPONSE1"/>
+						</qti-match>
+						<qti-set-outcome-value identifier="FEEDBACK1">
+							<qti-base-value base-type="identifier">Correct1</qti-base-value>
+						</qti-set-outcome-value>
+					</qti-response-if>
+					<qti-response-else>
+						<qti-set-outcome-value identifier="FEEDBACK1">
+							<qti-base-value base-type="identifier">Incorrect1</qti-base-value>
+						</qti-set-outcome-value>
+					</qti-response-else>
+				</qti-response-condition>
+			</qti-response-else>
+		</qti-response-condition>
+		<qti-response-condition>
+			<qti-response-if>
+				<qti-is-null>
+					<qti-variable identifier="RESPONSE2"/>
+				</qti-is-null>
+				<qti-set-outcome-value identifier="SCORE">
+					<qti-base-value base-type="float">0.0</qti-base-value>
+				</qti-set-outcome-value>
+			</qti-response-if>
+			<qti-response-else>
+				<qti-set-outcome-value identifier="SCORE">
+					<qti-sum>
+						<qti-variable identifier="SCORE"/>
+						<qti-map-response identifier="RESPONSE2"/>
+					</qti-sum>
+				</qti-set-outcome-value>
+				<qti-response-condition>
+					<qti-response-if>
+						<qti-match>
+							<qti-variable identifier="RESPONSE2"/>
+							<qti-correct identifier="RESPONSE2"/>
+						</qti-match>
+						<qti-set-outcome-value identifier="FEEDBACK2">
+							<qti-base-value base-type="identifier">Correct2</qti-base-value>
+						</qti-set-outcome-value>
+					</qti-response-if>
+					<qti-response-else>
+						<qti-set-outcome-value identifier="FEEDBACK2">
+							<qti-base-value base-type="identifier">Incorrect2</qti-base-value>
+						</qti-set-outcome-value>
+					</qti-response-else>
+				</qti-response-condition>
+			</qti-response-else>
+		</qti-response-condition>
+		<qti-response-condition>
+			<qti-response-if>
+				<qti-lt>
+					<qti-variable identifier="SCORE"/>
+					<qti-base-value base-type="float">2.0</qti-base-value>
+				</qti-lt>
+				<qti-set-outcome-value identifier="FEEDBACK">
+					<qti-base-value base-type="identifier">incorrect</qti-base-value>
+				</qti-set-outcome-value>
+			</qti-response-if>
+			<qti-response-else>
+				<qti-set-outcome-value identifier="FEEDBACK">
+					<qti-base-value base-type="identifier">correct</qti-base-value>
+				</qti-set-outcome-value>
+			</qti-response-else>
+		</qti-response-condition>
+
+	</qti-response-processing>
+	<qti-modal-feedback outcome-identifier="FEEDBACK" show-hide="show" identifier="correct"> All
+		correct</qti-modal-feedback>
+	<qti-modal-feedback outcome-identifier="FEEDBACK" show-hide="show" identifier="incorrect">At least one
+		of your inputs is incorrect.</qti-modal-feedback>
+</qti-assessment-item>

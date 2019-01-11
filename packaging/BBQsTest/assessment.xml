@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<qti-assessment-test xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd" xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:m="http://www.w3.org/1998/Math/MathML" tool-version="0.1" title="BBQs test package" tool-name="Spectatus" identifier="SPECTATUS-GENERATED-TEST">
+    <qti-outcome-declaration base-type="float" cardinality="single" identifier="TEST_total">
+        <qti-default-value>
+            <qti-value>0.0</qti-value>
+        </qti-default-value>
+    </qti-outcome-declaration>
+    <qti-outcome-declaration base-type="float" cardinality="single" identifier="SECTION_1_total">
+        <qti-default-value>
+            <qti-value>0.0</qti-value>
+        </qti-default-value>
+    </qti-outcome-declaration>
+    <qti-outcome-declaration base-type="float" cardinality="single" identifier="SECTION_2_total">
+        <qti-default-value>
+            <qti-value>0.0</qti-value>
+        </qti-default-value>
+    </qti-outcome-declaration>
+    <qti-outcome-declaration base-type="identifier" cardinality="multiple" identifier="TEST_FEEDBACK"/>
+    <qti-test-part submission-mode="individual" navigation-mode="nonlinear" identifier="TP">
+        <qti-assessment-section title="Section 1 - BBQ items a-m" visible="true" identifier="S1">
+            <qti-assessment-item-ref href="id-5c1b1e2d56bd/either-or.xml" identifier="id-5c1b1e2d56bd"/>
+            <qti-assessment-item-ref href="id-75bd778a3504/essay-vacation.xml" identifier="id-75bd778a3504"/>
+            <qti-assessment-item-ref href="id-992e8bd3c9ac/hotspot-maximum.xml" identifier="id-992e8bd3c9ac"/>
+            <qti-assessment-item-ref href="id-f8e13982226c/jumble-gapMatch.xml" identifier="id-f8e13982226c"/>
+            <qti-assessment-item-ref href="id-377d71221b04/jumble-inlineChoice.xml" identifier="id-377d71221b04"/>
+            <qti-assessment-item-ref href="id-7e4520cd463f/Likert-choice-questionSet.xml" identifier="id-7e4520cd463f"/>
+            <qti-assessment-item-ref href="id-2a2cfb9f4dde/Likert-match-questionSet.xml" identifier="id-2a2cfb9f4dde"/>
+            <qti-assessment-item-ref href="id-200e2c3f7d76/matching-associate-trigDeriv.xml" identifier="id-200e2c3f7d76"/>
+            <qti-assessment-item-ref href="id-7f35b6c393d5/matching-match-trigDeriv.xml" identifier="id-7f35b6c393d5"/>
+            <qti-assessment-item-ref href="id-3cd82285401e/MultipleAnswer-choice-materials.xml" identifier="id-3cd82285401e"/>
+            <qti-assessment-item-ref href="id-371b0f88774a/MultipleChoice-choice-polynomials.xml" identifier="id-371b0f88774a"/>
+        </qti-assessment-section>
+        <qti-assessment-section title="Section 2 - BBQ items n-z" visible="true" identifier="id-637f1e66940f">
+            <qti-assessment-item-ref href="id-90b59b73c8e4/upload-file.xml" identifier="id-90b59b73c8e4"/>
+            <qti-assessment-item-ref href="id-e475c3c922f6/order-maths.xml" identifier="id-e475c3c922f6"/>
+            <qti-assessment-item-ref href="id-be3cd3bdd3d4/order-mountains.xml" identifier="id-be3cd3bdd3d4"/>
+            <qti-assessment-item-ref href="id-8167235c360b/QuizBowl-multi-geometry.xml" identifier="id-8167235c360b"/>
+            <qti-assessment-item-ref href="id-1ccd6e04685f/ShortAnswer-extText-postcard.xml" identifier="id-1ccd6e04685f"/>
+            <qti-assessment-item-ref href="id-bd44a757f562/SineRule-001.xml" identifier="id-bd44a757f562"/>
+            <qti-assessment-item-ref href="id-13b92f311fc0/SineRule-002-maths.xml" identifier="id-13b92f311fc0"/>
+            <qti-assessment-item-ref href="id-c0bdd9a130c7/text_entry-calculus.xml" identifier="id-c0bdd9a130c7"/>
+            <qti-assessment-item-ref href="id-d565dbe89933/text_entry-Lycidas.xml" identifier="id-d565dbe89933"/>
+            <qti-assessment-item-ref href="id-83210b60ed8f/TF-choice.xml" identifier="id-83210b60ed8f"/>
+            <qti-assessment-item-ref href="id-f9f3153e2ba4/TheAnswer-001.xml" identifier="id-f9f3153e2ba4"/>
+        </qti-assessment-section>
+    </qti-test-part>
+    <qti-outcome-processing>
+        <qti-set-outcome-value identifier="SECTION_1_total">
+            <qti-sum>
+                <qti-test-variables base-type="float" section-identifier="S1" variable-identifier="SCORE"/>
+            </qti-sum>
+        </qti-set-outcome-value>
+        <qti-set-outcome-value identifier="SECTION_2_total">
+            <qti-sum>
+                <qti-test-variables base-type="float" section-identifier="id-637f1e66940f" variable-identifier="SCORE"/>
+            </qti-sum>
+        </qti-set-outcome-value>
+        <qti-set-outcome-value identifier="TEST_total">
+            <qti-sum>
+                <qti-test-variables base-type="float" variable-identifier="SCORE"/>
+            </qti-sum>
+        </qti-set-outcome-value>
+        <qti-set-outcome-value identifier="TEST_FEEDBACK">
+            <qti-multiple>
+                <qti-base-value base-type="identifier">S1_END_FB</qti-base-value>
+                <qti-base-value base-type="identifier">S2_END_FB</qti-base-value>
+                <qti-base-value base-type="identifier">TEST_FB</qti-base-value>
+            </qti-multiple>
+        </qti-set-outcome-value>
+    </qti-outcome-processing>
+    <qti-test-feedback outcome-identifier="TEST_FEEDBACK" access="atEnd" show-hide="show" identifier="TEST_FB">
+        <div>You have reached the end of the test.</div>
+        <div>Section 1 score: <qti-printed-variable identifier="SECTION_1_total" format="%.1f"/> (from a
+            maximum of 39.0)</div>
+        <div>Section 2 score: <qti-printed-variable identifier="SECTION_2_total" format="%.1f"/> (from a
+            maximum of 66.0)</div>
+        <div>Total score: <qti-printed-variable identifier="TEST_total" format="%.1f"/> (from a maximum
+            of 105.0)</div>
+    </qti-test-feedback>
+</qti-assessment-test>

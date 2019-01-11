@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd" identifier="upload-file" title="Upload a file" adaptive="false" time-dependent="false">
+    <qti-response-declaration identifier="RESPONSE" cardinality="single" base-type="file"/>
+    <qti-outcome-declaration identifier="SCORE" cardinality="single" base-type="float" normal-maximum="20.0"/>
+    <qti-item-body>
+        <p>Upload a file here:</p>
+        <qti-upload-interaction response-identifier="RESPONSE">
+            <qti-prompt>Enter the filename</qti-prompt>
+        </qti-upload-interaction>
+    </qti-item-body>
+</qti-assessment-item>

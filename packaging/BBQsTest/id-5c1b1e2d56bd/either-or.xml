@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Thie example adapted from the PET Handbook, copyright University of Cambridge ESOL Examinations -->
+<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd" identifier="either-or-choice-root2" title="Either/Or question about root 2" adaptive="false" time-dependent="false">
+	<qti-response-declaration identifier="RESPONSE" cardinality="single" base-type="identifier">
+		<qti-correct-response>
+			<qti-value>ChoiceB</qti-value>
+		</qti-correct-response>
+	</qti-response-declaration>
+    <qti-outcome-declaration identifier="SCORE" cardinality="single" base-type="float" normal-maximum="1.0">
+		<qti-default-value>
+			<qti-value>0.0</qti-value>
+		</qti-default-value>
+	</qti-outcome-declaration>
+    <qti-outcome-declaration identifier="FEEDBACK" cardinality="single" base-type="identifier"/>
+    <qti-item-body>
+		<div>
+		    <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+		        <semantics>
+		            <mrow>
+		                <msqrt>
+		                    <mn>2</mn>
+		                </msqrt>
+		                <mo>&gt;</mo>
+		                <mn>2</mn>
+		            </mrow>
+		            <annotation encoding="SnuggleTeX">\[ \sqrt{2}&gt;2 \]</annotation>
+		        </semantics>
+		    </math>
+		</div>
+		<qti-choice-interaction response-identifier="RESPONSE" shuffle="false" max-choices="1">
+			<qti-prompt>Is this right or wrong?</qti-prompt>
+			<qti-simple-choice identifier="ChoiceA">Right
+     			<qti-feedback-inline outcome-identifier="FEEDBACK" show-hide="show" identifier="ChoiceA">
+     			    No, 
+     			    <math xmlns="http://www.w3.org/1998/Math/MathML">
+     			        <semantics>
+     			            <mrow>
+     			                <msqrt>
+     			                    <mn>2</mn>
+     			                </msqrt>
+     			                <mo>&lt;</mo>
+     			                <mn>2</mn>
+     			            </mrow>
+     			            <annotation encoding="SnuggleTeX">\[ \sqrt{2}&lt;2 \]</annotation>
+     			        </semantics>
+     			    </math>
+     			</qti-feedback-inline>
+			</qti-simple-choice>
+			<qti-simple-choice identifier="ChoiceB">Wrong
+			    <qti-feedback-inline outcome-identifier="FEEDBACK" show-hide="show" identifier="ChoiceB">
+			        That's right, 
+			        <math xmlns="http://www.w3.org/1998/Math/MathML">
+			            <semantics>
+			                <mrow>
+			                    <msqrt>
+			                        <mn>2</mn>
+			                    </msqrt>
+			                    <mo>&lt;</mo>
+			                    <mn>2</mn>
+			                </mrow>
+			                <annotation encoding="SnuggleTeX">\[ \sqrt{2}&lt;2 \]</annotation>
+			            </semantics>
+			        </math>
+			    </qti-feedback-inline>
+			</qti-simple-choice>
+		</qti-choice-interaction>
+	</qti-item-body>
+    <qti-response-processing>
+        <qti-response-condition>
+            <qti-response-if>
+                <qti-match>
+                    <qti-variable identifier="RESPONSE"/>
+                    <qti-correct identifier="RESPONSE"/>
+                </qti-match>
+                <qti-set-outcome-value identifier="SCORE">
+                    <qti-base-value base-type="float">1</qti-base-value>
+                </qti-set-outcome-value>
+            </qti-response-if>
+            <qti-response-else>
+                <qti-set-outcome-value identifier="SCORE">
+                    <qti-base-value base-type="float">0</qti-base-value>
+                </qti-set-outcome-value>
+            </qti-response-else>
+        </qti-response-condition>
+        <qti-set-outcome-value identifier="FEEDBACK">
+            <qti-variable identifier="RESPONSE"/>
+        </qti-set-outcome-value>
+    </qti-response-processing>
+</qti-assessment-item>

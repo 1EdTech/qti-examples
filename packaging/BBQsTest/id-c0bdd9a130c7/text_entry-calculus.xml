@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd" identifier="text_entry-calculus" title="FIB-Single - Calculus" adaptive="false" time-dependent="false">
+    <qti-response-declaration identifier="RESPONSE" cardinality="single" base-type="string">
+        <qti-correct-response>
+            <qti-value>gradient</qti-value>
+        </qti-correct-response>
+        <qti-mapping default-value="0">
+            <qti-map-entry map-key="slope" mapped-value="1.0"/>
+            <qti-map-entry map-key="gradient" mapped-value="1.0"/>
+        </qti-mapping>
+    </qti-response-declaration>
+    <qti-outcome-declaration identifier="SCORE" cardinality="single" base-type="float" normal-maximum="1.0"/>
+    <qti-outcome-declaration identifier="FEEDBACK" cardinality="multiple" base-type="identifier"/>
+    <qti-item-body>
+        <p>What property of a graph is represented by the derivative?</p>
+        <div>
+            <qti-text-entry-interaction response-identifier="RESPONSE" expected-length="15"/>
+        </div>
+        <p>
+            <qti-feedback-inline outcome-identifier="FEEDBACK" show-hide="show" identifier="Correct">That's
+                right, </qti-feedback-inline>
+            <qti-feedback-inline outcome-identifier="FEEDBACK" show-hide="show" identifier="Correct1"> you
+                could also have said slope.</qti-feedback-inline>
+            <qti-feedback-inline outcome-identifier="FEEDBACK" show-hide="show" identifier="Correct2"> you
+                could also have said gradient.</qti-feedback-inline>
+            <qti-feedback-inline outcome-identifier="FEEDBACK" show-hide="show" identifier="Incorrect">No,
+                the correct answer is either gradient or slope.</qti-feedback-inline>
+        </p>
+    </qti-item-body>
+    <qti-response-processing>
+        <qti-response-condition>
+            <qti-response-if>
+                <qti-is-null>
+                    <qti-variable identifier="RESPONSE"/>
+                </qti-is-null>
+                <qti-set-outcome-value identifier="SCORE">
+                    <qti-base-value base-type="float">0.0</qti-base-value>
+                </qti-set-outcome-value>
+            </qti-response-if>
+            <qti-response-else>
+                <qti-set-outcome-value identifier="SCORE">
+                    <qti-map-response identifier="RESPONSE"/>
+                </qti-set-outcome-value>
+                <qti-response-condition>
+                    <qti-response-if>
+                        <qti-match>
+                            <qti-variable identifier="RESPONSE"/>
+                            <qti-correct identifier="RESPONSE"/>
+                        </qti-match>
+                        <qti-set-outcome-value identifier="FEEDBACK">
+                            <qti-multiple>
+                                <qti-base-value base-type="identifier">Correct</qti-base-value>
+                                <qti-base-value base-type="identifier">Correct1</qti-base-value>
+                            </qti-multiple>
+                        </qti-set-outcome-value>
+                    </qti-response-if>
+                    <qti-response-else-if>
+                        <qti-match>
+                            <qti-variable identifier="RESPONSE"/>
+                            <qti-base-value base-type="string">slope</qti-base-value>
+                        </qti-match>
+                        <qti-set-outcome-value identifier="FEEDBACK">
+                            <qti-multiple>
+                                <qti-base-value base-type="identifier">Correct</qti-base-value>
+                                <qti-base-value base-type="identifier">Correct2</qti-base-value>
+                            </qti-multiple>
+                        </qti-set-outcome-value>
+                    </qti-response-else-if>
+                    <qti-response-else>
+                        <qti-set-outcome-value identifier="FEEDBACK">
+                            <qti-multiple>
+                                <qti-base-value base-type="identifier">Incorrect</qti-base-value>
+                            </qti-multiple>
+                        </qti-set-outcome-value>
+                    </qti-response-else>
+                </qti-response-condition>
+            </qti-response-else>
+        </qti-response-condition>
+    </qti-response-processing>
+</qti-assessment-item>

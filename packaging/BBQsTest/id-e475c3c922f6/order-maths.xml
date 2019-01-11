@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd" identifier="order-maths" title="Order a simple proof" adaptive="false" time-dependent="false">
+    <qti-response-declaration identifier="RESPONSE" cardinality="ordered" base-type="identifier">
+        <qti-correct-response>
+            <qti-value>Line1</qti-value>
+            <qti-value>Line2</qti-value>
+            <qti-value>Line3</qti-value>
+            <qti-value>Line4</qti-value>
+        </qti-correct-response>
+    </qti-response-declaration>
+    <qti-outcome-declaration identifier="SCORE" cardinality="single" base-type="float"/>
+    <qti-outcome-declaration identifier="iSCORE" cardinality="single" base-type="integer"/>
+    <qti-outcome-declaration identifier="FEEDBACK" cardinality="single" base-type="identifier"/>
+    <qti-item-body>
+        <qti-order-interaction response-identifier="RESPONSE" shuffle="true" orientation="vertical">
+            <qti-prompt>Place the lines of the proof that the sum of an arithmetic progression is <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <semantics>
+                        <mfrac>
+                            <mrow>
+                                <mi>a</mi>
+                                <mfenced close=")" open="(">
+                                    <mrow>
+                                        <mn>1</mn>
+                                        <mo>-</mo>
+                                        <msup>
+                                            <mi>r</mi>
+                                            <mi>n</mi>
+                                        </msup>
+                                    </mrow>
+                                </mfenced>
+                            </mrow>
+                            <mrow>
+                                <mn>1</mn>
+                                <mo>-</mo>
+                                <mi>r</mi>
+                            </mrow>
+                        </mfrac>
+                        <annotation encoding="SnuggleTeX">\[ \frac{a(1-r^n)}{1-r} \]</annotation>
+                    </semantics>
+                </math> in the correct order:</qti-prompt>
+            <qti-simple-choice identifier="Line1">
+                <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                    <semantics>
+                        <mrow>
+                            <msub>
+                                <mi>S</mi>
+                                <mi>n</mi>
+                            </msub>
+                            <mo>=</mo>
+                            <mi>a</mi>
+                            <mo>+</mo>
+                            <mi>a</mi>
+                            <mi>r</mi>
+                            <mo>+</mo>
+                            <mi>a</mi>
+                            <msup>
+                                <mi>r</mi>
+                                <mn>2</mn>
+                            </msup>
+                            <mo>+</mo>
+                            <mo>.</mo>
+                            <mo>.</mo>
+                            <mo>.</mo>
+                            <mo>+</mo>
+                            <mi>a</mi>
+                            <msup>
+                                <mi>r</mi>
+                                <mrow>
+                                    <mi>n</mi>
+                                    <mo>-</mo>
+                                    <mn>1</mn>
+                                </mrow>
+                            </msup>
+                        </mrow>
+                        <annotation encoding="SnuggleTeX">\[ S_n=a+ar+ar^2+...+ar^{n-1}
+                            \]</annotation>
+                    </semantics>
+                </math>
+            </qti-simple-choice>
+            <qti-simple-choice identifier="Line2">
+                <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                    <semantics>
+                        <mrow>
+                            <mi>r</mi>
+                            <msub>
+                                <mi>S</mi>
+                                <mi>n</mi>
+                            </msub>
+                            <mo>=</mo>
+                            <mi>a</mi>
+                            <mi>r</mi>
+                            <mo>+</mo>
+                            <mi>a</mi>
+                            <msup>
+                                <mi>r</mi>
+                                <mn>2</mn>
+                            </msup>
+                            <mo>+</mo>
+                            <mi>a</mi>
+                            <msup>
+                                <mi>r</mi>
+                                <mn>3</mn>
+                            </msup>
+                            <mo>+</mo>
+                            <mo>.</mo>
+                            <mo>.</mo>
+                            <mo>.</mo>
+                            <mo>+</mo>
+                            <mi>a</mi>
+                            <msup>
+                                <mi>r</mi>
+                                <mi>n</mi>
+                            </msup>
+                        </mrow>
+                        <annotation encoding="SnuggleTeX">\[ rS_n=ar+ar^2+ar^3+...+ar^{n}
+                            \]</annotation>
+                    </semantics>
+                </math>
+            </qti-simple-choice>
+            <qti-simple-choice identifier="Line3">
+                <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                    <semantics>
+                        <mrow>
+                            <msub>
+                                <mi>S</mi>
+                                <mi>n</mi>
+                            </msub>
+                            <mfenced close=")" open="(">
+                                <mrow>
+                                    <mn>1</mn>
+                                    <mo>-</mo>
+                                    <mi>r</mi>
+                                </mrow>
+                            </mfenced>
+                            <mo>=</mo>
+                            <mi>a</mi>
+                            <mo>-</mo>
+                            <mi>a</mi>
+                            <msup>
+                                <mi>r</mi>
+                                <mi>n</mi>
+                            </msup>
+                        </mrow>
+                        <annotation encoding="SnuggleTeX">\[ S_n(1-r)=a-ar^{n} \]</annotation>
+                    </semantics>
+                </math>
+            </qti-simple-choice>
+            <qti-simple-choice identifier="Line4">
+                <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                    <semantics>
+                        <mrow>
+                            <msub>
+                                <mi>S</mi>
+                                <mi>n</mi>
+                            </msub>
+                            <mo>=</mo>
+                            <mfrac>
+                                <mrow>
+                                    <mi>a</mi>
+                                    <mfenced close=")" open="(">
+                                        <mrow>
+                                            <mn>1</mn>
+                                            <mo>-</mo>
+                                            <msup>
+                                                <mi>r</mi>
+                                                <mi>n</mi>
+                                            </msup>
+                                        </mrow>
+                                    </mfenced>
+                                </mrow>
+                                <mrow>
+                                    <mn>1</mn>
+                                    <mo>-</mo>
+                                    <mi>r</mi>
+                                </mrow>
+                            </mfrac>
+                        </mrow>
+                        <annotation encoding="SnuggleTeX">\[ S_n=\frac{a(1-r^n)}{1-r}
+                            \]</annotation>
+                    </semantics>
+                </math>
+            </qti-simple-choice>
+        </qti-order-interaction>
+        <p>
+            <qti-feedback-inline outcome-identifier="FEEDBACK" show-hide="show" identifier="OK"> Yes, all
+                correct.</qti-feedback-inline>
+            <qti-feedback-inline outcome-identifier="FEEDBACK" show-hide="show" identifier="No"> No,
+                    <qti-printed-variable identifier="iSCORE"/> correct.</qti-feedback-inline>
+        </p>
+    </qti-item-body>
+    <qti-response-processing>
+        <qti-response-condition>
+            <qti-response-if>
+                <qti-match>
+                    <qti-variable identifier="RESPONSE"/>
+                    <qti-correct identifier="RESPONSE"/>
+                </qti-match>
+                <qti-set-outcome-value identifier="SCORE">
+                    <qti-base-value base-type="float">4.0</qti-base-value>
+                </qti-set-outcome-value>
+                <qti-set-outcome-value identifier="FEEDBACK">
+                    <qti-base-value base-type="identifier">OK</qti-base-value>
+                </qti-set-outcome-value>
+            </qti-response-if>
+            <qti-response-else>
+                <qti-set-outcome-value identifier="SCORE">
+                    <qti-base-value base-type="float">0.0</qti-base-value>
+                </qti-set-outcome-value>
+                <qti-response-condition>
+                    <qti-response-if>
+                        <qti-match>
+                            <qti-index n="1">
+                                <qti-variable identifier="RESPONSE"/>
+                            </qti-index>
+                            <qti-base-value base-type="identifier">Line1</qti-base-value>
+                        </qti-match>
+                        <qti-set-outcome-value identifier="SCORE">
+                            <qti-sum>
+                                <qti-variable identifier="SCORE"/>
+                                <qti-base-value base-type="float">1.0</qti-base-value>
+                            </qti-sum>
+                        </qti-set-outcome-value>
+                    </qti-response-if>
+                </qti-response-condition>
+                <qti-response-condition>
+                    <qti-response-if>
+                        <qti-match>
+                            <qti-index n="2">
+                                <qti-variable identifier="RESPONSE"/>
+                            </qti-index>
+                            <qti-base-value base-type="identifier">Line2</qti-base-value>
+                        </qti-match>
+                        <qti-set-outcome-value identifier="SCORE">
+                            <qti-sum>
+                                <qti-variable identifier="SCORE"/>
+                                <qti-base-value base-type="float">1.0</qti-base-value>
+                            </qti-sum>
+                        </qti-set-outcome-value>
+                    </qti-response-if>
+                </qti-response-condition>
+                <qti-response-condition>
+                    <qti-response-if>
+                        <qti-match>
+                            <qti-index n="3">
+                                <qti-variable identifier="RESPONSE"/>
+                            </qti-index>
+                            <qti-base-value base-type="identifier">Line3</qti-base-value>
+                        </qti-match>
+                        <qti-set-outcome-value identifier="SCORE">
+                            <qti-sum>
+                                <qti-variable identifier="SCORE"/>
+                                <qti-base-value base-type="float">1.0</qti-base-value>
+                            </qti-sum>
+                        </qti-set-outcome-value>
+                    </qti-response-if>
+                </qti-response-condition>
+                <qti-response-condition>
+                    <qti-response-if>
+                        <qti-match>
+                            <qti-index n="4">
+                                <qti-variable identifier="RESPONSE"/>
+                            </qti-index>
+                            <qti-base-value base-type="identifier">Line4</qti-base-value>
+                        </qti-match>
+                        <qti-set-outcome-value identifier="SCORE">
+                            <qti-sum>
+                                <qti-variable identifier="SCORE"/>
+                                <qti-base-value base-type="float">1.0</qti-base-value>
+                            </qti-sum>
+                        </qti-set-outcome-value>
+                    </qti-response-if>
+                </qti-response-condition>
+                <qti-set-outcome-value identifier="FEEDBACK">
+                    <qti-base-value base-type="identifier">No</qti-base-value>
+                </qti-set-outcome-value>
+            </qti-response-else>
+        </qti-response-condition>
+        <qti-set-outcome-value identifier="iSCORE">
+            <qti-round>
+                <qti-variable identifier="SCORE"/>
+            </qti-round>
+        </qti-set-outcome-value>
+    </qti-response-processing>
+</qti-assessment-item>

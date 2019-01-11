@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd" identifier="hotspot-maximum" title="Local Maximum" adaptive="false" time-dependent="false">
+	<qti-response-declaration identifier="RESPONSE" cardinality="single" base-type="point">
+		<qti-correct-response>
+			<qti-value>216 90</qti-value>
+		</qti-correct-response>
+		<qti-area-mapping default-value="0">
+			<qti-area-map-entry shape="rect" coords="184,78,244,112" mapped-value="1.0"/>
+		</qti-area-mapping>
+	</qti-response-declaration>
+    <qti-outcome-declaration identifier="SCORE" cardinality="single" base-type="float" normal-maximum="1.0"/>
+    <qti-outcome-declaration identifier="FEEDBACK" cardinality="single" base-type="identifier"/>
+	<qti-item-body>
+		<qti-select-point-interaction response-identifier="RESPONSE" max-choices="1">
+			<qti-prompt>Identify the local maximum on the graph:</qti-prompt>
+		    <object type="image/png" width="627" height="511" data="images/cubic_xpw3d6m2xp3.png">Graph of cubic</object>
+		</qti-select-point-interaction>
+	    <qti-feedback-block outcome-identifier="FEEDBACK" show-hide="show" identifier="Correct"><qti-content-body>
+	        <p>That's right.</p>
+	    
+</qti-content-body></qti-feedback-block>
+	    <qti-feedback-block outcome-identifier="FEEDBACK" show-hide="show" identifier="Incorrect"><qti-content-body>
+	        <p>No, that's not the local maximum.</p>
+	    
+</qti-content-body></qti-feedback-block>
+	</qti-item-body>
+    <qti-response-processing>
+        <qti-response-condition>
+            <qti-response-if>
+                <qti-is-null>
+                    <qti-variable identifier="RESPONSE"/>
+                </qti-is-null>
+                <qti-set-outcome-value identifier="SCORE">
+                    <qti-base-value base-type="float">0.0</qti-base-value>
+                </qti-set-outcome-value>
+            </qti-response-if>
+            <qti-response-else>
+                <qti-set-outcome-value identifier="SCORE">
+                    <qti-map-response-point identifier="RESPONSE"/>
+                </qti-set-outcome-value>
+                <qti-response-condition>
+                    <qti-response-if>
+                        <qti-inside shape="rect" coords="184,78,244,112">
+                            <qti-variable identifier="RESPONSE"/>
+                        </qti-inside>
+                        <qti-set-outcome-value identifier="FEEDBACK">
+                            <qti-base-value base-type="identifier">Correct</qti-base-value>
+                        </qti-set-outcome-value>
+                    </qti-response-if>
+                    <qti-response-else>
+                        <qti-set-outcome-value identifier="FEEDBACK">
+                            <qti-base-value base-type="identifier">Incorrect</qti-base-value>
+                        </qti-set-outcome-value>
+                    </qti-response-else>
+                </qti-response-condition>
+             </qti-response-else>
+        </qti-response-condition>
+    </qti-response-processing>
+</qti-assessment-item>
