@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
-<manifest identifier="manifest" xmlns="http://www.imsglobal.org/xsd/qti/qtiv3p0/imscp_v1p1" xmlns:imsmd="http://ltsc.ieee.org/xsd/LOM" xmlns:imsqti="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:csm="http://www.imsglobal.org/xsd/qti/qtiv2p2/imscsmd_v1p0" xsi:schemaLocation="http://www.imsglobal.org/xsd/qti/qtiv2p2/imscsmd_v1p0 http://www.imsglobal.org/xsd/qti/qtiv2p2/qtiv2p2_csm_v2p2.xsdhttp://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsdhttp://ltsc.ieee.org/xsd/LOM https://purl.imsglobal.org/spec/md/v1p3/schema/xsd/imsmd_loose_v1p3p2.xsdhttp://www.imsglobal.org/xsd/qti/qtiv3p0/imscp_v1p1 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqtiv3p0_imscpv1p2_v1p0.xsd">
+<manifest identifier="manifest" xmlns="http://www.imsglobal.org/xsd/qti/qtiv3p0/imscp_v1p1" xmlns:imsmd="http://ltsc.ieee.org/xsd/LOM" xmlns:imsqti="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:csm="http://www.imsglobal.org/xsd/qti/qtiv3p0/imscsmd_v1p1" xsi:schemaLocation="http://www.imsglobal.org/xsd/qti/qtiv3p0/imscsmd_v1p1 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqtiv3p0_csmv1p1_v1p0.xsd http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd http://ltsc.ieee.org/xsd/LOM https://purl.imsglobal.org/spec/md/v1p3/schema/xsd/imsmd_loose_v1p3p2.xsd http://www.imsglobal.org/xsd/qti/qtiv3p0/imscp_v1p1 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqtiv3p0_imscpv1p2_v1p0.xsd">
     <metadata>
         <schema>QTI Package</schema>
         <schemaversion>3.0.0</schemaversion>
     </metadata>
     <organizations/>
     <resources>
-        <resource identifier="testQDB_1" type="imsqti_test_xmlv2p2" href="testitems/testQDB_1.xml">
+        <resource identifier="testQDB_1" type="imsqti_test_xmlv3p0" href="testitems/testQDB_1.xml">
             <metadata>
                 <csm:curriculumStandardsMetadataSet>
                     <csm:curriculumStandardsMetadata>
