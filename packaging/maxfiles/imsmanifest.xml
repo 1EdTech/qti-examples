@@ -216,7 +216,7 @@
 				<imsmd:lom>
 					<imsmd:general>
 						<imsmd:identifier>
-                            <imsmd:entry>http://www.imsglobal.org/question/qtiv2p2pd/rptemplates/map_response.xml</imsmd:entry>
+                            <imsmd:entry>https://www.imsglobal.org/question/qti_v3p0/rptemplates/map_response.xml</imsmd:entry>
                         </imsmd:identifier>
 						<imsmd:title>
 							<imsmd:string language="en">Map Response Template</imsmd:string>
@@ -268,7 +268,7 @@
 				<imsmd:lom>
 					<imsmd:general>
 						<imsmd:identifier>
-                            <imsmd:entry>http://www.imsglobal.org/question/qtiv2p2pd/rptemplates/match_correct.xml</imsmd:entry>
+                            <imsmd:entry>https://www.imsglobal.org/question/qti_v3p0/rptemplates/match_correct.xml</imsmd:entry>
                         </imsmd:identifier>
 						<imsmd:title>
 							<imsmd:string language="en">Match Correct</imsmd:string>
