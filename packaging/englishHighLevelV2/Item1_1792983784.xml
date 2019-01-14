@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--This file was created using: Onyx Editor, Version 3.4 (Full, licensed version), (c)2011 BPS Bildungsportal Sachsen GmbH-->
+<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+                     xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd" 
+                     identifier="Item1_1792983784" title="1" adaptive="false" time-dependent="false">
+	<qti-response-declaration identifier="RESPONSE" cardinality="single" base-type="string"/>
+	<qti-outcome-declaration identifier="SCORE" cardinality="single" base-type="float">
+		<qti-default-value>
+			<qti-value>0.0</qti-value>
+		</qti-default-value>
+	</qti-outcome-declaration>
+	<qti-outcome-declaration identifier="MAXSCORE" cardinality="single" base-type="float">
+		<qti-default-value>
+			<qti-value>40.0</qti-value>
+		</qti-default-value>
+	</qti-outcome-declaration>
+	<qti-item-body>
+		<p>1. Everybody should be allowed to settle freely in the country of their
+			choice.<br/>Discuss.</p>
+		<qti-extended-text-interaction response-identifier="RESPONSE" max-strings="150"/>
+	</qti-item-body>
+</qti-assessment-item>

@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--This file was created using: Onyx Editor, Version 3.4 (Full, licensed version), (c)2011 BPS Bildungsportal Sachsen GmbH-->
+<qti-assessment-test xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+                     xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd" 
+                     identifier="Test_976288596" title="English excercises II">
+	<qti-outcome-declaration identifier="SCORE" cardinality="single" base-type="float">
+		<qti-default-value>
+			<qti-value>0.0</qti-value>
+		</qti-default-value>
+	</qti-outcome-declaration>
+	<qti-outcome-declaration identifier="MAXSCORE" cardinality="single" base-type="float">
+		<qti-default-value>
+			<qti-value>160.0</qti-value>
+		</qti-default-value>
+	</qti-outcome-declaration>
+	<qti-time-limits max-time="10800.0"/>
+	<qti-test-part identifier="testpartID" navigation-mode="nonlinear" submission-mode="simultaneous">
+		<qti-assessment-section identifier="IQuestionsonthetext_1509076617" fixed="false" title="Reading Text" visible="true">
+			<qti-rubric-block view="candidate"><qti-content-body>
+				<p>
+					<b>LOST IN AMERICA </b>
+				</p>
+				<table>
+					<tbody>
+						<tr>
+							<td> </td>
+							<td>Elsa Flores fled El Salvador´s civil war in 1980, moved to
+								Los<br/>Angeles and cleaned offices until she had saved enough money
+								to open<br/>a small clothing store. But her American dream fell
+								apart in 1992<br/>when racial tensions, videotape and a
+								controversial court verdict 5</td>
+						</tr>
+						<tr>
+							<td>5</td>
+							<td>erupted into the Rodney King riots<sup>1</sup>. Flores huddled with
+								her four</td>
+						</tr>
+						<tr>
+							<td/>
+							<td>children in a back bedroom. They could hear gunfire and
+								shouting<br/>outside. Watching the news on TV, they saw flames dance
+								from the<br/>window of her clothing store. Flores assumed the
+								rioters who des-<br/>troyed her business were black. But then she
+								caught a glimpse of</td>
+						</tr>
+						<tr>
+							<td>10</td>
+							<td>them on camera. They were like her: Latinos. Now she says: "They
+								are</td>
+						</tr>
+						<tr>
+							<td/>
+							<td>not bad people, but they become frustrated here."<br/>The ambiguous
+								role that Latinos played in those events under-<br/>scores a
+								much-ignored phenomenon: the vast new wave of
+								low-skilled<br/>immigrants has yet to find its place in the United
+								States. Like</td>
+						</tr>
+						<tr>
+							<td>15</td>
+							<td>Flores, who scrimped and borrowed and rebuilt, most Latino
+								immi-</td>
+						</tr>
+						<tr>
+							<td/>
+							<td>grants bring enough ambition with them to compensate for a lack
+								of<br/>education. About two thirds achieve at least a working-class
+								income.<br/>But many others, though equally determined, fail. And
+								more signifi-<br/>cantly, their children often fail. Latinos are in
+								danger of becoming</td>
+						</tr>
+						<tr>
+							<td>20</td>
+							<td>locked into the same distinctly American form of poverty that
+								has</td>
+						</tr>
+						<tr>
+							<td/>
+							<td>been perpetuated through generations of inner-city blacks. In
+								fact,<br/>if current trends persist, in another decade, Latinos will
+								replace<br/>blacks as the United States´ biggest underclass. More
+								than 30 per-<br/>cent of Latinos who arrived in the 1980s live below
+								the poverty</td>
+						</tr>
+						<tr>
+							<td>25</td>
+							<td>line.<br/>For many immigrants, the journey north is an attempt to
+								overcome</td>
+						</tr>
+						<tr>
+							<td/>
+							<td>centuries-old barriers of race and class. What they find is
+								new<br/>barriers of class and race. The immigrants who have the
+								strongest<br/>memories of home do best in the States; however bad,
+								it is still an</td>
+						</tr>
+						<tr>
+							<td>30</td>
+							<td>improvement. But for their children, who often have no memory
+								of</td>
+						</tr>
+						<tr>
+							<td/>
+							<td>home, America seems like a raw deal. They watch their parents
+								and<br/>see only toil and poverty. They watch American TV and see
+								only<br/>affluence. Public-school systems on the brink of collapse
+								fail to<br/>give them the tools they need. "I can tell by looking in
+								their eyes</td>
+						</tr>
+						<tr>
+							<td>35</td>
+							<td>how long they´ve been here, " says the Rev. Vergil Elizondo, of
+								San</td>
+						</tr>
+						<tr>
+							<td/>
+							<td>Antonio ,Texas. "They come sparkling with hope, and the first
+								gener-<br/>ation finds that hope rewarded. Their children´s eyes no
+								longer<br/>sparkle. They have learned only to want jobs and money
+								they can´t<br/>have."</td>
+						</tr>
+						<tr>
+							<td>40</td>
+							<td>Take the case of Mexican newcomers. Last year the National</td>
+						</tr>
+						<tr>
+							<td/>
+							<td>Research Council, America´s most distinguished society of
+								scholars,<br/>found that Mexican immigrants start out with the
+								lowest wages of any<br/>nationality - and that the wage gap grows
+								the longer they live in<br/>the United States.</td>
+						</tr>
+						<tr>
+							<td>45</td>
+							<td>The statistics for their children are even more troubling.</td>
+						</tr>
+						<tr>
+							<td/>
+							<td>Nationally, teenage births are declining. But not so for girls
+								of<br/>Mexican descent, for whom the rate has risen by a third
+								during the<br/>1990s. Last year nearly 11 percent of Latino teenage
+								girls gave<br/>birth - double the rate for whites, and for the first
+								time surpasse-</td>
+						</tr>
+						<tr>
+							<td>50</td>
+							<td>ing the rate for blacks. School-dropout rates are also gloomy.
+								The</td>
+						</tr>
+						<tr>
+							<td/>
+							<td>U.S. Department of Education estimates that 44 percent of
+								foreign-<br/>born Latino youths between the ages of 16 and 24 are
+								dropouts. That<br/>number for American-born children of immigrants
+								is 17 percent; for<br/>blacks it is 13 percent, for whites, 17
+								percent. Because second-</td>
+						</tr>
+						<tr>
+							<td>55</td>
+							<td>generation Latinos are the fastest-growing source of new
+								American</td>
+						</tr>
+						<tr>
+							<td/>
+							<td>workers,their lack of basic skills could put a brake on the
+								national<br/>economy.<br/>In the search for solutions to America´s
+								growing Latino under-<br/>class, the simplest proposal has been to
+								reduce the flow of low-</td>
+						</tr>
+						<tr>
+							<td>60</td>
+							<td>skilled immigrants. That may be politically expedient, but it
+								won´t</td>
+						</tr>
+						<tr>
+							<td/>
+							<td>work. The truth is that the United States needs these people. In
+								a<br/>decade, when the bulk of the baby-boom generation<sup>2</sup>
+								hits retirement<br/>age, there will be a tremendous shortage of
+								young workers. More than<br/>a third of the Latino population is
+								under the age of 18. The vast</td>
+						</tr>
+						<tr>
+							<td>65 </td>
+							<td>majority are native-born U.S. citizens, and they are not going
+								any-</td>
+						</tr>
+						<tr>
+							<td/>
+							<td>where. They are the nation´s future. Unless new avenues of
+								opportu-<br/>nity open up for Latino immigrants and their children,
+								the nation as<br/>a whole will suffer. Remedies are still possible.
+								A generation of<br/>young people is still in school waiting to be
+								taught, and</td>
+						</tr>
+						<tr>
+							<td>70  </td>
+							<td>expectations are still alive. But the opportunities are rapidly</td>
+						</tr>
+						<tr>
+							<td/>
+							<td>disappearing.</td>
+						</tr>
+					</tbody>
+				</table>
+				<p>From: <em>Newsweek</em>, 15 Jule 1998 </p>
+				<p>
+					<b>Annotations:</b>
+					<br/>
+					<sup>1</sup> Rodney King riots: reference to the riots that broke out in
+					ethic<br/>neighbourhoods, especially black areas, of Los Angeles in
+					1992,<br/>when a court acquitted several white policemen accused of
+					beating<br/>up a black driver, Rodney King; the incident had been filmed on<br/>videotape.<br/>
+					<sup>2</sup> baby-boom generation: the generation born between the late
+					1940s<br/>an the early 1960s, when the birth rate after the war was high </p>
+				<p>
+					<b>Read all the questions first, then answer them in the given order. <br/>Use
+						your own words as far as is appropriate. </b>
+				</p>
+			
+</qti-content-body></qti-rubric-block>
+		</qti-assessment-section>
+		<qti-assessment-section identifier="LOSTINAMERICA_408859890" fixed="false" title="I. Questions on the text" visible="true">
+			<qti-rubric-block view="candidate"><qti-content-body>
+				<p>
+					<b>Read all the questions first, then answer them in the given order. <br/>Use
+						your own words as far as is appropriate. </b>
+				</p>
+			
+</qti-content-body></qti-rubric-block>
+			<qti-assessment-item-ref identifier="Item1_619462302" href="Item1_619462302.xml" fixed="false"/>
+			<qti-assessment-item-ref identifier="Item2_205541527" href="Item2_205541527.xml" fixed="false"/>
+			<qti-assessment-item-ref identifier="Item3_837431413" href="Item3_837431413.xml" fixed="false"/>
+			<qti-assessment-item-ref identifier="Item4_357463136" href="Item4_357463136.xml" fixed="false"/>
+			<qti-assessment-item-ref identifier="Item5_154730035" href="Item5_154730035.xml" fixed="false"/>
+			<qti-assessment-item-ref identifier="Item6_1645506707" href="Item6_1645506707.xml" fixed="false"/>
+		</qti-assessment-section>
+		<qti-assessment-section identifier="IIComposition_437292360" fixed="false" title="II. Composition" visible="true">
+			<qti-rubric-block view="candidate"><qti-content-body>
+				<p>Choose <b>one</b> of the following topics.<br/>Write about 120 to 150 words.</p>
+			
+</qti-content-body></qti-rubric-block>
+			<qti-assessment-item-ref identifier="Item1_1792983784" href="Item1_1792983784.xml" fixed="false"/>
+			<qti-assessment-item-ref identifier="Item2_863783866" href="Item2_863783866.xml" fixed="false"/>
+		</qti-assessment-section>
+		<qti-assessment-section identifier="IIITranslation_214716776" fixed="false" title="III. Translation" visible="true">
+			<qti-assessment-item-ref identifier="Item1_410949756" href="Item1_410949756.xml" fixed="false"/>
+		</qti-assessment-section>
+	</qti-test-part>
+	<qti-outcome-processing>
+		<qti-set-outcome-value identifier="SCORE">
+			<qti-sum>
+				<qti-test-variables variable-identifier="SCORE"/>
+			</qti-sum>
+		</qti-set-outcome-value>
+	</qti-outcome-processing>
+</qti-assessment-test>

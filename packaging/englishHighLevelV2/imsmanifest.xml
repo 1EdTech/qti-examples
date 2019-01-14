@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--This file was created using: Onyx Editor, Version 3.4 (Full, licensed version), (c)2011 BPS Bildungsportal Sachsen GmbH (updated by hand Wednesday, 6 June 2012 19:58:06)-->
+<imscp:manifest xmlns:imscp="http://www.imsglobal.org/xsd/qti/qtiv3p0/imscp_v1p1" xmlns:imsmd="http://ltsc.ieee.org/xsd/LOM" 
+                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.imsglobal.org/xsd/qti/qtiv3p0/imscp_v1p1" 
+                xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqti_metadata_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_metadatav3p0_v1p0.xsd http://ltsc.ieee.org/xsd/LOM https://purl.imsglobal.org/spec/md/v1p3/schema/xsd/imsmd_loose_v1p3p2.xsd http://www.imsglobal.org/xsd/qti/qtiv3p0/imscp_v1p1 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqtiv3p0_imscpv1p2_v1p0.xsd" 
+                identifier="manifestID">
+    <imscp:metadata>
+        <imscp:schema>QTI Package</imscp:schema>
+        <imscp:schemaversion>3.0.0</imscp:schemaversion>
+    </imscp:metadata>
+	<imscp:organizations/>
+	<imscp:resources>
+		<imscp:resource identifier="Test_976288596" type="imsqti_test_xmlv3p0" href="Test_976288596.xml">
+			<imscp:metadata>
+				<imsmd:lom>
+					<imsmd:general>
+						<imsmd:identifier><imsmd:entry>Test_976288596</imsmd:entry></imsmd:identifier>
+						<imsmd:title>
+							<imsmd:string>English exercises II</imsmd:string>
+						</imsmd:title>
+						<imsmd:language>de</imsmd:language>
+					</imsmd:general>
+					<imsmd:lifeCycle>
+						<imsmd:contribute>
+							<imsmd:role>
+								<imsmd:source>
+									LOMv1.0
+								</imsmd:source>
+								<imsmd:value>
+									author
+								</imsmd:value>
+							</imsmd:role>
+							<imsmd:entity>
+								BEGIN:VCARD VERSION:3.0 N:Winkelmann;Yvonne FN:Yvonne
+									Winkelmann ORG:BPS Bildungsportal Sachsen GmbH
+									URL:http://bps-system.de TITLE: TEL;TYPE=WORK,VOICE:
+									ADR;TYPE=intl,postal,parcel,work:;;;;;;EMAIL;TYPE=PREF,INTERNET:
+									END:VCARD
+							</imsmd:entity>
+						</imsmd:contribute>
+					</imsmd:lifeCycle>
+				</imsmd:lom>
+			</imscp:metadata>
+			<imscp:file href="Test_976288596.xml"/>
+			<imscp:dependency identifierref="Item1_619462302"/>
+			<imscp:dependency identifierref="Item2_205541527"/>
+			<imscp:dependency identifierref="Item3_837431413"/>
+			<imscp:dependency identifierref="Item4_357463136"/>
+			<imscp:dependency identifierref="Item5_154730035"/>
+			<imscp:dependency identifierref="Item6_1645506707"/>
+			<imscp:dependency identifierref="Item1_1792983784"/>
+			<imscp:dependency identifierref="Item2_863783866"/>
+			<imscp:dependency identifierref="Item1_410949756"/>
+		</imscp:resource>
+		<imscp:resource identifier="Item1_619462302" type="imsqti_item_xmlv3p0" href="Item1_619462302.xml">
+			<imscp:file href="Item1_619462302.xml"/>
+		</imscp:resource>
+		<imscp:resource identifier="Item2_205541527" type="imsqti_item_xmlv3p0" href="Item2_205541527.xml">
+			<imscp:file href="Item2_205541527.xml"/>
+		</imscp:resource>
+		<imscp:resource identifier="Item3_837431413" type="imsqti_item_xmlv3p0" href="Item3_837431413.xml">
+			<imscp:file href="Item3_837431413.xml"/>
+		</imscp:resource>
+		<imscp:resource identifier="Item4_357463136" type="imsqti_item_xmlv3p0" href="Item4_357463136.xml">
+			<imscp:file href="Item4_357463136.xml"/>
+		</imscp:resource>
+		<imscp:resource identifier="Item5_154730035" type="imsqti_item_xmlv3p0" href="Item5_154730035.xml">
+			<imscp:file href="Item5_154730035.xml"/>
+		</imscp:resource>
+		<imscp:resource identifier="Item6_1645506707" type="imsqti_item_xmlv3p0" href="Item6_1645506707.xml">
+			<imscp:file href="Item6_1645506707.xml"/>
+		</imscp:resource>
+		<imscp:resource identifier="Item1_1792983784" type="imsqti_item_xmlv3p0" href="Item1_1792983784.xml">
+			<imscp:file href="Item1_1792983784.xml"/>
+		</imscp:resource>
+		<imscp:resource identifier="Item2_863783866" type="imsqti_item_xmlv3p0" href="Item2_863783866.xml">
+			<imscp:file href="Item2_863783866.xml"/>
+		</imscp:resource>
+		<imscp:resource identifier="Item1_410949756" type="imsqti_item_xmlv3p0" href="Item1_410949756.xml">
+			<imscp:file href="Item1_410949756.xml"/>
+		</imscp:resource>
+	</imscp:resources>
+</imscp:manifest>
