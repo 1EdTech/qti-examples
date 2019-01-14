@@ -4,9 +4,9 @@
     xmlns:lom="http://ltsc.ieee.org/xsd/LOM" 
           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
     xmlns:imsqti="http://www.imsglobal.org/xsd/imsqti_metadata_v3p0" 
-    xsi:schemaLocation="http://ltsc.ieee.org/xsd/LOM https://www.imsglobal.org/xsd/imsmd_loose_v1p3p2.xsd
-    http://www.imsglobal.org/xsd/qti/qtiv3p0/imscp_v1p1 https://www.imsglobal.org/xsd/qti/qtiv3p0/imsqtiv3p0_imscpv1p2_v1p0.xsd
-    http://www.imsglobal.org/xsd/imsqti_metadata_v3p0 https://www.imsglobal.org/xsd/qti/qtiv3p0/imsqti_metadatav3p0_v1p0.xsd" 
+    xsi:schemaLocation="http://ltsc.ieee.org/xsd/LOM https://purl.imsglobal.org/spec/md/v1p3/schema/xsd/imsmd_loose_v1p3p2.xsd
+    http://www.imsglobal.org/xsd/qti/qtiv3p0/imscp_v1p1 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqtiv3p0_imscpv1p2_v1p0.xsd
+    http://www.imsglobal.org/xsd/imsqti_metadata_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_metadatav3p0_v1p0.xsd" 
           identifier="PCI_Example">
     <metadata>
         <schema>QTI Package</schema>
@@ -50,7 +50,7 @@
             </lom:technical>
             <lom:rights>
                 <lom:description>
-                    <lom:string language="en">(c) 2017,2018 Houghton Mifflin Harcourt. (9780544727984)</lom:string>
+                    <lom:string language="en">(c) 2017,2018,2019 Houghton Mifflin Harcourt. (9780544727984)</lom:string>
                 </lom:description>
             </lom:rights>
         </lom:lom>
