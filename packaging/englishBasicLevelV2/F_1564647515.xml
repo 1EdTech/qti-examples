@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--This file was created using: Onyx Editor, Version 3.4 (Unregistered demo version), (c)2011 BPS Bildungsportal Sachsen GmbH-->
+<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd" identifier="F_1564647515" title="In welchem Satz ist das Present Perfect richtig eingesetzt?" adaptive="false" time-dependent="false">
+	<qti-response-declaration identifier="RESPONSE_23457782" cardinality="multiple" base-type="identifier">
+		<qti-correct-response>
+			<qti-value>choice_935385556</qti-value>
+			<qti-value>choice_1810683859</qti-value>
+			<qti-value>choice_1001684714</qti-value>
+			<qti-value>choice_665217793</qti-value>
+		</qti-correct-response>
+	</qti-response-declaration>
+	<qti-outcome-declaration identifier="SCORE" cardinality="single" base-type="float">
+		<qti-default-value>
+			<qti-value>0.0</qti-value>
+		</qti-default-value>
+	</qti-outcome-declaration>
+	<qti-outcome-declaration identifier="MAXSCORE" cardinality="single" base-type="float">
+		<qti-default-value>
+			<qti-value>1.0</qti-value>
+		</qti-default-value>
+	</qti-outcome-declaration>
+	<qti-outcome-declaration identifier="FEEDBACKBASIC" cardinality="single" base-type="identifier">
+		<qti-default-value>
+			<qti-value>empty</qti-value>
+		</qti-default-value>
+	</qti-outcome-declaration>
+	<qti-item-body>
+		<div><b>In welchem Satz ist das Present Perfect richtig eingesetzt?</b></div>
+		<qti-choice-interaction response-identifier="RESPONSE_23457782" shuffle="true" max-choices="0">
+			<qti-simple-choice identifier="choice_935385556">They have met at the airport.</qti-simple-choice>
+			<qti-simple-choice identifier="choice_1810683859">We have left for Edinburgh.</qti-simple-choice>
+			<qti-simple-choice identifier="choice_1001684714">Where have you gone?</qti-simple-choice>
+			<qti-simple-choice identifier="choice_665217793">The lesson has just begun.</qti-simple-choice>
+		</qti-choice-interaction>
+	</qti-item-body>
+	<qti-response-processing>
+		<qti-response-condition>
+			<qti-response-if>
+				<qti-is-null>
+					<qti-variable identifier="RESPONSE_23457782"/>
+				</qti-is-null>
+				<qti-set-outcome-value identifier="FEEDBACKBASIC">
+					<qti-base-value base-type="identifier">empty</qti-base-value>
+				</qti-set-outcome-value>
+			</qti-response-if>
+			<qti-response-else-if>
+				<qti-match>
+					<qti-variable identifier="RESPONSE_23457782"/>
+					<qti-correct identifier="RESPONSE_23457782"/>
+				</qti-match>
+				<qti-set-outcome-value identifier="SCORE">
+					<qti-sum>
+						<qti-variable identifier="SCORE"/>
+						<qti-variable identifier="MAXSCORE"/>
+					</qti-sum>
+				</qti-set-outcome-value>
+				<qti-set-outcome-value identifier="FEEDBACKBASIC">
+					<qti-base-value base-type="identifier">correct</qti-base-value>
+				</qti-set-outcome-value>
+			</qti-response-else-if>
+			<qti-response-else>
+				<qti-set-outcome-value identifier="FEEDBACKBASIC">
+					<qti-base-value base-type="identifier">incorrect</qti-base-value>
+				</qti-set-outcome-value>
+			</qti-response-else>
+		</qti-response-condition>
+	</qti-response-processing>
+</qti-assessment-item>

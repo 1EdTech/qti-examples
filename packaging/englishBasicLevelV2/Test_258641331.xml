@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<qti-assessment-test xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd" identifier="Test_258641331" title="English exercises">
+	<qti-outcome-declaration identifier="SCORE" cardinality="single" base-type="float">
+		<qti-default-value>
+			<qti-value>0.0</qti-value>
+		</qti-default-value>
+	</qti-outcome-declaration>
+	<qti-outcome-declaration identifier="MAXSCORE" cardinality="single" base-type="float">
+		<qti-default-value>
+			<qti-value>24.0</qti-value>
+		</qti-default-value>
+	</qti-outcome-declaration>
+	<qti-test-part identifier="testpartID" navigation-mode="nonlinear" submission-mode="simultaneous">
+		<qti-assessment-section identifier="A_2021644561" fixed="false" title="A. Bilde aus den Verbformen die dazugehörigen Passivformen." visible="true">
+			<qti-selection select="4"/>
+			<qti-ordering shuffle="true"/>
+			<qti-rubric-block view="candidate"><qti-content-body>
+				<p>
+					<b>Bilde aus den Verbformen die dazugehörigen Passivformen. Beachte die
+						Zeitform.</b>
+				</p>
+				<p> Beispiel:<br/>the car - to produce (Simple Present)<br/>the car is produced </p>
+			
+</qti-content-body></qti-rubric-block>
+			<qti-assessment-item-ref identifier="A_403910368" href="A_403910368.xml" fixed="false"/>
+			<qti-assessment-item-ref identifier="A_2140438487" href="A_2140438487.xml" fixed="false"/>
+			<qti-assessment-item-ref identifier="A_2121083126" href="A_2121083126.xml" fixed="false"/>
+			<qti-assessment-item-ref identifier="A_1925743812" href="A_1925743812.xml" fixed="false"/>
+			<qti-assessment-item-ref identifier="A_79197713" href="A_79197713.xml" fixed="false"/>
+			<qti-assessment-item-ref identifier="A_265237402" href="A_265237402.xml" fixed="false"/>
+			<qti-assessment-item-ref identifier="A_1845621905" href="A_1845621905.xml" fixed="false"/>
+			<qti-assessment-item-ref identifier="A_603808326" href="A_603808326.xml" fixed="false"/>
+			<qti-assessment-item-ref identifier="A_104374830" href="A_104374830.xml" fixed="false"/>
+			<qti-assessment-item-ref identifier="A_1724166344" href="A_1724166344.xml" fixed="false"/>
+		</qti-assessment-section>
+		<qti-assessment-section identifier="B_454983175" fixed="false" title="B. Schreibe die Aktivsätze ins Passiv." visible="true">
+			<qti-selection select="4"/>
+			<qti-ordering shuffle="true"/>
+			<qti-rubric-block view="candidate"><qti-content-body>
+				<p>
+					<b>Schreibe die Aktivsätze ins Passiv.</b>
+				</p>
+				<p> Beispiel:<br/>The students wrote letters.<br/>Letters were written by the
+					students. </p>
+			
+</qti-content-body></qti-rubric-block>
+			<qti-assessment-item-ref identifier="B_1312708806" href="B_1312708806.xml" fixed="false"/>
+			<qti-assessment-item-ref identifier="B_568428036" href="B_568428036.xml" fixed="false"/>
+			<qti-assessment-item-ref identifier="B_2082409940" href="B_2082409940.xml" fixed="false"/>
+			<qti-assessment-item-ref identifier="B_1553271053" href="B_1553271053.xml" fixed="false"/>
+			<qti-assessment-item-ref identifier="B_426321584" href="B_426321584.xml" fixed="false"/>
+			<qti-assessment-item-ref identifier="B_790429330" href="B_790429330.xml" fixed="false"/>
+			<qti-assessment-item-ref identifier="B_110728156" href="B_110728156.xml" fixed="false"/>
+			<qti-assessment-item-ref identifier="B_1992117307" href="B_1992117307.xml" fixed="false"/>
+			<qti-assessment-item-ref identifier="B_1541841167" href="B_1541841167.xml" fixed="false"/>
+		</qti-assessment-section>
+		<qti-assessment-section identifier="C_829028995" fixed="false" title="C. Steht der Satz im Aktiv oder im Passiv?" visible="true">
+			<qti-selection select="4"/>
+			<qti-ordering shuffle="true"/>
+			<qti-rubric-block view="candidate"><qti-content-body>
+				<p>
+					<b>Steht der Satz im Aktiv oder im Passiv?</b>
+				</p>
+			
+</qti-content-body></qti-rubric-block>
+			<qti-assessment-item-ref identifier="C_1990748733" href="C_1990748733.xml" fixed="false"/>
+			<qti-assessment-item-ref identifier="C_748642656" href="C_748642656.xml" fixed="false"/>
+			<qti-assessment-item-ref identifier="C_2059910905" href="C_2059910905.xml" fixed="false"/>
+			<qti-assessment-item-ref identifier="C_1040094513" href="C_1040094513.xml" fixed="false"/>
+			<qti-assessment-item-ref identifier="C_1759289459" href="C_1759289459.xml" fixed="false"/>
+			<qti-assessment-item-ref identifier="C_1523210801" href="C_1523210801.xml" fixed="false"/>
+			<qti-assessment-item-ref identifier="C_1403975437" href="C_1403975437.xml" fixed="false"/>
+			<qti-assessment-item-ref identifier="C_837739994" href="C_837739994.xml" fixed="false"/>
+			<qti-assessment-item-ref identifier="C_125080616" href="C_125080616.xml" fixed="false"/>
+		</qti-assessment-section>
+		<qti-assessment-section identifier="D_85157334" fixed="false" title="D. Schreibe die Passivsätze ins Aktiv." visible="true">
+			<qti-selection select="4"/>
+			<qti-ordering shuffle="true"/>
+			<qti-rubric-block view="candidate"><qti-content-body>
+				<p>
+					<b>Schreibe die Passivsätze ins Aktiv.</b>
+				</p>
+				<p>Beispiel: <br/>Letters were written by the students. <br/>The students wrote
+					letters.</p>
+			
+</qti-content-body></qti-rubric-block>
+			<qti-assessment-item-ref identifier="D_1010823154" href="D_1010823154.xml" fixed="false"/>
+			<qti-assessment-item-ref identifier="D_1141014364" href="D_1141014364.xml" fixed="false"/>
+			<qti-assessment-item-ref identifier="D_235732284" href="D_235732284.xml" fixed="false"/>
+			<qti-assessment-item-ref identifier="D_898920432" href="D_898920432.xml" fixed="false"/>
+			<qti-assessment-item-ref identifier="D_525465264" href="D_525465264.xml" fixed="false"/>
+			<qti-assessment-item-ref identifier="D_1973054364" href="D_1973054364.xml" fixed="false"/>
+			<qti-assessment-item-ref identifier="D_514842512" href="D_514842512.xml" fixed="false"/>
+			<qti-assessment-item-ref identifier="D_1279631403" href="D_1279631403.xml" fixed="false"/>
+			<qti-assessment-item-ref identifier="D_479465969" href="D_479465969.xml" fixed="false"/>
+			<qti-assessment-item-ref identifier="D_2051452460" href="D_2051452460.xml" fixed="false"/>
+		</qti-assessment-section>
+		<qti-assessment-section identifier="E_264452489" fixed="false" title="E. In welcher Zeitform stehen die folgenden Passivsätze?" visible="true">
+			<qti-selection select="4"/>
+			<qti-ordering shuffle="true"/>
+			<qti-rubric-block view="candidate"><qti-content-body>
+				<p>
+					<b>In welcher Zeitform stehen die folgenden Passivsätze?</b>
+				</p>
+			
+</qti-content-body></qti-rubric-block>
+			<qti-assessment-item-ref identifier="E_1171606219" href="E_1171606219.xml" fixed="false"/>
+			<qti-assessment-item-ref identifier="E_134048013" href="E_134048013.xml" fixed="false"/>
+			<qti-assessment-item-ref identifier="E_1399904697" href="E_1399904697.xml" fixed="false"/>
+			<qti-assessment-item-ref identifier="E_889853140" href="E_889853140.xml" fixed="false"/>
+			<qti-assessment-item-ref identifier="E_1884870891" href="E_1884870891.xml" fixed="false"/>
+			<qti-assessment-item-ref identifier="E_1493092933" href="E_1493092933.xml" fixed="false"/>
+			<qti-assessment-item-ref identifier="E_1477168682" href="E_1477168682.xml" fixed="false"/>
+			<qti-assessment-item-ref identifier="E_1570830319" href="E_1570830319.xml" fixed="false"/>
+			<qti-assessment-item-ref identifier="E_1362075109" href="E_1362075109.xml" fixed="false"/>
+			<qti-assessment-item-ref identifier="E_835678250" href="E_835678250.xml" fixed="false"/>
+		</qti-assessment-section>
+		<qti-assessment-section identifier="F_481695138" fixed="false" title="F. Present Perfect - Welche Antworten sind richtig?" visible="true">
+			<qti-ordering shuffle="true"/>
+			<qti-rubric-block view="candidate"><qti-content-body>
+				<p>
+					<b>Present Perfect - Welche Antworten sine richtig?</b>
+				</p>
+			
+</qti-content-body></qti-rubric-block>
+			<qti-assessment-item-ref identifier="F_1344365064" href="F_1344365064.xml" fixed="false"/>
+			<qti-assessment-item-ref identifier="F_521041065" href="F_521041065.xml" fixed="false"/>
+			<qti-assessment-item-ref identifier="F_837664539" href="F_837664539.xml" fixed="false"/>
+			<qti-assessment-item-ref identifier="F_1564647515" href="F_1564647515.xml" fixed="false"/>
+		</qti-assessment-section>
+	</qti-test-part>
+	<qti-outcome-processing>
+		<qti-set-outcome-value identifier="SCORE">
+			<qti-sum>
+				<qti-test-variables variable-identifier="SCORE"/>
+			</qti-sum>
+		</qti-set-outcome-value>
+	</qti-outcome-processing>
+</qti-assessment-test>

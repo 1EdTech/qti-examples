@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--This file was created using: Onyx Editor, Version 3.4 (Unregistered demo version), (c)2011 BPS Bildungsportal Sachsen GmbH-->
+<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd" identifier="C3_2059910905" title="Steven likes to play baseball." adaptive="false" time-dependent="false">
+	<qti-response-declaration identifier="RESPONSE_14647374" cardinality="single" base-type="identifier">
+		<qti-correct-response>
+			<qti-value>choice_560312162</qti-value>
+		</qti-correct-response>
+	</qti-response-declaration>
+	<qti-outcome-declaration identifier="SCORE" cardinality="single" base-type="float">
+		<qti-default-value>
+			<qti-value>0.0</qti-value>
+		</qti-default-value>
+	</qti-outcome-declaration>
+	<qti-outcome-declaration identifier="MAXSCORE" cardinality="single" base-type="float">
+		<qti-default-value>
+			<qti-value>1.0</qti-value>
+		</qti-default-value>
+	</qti-outcome-declaration>
+	<qti-outcome-declaration identifier="FEEDBACKBASIC" cardinality="single" base-type="identifier">
+		<qti-default-value>
+			<qti-value>empty</qti-value>
+		</qti-default-value>
+	</qti-outcome-declaration>
+	<qti-item-body>
+		<div>
+			<b>Steven likes to play baseball.</b>
+		</div>
+		<qti-choice-interaction response-identifier="RESPONSE_14647374" shuffle="false" max-choices="1">
+			<qti-simple-choice identifier="choice_560312162">Aktiv</qti-simple-choice>
+			<qti-simple-choice identifier="choice_1409811606">Passiv</qti-simple-choice>
+		</qti-choice-interaction>
+	</qti-item-body>
+	<qti-response-processing>
+		<qti-response-condition>
+			<qti-response-if>
+				<qti-is-null>
+					<qti-variable identifier="RESPONSE_14647374"/>
+				</qti-is-null>
+				<qti-set-outcome-value identifier="FEEDBACKBASIC">
+					<qti-base-value base-type="identifier">empty</qti-base-value>
+				</qti-set-outcome-value>
+			</qti-response-if>
+			<qti-response-else-if>
+				<qti-match>
+					<qti-variable identifier="RESPONSE_14647374"/>
+					<qti-correct identifier="RESPONSE_14647374"/>
+				</qti-match>
+				<qti-set-outcome-value identifier="SCORE">
+					<qti-sum>
+						<qti-variable identifier="SCORE"/>
+						<qti-variable identifier="MAXSCORE"/>
+					</qti-sum>
+				</qti-set-outcome-value>
+				<qti-set-outcome-value identifier="FEEDBACKBASIC">
+					<qti-base-value base-type="identifier">correct</qti-base-value>
+				</qti-set-outcome-value>
+			</qti-response-else-if>
+			<qti-response-else>
+				<qti-set-outcome-value identifier="FEEDBACKBASIC">
+					<qti-base-value base-type="identifier">incorrect</qti-base-value>
+				</qti-set-outcome-value>
+			</qti-response-else>
+		</qti-response-condition>
+	</qti-response-processing>
+</qti-assessment-item>

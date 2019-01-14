@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--This file was created using: Onyx Editor, Version 3.4 (Unregistered demo version), (c)2011 BPS Bildungsportal Sachsen GmbH-->
+<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd" identifier="D_479465969" title="The president was elected by the people." adaptive="false" time-dependent="false">
+	<qti-response-declaration identifier="RESPONSE_1" cardinality="single" base-type="string">
+		<qti-correct-response>
+			<qti-value>The people elected the president.</qti-value>
+		</qti-correct-response>
+		<qti-mapping default-value="0.0">
+			<qti-map-entry map-key="The people elected the president." mapped-value="1.0"/>
+		</qti-mapping>
+	</qti-response-declaration>
+	<qti-outcome-declaration identifier="SCORE" cardinality="single" base-type="float">
+		<qti-default-value>
+			<qti-value>0.0</qti-value>
+		</qti-default-value>
+	</qti-outcome-declaration>
+	<qti-outcome-declaration identifier="MAXSCORE" cardinality="single" base-type="float">
+		<qti-default-value>
+			<qti-value>1.0</qti-value>
+		</qti-default-value>
+	</qti-outcome-declaration>
+	<qti-outcome-declaration identifier="FEEDBACKBASIC" cardinality="single" base-type="identifier">
+		<qti-default-value>
+			<qti-value>empty</qti-value>
+		</qti-default-value>
+	</qti-outcome-declaration>
+	<qti-item-body>
+		<div>The president was elected by the people.<br/>
+			<qti-text-entry-interaction response-identifier="RESPONSE_1"/>
+		</div>
+	</qti-item-body>
+	<qti-response-processing>
+		<qti-response-condition>
+			<qti-response-if>
+				<qti-not>
+					<qti-is-null>
+						<qti-variable identifier="RESPONSE_1"/>
+					</qti-is-null>
+				</qti-not>
+				<qti-set-outcome-value identifier="SCORE">
+					<qti-sum>
+						<qti-variable identifier="SCORE"/>
+						<qti-map-response identifier="RESPONSE_1"/>
+					</qti-sum>
+				</qti-set-outcome-value>
+				<qti-set-outcome-value identifier="FEEDBACKBASIC">
+					<qti-base-value base-type="identifier">incorrect</qti-base-value>
+				</qti-set-outcome-value>
+			</qti-response-if>
+		</qti-response-condition>
+		<qti-response-condition>
+			<qti-response-if>
+				<qti-and>
+					<qti-not>
+						<qti-match>
+							<qti-variable identifier="FEEDBACKBASIC"/>
+							<qti-base-value base-type="identifier">empty</qti-base-value>
+						</qti-match>
+					</qti-not>
+					<qti-equal tolerance-mode="exact">
+						<qti-variable identifier="SCORE"/>
+						<qti-variable identifier="MAXSCORE"/>
+					</qti-equal>
+				</qti-and>
+				<qti-set-outcome-value identifier="FEEDBACKBASIC">
+					<qti-base-value base-type="identifier">correct</qti-base-value>
+				</qti-set-outcome-value>
+			</qti-response-if>
+		</qti-response-condition>
+	</qti-response-processing>
+</qti-assessment-item>
