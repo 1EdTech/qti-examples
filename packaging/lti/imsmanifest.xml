@@ -2,11 +2,11 @@
 <manifest 
     xmlns="http://www.imsglobal.org/xsd/qti/qtiv3p0/imscp_v1p1" 
     xmlns:lom="http://ltsc.ieee.org/xsd/LOM" 
-          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-    xmlns:imsqti="http://www.imsglobal.org/xsd/imsqti_metadata_v3p0" 
-    xsi:schemaLocation="http://ltsc.ieee.org/xsd/LOM https://www.imsglobal.org/xsd/imsmd_loose_v1p3p2.xsd
-    http://www.imsglobal.org/xsd/qti/qtiv3p0/imscp_v1p1 https://www.imsglobal.org/xsd/qti/qtiv3p0/imsqtiv3p0_imscpv1p2_v1p0.xsd
-    http://www.imsglobal.org/xsd/imsqti_metadata_v3p0 https://www.imsglobal.org/xsd/qti/qtiv3p0/imsqti_metadatav3p0_v1p0.xsd" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:qtimd="http://www.imsglobal.org/xsd/imsqti_metadata_v3p0" 
+    xsi:schemaLocation="http://ltsc.ieee.org/xsd/LOM https://purl.imsglobal.org/spec/md/v1p3/schema/xsd/imsmd_loose_v1p3p2.xsd
+    http://www.imsglobal.org/xsd/qti/qtiv3p0/imscp_v1p1 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqtiv3p0_imscpv1p2_v1p0.xsd
+    http://www.imsglobal.org/xsd/imsqti_metadata_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_metadatav3p0_v1p0.xsd" 
           identifier="PCI_Example">
     <metadata>
         <schema>QTI Package</schema>
@@ -50,13 +50,13 @@
                         <lom:location>https://assessment.example.com/provider</lom:location>
                     </lom:technical>         
                 </lom:lom>
-                <imsqti:qtiMetadata>
-                    <imsqti:composite>false</imsqti:composite>
-                    <imsqti:interactionType>mediaInteraction</imsqti:interactionType>
-                    <imsqti:toolName>Example Streaming Video Tool Provider</imsqti:toolName>
-                    <imsqti:toolVersion>1.0</imsqti:toolVersion>
-                    <imsqti:toolVendor>example.com</imsqti:toolVendor>
-                </imsqti:qtiMetadata>
+                <qtimd:qtiMetadata>
+                    <qtimd:composite>false</qtimd:composite>
+                    <qtimd:interactionType>mediaInteraction</qtimd:interactionType>
+                    <qtimd:toolName>Example Streaming Video Tool Provider</qtimd:toolName>
+                    <qtimd:toolVersion>1.0</qtimd:toolVersion>
+                    <qtimd:toolVendor>example.com</qtimd:toolVendor>
+                </qtimd:qtiMetadata>
             </metadata>
             <file href="links/streaming_video_experiment101.xml"/> 
         </resource>    
