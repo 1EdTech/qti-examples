@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<qti-assessment-item xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation=" http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd " xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:m="http://www.w3.org/1998/Math/MathML" tool-version="0.5.1" tool-name="Mathqurate" title="Adaptive - choice of input type" time-dependent="false" identifier="Example05-feedbackBlock-adaptive" adaptive="true">
+    <qti-response-declaration identifier="RESPONSE1" cardinality="single" base-type="identifier"/>
+    <qti-response-declaration identifier="RESPONSE21" cardinality="single" base-type="identifier">
+        <qti-correct-response>
+            <qti-value>OPTION210</qti-value>
+        </qti-correct-response>
+    </qti-response-declaration>
+    <qti-response-declaration identifier="RESPONSE22" cardinality="single" base-type="identifier">
+        <qti-correct-response>
+            <qti-value>OPTION221</qti-value>
+        </qti-correct-response>
+    </qti-response-declaration>
+    <qti-response-declaration identifier="RESPONSE23" cardinality="single" base-type="identifier">
+        <qti-correct-response>
+            <qti-value>OPTION231</qti-value>
+        </qti-correct-response>
+    </qti-response-declaration>
+    <qti-response-declaration identifier="RESPONSE24" cardinality="single" base-type="identifier">
+        <qti-correct-response>
+            <qti-value>OPTION241</qti-value>
+        </qti-correct-response>
+    </qti-response-declaration>
+    <qti-response-declaration identifier="RESPONSE25" cardinality="single" base-type="string">
+        <qti-correct-response>
+            <qti-value>cooks</qti-value>
+        </qti-correct-response>
+    </qti-response-declaration>
+    <qti-response-declaration identifier="RESPONSE26" cardinality="single" base-type="string">
+        <qti-correct-response>
+            <qti-value>spoil</qti-value>
+        </qti-correct-response>
+    </qti-response-declaration>
+    <qti-response-declaration identifier="RESPONSE27" cardinality="single" base-type="string">
+        <qti-correct-response>
+            <qti-value>broth</qti-value>
+        </qti-correct-response>
+    </qti-response-declaration>
+    <qti-outcome-declaration base-type="float" cardinality="single" identifier="SCORE" normal-maximum="10.0" normal-minimum="0.0">
+        <qti-default-value>
+            <qti-value>0.0</qti-value>
+        </qti-default-value>
+    </qti-outcome-declaration>
+    <qti-outcome-declaration base-type="identifier" cardinality="single" identifier="FEEDBACK"/>
+    
+    <!--￼Define a feedback variable; its cardinality is "multiple" so that it can contain the identifiers of several 
+                feedback elements, and in this case it is initialised to the identifier, part1, of the first part of this adaptive 
+                question-->            
+    
+    <qti-outcome-declaration base-type="identifier" cardinality="multiple" identifier="BODY">
+        <qti-default-value>
+            <qti-value>part1</qti-value>
+        </qti-default-value>
+    </qti-outcome-declaration>
+    <qti-item-body class="">
+        <div class="">
+            
+            <!--￼This feedbackBlock is the first part of this adaptive question to appear, since the BODY variable initially 
+                contains its identifier, part1; it contains the first multiple choice interaction in this question. When BODY is 
+                set to part2, this feedbackBlock is no longer visible.-->            
+            
+            <qti-feedback-block id="feedbackBlock0" identifier="part1" outcome-identifier="BODY" show-hide="show"><qti-content-body>
+                <p>This is the first part of this question: Which of these input methods do you wish
+                    to use?</p>
+                <qti-choice-interaction id="choiceInteraction0" max-choices="1" response-identifier="RESPONSE1" shuffle="true">
+                    <qti-simple-choice id="simpleChoice0" identifier="OPTION1">Multiple choice </qti-simple-choice>
+                    <qti-simple-choice id="simpleChoice1" identifier="OPTION2">Drop-down menu </qti-simple-choice>
+                    <qti-simple-choice id="simpleChoice2" identifier="OPTION3">Typed input
+                    </qti-simple-choice>
+                </qti-choice-interaction>
+            
+</qti-content-body></qti-feedback-block>
+            
+            <!--￼This feedbackBlock is the second part of the question ; it appears when the BODY variable contains its identifier, 
+                part2. BODY is a multiple cardinality variable, so it can contain the identifiers of several feedbackBlocks (and 
+                feedbackInlines) at the same time, each of which is visible if their show attribute is set to show, or hidden if 
+                their show attribute is set to hide.-->            
+            
+            <qti-feedback-block identifier="part2" outcome-identifier="BODY" show-hide="show"><qti-content-body>
+                <p>OK, this is the type of input you have chosen. Now please answer this, the second
+                    part of the question.</p>
+            
+</qti-content-body></qti-feedback-block>
+            
+            <!--￼This feedbackBlock appears if the user chose to use multiple choice in the first part of the question – it contains
+                the selected type of interaction.-->            
+            
+            <qti-feedback-block identifier="option1" outcome-identifier="BODY" show-hide="show"><qti-content-body>
+                <p class="">Choose the correct saying:</p>
+                <qti-choice-interaction max-choices="1" response-identifier="RESPONSE21" shuffle="true">
+                    <qti-simple-choice identifier="OPTION210">Too many cooks spoil the
+                        broth</qti-simple-choice>
+                    <qti-simple-choice identifier="OPTION211">Too many cooks burn the
+                        dinner</qti-simple-choice>
+                    <qti-simple-choice identifier="OPTION212">Too many children spill the
+                        broth</qti-simple-choice>
+                    <qti-simple-choice identifier="OPTION213">Too many hands spill the
+                        beans</qti-simple-choice>
+                    <qti-simple-choice identifier="OPTION214">Too many children spoil the
+                        broth</qti-simple-choice>
+                </qti-choice-interaction>
+            
+</qti-content-body></qti-feedback-block>
+            
+            <!--￼This feedbackBlock appears if the user chose to use drop-down menus in the first part of the question – it contains
+                the selected type of interaction.-->            
+            
+            <qti-feedback-block identifier="option2" outcome-identifier="BODY" show-hide="show"><qti-content-body>
+                <p class="">Complete the saying below by selecting from the lists:</p>
+                <p class="">Too many&#160; <qti-inline-choice-interaction response-identifier="RESPONSE22" shuffle="true">
+                        <qti-inline-choice identifier="OPTION221">cooks</qti-inline-choice>
+                        <qti-inline-choice identifier="OPTION222">children</qti-inline-choice>
+                        <qti-inline-choice identifier="OPTION223">hands</qti-inline-choice>
+                    </qti-inline-choice-interaction>&#160; <qti-inline-choice-interaction response-identifier="RESPONSE23" shuffle="true">
+                        <qti-inline-choice identifier="OPTION231">spoil</qti-inline-choice>
+                        <qti-inline-choice identifier="OPTION232">spill</qti-inline-choice>
+                        <qti-inline-choice identifier="OPTION233">burn</qti-inline-choice>
+                    </qti-inline-choice-interaction> the&#160; <qti-inline-choice-interaction response-identifier="RESPONSE24" shuffle="true">
+                        <qti-inline-choice identifier="OPTION241">broth</qti-inline-choice>
+                        <qti-inline-choice identifier="OPTION242">dinner</qti-inline-choice>
+                        <qti-inline-choice identifier="OPTION243">beans</qti-inline-choice>
+                    </qti-inline-choice-interaction>. </p>
+            
+</qti-content-body></qti-feedback-block>
+            
+            <!--￼This feedbackBlock appears if the user chose to type answers in text boxes in the first part of the question – it 
+                contains the selected type of interaction.-->            
+            
+            <qti-feedback-block identifier="option3" outcome-identifier="BODY" show-hide="show"><qti-content-body>
+                <p class="">Complete the saying below:</p>
+                <p class="">Too many&#160; <qti-text-entry-interaction expected-length="20" response-identifier="RESPONSE25"/>&#160; <qti-text-entry-interaction expected-length="20" response-identifier="RESPONSE26"/> the&#160;
+                        <qti-text-entry-interaction expected-length="20" response-identifier="RESPONSE27"/>.
+                </p>
+            
+</qti-content-body></qti-feedback-block>
+            <div class="">
+                
+          <!--￼These feedbackInline elements provide feedback on the input given by the user in the second part of the question.-->                
+                
+                <qti-feedback-inline id="feedbackInline1" identifier="CORRECT" outcome-identifier="FEEDBACK" show-hide="show"> That's the correct answer. </qti-feedback-inline>
+                <qti-feedback-inline id="feedbackInline2" identifier="PARTIAL" outcome-identifier="FEEDBACK" show-hide="show"> Your answer is partially correct;
+                    the correct answer is "Too many <b>cooks</b>
+                    <b>spoil</b> the <b>broth</b>". </qti-feedback-inline>
+                <qti-feedback-inline id="feedbackInline3" identifier="INCORRECT" outcome-identifier="FEEDBACK" show-hide="show"> Sorry, that's not correct; the
+                    correct answer is "Too many <b>cooks</b>
+                    <b>spoil</b> the <b>broth</b>". </qti-feedback-inline>
+            </div>
+        </div>
+    </qti-item-body>
+    <qti-response-processing>
+        <qti-response-condition>
+            <qti-response-if>
+                <qti-member>
+                    
+                    <!--￼Check whether "part1" is contained in the BODY variable, and if it is, set up the second part of the 
+                        question.-->                    
+                    
+                    <qti-base-value base-type="identifier">part1</qti-base-value>
+                    <qti-variable identifier="BODY"/>
+                </qti-member>
+                <qti-set-outcome-value identifier="BODY">
+                    <qti-multiple>
+                        
+                        <!--Put "part2" into the BODY variable.-->                        
+                        
+                        <qti-base-value base-type="identifier">part2</qti-base-value>
+                    </qti-multiple>
+                </qti-set-outcome-value>
+                <qti-response-condition>
+                    <qti-response-if>
+                        <qti-match>
+                            <qti-variable identifier="RESPONSE1"/>
+                            
+                            <!--￼If the user selected OPTION1 (MCQ) put the identifier, option1, of the feedbackBlock containing 
+                                the second MCQ into BODY .-->                            
+                            
+                            <qti-base-value base-type="identifier">OPTION1</qti-base-value>
+                        </qti-match>
+                        <qti-set-outcome-value identifier="BODY">
+                            <qti-multiple>
+                                <qti-variable identifier="BODY"/>
+                                <qti-base-value base-type="identifier">option1</qti-base-value>
+                            </qti-multiple>
+                        </qti-set-outcome-value>
+                    </qti-response-if>
+                    <qti-response-else-if>
+                        <qti-match>
+                            <qti-variable identifier="RESPONSE1"/>
+                            
+                            <!--￼If the user selected OPTION2 (drop-down menus) put the identifier, option2, of the feedbackBlock 
+                                containing the drop-down menus into BODY .-->                            
+                            
+                            <qti-base-value base-type="identifier">OPTION2</qti-base-value>
+                        </qti-match>
+                        <qti-set-outcome-value identifier="BODY">
+                            <qti-multiple>
+                                <qti-variable identifier="BODY"/>
+                                <qti-base-value base-type="identifier">option2</qti-base-value>
+                            </qti-multiple>
+                        </qti-set-outcome-value>
+                    </qti-response-else-if>
+                    <qti-response-else-if>
+                        <qti-match>
+                            <qti-variable identifier="RESPONSE1"/>
+                            
+                            <!--￼If the user selected OPTION3 (text input) put the identifier, option3, of the feedbackBlock 
+                                containing the text boxes into BODY .-->                            
+                            
+                            <qti-base-value base-type="identifier">OPTION3</qti-base-value>
+                        </qti-match>
+                        <qti-set-outcome-value identifier="BODY">
+                            <qti-multiple>
+                                <qti-variable identifier="BODY"/>
+                                <qti-base-value base-type="identifier">option3</qti-base-value>
+                            </qti-multiple>
+                        </qti-set-outcome-value>
+                    </qti-response-else-if>
+                </qti-response-condition>
+            </qti-response-if>
+            <qti-response-else-if>
+                <qti-member>
+                    
+                    <!--￼If BODY contains part2, the second part of the question has been displayed, so we process the user’s input
+                        to the chosen interaction.-->
+
+                    <qti-base-value base-type="identifier">part2</qti-base-value>
+                    <qti-variable identifier="BODY"/>
+                </qti-member>
+                <qti-response-condition>
+                    <qti-response-if>
+                        <qti-member>
+                            <qti-base-value base-type="identifier">option1</qti-base-value>
+                            <qti-variable identifier="BODY"/>
+                        </qti-member>
+                        <qti-response-condition>
+                            <qti-response-if>
+                                <qti-match>
+                                    <qti-variable identifier="RESPONSE21"/>
+                                    <qti-correct identifier="RESPONSE21"/>
+                                </qti-match>
+                                <qti-set-outcome-value identifier="FEEDBACK">
+                                    <qti-base-value base-type="identifier">CORRECT</qti-base-value>
+                                </qti-set-outcome-value>
+                                <qti-set-outcome-value identifier="SCORE">
+                                    <qti-base-value base-type="float">10.0</qti-base-value>
+                                </qti-set-outcome-value>
+                            </qti-response-if>
+                            <qti-response-else>
+                                <qti-set-outcome-value identifier="FEEDBACK">
+                                    <qti-base-value base-type="identifier">INCORRECT</qti-base-value>
+                                </qti-set-outcome-value>
+                                <qti-set-outcome-value identifier="SCORE">
+                                    <qti-base-value base-type="float">0.0</qti-base-value>
+                                </qti-set-outcome-value>
+                            </qti-response-else>
+                        </qti-response-condition>
+                    </qti-response-if>
+                    <qti-response-else-if>
+                        <qti-member>
+                            <qti-base-value base-type="identifier">option2</qti-base-value>
+                            <qti-variable identifier="BODY"/>
+                        </qti-member>
+                        <qti-response-condition>
+                            <qti-response-if>
+                                <qti-and>
+                                    <qti-match>
+                                        <qti-variable identifier="RESPONSE22"/>
+                                        <qti-correct identifier="RESPONSE22"/>
+                                    </qti-match>
+                                    <qti-match>
+                                        <qti-variable identifier="RESPONSE23"/>
+                                        <qti-correct identifier="RESPONSE23"/>
+                                    </qti-match>
+                                    <qti-match>
+                                        <qti-variable identifier="RESPONSE24"/>
+                                        <qti-correct identifier="RESPONSE24"/>
+                                    </qti-match>
+                                </qti-and>
+                                <qti-set-outcome-value identifier="FEEDBACK">
+                                    <qti-base-value base-type="identifier">CORRECT</qti-base-value>
+                                </qti-set-outcome-value>
+                                <qti-set-outcome-value identifier="SCORE">
+                                    <qti-base-value base-type="float">10.0</qti-base-value>
+                                </qti-set-outcome-value>
+                            </qti-response-if>
+                            <qti-response-else-if>
+                                <qti-or>
+                                    <qti-match>
+                                        <qti-variable identifier="RESPONSE22"/>
+                                        <qti-correct identifier="RESPONSE22"/>
+                                    </qti-match>
+                                    <qti-match>
+                                        <qti-variable identifier="RESPONSE23"/>
+                                        <qti-correct identifier="RESPONSE23"/>
+                                    </qti-match>
+                                    <qti-match>
+                                        <qti-variable identifier="RESPONSE24"/>
+                                        <qti-correct identifier="RESPONSE24"/>
+                                    </qti-match>
+                                </qti-or>
+                                <qti-set-outcome-value identifier="FEEDBACK">
+                                    <qti-base-value base-type="identifier">PARTIAL</qti-base-value>
+                                </qti-set-outcome-value>
+                                <qti-set-outcome-value identifier="SCORE">
+                                    <qti-base-value base-type="float">5.0</qti-base-value>
+                                </qti-set-outcome-value>
+                            </qti-response-else-if>
+                            <qti-response-else>
+                                <qti-set-outcome-value identifier="FEEDBACK">
+                                    <qti-base-value base-type="identifier">INCORRECT</qti-base-value>
+                                </qti-set-outcome-value>
+                                <qti-set-outcome-value identifier="SCORE">
+                                    <qti-base-value base-type="float">0.0</qti-base-value>
+                                </qti-set-outcome-value>
+                            </qti-response-else>
+                        </qti-response-condition>
+                    </qti-response-else-if>
+                    <qti-response-else-if>
+                        <qti-member>
+                            <qti-base-value base-type="identifier">option3</qti-base-value>
+                            <qti-variable identifier="BODY"/>
+                        </qti-member>
+                        <qti-response-condition>
+                            <qti-response-if>
+                                <qti-and>
+                                    <qti-match>
+                                        <qti-variable identifier="RESPONSE25"/>
+                                        <qti-correct identifier="RESPONSE25"/>
+                                    </qti-match>
+                                    <qti-match>
+                                        <qti-variable identifier="RESPONSE26"/>
+                                        <qti-correct identifier="RESPONSE26"/>
+                                    </qti-match>
+                                    <qti-match>
+                                        <qti-variable identifier="RESPONSE27"/>
+                                        <qti-correct identifier="RESPONSE27"/>
+                                    </qti-match>
+                                </qti-and>
+                                <qti-set-outcome-value identifier="FEEDBACK">
+                                    <qti-base-value base-type="identifier">CORRECT</qti-base-value>
+                                </qti-set-outcome-value>
+                                <qti-set-outcome-value identifier="SCORE">
+                                    <qti-base-value base-type="float">10.0</qti-base-value>
+                                </qti-set-outcome-value>
+                            </qti-response-if>
+                            <qti-response-else-if>
+                                <qti-or>
+                                    <qti-match>
+                                        <qti-variable identifier="RESPONSE25"/>
+                                        <qti-correct identifier="RESPONSE25"/>
+                                    </qti-match>
+                                    <qti-match>
+                                        <qti-variable identifier="RESPONSE26"/>
+                                        <qti-correct identifier="RESPONSE26"/>
+                                    </qti-match>
+                                    <qti-match>
+                                        <qti-variable identifier="RESPONSE27"/>
+                                        <qti-correct identifier="RESPONSE27"/>
+                                    </qti-match>
+                                </qti-or>
+                                <qti-set-outcome-value identifier="FEEDBACK">
+                                    <qti-base-value base-type="identifier">PARTIAL</qti-base-value>
+                                </qti-set-outcome-value>
+                                <qti-set-outcome-value identifier="SCORE">
+                                    <qti-base-value base-type="float">5.0</qti-base-value>
+                                </qti-set-outcome-value>
+                            </qti-response-else-if>
+                            <qti-response-else>
+                                <qti-set-outcome-value identifier="FEEDBACK">
+                                    <qti-base-value base-type="identifier">INCORRECT</qti-base-value>
+                                </qti-set-outcome-value>
+                                <qti-set-outcome-value identifier="SCORE">
+                                    <qti-base-value base-type="float">0.0</qti-base-value>
+                                </qti-set-outcome-value>
+                            </qti-response-else>
+                        </qti-response-condition>
+                    </qti-response-else-if>
+                </qti-response-condition>
+                <!-- completionStatus must be specifically set to completed in adaptive questions -->
+                <qti-set-outcome-value identifier="completionStatus">
+                    <qti-base-value base-type="identifier">completed</qti-base-value>
+                </qti-set-outcome-value>
+            </qti-response-else-if>
+        </qti-response-condition>
+    </qti-response-processing>
+</qti-assessment-item>

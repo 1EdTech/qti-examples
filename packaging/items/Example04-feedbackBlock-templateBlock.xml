@@ -1,0 +1,564 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<qti-assessment-item xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation=" http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd " xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:m="http://www.w3.org/1998/Math/MathML" tool-version="0.5.1" tool-name="Mathqurate" title="Find side, directly or sine rule - with solution" time-dependent="false" identifier="Example04-feedbackBlock-templateBlock" adaptive="true">
+    <qti-response-declaration identifier="RESPONSE1" cardinality="single" base-type="float"/>
+    <qti-response-declaration identifier="HINTREQUEST" cardinality="single" base-type="boolean"/>
+    <qti-response-declaration identifier="SOLREQUEST" cardinality="single" base-type="boolean"/>
+    <qti-outcome-declaration base-type="float" cardinality="single" identifier="SCORE" normal-maximum="10.0" normal-minimum="0.0">
+        <qti-default-value>
+            <qti-value>0.0</qti-value>
+        </qti-default-value>
+    </qti-outcome-declaration>
+    <qti-outcome-declaration base-type="identifier" cardinality="multiple" identifier="FEEDBACK"/>
+    <qti-outcome-declaration base-type="identifier" cardinality="single" identifier="EMPTY"/>
+    <qti-outcome-declaration base-type="boolean" cardinality="single" identifier="seenSolution">
+        <qti-default-value>
+            <qti-value>false</qti-value>
+        </qti-default-value>
+    </qti-outcome-declaration>
+    <qti-outcome-declaration base-type="boolean" cardinality="single" identifier="seenHint">
+        <qti-default-value>
+            <qti-value>false</qti-value>
+        </qti-default-value>
+    </qti-outcome-declaration>
+    <qti-outcome-declaration base-type="identifier" cardinality="single" identifier="ASKHINT">
+        <qti-default-value>
+            <qti-value>askhint</qti-value>
+        </qti-default-value>
+    </qti-outcome-declaration>
+    <qti-outcome-declaration base-type="identifier" cardinality="single" identifier="ASKSOLUTION">
+        <qti-default-value>
+            <qti-value>asksolution</qti-value>
+        </qti-default-value>
+    </qti-outcome-declaration>
+    <qti-outcome-declaration identifier="oMult" cardinality="single" base-type="float">
+        <qti-default-value>
+            <qti-value>1.0</qti-value>
+        </qti-default-value>
+    </qti-outcome-declaration>
+    <qti-outcome-declaration identifier="oPower" cardinality="single" base-type="float"/>
+    
+    <!--￼The template variables for the calculation are declared, among them iA, an integer variable; it will be used in MathML, 
+        so the mathVariable attribute is true.-->
+    
+    <qti-template-declaration identifier="iA" cardinality="single" base-type="integer" param-variable="false" math-variable="true">
+        <qti-default-value>
+            <qti-value>90</qti-value>
+        </qti-default-value>
+    </qti-template-declaration>
+    <qti-template-declaration identifier="iB" cardinality="single" base-type="integer" param-variable="false" math-variable="true">
+        <qti-default-value>
+            <qti-value>65</qti-value>
+        </qti-default-value>
+    </qti-template-declaration>
+    <qti-template-declaration identifier="ia" cardinality="single" base-type="integer" param-variable="false" math-variable="true"/>
+    <qti-template-declaration identifier="sinA" cardinality="single" base-type="float" param-variable="false" math-variable="true"/>
+    <qti-template-declaration identifier="sinB" cardinality="single" base-type="float" param-variable="false" math-variable="true"/>
+    <qti-template-declaration identifier="fAns" cardinality="single" base-type="float" param-variable="false" math-variable="true"/>
+    <qti-template-declaration identifier="fPiOver180" cardinality="single" base-type="float" param-variable="false" math-variable="true"/>
+    
+    <!--￼This template variable holds a string which describes the triangle.-->    
+    
+    <qti-template-declaration identifier="sType" cardinality="single" base-type="string" param-variable="false" math-variable="false"/>
+    
+    <!--￼￼￼These template variables control the display of the templateInline and templateBlock elements.-->
+    
+    <qti-template-declaration base-type="identifier" cardinality="single" identifier="tSol"/>
+    <qti-template-declaration base-type="identifier" cardinality="single" identifier="tSoli"/>
+    <qti-template-processing>
+        
+        <!-- now do the randomisation and mathematical calculations -->
+        <!-- ￼The value of iA is selected randomly from a list of possible values of which several are 90 -->
+        
+        <qti-set-template-value identifier="iA">
+            <qti-random>
+                <qti-multiple>
+                   <qti-base-value base-type="integer">45</qti-base-value>
+                   <qti-base-value base-type="integer">60</qti-base-value>
+                   <qti-base-value base-type="integer">75</qti-base-value>
+                   <qti-base-value base-type="integer">90</qti-base-value>
+                   <qti-base-value base-type="integer">90</qti-base-value>
+                   <qti-base-value base-type="integer">90</qti-base-value>
+                </qti-multiple>
+            </qti-random>
+        </qti-set-template-value>
+        <qti-set-template-value identifier="iB">
+            <qti-random-integer min="50" max="85" step="5"/>
+        </qti-set-template-value>
+        <qti-template-constraint>
+            <qti-not>
+                <qti-equal tolerance-mode="exact">
+                    <qti-variable identifier="iA"/>
+                    <qti-variable identifier="iB"/>
+                </qti-equal>
+            </qti-not>
+        </qti-template-constraint>
+        <qti-set-template-value identifier="ia">
+            <qti-random-integer min="5" max="50"/>
+        </qti-set-template-value>
+        <qti-set-template-value identifier="fPiOver180">
+            <qti-divide>
+                <qti-math-constant name="pi"/>
+                <qti-base-value base-type="integer">180</qti-base-value>
+            </qti-divide>
+        </qti-set-template-value>
+        <qti-set-template-value identifier="sinA">
+            <qti-math-operator name="sin">
+                <qti-product>
+                    <qti-variable identifier="iA"/>
+                    <qti-variable identifier="fPiOver180"/>
+                </qti-product>
+            </qti-math-operator>
+        </qti-set-template-value>
+        <qti-set-template-value identifier="sinB">
+            <qti-math-operator name="sin">
+                <qti-product>
+                    <qti-variable identifier="iB"/>
+                    <qti-variable identifier="fPiOver180"/>
+                </qti-product>
+            </qti-math-operator>
+        </qti-set-template-value>
+        <qti-set-template-value identifier="sinA">
+            <qti-round-to rounding-mode="significantFigures" figures="5">
+                <qti-variable identifier="sinA"/>
+            </qti-round-to>
+        </qti-set-template-value>
+        <qti-set-template-value identifier="sinB">
+            <qti-round-to rounding-mode="significantFigures" figures="5">
+                <qti-variable identifier="sinB"/>
+            </qti-round-to>
+        </qti-set-template-value>
+        <qti-set-template-value identifier="fAns">
+            <qti-divide>
+                <qti-product>
+                    <qti-variable identifier="ia"/>
+                    <qti-variable identifier="sinB"/>
+                </qti-product>
+                <qti-variable identifier="sinA"/>
+            </qti-divide>
+        </qti-set-template-value>
+        <qti-set-template-value identifier="fAns">
+            <qti-round-to rounding-mode="significantFigures" figures="3">
+                <qti-variable identifier="fAns"/>
+            </qti-round-to>
+        </qti-set-template-value>
+        
+        <!-- set up alternative content depending on the value of variable iA -->
+        
+        <qti-template-condition>
+            <qti-template-if>
+                <qti-equal tolerance-mode="exact">
+                    
+                    <!--￼If iA is 90, sType contains “right angled”, tSol contains the identifier, SolRightAngle, of the 
+                        templateBlock for the right angle case, and tSoli contains the identifier, SolRightAnglei, of the 
+                        templateInline for the right angle case-->                    
+                    
+                    <qti-variable identifier="iA"/>
+                    <qti-base-value base-type="integer">90</qti-base-value>
+                </qti-equal>
+                <qti-set-template-value identifier="sType">
+                    <qti-base-value base-type="string">right angle</qti-base-value>
+                </qti-set-template-value>
+                <qti-set-template-value identifier="tSol">
+                    <qti-base-value base-type="identifier">SolRightAngle</qti-base-value>
+                </qti-set-template-value>
+                <qti-set-template-value identifier="tSoli">
+                    <qti-base-value base-type="identifier">SolRightAnglei</qti-base-value>
+                </qti-set-template-value>
+            </qti-template-if>
+            <qti-template-else>
+                
+                <!--￼If iA is not 90, sType contains "scalene", tSol contains the identifier, SolScalene, of the templateBlock 
+                    for the scalene case, and tSoli contains the identifier, SolScalenei, of the templateInline for the scalene 
+                    case-->                
+                
+                <qti-set-template-value identifier="sType">
+                    <qti-base-value base-type="string">scalene</qti-base-value>
+                </qti-set-template-value>
+                <qti-set-template-value identifier="tSol">
+                    <qti-base-value base-type="identifier">SolScalene</qti-base-value>
+                </qti-set-template-value>
+                <qti-set-template-value identifier="tSoli">
+                    <qti-base-value base-type="identifier">SolScalenei</qti-base-value>
+                </qti-set-template-value>
+            </qti-template-else>
+        </qti-template-condition>
+    </qti-template-processing>
+    <qti-item-body>
+        <p>In triangle ABC, side a=<qti-printed-variable identifier="ia"/>, angle A=<qti-printed-variable identifier="iA"/>&#xb0; and angle
+                B=<qti-printed-variable identifier="iB"/>&#xb0;. Find the length of side b.</p>
+        <div class="">
+            <p>Enter your answer to 3 significant figures.</p>
+            <qti-text-entry-interaction response-identifier="RESPONSE1" expected-length="20"/>
+        </div>
+        <div class="">
+            <qti-feedback-inline id="feedbackInline3" show-hide="show" outcome-identifier="FEEDBACK" identifier="Correct"> OK </qti-feedback-inline></div>
+        <div class="">
+            <qti-feedback-inline id="feedbackInline2" show-hide="show" outcome-identifier="FEEDBACK" identifier="Partial"> Not far off - check your rounding... </qti-feedback-inline></div>
+        <div class="">
+            <qti-feedback-inline id="feedbackInline1" show-hide="show" outcome-identifier="FEEDBACK" identifier="Incorrect"> Incorrect
+            </qti-feedback-inline></div>
+        <div class="">
+            <qti-feedback-block id="feedbackBlock11" identifier="THREETRIES" outcome-identifier="FEEDBACK" show-hide="show"><qti-content-body>
+                <p> You have had three attempts at answering this question, so here is the solution:
+                </p>
+            
+</qti-content-body></qti-feedback-block>
+
+            <!-- this feedbackBlock contains the solution, 
+                which is different depending on the value of iA -->
+            
+            <qti-feedback-block identifier="SOLUTION" outcome-identifier="FEEDBACK" show-hide="show"><qti-content-body>
+                
+                <!--￼Parts of this sentence appear differently, depending on whether or not iA is 90. The template variables sType,
+                    tSol and tSoli were set during template processing in the templateCondition shown above-->                
+                
+                <p>This is a <qti-printed-variable identifier="sType"/> triangle, so
+                    <qti-template-inline template-identifier="tSoli" identifier="SolRightAnglei" show-hide="show">
+                        <span> we can use sin(B) to find b directly</span></qti-template-inline>
+                    <qti-template-inline template-identifier="tSoli" identifier="SolScalenei" show-hide="show">
+                        <span> we apply the Sine Rule</span></qti-template-inline>:
+                </p>
+                
+                <!--￼The templateBlock elements contain the MathML for the two different solutions: SolRightAngle for iA=90 and 
+                    SolScalene for other values of iA-->                
+                
+                <qti-template-block template-identifier="tSol" identifier="SolRightAngle" show-hide="show"><qti-content-body>
+                    <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                        <semantics>
+                            <mtable>
+                                <mtr>
+                                    <mtd columnalign="right">
+                                        <mrow>
+                                            <mi>sin</mi>
+                                            <mfenced close=")" open="(">
+                                                <mi>B</mi>
+                                            </mfenced>
+                                        </mrow>
+                                    </mtd>
+                                    <mtd columnalign="center">
+                                        <mo>=</mo>
+                                    </mtd>
+                                    <mtd columnalign="left">
+                                        <mfrac>
+                                            <mi>b</mi>
+                                            <mi>a</mi>
+                                        </mfrac>
+                                    </mtd>
+                                </mtr>
+                                <mtr>
+                                    <mtd columnalign="right">
+                                        <mi>b</mi>
+                                    </mtd>
+                                    <mtd columnalign="center">
+                                        <mo>=</mo>
+                                    </mtd>
+                                    <mtd columnalign="left">
+                                        <mi>a</mi>
+                                        <mrow>
+                                            <mi>sin</mi>
+                                            <mfenced close=")" open="(">
+                                                <mi>B</mi>
+                                            </mfenced>
+                                        </mrow>
+                                    </mtd>
+                                </mtr>
+                                <mtr>
+                                    <mtd columnalign="right">
+                                        <mi>b</mi>
+                                    </mtd>
+                                    <mtd columnalign="center">
+                                        <mo>=</mo>
+                                    </mtd>
+                                    <mtd columnalign="left">
+                                        <mrow>
+                                            <mi>ia</mi>
+                                            <mo>&#xd7;</mo>
+                                            <mi>sin</mi>
+                                            <mfenced close=")" open="(">
+                                                <mi>iB</mi>
+                                            </mfenced>
+                                        </mrow>
+                                    </mtd>
+                                </mtr>
+                                <mtr>
+                                    <mtd columnalign="right"/>
+                                    <mtd columnalign="center">
+                                        <mo>=</mo>
+                                    </mtd>
+                                    <mtd columnalign="left">
+                                        <mi>fAns</mi>
+                                    </mtd>
+                                </mtr>
+                            </mtable>
+                            <annotation encoding="SnuggleTeX">\begin{eqnarray*}
+                                \\sin(B)&amp;=&amp;\frac{b}{a}\\
+                                b&amp;=&amp;a\sin(B)\\
+                                &amp;=&amp;\qv{ia}\times\sin(\qv{iB})
+                                &amp;=&amp;\qv{fAns} \end{eqnarray*}</annotation>
+                        </semantics>
+                    </math>
+                
+</qti-content-body></qti-template-block>
+                <qti-template-block template-identifier="tSol" identifier="SolScalene" show-hide="show"><qti-content-body>
+                    <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                        <semantics>
+                            <mtable>
+                                <mtr>
+                                    <mtd columnalign="right">
+                                        <mfrac>
+                                            <mi>a</mi>
+                                            <mrow>
+                                                <mi>sin</mi>
+                                                <mfenced close=")" open="(">
+                                                    <mi>A</mi>
+                                                </mfenced>
+                                            </mrow>
+                                        </mfrac>
+                                    </mtd>
+                                    <mtd columnalign="center">
+                                        <mo>=</mo>
+                                    </mtd>
+                                    <mtd columnalign="left">
+                                        <mfrac>
+                                            <mi>b</mi>
+                                            <mrow>
+                                                <mi>sin</mi>
+                                                <mfenced close=")" open="(">
+                                                    <mi>B</mi>
+                                                </mfenced>
+                                            </mrow>
+                                        </mfrac>
+                                    </mtd>
+                                </mtr>
+                                <mtr>
+                                    <mtd columnalign="right">
+                                        <mfrac>
+                                            <mi>ia</mi>
+                                            <mrow>
+                                                <mi>sin</mi>
+                                                <mfenced close=")" open="(">
+                                                    <mi>iA</mi>
+                                                </mfenced>
+                                            </mrow>
+                                        </mfrac>
+                                    </mtd>
+                                    <mtd columnalign="center">
+                                        <mo>=</mo>
+                                    </mtd>
+                                    <mtd columnalign="left">
+                                        <mfrac>
+                                            <mi>b</mi>
+                                            <mrow>
+                                                <mi>sin</mi>
+                                                <mfenced close=")" open="(">
+                                                    <mi>iB</mi>
+                                                </mfenced>
+                                            </mrow>
+                                        </mfrac>
+                                    </mtd>
+                                </mtr>
+                                <mtr>
+                                    <mtd columnalign="right">
+                                        <mi>b</mi>
+                                    </mtd>
+                                    <mtd columnalign="center">
+                                        <mo>=</mo>
+                                    </mtd>
+                                    <mtd columnalign="left">
+                                        <mfrac>
+                                            <mrow>
+                                                <mi>ia</mi>
+                                                <mo>&#xd7;</mo>
+                                                <mi>sin</mi>
+                                                <mfenced close=")" open="(">
+                                                    <mi>iB</mi>
+                                                </mfenced>
+                                            </mrow>
+                                            <mrow>
+                                                <mi>sin</mi>
+                                                <mfenced close=")" open="(">
+                                                    <mi>iA</mi>
+                                                </mfenced>
+                                            </mrow>
+                                        </mfrac>
+                                    </mtd>
+                                </mtr>
+                                <mtr>
+                                    <mtd columnalign="right"/>
+                                    <mtd columnalign="center">
+                                        <mo>=</mo>
+                                    </mtd>
+                                    <mtd columnalign="left">
+                                        <mfrac>
+                                            <mrow>
+                                                <mi>ia</mi>
+                                                <mo>&#xd7;</mo>
+                                                <mi>sinB</mi>
+                                            </mrow>
+                                            <mrow>
+                                                <mi>sinA</mi>
+                                            </mrow>
+                                        </mfrac>
+                                    </mtd>
+                                </mtr>
+                                <mtr>
+                                    <mtd columnalign="right"/>
+                                    <mtd columnalign="center">
+                                        <mo>=</mo>
+                                    </mtd>
+                                    <mtd columnalign="left">
+                                        <mi>fAns</mi>
+                                    </mtd>
+                                </mtr>
+                            </mtable>
+                            <annotation encoding="SnuggleTeX">\begin{eqnarray*}
+                                \frac{a}{\sin(A)}&amp;=&amp;\frac{b}{\sin(B)}\\
+                                \frac{\qv{ia}}{\sin(\qv{iA})}&amp;=&amp;\frac{b}{\sin(\qv{iB})}
+                                b&amp;=&amp;\frac{A\times\sin(B)}{\sin(A)}\\
+                                &amp;=&amp;\frac{\qv{ia}\times\sin(\qv{iB})}{\sin(\qv{iA})}\\
+                                &amp;=&amp;\qv{fAns} \end{eqnarray*}</annotation>
+                        </semantics>
+                    </math>
+                
+</qti-content-body></qti-template-block>
+                
+                <!--This sentence is the same for all values of iA-->                
+                
+                <p>So the expected answer is <qti-printed-variable identifier="fAns"/>.</p>
+            
+</qti-content-body></qti-feedback-block></div>
+        
+        <!-- Explain why the score is zero (after viewing solution) -->
+        
+        <qti-feedback-block identifier="SEEN-SOLUTION" outcome-identifier="FEEDBACK" show-hide="show"><qti-content-body>
+            <p> Since you have viewed the solution, your score for this question will be 0. </p>
+        
+</qti-content-body></qti-feedback-block>
+        
+        <!-- show the solution button -->
+        
+        <qti-feedback-block identifier="asksolution" outcome-identifier="ASKSOLUTION" show-hide="show"><qti-content-body>
+            <div>
+                <qti-end-attempt-interaction id="endAttemptInteraction2" response-identifier="SOLREQUEST" title="Show Solution"/>
+            </div>
+        
+</qti-content-body></qti-feedback-block>
+    </qti-item-body>
+    <qti-response-processing>
+        <qti-set-outcome-value identifier="FEEDBACK">
+            <qti-multiple>
+                <qti-variable identifier="EMPTY"/>
+            </qti-multiple>
+        </qti-set-outcome-value>
+        <qti-response-condition>
+            <qti-response-if>
+                <qti-variable identifier="SOLREQUEST"/>
+                <qti-set-outcome-value identifier="FEEDBACK">
+                    <qti-multiple>
+                        <qti-base-value base-type="identifier">SOLUTION</qti-base-value>
+                    </qti-multiple>
+                </qti-set-outcome-value>
+                <qti-set-outcome-value identifier="seenSolution">
+                    <qti-base-value base-type="boolean">true</qti-base-value>
+                </qti-set-outcome-value>
+                <qti-set-outcome-value identifier="completionStatus">
+                    <qti-base-value base-type="identifier">completed</qti-base-value>
+                </qti-set-outcome-value>
+                <qti-set-outcome-value identifier="ASKSOLUTION">
+                    <qti-base-value base-type="identifier">null</qti-base-value>
+                </qti-set-outcome-value>
+            </qti-response-if>
+            <qti-response-else>
+                <qti-response-condition>
+                    <qti-response-if>
+                        <qti-is-null>
+                            <qti-variable identifier="RESPONSE1"/>
+                        </qti-is-null>
+                        <qti-set-outcome-value identifier="SCORE">
+                            <qti-base-value base-type="float">0</qti-base-value>
+                        </qti-set-outcome-value>
+                    </qti-response-if>
+                    <qti-response-else>
+                        <qti-response-condition>
+                            <qti-response-if>
+                                <qti-equal-rounded rounding-mode="significantFigures" figures="3">
+                                    <qti-variable identifier="fAns"/>
+                                    <qti-variable identifier="RESPONSE1"/>
+                                </qti-equal-rounded>
+                                <qti-set-outcome-value identifier="FEEDBACK">
+                                    <qti-multiple>
+                                        <qti-base-value base-type="identifier">Correct</qti-base-value>
+                                    </qti-multiple>
+                                </qti-set-outcome-value>
+                                <qti-set-outcome-value identifier="SCORE">
+                                    <qti-base-value base-type="float">10.0</qti-base-value>
+                                </qti-set-outcome-value>
+                            </qti-response-if>
+                            <qti-response-else-if>
+                                <qti-equal-rounded rounding-mode="significantFigures" figures="2">
+                                    <qti-variable identifier="RESPONSE1"/>
+                                    <qti-variable identifier="fAns"/>
+                                </qti-equal-rounded>
+                                <qti-set-outcome-value identifier="FEEDBACK">
+                                    <qti-multiple>
+                                        <qti-base-value base-type="identifier">Partial</qti-base-value>
+                                    </qti-multiple>
+                                </qti-set-outcome-value>
+                                <qti-set-outcome-value identifier="SCORE">
+                                    <qti-base-value base-type="float">5.0</qti-base-value>
+                                </qti-set-outcome-value>
+                            </qti-response-else-if>
+                            <qti-response-else>
+                                <qti-set-outcome-value identifier="FEEDBACK">
+                                    <qti-multiple>
+                                        <qti-base-value base-type="identifier">Incorrect</qti-base-value>
+                                    </qti-multiple>
+                                </qti-set-outcome-value>
+                                <qti-set-outcome-value identifier="SCORE">
+                                    <qti-base-value base-type="float">0.0</qti-base-value>
+                                </qti-set-outcome-value>
+                            </qti-response-else>
+                        </qti-response-condition>
+                        <qti-response-condition>
+                            <qti-response-if>
+                                <qti-gt>
+                                    <qti-variable identifier="numAttempts"/>
+                                    <qti-base-value base-type="integer">3</qti-base-value>
+                                </qti-gt>
+                                <qti-set-outcome-value identifier="FEEDBACK">
+                                    <qti-multiple>
+                                        <qti-base-value base-type="identifier">                                                THREETRIES                                            </qti-base-value>
+                                        <qti-base-value base-type="identifier">                                                SOLUTION                                            </qti-base-value>
+                                    </qti-multiple>
+                                </qti-set-outcome-value>
+                                
+                                <!-- completionStatus must be specifically set to completed in adaptive questions -->
+                                
+                                <qti-set-outcome-value identifier="completionStatus">
+                                    <qti-base-value base-type="identifier">completed</qti-base-value>
+                                </qti-set-outcome-value>
+                                <qti-set-outcome-value identifier="ASKSOLUTION">
+                                    <qti-base-value base-type="identifier">null</qti-base-value>
+                                </qti-set-outcome-value>
+                            </qti-response-if>
+                        </qti-response-condition>
+                        <qti-response-condition>
+                            <qti-response-if>
+                                <qti-variable identifier="seenSolution"/>
+                                <qti-set-outcome-value identifier="FEEDBACK">
+                                    <qti-multiple>
+                                        <qti-variable identifier="FEEDBACK"/>
+                                        <qti-base-value base-type="identifier">SEEN-SOLUTION</qti-base-value>
+                                    </qti-multiple>
+                                </qti-set-outcome-value>
+                                <qti-set-outcome-value identifier="SCORE">
+                                    <qti-base-value base-type="float">0.0</qti-base-value>
+                                </qti-set-outcome-value>
+                            </qti-response-if>
+                        </qti-response-condition>
+                    </qti-response-else>
+                </qti-response-condition>
+            </qti-response-else>
+        </qti-response-condition>
+    </qti-response-processing>
+</qti-assessment-item>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation=" http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd " identifier="slider" title="Jedi Knights" adaptive="false" time-dependent="false">
+	<qti-response-declaration identifier="RESPONSE" cardinality="single" base-type="integer">
+		<qti-correct-response>
+			<qti-value>16</qti-value>
+		</qti-correct-response>
+		<qti-mapping default-value="0">
+			<qti-map-entry map-key="12" mapped-value="0.5"/>
+			<qti-map-entry map-key="13" mapped-value="0.5"/>
+			<qti-map-entry map-key="14" mapped-value="1.0"/>
+			<qti-map-entry map-key="15" mapped-value="1.0"/>
+			<qti-map-entry map-key="16" mapped-value="1.0"/>
+			<qti-map-entry map-key="17" mapped-value="1.0"/>
+			<qti-map-entry map-key="18" mapped-value="1.0"/>
+			<qti-map-entry map-key="19" mapped-value="0.5"/>
+			<qti-map-entry map-key="20" mapped-value="0.5"/>
+		</qti-mapping>
+	</qti-response-declaration>
+	<qti-outcome-declaration identifier="SCORE" cardinality="single" base-type="float"/>
+	<qti-item-body>
+		<p>Much to the dismay of Star Wars fans, the 2001 UK national census classified people who
+			identified themselves as <i>Jedi Knights</i> as having no religion. In fact, the
+			<i>Jedi</i> accounted for more than 4% of this group!</p>
+		<qti-slider-interaction response-identifier="RESPONSE" lower-bound="0" upper-bound="100" step="1" step-label="false">
+			<qti-prompt>In total, what percentage of the UK population do you think were eventually
+				classifed as having no religion?</qti-prompt>
+		</qti-slider-interaction>
+	</qti-item-body>
+	<qti-response-processing template="https://www.imsglobal.org/question/qti_v3p0/rptemplates/map_response.xml"/>
+</qti-assessment-item>

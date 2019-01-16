@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation=" http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd " identifier="choiceMultiple" title="Chocolate Milk" adaptive="false" time-dependent="false">
+	<qti-response-declaration identifier="MR01" cardinality="multiple" base-type="identifier"/>
+	<qti-outcome-declaration identifier="SCORE" cardinality="single" base-type="float"/>
+	<qti-item-body>
+		<qti-choice-interaction response-identifier="MR01" shuffle="true" max-choices="10">
+			<qti-prompt>How to make chocolate milk. Select the combination of steps that lead to a nice
+				glass of hot and steamy chocolate milk.</qti-prompt>
+			<qti-simple-choice identifier="C01" fixed="false">Take a lighter</qti-simple-choice>
+			<qti-simple-choice identifier="C02" fixed="false">Open the gas on the stove</qti-simple-choice>
+			<qti-simple-choice identifier="C03" fixed="false">Light the gas</qti-simple-choice>
+			<qti-simple-choice identifier="C04" fixed="false">Poor the milk in the pan</qti-simple-choice>
+			<qti-simple-choice identifier="C05" fixed="false">Add 2 tea spoons of cocoa into the mug</qti-simple-choice>
+			<qti-simple-choice identifier="C06" fixed="false">Add 2 tea spoons of sugar into the mug</qti-simple-choice>
+			<qti-simple-choice identifier="C07" fixed="false">Add 2 spoons of water into the mug</qti-simple-choice>
+			<qti-simple-choice identifier="C08" fixed="false">Stir the water, cocoa and sugar until the
+				mixture is smooth</qti-simple-choice>
+			<qti-simple-choice identifier="C09" fixed="false">Put the pan with milk on the stove</qti-simple-choice>
+			<qti-simple-choice identifier="C10" fixed="false">Poor the boiling milk into the mug</qti-simple-choice>
+			<qti-simple-choice identifier="C11" fixed="false">Put the mug with the mixture and milk into
+				the microwave</qti-simple-choice>
+			<qti-simple-choice identifier="C12" fixed="false">Add milk to the mug with the smooth mixture</qti-simple-choice>
+			<qti-simple-choice identifier="C13" fixed="false">Add cold milk from the fridge into the mug
+				with smooth mixture</qti-simple-choice>
+			<qti-simple-choice identifier="C14" fixed="false">Set the microwave on 700 Watt and set the
+				timer to 2 minutes</qti-simple-choice>
+		</qti-choice-interaction>
+	</qti-item-body>
+	<qti-response-processing>
+		<qti-response-condition>
+			<qti-response-if>
+				<qti-match>
+					<qti-variable identifier="MR01"/>
+                    <qti-multiple>
+                        <qti-base-value base-type="identifier">C01</qti-base-value>
+                        <qti-base-value base-type="identifier">C02</qti-base-value>
+                        <qti-base-value base-type="identifier">C03</qti-base-value>
+                        <qti-base-value base-type="identifier">C04</qti-base-value>
+                        <qti-base-value base-type="identifier">C05</qti-base-value>
+                        <qti-base-value base-type="identifier">C06</qti-base-value>
+                        <qti-base-value base-type="identifier">C07</qti-base-value>
+                        <qti-base-value base-type="identifier">C08</qti-base-value>
+                        <qti-base-value base-type="identifier">C09</qti-base-value>
+                        <qti-base-value base-type="identifier">C10</qti-base-value>
+                    </qti-multiple>
+				</qti-match>
+				<qti-set-outcome-value identifier="SCORE">
+					<qti-base-value base-type="float">1</qti-base-value>
+				</qti-set-outcome-value>
+			</qti-response-if>
+			<qti-response-else-if>
+				<qti-match>
+					<qti-variable identifier="MR01"/>
+                    <qti-multiple>
+                        <qti-base-value base-type="identifier">C11</qti-base-value>
+                        <qti-base-value base-type="identifier">C05</qti-base-value>
+                        <qti-base-value base-type="identifier">C06</qti-base-value>
+                        <qti-base-value base-type="identifier">C07</qti-base-value>
+                        <qti-base-value base-type="identifier">C08</qti-base-value>
+                        <qti-base-value base-type="identifier">C12</qti-base-value>
+                        <qti-base-value base-type="identifier">C13</qti-base-value>
+                        <qti-base-value base-type="identifier">C14</qti-base-value>
+                    </qti-multiple>
+				</qti-match>
+				<qti-set-outcome-value identifier="SCORE">
+					<qti-base-value base-type="float">1</qti-base-value>
+				</qti-set-outcome-value>
+			</qti-response-else-if>
+		</qti-response-condition>
+	</qti-response-processing>
+</qti-assessment-item>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<qti-assessment-item 
+    xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd  http://www.w3.org/1998/Math/MathML https://purl.imsglobal.org/spec/mathml/v2p0/schema/xsd/mathml2.xsd" 
+    xmlns:m="http://www.w3.org/1998/Math/MathML" 
+    identifier="inlineChoiceMath" title="Inline Math" adaptive="false" time-dependent="false">
+  <qti-response-declaration identifier="RESPONSE" cardinality="single" base-type="identifier">
+    <qti-correct-response>
+      <qti-value>choice2</qti-value>
+    </qti-correct-response>
+  </qti-response-declaration>
+  <qti-outcome-declaration identifier="SCORE" cardinality="single" base-type="float"/>
+  <qti-item-body>
+    <p>Answer the question.</p>
+    <blockquote>
+      <p>If 
+        <m:math>
+          <m:mrow>
+            <m:mi>a</m:mi>
+            <m:mo>=</m:mo>
+            <m:mi>b</m:mi>
+          </m:mrow>
+        </m:math>
+        and 
+        <m:math>
+          <m:mrow>
+            <m:mi>b</m:mi>
+            <m:mo>=</m:mo>
+            <m:mi>c</m:mi>
+          </m:mrow>
+        </m:math>
+        then 
+        <qti-inline-choice-interaction response-identifier="RESPONSE" shuffle="false">
+          <qti-inline-choice identifier="choice1">
+            <m:math>
+              <m:mrow>
+                <m:mi>x</m:mi>
+                <m:mo>=</m:mo>
+                <m:mi>y</m:mi>
+              </m:mrow>
+            </m:math>
+          </qti-inline-choice>
+          <qti-inline-choice identifier="choice2">
+            <m:math>
+              <m:mrow>
+                <m:mi>a</m:mi>
+                <m:mo>=</m:mo>
+                <m:mi>c</m:mi>
+              </m:mrow>
+            </m:math>
+          </qti-inline-choice>
+          <qti-inline-choice identifier="choice3">
+            <m:math>
+              <m:mrow>
+                <m:mi>b</m:mi>
+                <m:mo>=</m:mo>
+                <m:mi>d</m:mi>
+              </m:mrow>
+            </m:math>
+          </qti-inline-choice>
+        </qti-inline-choice-interaction>
+        .
+      </p>
+    </blockquote>
+  </qti-item-body>
+  <qti-response-processing template="https://www.imsglobal.org/question/qti_v3p0/rptemplates/match_correct.xml"/>
+</qti-assessment-item>

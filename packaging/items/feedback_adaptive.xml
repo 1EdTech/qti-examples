@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation=" http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd " identifier="feedbackAdaptive" title="Mexican President with adaptive feedback" adaptive="true" time-dependent="false">
+	<qti-response-declaration identifier="RESPONSE" cardinality="single" base-type="identifier">
+		<qti-correct-response>
+			<qti-value>MGH001C</qti-value>
+		</qti-correct-response>
+	</qti-response-declaration>
+	<qti-outcome-declaration identifier="PREVIOUSRESPONSES" cardinality="multiple" base-type="identifier"/>
+	<qti-outcome-declaration identifier="SCORE" cardinality="single" base-type="float"/>
+	<qti-outcome-declaration identifier="FEEDBACK" cardinality="multiple" base-type="identifier"/>
+	<qti-item-body>
+		<qti-choice-interaction response-identifier="RESPONSE" shuffle="false" max-choices="1">
+			<qti-prompt>Who is the President of Mexico?</qti-prompt>
+			<qti-simple-choice identifier="MGH001A"> George W Bush <qti-feedback-inline outcome-identifier="FEEDBACK" identifier="MGH001A" show-hide="show">No, he is the
+					President of the USA.</qti-feedback-inline>
+			</qti-simple-choice>
+			<qti-simple-choice identifier="MGH001B"> Tony Blair <qti-feedback-inline outcome-identifier="FEEDBACK" identifier="MGH001B" show-hide="show">No, he is the
+					Prime Minister of England.</qti-feedback-inline>
+			</qti-simple-choice>
+			<qti-simple-choice identifier="MGH001C"> Vicente Fox <qti-feedback-inline outcome-identifier="FEEDBACK" identifier="MGH001C" show-hide="show">Yes.</qti-feedback-inline>
+			</qti-simple-choice>
+			<qti-simple-choice identifier="MGH001D"> Ariel Sharon <qti-feedback-inline outcome-identifier="FEEDBACK" identifier="MGH001D" show-hide="show">No, he is the
+					Prime Minister of Israel.</qti-feedback-inline>
+			</qti-simple-choice>
+		</qti-choice-interaction>
+		<qti-feedback-block outcome-identifier="FEEDBACK" show-hide="show" identifier="again"><qti-content-body>
+			<p>You already tried that option!</p>
+		
+</qti-content-body></qti-feedback-block>
+	</qti-item-body>
+	<qti-response-processing>
+		<qti-set-outcome-value identifier="completionStatus">
+			<qti-base-value base-type="identifier">incomplete</qti-base-value>
+		</qti-set-outcome-value>
+		<qti-response-condition>
+			<qti-response-if>
+				<qti-lt>
+					<qti-variable identifier="numAttempts"/>
+					<qti-base-value base-type="integer">3</qti-base-value>
+				</qti-lt>
+				<qti-set-outcome-value identifier="FEEDBACK">
+					<qti-multiple>
+						<qti-base-value base-type="identifier">tryAgain</qti-base-value>
+					</qti-multiple>
+				</qti-set-outcome-value>
+			</qti-response-if>
+			<qti-response-else-if>
+				<qti-lt>
+					<qti-variable identifier="numAttempts"/>
+					<qti-base-value base-type="integer">4</qti-base-value>
+				</qti-lt>
+				<qti-set-outcome-value identifier="FEEDBACK">
+					<qti-multiple>
+						<qti-base-value base-type="identifier">oneMore</qti-base-value>
+					</qti-multiple>
+				</qti-set-outcome-value>
+			</qti-response-else-if>
+			<qti-response-else>
+				<qti-set-outcome-value identifier="FEEDBACK">
+					<qti-multiple>
+						<qti-base-value base-type="identifier">giveUp</qti-base-value>
+					</qti-multiple>
+				</qti-set-outcome-value>
+				<qti-set-outcome-value identifier="completionStatus">
+					<qti-base-value base-type="identifier">completed</qti-base-value>
+				</qti-set-outcome-value>
+			</qti-response-else>
+		</qti-response-condition>
+		<qti-response-condition>
+			<qti-response-if>
+				<qti-match>
+					<qti-variable identifier="RESPONSE"/>
+					<qti-correct identifier="RESPONSE"/>
+				</qti-match>
+				<qti-set-outcome-value identifier="SCORE">
+					<qti-base-value base-type="float">1</qti-base-value>
+				</qti-set-outcome-value>
+				<qti-set-outcome-value identifier="completionStatus">
+					<qti-base-value base-type="identifier">completed</qti-base-value>
+				</qti-set-outcome-value>
+				<qti-set-outcome-value identifier="FEEDBACK">
+					<qti-variable identifier="RESPONSE"/>
+				</qti-set-outcome-value>
+			</qti-response-if>
+			<qti-response-else>
+				<qti-set-outcome-value identifier="SCORE">
+					<qti-base-value base-type="float">0</qti-base-value>
+				</qti-set-outcome-value>
+				<qti-set-outcome-value identifier="FEEDBACK">
+					<qti-multiple>
+						<qti-variable identifier="FEEDBACK"/>
+						<qti-variable identifier="RESPONSE"/>
+					</qti-multiple>
+				</qti-set-outcome-value>
+			</qti-response-else>
+		</qti-response-condition>
+		<qti-response-condition>
+			<qti-response-if>
+				<qti-member>
+					<qti-variable identifier="PREVIOUSRESPONSES"/>
+					<qti-variable identifier="RESPONSE"/>
+				</qti-member>
+				<qti-set-outcome-value identifier="FEEDBACK">
+					<qti-multiple>
+						<qti-variable identifier="FEEDBACK"/>
+						<qti-base-value base-type="identifier">again</qti-base-value>
+					</qti-multiple>
+				</qti-set-outcome-value>
+			</qti-response-if>
+			<qti-response-else>
+				<qti-set-outcome-value identifier="PREVIOUSRESPONSES">
+					<qti-multiple>
+						<qti-variable identifier="PREVIOUSRESPONSES"/>
+						<qti-variable identifier="RESPONSE"/>
+					</qti-multiple>
+				</qti-set-outcome-value>
+				<qti-set-outcome-value identifier="FEEDBACK">
+					<qti-delete>
+						<qti-base-value base-type="identifier">again</qti-base-value>
+						<qti-variable identifier="FEEDBACK"/>
+					</qti-delete>
+				</qti-set-outcome-value>
+			</qti-response-else>
+		</qti-response-condition>
+	</qti-response-processing>
+	<qti-modal-feedback outcome-identifier="FEEDBACK" identifier="MGH001C" show-hide="show">Yes, that is
+		correct.</qti-modal-feedback>
+	<qti-modal-feedback outcome-identifier="FEEDBACK" identifier="tryAgain" show-hide="show">No, that is
+		not correct.</qti-modal-feedback>
+	<qti-modal-feedback outcome-identifier="FEEDBACK" identifier="oneMore" show-hide="show">No, that is not
+		correct, try one more time.</qti-modal-feedback>
+	<qti-modal-feedback outcome-identifier="FEEDBACK" identifier="giveUp" show-hide="show">No, the correct
+		answer is Vicente Fox.</qti-modal-feedback>
+</qti-assessment-item>

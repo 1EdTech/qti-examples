@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation=" http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd " identifier="textEntry" title="Richard III (Take 3)" adaptive="false" time-dependent="false">
+	<qti-response-declaration identifier="RESPONSE" cardinality="single" base-type="string">
+		<qti-correct-response>
+			<qti-value>York</qti-value>
+		</qti-correct-response>
+		<qti-mapping default-value="0">
+			<qti-map-entry map-key="York" mapped-value="1"/>
+			<qti-map-entry map-key="york" mapped-value="0.5"/>
+		</qti-mapping>
+	</qti-response-declaration>
+	<qti-outcome-declaration identifier="SCORE" cardinality="single" base-type="float"/>
+	<qti-item-body>
+		<p>Identify the missing word in this famous quote from Shakespeare's Richard III.</p>
+		<blockquote>
+			<p>Now is the winter of our discontent<br/> Made glorious summer by this sun of
+					<qti-text-entry-interaction response-identifier="RESPONSE" expected-length="15"/>;<br/>
+				And all the clouds that lour'd upon our house<br/> In the deep bosom of the ocean
+				buried.</p>
+		</blockquote>
+	</qti-item-body>
+	<qti-response-processing template="https://www.imsglobal.org/question/qti_v3p0/rptemplates/map_response.xml"/>
+</qti-assessment-item>

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation=" http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd " xmlns:m="http://www.w3.org/1998/Math/MathML" identifier="Template_FIB_001" title="Product of a fraction by a number" adaptive="false" time-dependent="false">
+ <qti-response-declaration identifier="REPONSE0" cardinality="multiple" base-type="identifier">
+  <qti-correct-response>
+   <qti-value>Item1</qti-value>
+  </qti-correct-response>
+ </qti-response-declaration>
+ <qti-outcome-declaration identifier="FEEDBACK1" cardinality="single" base-type="identifier"/>
+ <qti-outcome-declaration identifier="FEEDBACK0" cardinality="single" base-type="identifier"/>
+ <qti-outcome-declaration identifier="FEEDBACK2" cardinality="single" base-type="identifier"/>
+ <qti-outcome-declaration identifier="FEEDBACK3" cardinality="single" base-type="identifier"/>
+ <qti-outcome-declaration identifier="SCORE0" cardinality="single" base-type="float"/>
+ <qti-template-declaration identifier="a" cardinality="single" base-type="integer" math-variable="true" param-variable="true"/>
+ <qti-template-declaration identifier="b" cardinality="single" base-type="integer" math-variable="true" param-variable="true"/>
+ <qti-template-declaration identifier="c" cardinality="single" base-type="integer" math-variable="true" param-variable="true"/>
+ <qti-template-declaration identifier="p" cardinality="single" base-type="integer" math-variable="true" param-variable="true"/>
+ <qti-template-declaration identifier="Choix0" cardinality="single" base-type="integer" math-variable="true" param-variable="true"/>
+ <qti-template-declaration identifier="Choix1" cardinality="single" base-type="integer" math-variable="true" param-variable="true"/>
+ <qti-template-declaration identifier="Choix2" cardinality="single" base-type="integer" math-variable="true" param-variable="true"/>
+ <qti-template-declaration identifier="Choix3" cardinality="single" base-type="integer" math-variable="true" param-variable="true"/>
+ <qti-template-processing>
+  <qti-set-template-value identifier="a">
+   <qti-random-integer min="1" max="10"/>
+  </qti-set-template-value>
+  <qti-set-template-value identifier="b">
+   <qti-random-integer min="2" max="20"/>
+  </qti-set-template-value>
+  <qti-set-template-value identifier="c">
+   <qti-random-integer min="-20" max="-10"/>
+  </qti-set-template-value>
+  <qti-set-template-value identifier="p">
+   <qti-product>
+    <qti-variable identifier="a"/>
+    <qti-variable identifier="c"/>
+   </qti-product>
+  </qti-set-template-value>
+  <qti-set-template-value identifier="Choix0">
+   <qti-subtract>
+    <qti-base-value base-type="integer">0</qti-base-value>
+    <qti-product>
+     <qti-variable identifier="a"/>
+     <qti-variable identifier="c"/>
+    </qti-product>
+   </qti-subtract>
+  </qti-set-template-value>
+  <qti-set-template-value identifier="Choix1">
+   <qti-subtract>
+    <qti-base-value base-type="integer">0</qti-base-value>
+    <qti-product>
+     <qti-variable identifier="b"/>
+     <qti-variable identifier="c"/>
+    </qti-product>
+   </qti-subtract>
+  </qti-set-template-value>
+  <qti-set-template-value identifier="Choix2">
+   <qti-round>
+    <qti-divide>
+     <qti-product>
+      <qti-variable identifier="a"/>
+      <qti-variable identifier="c"/>
+     </qti-product>
+     <qti-variable identifier="b"/>
+    </qti-divide>
+   </qti-round>
+  </qti-set-template-value>
+  <qti-set-template-value identifier="Choix3">
+   <qti-subtract>
+    <qti-base-value base-type="integer">0</qti-base-value>
+    <qti-round>
+     <qti-divide>
+      <qti-product>
+       <qti-variable identifier="a"/>
+       <qti-variable identifier="c"/>
+      </qti-product>
+      <qti-variable identifier="b"/>
+     </qti-divide>
+    </qti-round>
+   </qti-subtract>
+  </qti-set-template-value>
+  <qti-template-constraint>
+   <qti-equal tolerance-mode="exact">
+    <qti-gcd>
+     <qti-variable identifier="a"/>
+     <qti-variable identifier="b"/>
+    </qti-gcd>
+    <qti-base-value base-type="integer">1</qti-base-value>
+   </qti-equal>
+  </qti-template-constraint>
+  <qti-template-constraint>
+   <qti-lt>
+    <qti-variable identifier="a"/>
+    <qti-variable identifier="b"/>
+   </qti-lt>
+  </qti-template-constraint>
+  <qti-template-constraint>
+   <qti-equal tolerance-mode="exact">
+    <qti-integer-modulus>
+     <qti-variable identifier="p"/>
+     <qti-variable identifier="b"/>
+    </qti-integer-modulus>
+    <qti-base-value base-type="integer">0</qti-base-value>
+   </qti-equal>
+  </qti-template-constraint>
+ </qti-template-processing>
+ <qti-item-body>
+  <div>
+   <em> </em>
+   <qti-choice-interaction response-identifier="REPONSE0" shuffle="true" max-choices="1">
+    <qti-prompt>
+     <m:math>
+      <m:mfrac>
+       <m:mi>a</m:mi>
+       <m:mi>b</m:mi>
+      </m:mfrac>
+     </m:math> of <m:math>
+      <m:mi>c</m:mi>
+     </m:math>
+     <br/> is equal to:<br/>
+    </qti-prompt>
+    <qti-simple-choice identifier="Item0" fixed="false"> - <m:math>
+      <m:mfrac>
+       <m:mi> Choix0</m:mi>
+       <m:mi> Choix1</m:mi>
+      </m:mfrac>
+     </m:math>
+    </qti-simple-choice>
+    <qti-simple-choice identifier="Item1" fixed="false">
+     <m:math>
+      <m:mi> Choix2</m:mi>
+     </m:math>
+    </qti-simple-choice>
+    <qti-simple-choice identifier="Item2" fixed="false">
+     <m:math>
+      <m:mi> Choix3</m:mi>
+     </m:math>
+    </qti-simple-choice>
+   </qti-choice-interaction>
+  </div>
+ </qti-item-body>
+ <qti-response-processing>
+  <qti-response-condition>
+   <qti-response-if>
+    <qti-match>
+     <qti-variable identifier="REPONSE0"/>
+     <qti-correct identifier="REPONSE0"/>
+    </qti-match>
+    <qti-set-outcome-value identifier="FEEDBACK1">
+     <qti-base-value base-type="identifier">FEEDBACK1</qti-base-value>
+    </qti-set-outcome-value>
+    <qti-set-outcome-value identifier="SCORE0">
+     <qti-base-value base-type="float">4</qti-base-value>
+    </qti-set-outcome-value>
+   </qti-response-if>
+   <qti-response-else-if>
+    <qti-match>
+     <qti-multiple>
+      <qti-base-value base-type="identifier">Item0</qti-base-value>
+     </qti-multiple>
+     <qti-variable identifier="REPONSE0"/>
+    </qti-match>
+    <qti-set-outcome-value identifier="FEEDBACK0">
+     <qti-base-value base-type="identifier">FEEDBACK0</qti-base-value>
+    </qti-set-outcome-value>
+    <qti-set-outcome-value identifier="SCORE0">
+     <qti-base-value base-type="float">0</qti-base-value>
+    </qti-set-outcome-value>
+   </qti-response-else-if>
+   <qti-response-else-if>
+    <qti-match>
+     <qti-multiple>
+      <qti-base-value base-type="identifier">Item2</qti-base-value>
+     </qti-multiple>
+     <qti-variable identifier="REPONSE0"/>
+    </qti-match>
+    <qti-set-outcome-value identifier="FEEDBACK2">
+     <qti-base-value base-type="identifier">FEEDBACK2</qti-base-value>
+    </qti-set-outcome-value>
+    <qti-set-outcome-value identifier="SCORE0">
+     <qti-base-value base-type="float">0</qti-base-value>
+    </qti-set-outcome-value>
+   </qti-response-else-if>
+   <qti-response-else>
+    <qti-set-outcome-value identifier="FEEDBACK3">
+     <qti-base-value base-type="identifier">FEEDBACK3</qti-base-value>
+    </qti-set-outcome-value>
+    <qti-set-outcome-value identifier="SCORE0">
+     <qti-base-value base-type="float">0</qti-base-value>
+    </qti-set-outcome-value>
+   </qti-response-else>
+  </qti-response-condition>
+ </qti-response-processing>
+ <qti-modal-feedback outcome-identifier="FEEDBACK1" identifier="FEEDBACK1" show-hide="show"> Good answer. </qti-modal-feedback>
+ <qti-modal-feedback outcome-identifier="FEEDBACK0" identifier="FEEDBACK0" show-hide="show"> We must
+  multiply the numerator only. </qti-modal-feedback>
+ <qti-modal-feedback outcome-identifier="FEEDBACK2" identifier="FEEDBACK2" show-hide="show"> Pay attention
+  to the sign! </qti-modal-feedback>
+ <qti-modal-feedback outcome-identifier="FEEDBACK3" identifier="FEEDBACK3" show-hide="show"> No comment.
+ </qti-modal-feedback>
+</qti-assessment-item>

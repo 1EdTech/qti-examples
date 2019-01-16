@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation=" http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd " identifier="choiceMultiple" title="Composition of Water" adaptive="false" time-dependent="false">
+	<qti-response-declaration identifier="RESPONSE" cardinality="multiple" base-type="identifier">
+		<qti-correct-response>
+			<qti-value>H</qti-value>
+			<qti-value>O</qti-value>
+		</qti-correct-response>
+			<qti-mapping lower-bound="0" upper-bound="2" default-value="-2">
+			<qti-map-entry map-key="H" mapped-value="1"/>
+			<qti-map-entry map-key="O" mapped-value="1"/>
+			<qti-map-entry map-key="Cl" mapped-value="-1"/>
+		</qti-mapping>
+	</qti-response-declaration>
+	<qti-outcome-declaration identifier="SCORE" cardinality="single" base-type="float"/>
+	<qti-item-body>
+	  <div dir="rtl">
+		<qti-choice-interaction response-identifier="RESPONSE" shuffle="true" max-choices="0">
+			<qti-prompt>איזה מהגורמים הבאים משמשים ליצירת מים</qti-prompt>
+			<qti-simple-choice identifier="H" fixed="false">מימן</qti-simple-choice>
+			<qti-simple-choice identifier="He" fixed="false">הליום</qti-simple-choice>
+			<qti-simple-choice identifier="C" fixed="false">פחם</qti-simple-choice>
+			<qti-simple-choice identifier="O" fixed="false">חמצן</qti-simple-choice>
+			<qti-simple-choice identifier="N" fixed="false">חנקן</qti-simple-choice>
+			<qti-simple-choice identifier="Cl" fixed="false">כלור</qti-simple-choice>
+		</qti-choice-interaction>
+      </div>
+	</qti-item-body>
+	<qti-response-processing template="https://www.imsglobal.org/question/qti_v3p0/rptemplates/map_response.xml"/>
+</qti-assessment-item>

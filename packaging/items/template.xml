@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation=" http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd " identifier="template" title="Digging a Hole" adaptive="false" time-dependent="false">
+	<qti-response-declaration identifier="RESPONSE" cardinality="single" base-type="float"/>
+	<qti-outcome-declaration identifier="SCORE" cardinality="single" base-type="float"/>
+	<qti-template-declaration identifier="PEOPLE" cardinality="single" base-type="string" math-variable="false" param-variable="false"/>
+	<qti-template-declaration identifier="A" cardinality="single" base-type="integer" math-variable="false" param-variable="false"/>
+	<qti-template-declaration identifier="B" cardinality="single" base-type="integer" math-variable="false" param-variable="false"/>
+	<qti-template-declaration identifier="MIN" cardinality="single" base-type="integer" math-variable="false" param-variable="false"/>
+	<qti-template-processing>
+		<qti-set-template-value identifier="PEOPLE">
+			<qti-random>
+				<qti-multiple>
+					<qti-base-value base-type="string">men</qti-base-value>
+					<qti-base-value base-type="string">women</qti-base-value>
+					<qti-base-value base-type="string">children</qti-base-value>
+				</qti-multiple>
+			</qti-random>
+		</qti-set-template-value>
+		<qti-set-template-value identifier="A">
+			<qti-random-integer min="2" max="4"/>
+		</qti-set-template-value>
+		<qti-template-condition>
+			<qti-template-if>
+				<qti-match>
+					<qti-variable identifier="A"/>
+					<qti-base-value base-type="integer">2</qti-base-value>
+				</qti-match>
+				<qti-set-template-value identifier="B">
+					<qti-random-integer min="4" max="12" step="2"/>
+				</qti-set-template-value>
+			</qti-template-if>
+			<qti-template-else-if>
+				<qti-match>
+					<qti-variable identifier="A"/>
+					<qti-base-value base-type="integer">3</qti-base-value>
+				</qti-match>
+				<qti-set-template-value identifier="B">
+					<qti-random>
+						<qti-multiple>
+							<qti-base-value base-type="integer">6</qti-base-value>
+							<qti-base-value base-type="integer">12</qti-base-value>
+						</qti-multiple>
+					</qti-random>
+				</qti-set-template-value>
+			</qti-template-else-if>
+			<qti-template-else>
+				<qti-set-template-value identifier="B">
+					<qti-random>
+						<qti-multiple>
+							<qti-base-value base-type="integer">8</qti-base-value>
+							<qti-base-value base-type="integer">12</qti-base-value>
+						</qti-multiple>
+					</qti-random>
+				</qti-set-template-value>
+			</qti-template-else>
+		</qti-template-condition>
+		<qti-set-template-value identifier="MIN">
+			<qti-integer-divide>
+				<qti-base-value base-type="integer">120</qti-base-value>
+				<qti-variable identifier="A"/>
+			</qti-integer-divide>
+		</qti-set-template-value>
+		<qti-set-correct-response identifier="RESPONSE">
+			<qti-integer-divide>
+				<qti-base-value base-type="integer">120</qti-base-value>
+				<qti-variable identifier="B"/>
+			</qti-integer-divide>
+		</qti-set-correct-response>
+	</qti-template-processing>
+	<qti-item-body>
+		<p>If it takes <qti-printed-variable identifier="A"/>
+			<qti-printed-variable identifier="PEOPLE"/>
+			<qti-printed-variable identifier="MIN"/> minutes to dig a hole, how long would it take
+				<qti-printed-variable identifier="B"/>
+			<qti-printed-variable identifier="PEOPLE"/> to dig a similar hole?</p>
+		<p>Answer: <qti-text-entry-interaction response-identifier="RESPONSE" expected-length="8"/>
+		minutes.</p>
+	</qti-item-body>
+	<qti-response-processing template="https://www.imsglobal.org/question/qti_v3p0/rptemplates/match_correct.xml"/>
+</qti-assessment-item>

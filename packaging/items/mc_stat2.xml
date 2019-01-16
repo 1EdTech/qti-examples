@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<qti-assessment-item adaptive="false" identifier="stat2" time-dependent="false" title="Test of statistics functions" tool-name="Exo+" tool-version="0.0.9-SNAPSHOT" xml:lang="en" xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation=" http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd ">
+    <qti-response-declaration base-type="integer" cardinality="single" identifier="RESPONSE0"/>
+    <qti-response-declaration base-type="integer" cardinality="single" identifier="RESPONSE1"/>
+    <qti-response-declaration base-type="float" cardinality="single" identifier="RESPONSE2"/>
+    <qti-response-declaration base-type="float" cardinality="single" identifier="RESPONSE3"/>
+    <qti-outcome-declaration base-type="identifier" cardinality="single" identifier="FEEDBACK"/>
+    <qti-outcome-declaration base-type="float" cardinality="single" identifier="SCORE"/>
+    <qti-template-declaration base-type="integer" cardinality="single" identifier="n" math-variable="true" param-variable="true"/>
+    <qti-template-declaration base-type="integer" cardinality="ordered" identifier="t" math-variable="true" param-variable="true"/>
+    <qti-template-declaration base-type="integer" cardinality="single" identifier="SOLUTION0_0" math-variable="true" param-variable="true"/>
+    <qti-template-declaration base-type="integer" cardinality="single" identifier="SOLUTION1_0" math-variable="true" param-variable="true"/>
+    <qti-template-declaration base-type="float" cardinality="single" identifier="SOLUTION2_0" math-variable="true" param-variable="true"/>
+    <qti-template-declaration base-type="float" cardinality="single" identifier="SOLUTION3_0" math-variable="true" param-variable="true"/>
+    <qti-template-processing>
+        <qti-set-template-value identifier="n">
+            <qti-random-integer max="10" min="2"/>
+        </qti-set-template-value>
+        <qti-set-template-value identifier="t">
+            <qti-ordered>
+                <qti-repeat number-repeats="n">
+                    <qti-random-integer max="100" min="-100"/>
+                </qti-repeat>
+            </qti-ordered>
+        </qti-set-template-value>
+        <qti-set-template-value identifier="SOLUTION0_0">
+            <qti-min>
+                <qti-variable identifier="t"/>
+            </qti-min>
+        </qti-set-template-value>
+        <qti-set-correct-response identifier="RESPONSE0">
+            <qti-variable identifier="SOLUTION0_0"/>
+        </qti-set-correct-response>
+        <qti-set-template-value identifier="SOLUTION1_0">
+            <qti-max>
+                <qti-variable identifier="t"/>
+            </qti-max>
+        </qti-set-template-value>
+        <qti-set-correct-response identifier="RESPONSE1">
+            <qti-variable identifier="SOLUTION1_0"/>
+        </qti-set-correct-response>
+        <qti-set-template-value identifier="SOLUTION2_0">
+            <qti-divide>
+                <qti-round>
+                    <qti-product>
+                        <qti-stats-operator name="mean">
+                            <qti-variable identifier="t"/>
+                        </qti-stats-operator>
+                        <qti-base-value base-type="integer">100</qti-base-value>
+                    </qti-product>
+                </qti-round>
+                <qti-base-value base-type="integer">100</qti-base-value>
+            </qti-divide>
+        </qti-set-template-value>
+        <qti-set-correct-response identifier="RESPONSE2">
+            <qti-variable identifier="SOLUTION2_0"/>
+        </qti-set-correct-response>
+        <qti-set-template-value identifier="SOLUTION3_0">
+            <qti-divide>
+                <qti-round>
+                    <qti-product>
+                        <qti-stats-operator name="popSD">
+                            <qti-variable identifier="t"/>
+                        </qti-stats-operator>
+                        <qti-base-value base-type="integer">100</qti-base-value>
+                    </qti-product>
+                </qti-round>
+                <qti-base-value base-type="integer">100</qti-base-value>
+            </qti-divide>
+        </qti-set-template-value>
+        <qti-set-correct-response identifier="RESPONSE3">
+            <qti-variable identifier="SOLUTION3_0"/>
+        </qti-set-correct-response>
+
+    </qti-template-processing>
+    <qti-item-body>
+        <div> Here is a set of numbers: <qti-printed-variable identifier="t"/><br/>
+            <br/>- What is the smallest number of this set? <qti-text-entry-interaction expected-length="5" response-identifier="RESPONSE0"/>
+            <br/>- What is the greatest number of this set? <qti-text-entry-interaction expected-length="5" response-identifier="RESPONSE1"/>
+            <br/>- What is the mean of this set (rounded to two decimal places)?
+                <qti-text-entry-interaction expected-length="5" response-identifier="RESPONSE2"/>
+            <br/>- What is the standard deviation of this set (rounded to two decimal places)?
+                <qti-text-entry-interaction expected-length="5" response-identifier="RESPONSE3"/>
+        </div>
+    </qti-item-body>
+    <qti-response-processing>
+        <qti-response-condition>
+            <qti-response-if>
+                <qti-and>
+                    <qti-equal tolerance-mode="exact">
+                        <qti-variable identifier="RESPONSE0"/>
+                        <qti-correct identifier="RESPONSE0"/>
+                    </qti-equal>
+                    <qti-equal tolerance-mode="exact">
+                        <qti-variable identifier="RESPONSE1"/>
+                        <qti-correct identifier="RESPONSE1"/>
+                    </qti-equal>
+                    <qti-equal tolerance-mode="exact">
+                        <qti-variable identifier="RESPONSE2"/>
+                        <qti-correct identifier="RESPONSE2"/>
+                    </qti-equal>
+                    <qti-equal tolerance-mode="exact">
+                        <qti-variable identifier="RESPONSE3"/>
+                        <qti-correct identifier="RESPONSE3"/>
+                    </qti-equal>
+                </qti-and>
+                <qti-set-outcome-value identifier="FEEDBACK">
+                    <qti-base-value base-type="identifier">FEEDBACK0</qti-base-value>
+                </qti-set-outcome-value>
+                <qti-set-outcome-value identifier="SCORE">
+                    <qti-base-value base-type="float">8.0</qti-base-value>
+                </qti-set-outcome-value>
+            </qti-response-if>
+            <qti-response-else-if>
+                <qti-and>
+                    <qti-equal tolerance-mode="exact">
+                        <qti-variable identifier="RESPONSE0"/>
+                        <qti-correct identifier="RESPONSE0"/>
+                    </qti-equal>
+                    <qti-equal tolerance-mode="exact">
+                        <qti-variable identifier="RESPONSE1"/>
+                        <qti-correct identifier="RESPONSE1"/>
+                    </qti-equal>
+                </qti-and>
+                <qti-set-outcome-value identifier="FEEDBACK">
+                    <qti-base-value base-type="identifier">FEEDBACK1</qti-base-value>
+                </qti-set-outcome-value>
+                <qti-set-outcome-value identifier="SCORE">
+                    <qti-base-value base-type="float">4.0</qti-base-value>
+                </qti-set-outcome-value>
+            </qti-response-else-if>
+            <qti-response-else-if>
+                <qti-and>
+                    <qti-equal tolerance-mode="exact">
+                        <qti-variable identifier="RESPONSE0"/>
+                        <qti-correct identifier="RESPONSE0"/>
+                    </qti-equal>
+                    <qti-equal tolerance-mode="exact">
+                        <qti-variable identifier="RESPONSE2"/>
+                        <qti-correct identifier="RESPONSE2"/>
+                    </qti-equal>
+                </qti-and>
+                <qti-set-outcome-value identifier="FEEDBACK">
+                    <qti-base-value base-type="identifier">FEEDBACK2</qti-base-value>
+                </qti-set-outcome-value>
+                <qti-set-outcome-value identifier="SCORE">
+                    <qti-base-value base-type="float">4.0</qti-base-value>
+                </qti-set-outcome-value>
+            </qti-response-else-if>
+            <qti-response-else-if>
+                <qti-and>
+                    <qti-equal tolerance-mode="exact">
+                        <qti-variable identifier="RESPONSE2"/>
+                        <qti-correct identifier="RESPONSE2"/>
+                    </qti-equal>
+                    <qti-equal tolerance-mode="exact">
+                        <qti-variable identifier="RESPONSE3"/>
+                        <qti-correct identifier="RESPONSE3"/>
+                    </qti-equal>
+                </qti-and>
+                <qti-set-outcome-value identifier="FEEDBACK">
+                    <qti-base-value base-type="identifier">FEEDBACK3</qti-base-value>
+                </qti-set-outcome-value>
+                <qti-set-outcome-value identifier="SCORE">
+                    <qti-base-value base-type="float">4.0</qti-base-value>
+                </qti-set-outcome-value>
+            </qti-response-else-if>
+            <qti-response-else>
+                <qti-set-outcome-value identifier="FEEDBACK">
+                    <qti-base-value base-type="identifier">DEFAULT_FEEDBACK</qti-base-value>
+                </qti-set-outcome-value>
+                <qti-set-outcome-value identifier="SCORE">
+                    <qti-base-value base-type="float">0.0</qti-base-value>
+                </qti-set-outcome-value>
+            </qti-response-else>
+        </qti-response-condition>
+    </qti-response-processing>
+    <qti-modal-feedback identifier="FEEDBACK0" outcome-identifier="FEEDBACK" show-hide="show">Bravo
+        !</qti-modal-feedback>
+    <qti-modal-feedback identifier="FEEDBACK1" outcome-identifier="FEEDBACK" show-hide="show">The mean was: <m:math>
+            <m:mi>SOLUTION2_0</m:mi>
+        </m:math> and the standard deviation was: <m:math>
+            <m:mi>SOLUTION3_0</m:mi>
+        </m:math>. </qti-modal-feedback>
+    <qti-modal-feedback identifier="FEEDBACK2" outcome-identifier="FEEDBACK" show-hide="show">The greatest
+        one was: <m:math>
+            <m:mi>SOLUTION1_0</m:mi>
+        </m:math> and the standard deviation was: <m:math>
+            <m:mi>SOLUTION3_0</m:mi>
+        </m:math>. </qti-modal-feedback>
+    <qti-modal-feedback identifier="FEEDBACK3" outcome-identifier="FEEDBACK" show-hide="show">The smallest
+        one was: <m:math>
+            <m:mi>SOLUTION0_0</m:mi>
+        </m:math> and the standard deviation was: <m:math>
+            <m:mi>SOLUTION3_0</m:mi>
+        </m:math>. </qti-modal-feedback>
+    <qti-modal-feedback identifier="DEFAULT_FEEDBACK" outcome-identifier="FEEDBACK" show-hide="show">At
+        least two incorrect responses. The smallest one was: <m:math>
+            <m:mi>SOLUTION0_0</m:mi>
+        </m:math>, the greatest one was: <m:math>
+            <m:mi>SOLUTION1_0</m:mi>
+        </m:math>, the mean was: <m:math>
+            <m:mi>SOLUTION2_0</m:mi>
+        </m:math> and the standard deviation was <m:math>
+            <m:mi>SOLUTION3_0</m:mi>
+        </m:math>. </qti-modal-feedback>
+</qti-assessment-item>

@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation=" http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd " xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:m="http://www.w3.org/1998/Math/MathML" tool-name="Mathqurate" tool-version="1.0" xml:lang="en" identifier="multi-input" title="Legend" adaptive="false" time-dependent="false">
+    <qti-response-declaration identifier="RESPONSE1" cardinality="single" base-type="identifier">
+        <qti-correct-response>
+            <qti-value>ChoiceA</qti-value>
+        </qti-correct-response>
+    </qti-response-declaration>
+    <qti-response-declaration identifier="RESPONSE2" cardinality="single" base-type="identifier">
+        <qti-correct-response>
+            <qti-value>A2</qti-value>
+        </qti-correct-response>
+    </qti-response-declaration>
+    <qti-response-declaration identifier="RESPONSE3" cardinality="single" base-type="string">
+        <qti-correct-response>
+            <qti-value>wicked king</qti-value>
+        </qti-correct-response>
+    </qti-response-declaration>
+    <qti-response-declaration identifier="RESPONSE4" cardinality="multiple" base-type="directedPair">
+        <qti-correct-response>
+            <qti-value>F G1</qti-value>
+            <qti-value>C G2</qti-value>
+            <qti-value>H G3</qti-value>
+        </qti-correct-response>
+    </qti-response-declaration>
+    <qti-outcome-declaration identifier="SCORE" cardinality="single" base-type="float">
+        <qti-default-value>
+            <qti-value>0.0</qti-value>
+        </qti-default-value>
+    </qti-outcome-declaration>
+    <qti-outcome-declaration identifier="SCORE1" cardinality="single" base-type="float">
+        <qti-default-value>
+            <qti-value>0.0</qti-value>
+        </qti-default-value>
+    </qti-outcome-declaration>
+    <qti-outcome-declaration identifier="SCORE2" cardinality="single" base-type="float">
+        <qti-default-value>
+            <qti-value>0.0</qti-value>
+        </qti-default-value>
+    </qti-outcome-declaration>
+    <qti-outcome-declaration identifier="SCORE3" cardinality="single" base-type="float">
+        <qti-default-value>
+            <qti-value>0.0</qti-value>
+        </qti-default-value>
+    </qti-outcome-declaration>
+    <qti-outcome-declaration identifier="SCORE4" cardinality="single" base-type="float">
+        <qti-default-value>
+            <qti-value>0.0</qti-value>
+        </qti-default-value>
+    </qti-outcome-declaration>
+    <qti-outcome-declaration identifier="FEEDBACK" cardinality="multiple" base-type="identifier"/>
+    
+    <qti-item-body>
+        <blockquote>
+            <p>Many people who live near the Theme Park are afraid to go into the Forest area. There is
+            a legend, that a woman named Marion, who once lived in the forest as an outlaw hundreds and hundreds
+            of years ago, still walks there as a ghost at night. The legend says, she was a great
+            warrior from a rich family, but the wicked king, who ruled the country, killed her
+            family, burned her castle and rode away on her horse. The castle is quite close to the Theme Park.</p>
+        </blockquote>
+        <qti-choice-interaction response-identifier="RESPONSE1" shuffle="true" max-choices="1">
+            <qti-prompt>Why are some people afraid of the Forest Area in the Theme Park?</qti-prompt>
+            <qti-simple-choice identifier="ChoiceA">Some people are afraid of a woman who walks around at
+                night as a ghost.</qti-simple-choice>
+            <qti-simple-choice identifier="ChoiceB">Some people are afraid of the dark.</qti-simple-choice>
+            <qti-simple-choice identifier="ChoiceC">Some people are afraid of a man who walks around at
+                night as a ghost.</qti-simple-choice>
+        </qti-choice-interaction>
+        <p>
+            <qti-feedback-inline outcome-identifier="FEEDBACK" show-hide="show" identifier="ReasonOK">Yes,
+                that's the right reason.</qti-feedback-inline>
+            <qti-feedback-inline outcome-identifier="FEEDBACK" show-hide="show" identifier="ReasonIncorrect">No, that's not the right reason.</qti-feedback-inline>
+        </p>
+        <div>The woman, whose name was <qti-inline-choice-interaction response-identifier="RESPONSE2" shuffle="true">
+            <qti-inline-choice identifier="P2" fixed="true">Please choose...</qti-inline-choice>
+            <qti-inline-choice identifier="C2">Marine</qti-inline-choice>
+            <qti-inline-choice identifier="B2">Maureen</qti-inline-choice>
+                <qti-inline-choice identifier="A2">Marion</qti-inline-choice>
+        </qti-inline-choice-interaction>, became angry with the <qti-text-entry-interaction response-identifier="RESPONSE3"/>.</div>
+        <qti-gap-match-interaction response-identifier="RESPONSE4" shuffle="true">
+            <qti-gap-text identifier="F" match-max="1">family</qti-gap-text>
+            <qti-gap-text identifier="C" match-max="1">castle</qti-gap-text>
+            <qti-gap-text identifier="S" match-max="1">sword</qti-gap-text>
+            <qti-gap-text identifier="H" match-max="1">horse</qti-gap-text>
+            <blockquote>
+                <p>He killed her <qti-gap identifier="G1"/> and burned her <qti-gap identifier="G2"/>, then jumped on her <qti-gap identifier="G3"/> and rode away.</p>
+            </blockquote>
+        </qti-gap-match-interaction>
+        <p>
+            <qti-feedback-inline outcome-identifier="FEEDBACK" show-hide="show" identifier="NameOK"> You've
+                got the right name for our heroine.</qti-feedback-inline>
+            <qti-feedback-inline outcome-identifier="FEEDBACK" show-hide="show" identifier="WrongName"> You've
+                got the wrong name for our heroine.</qti-feedback-inline>
+            <qti-feedback-inline outcome-identifier="FEEDBACK" show-hide="show" identifier="BaddyOK">
+                Right, he was a wicked king!</qti-feedback-inline>
+            <qti-feedback-inline outcome-identifier="FEEDBACK" show-hide="show" identifier="BaddyAlmost">
+                Not quite, he was a wicked king!</qti-feedback-inline>
+            <qti-feedback-inline outcome-identifier="FEEDBACK" show-hide="show" identifier="BaddyNo">
+                No, he was a wicked king!</qti-feedback-inline>
+            <qti-feedback-inline outcome-identifier="FEEDBACK" show-hide="show" identifier="BaddyBad">
+                No, it was the wicked king!</qti-feedback-inline>
+            <qti-feedback-inline outcome-identifier="FEEDBACK" show-hide="show" identifier="GapsOK">
+                Yes, that's what he did.</qti-feedback-inline>
+            <qti-feedback-inline outcome-identifier="FEEDBACK" show-hide="show" identifier="GapsNo">
+                No, that's not what he did.</qti-feedback-inline>
+        </p>
+    </qti-item-body>
+    <qti-response-processing>
+        <qti-response-condition>
+            <qti-response-if>
+                <qti-match>
+                    <qti-variable identifier="RESPONSE1"/>
+                    <qti-correct identifier="RESPONSE1"/>
+                </qti-match>
+                <qti-set-outcome-value identifier="SCORE1">
+                    <qti-base-value base-type="float">1.0</qti-base-value>
+                </qti-set-outcome-value>
+                <qti-set-outcome-value identifier="FEEDBACK">
+                    <qti-multiple>
+                        <qti-base-value base-type="identifier">ReasonOK</qti-base-value>
+                    </qti-multiple>
+                </qti-set-outcome-value>
+            </qti-response-if>
+            <qti-response-else>
+                <qti-set-outcome-value identifier="SCORE1">
+                    <qti-base-value base-type="float">0.0</qti-base-value>
+                </qti-set-outcome-value>
+                <qti-set-outcome-value identifier="FEEDBACK">
+                    <qti-multiple>
+                        <qti-base-value base-type="identifier">ReasonIncorrect</qti-base-value>
+                    </qti-multiple>
+                </qti-set-outcome-value>
+            </qti-response-else>
+        </qti-response-condition>
+        <qti-response-condition>
+            <qti-response-if>
+                <qti-match>
+                    <qti-variable identifier="RESPONSE2"/>
+                    <qti-correct identifier="RESPONSE2"/>
+                </qti-match>
+                <qti-set-outcome-value identifier="SCORE2">
+                    <qti-base-value base-type="float">1.0</qti-base-value>
+                </qti-set-outcome-value>
+                <qti-set-outcome-value identifier="FEEDBACK">
+                    <qti-multiple>
+                        <qti-variable identifier="FEEDBACK"/>
+                        <qti-base-value base-type="identifier">NameOK</qti-base-value>
+                    </qti-multiple>
+                </qti-set-outcome-value>
+            </qti-response-if>
+            <qti-response-else>
+                <qti-set-outcome-value identifier="SCORE2">
+                    <qti-base-value base-type="float">0.0</qti-base-value>
+                </qti-set-outcome-value>
+                <qti-set-outcome-value identifier="FEEDBACK">
+                    <qti-multiple>
+                        <qti-variable identifier="FEEDBACK"/>
+                        <qti-base-value base-type="identifier">WrongName</qti-base-value>
+                    </qti-multiple>
+                </qti-set-outcome-value>
+            </qti-response-else>
+        </qti-response-condition>
+        <qti-response-condition>
+            <qti-response-if>
+                <qti-match>
+                    <qti-variable identifier="RESPONSE3"/>
+                    <qti-correct identifier="RESPONSE3"/>
+                </qti-match>
+                <qti-set-outcome-value identifier="SCORE3">
+                    <qti-base-value base-type="float">1.0</qti-base-value>
+                </qti-set-outcome-value>
+                <qti-set-outcome-value identifier="FEEDBACK">
+                    <qti-multiple>
+                        <qti-variable identifier="FEEDBACK"/>
+                        <qti-base-value base-type="identifier">BaddyOK</qti-base-value>
+                    </qti-multiple>
+                </qti-set-outcome-value>
+            </qti-response-if>
+            <qti-response-else-if>
+                <qti-or>
+                    <qti-match>
+                        <qti-variable identifier="RESPONSE3"/>
+                        <qti-base-value base-type="string">bad king</qti-base-value>
+                    </qti-match>
+                    <qti-match>
+                        <qti-variable identifier="RESPONSE3"/>
+                        <qti-base-value base-type="string">evil king</qti-base-value>
+                    </qti-match>
+                </qti-or>
+                <qti-set-outcome-value identifier="SCORE3">
+                    <qti-base-value base-type="float">0.5</qti-base-value>
+                </qti-set-outcome-value>
+                <qti-set-outcome-value identifier="FEEDBACK">
+                    <qti-multiple>
+                        <qti-variable identifier="FEEDBACK"/>
+                        <qti-base-value base-type="identifier">BaddyAlmost</qti-base-value>
+                    </qti-multiple>
+                </qti-set-outcome-value>
+            </qti-response-else-if>
+            <qti-response-else-if>
+                <qti-substring case-sensitive="false">
+                   <qti-base-value base-type="string">king</qti-base-value>
+                   <qti-variable identifier="RESPONSE3"/>
+                </qti-substring>
+                <qti-set-outcome-value identifier="SCORE3">
+                    <qti-base-value base-type="float">0.2</qti-base-value>
+                </qti-set-outcome-value>
+                <qti-set-outcome-value identifier="FEEDBACK">
+                    <qti-multiple>
+                        <qti-variable identifier="FEEDBACK"/>
+                        <qti-base-value base-type="identifier">BaddyNo</qti-base-value>
+                    </qti-multiple>
+                </qti-set-outcome-value>
+            </qti-response-else-if>
+            <qti-response-else>
+                <qti-set-outcome-value identifier="SCORE3">
+                    <qti-base-value base-type="float">0.0</qti-base-value>
+                </qti-set-outcome-value>
+                <qti-set-outcome-value identifier="FEEDBACK">
+                    <qti-multiple>
+                        <qti-variable identifier="FEEDBACK"/>
+                        <qti-base-value base-type="identifier">BaddyBad</qti-base-value>
+                    </qti-multiple>
+                </qti-set-outcome-value>
+            </qti-response-else>
+        </qti-response-condition>
+        <qti-response-condition>
+            <qti-response-if>
+                <qti-match>
+                    <qti-variable identifier="RESPONSE4"/>
+                    <qti-correct identifier="RESPONSE4"/>
+                </qti-match>
+                <qti-set-outcome-value identifier="SCORE4">
+                    <qti-base-value base-type="float">1.0</qti-base-value>
+                </qti-set-outcome-value>
+                <qti-set-outcome-value identifier="FEEDBACK">
+                    <qti-multiple>
+                        <qti-variable identifier="FEEDBACK"/>
+                        <qti-base-value base-type="identifier">GapsOK</qti-base-value>
+                    </qti-multiple>
+                </qti-set-outcome-value>
+            </qti-response-if>
+            <qti-response-else>
+                <qti-set-outcome-value identifier="SCORE4">
+                    <qti-base-value base-type="float">0.0</qti-base-value>
+                </qti-set-outcome-value>
+                <qti-set-outcome-value identifier="FEEDBACK">
+                    <qti-multiple>
+                        <qti-variable identifier="FEEDBACK"/>
+                        <qti-base-value base-type="identifier">GapsNo</qti-base-value>
+                    </qti-multiple>
+                </qti-set-outcome-value>
+            </qti-response-else>
+        </qti-response-condition>
+        <qti-set-outcome-value identifier="SCORE">
+            <qti-sum>
+                <qti-variable identifier="SCORE1"/>
+                <qti-variable identifier="SCORE2"/>
+                <qti-variable identifier="SCORE3"/>
+                <qti-variable identifier="SCORE4"/>
+            </qti-sum>
+        </qti-set-outcome-value>
+    </qti-response-processing>
+</qti-assessment-item>

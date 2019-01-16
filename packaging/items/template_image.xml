@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation=" http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd " identifier="template" title="Transportation" adaptive="false" time-dependent="false">
+	<!-- Thanks to Mark Stickley for the excellent images! -->
+	<qti-response-declaration identifier="RESPONSE" cardinality="single" base-type="integer"/>
+	<qti-outcome-declaration identifier="SCORE" cardinality="single" base-type="float"/>
+	<qti-template-declaration identifier="TRANSPORT" cardinality="single" base-type="identifier" math-variable="false" param-variable="false"/>
+	<qti-template-declaration identifier="SPEED" cardinality="single" base-type="integer" math-variable="false" param-variable="false"/>
+	<qti-template-processing>
+		<qti-set-template-value identifier="TRANSPORT">
+			<qti-random>
+				<qti-multiple>
+					<qti-base-value base-type="identifier">plane</qti-base-value>
+					<qti-base-value base-type="identifier">train</qti-base-value>
+					<qti-base-value base-type="identifier">bus</qti-base-value>
+				</qti-multiple>
+			</qti-random>
+		</qti-set-template-value>
+		<qti-template-condition>
+			<qti-template-if>
+				<qti-match>
+					<qti-variable identifier="TRANSPORT"/>
+					<qti-base-value base-type="identifier">plane</qti-base-value>
+				</qti-match>
+				<qti-set-template-value identifier="SPEED">
+					<qti-base-value base-type="integer">600</qti-base-value>
+				</qti-set-template-value>
+			</qti-template-if>
+			<qti-template-else-if>
+				<qti-match>
+					<qti-variable identifier="TRANSPORT"/>
+					<qti-base-value base-type="identifier">train</qti-base-value>
+				</qti-match>
+				<qti-set-template-value identifier="SPEED">
+					<qti-base-value base-type="integer">200</qti-base-value>
+				</qti-set-template-value>
+			</qti-template-else-if>
+			<qti-template-else>
+				<qti-set-template-value identifier="SPEED">
+					<qti-base-value base-type="integer">50</qti-base-value>
+				</qti-set-template-value>
+			</qti-template-else>
+		</qti-template-condition>
+		<qti-set-correct-response identifier="RESPONSE">
+			<qti-product>
+				<qti-base-value base-type="integer">3</qti-base-value>
+				<qti-variable identifier="SPEED"/>
+			</qti-product>
+		</qti-set-correct-response>
+	</qti-template-processing>
+	<qti-item-body>
+		<h1>Mick's Travels</h1>
+		<p>
+			<qti-template-inline template-identifier="TRANSPORT" show-hide="show" identifier="plane">
+				<img src="images/plane.png" alt="Picture of a plane."/>
+			</qti-template-inline>
+			<qti-template-inline template-identifier="TRANSPORT" show-hide="show" identifier="train">
+				<img src="images/train.png" alt="Picture of a train"/>
+			</qti-template-inline>
+			<qti-template-inline template-identifier="TRANSPORT" show-hide="show" identifier="bus">
+				<img src="images/bus.png" alt="Picture of a bus"/>
+			</qti-template-inline>
+		</p>
+		<p>Mick travels at an average speed of <qti-printed-variable identifier="SPEED"/> km/h.</p>
+		<p>How far does he travel in 3 hours? <qti-text-entry-interaction response-identifier="RESPONSE" expected-length="8"/> km.</p>
+	</qti-item-body>
+	<qti-response-processing template="https://www.imsglobal.org/question/qti_v3p0/rptemplates/match_correct.xml"/>
+</qti-assessment-item>

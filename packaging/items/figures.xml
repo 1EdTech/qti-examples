@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:qh5="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xsi:schemaLocation=" http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd " identifier="figures" title="Castles" adaptive="false" time-dependent="false">
+    <qti-response-declaration identifier="RESPONSE" cardinality="single" base-type="identifier">
+        <qti-correct-response>
+            <qti-value>ChoiceA</qti-value>
+        </qti-correct-response>
+    </qti-response-declaration>
+    <qti-outcome-declaration identifier="SCORE" cardinality="single" base-type="float">
+        <qti-default-value>
+            <qti-value>0</qti-value>
+        </qti-default-value>
+    </qti-outcome-declaration>
+    <qti-item-body>
+        <div>
+            <qh5:figure>
+                <img src="images/castle.png" alt="A castle" height="250" width="200"/>
+                <qh5:figcaption>Figure 1: A beautiful castle.</qh5:figcaption>
+            </qh5:figure>
+        </div>
+        <qti-choice-interaction response-identifier="RESPONSE" shuffle="true" max-choices="1">
+            <qti-prompt>What is the name of the castle above?</qti-prompt>
+            <qti-simple-choice identifier="ChoiceA">Neuschwanstein Castle</qti-simple-choice>
+            <qti-simple-choice identifier="ChoiceB">Fortress of Knights</qti-simple-choice>
+            <qti-simple-choice identifier="ChoiceC">Edinburgh Castle</qti-simple-choice>
+        </qti-choice-interaction>
+    </qti-item-body>
+    <qti-response-processing template="https://www.imsglobal.org/question/qti_v3p0/rptemplates/match_correct.xml"/>
+</qti-assessment-item>

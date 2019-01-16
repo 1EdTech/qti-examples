@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation=" http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd " identifier="positionObjects" title="Airport Locations" adaptive="false" time-dependent="false">
+	<qti-response-declaration identifier="RESPONSE" cardinality="multiple" base-type="point">
+		<qti-correct-response>
+			<!-- MAN -->
+			<qti-value>118 184</qti-value>
+			<!-- LHR -->
+			<qti-value>150 235</qti-value>
+			<!-- EDI -->
+			<qti-value>96 114</qti-value>
+		</qti-correct-response>
+		<qti-area-mapping default-value="0">
+			<qti-area-map-entry shape="circle" coords="118,184,12" mapped-value="1"/>
+			<qti-area-map-entry shape="circle" coords="150,235,12" mapped-value="1"/>
+			<qti-area-map-entry shape="circle" coords="96,114,12" mapped-value="1"/>
+		</qti-area-mapping>
+	</qti-response-declaration>
+	<qti-outcome-declaration identifier="SCORE" cardinality="single" base-type="float"/>
+	<qti-item-body>
+		<p>When flying into the UK, you may well find yourself landing at Edinburgh, Manchester or
+			London Heathrow; but where are these airports actually located?</p>
+		<qti-position-object-stage>
+			<object type="image/png" data="images/uk.png" width="206" height="280"/>
+			<qti-position-object-interaction response-identifier="RESPONSE" max-choices="3">
+				<object type="image/png" data="images/airport.png" width="16" height="16"/>
+			</qti-position-object-interaction>
+		</qti-position-object-stage>
+	</qti-item-body>
+	<qti-response-processing template="https://www.imsglobal.org/question/qti_v3p0/rptemplates/map_response_point.xml"/>
+</qti-assessment-item>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation=" http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd " identifier="graphicGapfill" title="Counting Squirrels" adaptive="false" time-dependent="false">
+  <qti-response-declaration identifier="RESPONSE" cardinality="multiple" base-type="directedPair">
+    <qti-correct-response>
+      <qti-value>C1 squirrel</qti-value>
+      <qti-value>C1 squirrel</qti-value>
+      <qti-value>C1 squirrel</qti-value>
+    </qti-correct-response>
+  </qti-response-declaration>
+  <qti-response-declaration cardinality="single" base-type="integer" identifier="MP3ab1Audio"/>
+  <qti-response-declaration cardinality="single" base-type="integer" identifier="OGGab1Audio"/>
+  <qti-outcome-declaration identifier="SCORE" cardinality="single" base-type="float"/>
+  <qti-item-body>
+    <qti-media-interaction label="audioButton" autostart="false" response-identifier="MP3ab1Audio" coords="275,315,31,31">
+      <object label="ab1" type="audio/mpeg" data="tree.mp3"/>
+    </qti-media-interaction>
+    <qti-media-interaction label="audioButton" autostart="false" response-identifier="OGGab1Audio" coords="275,315,31,31">
+      <object label="ab1" type="audio/ogg" data="tree.ogg"/> 
+    </qti-media-interaction>
+    <qti-graphic-gap-match-interaction response-identifier="RESPONSE">
+      <qti-prompt> Put 3 squirrel in the tree. </qti-prompt>
+      <object type="image/png" data="tree.png" width="399" height="350"/>
+      <qti-gap-img identifier="squirrel" match-max="10" data-type="clickPop" data-target-container="C1">
+        <object type="image/png" data="squirrel.png" width="75" height="76"/>
+      </qti-gap-img>
+      <qti-associable-hotspot match-max="10" shape="rect" identifier="C1" coords="75,0,270,220"/>
+    </qti-graphic-gap-match-interaction>
+  </qti-item-body>
+  <qti-response-processing template="https://www.imsglobal.org/question/qti_v3p0/rptemplates/match_correct.xml"/>
+</qti-assessment-item>

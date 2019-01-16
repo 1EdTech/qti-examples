@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<qti-assessment-item adaptive="false" identifier="Divisors" time-dependent="false" title="The number divisors" tool-name="Exo+" tool-version="0.0.9-SNAPSHOT" xml:lang="en" xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation=" http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd ">
+    <qti-response-declaration base-type="identifier" cardinality="single" identifier="RESPONSE0"/>
+    <qti-outcome-declaration base-type="identifier" cardinality="single" identifier="FEEDBACK"/>
+    <qti-outcome-declaration base-type="float" cardinality="single" identifier="SCORE"/>
+    <qti-template-declaration base-type="integer" cardinality="single" identifier="i" math-variable="true" param-variable="true"/>
+    <qti-template-declaration base-type="integer" cardinality="ordered" identifier="numbers" math-variable="true" param-variable="true"/>
+    <qti-template-declaration base-type="string" cardinality="ordered" identifier="divisors" math-variable="true" param-variable="true"/>
+    <qti-template-declaration base-type="integer" cardinality="single" identifier="CALC0" math-variable="true" param-variable="true"/>
+    <qti-template-processing>
+        <qti-set-template-value identifier="i">
+            <qti-random-integer max="7" min="1"/>
+        </qti-set-template-value>
+        <qti-set-template-value identifier="numbers">
+            <qti-ordered>
+                <qti-base-value base-type="integer">3</qti-base-value>
+                <qti-base-value base-type="integer">4</qti-base-value>
+                <qti-base-value base-type="integer">6</qti-base-value>
+                <qti-base-value base-type="integer">15</qti-base-value>
+                <qti-base-value base-type="integer">24</qti-base-value>
+                <qti-base-value base-type="integer">25</qti-base-value>
+                <qti-base-value base-type="integer">30</qti-base-value>
+            </qti-ordered>
+        </qti-set-template-value>
+        <qti-set-template-value identifier="divisors">
+            <qti-ordered>
+                <qti-base-value base-type="string">-</qti-base-value>
+                <qti-base-value base-type="string">2</qti-base-value>
+                <qti-base-value base-type="string">2,3</qti-base-value>
+                <qti-base-value base-type="string">3,5</qti-base-value>
+                <qti-base-value base-type="string">2,3,4,6,8,12</qti-base-value>
+                <qti-base-value base-type="string">5</qti-base-value>
+                <qti-base-value base-type="string">2,3,5,6,10,15</qti-base-value>
+            </qti-ordered>
+        </qti-set-template-value>
+        <qti-set-template-value identifier="CALC0">
+            <qti-index n="i">
+                <qti-variable identifier="numbers"/>
+            </qti-index>
+        </qti-set-template-value>
+        <qti-template-condition>
+            <qti-template-if>
+                <qti-equal tolerance-mode="exact">
+                    <qti-variable identifier="i"/>
+                    <qti-base-value base-type="integer">1</qti-base-value>
+                </qti-equal>
+                <qti-set-correct-response identifier="RESPONSE0">
+                    <qti-base-value base-type="identifier">SOLUTION0_0_0</qti-base-value>
+                </qti-set-correct-response>
+            </qti-template-if>
+            <qti-template-else-if>
+                <qti-equal tolerance-mode="exact">
+                    <qti-variable identifier="i"/>
+                    <qti-base-value base-type="integer">2</qti-base-value>
+                </qti-equal>
+                <qti-set-correct-response identifier="RESPONSE0">
+                    <qti-base-value base-type="identifier">SOLUTION0_0_1</qti-base-value>
+                </qti-set-correct-response>
+            </qti-template-else-if>
+            <qti-template-else-if>
+                <qti-equal tolerance-mode="exact">
+                    <qti-variable identifier="i"/>
+                    <qti-base-value base-type="integer">3</qti-base-value>
+                </qti-equal>
+                <qti-set-correct-response identifier="RESPONSE0">
+                    <qti-base-value base-type="identifier">SOLUTION0_0_2</qti-base-value>
+                </qti-set-correct-response>
+            </qti-template-else-if>
+            <qti-template-else-if>
+                <qti-equal tolerance-mode="exact">
+                    <qti-variable identifier="i"/>
+                    <qti-base-value base-type="integer">4</qti-base-value>
+                </qti-equal>
+                <qti-set-correct-response identifier="RESPONSE0">
+                    <qti-base-value base-type="identifier">SOLUTION0_0_3</qti-base-value>
+                </qti-set-correct-response>
+            </qti-template-else-if>
+            <qti-template-else-if>
+                <qti-equal tolerance-mode="exact">
+                    <qti-variable identifier="i"/>
+                    <qti-base-value base-type="integer">5</qti-base-value>
+                </qti-equal>
+                <qti-set-correct-response identifier="RESPONSE0">
+                    <qti-base-value base-type="identifier">SOLUTION0_0_4</qti-base-value>
+                </qti-set-correct-response>
+            </qti-template-else-if>
+            <qti-template-else-if>
+                <qti-equal tolerance-mode="exact">
+                    <qti-variable identifier="i"/>
+                    <qti-base-value base-type="integer">6</qti-base-value>
+                </qti-equal>
+                <qti-set-correct-response identifier="RESPONSE0">
+                    <qti-base-value base-type="identifier">SOLUTION0_0_5</qti-base-value>
+                </qti-set-correct-response>
+            </qti-template-else-if>
+            <qti-template-else-if>
+                <qti-equal tolerance-mode="exact">
+                    <qti-variable identifier="i"/>
+                    <qti-base-value base-type="integer">7</qti-base-value>
+                </qti-equal>
+                <qti-set-correct-response identifier="RESPONSE0">
+                    <qti-base-value base-type="identifier">SOLUTION0_0_6</qti-base-value>
+                </qti-set-correct-response>
+            </qti-template-else-if>
+        </qti-template-condition>
+    </qti-template-processing>
+    <qti-item-body>
+        <div> What are the divisors of <m:math>
+                <m:mrow>
+                    <m:mi>CALC0</m:mi>
+                </m:mrow>
+            </m:math> without 1 and <m:math>
+                <m:mrow>
+                    <m:mi>CALC0</m:mi>
+                </m:mrow>
+            </m:math>? <qti-inline-choice-interaction required="true" response-identifier="RESPONSE0" shuffle="true">
+                <qti-inline-choice fixed="true" identifier="SOLUTION0_0_0">-</qti-inline-choice>
+                <qti-inline-choice fixed="true" identifier="SOLUTION0_0_1">2</qti-inline-choice>
+                <qti-inline-choice fixed="true" identifier="SOLUTION0_0_2">2,3</qti-inline-choice>
+                <qti-inline-choice fixed="true" identifier="SOLUTION0_0_3">3,5</qti-inline-choice>
+                <qti-inline-choice fixed="true" identifier="SOLUTION0_0_4">2,3,4,6,8,12</qti-inline-choice>
+                <qti-inline-choice fixed="true" identifier="SOLUTION0_0_5">5</qti-inline-choice>
+                <qti-inline-choice fixed="true" identifier="SOLUTION0_0_6">2,3,5,6,10,15</qti-inline-choice>
+            </qti-inline-choice-interaction>
+        </div>
+    </qti-item-body>
+    <qti-response-processing>
+        <qti-response-condition>
+            <qti-response-if>
+                <qti-match>
+                    <qti-variable identifier="RESPONSE0"/>
+                    <qti-correct identifier="RESPONSE0"/>
+                </qti-match>
+                <qti-set-outcome-value identifier="FEEDBACK">
+                    <qti-base-value base-type="identifier">FEEDBACK0</qti-base-value>
+                </qti-set-outcome-value>
+                <qti-set-outcome-value identifier="SCORE">
+                    <qti-base-value base-type="float">2.0</qti-base-value>
+                </qti-set-outcome-value>
+            </qti-response-if>
+            <qti-response-else>
+                <qti-set-outcome-value identifier="FEEDBACK">
+                    <qti-base-value base-type="identifier">DEFAULT_FEEDBACK</qti-base-value>
+                </qti-set-outcome-value>
+                <qti-set-outcome-value identifier="SCORE">
+                    <qti-base-value base-type="float">0.0</qti-base-value>
+                </qti-set-outcome-value>
+            </qti-response-else>
+        </qti-response-condition>
+    </qti-response-processing>
+    <qti-modal-feedback identifier="FEEDBACK0" outcome-identifier="FEEDBACK" show-hide="show">Bravo! You
+        are right</qti-modal-feedback>
+    <qti-modal-feedback identifier="DEFAULT_FEEDBACK" outcome-identifier="FEEDBACK" show-hide="show">It is
+        false</qti-modal-feedback>
+</qti-assessment-item>

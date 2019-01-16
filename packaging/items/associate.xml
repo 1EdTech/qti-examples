@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation=" http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd " identifier="associate" title="Shakespearian Rivals" adaptive="false" time-dependent="false">
+	<qti-response-declaration identifier="RESPONSE" cardinality="multiple" base-type="pair">
+		<qti-correct-response>
+			<qti-value>A P</qti-value>
+			<qti-value>C M</qti-value>
+			<qti-value>D L</qti-value>
+		</qti-correct-response>
+		<qti-mapping default-value="0">
+			<qti-map-entry map-key="A P" mapped-value="2"/>
+			<qti-map-entry map-key="C M" mapped-value="1"/>
+			<qti-map-entry map-key="D L" mapped-value="1"/>
+		</qti-mapping>
+	</qti-response-declaration>
+	<qti-outcome-declaration identifier="SCORE" cardinality="single" base-type="float"/>
+	<qti-item-body>
+		<qti-associate-interaction response-identifier="RESPONSE" shuffle="true" max-associations="3">
+			<qti-prompt>Hidden in this list of characters from famous Shakespeare plays are three pairs
+				of rivals. Can you match each character to his adversary?</qti-prompt>
+			<qti-simple-associable-choice identifier="A" match-max="1">Antonio</qti-simple-associable-choice>
+			<qti-simple-associable-choice identifier="C" match-max="1">Capulet</qti-simple-associable-choice>
+			<qti-simple-associable-choice identifier="D" match-max="1">Demetrius</qti-simple-associable-choice>
+			<qti-simple-associable-choice identifier="L" match-max="1">Lysander</qti-simple-associable-choice>
+			<qti-simple-associable-choice identifier="M" match-max="1">Montague</qti-simple-associable-choice>
+			<qti-simple-associable-choice identifier="P" match-max="1">Prospero</qti-simple-associable-choice>
+		</qti-associate-interaction>
+	</qti-item-body>
+	<qti-response-processing template="https://www.imsglobal.org/question/qti_v3p0/rptemplates/map_response.xml"/>
+</qti-assessment-item>
