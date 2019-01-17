@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<qti-assessment-test xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" tool-version="0.1" tool-name="Spectatus" title="Simple Feedback Test" identifier="SPECTATUS-GENERATED-TEST" xsi:schemaLocation=" http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd ">
+    <qti-outcome-declaration base-type="float" cardinality="single" identifier="TEST_total">
+        <qti-default-value>
+            <qti-value>0.0</qti-value>
+        </qti-default-value>
+    </qti-outcome-declaration>
+    <qti-outcome-declaration base-type="float" cardinality="single" identifier="SECTION_1_total">
+        <qti-default-value>
+            <qti-value>0.0</qti-value>
+        </qti-default-value>
+    </qti-outcome-declaration>
+    <qti-outcome-declaration base-type="identifier" cardinality="single" identifier="s1FB"/>
+    <qti-outcome-declaration base-type="identifier" cardinality="multiple" identifier="TEST_FEEDBACK"/>
+    <qti-test-part submission-mode="simultaneous" navigation-mode="nonlinear" identifier="TP">
+        <qti-assessment-section identifier="S1" visible="true" title="Section 1">
+            <qti-rubric-block view="candidate"><qti-content-body>
+                <div>Four examples of feedback, no randomisation</div>
+            
+</qti-content-body></qti-rubric-block>
+            <qti-assessment-item-ref identifier="id-53a79b001624" href="id-53a79b001624/Example01-modalFeedback.xml"/>
+            <qti-assessment-item-ref identifier="id-b0dd9e732083" href="id-b0dd9e732083/Example02-feedbackInline.xml"/>
+            <qti-assessment-item-ref identifier="id-a360e0fa63e6" href="id-a360e0fa63e6/Example03-feedbackBlock-solution.xml"/>
+            <qti-assessment-item-ref identifier="id-692fc07cc3e2" href="id-692fc07cc3e2/Example05-feedbackBlock-adaptive.xml"/>
+        </qti-assessment-section>
+    </qti-test-part>
+    <qti-outcome-processing>
+        <qti-set-outcome-value identifier="SECTION_1_total">
+            <qti-sum>
+                <qti-test-variables section-identifier="S1" base-type="float" variable-identifier="SCORE"/>
+            </qti-sum>
+        </qti-set-outcome-value>
+        <qti-outcome-condition>
+            <qti-outcome-if>
+                <qti-not>
+                    <qti-lt>
+                        <qti-variable identifier="SECTION_1_total"/>
+                        <qti-base-value base-type="float">40.0</qti-base-value>
+                    </qti-lt>
+                </qti-not>
+                <qti-set-outcome-value identifier="s1FB">
+                    <qti-base-value base-type="identifier">S1-FB-AllOK</qti-base-value>
+                </qti-set-outcome-value>
+            </qti-outcome-if>
+        </qti-outcome-condition>
+        <qti-set-outcome-value identifier="TEST_total">
+            <qti-sum>
+                <qti-test-variables base-type="float" variable-identifier="SCORE"/>
+            </qti-sum>
+        </qti-set-outcome-value>
+        <qti-set-outcome-value identifier="TEST_FEEDBACK">
+            <qti-multiple>
+                <qti-base-value base-type="identifier">S1_END_FB</qti-base-value>
+                <qti-base-value base-type="identifier">TEST_FB</qti-base-value>
+            </qti-multiple>
+        </qti-set-outcome-value>
+    </qti-outcome-processing>
+    <qti-test-feedback identifier="TEST_FB" show-hide="show" outcome-identifier="TEST_FEEDBACK" access="atEnd">
+        <div>You have reached the end of the test.</div>
+        <div>Section 1 score: <qti-printed-variable format="%.1f" identifier="SECTION_1_total"/> (from a
+            maximum of 40.0) <qti-feedback-inline outcome-identifier="s1FB" identifier="S1-FB-AllOK" show-hide="show"> All the questions in section 1 were answered
+                correctly.</qti-feedback-inline>
+        </div>
+        <div>Total score: <qti-printed-variable format="%.1f" identifier="TEST_total"/> (from a maximum
+            of 40.0)</div>
+    </qti-test-feedback>
+</qti-assessment-test>

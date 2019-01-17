@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<manifest xmlns="http://www.imsglobal.org/xsd/qti/qtiv3p0/imscp_v1p1" xmlns:imsmd="http://ltsc.ieee.org/xsd/LOM" 
+          xmlns:imsqti="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+          xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd  http://ltsc.ieee.org/xsd/LOM https://purl.imsglobal.org/spec/md/v1p3/schema/xsd/imsmd_loose_v1p3p2.xsd  http://www.imsglobal.org/xsd/qti/qtiv3p0/imscp_v1p1 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqtiv3p0_imscpv1p2_v1p0.xsd " 
+          identifier="kjhlkh5646">
+    <metadata>
+        <schema>QTI Package</schema>
+        <schemaversion>3.0.0</schemaversion>
+        <imsmd:lom>
+            <imsmd:general>
+                <imsmd:identifier><imsmd:entry>FB-02</imsmd:entry></imsmd:identifier>
+                <imsmd:title>
+                    <imsmd:string language="en">Simple Feedback Test</imsmd:string>
+                </imsmd:title>
+                <imsmd:language>en</imsmd:language>
+                <imsmd:description>
+                    <imsmd:string language="en">Feedback examples which don't use template processing. We still have modal, feedbackBlock, feedbackInline and adaptive with interactions in feedbackBlocks</imsmd:string>
+                </imsmd:description>
+                <imsmd:keyword>
+                    <imsmd:string language="en">feedback</imsmd:string>
+                </imsmd:keyword>
+                <imsmd:keyword>
+                    <imsmd:string language="en">modal</imsmd:string>
+                </imsmd:keyword>
+                <imsmd:keyword>
+                    <imsmd:string language="en">test</imsmd:string>
+                </imsmd:keyword>
+                <imsmd:keyword>
+                    <imsmd:string language="en">inline</imsmd:string>
+                </imsmd:keyword>
+                <imsmd:keyword>
+                    <imsmd:string language="en">block</imsmd:string>
+                </imsmd:keyword>
+            </imsmd:general>
+            <imsmd:lifeCycle>
+                <imsmd:contribute>
+                    <imsmd:role>
+                        <imsmd:source>LOMv1.0</imsmd:source>
+                        <imsmd:value>Creator</imsmd:value>
+                    </imsmd:role>
+                    <imsmd:entity>
+                        BEGIN:VCARD FN:Sue Milne   END:VCARD
+                    </imsmd:entity>
+                    <imsmd:date>
+                        <imsmd:dateTime>2012-05-18</imsmd:dateTime>
+                        <imsmd:description>
+                            <imsmd:string language="en"/>
+                        </imsmd:description>
+                    </imsmd:date>
+                </imsmd:contribute>
+                <imsmd:contribute>
+                    <imsmd:role>
+                        <imsmd:source>LOMv1.0</imsmd:source>
+                        <imsmd:value>Editor</imsmd:value>
+                    </imsmd:role>
+                    <imsmd:entity>
+                        BEGIN:VCARD FN:FETLAR END:VCARD
+                    </imsmd:entity>
+                    <imsmd:date>
+                        <imsmd:dateTime>2012-05-18</imsmd:dateTime>
+                        <imsmd:description>
+                            <imsmd:string language="en"/>
+                        </imsmd:description>
+                    </imsmd:date>
+                </imsmd:contribute>
+            </imsmd:lifeCycle>
+            <imsmd:metaMetadata>
+                <imsmd:identifier><imsmd:entry>urn:www.fetlar.ac.uk:dbf602fa-6357-4f11-8c9c-29181f4d2934</imsmd:entry></imsmd:identifier>
+                <imsmd:contribute>
+                    <imsmd:role>
+                        <imsmd:source>LOMv1.0</imsmd:source>
+                        <imsmd:value>Creator</imsmd:value>
+                    </imsmd:role>
+                    <imsmd:entity>
+                        BEGIN:VCARD FN:FETLAR END:VCARD
+                    </imsmd:entity>
+                </imsmd:contribute>
+                <imsmd:metadataschema>LOMv1.0</imsmd:metadataschema>
+                <imsmd:metadataschema>JORUMv1.0</imsmd:metadataschema>
+                <imsmd:language>en</imsmd:language>
+            </imsmd:metaMetadata>
+            <imsmd:technical>
+                <imsmd:format>text/x-imsqti-test-xml</imsmd:format>
+                <imsmd:size>34311</imsmd:size>
+                <imsmd:location/>
+                <imsmd:otherPlatformRequirements>
+                    <imsmd:string language="en">QTIv3.0</imsmd:string>
+                </imsmd:otherPlatformRequirements>
+            </imsmd:technical>
+            <imsmd:educational>
+                <imsmd:learningResourceType>
+                    <imsmd:source>RDNLTSNType</imsmd:source>
+                    <imsmd:value>ExaminationTest</imsmd:value>
+                </imsmd:learningResourceType>
+                <imsmd:context>
+                    <imsmd:source>LOMv1.0</imsmd:source>
+                    <imsmd:value>higher education</imsmd:value>
+                </imsmd:context>
+                <imsmd:description>
+                    <imsmd:string>A test</imsmd:string>
+                </imsmd:description>
+                <imsmd:language>en</imsmd:language>
+            </imsmd:educational>
+            <imsmd:rights>
+                <imsmd:copyrightAndOtherRestrictions>
+                    <imsmd:source>LOMv1.0</imsmd:source>
+                    <imsmd:value>yes</imsmd:value>
+                </imsmd:copyrightAndOtherRestrictions>
+                <imsmd:description>
+                    <imsmd:string language="en">{{CC-URL}}</imsmd:string>
+                </imsmd:description>
+            </imsmd:rights>
+            <imsmd:classification>
+                <imsmd:purpose>
+                    <imsmd:source>LOMv1.0</imsmd:source>
+                    <imsmd:value>Discipline</imsmd:value>
+                </imsmd:purpose>
+                <imsmd:taxonPath>
+                    <imsmd:source><imsmd:string>jacs</imsmd:string></imsmd:source>
+                    <imsmd:taxon>
+                        <imsmd:id>G1</imsmd:id>
+                        <imsmd:entry>
+                            <imsmd:string language="en">Mathematics</imsmd:string>
+                        </imsmd:entry>
+                    </imsmd:taxon>
+                </imsmd:taxonPath>
+            </imsmd:classification>
+            <imsmd:classification>
+                <imsmd:purpose>
+                    <imsmd:source>LOMv1.0</imsmd:source>
+                    <imsmd:value>Educational Level</imsmd:value>
+                </imsmd:purpose>
+                <imsmd:taxonPath>
+                    <imsmd:source><imsmd:string>UKEL</imsmd:string></imsmd:source>
+                    <imsmd:taxon>
+                        <imsmd:id>ukel10</imsmd:id>
+                        <imsmd:entry>
+                            <imsmd:string language="en">UK Educational Level 10</imsmd:string>
+                        </imsmd:entry>
+                    </imsmd:taxon>
+                </imsmd:taxonPath>
+            </imsmd:classification>
+        </imsmd:lom>
+    </metadata>
+    <organizations/>
+    <resources>
+        <resource href="assessment.xml" type="imsqti_test_xmlv3p0" identifier="TEST">
+            <file href="assessment.xml"/>
+            <dependency identifierref="id-53a79b001624"/>
+            <dependency identifierref="id-b0dd9e732083"/>
+            <dependency identifierref="id-a360e0fa63e6"/>
+            <dependency identifierref="id-692fc07cc3e2"/>
+        </resource>
+        <resource href="id-53a79b001624/Example01-modalFeedback.xml" type="imsqti_item_xmlv3p0" identifier="id-53a79b001624">
+            <metadata>
+                <imsmd:lom>
+                    <imsmd:general>
+                        <imsmd:description>
+                            <imsmd:string language="en">This question is an XML file imported into Spectatus.</imsmd:string>
+                        </imsmd:description>
+                    </imsmd:general>
+                </imsmd:lom>
+            </metadata>
+            <file href="id-53a79b001624/Example01-modalFeedback.xml"/>
+        </resource>
+        <resource href="id-b0dd9e732083/Example02-feedbackInline.xml" type="imsqti_item_xmlv3p0" identifier="id-b0dd9e732083">
+            <metadata>
+                <imsmd:lom>
+                    <imsmd:general>
+                        <imsmd:description>
+                            <imsmd:string language="en">This question is an XML file imported into Spectatus.</imsmd:string>
+                        </imsmd:description>
+                    </imsmd:general>
+                </imsmd:lom>
+            </metadata>
+            <file href="id-b0dd9e732083/Example02-feedbackInline.xml"/>
+        </resource>
+        <resource href="id-a360e0fa63e6/Example03-feedbackBlock-solution.xml" type="imsqti_item_xmlv3p0" identifier="id-a360e0fa63e6">
+            <metadata>
+                <imsmd:lom>
+                    <imsmd:general>
+                        <imsmd:description>
+                            <imsmd:string language="en">This question is an XML file imported into Spectatus.</imsmd:string>
+                        </imsmd:description>
+                    </imsmd:general>
+                </imsmd:lom>
+            </metadata>
+            <file href="id-a360e0fa63e6/Example03-feedbackBlock-solution.xml"/>
+        </resource>
+        <resource href="id-692fc07cc3e2/Example05-feedbackBlock-adaptive.xml" type="imsqti_item_xmlv3p0" identifier="id-692fc07cc3e2">
+            <metadata>
+                <imsmd:lom>
+                    <imsmd:general>
+                        <imsmd:description>
+                            <imsmd:string language="en">This question is an XML file imported into Spectatus.</imsmd:string>
+                        </imsmd:description>
+                    </imsmd:general>
+                </imsmd:lom>
+            </metadata>
+            <file href="id-692fc07cc3e2/Example05-feedbackBlock-adaptive.xml"/>
+        </resource>
+    </resources>
+</manifest>
