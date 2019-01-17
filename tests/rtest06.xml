@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<qti-assessment-test xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+                     xsi:schemaLocation=" http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd" 
+                     identifier="RTEST-06" title="Specifiying the Number of Allowed Attempts">
+    <qti-test-part navigation-mode="linear" submission-mode="individual" identifier="RTEST-06-A">
+        <qti-item-session-control max-attempts="0"/>
+        <qti-assessment-section identifier="introduction" title="Introduction" visible="true">
+            <qti-assessment-item-ref identifier="item820" href="item820.xml"/>
+            <qti-assessment-item-ref identifier="item716" href="item716.xml"/>
+            <qti-assessment-item-ref identifier="item204" href="item204.xml"/>
+        </qti-assessment-section>
+    </qti-test-part>
+    <qti-test-part navigation-mode="linear" submission-mode="individual" identifier="RTEST-06-B">
+        <qti-item-session-control max-attempts="1"/>
+        <qti-assessment-section identifier="sectionA" title="Section A" visible="true">
+            <qti-rubric-block view="candidate">
+                <qti-content-body>
+                    <p>Instructions for Section A</p>
+                </qti-content-body>
+            </qti-rubric-block>
+            <qti-assessment-item-ref identifier="item034" href="item034.xml"/>
+            <qti-assessment-item-ref identifier="item160" href="item160.xml"/>
+            <qti-assessment-item-ref identifier="item063" href="item063.xml"/>
+        </qti-assessment-section>
+        <qti-assessment-section identifier="sectionB" title="Section B" visible="true">
+            <qti-rubric-block view="candidate">
+                <qti-content-body>
+                    <p>Instructions for Section B</p>
+                </qti-content-body>
+            </qti-rubric-block>
+            <qti-assessment-item-ref identifier="item434" href="item434.xml"/>
+            <qti-assessment-item-ref identifier="item065" href="item065.xml"/>
+            <qti-assessment-item-ref identifier="item365" href="item365.xml"/>
+            <qti-assessment-item-ref identifier="item656" href="item656.xml"/>
+        </qti-assessment-section>
+    </qti-test-part>
+</qti-assessment-test>

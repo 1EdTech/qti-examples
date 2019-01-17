@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<qti-assessment-test xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+                     xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd" 
+                     identifier="RTEST-13" title="Branching based on the response to an assessmentItem">
+    <!-- Provide support for branching. -->
+    <qti-test-part navigation-mode="linear" submission-mode="individual" identifier="RTEST-13-A">
+        <qti-item-session-control show-feedback="true" max-attempts="1" show-solution="false"/>
+        <qti-assessment-section identifier="sectionA" title="Section A" visible="true">
+            <qti-rubric-block view="candidate">
+                <qti-content-body>
+                    <p>Instructions for Section A</p>
+                </qti-content-body>
+            </qti-rubric-block>
+            <qti-assessment-item-ref identifier="item034" href="item034.xml">
+                <qti-item-session-control max-attempts="0"/>
+            </qti-assessment-item-ref>
+            <qti-assessment-item-ref identifier="item160" href="item160.xml">
+                <!-- this item only if the the previous response was identifier Y -->
+                <qti-pre-condition>
+                    <qti-match>
+                        <qti-variable identifier="item034.RESPONSE"/>
+                        <qti-base-value base-type="identifier">Y</qti-base-value>
+                    </qti-match>
+                </qti-pre-condition>
+            </qti-assessment-item-ref>
+            <qti-assessment-item-ref identifier="item063" href="item063.xml">
+                <!-- this item only if the the previous response was identifier N -->
+                <qti-pre-condition>
+                    <qti-match>
+                        <qti-variable identifier="item034.RESPONSE"/>
+                        <qti-base-value base-type="identifier">N</qti-base-value>
+                    </qti-match>
+                </qti-pre-condition>
+            </qti-assessment-item-ref>
+        </qti-assessment-section>
+        <qti-assessment-section identifier="sectionB" title="Section B" visible="true">
+            <qti-item-session-control max-attempts="2"/>
+            <qti-rubric-block view="candidate">
+                <qti-content-body>
+                    <p>Instructions for Section B</p>
+                </qti-content-body>
+            </qti-rubric-block>
+            <qti-assessment-item-ref identifier="item347" href="item347.xml">
+                <!-- skip item653 if response is identifier "N" -->
+                <qti-branch-rule target="item656">
+                    <qti-match>
+                        <qti-variable identifier="item347.RESPONSE"/>
+                        <qti-base-value base-type="identifier">N</qti-base-value>
+                    </qti-match>
+                </qti-branch-rule>
+                <!-- special targetItem means exit this section of the test -->
+                <qti-branch-rule target="EXIT_SECTION">
+                    <qti-not>
+                        <qti-match>
+                            <qti-variable identifier="item347.RESPONSE"/>
+                            <qti-base-value base-type="identifier">Y</qti-base-value>
+                        </qti-match>
+                    </qti-not>
+                </qti-branch-rule>
+            </qti-assessment-item-ref>
+            <qti-assessment-item-ref identifier="item653" href="item653.xml"/>
+            <qti-assessment-item-ref identifier="item656" href="item656.xml"/>
+        </qti-assessment-section>
+    </qti-test-part>
+</qti-assessment-test>

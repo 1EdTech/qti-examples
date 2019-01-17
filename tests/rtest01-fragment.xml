@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xi="http://www.w3.org/2001/XInclude" 
+     xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd">
+    <qti-hottext-interaction response-identifier="RESPONSE" max-choices="1">
+        <p>The <qti-hottext identifier="A1">quick</qti-hottext>
+            <qti-hottext identifier="A2">brown</qti-hottext>
+            <qti-hottext identifier="N1">fox</qti-hottext>
+            <qti-hottext identifier="V1">jumped</qti-hottext> over the <qti-hottext identifier="A3">lazy</qti-hottext>
+            <qti-hottext identifier="N2">dog</qti-hottext>.</p>
+    </qti-hottext-interaction>
+</div>

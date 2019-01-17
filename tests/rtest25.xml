@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<qti-assessment-test xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+                     xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd" 
+                     identifier="RTEST-25" title="Basic Statistics as Outcomes">
+    <qti-outcome-declaration identifier="NCORRECTA" cardinality="single" base-type="integer"/>
+    <qti-outcome-declaration identifier="NCORRECTB" cardinality="single" base-type="integer"/>
+    <qti-outcome-declaration identifier="NINCORRECT" cardinality="single" base-type="integer"/>
+    <qti-outcome-declaration identifier="NRESPONSED" cardinality="single" base-type="integer"/>
+    <qti-outcome-declaration identifier="NPRESENTED" cardinality="single" base-type="integer"/>
+    <qti-outcome-declaration identifier="NSELECTED" cardinality="single" base-type="integer"/>
+    <qti-outcome-declaration identifier="PERCENT_CORRECT" cardinality="single" base-type="float"/>
+    <qti-test-part navigation-mode="nonlinear" submission-mode="simultaneous" identifier="RTEST-25-A">
+        <qti-assessment-section identifier="sectionA" title="Section A" visible="true">
+            <qti-rubric-block view="candidate">
+                <qti-content-body>
+                    <p>Instructions for Section A</p>
+                </qti-content-body>
+            </qti-rubric-block>
+            <qti-assessment-item-ref identifier="item034" href="item034.xml"/>
+            <qti-assessment-item-ref identifier="item160" href="item160.xml"/>
+            <qti-assessment-item-ref identifier="item063" href="item063.xml"/>
+        </qti-assessment-section>
+        <qti-assessment-section identifier="sectionB" title="Section B" visible="true">
+            <qti-selection select="2"/>
+            <qti-rubric-block view="candidate">
+                <qti-content-body>
+                    <p>Instructions for Section B</p>
+                </qti-content-body>
+            </qti-rubric-block>
+            <qti-assessment-item-ref identifier="item434" href="item434.xml"/>
+            <qti-assessment-item-ref identifier="item065" href="item065.xml"/>
+            <qti-assessment-item-ref identifier="item365" href="item365.xml"/>
+            <qti-assessment-item-ref identifier="item656" href="item656.xml"/>
+        </qti-assessment-section>
+    </qti-test-part>
+    <qti-outcome-processing>
+        <qti-set-outcome-value identifier="NCORRECTA">
+            <qti-number-correct section-identifier="sectionA"/>
+        </qti-set-outcome-value>
+        <qti-set-outcome-value identifier="NCORRECTB">
+            <qti-number-correct section-identifier="sectionB"/>
+        </qti-set-outcome-value>
+        <qti-set-outcome-value identifier="NINCORRECT">
+            <qti-number-incorrect/>
+        </qti-set-outcome-value>
+        <qti-set-outcome-value identifier="NRESPONSED">
+            <qti-number-responded/>
+        </qti-set-outcome-value>
+        <qti-set-outcome-value identifier="NPRESENTED">
+            <qti-number-presented/>
+        </qti-set-outcome-value>
+        <qti-set-outcome-value identifier="NSELECTED">
+            <qti-number-selected/>
+        </qti-set-outcome-value>
+        <qti-set-outcome-value identifier="PERCENT_CORRECT">
+            <qti-product>
+                <qti-base-value base-type="float">100.0</qti-base-value>
+                <qti-divide>
+                    <qti-number-correct/>
+                    <qti-number-selected/>
+                </qti-divide>
+            </qti-product>
+        </qti-set-outcome-value>
+    </qti-outcome-processing>
+</qti-assessment-test>

@@ -1,0 +1,41 @@
+<qti-assessment-test xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+                     xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd" 
+                     identifier="RTEST-26" title="Mapping item outcomes prior to aggregation">
+    <!-- Support for mapping of item outcomes prior to aggregation -->
+    <qti-outcome-declaration base-type="float" cardinality="single" identifier="SCORE">
+        <qti-default-value>
+            <qti-value>0</qti-value>
+        </qti-default-value>
+    </qti-outcome-declaration>
+    <qti-test-part navigation-mode="nonlinear" submission-mode="simultaneous" identifier="RTEST-26-A">
+        <qti-assessment-section identifier="sectionA" title="Section A" visible="true">
+            <qti-rubric-block view="candidate">
+                <qti-content-body>
+                    <p>Instructions for Section A</p>
+                </qti-content-body>
+            </qti-rubric-block>
+            <qti-assessment-item-ref identifier="item034" href="item034.xml">
+                <qti-variable-mapping source-identifier="NOTA" target-identifier="SCORE"/>
+            </qti-assessment-item-ref>
+            <qti-assessment-item-ref identifier="item160" href="item160.xml"/>
+            <qti-assessment-item-ref identifier="item063" href="item063.xml"/>
+        </qti-assessment-section>
+        <qti-assessment-section identifier="sectionB" title="Section B" visible="true">
+            <qti-rubric-block view="candidate">
+                <qti-content-body>
+                    <p>Instructions for Section B</p>
+                </qti-content-body>
+            </qti-rubric-block>
+            <qti-assessment-item-ref identifier="item434" href="item434.xml"/>
+            <qti-assessment-item-ref identifier="item065" href="ïtem065.xml"/>
+            <qti-assessment-item-ref identifier="item365" href="item365.xml"/>
+        </qti-assessment-section>
+    </qti-test-part>
+    <qti-outcome-processing>
+        <qti-set-outcome-value identifier="SCORE">
+            <qti-sum>
+                <qti-test-variables variable-identifier="SCORE"/>
+            </qti-sum>
+        </qti-set-outcome-value>
+    </qti-outcome-processing>
+</qti-assessment-test>

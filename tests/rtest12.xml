@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<qti-assessment-test xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+                     xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd" 
+                     identifier="RTEST-12" title="Golden (required) Items and Sections">
+    <qti-test-part navigation-mode="nonlinear" submission-mode="simultaneous" identifier="RTEST-12-A">
+        <qti-assessment-section identifier="sectionA" title="Section A" visible="true">
+            <qti-selection select="2"/>
+            <qti-ordering shuffle="false"/>
+            <qti-rubric-block view="candidate">
+                <qti-content-body>
+                    <p>Instructions for Section A</p>
+                </qti-content-body>
+            </qti-rubric-block>
+            <qti-assessment-item-ref identifier="item034" href="item034.xml" required="true"/>
+            <qti-assessment-item-ref identifier="item160" href="item160.xml"/>
+            <qti-assessment-item-ref identifier="item063" href="item063.xml"/>
+        </qti-assessment-section>
+        <qti-assessment-section identifier="sectionB" title="Section B" visible="true">
+            <!-- In Section B, we select 2 children but Section B1 is required so
+            we effectively select B1 and one of the other three items.
+            B1 is an invisible section and the three items it contains will
+            be mixed in with the other selected item when shuffling. -->
+            <qti-selection select="2"/>
+            <qti-ordering shuffle="true"/>
+            <qti-rubric-block view="candidate">
+                <qti-content-body>
+                    <p>Instructions for Section B</p>
+                </qti-content-body>
+            </qti-rubric-block>
+            <qti-assessment-item-ref identifier="item434" href="item434.xml"/>
+            <qti-assessment-item-ref identifier="item065" href="item065.xml"/>
+            <qti-assessment-item-ref identifier="item365" href="item365.xml"/>
+            <qti-assessment-section identifier="sectionB1" title="Section B1" visible="false" keep-together="false" required="true">
+                <qti-assessment-item-ref identifier="item347" href="item347.xml"/>
+                <qti-assessment-item-ref identifier="item653" href="item653.xml"/>
+                <qti-assessment-item-ref identifier="item656" href="item656.xml"/>
+            </qti-assessment-section>
+        </qti-assessment-section>
+    </qti-test-part>
+</qti-assessment-test>
