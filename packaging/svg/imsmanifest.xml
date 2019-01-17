@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--This is a Reload version 1.3 Content Package document-->
+<!--Spawned from the Reload Content Package Generator - http://www.reload.ac.uk-->
+<manifest xmlns="http://www.imsglobal.org/xsd/qti/qtiv3p0/imscp_v1p1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+          identifier="MANIFEST-85D76736-6D19-9DC0-7C0B-57C31A9FD390" 
+          xsi:schemaLocation=" http://www.imsglobal.org/xsd/qti/qtiv3p0/imscp_v1p1 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqtiv3p0_imscpv1p2_v1p0.xsd ">
+    <metadata>
+        <schema>QTI Package</schema>
+        <schemaversion>3.0.0</schemaversion>
+    </metadata>
+    <organizations/>
+    <resources>
+        <resource identifier="RES-B38DF83F-A291-86DA-4EC3-B2CEBD1515b4" type="imsqti_item_xmlv3p0" href="svg.xml">
+            <file href="svg.xml"/>
+            <file href="rectangle.svg"/>
+        </resource>
+    </resources>
+</manifest>
