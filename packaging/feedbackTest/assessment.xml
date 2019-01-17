@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<qti-assessment-test xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" tool-version="0.1" tool-name="Spectatus" title="Feedback Examples Test" identifier="SPECTATUS-GENERATED-TEST" xsi:schemaLocation=" http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd ">
+    <qti-outcome-declaration base-type="float" cardinality="single" identifier="TEST_total">
+        <qti-default-value>
+            <qti-value>0.0</qti-value>
+        </qti-default-value>
+    </qti-outcome-declaration>
+    <qti-outcome-declaration base-type="float" cardinality="single" identifier="SECTION_1_total">
+        <qti-default-value>
+            <qti-value>0.0</qti-value>
+        </qti-default-value>
+    </qti-outcome-declaration>
+    <qti-outcome-declaration base-type="float" cardinality="single" identifier="SECTION_2_total">
+        <qti-default-value>
+            <qti-value>0.0</qti-value>
+        </qti-default-value>
+    </qti-outcome-declaration>
+    <qti-outcome-declaration base-type="float" cardinality="single" identifier="SECTION_3_total">
+        <qti-default-value>
+            <qti-value>0.0</qti-value>
+        </qti-default-value>
+    </qti-outcome-declaration>
+    <qti-outcome-declaration base-type="float" cardinality="single" identifier="SECTION_4_total">
+        <qti-default-value>
+            <qti-value>0.0</qti-value>
+        </qti-default-value>
+    </qti-outcome-declaration>
+
+    <!--￼Define feedback variables; each will contain the identifier of the feedbackInline element inside the testFeedback for the 
+        corresponding section, so that the "All correct" message only appears as appropriate.-->
+
+    <qti-outcome-declaration base-type="identifier" cardinality="multiple" identifier="s1FB"/>
+
+    <!--￼The outcome variable TEST_FEEDBACK has multiple cardinality because it contains several feedback identifiers – two standard
+        messages and one for each section-->
+
+    <qti-outcome-declaration base-type="identifier" cardinality="multiple" identifier="s2FB"/>
+    <qti-outcome-declaration base-type="identifier" cardinality="multiple" identifier="s3FB"/>
+    <qti-outcome-declaration base-type="identifier" cardinality="multiple" identifier="s4FB"/>
+
+    <qti-outcome-declaration base-type="identifier" cardinality="multiple" identifier="TEST_FEEDBACK"/>
+    <qti-test-part submission-mode="simultaneous" navigation-mode="nonlinear" identifier="TP">
+        <qti-assessment-section identifier="S1" visible="true" title="Section 1">
+            <qti-rubric-block view="candidate"><qti-content-body>
+                <div>Basic feedback on MCQs</div>
+            
+</qti-content-body></qti-rubric-block>
+            <qti-assessment-item-ref identifier="id-fa3ee5852723" href="id-fa3ee5852723/Example01-modalFeedback.xml"/>
+            <qti-assessment-item-ref identifier="id-38d47747fb30" href="id-38d47747fb30/Example02-feedbackInline.xml"/>
+        </qti-assessment-section>
+        <qti-assessment-section identifier="id-f08aa8260ccb" visible="true" title="Section 2">
+            <qti-rubric-block view="candidate"><qti-content-body>
+                <div>Solutions for maths questions - basic</div>
+            
+</qti-content-body></qti-rubric-block>
+            <qti-assessment-item-ref identifier="id-5e216df10030" href="id-5e216df10030/Example03-feedbackBlock-solution.xml"/>
+            <qti-assessment-item-ref identifier="id-aaa0bbf5da1d" href="id-aaa0bbf5da1d/Example03-feedbackBlock-solution-random.xml"/>
+        </qti-assessment-section>
+        <qti-assessment-section identifier="id-c0ac060cd5d4" visible="true" title="Section 3">
+            <qti-selection with-replacement="true" select="3"/>
+            <qti-rubric-block view="candidate"><qti-content-body>
+                <div>A question in which the solution content changes depending on randomly
+                    generated variables</div>
+            
+</qti-content-body></qti-rubric-block>
+            <qti-assessment-item-ref identifier="id-d599169403d2" href="id-d599169403d2/Example04-feedbackBlock-templateBlock.xml"/>
+        </qti-assessment-section>
+        <qti-assessment-section identifier="id-4c75a5515d14" visible="true" title="Section 4">
+            <qti-selection with-replacement="true" select="3"/>
+            <qti-rubric-block view="candidate"><qti-content-body>
+                <div>A question in which the second part looks different depending on which input
+                    method you choose in the first part</div>
+            
+</qti-content-body></qti-rubric-block>
+            <qti-assessment-item-ref identifier="id-9c33d141576e" href="id-9c33d141576e/Example05-feedbackBlock-adaptive.xml"/>
+        </qti-assessment-section>
+    </qti-test-part>
+    <qti-outcome-processing>
+        <qti-set-outcome-value identifier="SECTION_1_total">
+            <qti-sum>
+                <qti-test-variables section-identifier="S1" base-type="float" variable-identifier="SCORE"/>
+            </qti-sum>
+        </qti-set-outcome-value>
+        <qti-outcome-condition>
+            <qti-outcome-if>
+                <qti-not>
+                    <qti-lt>
+                        <qti-variable identifier="SECTION_1_total"/>
+                        <qti-base-value base-type="float">20.0</qti-base-value>
+                    </qti-lt>
+                </qti-not>
+                <qti-set-outcome-value identifier="s1FB">
+                    <qti-multiple>
+
+                        <!--￼If the score for a section is equal to the expected maximum for the section, then the feedback variable
+                            for the section contains the identifiers of both the "All OK" and "Not All OK" messages. The first of 
+                            these will appear because its showhide attribute is set to show; the second, visible by default, 
+                            disappears because its showHide attribute is set to hide.-->
+
+                        <qti-base-value base-type="identifier">S1-FB-AllOK</qti-base-value>
+                        <qti-base-value base-type="identifier">S1-FB-SomeNotOK</qti-base-value>
+                    </qti-multiple>
+                </qti-set-outcome-value>
+            </qti-outcome-if>
+        </qti-outcome-condition>
+        <qti-set-outcome-value identifier="SECTION_2_total">
+            <qti-sum>
+                <qti-test-variables section-identifier="id-f08aa8260ccb" base-type="float" variable-identifier="SCORE"/>
+            </qti-sum>
+        </qti-set-outcome-value>
+        <qti-outcome-condition>
+            <qti-outcome-if>
+                <qti-not>
+                    <qti-lt>
+                        <qti-variable identifier="SECTION_2_total"/>
+                        <qti-base-value base-type="float">20.0</qti-base-value>
+                    </qti-lt>
+                </qti-not>
+                <qti-set-outcome-value identifier="s2FB">
+                    <qti-multiple>
+                        <qti-base-value base-type="identifier">S2-FB-AllOK</qti-base-value>
+                        <qti-base-value base-type="identifier">S2-FB-SomeNotOK</qti-base-value>
+                    </qti-multiple>
+                </qti-set-outcome-value>
+            </qti-outcome-if>
+        </qti-outcome-condition>
+        <qti-set-outcome-value identifier="SECTION_3_total">
+            <qti-sum>
+                <qti-test-variables section-identifier="id-c0ac060cd5d4" base-type="float" variable-identifier="SCORE"/>
+            </qti-sum>
+        </qti-set-outcome-value>
+        <qti-outcome-condition>
+            <qti-outcome-if>
+                <qti-not>
+                    <qti-lt>
+                        <qti-variable identifier="SECTION_3_total"/>
+                        <qti-base-value base-type="float">30.0</qti-base-value>
+                    </qti-lt>
+                </qti-not>
+                <qti-set-outcome-value identifier="s3FB">
+                    <qti-multiple>
+                        <qti-base-value base-type="identifier">S3-FB-AllOK</qti-base-value>
+                        <qti-base-value base-type="identifier">S3-FB-SomeNotOK</qti-base-value>
+                    </qti-multiple>
+                </qti-set-outcome-value>
+            </qti-outcome-if>
+        </qti-outcome-condition>
+        <qti-set-outcome-value identifier="SECTION_4_total">
+            <qti-sum>
+                <qti-test-variables section-identifier="id-4c75a5515d14" base-type="float" variable-identifier="SCORE"/>
+            </qti-sum>
+        </qti-set-outcome-value>
+        <qti-outcome-condition>
+            <qti-outcome-if>
+                <qti-not>
+                    <qti-lt>
+                        <qti-variable identifier="SECTION_4_total"/>
+                        <qti-base-value base-type="float">30.0</qti-base-value>
+                    </qti-lt>
+                </qti-not>
+                <qti-set-outcome-value identifier="s4FB">
+                    <qti-multiple>
+                        <qti-base-value base-type="identifier">S4-FB-AllOK</qti-base-value>
+                        <qti-base-value base-type="identifier">S4-FB-SomeNotOK</qti-base-value>
+                    </qti-multiple>
+                </qti-set-outcome-value>
+            </qti-outcome-if>
+        </qti-outcome-condition>
+        <qti-set-outcome-value identifier="TEST_total">
+            <qti-sum>
+                <qti-test-variables base-type="float" variable-identifier="SCORE"/>
+            </qti-sum>
+        </qti-set-outcome-value>
+
+        <!--￼The variable TEST_FEEDBACK contains all the testFeedback identifiers to be used-->
+
+        <qti-set-outcome-value identifier="TEST_FEEDBACK">
+            <qti-multiple>
+                <qti-base-value base-type="identifier">TEST_FB1</qti-base-value>
+                <qti-base-value base-type="identifier">S1_END_FB</qti-base-value>
+                <qti-base-value base-type="identifier">S2_END_FB</qti-base-value>
+                <qti-base-value base-type="identifier">S3_END_FB</qti-base-value>
+                <qti-base-value base-type="identifier">S4_END_FB</qti-base-value>
+                <qti-base-value base-type="identifier">TEST_FB2</qti-base-value>
+            </qti-multiple>
+        </qti-set-outcome-value>
+    </qti-outcome-processing>
+    <qti-test-feedback identifier="TEST_FB1" show-hide="show" outcome-identifier="TEST_FEEDBACK" access="atEnd">
+        <div>You have reached the end of the test.</div>
+    </qti-test-feedback>
+    <qti-test-feedback identifier="S1_END_FB" show-hide="show" outcome-identifier="TEST_FEEDBACK" access="atEnd">
+        <div>Section 1 score: <qti-printed-variable format="%.1f" identifier="SECTION_1_total"/> (from a
+            maximum of 20.0).
+            
+            <!--￼If all the questions in a section are correct, the "All OK" message for that section appears, and the "Some not OK"
+                message disappears because the showHide attribute is set to hide.-->            
+            
+            <qti-feedback-inline outcome-identifier="s1FB" identifier="S1-FB-AllOK" show-hide="show"> All the questions in section 1 were answered
+                correctly.</qti-feedback-inline>
+            <qti-feedback-inline outcome-identifier="s1FB" identifier="S1-FB-SomeNotOK" show-hide="hide">
+                Some of the questions in section 1 were not answered correctly.</qti-feedback-inline>
+        </div>
+    </qti-test-feedback>
+    <qti-test-feedback identifier="S2_END_FB" show-hide="show" outcome-identifier="TEST_FEEDBACK" access="atEnd">
+        <div>Section 2 score: <qti-printed-variable format="%.1f" identifier="SECTION_2_total"/> (from a
+            maximum of 20.0) <qti-feedback-inline outcome-identifier="s2FB" identifier="S2-FB-AllOK" show-hide="show"> All the questions in section 2 were answered
+                correctly.</qti-feedback-inline>
+            <qti-feedback-inline outcome-identifier="s2FB" identifier="S2-FB-SomeNotOK" show-hide="hide">
+                Some of the questions in section 2 were not answered correctly.</qti-feedback-inline>
+        </div>
+    </qti-test-feedback>
+    <qti-test-feedback identifier="S3_END_FB" show-hide="show" outcome-identifier="TEST_FEEDBACK" access="atEnd">
+        <div>Section 3 score: <qti-printed-variable format="%.1f" identifier="SECTION_3_total"/> (from a
+            maximum of 30.0) <qti-feedback-inline outcome-identifier="s3FB" identifier="S3-FB-AllOK" show-hide="show"> All the questions in section 3 were answered
+                correctly.</qti-feedback-inline>
+            <qti-feedback-inline outcome-identifier="s3FB" identifier="S3-FB-SomeNotOK" show-hide="hide">
+                Some of the questions in section 3 were not answered correctly.</qti-feedback-inline>
+        </div>
+    </qti-test-feedback>
+    <qti-test-feedback identifier="S4_END_FB" show-hide="show" outcome-identifier="TEST_FEEDBACK" access="atEnd">
+        <div>Section 4 score: <qti-printed-variable format="%.1f" identifier="SECTION_4_total"/> (from a
+            maximum of 30.0) <qti-feedback-inline outcome-identifier="s4FB" identifier="S4-FB-AllOK" show-hide="show"> All the questions in section 4 were answered
+                correctly.</qti-feedback-inline>
+            <qti-feedback-inline outcome-identifier="s4FB" identifier="S4-FB-SomeNotOK" show-hide="hide">
+                Some of the questions in section 4 were not answered correctly.</qti-feedback-inline>
+        </div>
+    </qti-test-feedback>
+    <qti-test-feedback identifier="TEST_FB" show-hide="show" outcome-identifier="TEST_FEEDBACK" access="atEnd">
+        <div>Total score: <qti-printed-variable format="%.1f" identifier="TEST_total"/> (from a maximum
+            of 100.0)</div>
+    </qti-test-feedback>
+</qti-assessment-test>
