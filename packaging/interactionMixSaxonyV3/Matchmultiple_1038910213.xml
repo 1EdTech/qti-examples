@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--This file was created using: Onyx Editor, Version 3.4.3 (Full, licensed version), (c)2012 BPS Bildungsportal Sachsen GmbH-->
+<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation=" http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd " identifier="Matchmultiple_1038910213" title="match (multiple)" adaptive="false" time-dependent="false">
+	<qti-response-declaration identifier="RESPONSE" cardinality="multiple" base-type="directedPair">
+		<qti-correct-response>
+			<qti-value>Match10102103 Match29006155</qti-value>
+			<qti-value>Match10268373 Match29006155</qti-value>
+			<qti-value>Match25691226 Match14014848</qti-value>
+			<qti-value>Match25775772 Match10555042</qti-value>
+			<qti-value>Match622431 Match27675497</qti-value>
+		</qti-correct-response>
+	</qti-response-declaration>
+	<qti-outcome-declaration identifier="SCORE" cardinality="single" base-type="float">
+		<qti-default-value>
+			<qti-value>0.0</qti-value>
+		</qti-default-value>
+	</qti-outcome-declaration>
+	<qti-outcome-declaration identifier="MAXSCORE" cardinality="single" base-type="float">
+		<qti-default-value>
+			<qti-value>1.0</qti-value>
+		</qti-default-value>
+	</qti-outcome-declaration>
+	<qti-outcome-declaration identifier="FEEDBACKBASIC" cardinality="single" base-type="identifier">
+		<qti-default-value>
+			<qti-value>empty</qti-value>
+		</qti-default-value>
+	</qti-outcome-declaration>
+	<qti-outcome-declaration identifier="FEEDBACKMODAL" cardinality="multiple" base-type="identifier" view="testConstructor"/>
+	<qti-item-body>
+		<div>Das Bundesland Sachsen besitzt viele kulturelle und historische Sehenswürdigkeiten.
+			<br/>Welche Sehenswürdigkeit gehört zu welcher Stadt?</div>
+		<qti-match-interaction response-identifier="RESPONSE" shuffle="true" max-associations="0">
+			<qti-simple-match-set>
+				<qti-simple-associable-choice identifier="Match10268373" fixed="false" match-max="1">
+					<img src="media/ffe337505ef74334a0cecb33310f99c1.jpg" alt=""/>
+				</qti-simple-associable-choice>
+				<qti-simple-associable-choice identifier="Match10102103" fixed="false" match-max="1">
+					<img src="media/a439b702d5034ca38f6df26a12835db3.jpg" alt=""/>
+				</qti-simple-associable-choice>
+				<qti-simple-associable-choice identifier="Match622431" fixed="false" match-max="1">
+					<img src="media/2f44366716474a5d8e2a2e32346cbc05.jpg" alt=""/>
+				</qti-simple-associable-choice>
+				<qti-simple-associable-choice identifier="Match25775772" fixed="false" match-max="1">
+					<img src="media/b660fc9f268c4ef688d8606116c70160.jpg" alt=""/>
+				</qti-simple-associable-choice>
+				<qti-simple-associable-choice identifier="Match25691226" fixed="false" match-max="1">
+					<img src="media/0563e67fb1bb48ad882e0a5abf2a2686.jpg" alt=""/>
+				</qti-simple-associable-choice>
+			</qti-simple-match-set>
+			<qti-simple-match-set>
+				<qti-simple-associable-choice identifier="Match14014848" fixed="false" match-max="0">Chemnitz</qti-simple-associable-choice>
+				<qti-simple-associable-choice identifier="Match29006155" fixed="false" match-max="0">Dresden</qti-simple-associable-choice>
+				<qti-simple-associable-choice identifier="Match27675497" fixed="false" match-max="0">Leipzig</qti-simple-associable-choice>
+				<qti-simple-associable-choice identifier="Match10555042" fixed="false" match-max="0">Freiberg</qti-simple-associable-choice>
+			</qti-simple-match-set>
+		</qti-match-interaction>
+	</qti-item-body>
+	<qti-response-processing>
+		<qti-response-condition>
+			<qti-response-if>
+				<qti-is-null>
+					<qti-variable identifier="RESPONSE"/>
+				</qti-is-null>
+				<qti-set-outcome-value identifier="FEEDBACKBASIC">
+					<qti-base-value base-type="identifier">empty</qti-base-value>
+				</qti-set-outcome-value>
+			</qti-response-if>
+			<qti-response-else-if>
+				<qti-match>
+					<qti-variable identifier="RESPONSE"/>
+					<qti-correct identifier="RESPONSE"/>
+				</qti-match>
+				<qti-set-outcome-value identifier="SCORE">
+					<qti-sum>
+						<qti-variable identifier="SCORE"/>
+						<qti-variable identifier="MAXSCORE"/>
+					</qti-sum>
+				</qti-set-outcome-value>
+				<qti-set-outcome-value identifier="FEEDBACKBASIC">
+					<qti-base-value base-type="identifier">correct</qti-base-value>
+				</qti-set-outcome-value>
+			</qti-response-else-if>
+			<qti-response-else>
+				<qti-set-outcome-value identifier="FEEDBACKBASIC">
+					<qti-base-value base-type="identifier">incorrect</qti-base-value>
+				</qti-set-outcome-value>
+			</qti-response-else>
+		</qti-response-condition>
+		<qti-response-condition>
+			<qti-response-if>
+				<qti-and>
+					<qti-match>
+						<qti-base-value base-type="identifier">correct</qti-base-value>
+						<qti-variable identifier="FEEDBACKBASIC"/>
+					</qti-match>
+				</qti-and>
+				<qti-set-outcome-value identifier="FEEDBACKMODAL">
+					<qti-multiple>
+						<qti-variable identifier="FEEDBACKMODAL"/>
+						<qti-base-value base-type="identifier">FEEDBACK_9491398</qti-base-value>
+					</qti-multiple>
+				</qti-set-outcome-value>
+			</qti-response-if>
+		</qti-response-condition>
+		<qti-response-condition>
+			<qti-response-if>
+				<qti-and>
+					<qti-match>
+						<qti-base-value base-type="identifier">incorrect</qti-base-value>
+						<qti-variable identifier="FEEDBACKBASIC"/>
+					</qti-match>
+				</qti-and>
+				<qti-set-outcome-value identifier="FEEDBACKMODAL">
+					<qti-multiple>
+						<qti-variable identifier="FEEDBACKMODAL"/>
+						<qti-base-value base-type="identifier">FEEDBACK_4165723</qti-base-value>
+					</qti-multiple>
+				</qti-set-outcome-value>
+			</qti-response-if>
+		</qti-response-condition>
+	</qti-response-processing>
+	<qti-modal-feedback identifier="FEEDBACK_9491398" outcome-identifier="FEEDBACKMODAL" show-hide="show" title="Richtig!">Abgebildet sind die Frauenkirche (Dresden), die Semperoper (Dresden), das
+		Völkerschlachtdenkmal (Leipzig), der Dom St.Marien (Freiberg) und das Karl-Marx-Monument
+		(Chemnitz).</qti-modal-feedback>
+	<qti-modal-feedback identifier="FEEDBACK_4165723" outcome-identifier="FEEDBACKMODAL" show-hide="show" title="Leider Falsch!">Abgebildet sind die Frauenkirche (Dresden), die Semperoper (Dresden),
+		das Völkerschlachtdenkmal (Leipzig), der Dom St.Marien (Freiberg) und das Karl-Marx-Monument
+		(Chemnitz).</qti-modal-feedback>
+</qti-assessment-item>

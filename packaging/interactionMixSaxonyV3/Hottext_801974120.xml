@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--This file was created using: Onyx Editor, Version 3.4.3 (Full, licensed version), (c)2012 BPS Bildungsportal Sachsen GmbH-->
+<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation=" http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd " identifier="Hottext_801974120" title="hottext" adaptive="false" time-dependent="false">
+	<qti-response-declaration identifier="RESPONSE" cardinality="multiple" base-type="identifier">
+		<qti-correct-response>
+			<qti-value>Choice1</qti-value>
+			<qti-value>Choice3</qti-value>
+			<qti-value>Choice8</qti-value>
+		</qti-correct-response>
+	</qti-response-declaration>
+	<qti-outcome-declaration identifier="SCORE" cardinality="single" base-type="float">
+		<qti-default-value>
+			<qti-value>0.0</qti-value>
+		</qti-default-value>
+	</qti-outcome-declaration>
+	<qti-outcome-declaration identifier="MAXSCORE" cardinality="single" base-type="float">
+		<qti-default-value>
+			<qti-value>1.0</qti-value>
+		</qti-default-value>
+	</qti-outcome-declaration>
+	<qti-outcome-declaration identifier="FEEDBACKBASIC" cardinality="single" base-type="identifier" view="testConstructor">
+		<qti-default-value>
+			<qti-value>empty</qti-value>
+		</qti-default-value>
+	</qti-outcome-declaration>
+	<qti-outcome-declaration identifier="FEEDBACKMODAL" cardinality="multiple" base-type="identifier" view="testConstructor"/>
+	<qti-item-body>
+		<p>Geburtenrate in Sachsen</p><p>
+			<i>Sind die Fakten alle korrekt? <br/>Suche drei Fehler!</i>
+		</p>
+		<qti-hottext-interaction response-identifier="RESPONSE" max-choices="0">
+				<div>Die Bevölkerungszahl Sachsens ist seit ca. <qti-hottext identifier="Choice0">1950</qti-hottext> rückläufig. Hatte Sachsen Anfang 1990 noch <qti-hottext identifier="Choice1">5,7 Millionen Einwohner</qti-hottext>, waren es Ende 2008 nur noch annähernd 4,2 Millionen. Für das Jahr 2020 wird ein Rückgang der Einwohnerzahlen auf etwa <qti-hottext identifier="Choice2">3,9 Millionen</qti-hottext> prognostiziert. Einzig die Einwohnerzahlen der Städte <qti-hottext identifier="Choice3">Chemnitz</qti-hottext>, <qti-hottext identifier="Choice4">Dresden</qti-hottext> und <qti-hottext identifier="Choice5">Leipzig</qti-hottext> konnten in den vergangenen Jahren Zuwächse verzeichnen.
+					<br/>Parallel zur Verringerung der Einwohnerzahl im Freistatt Sachsen stieg das Durchschnittsalter von <qti-hottext identifier="Choice6">39 Jahren</qti-hottext> 1990 auf fast <qti-hottext identifier="Choice7">46 Jahre</qti-hottext> im Jahr 2008. Im Jahr 2020 wird der »Durchschnittssachse« fast <qti-hottext identifier="Choice8">54 Jahre</qti-hottext> alt sein.</div>
+		</qti-hottext-interaction>
+	</qti-item-body>
+	<qti-response-processing>
+		<qti-response-condition>
+			<qti-response-if>
+				<qti-is-null>
+					<qti-variable identifier="RESPONSE"/>
+				</qti-is-null>
+				<qti-set-outcome-value identifier="FEEDBACKBASIC">
+					<qti-base-value base-type="identifier">empty</qti-base-value>
+				</qti-set-outcome-value>
+			</qti-response-if>
+			<qti-response-else-if>
+				<qti-match>
+					<qti-variable identifier="RESPONSE"/>
+					<qti-correct identifier="RESPONSE"/>
+				</qti-match>
+				<qti-set-outcome-value identifier="SCORE">
+					<qti-sum>
+						<qti-variable identifier="SCORE"/>
+						<qti-variable identifier="MAXSCORE"/>
+					</qti-sum>
+				</qti-set-outcome-value>
+				<qti-set-outcome-value identifier="FEEDBACKBASIC">
+					<qti-base-value base-type="identifier">correct</qti-base-value>
+				</qti-set-outcome-value>
+			</qti-response-else-if>
+			<qti-response-else>
+				<qti-set-outcome-value identifier="FEEDBACKBASIC">
+					<qti-base-value base-type="identifier">incorrect</qti-base-value>
+				</qti-set-outcome-value>
+			</qti-response-else>
+		</qti-response-condition>
+		<qti-response-condition>
+			<qti-response-if>
+				<qti-and>
+					<qti-match>
+						<qti-base-value base-type="identifier">correct</qti-base-value>
+						<qti-variable identifier="FEEDBACKBASIC"/>
+					</qti-match>
+				</qti-and>
+				<qti-set-outcome-value identifier="FEEDBACKMODAL">
+					<qti-multiple>
+						<qti-variable identifier="FEEDBACKMODAL"/>
+						<qti-base-value base-type="identifier">FEEDBACK_25631337</qti-base-value>
+					</qti-multiple>
+				</qti-set-outcome-value>
+			</qti-response-if>
+		</qti-response-condition>
+		<qti-response-condition>
+			<qti-response-if>
+				<qti-and>
+					<qti-match>
+						<qti-base-value base-type="identifier">incorrect</qti-base-value>
+						<qti-variable identifier="FEEDBACKBASIC"/>
+					</qti-match>
+				</qti-and>
+				<qti-set-outcome-value identifier="FEEDBACKMODAL">
+					<qti-multiple>
+						<qti-variable identifier="FEEDBACKMODAL"/>
+						<qti-base-value base-type="identifier">FEEDBACK_14093122</qti-base-value>
+					</qti-multiple>
+				</qti-set-outcome-value>
+			</qti-response-if>
+		</qti-response-condition>
+	</qti-response-processing>
+	<qti-modal-feedback identifier="FEEDBACK_25631337" outcome-identifier="FEEDBACKMODAL" show-hide="show" title="Richtig!">Sachsen hatte Anfang 1990 noch 4,9 Millionen Einwohner.
+Einzig die Einwohnerzahlen der Dresden und Leipzig konnten in den vergangenen Jahren Zuwächse verzeichnen. 
+Im Jahr 2020 wird der »Durchschnittssachse« fast 49 Jahre alt sein. </qti-modal-feedback>
+	<qti-modal-feedback identifier="FEEDBACK_14093122" outcome-identifier="FEEDBACKMODAL" show-hide="show" title="Leider Falsch!">Sachsen hatte Anfang 1990 noch 4,9 Millionen Einwohner.
+Einzig die Einwohnerzahlen der Dresden und Leipzig konnten in den vergangenen Jahren Zuwächse verzeichnen.
+Im Jahr 2020 wird der »Durchschnittssachse« fast 49 Jahre alt sein. </qti-modal-feedback>
+</qti-assessment-item>

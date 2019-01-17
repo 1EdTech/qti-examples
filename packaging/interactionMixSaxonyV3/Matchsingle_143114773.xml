@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--This file was created using: Onyx Editor, Version 3.4.3 (Full, licensed version), (c)2012 BPS Bildungsportal Sachsen GmbH-->
+<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation=" http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd " identifier="Matchsingle_143114773" title="match (single)" adaptive="false" time-dependent="false">
+	<qti-response-declaration identifier="RESPONSE" cardinality="multiple" base-type="directedPair">
+		<qti-correct-response>
+			<qti-value>Match28433682 Match2675678</qti-value>
+			<qti-value>Match7191791 Match9372581</qti-value>
+			<qti-value>Match20473010 Match22744006</qti-value>
+			<qti-value>Match6429655 Match17943221</qti-value>
+		</qti-correct-response>
+	</qti-response-declaration>
+	<qti-outcome-declaration identifier="SCORE" cardinality="single" base-type="float">
+		<qti-default-value>
+			<qti-value>0.0</qti-value>
+		</qti-default-value>
+	</qti-outcome-declaration>
+	<qti-outcome-declaration identifier="MAXSCORE" cardinality="single" base-type="float">
+		<qti-default-value>
+			<qti-value>1.0</qti-value>
+		</qti-default-value>
+	</qti-outcome-declaration>
+	<qti-outcome-declaration identifier="FEEDBACKBASIC" cardinality="single" base-type="identifier">
+		<qti-default-value>
+			<qti-value>empty</qti-value>
+		</qti-default-value>
+	</qti-outcome-declaration>
+	<qti-outcome-declaration identifier="FEEDBACKMODAL" cardinality="multiple" base-type="identifier" view="testConstructor"/>
+	<qti-item-body>
+		<div>Der wichtigste, größte und einzig schiffbare Fluss des Bundeslandes Sachsens ist die
+			Elbe. Die verschiedene Quellflüsse der Elbe durchziehen die sächsischen Städte.
+			<br/>Ordne anhand des Flusslaufs die Quellflüsse den gegebenen Städten zu.</div>
+		<qti-match-interaction response-identifier="RESPONSE" shuffle="true" max-associations="0">
+			<qti-simple-match-set>
+				<qti-simple-associable-choice identifier="Match28433682" fixed="false" match-max="1">Weißeritz</qti-simple-associable-choice>
+				<qti-simple-associable-choice identifier="Match7191791" fixed="false" match-max="1">Mulde</qti-simple-associable-choice>
+				<qti-simple-associable-choice identifier="Match20473010" fixed="false" match-max="1">Saale</qti-simple-associable-choice>
+				<qti-simple-associable-choice identifier="Match6429655" fixed="false" match-max="1">Spree</qti-simple-associable-choice>
+			</qti-simple-match-set>
+			<qti-simple-match-set>
+				<qti-simple-associable-choice identifier="Match2675678" fixed="false" match-max="1">Dresden</qti-simple-associable-choice>
+				<qti-simple-associable-choice identifier="Match9372581" fixed="false" match-max="1">Leipzig</qti-simple-associable-choice>
+				<qti-simple-associable-choice identifier="Match22744006" fixed="false" match-max="1">Halle</qti-simple-associable-choice>
+				<qti-simple-associable-choice identifier="Match17943221" fixed="false" match-max="1">Bautzen</qti-simple-associable-choice>
+			</qti-simple-match-set>
+		</qti-match-interaction>
+	</qti-item-body>
+	<qti-response-processing>
+		<qti-response-condition>
+			<qti-response-if>
+				<qti-is-null>
+					<qti-variable identifier="RESPONSE"/>
+				</qti-is-null>
+				<qti-set-outcome-value identifier="FEEDBACKBASIC">
+					<qti-base-value base-type="identifier">empty</qti-base-value>
+				</qti-set-outcome-value>
+			</qti-response-if>
+			<qti-response-else-if>
+				<qti-match>
+					<qti-variable identifier="RESPONSE"/>
+					<qti-correct identifier="RESPONSE"/>
+				</qti-match>
+				<qti-set-outcome-value identifier="SCORE">
+					<qti-sum>
+						<qti-variable identifier="SCORE"/>
+						<qti-variable identifier="MAXSCORE"/>
+					</qti-sum>
+				</qti-set-outcome-value>
+				<qti-set-outcome-value identifier="FEEDBACKBASIC">
+					<qti-base-value base-type="identifier">correct</qti-base-value>
+				</qti-set-outcome-value>
+			</qti-response-else-if>
+			<qti-response-else>
+				<qti-set-outcome-value identifier="FEEDBACKBASIC">
+					<qti-base-value base-type="identifier">incorrect</qti-base-value>
+				</qti-set-outcome-value>
+			</qti-response-else>
+		</qti-response-condition>
+		<qti-response-condition>
+			<qti-response-if>
+				<qti-and>
+					<qti-match>
+						<qti-base-value base-type="identifier">correct</qti-base-value>
+						<qti-variable identifier="FEEDBACKBASIC"/>
+					</qti-match>
+				</qti-and>
+				<qti-set-outcome-value identifier="FEEDBACKMODAL">
+					<qti-multiple>
+						<qti-variable identifier="FEEDBACKMODAL"/>
+						<qti-base-value base-type="identifier">FEEDBACK_27448254</qti-base-value>
+					</qti-multiple>
+				</qti-set-outcome-value>
+			</qti-response-if>
+		</qti-response-condition>
+		<qti-response-condition>
+			<qti-response-if>
+				<qti-and>
+					<qti-match>
+						<qti-base-value base-type="identifier">incorrect</qti-base-value>
+						<qti-variable identifier="FEEDBACKBASIC"/>
+					</qti-match>
+				</qti-and>
+				<qti-set-outcome-value identifier="FEEDBACKMODAL">
+					<qti-multiple>
+						<qti-variable identifier="FEEDBACKMODAL"/>
+						<qti-base-value base-type="identifier">FEEDBACK_16479834</qti-base-value>
+					</qti-multiple>
+				</qti-set-outcome-value>
+			</qti-response-if>
+		</qti-response-condition>
+	</qti-response-processing>
+	<qti-modal-feedback identifier="FEEDBACK_27448254" outcome-identifier="FEEDBACKMODAL" show-hide="show" title="Richtig!">Die Elbe durchzieht den Freistaat von Südosten nach Nordwesten. Wichtige
+		Quellflüsse sind die Mulde, die Weißeritz, die Zschopau, die Weiße Elster und die Spree,
+		deren allgemeine Fließrichtung Norden ist und die ebenfalls zum Fluss-System der Elbe
+		gehören.</qti-modal-feedback>
+	<qti-modal-feedback identifier="FEEDBACK_16479834" outcome-identifier="FEEDBACKMODAL" show-hide="show" title="Leider Falsch!">Die Elbe durchzieht den Freistaat von Südosten nach Nordwesten.
+		Wichtige Quellflüsse sind die Mulde, die Weißeritz, die Zschopau, die Weiße Elster und die
+		Spree, deren allgemeine Fließrichtung Norden ist und die ebenfalls zum Fluss-System der Elbe
+		gehören.</qti-modal-feedback>
+</qti-assessment-item>

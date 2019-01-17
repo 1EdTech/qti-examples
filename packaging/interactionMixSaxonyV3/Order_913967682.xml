@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--This file was created using: Onyx Editor, Version 3.4.3 (Full, licensed version), (c)2012 BPS Bildungsportal Sachsen GmbH-->
+<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation=" http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd " identifier="Order_913967682" title="order" adaptive="false" time-dependent="false">
+	<qti-response-declaration identifier="RESPONSE" cardinality="ordered" base-type="identifier">
+		<qti-correct-response>
+			<qti-value>Choice0</qti-value>
+			<qti-value>Choice1</qti-value>
+			<qti-value>Choice2</qti-value>
+			<qti-value>Choice3</qti-value>
+			<qti-value>Choice4</qti-value>
+		</qti-correct-response>
+	</qti-response-declaration>
+	<qti-outcome-declaration identifier="SCORE" cardinality="single" base-type="float">
+		<qti-default-value>
+			<qti-value>0.0</qti-value>
+		</qti-default-value>
+	</qti-outcome-declaration>
+	<qti-outcome-declaration identifier="MAXSCORE" cardinality="single" base-type="float">
+		<qti-default-value>
+			<qti-value>1.0</qti-value>
+		</qti-default-value>
+	</qti-outcome-declaration>
+	<qti-outcome-declaration identifier="FEEDBACKBASIC" cardinality="single" base-type="identifier">
+		<qti-default-value>
+			<qti-value>empty</qti-value>
+		</qti-default-value>
+	</qti-outcome-declaration>
+	<qti-outcome-declaration identifier="FEEDBACKMODAL" cardinality="multiple" base-type="identifier" view="testConstructor"/>
+	<qti-item-body>
+		<div>Sortiere die genannten Parteien nach Ihrer Sitzverteilung im Landtag
+			Sachsen.<br/>Beginne mit der stärksten Partei.</div>
+		<qti-order-interaction response-identifier="RESPONSE" shuffle="true">
+			<qti-simple-choice identifier="Choice0">CDU</qti-simple-choice>
+			<qti-simple-choice identifier="Choice1">Die Linke</qti-simple-choice>
+			<qti-simple-choice identifier="Choice2">SDP</qti-simple-choice>
+			<qti-simple-choice identifier="Choice3">Grüne</qti-simple-choice>
+			<qti-simple-choice identifier="Choice4">NPD</qti-simple-choice>
+		</qti-order-interaction>
+	</qti-item-body>
+	<qti-response-processing>
+		<qti-response-condition>
+			<qti-response-if>
+				<qti-is-null>
+					<qti-variable identifier="RESPONSE"/>
+				</qti-is-null>
+				<qti-set-outcome-value identifier="FEEDBACKBASIC">
+					<qti-base-value base-type="identifier">empty</qti-base-value>
+				</qti-set-outcome-value>
+			</qti-response-if>
+			<qti-response-else-if>
+				<qti-match>
+					<qti-variable identifier="RESPONSE"/>
+					<qti-correct identifier="RESPONSE"/>
+				</qti-match>
+				<qti-set-outcome-value identifier="SCORE">
+					<qti-sum>
+						<qti-variable identifier="SCORE"/>
+						<qti-variable identifier="MAXSCORE"/>
+					</qti-sum>
+				</qti-set-outcome-value>
+				<qti-set-outcome-value identifier="FEEDBACKBASIC">
+					<qti-base-value base-type="identifier">correct</qti-base-value>
+				</qti-set-outcome-value>
+			</qti-response-else-if>
+			<qti-response-else>
+				<qti-set-outcome-value identifier="FEEDBACKBASIC">
+					<qti-base-value base-type="identifier">incorrect</qti-base-value>
+				</qti-set-outcome-value>
+			</qti-response-else>
+		</qti-response-condition>
+		<qti-response-condition>
+			<qti-response-if>
+				<qti-and>
+					<qti-match>
+						<qti-base-value base-type="identifier">correct</qti-base-value>
+						<qti-variable identifier="FEEDBACKBASIC"/>
+					</qti-match>
+				</qti-and>
+				<qti-set-outcome-value identifier="FEEDBACKMODAL">
+					<qti-multiple>
+						<qti-variable identifier="FEEDBACKMODAL"/>
+						<qti-base-value base-type="identifier">FEEDBACK_25975631</qti-base-value>
+					</qti-multiple>
+				</qti-set-outcome-value>
+			</qti-response-if>
+		</qti-response-condition>
+		<qti-response-condition>
+			<qti-response-if>
+				<qti-and>
+					<qti-match>
+						<qti-base-value base-type="identifier">incorrect</qti-base-value>
+						<qti-variable identifier="FEEDBACKBASIC"/>
+					</qti-match>
+				</qti-and>
+				<qti-set-outcome-value identifier="FEEDBACKMODAL">
+					<qti-multiple>
+						<qti-variable identifier="FEEDBACKMODAL"/>
+						<qti-base-value base-type="identifier">FEEDBACK_29276140</qti-base-value>
+					</qti-multiple>
+				</qti-set-outcome-value>
+			</qti-response-if>
+		</qti-response-condition>
+	</qti-response-processing>
+	<qti-modal-feedback identifier="FEEDBACK_25975631" outcome-identifier="FEEDBACKMODAL" show-hide="show" title="Richtig!">Die CDU ist in Sachsen seit der Wiedervereinigung die mit Abstand stärkste
+		Partei und hat aktuell 58 Sitze im Landtag. Zweitstärkste Partei ist Die Linke (29), gefolgt
+		von der SPD (14), der FDP (14), den Grünen (9) und der NPD (8).</qti-modal-feedback>
+	<qti-modal-feedback identifier="FEEDBACK_29276140" outcome-identifier="FEEDBACKMODAL" show-hide="show" title="Leider Falsch!">Die CDU ist in Sachsen seit der Wiedervereinigung die mit Abstand
+		stärkste Partei und hat aktuell 58 Sitze im Landtag. Zweitstärkste Partei ist Die Linke
+		(29), gefolgt von der SPD (14), der FDP (14), den Grünen (9) und der NPD
+		(8).</qti-modal-feedback>
+</qti-assessment-item>

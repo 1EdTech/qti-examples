@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--This file was created using: Onyx Editor, Version 3.4.3 (Full, licensed version), (c)2012 BPS Bildungsportal Sachsen GmbH-->
+<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation=" http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd " identifier="Choicesingle_853928446" title="choice (single)" adaptive="false" time-dependent="false">
+	<qti-response-declaration identifier="RESPONSE_30705996" cardinality="single" base-type="identifier">
+		<qti-correct-response>
+			<qti-value>choice_685440446</qti-value>
+		</qti-correct-response>
+	</qti-response-declaration>
+	<qti-outcome-declaration identifier="SCORE" cardinality="single" base-type="float">
+		<qti-default-value>
+			<qti-value>0.0</qti-value>
+		</qti-default-value>
+	</qti-outcome-declaration>
+	<qti-outcome-declaration identifier="MAXSCORE" cardinality="single" base-type="float">
+		<qti-default-value>
+			<qti-value>1.0</qti-value>
+		</qti-default-value>
+	</qti-outcome-declaration>
+	<qti-outcome-declaration identifier="FEEDBACKBASIC" cardinality="single" base-type="identifier">
+		<qti-default-value>
+			<qti-value>empty</qti-value>
+		</qti-default-value>
+	</qti-outcome-declaration>
+	<qti-outcome-declaration identifier="FEEDBACKMODAL" cardinality="multiple" base-type="identifier" view="testConstructor"/>
+	<qti-item-body>
+		<div>Das Bundesland Sachsen hat die folgende Flagge...</div>
+		<qti-choice-interaction response-identifier="RESPONSE_30705996" shuffle="true" max-choices="1">
+			<qti-simple-choice identifier="choice_685440446">
+				<img src="media/c2f541343b9b4bfdba9fc90c7a18403e.jpg" alt=""/>
+			</qti-simple-choice>
+			<qti-simple-choice identifier="choice_1542121788">
+				<img src="media/71a299b50b5e4b1492f8ee51ce25be7d.jpg" alt=""/>
+			</qti-simple-choice>
+			<qti-simple-choice identifier="choice_313388598">
+				<img src="media/03c5e2f774db49598deb3ac7d05b53f9.jpg" alt=""/>
+			</qti-simple-choice>
+			<qti-simple-choice identifier="choice_2057964872">
+				<img src="media/e18b5a2eb8104d0994a182ee0176a05c.jpg" alt=""/>
+			</qti-simple-choice>
+		</qti-choice-interaction>
+	</qti-item-body>
+	<qti-response-processing>
+		<qti-response-condition>
+			<qti-response-if>
+				<qti-is-null>
+					<qti-variable identifier="RESPONSE_30705996"/>
+				</qti-is-null>
+				<qti-set-outcome-value identifier="FEEDBACKBASIC">
+					<qti-base-value base-type="identifier">empty</qti-base-value>
+				</qti-set-outcome-value>
+			</qti-response-if>
+			<qti-response-else-if>
+				<qti-match>
+					<qti-variable identifier="RESPONSE_30705996"/>
+					<qti-correct identifier="RESPONSE_30705996"/>
+				</qti-match>
+				<qti-set-outcome-value identifier="SCORE">
+					<qti-sum>
+						<qti-variable identifier="SCORE"/>
+						<qti-variable identifier="MAXSCORE"/>
+					</qti-sum>
+				</qti-set-outcome-value>
+				<qti-set-outcome-value identifier="FEEDBACKBASIC">
+					<qti-base-value base-type="identifier">correct</qti-base-value>
+				</qti-set-outcome-value>
+			</qti-response-else-if>
+			<qti-response-else>
+				<qti-set-outcome-value identifier="FEEDBACKBASIC">
+					<qti-base-value base-type="identifier">incorrect</qti-base-value>
+				</qti-set-outcome-value>
+			</qti-response-else>
+		</qti-response-condition>
+		<qti-response-condition>
+			<qti-response-if>
+				<qti-and>
+					<qti-match>
+						<qti-base-value base-type="identifier">correct</qti-base-value>
+						<qti-variable identifier="FEEDBACKBASIC"/>
+					</qti-match>
+				</qti-and>
+				<qti-set-outcome-value identifier="FEEDBACKMODAL">
+					<qti-multiple>
+						<qti-variable identifier="FEEDBACKMODAL"/>
+						<qti-base-value base-type="identifier">FEEDBACK_19070485</qti-base-value>
+					</qti-multiple>
+				</qti-set-outcome-value>
+			</qti-response-if>
+		</qti-response-condition>
+		<qti-response-condition>
+			<qti-response-if>
+				<qti-and>
+					<qti-match>
+						<qti-base-value base-type="identifier">incorrect</qti-base-value>
+						<qti-variable identifier="FEEDBACKBASIC"/>
+					</qti-match>
+				</qti-and>
+				<qti-set-outcome-value identifier="FEEDBACKMODAL">
+					<qti-multiple>
+						<qti-variable identifier="FEEDBACKMODAL"/>
+						<qti-base-value base-type="identifier">FEEDBACK_5709968</qti-base-value>
+					</qti-multiple>
+				</qti-set-outcome-value>
+			</qti-response-if>
+		</qti-response-condition>
+		<qti-response-condition>
+			<qti-response-if>
+				<qti-and>
+					<qti-match>
+						<qti-base-value base-type="identifier">choice_1542121788</qti-base-value>
+						<qti-variable identifier="RESPONSE_30705996"/>
+					</qti-match>
+				</qti-and>
+				<qti-set-outcome-value identifier="FEEDBACKMODAL">
+					<qti-multiple>
+						<qti-variable identifier="FEEDBACKMODAL"/>
+						<qti-base-value base-type="identifier">FEEDBACK_1772719</qti-base-value>
+					</qti-multiple>
+				</qti-set-outcome-value>
+			</qti-response-if>
+		</qti-response-condition>
+		<qti-response-condition>
+			<qti-response-if>
+				<qti-and>
+					<qti-match>
+						<qti-base-value base-type="identifier">choice_313388598</qti-base-value>
+						<qti-variable identifier="RESPONSE_30705996"/>
+					</qti-match>
+				</qti-and>
+				<qti-set-outcome-value identifier="FEEDBACKMODAL">
+					<qti-multiple>
+						<qti-variable identifier="FEEDBACKMODAL"/>
+						<qti-base-value base-type="identifier">FEEDBACK_31321506</qti-base-value>
+					</qti-multiple>
+				</qti-set-outcome-value>
+			</qti-response-if>
+		</qti-response-condition>
+		<qti-response-condition>
+			<qti-response-if>
+				<qti-and>
+					<qti-match>
+						<qti-base-value base-type="identifier">choice_2057964872</qti-base-value>
+						<qti-variable identifier="RESPONSE_30705996"/>
+					</qti-match>
+				</qti-and>
+				<qti-set-outcome-value identifier="FEEDBACKMODAL">
+					<qti-multiple>
+						<qti-variable identifier="FEEDBACKMODAL"/>
+						<qti-base-value base-type="identifier">FEEDBACK_18628673</qti-base-value>
+					</qti-multiple>
+				</qti-set-outcome-value>
+			</qti-response-if>
+		</qti-response-condition>
+	</qti-response-processing>
+	<qti-modal-feedback identifier="FEEDBACK_19070485" outcome-identifier="FEEDBACKMODAL" show-hide="show" title="Richtig!">Die sächsischen Landesfarben sind weiß-grün.</qti-modal-feedback>
+	<qti-modal-feedback identifier="FEEDBACK_5709968" outcome-identifier="FEEDBACKMODAL" show-hide="show" title="Leider Falsch!">Die sächsischen Landesfarben sind weiß-grün.</qti-modal-feedback>
+	<qti-modal-feedback identifier="FEEDBACK_1772719" outcome-identifier="FEEDBACKMODAL" show-hide="show" title="">Deine Auswahl zeigt die Flagge vom Land Thüringen.</qti-modal-feedback>
+	<qti-modal-feedback identifier="FEEDBACK_31321506" outcome-identifier="FEEDBACKMODAL" show-hide="show" title="">Deine Auswahl zeigt die Flagge vom Land Baden-Württemberg.</qti-modal-feedback>
+	<qti-modal-feedback identifier="FEEDBACK_18628673" outcome-identifier="FEEDBACKMODAL" show-hide="show" title="">Deine Auswahl zeigt die Flagge vom Land Sachsen-Anhalt.</qti-modal-feedback>
+</qti-assessment-item>

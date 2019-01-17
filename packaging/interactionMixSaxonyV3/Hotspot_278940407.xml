@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--This file was created using: Onyx Editor, Version 3.4.3 (Full, licensed version), (c)2012 BPS Bildungsportal Sachsen GmbH-->
+<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation=" http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd " identifier="Hotspot_278940407" title="hotspot" adaptive="false" time-dependent="false">
+	<qti-response-declaration identifier="RESPONSE" cardinality="single" base-type="identifier">
+		<qti-correct-response>
+			<qti-value>Choice6</qti-value>
+		</qti-correct-response>
+	</qti-response-declaration>
+	<qti-outcome-declaration identifier="SCORE" cardinality="single" base-type="float">
+		<qti-default-value>
+			<qti-value>0.0</qti-value>
+		</qti-default-value>
+	</qti-outcome-declaration>
+	<qti-outcome-declaration identifier="MAXSCORE" cardinality="single" base-type="float">
+		<qti-default-value>
+			<qti-value>1.0</qti-value>
+		</qti-default-value>
+	</qti-outcome-declaration>
+	<qti-outcome-declaration identifier="FEEDBACKBASIC" cardinality="single" base-type="identifier" view="testConstructor">
+		<qti-default-value>
+			<qti-value>empty</qti-value>
+		</qti-default-value>
+	</qti-outcome-declaration>
+	<qti-outcome-declaration identifier="FEEDBACKMODAL" cardinality="multiple" base-type="identifier" view="testConstructor"/>
+	<qti-item-body>
+		<div>Dresden ist die Landeshauptstadt des Freistaates Sachsen. <br/>Wähle die Stadt Dresden in der gezeigten Skizze des Bundeslandes aus.</div>
+		<qti-hotspot-interaction response-identifier="RESPONSE" max-choices="1">
+			<object data="media/f88c5aa2c6724a388fdbadc7133eb757.jpg" type="image/jpg"/>
+			<qti-hotspot-choice identifier="Choice0" shape="circle" coords="141,28,12"/>
+			<qti-hotspot-choice identifier="Choice1" shape="circle" coords="60,77,12"/>
+			<qti-hotspot-choice identifier="Choice2" shape="circle" coords="82,119,12"/>
+			<qti-hotspot-choice identifier="Choice3" shape="circle" coords="206,112,12"/>
+			<qti-hotspot-choice identifier="Choice4" shape="circle" coords="131,181,12"/>
+			<qti-hotspot-choice identifier="Choice5" shape="circle" coords="183,160,12"/>
+			<qti-hotspot-choice identifier="Choice6" shape="circle" coords="239,129,12"/>
+			<qti-hotspot-choice identifier="Choice7" shape="circle" coords="79,199,12"/>
+			<qti-hotspot-choice identifier="Choice8" shape="circle" coords="315,103,12"/>
+			<qti-hotspot-choice identifier="Choice9" shape="circle" coords="387,109,12"/>
+			<qti-hotspot-choice identifier="Choice10" shape="circle" coords="143,230,12"/>
+			<qti-hotspot-choice identifier="Choice11" shape="circle" coords="36,244,12"/>
+		</qti-hotspot-interaction>
+	</qti-item-body>
+	<qti-response-processing>
+		<qti-response-condition>
+			<qti-response-if>
+				<qti-is-null>
+					<qti-variable identifier="RESPONSE"/>
+				</qti-is-null>
+				<qti-set-outcome-value identifier="FEEDBACKBASIC">
+					<qti-base-value base-type="identifier">empty</qti-base-value>
+				</qti-set-outcome-value>
+			</qti-response-if>
+			<qti-response-else-if>
+				<qti-match>
+					<qti-variable identifier="RESPONSE"/>
+					<qti-correct identifier="RESPONSE"/>
+				</qti-match>
+				<qti-set-outcome-value identifier="SCORE">
+					<qti-sum>
+						<qti-variable identifier="SCORE"/>
+						<qti-variable identifier="MAXSCORE"/>
+					</qti-sum>
+				</qti-set-outcome-value>
+				<qti-set-outcome-value identifier="FEEDBACKBASIC">
+					<qti-base-value base-type="identifier">correct</qti-base-value>
+				</qti-set-outcome-value>
+			</qti-response-else-if>
+			<qti-response-else>
+				<qti-set-outcome-value identifier="FEEDBACKBASIC">
+					<qti-base-value base-type="identifier">incorrect</qti-base-value>
+				</qti-set-outcome-value>
+			</qti-response-else>
+		</qti-response-condition>
+		<qti-response-condition>
+			<qti-response-if>
+				<qti-and>
+					<qti-match>
+						<qti-base-value base-type="identifier">correct</qti-base-value>
+						<qti-variable identifier="FEEDBACKBASIC"/>
+					</qti-match>
+				</qti-and>
+				<qti-set-outcome-value identifier="FEEDBACKMODAL">
+					<qti-multiple>
+						<qti-variable identifier="FEEDBACKMODAL"/>
+						<qti-base-value base-type="identifier">FEEDBACK_20121261</qti-base-value>
+					</qti-multiple>
+				</qti-set-outcome-value>
+			</qti-response-if>
+		</qti-response-condition>
+		<qti-response-condition>
+			<qti-response-if>
+				<qti-and>
+					<qti-match>
+						<qti-base-value base-type="identifier">incorrect</qti-base-value>
+						<qti-variable identifier="FEEDBACKBASIC"/>
+					</qti-match>
+				</qti-and>
+				<qti-set-outcome-value identifier="FEEDBACKMODAL">
+					<qti-multiple>
+						<qti-variable identifier="FEEDBACKMODAL"/>
+						<qti-base-value base-type="identifier">FEEDBACK_16480431</qti-base-value>
+					</qti-multiple>
+				</qti-set-outcome-value>
+			</qti-response-if>
+		</qti-response-condition>
+	</qti-response-processing>
+	<qti-modal-feedback identifier="FEEDBACK_20121261" outcome-identifier="FEEDBACKMODAL" show-hide="show" title="Richtig!">Dresden liegt im Osten der Freistaates Sachsen.</qti-modal-feedback>
+	<qti-modal-feedback identifier="FEEDBACK_16480431" outcome-identifier="FEEDBACKMODAL" show-hide="show" title="Leider Falsch!">Dresden liegt im Osten der Freistaates Sachsen.</qti-modal-feedback>
+</qti-assessment-item>

@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--This file was created using: Onyx Editor, Version 3.4.3 (Full, licensed version), (c)2012 BPS Bildungsportal Sachsen GmbH. Tweaked manually 14/06/2012 -->
+<imscp:manifest xmlns:imscp="http://www.imsglobal.org/xsd/qti/qtiv3p0/imscp_v1p1" xmlns:imsmd="http://ltsc.ieee.org/xsd/LOM" 
+                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.imsglobal.org/xsd/qti/qtiv3p0/imscp_v1p1" 
+                xsi:schemaLocation="http://ltsc.ieee.org/xsd/LOM https://purl.imsglobal.org/spec/md/v1p3/schema/xsd/imsmd_loose_v1p3p2.xsd  http://www.imsglobal.org/xsd/qti/qtiv3p0/imscp_v1p1 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqtiv3p0_imscpv1p2_v1p0.xsd" 
+                identifier="manifestID">
+    <imscp:metadata>
+        <imscp:schema>QTI Package</imscp:schema>
+        <imscp:schemaversion>3.0.0</imscp:schemaversion>
+    </imscp:metadata>
+    <imscp:organizations/>
+    <imscp:resources>
+        <imscp:resource identifier="InteractionMixSachsen_1901710679" type="imsqti_test_xmlv3p0" href="InteractionMixSachsen_1901710679.xml">
+            <imscp:metadata>
+                <lom xmlns="http://ltsc.ieee.org/xsd/LOM">
+                    <general>
+                        <identifier>
+                            <entry>InteractionMixSachsen_1901710679</entry>
+                        </identifier>
+                        <title>
+                            <string>Interaction Mix (Sachsen)</string>
+                        </title>
+                        <language>de</language>
+                    </general>
+                    <lifeCycle>
+                        <contribute>
+                            <role>
+                                <source>LOMv1.0</source>
+                                <qti-value>author</qti-value>
+                            </role>
+                            <entity>BEGIN:VCARD VERSION:3.0 N:Winkelmann;Yvonne FN:Yvonne
+                                Winkelmann ORG:BPS Bildungsportal Sachsen GmbH
+                                URL:http://bps-system.de TITLE: TEL;TYPE=WORK,VOICE:
+                                ADR;TYPE=intl,postal,parcel,work:;;;;;;EMAIL;TYPE=PREF,INTERNET:
+                                END:VCARD
+                            </entity>
+                        </contribute>
+                    </lifeCycle>
+                    <educational/>
+                </lom>
+            </imscp:metadata>
+            <imscp:file href="InteractionMixSachsen_1901710679.xml"/>
+            <imscp:file href="media/c2f541343b9b4bfdba9fc90c7a18403e.jpg"/>
+            <imscp:file href="media/71a299b50b5e4b1492f8ee51ce25be7d.jpg"/>
+            <imscp:file href="media/03c5e2f774db49598deb3ac7d05b53f9.jpg"/>
+            <imscp:file href="media/e18b5a2eb8104d0994a182ee0176a05c.jpg"/>
+            <imscp:file href="media/f88c5aa2c6724a388fdbadc7133eb757.jpg"/>
+            <imscp:file href="media/ffe337505ef74334a0cecb33310f99c1.jpg"/>
+            <imscp:file href="media/a439b702d5034ca38f6df26a12835db3.jpg"/>
+            <imscp:file href="media/2f44366716474a5d8e2a2e32346cbc05.jpg"/>
+            <imscp:file href="media/b660fc9f268c4ef688d8606116c70160.jpg"/>
+            <imscp:file href="media/0563e67fb1bb48ad882e0a5abf2a2686.jpg"/>
+            <imscp:dependency identifierref="Choicetruefalse_176040516"/>
+            <imscp:dependency identifierref="Choicesingle_853928446"/>
+            <imscp:dependency identifierref="Choicemultiple_2014410822"/>
+            <imscp:dependency identifierref="Choicemultiple_871212949"/>
+            <imscp:dependency identifierref="Hotspot_278940407"/>
+            <imscp:dependency identifierref="Order_913967682"/>
+            <imscp:dependency identifierref="Matchsingle_143114773"/>
+            <imscp:dependency identifierref="Matchmultiple_1038910213"/>
+            <imscp:dependency identifierref="TextEntry_883368511"/>
+            <imscp:dependency identifierref="TextEntrynumeric_2040297025"/>
+            <imscp:dependency identifierref="TextEntrynumeric_770468849"/>
+            <imscp:dependency identifierref="TextEntrysubset_806481421"/>
+            <imscp:dependency identifierref="Hottext_801974120"/>
+        </imscp:resource>
+        <imscp:resource identifier="Choicetruefalse_176040516" type="imsqti_item_xmlv3p0" href="Choicetruefalse_176040516.xml">
+            <imscp:metadata>
+                <lom xmlns="http://ltsc.ieee.org/xsd/LOM">
+                    <general>
+                        <identifier>
+                            <entry>Choicetruefalse_176040516</entry>
+                        </identifier>
+                        <title>
+                            <string>choice (true-false)</string>
+                        </title>
+                    </general>
+                    <educational/>
+                </lom>
+            </imscp:metadata>
+            <imscp:file href="Choicetruefalse_176040516.xml"/>
+        </imscp:resource>
+        <imscp:resource identifier="Choicesingle_853928446" type="imsqti_item_xmlv3p0" href="Choicesingle_853928446.xml">
+            <imscp:metadata>
+                <lom xmlns="http://ltsc.ieee.org/xsd/LOM">
+                    <general>
+                        <identifier>
+                            <entry>Choicesingle_853928446</entry>
+                        </identifier>
+                        <title>
+                            <string>choice (single)</string>
+                        </title>
+                    </general>
+                    <educational/>
+                </lom>
+            </imscp:metadata>
+            <imscp:file href="Choicesingle_853928446.xml"/>
+        </imscp:resource>
+        <imscp:resource identifier="Choicemultiple_2014410822" type="imsqti_item_xmlv3p0" href="Choicemultiple_2014410822.xml">
+            <imscp:metadata>
+                <lom xmlns="http://ltsc.ieee.org/xsd/LOM">
+                    <general>
+                        <identifier>
+                            <entry>Choicemultiple_2014410822</entry>
+                        </identifier>
+                        <title>
+                            <string>choice (multiple)</string>
+                        </title>
+                    </general>
+                    <educational/>
+                </lom>
+            </imscp:metadata>
+            <imscp:file href="Choicemultiple_2014410822.xml"/>
+        </imscp:resource>
+        <imscp:resource identifier="Choicemultiple_871212949" type="imsqti_item_xmlv3p0" href="Choicemultiple_871212949.xml">
+            <imscp:metadata>
+                <lom xmlns="http://ltsc.ieee.org/xsd/LOM">
+                    <general>
+                        <identifier>
+                            <entry>Choicemultiple_871212949</entry>
+                        </identifier>
+                        <title>
+                            <string>choice (multiple, point per answer)</string>
+                        </title>
+                    </general>
+                    <educational/>
+                </lom>
+            </imscp:metadata>
+            <imscp:file href="Choicemultiple_871212949.xml"/>
+        </imscp:resource>
+        <imscp:resource identifier="Hotspot_278940407" type="imsqti_item_xmlv3p0" href="Hotspot_278940407.xml">
+            <imscp:metadata>
+                <lom xmlns="http://ltsc.ieee.org/xsd/LOM">
+                    <general>
+                        <identifier>
+                            <entry>Hotspot_278940407</entry>
+                        </identifier>
+                        <title>
+                            <string>hotspot</string>
+                        </title>
+                    </general>
+                    <educational/>
+                </lom>
+            </imscp:metadata>
+            <imscp:file href="Hotspot_278940407.xml"/>
+        </imscp:resource>
+        <imscp:resource identifier="Order_913967682" type="imsqti_item_xmlv3p0" href="Order_913967682.xml">
+            <imscp:metadata>
+                <lom xmlns="http://ltsc.ieee.org/xsd/LOM">
+                    <general>
+                        <identifier>
+                            <entry>Order_913967682</entry>
+                        </identifier>
+                        <title>
+                            <string>order</string>
+                        </title>
+                    </general>
+                    <educational/>
+                </lom>
+            </imscp:metadata>
+            <imscp:file href="Order_913967682.xml"/>
+        </imscp:resource>
+        <imscp:resource identifier="Matchsingle_143114773" type="imsqti_item_xmlv3p0" href="Matchsingle_143114773.xml">
+            <imscp:metadata>
+                <lom xmlns="http://ltsc.ieee.org/xsd/LOM">
+                    <general>
+                        <identifier>
+                            <entry>
+                                Matchsingle_143114773
+                            </entry>                            
+                        </identifier>
+                        <title>
+                            <string>match (single)</string>
+                        </title>
+                    </general>
+                    <educational/>
+                </lom>
+            </imscp:metadata>
+            <imscp:file href="Matchsingle_143114773.xml"/>
+        </imscp:resource>
+        <imscp:resource identifier="Matchmultiple_1038910213" type="imsqti_item_xmlv3p0" href="Matchmultiple_1038910213.xml">
+            <imscp:metadata>
+                <lom xmlns="http://ltsc.ieee.org/xsd/LOM">
+                    <general>
+                        <identifier>
+                            <entry>
+                                Matchmultiple_1038910213
+                            </entry>
+                        </identifier>
+                        <title>
+                            <string>match (multiple)</string>
+                        </title>
+                    </general>
+                    <educational/>
+                </lom>
+            </imscp:metadata>
+            <imscp:file href="Matchmultiple_1038910213.xml"/>
+        </imscp:resource>
+        <imscp:resource identifier="TextEntry_883368511" type="imsqti_item_xmlv3p0" href="TextEntry_883368511.xml">
+            <imscp:metadata>
+                <lom xmlns="http://ltsc.ieee.org/xsd/LOM">
+                    <general>
+                        <identifier>
+                            <entry>TextEntry_883368511</entry>
+                        </identifier>
+                        <title>
+                            <string>textEntry</string>
+                        </title>
+                    </general>
+                    <educational/>
+                </lom>
+            </imscp:metadata>
+            <imscp:file href="TextEntry_883368511.xml"/>
+        </imscp:resource>
+        <imscp:resource identifier="TextEntrynumeric_2040297025" type="imsqti_item_xmlv3p0" href="TextEntrynumeric_2040297025.xml">
+            <imscp:metadata>
+                <lom xmlns="http://ltsc.ieee.org/xsd/LOM">
+                    <general>
+                        <identifier>
+                            <entry>TextEntrynumeric_2040297025</entry>
+                        </identifier>
+                        <title>
+                            <string>textEntry (numeric)</string>
+                        </title>
+                    </general>
+                    <educational/>
+                </lom>
+            </imscp:metadata>
+            <imscp:file href="TextEntrynumeric_2040297025.xml"/>
+        </imscp:resource>
+        <imscp:resource identifier="TextEntrynumeric_770468849" type="imsqti_item_xmlv3p0" href="TextEntrynumeric_770468849.xml">
+            <imscp:metadata>
+                <lom xmlns="http://ltsc.ieee.org/xsd/LOM">
+                    <general>
+                        <identifier>
+                            <entry>TextEntrynumeric_770468849</entry>
+                        </identifier>
+                        <title>
+                            <string>textEntry (numeric, relative)</string>
+                        </title>
+                    </general>
+                    <educational/>
+                </lom>
+            </imscp:metadata>
+            <imscp:file href="TextEntrynumeric_770468849.xml"/>
+        </imscp:resource>
+        <imscp:resource identifier="TextEntrysubset_806481421" type="imsqti_item_xmlv3p0" href="TextEntrysubset_806481421.xml">
+            <imscp:metadata>
+                <lom xmlns="http://ltsc.ieee.org/xsd/LOM">
+                    <general>
+                        <identifier>
+                            <entry>TextEntrysubset_806481421</entry>
+                        </identifier>
+                        <title>
+                            <string>textEntry (subset)</string>
+                        </title>
+                    </general>
+                    <educational/>
+                </lom>
+            </imscp:metadata>
+            <imscp:file href="TextEntrysubset_806481421.xml"/>
+        </imscp:resource>
+        <imscp:resource identifier="Hottext_801974120" type="imsqti_item_xmlv3p0" href="Hottext_801974120.xml">
+            <imscp:metadata>
+                <lom xmlns="http://ltsc.ieee.org/xsd/LOM">
+                    <general>
+                        <identifier>
+                            <entry>Hottext_801974120</entry>
+                        </identifier>
+                        <title>
+                            <string>hottext</string>
+                        </title>
+                    </general>
+                    <educational/>
+                </lom>
+            </imscp:metadata>
+            <imscp:file href="Hottext_801974120.xml"/>
+        </imscp:resource>
+    </imscp:resources>
+</imscp:manifest>

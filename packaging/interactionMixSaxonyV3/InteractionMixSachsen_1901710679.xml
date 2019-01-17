@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--This file was created using: Onyx Editor, Version 3.4.3 (Full, licensed version), (c)2012 BPS Bildungsportal Sachsen GmbH-->
+<qti-assessment-test xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation=" http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd " identifier="InteractionMixSachsen_1901710679" title="Interaction Mix (Sachsen)">
+	<qti-outcome-declaration identifier="SCORE" cardinality="single" base-type="float">
+		<qti-default-value>
+			<qti-value>0.0</qti-value>
+		</qti-default-value>
+	</qti-outcome-declaration>
+	<qti-outcome-declaration identifier="MAXSCORE" cardinality="single" base-type="float">
+		<qti-default-value>
+			<qti-value>18.0</qti-value>
+		</qti-default-value>
+	</qti-outcome-declaration>
+	<qti-test-part identifier="testpartID" navigation-mode="nonlinear" submission-mode="individual">
+		<qti-assessment-section identifier="Sektion_181865064" fixed="false" title="Sektion" visible="false">
+			<qti-assessment-item-ref identifier="Choicetruefalse_176040516" href="Choicetruefalse_176040516.xml" fixed="false"/>
+			<qti-assessment-item-ref identifier="Choicesingle_853928446" href="Choicesingle_853928446.xml" fixed="false"/>
+			<qti-assessment-item-ref identifier="Choicemultiple_2014410822" href="Choicemultiple_2014410822.xml" fixed="false"/>
+			<qti-assessment-item-ref identifier="Choicemultiple_871212949" href="Choicemultiple_871212949.xml" fixed="false"/>
+			<qti-assessment-item-ref identifier="Hotspot_278940407" href="Hotspot_278940407.xml" fixed="false"/>
+			<qti-assessment-item-ref identifier="Order_913967682" href="Order_913967682.xml" fixed="false"/>
+			<qti-assessment-item-ref identifier="Matchsingle_143114773" href="Matchsingle_143114773.xml" fixed="false"/>
+			<qti-assessment-item-ref identifier="Matchmultiple_1038910213" href="Matchmultiple_1038910213.xml" fixed="false"/>
+			<qti-assessment-item-ref identifier="TextEntry_883368511" href="TextEntry_883368511.xml" fixed="false"/>
+			<qti-assessment-item-ref identifier="TextEntrynumeric_2040297025" href="TextEntrynumeric_2040297025.xml" fixed="false"/>
+			<qti-assessment-item-ref identifier="TextEntrynumeric_770468849" href="TextEntrynumeric_770468849.xml" fixed="false"/>
+			<qti-assessment-item-ref identifier="TextEntrysubset_806481421" href="TextEntrysubset_806481421.xml" fixed="false"/>
+			<qti-assessment-item-ref identifier="Hottext_801974120" href="Hottext_801974120.xml" fixed="false"/>
+		</qti-assessment-section>
+	</qti-test-part>
+	<qti-outcome-processing>
+		<qti-set-outcome-value identifier="SCORE">
+			<qti-sum>
+				<qti-test-variables variable-identifier="SCORE"/>
+			</qti-sum>
+		</qti-set-outcome-value>
+	</qti-outcome-processing>
+</qti-assessment-test>
