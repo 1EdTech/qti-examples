@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest xmlns="http://www.imsglobal.org/xsd/qti/qtiv3p0/imscp_v1p1" xmlns:imsmd="http://ltsc.ieee.org/xsd/LOM" xmlns:imsqti="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" identifier="MANIFEST-QTI-1" xsi:schemaLocation=" http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd  http://ltsc.ieee.org/xsd/LOM https://purl.imsglobal.org/spec/md/v1p3/schema/xsd/imsmd_loose_v1p3p2.xsd  http://www.imsglobal.org/xsd/qti/qtiv3p0/imscp_v1p1 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqtiv3p0_imscpv1p2_v1p0.xsd ">
+    <metadata>
+        <schema>QTI Package</schema>
+        <schemaversion>3.0.0</schemaversion>
+    </metadata>	
+    <organizations/>
+    <resources>
+        <resource identifier="choice" type="imsqti_item_xmlv3p0" href="choice.xml">
+            <metadata>
+                <imsqti:qtiMetadata>
+                    <imsqti:timeDependent>false</imsqti:timeDependent>
+                    <imsqti:interactionType>choiceInteraction</imsqti:interactionType>
+                    <imsqti:feedbackType>nonadaptive</imsqti:feedbackType>
+                    <imsqti:solutionAvailable>true</imsqti:solutionAvailable>
+                    <imsqti:toolName>XMLSPY</imsqti:toolName>
+                    <imsqti:toolVersion>5.4</imsqti:toolVersion>
+                    <imsqti:toolVendor>ALTOVA</imsqti:toolVendor>
+                </imsqti:qtiMetadata>
+                <imsmd:lom>
+                    <imsmd:general>
+                        <imsmd:identifier>
+                            <imsmd:entry>qti_v2_item_01</imsmd:entry>
+                        </imsmd:identifier>
+                        <imsmd:title>
+                            <imsmd:string language="en">Metadata Example Item #1</imsmd:string>
+                        </imsmd:title>
+                        <imsmd:description>
+                            <imsmd:string language="en">This is a dummy item</imsmd:string>
+                        </imsmd:description>
+                    </imsmd:general>
+                    <imsmd:lifeCycle>
+                        <imsmd:version>
+                            <imsmd:string language="en">1.0.1</imsmd:string>
+                        </imsmd:version>
+                        <imsmd:status>
+                            <imsmd:source>LOMv1.0</imsmd:source>
+                            <imsmd:value>Draft</imsmd:value>
+                        </imsmd:status>
+                    </imsmd:lifeCycle>
+                    <imsmd:metaMetadata>
+                        <imsmd:metadataschema>LOMv1.0</imsmd:metadataschema>
+                        <imsmd:metadataschema>QTIv3.0</imsmd:metadataschema>
+                        <imsmd:language>en</imsmd:language>
+                    </imsmd:metaMetadata>
+                    <imsmd:technical>
+                        <imsmd:format>text/x-imsqti-item-xml</imsmd:format>
+                        <imsmd:format>image/png</imsmd:format>
+                    </imsmd:technical>
+                </imsmd:lom>
+            </metadata>
+            <file href="choice.xml"/>
+            <file href="images/sign.png"/>
+        </resource>
+    </resources>
+</manifest>
