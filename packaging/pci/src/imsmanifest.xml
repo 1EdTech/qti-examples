@@ -2,12 +2,12 @@
 <manifest 
     xmlns="http://www.imsglobal.org/xsd/qti/qtiv3p0/imscp_v1p1" 
     xmlns:lom="http://ltsc.ieee.org/xsd/LOM" 
-          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
     xmlns:imsqti="http://www.imsglobal.org/xsd/imsqti_metadata_v3p0" 
     xsi:schemaLocation="http://ltsc.ieee.org/xsd/LOM https://purl.imsglobal.org/spec/md/v1p3/schema/xsd/imsmd_loose_v1p3p2.xsd
     http://www.imsglobal.org/xsd/qti/qtiv3p0/imscp_v1p1 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqtiv3p0_imscpv1p2_v1p0.xsd
     http://www.imsglobal.org/xsd/imsqti_metadata_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_metadatav3p0_v1p0.xsd" 
-          identifier="PCI_Example">
+    identifier="PCI_Example">
     <metadata>
         <schema>QTI Package</schema>
         <schemaversion>3.0.0</schemaversion>
@@ -92,7 +92,7 @@
             <file href="modules/lib/eve.js" />
             <file href="modules/lib/raphael.js"/>
             <!-- jQuery is loaded from a CDN, not referenced from the package.
-                 No module resolution configuration file is referenced -->
+            No module resolution configuration file is referenced -->
         </resource>
         <resource type="imsqti_item_xmlv3p0" identifier="fractions-primary-configuration" 
                   href="fractions_deps_2.xml">
@@ -107,7 +107,7 @@
             <file href="modules/lib/jquery-2.2.2.min.js"/>
             <dependency identifierref="hmh_pci_module_resolution" />
             <!-- jQuery is loaded from a CDN, not referenced from the package.
-                 No module resolution configuration file is referenced -->
+            No module resolution configuration file is referenced -->
         </resource>
         <resource type="webcontent" identifier="hmh_pci_module_resolution" 
                   href="modules/hmh_co_com.js">
