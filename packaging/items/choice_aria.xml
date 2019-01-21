@@ -13,7 +13,7 @@
   <qti-item-body>
     <p>Examine the following survey map.</p>
     <p>
-      <img src="images/survey.jpg" alt="Survey map with angles" aria-describedBy="imgdesc1"/>
+      <img src="images/survey.jpg" alt="Survey map with angles" aria-describedby="imgdesc1"/>
     </p>
     <div id="imgdesc1">Two surveyors, A and P, stand some distance apart on the south bank of a river, looking at a tree, T, that is on the north bank of the river. Points A, P, and T form a triangle. At points A and P, there are two parallel sight lines pointing north and forming angles outside of the triangle. At point P, angle <span aria-label="T P A">TPA</span> is 53 degrees. The adjacent angle between PT and the northern sight line is 37 degrees. At point A, angle TAP is not labeled, and the adjacent angle formed between AT and that northern sight line is 32 degrees.</div>
     <div role="note">
