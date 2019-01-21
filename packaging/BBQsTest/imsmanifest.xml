@@ -292,7 +292,7 @@
                         <imsmd:size>10240</imsmd:size>
                         <imsmd:location/>
                         <imsmd:otherPlatformRequirements>
-                            <imsmd:string xml:lang="en">QTIv2.1</imsmd:string>
+                            <imsmd:string xml:lang="en">QTIv3.0</imsmd:string>
                         </imsmd:otherPlatformRequirements>
                     </imsmd:technical>
                     <imsmd:educational>
