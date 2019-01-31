@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" adaptive="true" identifier="Example03-feedbackBlock-solution" time-dependent="false" title="Example 3 - Using feedbackBlock to show a solution" tool-name="Mathqurate" tool-version="0.9.7b" xsi:schemaLocation=" http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd ">
+<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:m="http://www.w3.org/1998/Math/MathML" 
+                     xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+                     adaptive="true" identifier="Example03-feedbackBlock-solution" time-dependent="false" title="Example 3 - Using feedbackBlock to show a solution" tool-name="Mathqurate" tool-version="0.9.7b" 
+                     xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd http://www.w3.org/1998/Math/MathML https://purl.imsglobal.org/spec/mathml/v2p0/schema/xsd/mathml2.xsd http://www.w3.org/2001/XInclude https://purl.imsglobal.org/spec/w3/2001/schema/xsd/XInclude.xsd">
     <qti-response-declaration base-type="float" cardinality="single" identifier="RESPONSE">
         <qti-correct-response>
             <qti-value>7.389</qti-value>
@@ -53,55 +56,63 @@
                 </table>
             </div>
             <!-- this feedbackBlock contains the solution -->
-            <qti-feedback-block identifier="SOLUTION" outcome-identifier="FEEDBACK" show-hide="show"><qti-content-body>
-                <div class="">
-                    <m:math display="block" id="mathML1">
-                        <m:semantics>
-                            <m:mtable>
-                                <m:mtr>
-                                    <m:mtd columnalign="right">
-                                        <m:msup>
-                                            <m:mi>e</m:mi>
-                                            <m:mn>2</m:mn>
-                                        </m:msup>
-                                    </m:mtd>
-                                    <m:mtd columnalign="center">
-                                        <m:mo>=</m:mo>
-                                    </m:mtd>
-                                    <m:mtd columnalign="left">
-                                        <m:mi>exp</m:mi>
-                                        <m:mfenced close=")" open="(">
-                                            <m:mn>2</m:mn>
-                                        </m:mfenced>
-                                    </m:mtd>
-                                </m:mtr>
-                                <m:mtr>
-                                    <m:mtd columnalign="right"/>
-                                    <m:mtd columnalign="center">
-                                        <m:mo>=</m:mo>
-                                    </m:mtd>
-                                    <m:mtd columnalign="left">
-                                        <m:mn>7.389</m:mn>
-                                    </m:mtd>
-                                </m:mtr>
-                            </m:mtable>
-                            <m:annotation encoding="SnuggleTeX">\begin{eqnarray*}e^2 &amp;=&amp;
-                                \exp(2)\\ &amp;=&amp; 7.389\end{eqnarray*}</m:annotation>
-                        </m:semantics>
-                    </m:math>
-                </div>
+            <qti-feedback-block identifier="SOLUTION" outcome-identifier="FEEDBACK" show-hide="show">
+                <qti-content-body>
+                    <div class="">
+                        <m:math display="block" id="mathML1">
+                            <m:semantics>
+                                <m:mtable>
+                                    <m:mtr>
+                                        <m:mtd columnalign="right">
+                                            <m:msup>
+                                                <m:mi>e</m:mi>
+                                                <m:mn>2</m:mn>
+                                            </m:msup>
+                                        </m:mtd>
+                                        <m:mtd columnalign="center">
+                                            <m:mo>=</m:mo>
+                                        </m:mtd>
+                                        <m:mtd columnalign="left">
+                                            <m:mi>exp</m:mi>
+                                            <m:mfenced close=")" open="(">
+                                                <m:mn>2</m:mn>
+                                            </m:mfenced>
+                                        </m:mtd>
+                                    </m:mtr>
+                                    <m:mtr>
+                                        <m:mtd columnalign="right"/>
+                                        <m:mtd columnalign="center">
+                                            <m:mo>=</m:mo>
+                                        </m:mtd>
+                                        <m:mtd columnalign="left">
+                                            <m:mn>7.389</m:mn>
+                                        </m:mtd>
+                                    </m:mtr>
+                                </m:mtable>
+                                <m:annotation encoding="SnuggleTeX">\begin{eqnarray*}e^2 &amp;=&amp;
+                                    \exp(2)\\ &amp;=&amp; 7.389\end{eqnarray*}</m:annotation>
+                            </m:semantics>
+                        </m:math>
+                    </div>
             
-</qti-content-body></qti-feedback-block>
+                </qti-content-body>
+            </qti-feedback-block>
             <!-- Explain why the score is zero (after viewing solution) -->
-            <qti-feedback-block identifier="SEEN-SOLUTION" outcome-identifier="FEEDBACK" show-hide="show"><qti-content-body>
-                <p> Since you have viewed the solution, your score for this question will be 0. </p>
+            <qti-feedback-block identifier="SEEN-SOLUTION" outcome-identifier="FEEDBACK" show-hide="show">
+                <qti-content-body>
+                    <p> Since you have viewed the solution, your score for this question will be 0. </p>
             
-</qti-content-body></qti-feedback-block>
+                </qti-content-body>
+            </qti-feedback-block>
             <!-- show the solution button -->
-            <qti-feedback-block identifier="asksolution" outcome-identifier="ASKSOLUTION" show-hide="show"><qti-content-body>
-                <p><qti-end-attempt-interaction response-identifier="SOLREQUEST" title="Show Solution"/></p>
+            <qti-feedback-block identifier="asksolution" outcome-identifier="ASKSOLUTION" show-hide="show">
+                <qti-content-body>
+                    <p>
+                        <qti-end-attempt-interaction response-identifier="SOLREQUEST" title="Show Solution"/>
+                    </p>
             
-</qti-content-body></qti-feedback-block>
+                </qti-content-body>
+            </qti-feedback-block>
         </div>
     </qti-item-body>
     <qti-response-processing>

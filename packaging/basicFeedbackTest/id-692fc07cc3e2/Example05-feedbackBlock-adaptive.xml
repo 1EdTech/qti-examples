@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<qti-assessment-item tool-version="0.5.1" tool-name="Mathqurate" title="Adaptive - choice of input type" time-dependent="false" identifier="Example05-feedbackBlock-adaptive" adaptive="true" xsi:schemaLocation=" http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd " xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<qti-assessment-item tool-version="0.5.1" tool-name="Mathqurate" title="Adaptive - choice of input type" time-dependent="false" 
+                     identifier="Example05-feedbackBlock-adaptive" adaptive="true" 
+                     xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd http://www.w3.org/1998/Math/MathML https://purl.imsglobal.org/spec/mathml/v2p0/schema/xsd/mathml2.xsd http://www.w3.org/2001/XInclude https://purl.imsglobal.org/spec/w3/2001/schema/xsd/XInclude.xsd" 
+                     xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <qti-response-declaration identifier="RESPONSE1" cardinality="single" base-type="identifier"/>
     <qti-response-declaration identifier="RESPONSE21" cardinality="single" base-type="identifier">
         <qti-correct-response>
