@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<usageData xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+           xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqti_usagedata_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/qti/qtiv2p2/imsqti_usagedata_v3p0.xsd">
+    <ordinaryStatistic name="AIS" context="http://ntweb.ets.org/itemStats/Context/XVZ2004_J1B" caseCount="689325" stdError="0.0022" lastUpdated="2004-07-04">
+        <targetObject identifier="Item_VB123456"/>
+        <value>0.87</value>
+    </ordinaryStatistic>
+    <ordinaryStatistic name="P-value" context="http://ntweb.ets.org/itemStats/Context/XVZ2004_J1B" caseCount="689325" stdError="0.0022" lastUpdated="2004-07-04">
+        <targetObject identifier="Item_VB123456"/>
+        <value>0.647</value>
+    </ordinaryStatistic>
+    <ordinaryStatistic name="PHI" context="http://ntweb.ets.org/itemStats/Context/XVZ2004_J1B" caseCount="689325" stdError="0.0022" lastUpdated="2004-07-04">
+        <targetObject identifier="Item_VB123456"/>
+        <value>0.3687</value>
+    </ordinaryStatistic>
+    <ordinaryStatistic name="rbis" context="http://ntweb.ets.org/itemStats/Context/XVZ2004_J1B" caseCount="689325" stdError="0.0022" lastUpdated="2004-07-04">
+        <targetObject identifier="Item_VB123456"/>
+        <value>0.2837</value>
+    </ordinaryStatistic>
+    <ordinaryStatistic name="PTbis" context="http://ntweb.ets.org/itemStats/Context/XVZ2004_J1B" caseCount="689325" stdError="0.0022" lastUpdated="2004-07-04">
+        <targetObject identifier="Item_VB123456"/>
+        <value>0.3122</value>
+    </ordinaryStatistic>
+    <ordinaryStatistic name="Polyserial" context="http://ntweb.ets.org/itemStats/Context/XVZ2004_J1B" caseCount="689325" stdError="0.0022" lastUpdated="2004-07-04">
+        <targetObject identifier="Item_VB123456"/>
+        <value>0.15556</value>
+    </ordinaryStatistic>
+    <ordinaryStatistic name="A-Parm" context="http://ntweb.ets.org/itemStats/Context/XVZ2004_J1B" caseCount="689325" stdError="0.0022" lastUpdated="2004-07-04">
+        <targetObject identifier="Item_VB123456"/>
+        <value>0.02083</value>
+    </ordinaryStatistic>
+    <ordinaryStatistic name="B-Parm" context="http://ntweb.ets.org/itemStats/Context/XVZ2004_J1B" caseCount="689325" stdError="0.0022" lastUpdated="2004-07-04">
+        <targetObject identifier="Item_VB123456"/>
+        <value>384.3477</value>
+    </ordinaryStatistic>
+    <ordinaryStatistic name="C-Parm" context="http://ntweb.ets.org/itemStats/Context/XVZ2004_J1B" caseCount="689325" stdError="0.0022" lastUpdated="2004-07-04">
+        <targetObject identifier="Item_VB123456"/>
+        <value>0.2275</value>
+    </ordinaryStatistic>
+    <categorizedStatistic name="D-Parm" context="http://ntweb.ets.org/itemStats/Context/XVZ2004_J1B" caseCount="689325" stdError="0.0022" lastUpdated="2004-07-04">
+        <targetObject identifier="Item_VB123456"/>
+        <mapping lower-bound="1" upper-bound="4" default-value="0">
+            <mapEntry mapKey="d1" mappedValue="412.5267"/>
+            <mapEntry mapKey="d2" mappedValue="426.5699"/>
+            <mapEntry mapKey="d3" mappedValue="451.8811"/>
+            <mapEntry mapKey="d4" mappedValue="441.8085"/>
+        </mapping>
+    </categorizedStatistic>
+    <ordinaryStatistic name="AIS-Response" glossary="http://www.imsglobal.org/question/qti_2p0/glossaries/distractor_statistics" context="http://ntweb.ets.org/itemStats/Context/XVZ2004_J1B" caseCount="689325" stdError="0.0022" lastUpdated="2004-07-04">
+        <targetObject identifier="Item_VB123456" partIdentifier="A"/>
+        <value>0.21</value>
+    </ordinaryStatistic>
+    <ordinaryStatistic name="AIS-Response" glossary="http://www.imsglobal.org/question/qti_2p0/glossaries/distractor_statistics" context="http://ntweb.ets.org/itemStats/Context/XVZ2004_J1B" caseCount="689325" stdError="0.0022" lastUpdated="2004-07-04">
+        <targetObject identifier="Item_VB123456" partIdentifier="B"/>
+        <value>0.17</value>
+    </ordinaryStatistic>
+    <ordinaryStatistic name="AIS-Response" glossary="http://www.imsglobal.org/question/qti_2p0/glossaries/distractor_statistics" context="http://ntweb.ets.org/itemStats/Context/XVZ2004_J1B" caseCount="689325" stdError="0.0022" lastUpdated="2004-07-04">
+        <targetObject identifier="Item_VB123456" partIdentifier="C"/>
+        <value>0.05</value>
+    </ordinaryStatistic>
+    <ordinaryStatistic name="AIS-Response" glossary="http://www.imsglobal.org/question/qti_2p0/glossaries/distractor_statistics" context="http://ntweb.ets.org/itemStats/Context/XVZ2004_J1B" caseCount="689325" stdError="0.0022" lastUpdated="2004-07-04">
+        <targetObject identifier="Item_VB123456" partIdentifier="D"/>
+        <value>0.92</value>
+    </ordinaryStatistic>
+    <ordinaryStatistic name="AIS-Response" glossary="http://www.imsglobal.org/question/qti_2p0/glossaries/distractor_statistics" context="http://ntweb.ets.org/itemStats/Context/XVZ2004_J1B" caseCount="689325" stdError="0.0022" lastUpdated="2004-07-04">
+        <targetObject identifier="Item_VB123456" partIdentifier="E"/>
+        <value>0.46</value>
+    </ordinaryStatistic>
+    <ordinaryStatistic name="Fifths_Table_Lowest" context="http://ntweb.ets.org/itemStats/Context/XVZ2004_J1B" caseCount="689325" stdError="0.0022" lastUpdated="2004-07-04">
+        <targetObject identifier="Item_VB123456" partIdentifier="A"/>
+        <value>0</value>
+    </ordinaryStatistic>
+    <ordinaryStatistic name="Fifths_Table_Second_Lowest" context="http://ntweb.ets.org/itemStats/Context/XVZ2004_J1B" caseCount="689325" stdError="0.0022" lastUpdated="2004-07-04">
+        <targetObject identifier="Item_VB123456" partIdentifier="A"/>
+        <value>465</value>
+    </ordinaryStatistic>
+    <ordinaryStatistic name="Fifths_Table_Middle" context="http://ntweb.ets.org/itemStats/Context/XVZ2004_J1B" caseCount="689325" stdError="0.0022" lastUpdated="2004-07-04">
+        <targetObject identifier="Item_VB123456" partIdentifier="A"/>
+        <value>2077</value>
+    </ordinaryStatistic>
+    <ordinaryStatistic name="Fifths_Table_Second_Highest" context="http://ntweb.ets.org/itemStats/Context/XVZ2004_J1B" caseCount="689325" stdError="0.0022" lastUpdated="2004-07-04">
+        <targetObject identifier="Item_VB123456" partIdentifier="A"/>
+        <value>101101</value>
+    </ordinaryStatistic>
+    <ordinaryStatistic name="Fifths_Table_Highest" context="http://ntweb.ets.org/itemStats/Context/XVZ2004_J1B" caseCount="689325" stdError="0.0022" lastUpdated="2004-07-04">
+        <targetObject identifier="Item_VB123456" partIdentifier="A"/>
+        <value>585678</value>
+    </ordinaryStatistic>
+    <ordinaryStatistic name="Fifths_Table_Lowest" context="http://ntweb.ets.org/itemStats/Context/XVZ2004_J1B" caseCount="689325" stdError="0.0022" lastUpdated="2004-07-04">
+        <targetObject identifier="Item_VB123456" partIdentifier="B"/>
+        <value>100200</value>
+    </ordinaryStatistic>
+    <ordinaryStatistic name="Fifths_Table_Second_Lowest" context="http://ntweb.ets.org/itemStats/Context/XVZ2004_J1B" caseCount="689325" stdError="0.0022" lastUpdated="2004-07-04">
+        <targetObject identifier="Item_VB123456" partIdentifier="B"/>
+        <value>100300</value>
+    </ordinaryStatistic>
+    <ordinaryStatistic name="Fifths_Table_Middle" context="http://ntweb.ets.org/itemStats/Context/XVZ2004_J1B" caseCount="689325" stdError="0.0022" lastUpdated="2004-07-04">
+        <targetObject identifier="Item_VB123456" partIdentifier="B"/>
+        <value>100400</value>
+    </ordinaryStatistic>
+    <ordinaryStatistic name="Fifths_Table_Second_Highest" context="http://ntweb.ets.org/itemStats/Context/XVZ2004_J1B" caseCount="689325" stdError="0.0022" lastUpdated="2004-07-04">
+        <targetObject identifier="Item_VB123456" partIdentifier="B"/>
+        <value>100500</value>
+    </ordinaryStatistic>
+    <ordinaryStatistic name="Fifths_Table_Highest" context="http://ntweb.ets.org/itemStats/Context/XVZ2004_J1B" caseCount="689325" stdError="0.0022" lastUpdated="2004-07-04">
+        <targetObject identifier="Item_VB123456" partIdentifier="B"/>
+        <value>200222</value>
+    </ordinaryStatistic>
+    <categorizedStatistic name="Score_Conversion" context="http://ntweb.ets.org/itemStats/Context/XVZ2004_J1B" caseCount="689325" stdError="0.0022" lastUpdated="2004-07-04">
+        <targetObject identifier="Test_VB"/>
+        <mapping lower-bound="1" upper-bound="9" default-value="0">
+            <mapEntry mapKey="0" mappedValue="0.0"/>
+            <mapEntry mapKey="1" mappedValue="0.5"/>
+            <mapEntry mapKey="2" mappedValue="1.0"/>
+            <mapEntry mapKey="3" mappedValue="1.5"/>
+            <mapEntry mapKey="4" mappedValue="2.0"/>
+            <mapEntry mapKey="5" mappedValue="2.5"/>
+            <mapEntry mapKey="6" mappedValue="3.0"/>
+            <mapEntry mapKey="7" mappedValue="3.5"/>
+            <mapEntry mapKey="8" mappedValue="4.0"/>
+        </mapping>
+    </categorizedStatistic>
+</usageData>
