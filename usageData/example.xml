@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<usageData xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-           xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqti_usagedata_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/qti/qtiv2p2/imsqti_usagedata_v3p0.xsd">
+<usageData xmlns="http://www.imsglobal.org/xsd/imsqti_usagedata_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+           xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqti_usagedata_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_usagedatav3p0_v1p0.xsd">
     <ordinaryStatistic name="AIS" context="http://ntweb.ets.org/itemStats/Context/XVZ2004_J1B" caseCount="689325" stdError="0.0022" lastUpdated="2004-07-04">
         <targetObject identifier="Item_VB123456"/>
         <value>0.87</value>
