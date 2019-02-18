@@ -94,7 +94,7 @@
                 </imsmd:learningResourceType>
                 <imsmd:context>
                     <imsmd:source>LOMv1.0</imsmd:source>
-                    <imsmd:value>>higher education</imsmd:value>
+                    <imsmd:value>higher education</imsmd:value>
                 </imsmd:context>
                 <imsmd:description>
                     <imsmd:string xml:lang="x-none">A test</imsmd:string>
@@ -146,7 +146,7 @@
             </imsmd:classification>
             <imsmd:classification>
                 <imsmd:purpose>
-                    <imsmd:source>>imsmdv1.0</imsmd:source>
+                    <imsmd:source>imsmdv1.0</imsmd:source>
                     <imsmd:value>Discipline</imsmd:value>
                 </imsmd:purpose>
                 <imsmd:taxonPath>
