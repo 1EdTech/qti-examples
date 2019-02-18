@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<qti-assessment-test xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:m="http://www.w3.org/1998/Math/MathML"
+                     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+                     xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd http://www.w3.org/2001/XInclude https://purl.imsglobal.org/spec/w3/2001/schema/xsd/XInclude.xsd http://www.w3.org/1998/Math/MathML https://purl.imsglobal.org/spec/mathml/v2p0/schema/xsd/mathml2.xsd"
+                     title="Test with LTI launched items" identifier="TestWithLti">
+    <qti-outcome-declaration base-type="float" cardinality="single" identifier="TEST_total">
+        <qti-default-value>
+            <qti-value>0.0</qti-value>
+        </qti-default-value>
+    </qti-outcome-declaration>
+    <qti-test-part submission-mode="simultaneous" navigation-mode="nonlinear" identifier="TP">
+        <qti-assessment-section identifier="S1" visible="true" title="Section 1">
+            <qti-rubric-block view="candidate" use="instructions">
+                <qti-content-body>
+                    <div>Two items, which are delivered by a separate assessment engine vi LTI</div>
+                </qti-content-body>
+            </qti-rubric-block>
+            <qti-assessment-item-ref identifier="i853928446" href="links/Choicesingle_853928446.xml"/>
+            <qti-assessment-item-ref identifier="i09f742081" href="links/item1.xml"/>
+        </qti-assessment-section>
+    </qti-test-part>
+    <qti-outcome-processing>
+        <qti-set-outcome-value identifier="TEST_total">
+            <qti-sum>
+                <qti-test-variables base-type="float" variable-identifier="SCORE"/>
+            </qti-sum>
+        </qti-set-outcome-value>
+    </qti-outcome-processing>
+</qti-assessment-test>

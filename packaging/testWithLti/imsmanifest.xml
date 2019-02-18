@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<manifest xmlns="http://www.imsglobal.org/xsd/qti/qtiv3p0/imscp_v1p1" xmlns:imsmd="http://ltsc.ieee.org/xsd/LOM" 
+          xmlns:imsqti="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+          xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd http://ltsc.ieee.org/xsd/LOM https://purl.imsglobal.org/spec/md/v1p3/schema/xsd/imsmd_loose_v1p3p2.xsd  http://www.imsglobal.org/xsd/qti/qtiv3p0/imscp_v1p1 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqtiv3p0_imscpv1p2_v1p0.xsd" 
+          identifier="ltiTest">
+    <metadata>
+        <schema>QTI Package</schema>
+        <schemaversion>3.0.0</schemaversion>
+        <imsmd:lom>
+            <imsmd:general>
+                <imsmd:identifier><imsmd:entry>LTITest-01</imsmd:entry></imsmd:identifier>
+                <imsmd:title>
+                    <imsmd:string language="en">Simple Test with LTI items</imsmd:string>
+                </imsmd:title>
+                <imsmd:language>en</imsmd:language>
+                <imsmd:description>
+                    <imsmd:string language="en">Test using LTI launched items</imsmd:string>
+                </imsmd:description>
+                <imsmd:keyword>
+                    <imsmd:string language="en">test</imsmd:string>
+                </imsmd:keyword>
+                <imsmd:keyword>
+                    <imsmd:string language="en">lti</imsmd:string>
+                </imsmd:keyword>
+            </imsmd:general>
+            <imsmd:technical>
+                <imsmd:format>text/x-imsqti-test-xml</imsmd:format>
+                <imsmd:location/>
+                <imsmd:otherPlatformRequirements>
+                    <imsmd:string language="en">QTIv3.0</imsmd:string>
+                    <imsmd:string language="en">LTIv1.1</imsmd:string>
+                </imsmd:otherPlatformRequirements>
+            </imsmd:technical>
+            <imsmd:educational>
+                <imsmd:learningResourceType>
+                    <imsmd:source>RDNLTSNType</imsmd:source>
+                    <imsmd:value>ExaminationTest</imsmd:value>
+                </imsmd:learningResourceType>
+                <imsmd:context>
+                    <imsmd:source>LOMv1.0</imsmd:source>
+                    <imsmd:value>k12 education</imsmd:value>
+                </imsmd:context>
+                <imsmd:language>en</imsmd:language>
+            </imsmd:educational>
+            <imsmd:rights>
+                <imsmd:copyrightAndOtherRestrictions>
+                    <imsmd:source>LOMv1.0</imsmd:source>
+                    <imsmd:value>yes</imsmd:value>
+                </imsmd:copyrightAndOtherRestrictions>
+                <imsmd:description>
+                    <imsmd:string language="en">{{CC-URL}}</imsmd:string>
+                </imsmd:description>
+            </imsmd:rights>
+        </imsmd:lom>
+    </metadata>
+    <organizations/>
+    <resources>
+        <resource href="assessment.xml" type="imsqti_test_xmlv3p0" identifier="TEST">
+            <file href="assessment.xml"/>
+            <dependency identifierref="i853928446"/>
+            <dependency identifierref="i09f742081"/>
+        </resource>
+        <resource href="links/Choicesingle_853928446.xml" type="imslti_xmlv1p1" identifier="i853928446">
+            <metadata>
+                <imsqti:qtiMetadata>
+                    <imsqti:timeDependent>false</imsqti:timeDependent>
+                    <imsqti:interactionType>choiceInteraction</imsqti:interactionType>
+                    <imsqti:feedbackType>nonadaptive</imsqti:feedbackType>
+                    <imsqti:solutionAvailable>false</imsqti:solutionAvailable>
+                </imsqti:qtiMetadata>
+                <imsmd:lom>
+                    <imsmd:general>
+                        <imsmd:description>
+                            <imsmd:string language="en">This item is accessed via an LTI resource link.</imsmd:string>
+                        </imsmd:description>
+                    </imsmd:general>
+                </imsmd:lom>
+            </metadata>
+            <file href="links/Choicesingle_853928446.xml"/>
+        </resource>
+        <resource href="links/item1.xml" type="imslti_xmlv1p1" identifier="i09f742081">
+            <metadata>
+                <imsqti:qtiMetadata>
+                    <imsqti:timeDependent>false</imsqti:timeDependent>
+                    <imsqti:interactionType>choiceInteraction</imsqti:interactionType>
+                    <imsqti:feedbackType>nonadaptive</imsqti:feedbackType>
+                    <imsqti:solutionAvailable>false</imsqti:solutionAvailable>
+                </imsqti:qtiMetadata>
+                <imsmd:lom>
+                    <imsmd:general>
+                        <imsmd:description>
+                            <imsmd:string language="en">This item is accessed via an LTI resource link.</imsmd:string>
+                        </imsmd:description>
+                    </imsmd:general>
+                </imsmd:lom>
+            </metadata>
+            <file href="links/item1.xml"/>
+        </resource>
+    </resources>
+</manifest>
