@@ -8,21 +8,6 @@
     <resources>
         <resource identifier="testQDB_1" type="imsqti_test_xmlv3p0" href="testitems/testQDB_1.xml">
             <metadata>
-                <csm:curriculumStandardsMetadataSet>
-                    <csm:curriculumStandardsMetadata>
-                        <csm:setOfGUIDs>
-                            <csm:labelledGUID>
-                                <csm:label>ASN PURL for Georgia on Social Studies, Education Level:	9, 10, 11, 12, Statement Notation:	SSPFR1
-                                    "The student will explain selected historical and contemporary perspectives and practices of psychologists."</csm:label>
-                                <csm:GUID>http://purl.org/ASN/resources/S113AA2C</csm:GUID>
-                            </csm:labelledGUID>
-                            <csm:labelledGUID>
-                                <csm:label>ASN PURL for Georgia on Social Studies, Education Level:	9, 10, 11, 12, Statement Notation:	SSPFR2 "The student will explain the research methods and the types of statistics used in the field of psychology."</csm:label>
-                                <csm:GUID>http://purl.org/ASN/resources/S113AA30</csm:GUID>
-                            </csm:labelledGUID>
-                        </csm:setOfGUIDs>
-                    </csm:curriculumStandardsMetadata>
-                </csm:curriculumStandardsMetadataSet>
                 <imsmd:lom>
                     <imsmd:classification>
                         <imsmd:taxonPath>
@@ -40,6 +25,21 @@
                         <imsqti:solutionAvailable>true</imsqti:solutionAvailable>
                     </imsqti:qtiMetadata>
                 </imsmd:lom>
+                <csm:curriculumStandardsMetadataSet>
+                    <csm:curriculumStandardsMetadata>
+                        <csm:setOfGUIDs>
+                            <csm:labelledGUID>
+                                <csm:label>ASN PURL for Georgia on Social Studies, Education Level:	9, 10, 11, 12, Statement Notation:	SSPFR1
+                                    "The student will explain selected historical and contemporary perspectives and practices of psychologists."</csm:label>
+                                <csm:GUID>http://purl.org/ASN/resources/S113AA2C</csm:GUID>
+                            </csm:labelledGUID>
+                            <csm:labelledGUID>
+                                <csm:label>ASN PURL for Georgia on Social Studies, Education Level:	9, 10, 11, 12, Statement Notation:	SSPFR2 "The student will explain the research methods and the types of statistics used in the field of psychology."</csm:label>
+                                <csm:GUID>http://purl.org/ASN/resources/S113AA30</csm:GUID>
+                            </csm:labelledGUID>
+                        </csm:setOfGUIDs>
+                    </csm:curriculumStandardsMetadata>
+                </csm:curriculumStandardsMetadataSet>
             </metadata>
             <file href="testitems/testQDB_1.xml"/>
             <dependency identifierref="QUE_104045"/>
@@ -62,16 +62,6 @@
                     <imsqti:interactionType>choiceInteraction</imsqti:interactionType>
                     <imsqti:feedbackType>nonadaptive</imsqti:feedbackType>
                 </imsqti:qtiMetadata>
-                <csm:curriculumStandardsMetadataSet>
-                    <csm:curriculumStandardsMetadata>
-                        <csm:setOfGUIDs>
-                            <csm:labelledGUID>
-                                <csm:label>ASN PURL for Georgia Social Studies, Education Level: 9, 10, 11, 12 "a. Define the field of psychology."</csm:label>
-                                <csm:GUID>http://purl.org/ASN/resources/S113AA2D</csm:GUID>
-                            </csm:labelledGUID>
-                        </csm:setOfGUIDs>
-                    </csm:curriculumStandardsMetadata>
-                </csm:curriculumStandardsMetadataSet>
                 <imsmd:lom>
                     <imsmd:general>
                         <imsmd:identifier>
@@ -94,6 +84,16 @@
                         </imsmd:taxonPath>
                     </imsmd:classification>
                 </imsmd:lom>
+                <csm:curriculumStandardsMetadataSet>
+                    <csm:curriculumStandardsMetadata>
+                        <csm:setOfGUIDs>
+                            <csm:labelledGUID>
+                                <csm:label>ASN PURL for Georgia Social Studies, Education Level: 9, 10, 11, 12 "a. Define the field of psychology."</csm:label>
+                                <csm:GUID>http://purl.org/ASN/resources/S113AA2D</csm:GUID>
+                            </csm:labelledGUID>
+                        </csm:setOfGUIDs>
+                    </csm:curriculumStandardsMetadata>
+                </csm:curriculumStandardsMetadataSet>
             </metadata>
             <file href="testitems/QUE_104045.xml"/>
             <dependency identifierref="RTEMP_CC2_match1310"/>
@@ -106,16 +106,6 @@
                     <imsqti:interactionType>choiceInteraction</imsqti:interactionType>
                     <imsqti:feedbackType>nonadaptive</imsqti:feedbackType>
                 </imsqti:qtiMetadata>
-                <csm:curriculumStandardsMetadataSet>
-                    <csm:curriculumStandardsMetadata>
-                        <csm:setOfGUIDs>
-                            <csm:labelledGUID>
-                                <csm:label>ASN PURL for Georgia Social Studies, Education Level: 9, 10, 11, 12 "b. Identify key figures in the history of the field of psychology and their major contributions; include Wundt, Freud, Skinner, James, Watson and Rogers."</csm:label>
-                                <csm:GUID>http://purl.org/ASN/resources/S113AA2E</csm:GUID>
-                            </csm:labelledGUID>
-                        </csm:setOfGUIDs>
-                    </csm:curriculumStandardsMetadata>
-                </csm:curriculumStandardsMetadataSet>
                 <imsmd:lom>
                     <imsmd:general>
                         <imsmd:identifier>
@@ -126,6 +116,16 @@
                         </imsmd:title>
                     </imsmd:general>
                 </imsmd:lom>
+                <csm:curriculumStandardsMetadataSet>
+                    <csm:curriculumStandardsMetadata>
+                        <csm:setOfGUIDs>
+                            <csm:labelledGUID>
+                                <csm:label>ASN PURL for Georgia Social Studies, Education Level: 9, 10, 11, 12 "b. Identify key figures in the history of the field of psychology and their major contributions; include Wundt, Freud, Skinner, James, Watson and Rogers."</csm:label>
+                                <csm:GUID>http://purl.org/ASN/resources/S113AA2E</csm:GUID>
+                            </csm:labelledGUID>
+                        </csm:setOfGUIDs>
+                    </csm:curriculumStandardsMetadata>
+                </csm:curriculumStandardsMetadataSet>
             </metadata>
             <file href="testitems/QUE_102010.xml"/>
             <dependency identifierref="RTEMP_CC2_match1310"/>
@@ -138,16 +138,6 @@
                     <imsqti:interactionType>choiceInteraction</imsqti:interactionType>
                     <imsqti:feedbackType>nonadaptive</imsqti:feedbackType>
                 </imsqti:qtiMetadata>
-                <csm:curriculumStandardsMetadataSet>
-                    <csm:curriculumStandardsMetadata>
-                        <csm:setOfGUIDs>
-                            <csm:labelledGUID>
-                                <csm:label>ASN PURL for Georgia Social Studies, Education Level: 9, 10, 11, 12 "c. Identify the basic elements of an experiment; include independent and dependent variables, types of experimental control (blind/double-blind procedures, placebo controls)."</csm:label>
-                                <csm:GUID>http://purl.org/ASN/resources/S113AA33</csm:GUID>
-                            </csm:labelledGUID>
-                        </csm:setOfGUIDs>
-                    </csm:curriculumStandardsMetadata>
-                </csm:curriculumStandardsMetadataSet>
                 <imsmd:lom>
                     <imsmd:general>
                         <imsmd:identifier>
@@ -170,6 +160,16 @@
                         </imsmd:taxonPath>
                     </imsmd:classification>
                 </imsmd:lom>
+                <csm:curriculumStandardsMetadataSet>
+                    <csm:curriculumStandardsMetadata>
+                        <csm:setOfGUIDs>
+                            <csm:labelledGUID>
+                                <csm:label>ASN PURL for Georgia Social Studies, Education Level: 9, 10, 11, 12 "c. Identify the basic elements of an experiment; include independent and dependent variables, types of experimental control (blind/double-blind procedures, placebo controls)."</csm:label>
+                                <csm:GUID>http://purl.org/ASN/resources/S113AA33</csm:GUID>
+                            </csm:labelledGUID>
+                        </csm:setOfGUIDs>
+                    </csm:curriculumStandardsMetadata>
+                </csm:curriculumStandardsMetadataSet>
             </metadata>
             <file href="testitems/QUE_104047.xml"/>
             <dependency identifierref="RTEMP_CC2_match1310"/>
@@ -182,16 +182,6 @@
                     <imsqti:interactionType>extendedTextInteraction</imsqti:interactionType>
                     <imsqti:feedbackType>nonadaptive</imsqti:feedbackType>
                 </imsqti:qtiMetadata>
-                <csm:curriculumStandardsMetadataSet>
-                    <csm:curriculumStandardsMetadata>
-                        <csm:setOfGUIDs>
-                            <csm:labelledGUID>
-                                <csm:label>ASN PURL for Georgia Social Studies, Education Level: 9, 10, 11, 12 "b. Describe the types of research methods used by psychologists; include experiment, survey, case study, and observation."</csm:label>
-                                <csm:GUID>http://purl.org/ASN/resources/S113AA32</csm:GUID>
-                            </csm:labelledGUID>
-                        </csm:setOfGUIDs>
-                    </csm:curriculumStandardsMetadata>
-                </csm:curriculumStandardsMetadataSet>
                 <imsmd:lom>
                     <imsmd:general>
                         <imsmd:identifier>
@@ -214,6 +204,16 @@
                         </imsmd:taxonPath>
                     </imsmd:classification>
                 </imsmd:lom>
+                <csm:curriculumStandardsMetadataSet>
+                    <csm:curriculumStandardsMetadata>
+                        <csm:setOfGUIDs>
+                            <csm:labelledGUID>
+                                <csm:label>ASN PURL for Georgia Social Studies, Education Level: 9, 10, 11, 12 "b. Describe the types of research methods used by psychologists; include experiment, survey, case study, and observation."</csm:label>
+                                <csm:GUID>http://purl.org/ASN/resources/S113AA32</csm:GUID>
+                            </csm:labelledGUID>
+                        </csm:setOfGUIDs>
+                    </csm:curriculumStandardsMetadata>
+                </csm:curriculumStandardsMetadataSet>
             </metadata>
             <file href="testitems/QUE_102011.xml"/>
             <dependency identifierref="RTEMP_CC2_map_response1290"/>
@@ -226,16 +226,6 @@
                     <imsqti:interactionType>choiceInteraction</imsqti:interactionType>
                     <imsqti:feedbackType>nonadaptive</imsqti:feedbackType>
                 </imsqti:qtiMetadata>
-                <csm:curriculumStandardsMetadataSet>
-                    <csm:curriculumStandardsMetadata>
-                        <csm:setOfGUIDs>
-                            <csm:labelledGUID>
-                                <csm:label>ASN PURL for Georgia Social Studies, Education Level: 9, 10, 11, 12 "a. Define the field of psychology."</csm:label>
-                                <csm:GUID>http://purl.org/ASN/resources/S113AA2D</csm:GUID>
-                            </csm:labelledGUID>
-                        </csm:setOfGUIDs>
-                    </csm:curriculumStandardsMetadata>
-                </csm:curriculumStandardsMetadataSet>
                 <imsmd:lom>
                     <imsmd:general>
                         <imsmd:identifier>
@@ -258,6 +248,16 @@
                         </imsmd:taxonPath>
                     </imsmd:classification>
                 </imsmd:lom>
+                <csm:curriculumStandardsMetadataSet>
+                    <csm:curriculumStandardsMetadata>
+                        <csm:setOfGUIDs>
+                            <csm:labelledGUID>
+                                <csm:label>ASN PURL for Georgia Social Studies, Education Level: 9, 10, 11, 12 "a. Define the field of psychology."</csm:label>
+                                <csm:GUID>http://purl.org/ASN/resources/S113AA2D</csm:GUID>
+                            </csm:labelledGUID>
+                        </csm:setOfGUIDs>
+                    </csm:curriculumStandardsMetadata>
+                </csm:curriculumStandardsMetadataSet>
             </metadata>
             <file href="testitems/QUE_104048.xml"/>
             <dependency identifierref="RTEMP_CC2_match1310"/>
@@ -270,16 +270,6 @@
                     <imsqti:interactionType>choiceInteraction</imsqti:interactionType>
                     <imsqti:feedbackType>nonadaptive</imsqti:feedbackType>
                 </imsqti:qtiMetadata>
-                <csm:curriculumStandardsMetadataSet>
-                    <csm:curriculumStandardsMetadata>
-                        <csm:setOfGUIDs>
-                            <csm:labelledGUID>
-                                <csm:label>ASN PURL for Georgia Social Studies, Education Level: 9, 10, 11, 12 "c. List and describe the major occupations and subfields of psychology."</csm:label>
-                                <csm:GUID>http://purl.org/ASN/resources/S113AA2F</csm:GUID>
-                            </csm:labelledGUID>
-                        </csm:setOfGUIDs>
-                    </csm:curriculumStandardsMetadata>
-                </csm:curriculumStandardsMetadataSet>
                 <imsmd:lom>
                     <imsmd:general>
                         <imsmd:identifier>
@@ -302,6 +292,16 @@
                         </imsmd:taxonPath>
                     </imsmd:classification>
                 </imsmd:lom>
+                <csm:curriculumStandardsMetadataSet>
+                    <csm:curriculumStandardsMetadata>
+                        <csm:setOfGUIDs>
+                            <csm:labelledGUID>
+                                <csm:label>ASN PURL for Georgia Social Studies, Education Level: 9, 10, 11, 12 "c. List and describe the major occupations and subfields of psychology."</csm:label>
+                                <csm:GUID>http://purl.org/ASN/resources/S113AA2F</csm:GUID>
+                            </csm:labelledGUID>
+                        </csm:setOfGUIDs>
+                    </csm:curriculumStandardsMetadata>
+                </csm:curriculumStandardsMetadataSet>
             </metadata>
             <file href="testitems/QUE_102012.xml"/>
             <dependency identifierref="RTEMP_CC2_match1310"/>
@@ -314,16 +314,6 @@
                     <imsqti:interactionType>choiceInteraction</imsqti:interactionType>
                     <imsqti:feedbackType>nonadaptive</imsqti:feedbackType>
                 </imsqti:qtiMetadata>
-                <csm:curriculumStandardsMetadataSet>
-                    <csm:curriculumStandardsMetadata>
-                        <csm:setOfGUIDs>
-                            <csm:labelledGUID>
-                                <csm:label>ASN PURL for Georgia Social Studies, Education Level: 9, 10, 11, 12 "d. Explain the differences between a correlation and an experiment."</csm:label>
-                                <csm:GUID>http://purl.org/ASN/resources/S113AA34</csm:GUID>
-                            </csm:labelledGUID>
-                        </csm:setOfGUIDs>
-                    </csm:curriculumStandardsMetadata>
-                </csm:curriculumStandardsMetadataSet>
                 <imsmd:lom>
                     <imsmd:general>
                         <imsmd:identifier>
@@ -334,6 +324,16 @@
                         </imsmd:title>
                     </imsmd:general>
                 </imsmd:lom>
+                <csm:curriculumStandardsMetadataSet>
+                    <csm:curriculumStandardsMetadata>
+                        <csm:setOfGUIDs>
+                            <csm:labelledGUID>
+                                <csm:label>ASN PURL for Georgia Social Studies, Education Level: 9, 10, 11, 12 "d. Explain the differences between a correlation and an experiment."</csm:label>
+                                <csm:GUID>http://purl.org/ASN/resources/S113AA34</csm:GUID>
+                            </csm:labelledGUID>
+                        </csm:setOfGUIDs>
+                    </csm:curriculumStandardsMetadata>
+                </csm:curriculumStandardsMetadataSet>
             </metadata>
             <file href="testitems/QUE_102013.xml"/>
             <dependency identifierref="RTEMP_CC2_match1310"/>
@@ -346,16 +346,6 @@
                     <imsqti:interactionType>extendedTextInteraction</imsqti:interactionType>
                     <imsqti:feedbackType>nonadaptive</imsqti:feedbackType>
                 </imsqti:qtiMetadata>
-                <csm:curriculumStandardsMetadataSet>
-                    <csm:curriculumStandardsMetadata>
-                        <csm:setOfGUIDs>
-                            <csm:labelledGUID>
-                                <csm:label>ASN PURL for Georgia Social Studies, Education Level: 9, 10, 11, 12 "b. Identify key figures in the history of the field of psychology and their major contributions; include Wundt, Freud, Skinner, James, Watson and Rogers."</csm:label>
-                                <csm:GUID>http://purl.org/ASN/resources/S113AA2E</csm:GUID>
-                            </csm:labelledGUID>
-                        </csm:setOfGUIDs>
-                    </csm:curriculumStandardsMetadata>
-                </csm:curriculumStandardsMetadataSet>
                 <imsmd:lom>
                     <imsmd:general>
                         <imsmd:identifier>
@@ -378,6 +368,16 @@
                         </imsmd:taxonPath>
                     </imsmd:classification>
                 </imsmd:lom>
+                <csm:curriculumStandardsMetadataSet>
+                    <csm:curriculumStandardsMetadata>
+                        <csm:setOfGUIDs>
+                            <csm:labelledGUID>
+                                <csm:label>ASN PURL for Georgia Social Studies, Education Level: 9, 10, 11, 12 "b. Identify key figures in the history of the field of psychology and their major contributions; include Wundt, Freud, Skinner, James, Watson and Rogers."</csm:label>
+                                <csm:GUID>http://purl.org/ASN/resources/S113AA2E</csm:GUID>
+                            </csm:labelledGUID>
+                        </csm:setOfGUIDs>
+                    </csm:curriculumStandardsMetadata>
+                </csm:curriculumStandardsMetadataSet>
             </metadata>
             <file href="testitems/QUE_102015.xml"/>
             <dependency identifierref="RTEMP_CC2_map_response1290"/>
@@ -390,16 +390,6 @@
                     <imsqti:interactionType>extendedTextInteraction</imsqti:interactionType>
                     <imsqti:feedbackType>nonadaptive</imsqti:feedbackType>
                 </imsqti:qtiMetadata>
-                <csm:curriculumStandardsMetadataSet>
-                    <csm:curriculumStandardsMetadata>
-                        <csm:setOfGUIDs>
-                            <csm:labelledGUID>
-                                <csm:label>ASN PURL for Georgia Social Studies, Education Level: 9, 10, 11, 12 "g. Explain ethical issues in psychological research."</csm:label>
-                                <csm:GUID>http://purl.org/ASN/resources/S113AA37</csm:GUID>
-                            </csm:labelledGUID>
-                        </csm:setOfGUIDs>
-                    </csm:curriculumStandardsMetadata>
-                </csm:curriculumStandardsMetadataSet>
                 <imsmd:lom>
                     <imsmd:general>
                         <imsmd:identifier>
@@ -442,6 +432,16 @@
                         </imsmd:taxonPath>
                     </imsmd:classification>
                 </imsmd:lom>
+                <csm:curriculumStandardsMetadataSet>
+                    <csm:curriculumStandardsMetadata>
+                        <csm:setOfGUIDs>
+                            <csm:labelledGUID>
+                                <csm:label>ASN PURL for Georgia Social Studies, Education Level: 9, 10, 11, 12 "g. Explain ethical issues in psychological research."</csm:label>
+                                <csm:GUID>http://purl.org/ASN/resources/S113AA37</csm:GUID>
+                            </csm:labelledGUID>
+                        </csm:setOfGUIDs>
+                    </csm:curriculumStandardsMetadata>
+                </csm:curriculumStandardsMetadataSet>
             </metadata>
             <file href="testitems/QUE_102016.xml"/>
         </resource>
@@ -453,16 +453,6 @@
                     <imsqti:interactionType>choiceInteraction</imsqti:interactionType>
                     <imsqti:feedbackType>nonadaptive</imsqti:feedbackType>
                 </imsqti:qtiMetadata>
-                <csm:curriculumStandardsMetadataSet>
-                    <csm:curriculumStandardsMetadata>
-                        <csm:setOfGUIDs>
-                            <csm:labelledGUID>
-                                <csm:label>ASN PURL for Georgia Social Studies, Education Level: 9, 10, 11, 12 "c. List and describe the major occupations and subfields of psychology."</csm:label>
-                                <csm:GUID>http://purl.org/ASN/resources/S113AA2F</csm:GUID>
-                            </csm:labelledGUID>
-                        </csm:setOfGUIDs>
-                    </csm:curriculumStandardsMetadata>
-                </csm:curriculumStandardsMetadataSet>
                 <imsmd:lom>
                     <imsmd:general>
                         <imsmd:identifier>
@@ -485,6 +475,16 @@
                         </imsmd:taxonPath>
                     </imsmd:classification>
                 </imsmd:lom>
+                <csm:curriculumStandardsMetadataSet>
+                    <csm:curriculumStandardsMetadata>
+                        <csm:setOfGUIDs>
+                            <csm:labelledGUID>
+                                <csm:label>ASN PURL for Georgia Social Studies, Education Level: 9, 10, 11, 12 "c. List and describe the major occupations and subfields of psychology."</csm:label>
+                                <csm:GUID>http://purl.org/ASN/resources/S113AA2F</csm:GUID>
+                            </csm:labelledGUID>
+                        </csm:setOfGUIDs>
+                    </csm:curriculumStandardsMetadata>
+                </csm:curriculumStandardsMetadataSet>
             </metadata>
             <file href="testitems/QUE_104049.xml"/>
             <dependency identifierref="RTEMP_CC2_match1310"/>
@@ -497,16 +497,6 @@
                     <imsqti:interactionType>choiceInteraction</imsqti:interactionType>
                     <imsqti:feedbackType>nonadaptive</imsqti:feedbackType>
                 </imsqti:qtiMetadata>
-                <csm:curriculumStandardsMetadataSet>
-                    <csm:curriculumStandardsMetadata>
-                        <csm:setOfGUIDs>
-                            <csm:labelledGUID>
-                                <csm:label>ASN PURL for Georgia Social Studies, Education Level: 9, 10, 11, 12 "c. List and describe the major occupations and subfields of psychology."</csm:label>
-                                <csm:GUID>http://purl.org/ASN/resources/S113AA2F</csm:GUID>
-                            </csm:labelledGUID>
-                        </csm:setOfGUIDs>
-                    </csm:curriculumStandardsMetadata>
-                </csm:curriculumStandardsMetadataSet>
                 <imsmd:lom>
                     <imsmd:general>
                         <imsmd:identifier>
@@ -529,6 +519,16 @@
                         </imsmd:taxonPath>
                     </imsmd:classification>
                 </imsmd:lom>
+                <csm:curriculumStandardsMetadataSet>
+                    <csm:curriculumStandardsMetadata>
+                        <csm:setOfGUIDs>
+                            <csm:labelledGUID>
+                                <csm:label>ASN PURL for Georgia Social Studies, Education Level: 9, 10, 11, 12 "c. List and describe the major occupations and subfields of psychology."</csm:label>
+                                <csm:GUID>http://purl.org/ASN/resources/S113AA2F</csm:GUID>
+                            </csm:labelledGUID>
+                        </csm:setOfGUIDs>
+                    </csm:curriculumStandardsMetadata>
+                </csm:curriculumStandardsMetadataSet>
             </metadata>
             <file href="testitems/QUE_104051.xml"/>
             <dependency identifierref="RTEMP_CC2_match1310"/>

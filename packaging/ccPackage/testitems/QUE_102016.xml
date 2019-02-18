@@ -5,30 +5,33 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
     xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd" 
     identifier="QUE_102016" title="Question 09" adaptive="false" time-dependent="false">
- <qti-response-declaration identifier="response_1" cardinality="single" base-type="string"/>
- <qti-outcome-declaration identifier="FEEDBACK" cardinality="multiple" base-type="identifier"/>
- <qti-outcome-declaration identifier="SCORE" cardinality="single" base-type="float"/>
- <qti-item-body>
-  <qti-extended-text-interaction response-identifier="response_1" expected-length="600">
-   <qti-prompt>Studies of people with brain damage show that people will rationalize their behavior
-    after it has occurred; making up reasons that they claim 'caused' the behavior. This has
-    profound impllications for the concept of free will and the mind-body problem. Do we have any
-    control over our actions or are we simply responding to stimuli and justifying our
-    responses?</qti-prompt>
-  </qti-extended-text-interaction>
-  <qti-info-control title="Hint">This is a hint</qti-info-control>
- </qti-item-body>
- <qti-modal-feedback outcome-identifier="FEEDBACK" show-hide="hide" identifier="general_fb"> Customer
-  relationship management is the overall process of building and maintaining profitable customer
-  relationships by delivering superior customer value and satisfaction. Said another way, it is
-  about developing long-term, mutually beneficial relationships. Modern marketers are going beyond
-  designing strategies to attract new customers and create transactions with them. They are using
-  customer relationship management to retain current customers and build long-term relationships
-  with them. This new view is that marketing is the science and art of finding, growing and
-  retaining profitable customers. The key to building lasting customer relationships is to create
-  superior customer value and satisfaction. Customer perceived value is the difference between total
-  customer value and total customer cost, whereas customer satisfaction is the extent to which a
-  product's perceived performance matches a buyer's expectations. </qti-modal-feedback>
- <qti-modal-feedback outcome-identifier="FEEDBACK" show-hide="hide" identifier="solution">
-  <div class="solution"> here is the sample solution</div></qti-modal-feedback>
+    <qti-response-declaration identifier="response_1" cardinality="single" base-type="string"/>
+    <qti-outcome-declaration identifier="FEEDBACK" cardinality="multiple" base-type="identifier"/>
+    <qti-outcome-declaration identifier="SCORE" cardinality="single" base-type="float"/>
+    <qti-item-body>
+        <qti-extended-text-interaction response-identifier="response_1" expected-length="600">
+            <qti-prompt>Studies of people with brain damage show that people will rationalize their behavior
+                after it has occurred; making up reasons that they claim 'caused' the behavior. This has
+                profound impllications for the concept of free will and the mind-body problem. Do we have any
+                control over our actions or are we simply responding to stimuli and justifying our
+                responses?</qti-prompt>
+        </qti-extended-text-interaction>
+    </qti-item-body>
+    <qti-modal-feedback outcome-identifier="FEEDBACK" show-hide="hide" identifier="general_fb">
+        <qti-content-body>Customer relationship management is the overall process of building and 
+            maintaining profitable customer relationships by delivering superior customer value and satisfaction.
+            Said another way, it is about developing long-term, mutually beneficial relationships. 
+            Modern marketers are going beyond designing strategies to attract new customers 
+            and create transactions with them. They are using customer relationship management 
+            to retain current customers and build long-term relationships with them. 
+            This new view is that marketing is the science and art of finding, growing and
+            retaining profitable customers. The key to building lasting customer relationships is to create
+            superior customer value and satisfaction. Customer perceived value is the difference between total
+            customer value and total customer cost, whereas customer satisfaction is the extent to which a
+            product's perceived performance matches a buyer's expectations. 
+        </qti-content-body>
+    </qti-modal-feedback>
+    <qti-modal-feedback outcome-identifier="FEEDBACK" show-hide="hide" identifier="solution">
+        <div class="solution"> here is the sample solution</div>
+    </qti-modal-feedback>
 </qti-assessment-item>

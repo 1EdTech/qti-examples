@@ -4,39 +4,43 @@
                      xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd" 
                      xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" 
                      identifier="QUE_102010" title="Question 02" adaptive="false" time-dependent="false">
- <qti-response-declaration identifier="RESPONSE" cardinality="single" base-type="identifier">
-  <qti-correct-response>
-   <qti-value>true</qti-value>
-  </qti-correct-response>
- </qti-response-declaration>
- <qti-outcome-declaration identifier="FEEDBACK" cardinality="single" base-type="identifier"/>
- <qti-outcome-declaration identifier="FEEDBACKBASIC" cardinality="single" base-type="identifier"/>
- <qti-outcome-declaration identifier="SCORE" cardinality="single" base-type="float">
-  <qti-default-value>
-   <qti-value>0</qti-value>
-  </qti-default-value>
- </qti-outcome-declaration>
- <qti-outcome-declaration identifier="MAXSCORE" cardinality="single" base-type="float">
-  <qti-default-value>
-   <qti-value>100</qti-value>
-  </qti-default-value>
- </qti-outcome-declaration>
- <qti-item-body>
-  <qti-choice-interaction response-identifier="RESPONSE" shuffle="false" max-choices="1">
-   <qti-prompt>Sigmund Freud and Carl Jung both belong to the psychoanalytic school of
-    psychology.</qti-prompt>
-   <qti-simple-choice identifier="true" fixed="true">True <qti-feedback-inline outcome-identifier="FEEDBACK" identifier="true" show-hide="show">That's
-     correct</qti-feedback-inline></qti-simple-choice>
-   <qti-simple-choice identifier="false" fixed="true">False <qti-feedback-inline outcome-identifier="FEEDBACK" identifier="false" show-hide="show">That's not
-     correct</qti-feedback-inline></qti-simple-choice>
-  </qti-choice-interaction>
-  <qti-info-control title="Hint">This is a hint</qti-info-control>
- </qti-item-body>
- <qti-response-processing template="https://www.imsglobal.org/question/qti_v3p0/rptemplates/CC2_match.xml"/>
- <qti-modal-feedback outcome-identifier="FEEDBACK" show-hide="hide" identifier="general"> general
-  feedback</qti-modal-feedback>
- <qti-modal-feedback outcome-identifier="FEEDBACKBASIC" show-hide="show" identifier="correct"> correct
-  feedback</qti-modal-feedback>
- <qti-modal-feedback outcome-identifier="FEEDBACKBASIC" show-hide="show" identifier="incorrect"> incorrect
-  feedback</qti-modal-feedback>
+    <qti-response-declaration identifier="RESPONSE" cardinality="single" base-type="identifier">
+        <qti-correct-response>
+            <qti-value>true</qti-value>
+        </qti-correct-response>
+    </qti-response-declaration>
+    <qti-outcome-declaration identifier="FEEDBACK" cardinality="single" base-type="identifier"/>
+    <qti-outcome-declaration identifier="FEEDBACKBASIC" cardinality="single" base-type="identifier"/>
+    <qti-outcome-declaration identifier="SCORE" cardinality="single" base-type="float">
+        <qti-default-value>
+            <qti-value>0</qti-value>
+        </qti-default-value>
+    </qti-outcome-declaration>
+    <qti-outcome-declaration identifier="MAXSCORE" cardinality="single" base-type="float">
+        <qti-default-value>
+            <qti-value>100</qti-value>
+        </qti-default-value>
+    </qti-outcome-declaration>
+    <qti-item-body>
+        <qti-choice-interaction response-identifier="RESPONSE" shuffle="false" max-choices="1">
+            <qti-prompt>Sigmund Freud and Carl Jung both belong to the psychoanalytic school of
+                psychology.</qti-prompt>
+            <qti-simple-choice identifier="true" fixed="true">True 
+                <qti-feedback-inline outcome-identifier="FEEDBACK" identifier="true" show-hide="show">That's correct</qti-feedback-inline>
+            </qti-simple-choice>
+            <qti-simple-choice identifier="false" fixed="true">False 
+                <qti-feedback-inline outcome-identifier="FEEDBACK" identifier="false" show-hide="show">That's not correct</qti-feedback-inline>
+            </qti-simple-choice>
+        </qti-choice-interaction>
+    </qti-item-body>
+    <qti-response-processing template="https://www.imsglobal.org/question/qti_v3p0/rptemplates/CC2_match.xml"/>
+    <qti-modal-feedback outcome-identifier="FEEDBACK" show-hide="hide" identifier="general">
+        <qti-content-body>general feedback</qti-content-body>
+    </qti-modal-feedback>
+    <qti-modal-feedback outcome-identifier="FEEDBACKBASIC" show-hide="show" identifier="correct">
+        <qti-content-body>correct feedback</qti-content-body>
+    </qti-modal-feedback>
+    <qti-modal-feedback outcome-identifier="FEEDBACKBASIC" show-hide="show" identifier="incorrect">
+        <qti-content-body>incorrect feedback</qti-content-body>
+    </qti-modal-feedback>
 </qti-assessment-item>

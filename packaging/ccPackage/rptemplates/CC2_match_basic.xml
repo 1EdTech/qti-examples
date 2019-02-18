@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<qti-response-processing 
-    xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" 
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-    xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd">
+<qti-response-processing xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" 
+                         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+                         xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd"> 
     <!-- This template defines an alternative process to that defined by CC2_match.xml. It should be used by those systems that don't support
     inline feedback -->
     <qti-response-condition>

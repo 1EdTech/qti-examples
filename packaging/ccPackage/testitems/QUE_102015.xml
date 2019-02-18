@@ -5,29 +5,34 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
     xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd" 
     identifier="QUE_102015" title="Question 08" adaptive="false" time-dependent="false">
- <qti-response-declaration identifier="RESPONSE" cardinality="single" base-type="string">
-  <qti-mapping default-value="0">
-   <qti-map-entry map-key="hierarchy of needs" mapped-value="100" case-sensitive="false"/>
-  </qti-mapping>
- </qti-response-declaration>
- <qti-outcome-declaration identifier="FEEDBACK" cardinality="single" base-type="identifier"/>
- <qti-outcome-declaration identifier="FEEDBACKBASIC" cardinality="single" base-type="identifier"/>
- <qti-outcome-declaration identifier="SCORE" cardinality="single" base-type="float"/>
- <qti-outcome-declaration identifier="MAXSCORE" cardinality="single" base-type="float">
-  <qti-default-value>
-   <qti-value>100</qti-value>
-  </qti-default-value>
- </qti-outcome-declaration>
- <qti-item-body>
-  <p>Maslow's [_____] theory states that as humans meet basic needs, they seek to satisfy
-   successively higher needs.</p>
-  <p><qti-text-entry-interaction response-identifier="RESPONSE" expected-length="30"/></p>
-  <qti-info-control title="Hint">This is a hint</qti-info-control>
- </qti-item-body>
- <qti-response-processing template="https://www.imsglobal.org/question/qti_v3p0/rptemplates/CC2_map_response.xml"/>
- <qti-modal-feedback outcome-identifier="FEEDBACK" show-hide="hide" identifier="general"> general feedback </qti-modal-feedback>
- <qti-modal-feedback outcome-identifier="FEEDBACK" show-hide="show" identifier="incorrect"> incorrect
-  feedback </qti-modal-feedback>
- <qti-modal-feedback outcome-identifier="FEEDBACK" show-hide="show" identifier="correct"> correct feedback
- </qti-modal-feedback>
+    <qti-response-declaration identifier="RESPONSE" cardinality="single" base-type="string">
+        <qti-mapping default-value="0">
+            <qti-map-entry map-key="hierarchy of needs" mapped-value="100" case-sensitive="false"/>
+        </qti-mapping>
+    </qti-response-declaration>
+    <qti-outcome-declaration identifier="FEEDBACK" cardinality="single" base-type="identifier"/>
+    <qti-outcome-declaration identifier="FEEDBACKBASIC" cardinality="single" base-type="identifier"/>
+    <qti-outcome-declaration identifier="SCORE" cardinality="single" base-type="float"/>
+    <qti-outcome-declaration identifier="MAXSCORE" cardinality="single" base-type="float">
+        <qti-default-value>
+            <qti-value>100</qti-value>
+        </qti-default-value>
+    </qti-outcome-declaration>
+    <qti-item-body>
+        <p>Maslow's [_____] theory states that as humans meet basic needs, they seek to satisfy
+            successively higher needs.</p>
+        <p>
+            <qti-text-entry-interaction response-identifier="RESPONSE" expected-length="30"/>
+        </p>
+    </qti-item-body>
+    <qti-response-processing template="https://www.imsglobal.org/question/qti_v3p0/rptemplates/CC2_map_response.xml"/>
+    <qti-modal-feedback outcome-identifier="FEEDBACK" show-hide="hide" identifier="general">
+        <qti-content-body>general feedback</qti-content-body>
+    </qti-modal-feedback>
+    <qti-modal-feedback outcome-identifier="FEEDBACK" show-hide="show" identifier="incorrect">
+        <qti-content-body>incorrect feedback</qti-content-body>
+    </qti-modal-feedback>
+    <qti-modal-feedback outcome-identifier="FEEDBACK" show-hide="show" identifier="correct">
+        <qti-content-body>correct feedback</qti-content-body>
+    </qti-modal-feedback>
 </qti-assessment-item>

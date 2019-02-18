@@ -5,34 +5,38 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
     xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd" 
     identifier="QUE_102013" title="Question 07" adaptive="false" time-dependent="false">
- <qti-response-declaration identifier="RESPONSE" cardinality="single" base-type="identifier">
-  <qti-correct-response>
-   <qti-value>true</qti-value>
-  </qti-correct-response>
- </qti-response-declaration>
- <qti-outcome-declaration identifier="FEEDBACK" cardinality="single" base-type="identifier"/>
- <qti-outcome-declaration identifier="FEEDBACKBASIC" cardinality="single" base-type="identifier"/>
- <qti-outcome-declaration identifier="SCORE" cardinality="single" base-type="float"/>
- <qti-outcome-declaration identifier="MAXSCORE" cardinality="single" base-type="float">
-  <qti-default-value>
-   <qti-value>100</qti-value>
-  </qti-default-value>
- </qti-outcome-declaration>
- <qti-item-body>
-  <qti-choice-interaction response-identifier="RESPONSE" shuffle="false" max-choices="1">
-   <qti-prompt>Because there is a nearly 1:1 correlation between IQ and performance in school, it can be
-    stated that students with a high IQ are more likely to perform well in school than those with
-    lower IQs.</qti-prompt>
-   <qti-simple-choice identifier="true" fixed="true"> True <qti-feedback-inline outcome-identifier="FEEDBACK" identifier="true" show-hide="show">That's correct</qti-feedback-inline></qti-simple-choice>
-   <qti-simple-choice identifier="false" fixed="true"> False <qti-feedback-inline outcome-identifier="FEEDBACK" identifier="false" show-hide="show">That's not correct; the correlation logically implies good
-     performance</qti-feedback-inline></qti-simple-choice>
-  </qti-choice-interaction>
-  <qti-info-control title="Hint">This is a hint</qti-info-control>
- </qti-item-body>
- <qti-response-processing template="https://www.imsglobal.org/question/qti_v3p0/rptemplates/CC2_match.xml"/>
- <qti-modal-feedback outcome-identifier="FEEDBACK" show-hide="hide" identifier="general"> general feedback </qti-modal-feedback>
- <qti-modal-feedback outcome-identifier="FEEDBACKBASIC" show-hide="show" identifier="correct"> correct
-  feedback </qti-modal-feedback>
- <qti-modal-feedback outcome-identifier="FEEDBACKBASIC" show-hide="show" identifier="incorrect"> incorrect
-  feedback </qti-modal-feedback>
+    <qti-response-declaration identifier="RESPONSE" cardinality="single" base-type="identifier">
+        <qti-correct-response>
+            <qti-value>true</qti-value>
+        </qti-correct-response>
+    </qti-response-declaration>
+    <qti-outcome-declaration identifier="FEEDBACK" cardinality="single" base-type="identifier"/>
+    <qti-outcome-declaration identifier="FEEDBACKBASIC" cardinality="single" base-type="identifier"/>
+    <qti-outcome-declaration identifier="SCORE" cardinality="single" base-type="float"/>
+    <qti-outcome-declaration identifier="MAXSCORE" cardinality="single" base-type="float">
+        <qti-default-value>
+            <qti-value>100</qti-value>
+        </qti-default-value>
+    </qti-outcome-declaration>
+    <qti-item-body>
+        <qti-choice-interaction response-identifier="RESPONSE" shuffle="false" max-choices="1">
+            <qti-prompt>Because there is a nearly 1:1 correlation between IQ and performance in school, it can be
+                stated that students with a high IQ are more likely to perform well in school than those with
+                lower IQs.</qti-prompt>
+            <qti-simple-choice identifier="true" fixed="true"> True <qti-feedback-inline outcome-identifier="FEEDBACK" identifier="true" show-hide="show">That's correct</qti-feedback-inline></qti-simple-choice>
+            <qti-simple-choice identifier="false" fixed="true"> False <qti-feedback-inline outcome-identifier="FEEDBACK" identifier="false" show-hide="show">That's not correct; the correlation logically implies good
+                    performance</qti-feedback-inline>
+            </qti-simple-choice>
+        </qti-choice-interaction>
+    </qti-item-body>
+    <qti-response-processing template="https://www.imsglobal.org/question/qti_v3p0/rptemplates/CC2_match.xml"/>
+    <qti-modal-feedback outcome-identifier="FEEDBACK" show-hide="hide" identifier="general">
+        <qti-content-body>general feedback</qti-content-body>
+    </qti-modal-feedback>
+    <qti-modal-feedback outcome-identifier="FEEDBACKBASIC" show-hide="show" identifier="correct">
+        <qti-content-body>correct feedback</qti-content-body>
+    </qti-modal-feedback>
+    <qti-modal-feedback outcome-identifier="FEEDBACKBASIC" show-hide="show" identifier="incorrect">
+        <qti-content-body>incorrect feedback</qti-content-body>
+    </qti-modal-feedback>
 </qti-assessment-item>
