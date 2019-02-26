@@ -201,7 +201,11 @@ define([ "qtiCustomInteractionContext" ], function (ctx) {
         return r;
     },
     _baseElement: null,
-    _config: {}
+    _config: {},
+    _props: {
+        toggle: "false",
+        altText: "Select to reveal the contents"
+    }
     
     
   };
