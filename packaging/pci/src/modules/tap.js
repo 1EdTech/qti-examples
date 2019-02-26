@@ -43,13 +43,13 @@ define([ "qtiCustomInteractionContext" ], function (ctx) {
     },
     
     _init: function(dom, configuration, state) {
-        this.baseElement = dom;
+        this._baseElement = dom;
         var uid = "tap-" + Math.floor(Math.random() * 100000);
         dom.setAttribute("data-uid", uid);
         this._addCSS(uid);
 
-        this.config = configuration;
-        this.props = this._extend(this._propertyDefaults, this.config.properties);
+        this._config = configuration;
+        this._props = this._extend(this._propertyDefaults, this._config.properties);
         if (state) {
             this._state = JSON.parse(state);
         }
@@ -67,7 +67,7 @@ define([ "qtiCustomInteractionContext" ], function (ctx) {
             image.setAttribute("data-src", image.src);
             image.src = this._coverImage;
             image.setAttribute("data-alt", image.getAttribute("alt"));
-            image.setAttribute("alt", this.props.altText);
+            image.setAttribute("alt", this._props.altText);
             image.dataset.index = i;
             if (hasRevelationState) {
                 if (this._state.revealed[i]) {
@@ -83,8 +83,8 @@ define([ "qtiCustomInteractionContext" ], function (ctx) {
         for (var i = 0; i < buttons.length; i++) {
             buttons[i].addEventListener("click", this.onclick.bind(this));
         }
-        if (this.config.onready !== undefined && this.config.onready !== null) {
-            this.config.onready(this, this.getState());
+        if (this._config.onready !== undefined && this._config.onready !== null) {
+            this._config.onready(this, this.getState());
         }
         return this;
     },
@@ -122,7 +122,7 @@ define([ "qtiCustomInteractionContext" ], function (ctx) {
     },
     
     _swap: function(img) {
-        var toggle = this.props.toggle && ("true".localeCompare(this.props.toggle) === 0);
+        var toggle = this._props.toggle && ("true".localeCompare(this._props.toggle) === 0);
         var alt = img.getAttribute("alt");
         var src = img.src;
         img.src = img.dataset.src;
@@ -142,7 +142,7 @@ define([ "qtiCustomInteractionContext" ], function (ctx) {
     _addCSS: function (uid) {
         var stylesheet = document.createElement("style");
         stylesheet.innerHTML = this._stylesheet.join("").replace(/\${uid}/g, uid);
-        this.baseElement.appendChild(stylesheet);
+        this._baseElement.appendChild(stylesheet);
     },
     
     _stylesheet: [
@@ -199,7 +199,10 @@ define([ "qtiCustomInteractionContext" ], function (ctx) {
             r[prop] = B[prop];
         }
         return r;
-    }
+    },
+    _baseElement: null,
+    _config: {}
+    
     
   };
   // Register this PCI instance with the communication bridge
