@@ -37,12 +37,12 @@ define([ "qtiCustomInteractionContext" ], function (ctx) {
      */
     getInstance: function (dom, configuration, state) {
         var newInstance = this._extend({}, this);
-        newInstance.init = newInstance.init.bind(newInstance);
-        newInstance.init(dom, configuration, state);
+        newInstance._init = newInstance._init.bind(newInstance);
+        newInstance._init(dom, configuration, state);
         return newInstance;
     },
     
-    init: function(dom, configuration, state) {
+    _init: function(dom, configuration, state) {
         this.baseElement = dom;
         var uid = "tap-" + Math.floor(Math.random() * 100000);
         dom.setAttribute("data-uid", uid);
@@ -65,13 +65,13 @@ define([ "qtiCustomInteractionContext" ], function (ctx) {
             image.width = image.clientWidth;
             image.height = image.clientHeight;
             image.setAttribute("data-src", image.src);
-            image.src = this.coverImage;
+            image.src = this._coverImage;
             image.setAttribute("data-alt", image.getAttribute("alt"));
             image.setAttribute("alt", this.props.altText);
             image.dataset.index = i;
             if (hasRevelationState) {
                 if (this._state.revealed[i]) {
-                    this.swap(image);
+                    this._swap(image);
                 }
             } else {
                 this._state.revealed[i] = false;
@@ -116,12 +116,12 @@ define([ "qtiCustomInteractionContext" ], function (ctx) {
      */
     onclick: function (event) {
         var img = event.currentTarget.querySelector("img");
-        var toggle = this.swap(img);
+        var toggle = this._swap(img);
         this._state.numReveals += 1;
         this._state.revealed[ img.dataset.index ] = (toggle? (!this._state.revealed[ img.dataset.index ]) : true);
     },
     
-    swap: function(img) {
+    _swap: function(img) {
         var toggle = this.props.toggle && ("true".localeCompare(this.props.toggle) === 0);
         var alt = img.getAttribute("alt");
         var src = img.src;
@@ -141,11 +141,11 @@ define([ "qtiCustomInteractionContext" ], function (ctx) {
      */
     _addCSS: function (uid) {
         var stylesheet = document.createElement("style");
-        stylesheet.innerHTML = this.stylesheet.join("").replace(/\${uid}/g, uid);
+        stylesheet.innerHTML = this._stylesheet.join("").replace(/\${uid}/g, uid);
         this.baseElement.appendChild(stylesheet);
     },
     
-    stylesheet: [
+    _stylesheet: [
         '[data-uid="${uid}"] .qti-interaction-markup {              ',
         '   display: table;                                         ',
         '}                                                          ',
@@ -188,7 +188,7 @@ define([ "qtiCustomInteractionContext" ], function (ctx) {
         '}'
     ],
     
-    coverImage: "data:image/svg+xml;charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI2cHgiIHZpZXdCb3g9IjAgMCAyNCAyNiI+DQogICAgPGRlZnMgLz4NCiAgICA8ZyBpZD0iUGFnZS0xIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4NCiAgICAgICAgPHBhdGggZD0iTTIwLjI3NjQwNDcsMjIuNTEyIEwyMC4yNzY0MDQ3LDE1LjEyOCBDMjAuMjc2NDA0NywxNC4wMjggMTkuMzc2NDA0NywxMy4xMjggMTguMjc2NDA0NywxMy4xMjggTDEyLjI3NjQwNDcsMTMuMTI4IEwxMi4yNzY0MDQ3LDcuMTI4IEMxMi4yNzY0MDQ3LDYuMDI4IDExLjM3NjQwNDcsNS4xMjggMTAuMjc2NDA0Nyw1LjEyOCBDOS4xNzY0MDQ2OSw1LjEyOCA4LjI3NjQwNDY5LDYuMDI4IDguMjc2NDA0NjksNy4xMjggTDguMjc2NDA0NjksMTguMTI4IEw1LjU3NjQwNDY5LDE2LjAyOCBDNC43NzY0MDQ2OSwxNS40MjggMy43NzY0MDQ2OSwxNS4yMjggMi44NzY0MDQ2OSwxNS42MjggQzIuMDc2NDA0NjksMTUuOTI4IDEuNzc2NDA0NjksMTYuODI4IDIuMTc2NDA0NjksMTcuNDI4IEw1LjI4NjQwNDY5LDIyLjUxIE0xNS45NDE0MDQ3LDkuNTkyIEMxNi4yNjA0MDQ3LDguODQ3IDE2LjQzNzQwNDcsOC4wMjcgMTYuNDM3NDA0Nyw3LjE2NiBDMTYuNDM3NDA0NywzLjc2MSAxMy42NzY0MDQ3LDEgMTAuMjcwNDA0NywxIEM2Ljg2NTQwNDY5LDEgNC4xMDQ0MDQ2OSwzLjc2MSA0LjEwNDQwNDY5LDcuMTY2IEM0LjEwNDQwNDY5LDguMjQxIDQuMzc5NDA0NjksOS4yNTIgNC44NjM0MDQ2OSwxMC4xMzIiIHN0cm9rZT0iIzdGODI4MSIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIC8+DQogICAgPC9nPg0KPC9zdmc+",
+    _coverImage: "data:image/svg+xml;charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI2cHgiIHZpZXdCb3g9IjAgMCAyNCAyNiI+DQogICAgPGRlZnMgLz4NCiAgICA8ZyBpZD0iUGFnZS0xIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4NCiAgICAgICAgPHBhdGggZD0iTTIwLjI3NjQwNDcsMjIuNTEyIEwyMC4yNzY0MDQ3LDE1LjEyOCBDMjAuMjc2NDA0NywxNC4wMjggMTkuMzc2NDA0NywxMy4xMjggMTguMjc2NDA0NywxMy4xMjggTDEyLjI3NjQwNDcsMTMuMTI4IEwxMi4yNzY0MDQ3LDcuMTI4IEMxMi4yNzY0MDQ3LDYuMDI4IDExLjM3NjQwNDcsNS4xMjggMTAuMjc2NDA0Nyw1LjEyOCBDOS4xNzY0MDQ2OSw1LjEyOCA4LjI3NjQwNDY5LDYuMDI4IDguMjc2NDA0NjksNy4xMjggTDguMjc2NDA0NjksMTguMTI4IEw1LjU3NjQwNDY5LDE2LjAyOCBDNC43NzY0MDQ2OSwxNS40MjggMy43NzY0MDQ2OSwxNS4yMjggMi44NzY0MDQ2OSwxNS42MjggQzIuMDc2NDA0NjksMTUuOTI4IDEuNzc2NDA0NjksMTYuODI4IDIuMTc2NDA0NjksMTcuNDI4IEw1LjI4NjQwNDY5LDIyLjUxIE0xNS45NDE0MDQ3LDkuNTkyIEMxNi4yNjA0MDQ3LDguODQ3IDE2LjQzNzQwNDcsOC4wMjcgMTYuNDM3NDA0Nyw3LjE2NiBDMTYuNDM3NDA0NywzLjc2MSAxMy42NzY0MDQ3LDEgMTAuMjcwNDA0NywxIEM2Ljg2NTQwNDY5LDEgNC4xMDQ0MDQ2OSwzLjc2MSA0LjEwNDQwNDY5LDcuMTY2IEM0LjEwNDQwNDY5LDguMjQxIDQuMzc5NDA0NjksOS4yNTIgNC44NjM0MDQ2OSwxMC4xMzIiIHN0cm9rZT0iIzdGODI4MSIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIC8+DQogICAgPC9nPg0KPC9zdmc+",
 
     _extend: function(A, B) {
         var r = {};
