@@ -5,6 +5,12 @@
  */
 define([ "qtiCustomInteractionContext" ], function (ctx) {
   var self = {
+    // The type identifier allows custom interactions types to be identified in an item
+    // Returned values are defined by the implementer.
+    // Here, to minimise the risk of namespace collisions the implementation is 
+    // using an ID which includes a domain which they control (hmhco.com)
+    typeIdentifier: 'urn:fdc:hmhco.com:pci:tapToReveal',
+
     /** @access private
      *  defaults for properties (data- attributes)
      */  
@@ -19,12 +25,12 @@ define([ "qtiCustomInteractionContext" ], function (ctx) {
     _state: {
         numReveals: 0
     },
-
-    // The type identifier allows custom interactions types to be identified in an item
-    // Returned values are defined by the implementer.
-    // Here, to minimise the risk of namespace collisions the implementation is 
-    // using an ID which includes a domain which they control (hmhco.com)
-    typeIdentifier: 'urn:fdc:hmhco.com:pci:tapToReveal',
+    _baseElement: null,
+    _config: {},
+    _props: {
+        toggle: "false",
+        altText: "Select to reveal the contents"
+    },
 
     /** @access public
      *  @method getInstance Create a new instance of this portable custom interaction
@@ -199,15 +205,7 @@ define([ "qtiCustomInteractionContext" ], function (ctx) {
             r[prop] = B[prop];
         }
         return r;
-    },
-    _baseElement: null,
-    _config: {},
-    _props: {
-        toggle: "false",
-        altText: "Select to reveal the contents"
     }
-    
-    
   };
   // Register this PCI instance with the communication bridge
   if (ctx) {
