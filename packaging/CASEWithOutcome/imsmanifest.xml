@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--This file was created using: Onyx Editor, Version 3.4 (Unregistered demo version), (c)2011 BPS Bildungsportal Sachsen GmbH (updated by hand Wednesday, 6 June 2012 19:58:06)-->
+<imscp:manifest xmlns:imscp="http://www.imsglobal.org/xsd/qti/qtiv3p0/imscp_v1p1" 
+                xmlns:imsmd="http://ltsc.ieee.org/xsd/LOM" 
+                xmlns:csmd="http://www.imsglobal.org/xsd/qti/qtiv3p0/imscsmd_v1p1"
+                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.imsglobal.org/xsd/qti/qtiv3p0/imscp_v1p1" 
+                xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqti_metadata_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_metadatav3p0_v1p0.xsd http://ltsc.ieee.org/xsd/LOM https://purl.imsglobal.org/spec/md/v1p3/schema/xsd/imsmd_loose_v1p3p2.xsd http://www.imsglobal.org/xsd/qti/qtiv3p0/imscp_v1p1 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqtiv3p0_imscpv1p2_v1p0.xsd http://www.imsglobal.org/xsd/qti/qtiv3p0/imscsmd_v1p1 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqtiv3p0_csmv1p1_v1p0.xsd" 
+                identifier="manifestID">
+    <imscp:metadata>
+        <imscp:schema>QTI Package</imscp:schema>
+        <imscp:schemaversion>3.0.0</imscp:schemaversion>
+        <!-- 2019-03-12 : Package metadata added. -->
+        <imsmd:lom>
+            <imsmd:general>
+                <imsmd:identifier>
+                    <imsmd:entry>Test_CSM_20190312_01</imsmd:entry>
+                </imsmd:identifier>
+                <imsmd:title>
+                    <imsmd:string>Test Using Curriculum Metadata Standards Anotation</imsmd:string>
+                </imsmd:title>
+            </imsmd:general>
+        </imsmd:lom>
+        <!-- ************************************ -->
+    </imscp:metadata>
+    <imscp:organizations/>
+    <imscp:resources>
+        <!-- 2019-03-12 : Test Outcome declarations aligned to CSM added. -->
+        <imscp:resource identifier="Outcome_01" type="imsqti_outcomes_xmlv3p0" href="testoutcome01.xml">
+            <imscp:metadata>
+                <csmd:curriculumStandardsMetadataSet resourceLabel="Outcome (QTI 3.0)" resourcePartId="SCORE">
+                    <csmd:curriculumStandardsMetadata providerId="IMS_CASE_REGISTER">
+                        <csmd:setOfGUIDs region="Texas" version="1.0">
+                            <!-- UUID v1.0 used in the Texas examples -->
+                            <csmd:labelledGUID>
+                                <csmd:label>GUID for a top-level Learning Standard Item definition addressed by this Outcome variable.</csmd:label>
+                                <csmd:caseItemURI>http://www.imsglobal.org/caseregistry/e57e4172-44ae-11e9-b210-d663bd873d93</csmd:caseItemURI>
+                                <csmd:GUID>e57e4172-44ae-11e9-b210-d663bd873d93</csmd:GUID>
+                            </csmd:labelledGUID>
+                            <csmd:labelledGUID>
+                                <csmd:label>GUID for a top-level Learning Standard Item definition addressed by this Outcome variable.</csmd:label>
+                                <csmd:caseItemURI>http://www.imsglobal.org/caseregistry/2759e09c-44af-11e9-b210-d663bd873d93</csmd:caseItemURI>
+                                <csmd:GUID>2759e09c-44af-11e9-b210-d663bd873d93</csmd:GUID>
+                            </csmd:labelledGUID>
+                        </csmd:setOfGUIDs>
+                        <csmd:setOfGUIDs region="Florida" version="1.0">
+                            <!-- UUID v4.0 used in the Florida examples -->
+                            <csmd:labelledGUID>
+                                <csmd:label>GUID for a top-level Learning Standard Item definition addressed by this Outcome variable.</csmd:label>
+                                <csmd:caseItemURI>http://www.imsglobal.org/caseregistry/0c06bc21-c83a-4635-a90a-b55e3b1added</csmd:caseItemURI>
+                                <csmd:GUID>0c06bc21-c83a-4635-a90a-b55e3b1added</csmd:GUID>
+                            </csmd:labelledGUID>
+                            <csmd:labelledGUID>
+                                <csmd:label>GUID for a top-level Learning Standard Item definition addressed by this Outcome variable.</csmd:label>
+                                <csmd:caseItemURI>http://www.imsglobal.org/caseregistry/fd4412d1-0687-4f2b-b610-8a9161dad42d</csmd:caseItemURI>
+                                <csmd:GUID>fd4412d1-0687-4f2b-b610-8a9161dad42d</csmd:GUID>
+                            </csmd:labelledGUID>
+                        </csmd:setOfGUIDs>
+                    </csmd:curriculumStandardsMetadata>
+                </csmd:curriculumStandardsMetadataSet>
+                <imsmd:lom>
+                    <imsmd:general>
+                        <imsmd:title>
+                            <imsmd:string>Mapping between an Outcome variable for a test and the CSM</imsmd:string>
+                        </imsmd:title>
+                    </imsmd:general>
+                </imsmd:lom>
+            </imscp:metadata>
+            <imscp:file href="testoutcome01.xml"></imscp:file>
+        </imscp:resource>
+        <!-- ************************************************************ -->
+        <imscp:resource identifier="Test_258641331" type="imsqti_test_xmlv3p0" href="Test_258641331.xml">
+            <imscp:metadata>
+                <!-- 2019-03-12 : Test aligned to CSM added. -->
+                <csmd:curriculumStandardsMetadataSet resourceLabel="Test (QTI 3.0)" resourcePartId="Test_258641331">
+                    <csmd:curriculumStandardsMetadata providerId="IMS_CASE_REGISTER">
+                        <csmd:setOfGUIDs region="Texas" version="1.0">
+                            <!-- UUID v1.0 used in the Texas examples -->
+                            <csmd:labelledGUID>
+                                <csmd:label>GUID for a top-level Learning Standard Item definition addressed by this test.</csmd:label>
+                                <csmd:caseItemURI>http://www.imsglobal.org/caseregistry/e57e4172-44ae-11e9-b210-d663bd873d93</csmd:caseItemURI>
+                                <csmd:GUID>e57e4172-44ae-11e9-b210-d663bd873d93</csmd:GUID>
+                            </csmd:labelledGUID>
+                            <csmd:labelledGUID>
+                                <csmd:label>GUID for a top-level Learning Standard Item definition addressed by this test.</csmd:label>
+                                <csmd:caseItemURI>http://www.imsglobal.org/caseregistry/2759e09c-44af-11e9-b210-d663bd873d93</csmd:caseItemURI>
+                                <csmd:GUID>2759e09c-44af-11e9-b210-d663bd873d93</csmd:GUID>
+                            </csmd:labelledGUID>
+                        </csmd:setOfGUIDs>
+                        <csmd:setOfGUIDs region="Florida" version="1.0">
+                            <!-- UUID v4.0 used in the Florida examples -->
+                            <csmd:labelledGUID>
+                                <csmd:label>GUID for a top-level Learning Standard Item definition addressed by this test.</csmd:label>
+                                <csmd:caseItemURI>http://www.imsglobal.org/caseregistry/0c06bc21-c83a-4635-a90a-b55e3b1added</csmd:caseItemURI>
+                                <csmd:GUID>0c06bc21-c83a-4635-a90a-b55e3b1added</csmd:GUID>
+                            </csmd:labelledGUID>
+                            <csmd:labelledGUID>
+                                <csmd:label>GUID for a top-level Learning Standard Item definition addressed by this test.</csmd:label>
+                                <csmd:caseItemURI>http://www.imsglobal.org/caseregistry/fd4412d1-0687-4f2b-b610-8a9161dad42d</csmd:caseItemURI>
+                                <csmd:GUID>fd4412d1-0687-4f2b-b610-8a9161dad42d</csmd:GUID>
+                            </csmd:labelledGUID>
+                        </csmd:setOfGUIDs>
+                    </csmd:curriculumStandardsMetadata>
+                </csmd:curriculumStandardsMetadataSet>
+                <!-- *************************************** -->
+                <imsmd:lom>
+                    <imsmd:general>
+                        <imsmd:identifier>
+                            <imsmd:entry>Test_258641331</imsmd:entry>
+                        </imsmd:identifier>
+                        <imsmd:title>
+                            <imsmd:string>English exercises</imsmd:string>
+                        </imsmd:title>
+                        <imsmd:language>de</imsmd:language>
+                    </imsmd:general>
+                    <imsmd:educational/>
+                    <imsmd:lifeCycle>
+                        <imsmd:contribute>
+                            <imsmd:role>
+                                <imsmd:source>
+                                    LOMv1.0
+                                </imsmd:source>
+                                <imsmd:value>
+                                    author
+                                </imsmd:value>
+                            </imsmd:role>
+                            <imsmd:entity>
+                                BEGIN:VCARD VERSION:3.0 N:Winkelmann;Yvonne FN:Yvonne
+                                Winkelmann ORG:BPS Bildungsportal Sachsen GmbH
+                                URL:http://bps-system.de TITLE: TEL;TYPE=WORK,VOICE:
+                                ADR;TYPE=intl,postal,parcel,work:;;;;;;EMAIL;TYPE=PREF,INTERNET:
+                                END:VCARD
+                            </imsmd:entity>
+                        </imsmd:contribute>
+                    </imsmd:lifeCycle>
+                </imsmd:lom>
+            </imscp:metadata>
+            <imscp:file href="Test_258641331.xml"/>
+            <imscp:dependency identifierref="A_403910368"/>
+            <imscp:dependency identifierref="A_2140438487"/>
+            <imscp:dependency identifierref="A_2121083126"/>
+            <imscp:dependency identifierref="A_1925743812"/>
+            <imscp:dependency identifierref="A_79197713"/>
+            <imscp:dependency identifierref="A_265237402"/>
+            <imscp:dependency identifierref="A_1845621905"/>
+            <imscp:dependency identifierref="A_603808326"/>
+            <imscp:dependency identifierref="A_104374830"/>
+            <imscp:dependency identifierref="A_1724166344"/>
+            <imscp:dependency identifierref="B_1312708806"/>
+            <imscp:dependency identifierref="B_568428036"/>
+            <imscp:dependency identifierref="B_2082409940"/>
+            <imscp:dependency identifierref="B_1553271053"/>
+            <imscp:dependency identifierref="B_426321584"/>
+            <imscp:dependency identifierref="B_790429330"/>
+            <imscp:dependency identifierref="B_110728156"/>
+            <imscp:dependency identifierref="B_1992117307"/>
+            <imscp:dependency identifierref="B_1541841167"/>
+        </imscp:resource>
+        <imscp:resource identifier="A_403910368" type="imsqti_item_xmlv3p0" href="A_403910368.xml">
+            <!-- 2019-03-12 : Item aligned to CSM added. -->
+            <imscp:metadata>
+                <csmd:curriculumStandardsMetadataSet resourceLabel="Item (QTI 3.0)" resourcePartId="A_403910368">
+                    <csmd:curriculumStandardsMetadata providerId="IMS_CASE_REGISTER">
+                        <csmd:setOfGUIDs region="Texas" version="1.0">
+                            <!-- UUID v1.0 used in the Texas examples -->
+                            <csmd:labelledGUID>
+                                <csmd:label>GUID for a Learning Standard Item definition addressed by this item.</csmd:label>
+                                <csmd:caseItemURI>http://www.imsglobal.org/caseregistry/a3d6bbda-44b0-11e9-b210-d663bd873d93</csmd:caseItemURI>
+                                <csmd:GUID>a3d6bbda-44b0-11e9-b210-d663bd873d93</csmd:GUID>
+                            </csmd:labelledGUID>
+                            <csmd:labelledGUID>
+                                <csmd:label>GUID for a Learning Standard Item definition addressed by this item.</csmd:label>
+                                <csmd:caseItemURI>http://www.imsglobal.org/caseregistry/b1ffaba4-44b0-11e9-b210-d663bd873d93</csmd:caseItemURI>
+                                <csmd:GUID>b1ffaba4-44b0-11e9-b210-d663bd873d93</csmd:GUID>
+                            </csmd:labelledGUID>
+                        </csmd:setOfGUIDs>
+                        <csmd:setOfGUIDs region="Florida" version="1.0">
+                            <!-- UUID v4.0 used in the Florida examples -->
+                            <csmd:labelledGUID>
+                                <csmd:label>GUID for a Learning Standard Item definition addressed by this item.</csmd:label>
+                                <csmd:caseItemURI>http://www.imsglobal.org/caseregistry/7a1a83f8-a371-46e8-96ab-2af89223af79</csmd:caseItemURI>
+                                <csmd:GUID>7a1a83f8-a371-46e8-96ab-2af89223af79</csmd:GUID>
+                            </csmd:labelledGUID>
+                            <csmd:labelledGUID>
+                                <csmd:label>GUID for a Learning Standard Item definition addressed by this item.</csmd:label>
+                                <csmd:caseItemURI>http://www.imsglobal.org/caseregistry/ce496478-235a-4d85-abee-805475838cf0</csmd:caseItemURI>
+                                <csmd:GUID>ce496478-235a-4d85-abee-805475838cf0</csmd:GUID>
+                            </csmd:labelledGUID>
+                        </csmd:setOfGUIDs>
+                    </csmd:curriculumStandardsMetadata>
+                </csmd:curriculumStandardsMetadataSet>
+                <imsmd:lom>
+                    <imsmd:general>
+                        <imsmd:title>
+                            <imsmd:string>Item Using Curriculum Metadata Standards Anotation</imsmd:string>
+                        </imsmd:title>
+                    </imsmd:general>
+                </imsmd:lom>
+            </imscp:metadata>
+            <!-- *************************************** -->
+            <imscp:file href="A_403910368.xml"/>
+        </imscp:resource>
+        <imscp:resource identifier="A_2140438487" type="imsqti_item_xmlv3p0" href="A_2140438487.xml">
+            <imscp:file href="A_2140438487.xml"/>
+        </imscp:resource>
+        <imscp:resource identifier="A_2121083126" type="imsqti_item_xmlv3p0" href="A_2121083126.xml">
+            <imscp:file href="A_2121083126.xml"/>
+        </imscp:resource>
+        <imscp:resource identifier="A_1925743812" type="imsqti_item_xmlv3p0" href="A_1925743812.xml">
+            <imscp:file href="A_1925743812.xml"/>
+        </imscp:resource>
+        <imscp:resource identifier="A_79197713" type="imsqti_item_xmlv3p0" href="A_79197713.xml">
+            <imscp:file href="A_79197713.xml"/>
+        </imscp:resource>
+        <imscp:resource identifier="A_265237402" type="imsqti_item_xmlv3p0" href="A_265237402.xml">
+            <imscp:file href="A_265237402.xml"/>
+        </imscp:resource>
+        <imscp:resource identifier="A_1845621905" type="imsqti_item_xmlv3p0" href="A_1845621905.xml">
+            <imscp:file href="A_1845621905.xml"/>
+        </imscp:resource>
+        <imscp:resource identifier="A_603808326" type="imsqti_item_xmlv3p0" href="A_603808326.xml">
+            <imscp:file href="A_603808326.xml"/>
+        </imscp:resource>
+        <imscp:resource identifier="A_104374830" type="imsqti_item_xmlv3p0" href="A_104374830.xml">
+            <imscp:file href="A_104374830.xml"/>
+        </imscp:resource>
+        <imscp:resource identifier="A_1724166344" type="imsqti_item_xmlv3p0" href="A_1724166344.xml">
+            <imscp:file href="A_1724166344.xml"/>
+        </imscp:resource>
+        <imscp:resource identifier="B_1312708806" type="imsqti_item_xmlv3p0" href="B_1312708806.xml">
+            <imscp:file href="B_1312708806.xml"/>
+        </imscp:resource>
+        <imscp:resource identifier="B_568428036" type="imsqti_item_xmlv3p0" href="B_568428036.xml">
+            <imscp:file href="B_568428036.xml"/>
+        </imscp:resource>
+        <imscp:resource identifier="B_2082409940" type="imsqti_item_xmlv3p0" href="B_2082409940.xml">
+            <imscp:file href="B_2082409940.xml"/>
+        </imscp:resource>
+        <imscp:resource identifier="B_1553271053" type="imsqti_item_xmlv3p0" href="B_1553271053.xml">
+            <imscp:file href="B_1553271053.xml"/>
+        </imscp:resource>
+        <imscp:resource identifier="B_426321584" type="imsqti_item_xmlv3p0" href="B_426321584.xml">
+            <imscp:file href="B_426321584.xml"/>
+        </imscp:resource>
+        <imscp:resource identifier="B_790429330" type="imsqti_item_xmlv3p0" href="B_790429330.xml">
+            <imscp:file href="B_790429330.xml"/>
+        </imscp:resource>
+        <imscp:resource identifier="B_110728156" type="imsqti_item_xmlv3p0" href="B_110728156.xml">
+            <imscp:file href="B_110728156.xml"/>
+        </imscp:resource>
+        <imscp:resource identifier="B_1992117307" type="imsqti_item_xmlv3p0" href="B_1992117307.xml">
+            <imscp:file href="B_1992117307.xml"/>
+        </imscp:resource>
+        <imscp:resource identifier="B_1541841167" type="imsqti_item_xmlv3p0" href="B_1541841167.xml">
+            <imscp:file href="B_1541841167.xml"/>
+        </imscp:resource>
+    </imscp:resources>
+</imscp:manifest>
