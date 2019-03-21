@@ -39,7 +39,7 @@
     </ordinaryStatistic>
     <categorizedStatistic name="D-Parm" context="http://ntweb.ets.org/itemStats/Context/XVZ2004_J1B" caseCount="689325" stdError="0.0022" lastUpdated="2004-07-04">
         <targetObject identifier="Item_VB123456"/>
-        <mapping lower-bound="1" upper-bound="4" default-value="0">
+        <mapping lowerBound="1" upperBound="4" defaultValue="0">
             <mapEntry mapKey="d1" mappedValue="412.5267"/>
             <mapEntry mapKey="d2" mappedValue="426.5699"/>
             <mapEntry mapKey="d3" mappedValue="451.8811"/>
@@ -108,7 +108,7 @@
     </ordinaryStatistic>
     <categorizedStatistic name="Score_Conversion" context="http://ntweb.ets.org/itemStats/Context/XVZ2004_J1B" caseCount="689325" stdError="0.0022" lastUpdated="2004-07-04">
         <targetObject identifier="Test_VB"/>
-        <mapping lower-bound="1" upper-bound="9" default-value="0">
+        <mapping lowerBound="1" upperBound="9" defaultValue="0">
             <mapEntry mapKey="0" mappedValue="0.0"/>
             <mapEntry mapKey="1" mappedValue="0.5"/>
             <mapEntry mapKey="2" mappedValue="1.0"/>
