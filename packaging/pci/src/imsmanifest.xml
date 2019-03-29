@@ -59,6 +59,19 @@
 
     <resources>
         <resource type="imsqti_item_xmlv3p0" identifier="measuringPh" href="measuring_ph.xml">
+            <metadata>
+                <imsqti:qtiMetadata>
+                    <imsqti:timeDependent>false</imsqti:timeDependent>
+                    <imsqti:interactionType>portableCustomInteraction</imsqti:interactionType>
+                    <imsqti:portableCustomInteractionContext>
+                        <imsqti:customTypeIdentifier>urn-fdc-hmhco.com-pci-tapToReveal</imsqti:customTypeIdentifier>
+                        <imsqti:interactionKind>selection</imsqti:interactionKind>
+                    </imsqti:portableCustomInteractionContext>
+                    <imsqti:solutionAvailable>false</imsqti:solutionAvailable>
+                    <imsqti:toolName>HMH PCI Library</imsqti:toolName>
+                    <imsqti:toolVersion>1.0</imsqti:toolVersion>
+                </imsqti:qtiMetadata>
+            </metadata>
             <file href="measuring_ph.xml" />
             <file href="ammonia.svg" />
             <file href="baking_soda.svg" />
@@ -74,6 +87,19 @@
             <file href="modules/tap.js" />
         </resource>
         <resource type="imsqti_item_xmlv3p0" identifier="fractions-no-dependencies" href="fractions1.xml">
+            <metadata>
+                <imsqti:qtiMetadata>
+                    <imsqti:timeDependent>false</imsqti:timeDependent>
+                    <imsqti:interactionType>portableCustomInteraction</imsqti:interactionType>
+                    <imsqti:portableCustomInteractionContext>
+                        <imsqti:customTypeIdentifier>urn-fdc-hmhco.com-pci-shading</imsqti:customTypeIdentifier>
+                        <imsqti:interactionKind>selection</imsqti:interactionKind>
+                    </imsqti:portableCustomInteractionContext>
+                    <imsqti:solutionAvailable>false</imsqti:solutionAvailable>
+                    <imsqti:toolName>HMH PCI Library</imsqti:toolName>
+                    <imsqti:toolVersion>1.0</imsqti:toolVersion>
+                </imsqti:qtiMetadata>
+            </metadata>
             <file href="fractions1.xml" />
             <dependency identifierref="pci_module_shading" />
             <!-- no module resolution file referenced -->
@@ -83,6 +109,19 @@
         </resource>
         <resource type="imsqti_item_xmlv3p0" identifier="fractions-dependencies-module-path" 
                   href="fractions_deps.xml">
+            <metadata>
+                <imsqti:qtiMetadata>
+                    <imsqti:timeDependent>false</imsqti:timeDependent>
+                    <imsqti:interactionType>portableCustomInteraction</imsqti:interactionType>
+                    <imsqti:portableCustomInteractionContext>
+                        <imsqti:customTypeIdentifier>urn-fdc-hmhco.com-pci-shading_deps</imsqti:customTypeIdentifier>
+                        <imsqti:interactionKind>selection</imsqti:interactionKind>
+                    </imsqti:portableCustomInteractionContext>
+                    <imsqti:solutionAvailable>false</imsqti:solutionAvailable>
+                    <imsqti:toolName>HMH PCI Library</imsqti:toolName>
+                    <imsqti:toolVersion>1.0</imsqti:toolVersion>
+                </imsqti:qtiMetadata>
+            </metadata>
             <file href="fractions_deps.xml" />
             <dependency identifierref="pci_module_shading_deps" />
             <!-- no module resolution file referenced -->
@@ -96,6 +135,19 @@
         </resource>
         <resource type="imsqti_item_xmlv3p0" identifier="fractions-primary-configuration" 
                   href="fractions_deps_2.xml">
+            <metadata>
+                <imsqti:qtiMetadata>
+                    <imsqti:timeDependent>false</imsqti:timeDependent>
+                    <imsqti:interactionType>portableCustomInteraction</imsqti:interactionType>
+                    <imsqti:portableCustomInteractionContext>
+                        <imsqti:customTypeIdentifier>urn-fdc-hmhco.com-pci-shading</imsqti:customTypeIdentifier>
+                        <imsqti:interactionKind>selection</imsqti:interactionKind>
+                    </imsqti:portableCustomInteractionContext>
+                    <imsqti:solutionAvailable>false</imsqti:solutionAvailable>
+                    <imsqti:toolName>HMH PCI Library</imsqti:toolName>
+                    <imsqti:toolVersion>1.0</imsqti:toolVersion>
+                </imsqti:qtiMetadata>
+            </metadata>
             <file href="fractions_deps_2.xml" />
             <dependency identifierref="pci_module_shading_deps_2" />
             <!-- no module resolution file referenced -->
