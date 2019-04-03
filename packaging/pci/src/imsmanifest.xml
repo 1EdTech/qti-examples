@@ -64,7 +64,7 @@
                     <imsqti:timeDependent>false</imsqti:timeDependent>
                     <imsqti:interactionType>portableCustomInteraction</imsqti:interactionType>
                     <imsqti:portableCustomInteractionContext>
-                        <imsqti:customTypeIdentifier>urn-fdc-hmhco.com-pci-tapToReveal</imsqti:customTypeIdentifier>
+                        <imsqti:customTypeIdentifier>urn:fdc:hmhco.com:2019:pci:tapToReveal</imsqti:customTypeIdentifier>
                         <imsqti:interactionKind>selection</imsqti:interactionKind>
                     </imsqti:portableCustomInteractionContext>
                     <imsqti:solutionAvailable>false</imsqti:solutionAvailable>
@@ -92,7 +92,7 @@
                     <imsqti:timeDependent>false</imsqti:timeDependent>
                     <imsqti:interactionType>portableCustomInteraction</imsqti:interactionType>
                     <imsqti:portableCustomInteractionContext>
-                        <imsqti:customTypeIdentifier>urn-fdc-hmhco.com-pci-shading</imsqti:customTypeIdentifier>
+                        <imsqti:customTypeIdentifier>urn:fdc:hmhco.com:2019:pci:shading</imsqti:customTypeIdentifier>
                         <imsqti:interactionKind>selection</imsqti:interactionKind>
                     </imsqti:portableCustomInteractionContext>
                     <imsqti:solutionAvailable>false</imsqti:solutionAvailable>
@@ -114,7 +114,7 @@
                     <imsqti:timeDependent>false</imsqti:timeDependent>
                     <imsqti:interactionType>portableCustomInteraction</imsqti:interactionType>
                     <imsqti:portableCustomInteractionContext>
-                        <imsqti:customTypeIdentifier>urn-fdc-hmhco.com-pci-shading_deps</imsqti:customTypeIdentifier>
+                        <imsqti:customTypeIdentifier>urn:fdc:hmhco.com:2019:pci:shading_deps</imsqti:customTypeIdentifier>
                         <imsqti:interactionKind>selection</imsqti:interactionKind>
                     </imsqti:portableCustomInteractionContext>
                     <imsqti:solutionAvailable>false</imsqti:solutionAvailable>
@@ -140,7 +140,7 @@
                     <imsqti:timeDependent>false</imsqti:timeDependent>
                     <imsqti:interactionType>portableCustomInteraction</imsqti:interactionType>
                     <imsqti:portableCustomInteractionContext>
-                        <imsqti:customTypeIdentifier>urn-fdc-hmhco.com-pci-shading</imsqti:customTypeIdentifier>
+                        <imsqti:customTypeIdentifier>urn:fdc:hmhco.com:2019:pci:shading</imsqti:customTypeIdentifier>
                         <imsqti:interactionKind>selection</imsqti:interactionKind>
                     </imsqti:portableCustomInteractionContext>
                     <imsqti:solutionAvailable>false</imsqti:solutionAvailable>
