@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<qti-assessment-test xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation=" http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd " identifier="res_-TX_G06SAMP_000" title="Benchmark Test Modules 1-6">
+    <qti-outcome-declaration identifier="SCORE" cardinality="single" base-type="float">
+        <qti-default-value>
+            <qti-value>0</qti-value>
+        </qti-default-value>
+    </qti-outcome-declaration><qti-test-part identifier="tp_-TX_G06SAMP_000_1" navigation-mode="linear" submission-mode="individual">
+        <qti-item-session-control max-attempts="2"/>
+        <qti-assessment-section identifier="as_-TX_G06SAMP_000_1_1" title="Section 1" visible="false">
+		<qti-assessment-item-ref identifier="res_-TX_G06SAMP_001" href="-TX_G06SAMP_001.xml">
+                <qti-weight identifier="W_-TX_G06SAMP_001" value="1"/>
+				</qti-assessment-item-ref>
+			<qti-assessment-item-ref identifier="res_-TX_G06SAMP_004" href="-TX_G06SAMP_004.xml">
+                <qti-weight identifier="W_-TX_G06SAMP_004" value="1"/>
+				</qti-assessment-item-ref>
+			<qti-assessment-item-ref identifier="res_-TX_G06SAMP_005" href="-TX_G06SAMP_005.xml">
+                <qti-weight identifier="W_-TX_G06SAMP_005" value="1"/>
+				</qti-assessment-item-ref>
+			</qti-assessment-section>
+    </qti-test-part>
+    <qti-outcome-processing>
+        <qti-set-outcome-value identifier="SCORE">
+            <qti-divide>
+                <qti-sum>
+                    <qti-test-variables variable-identifier="SCORE"/>
+                </qti-sum>
+                <qti-base-value base-type="float">22</qti-base-value>
+            </qti-divide>
+        </qti-set-outcome-value>
+    </qti-outcome-processing>
+</qti-assessment-test>

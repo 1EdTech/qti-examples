@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lom xmlns="http://ltsc.ieee.org/xsd/LOM" 
+     xmlns:csm="http://www.imsglobal.org/xsd/qti/qtiv3p0/imscsmd_v1p1" 
+     xmlns:imsqti="http://www.imsglobal.org/xsd/imsqti_metadata_v3p0"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd http://ltsc.ieee.org/xsd/LOM https://purl.imsglobal.org/spec/md/v1p3/schema/xsd/imsmd_loose_v1p3p2.xsd  http://www.imsglobal.org/xsd/qti/qtiv3p0/imscp_v1p1 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqtiv3p0_imscpv1p2_v1p0.xsd http://www.imsglobal.org/xsd/qti/qtiv3p0/imscsmd_v1p1 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqtiv3p0_csmv1p1_v1p0.xsd http://www.imsglobal.org/xsd/imsqti_metadata_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_metadatav3p0_v1p0.xsd">
+    <educational>
+        <intendedEndUserRole>
+            <source>IMSGLC_CC_Rolesv1p3</source>
+            <value>Learner</value>
+        </intendedEndUserRole>
+        <typicalAgeRange>
+            <string>10,11</string>
+        </typicalAgeRange>
+    </educational>
+    <lifeCycle>
+        <version>
+            <string language="en">Published</string>
+        </version>
+    </lifeCycle>
+    <classification>
+        <purpose>
+            <source>LOMv1.0</source>
+            <value>Discipline</value>
+        </purpose>
+        <taxonPath>
+            <source>
+                <string xml:lang="en">jacs</string>
+            </source>
+            <taxon>
+                <id>G1</id>
+                <entry>
+                    <string xml:lang="en">Mathematics</string>
+                </entry>
+            </taxon>
+        </taxonPath>
+    </classification>
+    <imsqti:qtiMetadata>
+        <imsqti:itemTemplate>false</imsqti:itemTemplate>
+        <imsqti:composite>false</imsqti:composite>
+        <imsqti:interactionType>choiceInteraction</imsqti:interactionType>
+        <imsqti:feedbackType>nonadaptive</imsqti:feedbackType>
+    </imsqti:qtiMetadata>
+    <csm:curriculumStandardsMetadataSet>
+        <csm:curriculumStandardsMetadata>
+            <csm:setOfGUIDs>
+                <csm:labelledGUID>
+                    <csm:label>identify a number, its opposite, and its absolute value;</csm:label>
+                    <csm:caseItemURI>https://teks-api.texasgateway.org/ims/case/v1p0/CFItems/747eee11-848c-597a-8c9c-a71c5399798d</csm:caseItemURI>
+                    <csm:GUID>747eee11-848c-597a-8c9c-a71c5399798d</csm:GUID>
+                </csm:labelledGUID>
+            </csm:setOfGUIDs>
+        </csm:curriculumStandardsMetadata>
+    </csm:curriculumStandardsMetadataSet>
+</lom>

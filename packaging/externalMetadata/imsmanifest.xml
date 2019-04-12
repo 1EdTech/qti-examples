@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest xmlns="http://www.imsglobal.org/xsd/qti/qtiv3p0/imscp_v1p1" 
+          xmlns:imsmd="http://ltsc.ieee.org/xsd/LOM" 
+          xmlns:csm="http://www.imsglobal.org/xsd/qti/qtiv3p0/imscsmd_v1p1" 
+          xmlns:imsqti="http://www.imsglobal.org/xsd/imsqti_metadata_v3p0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd http://ltsc.ieee.org/xsd/LOM https://purl.imsglobal.org/spec/md/v1p3/schema/xsd/imsmd_loose_v1p3p2.xsd  http://www.imsglobal.org/xsd/qti/qtiv3p0/imscp_v1p1 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqtiv3p0_imscpv1p2_v1p0.xsd http://www.imsglobal.org/xsd/qti/qtiv3p0/imscsmd_v1p1 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqtiv3p0_csmv1p1_v1p0.xsd http://www.imsglobal.org/xsd/imsqti_metadata_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_metadatav3p0_v1p0.xsd"
+          identifier="MANIFEST_QTI_package1">
+    <metadata>
+        <schema>QTI Package</schema>
+        <schemaversion>3.0.0</schemaversion>
+        <imsmd:lom>
+            <imsmd:general>
+                <imsmd:identifier>
+                    <imsmd:catalog>QTI Package</imsmd:catalog>
+                </imsmd:identifier>
+                <imsmd:title>
+                    <imsmd:string xml:lang="en">Math TX G6</imsmd:string>
+                </imsmd:title>
+                <imsmd:language/>
+                <imsmd:description>
+                    <imsmd:string xml:lang="en">QTI v3.0 Assessment Package - Grade 6 Math</imsmd:string>
+                </imsmd:description>
+            </imsmd:general>
+            <imsmd:lifeCycle>
+                <imsmd:version>
+                    <imsmd:string xml:lang="en">1.0</imsmd:string>
+                </imsmd:version>
+                <imsmd:status>
+                    <imsmd:source>LOMv1.0</imsmd:source>
+                    <imsmd:value>Final</imsmd:value>
+                </imsmd:status>
+            </imsmd:lifeCycle>
+            <imsmd:metaMetadata>
+                <imsmd:metadataschema>LOMv1.0</imsmd:metadataschema>
+                <imsmd:metadataschema>QTIv3.0</imsmd:metadataschema>
+                <imsmd:language>en</imsmd:language>
+            </imsmd:metaMetadata>
+            <imsmd:technical>
+                <imsmd:format>text/x-imsqti-item-xml</imsmd:format>
+            </imsmd:technical>
+            <imsmd:rights>
+                <imsmd:description>
+                    <imsmd:string xml:lang="en">(c) Copyright 2014, 2019 Houghton Mifflin Harcourt.</imsmd:string>
+                </imsmd:description>
+            </imsmd:rights>
+        </imsmd:lom>
+    </metadata>
+    <organizations/>
+    <resources>
+        <resource identifier="res_-TX_G06SAMP_000" href="testitems/-TX_G06SAMP_000.xml" type="imsqti_test_xmlv3p0">
+            <file href="testitems/-TX_G06SAMP_000.xml"/>
+            <dependency identifierref="res_-TX_G06SAMP_001"/>
+            <dependency identifierref="res_-TX_G06SAMP_004"/>
+            <dependency identifierref="res_-TX_G06SAMP_005"/>
+        </resource>
+        <resource identifier="res_-TX_G06SAMP_001" href="testitems/-TX_G06SAMP_001.xml" type="imsqti_item_xmlv3p0">
+            <file href="testitems/-TX_G06SAMP_001.xml"/>
+            <dependency identifierref="metadata_6abfaa45-644b-52e8-891e-4fa4045a6c69"/>
+        </resource>
+        <resource identifier="res_-TX_G06SAMP_004" href="testitems/-TX_G06SAMP_004.xml" type="imsqti_item_xmlv3p0">
+            <file href="testitems/-TX_G06SAMP_004.xml"/>
+            <dependency identifierref="metadata_6abfaa45-644b-52e8-891e-4fa4045a6c69"/>
+        </resource>
+        <resource identifier="res_-TX_G06SAMP_005" href="testitems/-TX_G06SAMP_005.xml" type="imsqti_item_xmlv3p0">
+            <file href="testitems/-TX_G06SAMP_005.xml"/>
+            <dependency identifierref="metadata_747eee11-848c-597a-8c9c-a71c5399798d"/>
+        </resource>
+        
+        <resource identifier="metadata_747eee11-848c-597a-8c9c-a71c5399798d" href="testitems/metadata_747eee11-848c-597a-8c9c-a71c5399798d.xml" type="resourcemetadata/xml">
+            <file href="testitems/metadata_747eee11-848c-597a-8c9c-a71c5399798d.xml" />
+        </resource>
+        <resource identifier="metadata_6abfaa45-644b-52e8-891e-4fa4045a6c69" href="testitems/metadata_6abfaa45-644b-52e8-891e-4fa4045a6c69.xml" type="resourcemetadata/xml">
+            <file href="testitems/metadata_6abfaa45-644b-52e8-891e-4fa4045a6c69.xml" />
+        </resource>
+    </resources>
+</manifest>
