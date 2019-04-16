@@ -221,6 +221,13 @@
         <resource identifier="upload_composite" type="imsqti_item_xmlv3p0" href="upload_composite.xml">
             <file href="upload_composite.xml"/>
         </resource>
+        <resource identifier="video-tracks" type="imsqti_item_xmlv3p0" href="audio-video.xml">
+            <file href="audio-video.xml"/>
+            <file href="images/big_buck_bunny.mp4"/>
+            <file href="images/big_buck_bunny.webm"/>
+            <file href="images/texttrack-en.vtt"/>
+            <file href="images/texttrack-jpn.vtt"/>
+        </resource>
         <resource identifier="media_coords" type="imsqti_item_xmlv3p0" href="media_coords.xml">
             <file href="squirrel.png"/>
             <file href="tree.mp3"/>

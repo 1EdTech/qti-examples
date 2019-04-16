@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation=" http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd " identifier="choice" title="Favorite Color" adaptive="false" time-dependent="false">
+<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" 
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd"
+  identifier="video-tracks" title="Big Buck Bunny" adaptive="false" time-dependent="false">
   <qti-response-declaration identifier="RESPONSE" cardinality="single" base-type="identifier">
     <qti-correct-response>
-      <qti-value>ChoiceA</qti-value>
+      <qti-value>C</qti-value>
     </qti-correct-response>
   </qti-response-declaration>
   <qti-outcome-declaration identifier="SCORE" cardinality="single" base-type="float">
@@ -10,31 +12,26 @@
       <qti-value>0</qti-value>
     </qti-default-value>
   </qti-outcome-declaration>
-  <qti-item-body id="theWholeItem">
-    <p id="p1"><span id="a">Ms. Smith’s class contains 24 students.</span> <span id="b">Each student voted for his or her favorite color.</span> <span id="c">Watch the video to learn about the result of the class vote.</span></p>
+  <qti-item-body>
+    <p>
+      Below is a Big Buck Bunny video trailer with two different Closed Caption tracks: English and Japanese. 
+      Use the video player's controls to turn the caption tracks (the "CC" button) on and off.
+    </p>
     <video width="320" height="240" controls="true">
-      <source src="movie.mp4" type="video/mp4"/>
-      <source src="movie.ogg" type="video/ogg"/>
-      <track kind="captions" src="../captions/movie.vtt" srclang="en" label="Captions" default="true"/>
-      <track kind="subtitles" label="SpanishSubtitles" src="subtitles_sp.vtt" srclang="es"></track>
-      <!-- Your browser does not support the video tag. --></video>
-    <qti-choice-interaction response-identifier="RESPONSE" shuffle="false" max-choices="5">
-      <qti-prompt id="o">Indicate which of the following statements are accurate.</qti-prompt>
-      <qti-simple-choice identifier="choice1" fixed="true">
-        <p id="p">The majority of students voted for Red.</p>
-      </qti-simple-choice>
-      <qti-simple-choice identifier="choice2" fixed="true">
-        <p id="q">Twice as many students voted for Red than voted for Blue.</p>
-      </qti-simple-choice>
-      <qti-simple-choice identifier="choice3" fixed="true">
-        <p id="r">Two percent of students voted for Yellow.</p>
-      </qti-simple-choice>
-      <qti-simple-choice identifier="choice4" fixed="true">
-        <p id="s">Red received  more votes than any other color.</p>
-      </qti-simple-choice>
-      <qti-simple-choice identifier="choice5" fixed="true">
-        <p id="t">Twenty-five percent of students voted for Green.</p>
-      </qti-simple-choice>
+      <source src="images/big_buck_bunny.mp4" type="video/mp4" />
+      <source src="images/big_buck_bunny.webm" type="video/webm" />
+      <track kind="captions" src="images/texttrack-en.vtt" srclang="en" label="English" default="true"/>
+      <track kind="captions" src="images/texttrack-jpn.vtt" srclang="ja" label="Japanese"/>
+    </video>
+    <p>
+      This trailer, and the Big Buck Bunny project, is (c) copyright 2008, Blender Foundation / www.bigbuckbunny.org
+    </p>      
+    <qti-choice-interaction max-choices="1" response-identifier="RESPONSE">
+      <qti-prompt><p>How many Caption Tracks are included in the video presentation above?</p></qti-prompt>
+      <qti-simple-choice identifier="A">0</qti-simple-choice>
+      <qti-simple-choice identifier="B">1</qti-simple-choice>
+      <qti-simple-choice identifier="C">2</qti-simple-choice>
+      <qti-simple-choice identifier="D">3</qti-simple-choice>
     </qti-choice-interaction>
   </qti-item-body>
   <qti-response-processing template="https://www.imsglobal.org/question/qti_v3p0/rptemplates/match_correct.xml"/>
