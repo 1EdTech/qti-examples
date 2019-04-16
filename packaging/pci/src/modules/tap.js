@@ -31,6 +31,7 @@ define([ "qtiCustomInteractionContext" ], function (ctx) {
         toggle: "false",
         altText: "Select to reveal the contents"
     },
+    _eventListener: undefined,
 
     /** @access public
      *  @method getInstance Create a new instance of this portable custom interaction
@@ -86,9 +87,11 @@ define([ "qtiCustomInteractionContext" ], function (ctx) {
             image.outerHTML = "<button class='hmh-tap-image' aria-live='polite' aria-relevant='all'>" + source + "</button>";
         }
         var buttons = dom.querySelectorAll("button.hmh-tap-image");
+        this._eventListener = this.onclick.bind(this);
         for (var i = 0; i < buttons.length; i++) {
-            buttons[i].addEventListener("click", this.onclick.bind(this));
+            buttons[i].addEventListener("click", this._eventListener);
         }
+        this.oncompleted = this.cleanup.bind(this);
         if (this._config.onready !== undefined && this._config.onready !== null) {
             this._config.onready(this, this.getState());
         }
@@ -149,6 +152,17 @@ define([ "qtiCustomInteractionContext" ], function (ctx) {
         var stylesheet = document.createElement("style");
         stylesheet.innerHTML = this._stylesheet.join("").replace(/\${uid}/g, uid);
         this._baseElement.appendChild(stylesheet);
+    },
+    /** 
+     * This will be provided as the oncompleted callback to cleanup 
+     * before this PCI is unloaded.
+     * @return {none}
+     */
+    cleanup: function() {
+        var buttons = this._baseElement.querySelectorAll("button.hmh-tap-image");
+        for (var i = 0; i < buttons.length; i++) {
+            buttons[i].removeEventListener("click", this._eventListener);
+        }
     },
     
     _stylesheet: [
