@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<assessmentItem xmlns="http://www.imsglobal.org/xsd/imsqti_v2p2"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqti_v2p2  http://www.imsglobal.org/xsd/qti/qtiv2p2/imsqti_v2p2p2.xsd"
+	identifier="gapMatch" title="Charting Data" adaptive="false" timeDependent="false">
+  <responseDeclaration identifier="RESPONSE" cardinality="multiple" baseType="directedPair">
+    <correctResponse>
+      <value>C1 circle</value>
+      <value>C1 circle</value>
+      <value>C1 circle</value>
+      <value>C2 triangle</value>
+      <value>C2 triangle</value>
+      <value>C3 star</value>
+      <value>C3 star</value>
+      <value>C3 star</value>
+      <value>C3 star</value>
+    </correctResponse>
+  </responseDeclaration>
+  <outcomeDeclaration identifier="SCORE" cardinality="single" baseType="float"/>
+  <itemBody>
+    <gapMatchInteraction responseIdentifier="RESPONSE" shuffle="false">
+      <prompt>Jaiden and his friends made a chart of their favorite shapes. There were 3 circles, 2
+        triangles and 4 stars. Click the shapes to complete the chart below.</prompt>
+      <gapText identifier="circle" matchMax="5" data-type="clickPop" data-target-container="C1">
+      <img src="redCircle.png" width="75" height="75" alt=""/>
+      </gapText>
+      <gapText identifier="triangle" matchMax="5" data-type="clickPop" data-target-container="C2">
+      <img src="greenTriangle.png" width="75" height="75" alt=""/>
+      </gapText>
+      <gapText identifier="star" matchMax="5" data-type="clickPop" data-target-container="C3">
+      <img src="blueStar.png" width="75" height="75" alt=""/>
+      </gapText>
+      <blockquote>
+        <table class="chart">
+          <tbody>
+            <tr>
+              <th>Circles</th>
+              <td><p>
+                  <gap identifier="C1" data-type="gridContainer" data-centerpoint="left" matchGroup="max-5 min-0"/>
+                </p></td>
+            </tr>
+            <tr>
+              <th>Triangles</th>
+              <td><p>
+                  <gap identifier="C2" data-type="gridContainer" data-centerpoint="left" matchGroup="max-5 min-0"/>
+                </p></td>
+            </tr>
+            <tr>
+              <th>Stars</th>
+              <td><p>
+                  <gap identifier="C3" data-type="gridContainer" data-centerpoint="left" matchGroup="max-5 min-0"/>
+                </p></td>
+            </tr>
+          </tbody>
+        </table>
+      </blockquote>
+    </gapMatchInteraction>
+  </itemBody>
+  <responseProcessing
+		template="http://www.imsglobal.org/question/qti_v2p2/rptemplates/match_correct"/>
+</assessmentItem>
