@@ -8,7 +8,9 @@
         <schemaversion>3.0.0</schemaversion>
         <imsmd:lom>
             <imsmd:general>
-                <imsmd:identifier><imsmd:entry>LTITest-01</imsmd:entry></imsmd:identifier>
+                <imsmd:identifier>
+                    <imsmd:entry>LTITest-01</imsmd:entry>
+                </imsmd:identifier>
                 <imsmd:title>
                     <imsmd:string language="en">Simple Test with LTI items</imsmd:string>
                 </imsmd:title>
@@ -95,6 +97,22 @@
                 </imsmd:lom>
             </metadata>
             <file href="links/item1.xml"/>
+        </resource>
+        <resource identifier="elements" type="imsqti_item_xmlv3p0" href="elements.xml">
+            <metadata>
+                <imsqti:qtiMetadata>
+                    <imsqti:timeDependent>false</imsqti:timeDependent>
+                    <imsqti:interactionType>choiceInteraction</imsqti:interactionType>
+                    <imsqti:feedbackType>none</imsqti:feedbackType>
+                    <imsqti:solutionAvailable>true</imsqti:solutionAvailable>
+                </imsqti:qtiMetadata>
+            </metadata>
+            <file href="elements.xml"/>
+            <dependency identifierref="periodicTable"/>
+        </resource>
+        <resource href="links/periodicTable.xml" type="imslti_xmlv1p1" identifier="periodicTable">
+            <file href="links/periodicTable.xml"/>
+            <file href="links/table.svg"/>
         </resource>
     </resources>
 </manifest>

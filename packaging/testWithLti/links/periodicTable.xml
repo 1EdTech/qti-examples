@@ -8,27 +8,13 @@
   <blti:title>Student Edition</blti:title>
   <blti:description>Luggage</blti:description>
   <blti:custom>
-    <lticm:property name="item_id">item1</lticm:property>
-    <lticm:property name="video_id">af70229b-c371-48b3-8113-9a6607992dfa</lticm:property>
-    <lticm:property name="QTI_CONTEXT_candidateIdentifier">$User.id</lticm:property>
-    <lticm:property name="QTI_CONTEXT_environmentIdentifier">ELA-7</lticm:property>
-    <lticm:property name="username">$User.username</lticm:property>
-    <lticm:property name="user_id">$Person.sourcedId</lticm:property>
-    <lticm:property name="line_item">$LineItem.sourcedId</lticm:property>
-    <lticm:property name="section_id">$CourseSection.sourceSectionId</lticm:property>
+    <lticm:property name="resource_id">PeriodicTable</lticm:property>
   </blti:custom>
-  <blti:extensions platform="my.lms.com">
-    <lticm:property name="keyname">value</lticm:property>
-  </blti:extensions>
-  <blti:extensions platform="IMSGlobal.org">
-    <lticm:property name="state">review</lticm:property>
-    <lticm:property name="item_state">{}</lticm:property>
-  </blti:extensions>
-  <blti:launch_url>http://localhost:8085/provider</blti:launch_url>
+  <blti:launch_url>https://localhost:8085/provider</blti:launch_url>
   <blti:secure_launch_url>https://localhost:8085/provider</blti:secure_launch_url>
-  <blti:icon>url to an icon for this tool (optional)</blti:icon>
+  <blti:icon>links/table.svg</blti:icon>
 
-  <blti:secure_icon>secure url to an icon for this tool (optional)</blti:secure_icon>
+  <blti:secure_icon>links/table.svg</blti:secure_icon>
   <blti:vendor>
     <lticp:code>IMSGlobal.org</lticp:code>
     <lticp:name>IMS</lticp:name>

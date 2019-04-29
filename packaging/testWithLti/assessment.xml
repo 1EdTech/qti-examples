@@ -17,6 +17,7 @@
             </qti-rubric-block>
             <qti-assessment-item-ref identifier="i853928446" href="links/Choicesingle_853928446.xml"/>
             <qti-assessment-item-ref identifier="i09f742081" href="links/item1.xml"/>
+            <qti-assessment-item-ref identifier="elements" href="elements.xml"/>
         </qti-assessment-section>
     </qti-test-part>
     <qti-outcome-processing>
