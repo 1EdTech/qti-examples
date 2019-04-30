@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<assessmentItem xmlns="http://www.imsglobal.org/xsd/imsqti_v2p2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqti_v2p2 http://www.imsglobal.org/xsd/qti/qtiv2p2/imsqti_v2p2p2.xsd"
+<assessmentItem xmlns="http://www.imsglobal.org/xsd/imsqti_v2p2" 
+                xmlns:hq5="http://www.imsglobal.org/xsd/imsqtiv2p2_html5_v1p0"
+                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqti_v2p2 http://www.imsglobal.org/xsd/qti/qtiv2p2/imsqti_v2p2p2.xsd http://www.imsglobal.org/xsd/imsqtiv2p2_html5_v1p0 http://www.imsglobal.org/xsd/qti/qtiv2p2/imsqtiv2p2p2_html5_v1p0.xsd"
   identifier="video-tracks" title="Big Buck Bunny" adaptive="false" timeDependent="false">
   <responseDeclaration identifier="RESPONSE" cardinality="single" baseType="identifier">
     <correctResponse>
@@ -17,12 +19,12 @@
       Below is a Big Buck Bunny video trailer with two different Closed Caption tracks: English and Japanese. 
       Use the video player's controls to turn the caption tracks (the "CC" button) on and off.
     </p>
-    <video width="320" height="240" controls="true">
-      <source src="assets/big_buck_bunny.mp4" type="video/mp4" />
-      <source src="assets/big_buck_bunny.webm" type="video/webm" />
-      <track kind="captions" src="assets/texttrack-en.vtt" srclang="en" label="English" default="true"/>
-      <track kind="captions" src="assets/texttrack-jpn.vtt" srclang="ja" label="Japanese"/>
-    </video>
+    <hq5:video width="320" height="240" controls="true">
+      <hq5:source src="images/big_buck_bunny.mp4" type="video/mp4" />
+      <hq5:source src="images/big_buck_bunny.webm" type="video/webm" />
+      <hq5:track kind="captions" src="images/texttrack-en.vtt" srclang="en" label="English" default="true"/>
+      <hq5:track kind="captions" src="images/texttrack-jpn.vtt" srclang="ja" label="Japanese"/>
+    </hq5:video>
     <p>
       This trailer, and the Big Buck Bunny project, is (c) copyright 2008, Blender Foundation / www.bigbuckbunny.org
     </p>
