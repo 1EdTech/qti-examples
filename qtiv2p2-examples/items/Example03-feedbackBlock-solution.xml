@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <assessmentItem xmlns="http://www.imsglobal.org/xsd/imsqti_v2p2"
-    xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:xi="http://www.w3.org/2001/XInclude"
+    xmlns:m="http://www.w3.org/1998/Math/MathML"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     adaptive="true" identifier="Example03-feedbackBlock-solution" timeDependent="false"
     title="Example 3 - Using feedbackBlock to show a solution" toolName="Mathqurate" toolVersion="0.9.7b"
-    xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqti_v2p2 http://www.imsglobal.org/xsd/qti/qtiv2p2/imsqti_v2p2p2.xsd">
+                xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqti_v2p2 http://www.imsglobal.org/xsd/qti/qtiv2p2/imsqti_v2p2p2.xsd http://www.w3.org/1998/Math/MathML http://www.w3.org/Math/XMLSchema/mathml2/mathml2.xsd">
     <responseDeclaration baseType="float" cardinality="single" identifier="RESPONSE">
         <correctResponse>
             <value>7.389</value>
         </correctResponse>
     </responseDeclaration>
     
-    <!--￼This response variable is set to true if the solution button is clicked.-->
+    <!-- This response variable is set to true if the solution button is clicked.-->
     
     <responseDeclaration baseType="boolean" cardinality="single" identifier="SOLREQUEST"/>
     <outcomeDeclaration baseType="identifier" cardinality="multiple" identifier="FEEDBACK"/>

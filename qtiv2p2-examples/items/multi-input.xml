@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <assessmentItem xmlns="http://www.imsglobal.org/xsd/imsqti_v2p2"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqti_v2p2 http://www.imsglobal.org/xsd/qti/qtiv2p2/imsqti_v2p2p2.xsd"
-    xmlns:xi="http://www.w3.org/2001/XInclude"    
+                xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqti_v2p2 http://www.imsglobal.org/xsd/qti/qtiv2p2/imsqti_v2p2p2.xsd http://www.w3.org/1998/Math/MathML http://www.w3.org/Math/XMLSchema/mathml2/mathml2.xsd"
     xmlns:m="http://www.w3.org/1998/Math/MathML" toolName="Mathqurate" toolVersion="1.0" xml:lang="en" 
     identifier="multi-input" title="Legend" adaptive="false" timeDependent="false">
     <responseDeclaration identifier="RESPONSE1" cardinality="single" baseType="identifier">

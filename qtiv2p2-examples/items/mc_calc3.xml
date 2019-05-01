@@ -3,7 +3,7 @@
     title="The number divisors" toolName="Exo+" toolVersion="0.0.9-SNAPSHOT" xml:lang="en"
     xmlns="http://www.imsglobal.org/xsd/imsqti_v2p2" xmlns:m="http://www.w3.org/1998/Math/MathML"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqti_v2p2 http://www.imsglobal.org/xsd/qti/qtiv2p2/imsqti_v2p2p2.xsd">
+    xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqti_v2p2 http://www.imsglobal.org/xsd/qti/qtiv2p2/imsqti_v2p2p2.xsd http://www.w3.org/1998/Math/MathML http://www.w3.org/Math/XMLSchema/mathml2/mathml2.xsd">
     <responseDeclaration baseType="identifier" cardinality="single" identifier="RESPONSE0"/>
     <outcomeDeclaration baseType="identifier" cardinality="single" identifier="FEEDBACK"/>
     <outcomeDeclaration baseType="float" cardinality="single" identifier="SCORE"/>
