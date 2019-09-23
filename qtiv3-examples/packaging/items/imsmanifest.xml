@@ -8,7 +8,6 @@
         <schema>QTI Package</schema>
         <schemaversion>3.0.0</schemaversion>
     </metadata>
-    <organizations/>
     <resources>
         <resource identifier="adaptive" type="imsqti_item_xmlv3p0" href="adaptive.xml">
             <file href="adaptive.xml"/>			
@@ -166,6 +165,8 @@
         <resource identifier="nested_object" type="imsqti_item_xmlv3p0" href="nested_object.xml">
             <file href="nested_object.xml"/>
             <file href="images/postcard.eps"/>
+            <file href="images/postcard.svg"/>
+            <file href="images/postcard.webp"/>
             <file href="images/postcard.png"/>
         </resource>
         <resource identifier="order" type="imsqti_item_xmlv3p0" href="order.xml">
@@ -229,6 +230,7 @@
             <file href="images/texttrack-jpn.vtt"/>
         </resource>
         <resource identifier="media_coords" type="imsqti_item_xmlv3p0" href="media_coords.xml">
+            <file href="media_coords.xml"/>
             <file href="squirrel.png"/>
             <file href="tree.mp3"/>
             <file href="tree.ogg"/>
