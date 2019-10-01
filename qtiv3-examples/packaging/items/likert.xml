@@ -2,11 +2,12 @@
 <qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation=" http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd " identifier="questionnaire" title="QTI Questionnaire" adaptive="false" time-dependent="false">
 	<qti-response-declaration identifier="RESPONSE" cardinality="single" base-type="identifier"/>
 	<qti-item-body class="likert">
-		<qti-rubric-block view="candidate"><qti-content-body>
+		<qti-rubric-block view="candidate" use="instructions">
+                    <qti-content-body>
 			<p>Read the following question and indicate your agreement on a scale of 1 = strongly
 				disagree to 5 = strongly agree.</p>
-		
-</qti-content-body></qti-rubric-block>
+                    </qti-content-body>
+                </qti-rubric-block>
 		<qti-choice-interaction response-identifier="RESPONSE" shuffle="false" max-choices="1">
 			<qti-prompt>The QTI specification makes the exchange of assessment items much easier.</qti-prompt>
 			<qti-simple-choice identifier="L1">1</qti-simple-choice>

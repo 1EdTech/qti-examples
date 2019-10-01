@@ -11,11 +11,12 @@
 		</qti-default-value>
 	</qti-outcome-declaration>
 	<qti-item-body>
-		<qti-rubric-block view="candidate"><qti-content-body>
+		<qti-rubric-block view="candidate" use="instructions">
+                    <qti-content-body>
 			<p>Select the error in the following passage of text (or <em>No Error</em> if there is
 				none).</p>
-		
-</qti-content-body></qti-rubric-block>
+                    </qti-content-body>
+                </qti-rubric-block>
 		<qti-hottext-interaction response-identifier="RESPONSE" max-choices="1">
 			<p>Sponsors of the Olympic Games <qti-hottext identifier="A">who bought</qti-hottext>
 				advertising time on United States television <qti-hottext identifier="B">includes</qti-hottext>
