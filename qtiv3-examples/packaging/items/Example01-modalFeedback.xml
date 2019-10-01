@@ -68,6 +68,10 @@
     <!-- Note how the identifiers in the following modalFeedback elements match those of the 
         setOutcomeValue elements above -->
 
-    <qti-modal-feedback outcome-identifier="FEEDBACK" show-hide="show" identifier="correct">correct</qti-modal-feedback>
-    <qti-modal-feedback outcome-identifier="FEEDBACK" show-hide="show" identifier="incorrect">incorrect</qti-modal-feedback>
+    <qti-modal-feedback outcome-identifier="FEEDBACK" show-hide="show" identifier="correct">
+        <qti-content-body>correct</qti-content-body>
+    </qti-modal-feedback>
+    <qti-modal-feedback outcome-identifier="FEEDBACK" show-hide="show" identifier="incorrect">
+        <qti-content-body>incorrect</qti-content-body>
+    </qti-modal-feedback>
 </qti-assessment-item>

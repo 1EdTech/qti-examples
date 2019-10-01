@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?> 
-<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation=" http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd " xmlns:m="http://www.w3.org/1998/Math/MathML" identifier="Template_FIB_001" title="Product of a fraction by a number" adaptive="false" time-dependent="false">
+<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+                     xsi:schemaLocation=" http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd " 
+                     xmlns:m="http://www.w3.org/1998/Math/MathML" 
+                     identifier="Template_FIB_001" title="Product of a fraction by a number" adaptive="false" time-dependent="false">
  <qti-response-declaration identifier="REPONSE0" cardinality="multiple" base-type="identifier">
   <qti-correct-response>
    <qti-value>Item1</qti-value>
@@ -189,11 +192,16 @@
    </qti-response-else>
   </qti-response-condition>
  </qti-response-processing>
- <qti-modal-feedback outcome-identifier="FEEDBACK1" identifier="FEEDBACK1" show-hide="show"> Good answer. </qti-modal-feedback>
- <qti-modal-feedback outcome-identifier="FEEDBACK0" identifier="FEEDBACK0" show-hide="show"> We must
-  multiply the numerator only. </qti-modal-feedback>
- <qti-modal-feedback outcome-identifier="FEEDBACK2" identifier="FEEDBACK2" show-hide="show"> Pay attention
-  to the sign! </qti-modal-feedback>
- <qti-modal-feedback outcome-identifier="FEEDBACK3" identifier="FEEDBACK3" show-hide="show"> No comment.
+ <qti-modal-feedback outcome-identifier="FEEDBACK1" identifier="FEEDBACK1" show-hide="show">
+    <qti-content-body>Good answer.</qti-content-body>
+ </qti-modal-feedback>
+ <qti-modal-feedback outcome-identifier="FEEDBACK0" identifier="FEEDBACK0" show-hide="show">
+     <qti-content-body>We must multiply the numerator only.</qti-content-body>
+ </qti-modal-feedback>
+ <qti-modal-feedback outcome-identifier="FEEDBACK2" identifier="FEEDBACK2" show-hide="show">
+     <qti-content-body>Pay attention to the sign! </qti-content-body>
+ </qti-modal-feedback>
+ <qti-modal-feedback outcome-identifier="FEEDBACK3" identifier="FEEDBACK3" show-hide="show">
+     <qti-content-body>No comment.</qti-content-body>
  </qti-modal-feedback>
 </qti-assessment-item>

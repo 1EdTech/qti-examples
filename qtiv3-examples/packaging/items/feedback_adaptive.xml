@@ -23,10 +23,11 @@
 					Prime Minister of Israel.</qti-feedback-inline>
 			</qti-simple-choice>
 		</qti-choice-interaction>
-		<qti-feedback-block outcome-identifier="FEEDBACK" show-hide="show" identifier="again"><qti-content-body>
+		<qti-feedback-block outcome-identifier="FEEDBACK" show-hide="show" identifier="again">
+                    <qti-content-body>
 			<p>You already tried that option!</p>
-		
-</qti-content-body></qti-feedback-block>
+                    </qti-content-body>
+                </qti-feedback-block>
 	</qti-item-body>
 	<qti-response-processing>
 		<qti-set-outcome-value identifier="completionStatus">
@@ -123,12 +124,16 @@
 			</qti-response-else>
 		</qti-response-condition>
 	</qti-response-processing>
-	<qti-modal-feedback outcome-identifier="FEEDBACK" identifier="MGH001C" show-hide="show">Yes, that is
-		correct.</qti-modal-feedback>
-	<qti-modal-feedback outcome-identifier="FEEDBACK" identifier="tryAgain" show-hide="show">No, that is
-		not correct.</qti-modal-feedback>
-	<qti-modal-feedback outcome-identifier="FEEDBACK" identifier="oneMore" show-hide="show">No, that is not
-		correct, try one more time.</qti-modal-feedback>
-	<qti-modal-feedback outcome-identifier="FEEDBACK" identifier="giveUp" show-hide="show">No, the correct
-		answer is Vicente Fox.</qti-modal-feedback>
+	<qti-modal-feedback outcome-identifier="FEEDBACK" identifier="MGH001C" show-hide="show">
+            <qti-content-body>Yes, that is correct.</qti-content-body>
+        </qti-modal-feedback>
+	<qti-modal-feedback outcome-identifier="FEEDBACK" identifier="tryAgain" show-hide="show">
+            <qti-content-body>No, that is not correct.</qti-content-body>
+        </qti-modal-feedback>
+	<qti-modal-feedback outcome-identifier="FEEDBACK" identifier="oneMore" show-hide="show">
+            <qti-content-body>No, that is not correct, try one more time.</qti-content-body>
+        </qti-modal-feedback>
+	<qti-modal-feedback outcome-identifier="FEEDBACK" identifier="giveUp" show-hide="show">
+            <qti-content-body>No, the correct answer is Vicente Fox.</qti-content-body>
+        </qti-modal-feedback>
 </qti-assessment-item>

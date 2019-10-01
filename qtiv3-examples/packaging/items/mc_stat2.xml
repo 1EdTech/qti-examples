@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<qti-assessment-item adaptive="false" identifier="stat2" time-dependent="false" title="Test of statistics functions" tool-name="Exo+" tool-version="0.0.9-SNAPSHOT" xml:lang="en" xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation=" http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd ">
+<qti-assessment-item 
+    adaptive="false" identifier="stat2" time-dependent="false" title="Test of statistics functions" tool-name="Exo+" tool-version="0.0.9-SNAPSHOT" 
+    xml:lang="en" xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:m="http://www.w3.org/1998/Math/MathML" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:schemaLocation=" http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd ">
     <qti-response-declaration base-type="integer" cardinality="single" identifier="RESPONSE0"/>
     <qti-response-declaration base-type="integer" cardinality="single" identifier="RESPONSE1"/>
     <qti-response-declaration base-type="float" cardinality="single" identifier="RESPONSE2"/>
@@ -175,27 +179,36 @@
             </qti-response-else>
         </qti-response-condition>
     </qti-response-processing>
-    <qti-modal-feedback identifier="FEEDBACK0" outcome-identifier="FEEDBACK" show-hide="show">Bravo
-        !</qti-modal-feedback>
-    <qti-modal-feedback identifier="FEEDBACK1" outcome-identifier="FEEDBACK" show-hide="show">The mean was: <m:math>
+    <qti-modal-feedback identifier="FEEDBACK0" outcome-identifier="FEEDBACK" show-hide="show">
+        <qti-content-body>Bravo !</qti-content-body>
+    </qti-modal-feedback>
+    <qti-modal-feedback identifier="FEEDBACK1" outcome-identifier="FEEDBACK" show-hide="show">
+        <qti-content-body>The mean was: <m:math>
             <m:mi>SOLUTION2_0</m:mi>
         </m:math> and the standard deviation was: <m:math>
             <m:mi>SOLUTION3_0</m:mi>
-        </m:math>. </qti-modal-feedback>
-    <qti-modal-feedback identifier="FEEDBACK2" outcome-identifier="FEEDBACK" show-hide="show">The greatest
-        one was: <m:math>
+        </m:math>. 
+        </qti-content-body>
+    </qti-modal-feedback>
+    <qti-modal-feedback identifier="FEEDBACK2" outcome-identifier="FEEDBACK" show-hide="show">
+        <qti-content-body>The greatest one was: <m:math>
             <m:mi>SOLUTION1_0</m:mi>
         </m:math> and the standard deviation was: <m:math>
             <m:mi>SOLUTION3_0</m:mi>
-        </m:math>. </qti-modal-feedback>
-    <qti-modal-feedback identifier="FEEDBACK3" outcome-identifier="FEEDBACK" show-hide="show">The smallest
+        </m:math>. 
+        </qti-content-body>
+    </qti-modal-feedback>
+    <qti-modal-feedback identifier="FEEDBACK3" outcome-identifier="FEEDBACK" show-hide="show">
+        <qti-content-body>The smallest
         one was: <m:math>
             <m:mi>SOLUTION0_0</m:mi>
         </m:math> and the standard deviation was: <m:math>
             <m:mi>SOLUTION3_0</m:mi>
-        </m:math>. </qti-modal-feedback>
-    <qti-modal-feedback identifier="DEFAULT_FEEDBACK" outcome-identifier="FEEDBACK" show-hide="show">At
-        least two incorrect responses. The smallest one was: <m:math>
+        </m:math>. 
+        </qti-content-body>
+    </qti-modal-feedback>
+    <qti-modal-feedback identifier="DEFAULT_FEEDBACK" outcome-identifier="FEEDBACK" show-hide="show">
+        <qti-content-body>At least two incorrect responses. The smallest one was: <m:math>
             <m:mi>SOLUTION0_0</m:mi>
         </m:math>, the greatest one was: <m:math>
             <m:mi>SOLUTION1_0</m:mi>
@@ -203,5 +216,7 @@
             <m:mi>SOLUTION2_0</m:mi>
         </m:math> and the standard deviation was <m:math>
             <m:mi>SOLUTION3_0</m:mi>
-        </m:math>. </qti-modal-feedback>
+        </m:math>. 
+        </qti-content-body>
+    </qti-modal-feedback>
 </qti-assessment-item>
