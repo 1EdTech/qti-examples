@@ -8,6 +8,7 @@
         <schema>QTI Package</schema>
         <schemaversion>3.0.0</schemaversion>
     </metadata>
+    <organizations/>
     <resources>
         <resource identifier="adaptive" type="imsqti_item_xmlv3p0" href="adaptive.xml">
             <file href="adaptive.xml"/>			
