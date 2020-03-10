@@ -2,7 +2,9 @@
 <!-- This example adapted from the PET Handbook, copyright University of Cambridge ESOL Examinations -->
 <!-- The example combines shuffle with the fixation of one simpleChoice in place -->
 <!-- Ruby markup is defined in NS hq5 (HTML5 for QTI), which is referenced in the main QTI 2.2 XSD -->
-<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:hq5="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xsi:schemaLocation=" http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd " identifier="choice" title="出身地" adaptive="false" time-dependent="false">
+<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+                     xsi:schemaLocation=" http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd" 
+                     identifier="choice" title="出身地" adaptive="false" time-dependent="false">
 	<qti-response-declaration identifier="RESPONSE" cardinality="single" base-type="identifier">
 		<qti-correct-response>
 			<qti-value>ChoiceHK</qti-value>
@@ -14,11 +16,11 @@
 		</qti-default-value>
 	</qti-outcome-declaration>
 	<qti-item-body>
-		<p>村田<hq5:ruby><hq5:rb>真</hq5:rb><hq5:rt>まこと</hq5:rt></hq5:ruby>の出身地はどこですか</p>
+		<p>村田<ruby><rb>真</rb><rt>まこと</rt></ruby>の出身地はどこですか</p>
 		
 		<qti-choice-interaction response-identifier="RESPONSE" shuffle="true" max-choices="1">
 			<qti-prompt>選びなさい</qti-prompt>
-			<qti-simple-choice identifier="ChoiceHK"><hq5:ruby><hq5:rb>北海道</hq5:rb><hq5:rt>ほっかいどう</hq5:rt></hq5:ruby></qti-simple-choice>
+			<qti-simple-choice identifier="ChoiceHK"><ruby><rb>北海道</rb><rt>ほっかいどう</rt></ruby></qti-simple-choice>
 			<qti-simple-choice identifier="ChoiceTH">東北</qti-simple-choice>
 			<qti-simple-choice identifier="ChoiceHR">北陸</qti-simple-choice>
 			<qti-simple-choice identifier="ChoiceKT">関東</qti-simple-choice>
