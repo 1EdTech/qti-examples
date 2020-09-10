@@ -45,11 +45,6 @@
     <resources> 
         <resource identifier="experiment101" type="imslti_xmlv1p1">
             <metadata>
-                <lom:lom>
-                    <lom:technical>
-                        <lom:location>https://assessment.example.com/provider</lom:location>
-                    </lom:technical>         
-                </lom:lom>
                 <qtimd:qtiMetadata>
                     <qtimd:composite>false</qtimd:composite>
                     <qtimd:interactionType>mediaInteraction</qtimd:interactionType>
@@ -57,6 +52,11 @@
                     <qtimd:toolVersion>1.0</qtimd:toolVersion>
                     <qtimd:toolVendor>example.com</qtimd:toolVendor>
                 </qtimd:qtiMetadata>
+                <lom:lom>
+                    <lom:technical>
+                        <lom:location>https://assessment.example.com/provider</lom:location>
+                    </lom:technical>         
+                </lom:lom>
             </metadata>
             <file href="links/streaming_video_experiment101.xml"/> 
         </resource>    
