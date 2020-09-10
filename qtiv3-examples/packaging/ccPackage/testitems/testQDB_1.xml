@@ -28,7 +28,7 @@
             <qti-assessment-item-ref identifier="ITEM_102015_kjh" href="QUE_102015.xml">
                 <qti-weight identifier="WEIGHT_jblsjhkdfbl" value="2"/>
             </qti-assessment-item-ref>
-            <qti-assessment-item-ref identifier="ITEM_102016_iuopjkjhk" href="QUE_102016.xml">
+            <qti-assessment-item-ref identifier="QUE_102016" href="QUE_102016.xml">
                 <qti-weight identifier="WEIGHT_kjbsdjhf" value="25"/>
             </qti-assessment-item-ref>
             <qti-assessment-item-ref identifier="ITEM_104045_ghgfcbn" href="QUE_104045.xml">
