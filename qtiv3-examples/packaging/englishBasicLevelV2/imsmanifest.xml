@@ -50,7 +50,7 @@
             <imscp:dependency identifierref="A_2121083126"/>
             <imscp:dependency identifierref="A_1925743812"/>
             <imscp:dependency identifierref="A_79197713"/>
-            <imscp:dependency identifierref="A_265237402"/>
+            <imscp:dependency identifierref="BookstowriteSimplePast_265237402"/>
             <imscp:dependency identifierref="A_1845621905"/>
             <imscp:dependency identifierref="A_603808326"/>
             <imscp:dependency identifierref="A_104374830"/>
@@ -65,12 +65,12 @@
             <imscp:dependency identifierref="B_1992117307"/>
             <imscp:dependency identifierref="B_1541841167"/>
             <imscp:dependency identifierref="C_1990748733"/>
-            <imscp:dependency identifierref="C_748642656"/>
-            <imscp:dependency identifierref="C_2059910905"/>
+            <imscp:dependency identifierref="C2_748642656"/>
+            <imscp:dependency identifierref="C3_2059910905"/>
             <imscp:dependency identifierref="C_1040094513"/>
             <imscp:dependency identifierref="C_1759289459"/>
-            <imscp:dependency identifierref="C_1523210801"/>
-            <imscp:dependency identifierref="C_1403975437"/>
+            <imscp:dependency identifierref="BingoisplayedinBritain_1523210801"/>
+            <imscp:dependency identifierref="Aletterwaswritten_1403975437"/>
             <imscp:dependency identifierref="C_837739994"/>
             <imscp:dependency identifierref="C_125080616"/>
             <imscp:dependency identifierref="D_1010823154"/>
@@ -113,7 +113,7 @@
         <imscp:resource identifier="A_79197713" type="imsqti_item_xmlv3p0" href="A_79197713.xml">
             <imscp:file href="A_79197713.xml"/>
         </imscp:resource>
-        <imscp:resource identifier="A_265237402" type="imsqti_item_xmlv3p0" href="A_265237402.xml">
+        <imscp:resource identifier="BookstowriteSimplePast_265237402" type="imsqti_item_xmlv3p0" href="A_265237402.xml">
             <imscp:file href="A_265237402.xml"/>
         </imscp:resource>
         <imscp:resource identifier="A_1845621905" type="imsqti_item_xmlv3p0" href="A_1845621905.xml">
@@ -158,10 +158,10 @@
         <imscp:resource identifier="C_1990748733" type="imsqti_item_xmlv3p0" href="C_1990748733.xml">
             <imscp:file href="C_1990748733.xml"/>
         </imscp:resource>
-        <imscp:resource identifier="C_748642656" type="imsqti_item_xmlv3p0" href="C_748642656.xml">
+        <imscp:resource identifier="C2_748642656" type="imsqti_item_xmlv3p0" href="C_748642656.xml">
             <imscp:file href="C_748642656.xml"/>
         </imscp:resource>
-        <imscp:resource identifier="C_2059910905" type="imsqti_item_xmlv3p0" href="C_2059910905.xml">
+        <imscp:resource identifier="C3_2059910905" type="imsqti_item_xmlv3p0" href="C_2059910905.xml">
             <imscp:file href="C_2059910905.xml"/>
         </imscp:resource>
         <imscp:resource identifier="C_1040094513" type="imsqti_item_xmlv3p0" href="C_1040094513.xml">
@@ -170,10 +170,10 @@
         <imscp:resource identifier="C_1759289459" type="imsqti_item_xmlv3p0" href="C_1759289459.xml">
             <imscp:file href="C_1759289459.xml"/>
         </imscp:resource>
-        <imscp:resource identifier="C_1523210801" type="imsqti_item_xmlv3p0" href="C_1523210801.xml">
+        <imscp:resource identifier="BingoisplayedinBritain_1523210801" type="imsqti_item_xmlv3p0" href="C_1523210801.xml">
             <imscp:file href="C_1523210801.xml"/>
         </imscp:resource>
-        <imscp:resource identifier="C_1403975437" type="imsqti_item_xmlv3p0" href="C_1403975437.xml">
+        <imscp:resource identifier="Aletterwaswritten_1403975437" type="imsqti_item_xmlv3p0" href="C_1403975437.xml">
             <imscp:file href="C_1403975437.xml"/>
         </imscp:resource>
         <imscp:resource identifier="C_837739994" type="imsqti_item_xmlv3p0" href="C_837739994.xml">
