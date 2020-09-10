@@ -130,8 +130,10 @@
 		</qti-response-condition>
 
 	</qti-response-processing>
-	<qti-modal-feedback outcome-identifier="FEEDBACK" show-hide="show" identifier="correct"> All
-		correct</qti-modal-feedback>
-	<qti-modal-feedback outcome-identifier="FEEDBACK" show-hide="show" identifier="incorrect">At least one
-		of your inputs is incorrect.</qti-modal-feedback>
+	<qti-modal-feedback outcome-identifier="FEEDBACK" show-hide="show" identifier="correct">
+            <qti-content-body>All correct</qti-content-body>
+        </qti-modal-feedback>
+	<qti-modal-feedback outcome-identifier="FEEDBACK" show-hide="show" identifier="incorrect">
+            <qti-content-body>At least one of your inputs is incorrect.</qti-content-body>
+        </qti-modal-feedback>
 </qti-assessment-item>

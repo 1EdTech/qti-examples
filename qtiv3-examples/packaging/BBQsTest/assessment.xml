@@ -69,12 +69,11 @@
         </qti-set-outcome-value>
     </qti-outcome-processing>
     <qti-test-feedback outcome-identifier="TEST_FEEDBACK" access="atEnd" show-hide="show" identifier="TEST_FB">
-        <div>You have reached the end of the test.</div>
-        <div>Section 1 score: <qti-printed-variable identifier="SECTION_1_total" format="%.1f"/> (from a
-            maximum of 39.0)</div>
-        <div>Section 2 score: <qti-printed-variable identifier="SECTION_2_total" format="%.1f"/> (from a
-            maximum of 66.0)</div>
-        <div>Total score: <qti-printed-variable identifier="TEST_total" format="%.1f"/> (from a maximum
-            of 105.0)</div>
+        <qti-content-body>
+            <div>You have reached the end of the test.</div>
+            <div>Section 1 score: <qti-printed-variable identifier="SECTION_1_total" format="%.1f"/> (from a maximum of 39.0)</div>
+            <div>Section 2 score: <qti-printed-variable identifier="SECTION_2_total" format="%.1f"/> (from a maximum of 66.0)</div>
+            <div>Total score: <qti-printed-variable identifier="TEST_total" format="%.1f"/> (from a maximum of 105.0)</div>
+        </qti-content-body>
     </qti-test-feedback>
 </qti-assessment-test>
