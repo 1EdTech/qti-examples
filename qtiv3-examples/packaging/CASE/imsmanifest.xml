@@ -103,6 +103,17 @@
                     <imsqti:interactionType>choiceInteraction</imsqti:interactionType>
                     <imsqti:feedbackType>nonadaptive</imsqti:feedbackType>
                 </imsqti:qtiMetadata>
+                <csm:curriculumStandardsMetadataSet>
+                    <csm:curriculumStandardsMetadata>
+                        <csm:setOfGUIDs>
+                            <csm:labelledGUID>
+                                <csm:label>order a set of rational numbers arising from mathematical and real-world contexts; and</csm:label>
+                                <csm:caseItemURI>https://teks-api.texasgateway.org/ims/case/v1p0/CFItems/6abfaa45-644b-52e8-891e-4fa4045a6c69</csm:caseItemURI>
+                                <csm:GUID>6abfaa45-644b-52e8-891e-4fa4045a6c69</csm:GUID>
+                            </csm:labelledGUID>
+                        </csm:setOfGUIDs>
+                    </csm:curriculumStandardsMetadata>
+                </csm:curriculumStandardsMetadataSet>
                 <imsmd:lom>
                     <imsmd:educational>
                         <imsmd:intendedEndUserRole>
@@ -136,17 +147,6 @@
                         </imsmd:taxonPath>
                     </imsmd:classification>
                 </imsmd:lom>
-                <csm:curriculumStandardsMetadataSet>
-                    <csm:curriculumStandardsMetadata>
-                        <csm:setOfGUIDs>
-                            <csm:labelledGUID>
-                                <csm:label>order a set of rational numbers arising from mathematical and real-world contexts; and</csm:label>
-                                <csm:GUID>6abfaa45-644b-52e8-891e-4fa4045a6c69</csm:GUID>
-                                <csm:caseItemURI>https://teks-api.texasgateway.org/ims/case/v1p0/CFItems/6abfaa45-644b-52e8-891e-4fa4045a6c69</csm:caseItemURI>
-                            </csm:labelledGUID>
-                        </csm:setOfGUIDs>
-                    </csm:curriculumStandardsMetadata>
-                </csm:curriculumStandardsMetadataSet>
             </metadata>
             <file href="testitems/-TX_G06SAMP_001.xml"/>
 
@@ -159,6 +159,17 @@
                     <imsqti:interactionType>choiceInteraction</imsqti:interactionType>
                     <imsqti:feedbackType>nonadaptive</imsqti:feedbackType>
                 </imsqti:qtiMetadata>
+                <csm:curriculumStandardsMetadataSet>
+                    <csm:curriculumStandardsMetadata>
+                        <csm:setOfGUIDs>
+                            <csm:labelledGUID>
+                                <csm:label>order a set of rational numbers arising from mathematical and real-world contexts; and</csm:label>
+                                <csm:caseItemURI>https://teks-api.texasgateway.org/ims/case/v1p0/CFItems/6abfaa45-644b-52e8-891e-4fa4045a6c69</csm:caseItemURI>
+                                <csm:GUID>6abfaa45-644b-52e8-891e-4fa4045a6c69</csm:GUID>
+                            </csm:labelledGUID>
+                        </csm:setOfGUIDs>
+                    </csm:curriculumStandardsMetadata>
+                </csm:curriculumStandardsMetadataSet>
                 <imsmd:lom>
                     <imsmd:educational>
                         <imsmd:intendedEndUserRole>
@@ -192,17 +203,6 @@
                         </imsmd:taxonPath>
                     </imsmd:classification>
                 </imsmd:lom>
-                <csm:curriculumStandardsMetadataSet>
-                    <csm:curriculumStandardsMetadata>
-                        <csm:setOfGUIDs>
-                            <csm:labelledGUID>
-                                <csm:label>order a set of rational numbers arising from mathematical and real-world contexts; and</csm:label>
-                                <csm:GUID>6abfaa45-644b-52e8-891e-4fa4045a6c69</csm:GUID>
-                                <csm:caseItemURI>https://teks-api.texasgateway.org/ims/case/v1p0/CFItems/6abfaa45-644b-52e8-891e-4fa4045a6c69</csm:caseItemURI>
-                            </csm:labelledGUID>
-                        </csm:setOfGUIDs>
-                    </csm:curriculumStandardsMetadata>
-                </csm:curriculumStandardsMetadataSet>
             </metadata>
             <file href="testitems/-TX_G06SAMP_004.xml"/>
         </resource>
@@ -214,6 +214,17 @@
                     <imsqti:interactionType>choiceInteraction</imsqti:interactionType>
                     <imsqti:feedbackType>nonadaptive</imsqti:feedbackType>
                 </imsqti:qtiMetadata>
+                <csm:curriculumStandardsMetadataSet>
+                    <csm:curriculumStandardsMetadata>
+                        <csm:setOfGUIDs>
+                            <csm:labelledGUID>
+                                <csm:label>identify a number, its opposite, and its absolute value;</csm:label>
+                                <csm:caseItemURI>https://teks-api.texasgateway.org/ims/case/v1p0/CFItems/747eee11-848c-597a-8c9c-a71c5399798d</csm:caseItemURI>
+                                <csm:GUID>747eee11-848c-597a-8c9c-a71c5399798d</csm:GUID>
+                            </csm:labelledGUID>
+                        </csm:setOfGUIDs>
+                    </csm:curriculumStandardsMetadata>
+                </csm:curriculumStandardsMetadataSet>
                 <imsmd:lom>
                     <imsmd:educational>
                         <imsmd:intendedEndUserRole>
@@ -247,17 +258,6 @@
                         </imsmd:taxonPath>
                     </imsmd:classification>
                 </imsmd:lom>
-                <csm:curriculumStandardsMetadataSet>
-                    <csm:curriculumStandardsMetadata>
-                        <csm:setOfGUIDs>
-                            <csm:labelledGUID>
-                                <csm:label>identify a number, its opposite, and its absolute value;</csm:label>
-                                <csm:GUID>747eee11-848c-597a-8c9c-a71c5399798d</csm:GUID>
-                                <csm:caseItemURI>https://teks-api.texasgateway.org/ims/case/v1p0/CFItems/747eee11-848c-597a-8c9c-a71c5399798d</csm:caseItemURI>
-                            </csm:labelledGUID>
-                        </csm:setOfGUIDs>
-                    </csm:curriculumStandardsMetadata>
-                </csm:curriculumStandardsMetadataSet>
             </metadata>
             <file href="testitems/-TX_G06SAMP_005.xml"/>
         </resource>
