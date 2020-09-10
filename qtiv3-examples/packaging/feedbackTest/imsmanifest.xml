@@ -2,7 +2,7 @@
 <manifest xmlns="http://www.imsglobal.org/xsd/qti/qtiv3p0/imscp_v1p1" xmlns:imsmd="http://ltsc.ieee.org/xsd/LOM" 
           xmlns:imsqti="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
           xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd  http://ltsc.ieee.org/xsd/LOM https://purl.imsglobal.org/spec/md/v1p3/schema/xsd/imsmd_loose_v1p3p2.xsd  http://www.imsglobal.org/xsd/qti/qtiv3p0/imscp_v1p1 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqtiv3p0_imscpv1p2_v1p0.xsd " 
-          identifier="kjhgkjhg567">
+          identifier="FeedbackTest">
     <metadata>
         <schema>QTI Package</schema>
         <schemaversion>3.0.0</schemaversion>
@@ -152,16 +152,16 @@
     </metadata>
     <organizations/>
     <resources>
-        <resource href="assessment.xml" type="imsqti_test_xmlv3p0" identifier="TEST">
+        <resource href="assessment.xml" type="imsqti_test_xmlv3p0" identifier="SPECTATUS-GENERATED-TEST">
             <file href="assessment.xml"/>
-            <dependency identifierref="id-fa3ee5852723"/>
-            <dependency identifierref="id-38d47747fb30"/>
-            <dependency identifierref="id-5e216df10030"/>
-            <dependency identifierref="id-aaa0bbf5da1d"/>
-            <dependency identifierref="id-d599169403d2"/>
-            <dependency identifierref="id-9c33d141576e"/>
+            <dependency identifierref="Example01-modalFeedback"/>
+            <dependency identifierref="Example02-feedbackInline"/>
+            <dependency identifierref="Example03-feedbackBlock-solution"/>
+            <dependency identifierref="Example03-feedbackBlock-solution-random"/>
+            <dependency identifierref="Example04-feedbackBlock-templateBlock"/>
+            <dependency identifierref="Example05-feedbackBlock-adaptive"/>
         </resource>
-        <resource href="id-fa3ee5852723/Example01-modalFeedback.xml" type="imsqti_item_xmlv3p0" identifier="id-fa3ee5852723">
+        <resource href="id-fa3ee5852723/Example01-modalFeedback.xml" type="imsqti_item_xmlv3p0" identifier="Example01-modalFeedback">
             <metadata>
                 <imsmd:lom>
                     <imsmd:general>
@@ -173,7 +173,7 @@
             </metadata>
             <file href="id-fa3ee5852723/Example01-modalFeedback.xml"/>
         </resource>
-        <resource href="id-38d47747fb30/Example02-feedbackInline.xml" type="imsqti_item_xmlv3p0" identifier="id-38d47747fb30">
+        <resource href="id-38d47747fb30/Example02-feedbackInline.xml" type="imsqti_item_xmlv3p0" identifier="Example02-feedbackInline">
             <metadata>
                 <imsmd:lom>
                     <imsmd:general>
@@ -185,7 +185,7 @@
             </metadata>
             <file href="id-38d47747fb30/Example02-feedbackInline.xml"/>
         </resource>
-        <resource href="id-5e216df10030/Example03-feedbackBlock-solution.xml" type="imsqti_item_xmlv3p0" identifier="id-5e216df10030">
+        <resource href="id-5e216df10030/Example03-feedbackBlock-solution.xml" type="imsqti_item_xmlv3p0" identifier="Example03-feedbackBlock-solution">
             <metadata>
                 <imsmd:lom>
                     <imsmd:general>
@@ -197,7 +197,7 @@
             </metadata>
             <file href="id-5e216df10030/Example03-feedbackBlock-solution.xml"/>
         </resource>
-        <resource href="id-aaa0bbf5da1d/Example03-feedbackBlock-solution-random.xml" type="imsqti_item_xmlv3p0" identifier="id-aaa0bbf5da1d">
+        <resource href="id-aaa0bbf5da1d/Example03-feedbackBlock-solution-random.xml" type="imsqti_item_xmlv3p0" identifier="Example03-feedbackBlock-solution-random">
             <metadata>
                 <imsmd:lom>
                     <imsmd:general>
@@ -209,7 +209,7 @@
             </metadata>
             <file href="id-aaa0bbf5da1d/Example03-feedbackBlock-solution-random.xml"/>
         </resource>
-        <resource href="id-d599169403d2/Example04-feedbackBlock-templateBlock.xml" type="imsqti_item_xmlv3p0" identifier="id-d599169403d2">
+        <resource href="id-d599169403d2/Example04-feedbackBlock-templateBlock.xml" type="imsqti_item_xmlv3p0" identifier="Example04-feedbackBlock-templateBlock">
             <metadata>
                 <imsmd:lom>
                     <imsmd:general>
@@ -221,7 +221,7 @@
             </metadata>
             <file href="id-d599169403d2/Example04-feedbackBlock-templateBlock.xml"/>
         </resource>
-        <resource href="id-9c33d141576e/Example05-feedbackBlock-adaptive.xml" type="imsqti_item_xmlv3p0" identifier="id-9c33d141576e">
+        <resource href="id-9c33d141576e/Example05-feedbackBlock-adaptive.xml" type="imsqti_item_xmlv3p0" identifier="Example05-feedbackBlock-adaptive">
             <metadata>
                 <imsmd:lom>
                     <imsmd:general>
