@@ -164,32 +164,32 @@
     </metadata>
     <organizations/>
     <resources>
-        <resource href="assessment.xml" type="imsqti_test_xmlv3p0" identifier="TEST">
+        <resource href="assessment.xml" type="imsqti_test_xmlv3p0" identifier="SPECTATUS-GENERATED-TEST">
             <file href="assessment.xml"/>
-            <dependency identifierref="id-5c1b1e2d56bd"/>
-            <dependency identifierref="id-75bd778a3504"/>
-            <dependency identifierref="id-992e8bd3c9ac"/>
-            <dependency identifierref="id-f8e13982226c"/>
-            <dependency identifierref="id-377d71221b04"/>
-            <dependency identifierref="id-7e4520cd463f"/>
-            <dependency identifierref="id-2a2cfb9f4dde"/>
-            <dependency identifierref="id-200e2c3f7d76"/>
-            <dependency identifierref="id-7f35b6c393d5"/>
-            <dependency identifierref="id-3cd82285401e"/>
-            <dependency identifierref="id-371b0f88774a"/>
-            <dependency identifierref="id-90b59b73c8e4"/>
-            <dependency identifierref="id-e475c3c922f6"/>
-            <dependency identifierref="id-be3cd3bdd3d4"/>
-            <dependency identifierref="id-8167235c360b"/>
-            <dependency identifierref="id-1ccd6e04685f"/>
-            <dependency identifierref="id-bd44a757f562"/>
-            <dependency identifierref="id-13b92f311fc0"/>
-            <dependency identifierref="id-c0bdd9a130c7"/>
-            <dependency identifierref="id-d565dbe89933"/>
-            <dependency identifierref="id-83210b60ed8f"/>
-            <dependency identifierref="id-f9f3153e2ba4"/>
+            <dependency identifierref="either-or-choice-root2"/>
+            <dependency identifierref="essay-vacation"/>
+            <dependency identifierref="hotspot-maximum"/>
+            <dependency identifierref="jumble-gapMatch"/>
+            <dependency identifierref="jumble-inlineChoice"/>
+            <dependency identifierref="Likert-choice-questionSet"/>
+            <dependency identifierref="Likert-match-questionSet"/>
+            <dependency identifierref="matching-associate-trigDeriv"/>
+            <dependency identifierref="matching-match-trigDeriv"/>
+            <dependency identifierref="MultipleAnswer-choice-materials"/>
+            <dependency identifierref="MultipleChoice-choice-polynomials"/>
+            <dependency identifierref="upload-file"/>
+            <dependency identifierref="order-maths"/>
+            <dependency identifierref="order-mountains"/>
+            <dependency identifierref="QuizBowl-multi-geometry"/>
+            <dependency identifierref="ShortAnswer-extText-postcard"/>
+            <dependency identifierref="SineRule-CalcFormQ-001"/>
+            <dependency identifierref="SineRule-CalcFormQ-002"/>
+            <dependency identifierref="text_entry-calculus"/>
+            <dependency identifierref="text_entry-Lycidas"/>
+            <dependency identifierref="TF-choice"/>
+            <dependency identifierref="TheAnswer-001"/>
         </resource>
-        <resource href="id-5c1b1e2d56bd/either-or.xml" type="imsqti_item_xmlv3p0" identifier="id-5c1b1e2d56bd">
+        <resource href="id-5c1b1e2d56bd/either-or.xml" type="imsqti_item_xmlv3p0" identifier="either-or-choice-root2">
             <metadata>
                 <imsmd:lom>
                     <imsmd:general>
@@ -201,7 +201,7 @@
             </metadata>
             <file href="id-5c1b1e2d56bd/either-or.xml"/>
         </resource>
-        <resource href="id-75bd778a3504/essay-vacation.xml" type="imsqti_item_xmlv3p0" identifier="id-75bd778a3504">
+        <resource href="id-75bd778a3504/essay-vacation.xml" type="imsqti_item_xmlv3p0" identifier="essay-vacation">
             <metadata>
                 <imsmd:lom>
                     <imsmd:general>
@@ -213,7 +213,7 @@
             </metadata>
             <file href="id-75bd778a3504/essay-vacation.xml"/>
         </resource>
-        <resource href="id-992e8bd3c9ac/hotspot-maximum.xml" type="imsqti_item_xmlv3p0" identifier="id-992e8bd3c9ac">
+        <resource href="id-992e8bd3c9ac/hotspot-maximum.xml" type="imsqti_item_xmlv3p0" identifier="hotspot-maximum">
             <metadata>
                 <imsqti:qtiMetadata>
                     <imsqti:timeDependent>false</imsqti:timeDependent>
@@ -376,7 +376,7 @@
             <file href="id-992e8bd3c9ac/hotspot-maximum.xml"/>
             <file href="id-992e8bd3c9ac/images/cubic_xpw3d6m2xp3.png"/>
         </resource>
-        <resource href="id-f8e13982226c/jumble-gapMatch.xml" type="imsqti_item_xmlv3p0" identifier="id-f8e13982226c">
+        <resource href="id-f8e13982226c/jumble-gapMatch.xml" type="imsqti_item_xmlv3p0" identifier="jumble-gapMatch">
             <metadata>
                 <imsmd:lom>
                     <imsmd:general>
@@ -388,7 +388,7 @@
             </metadata>
             <file href="id-f8e13982226c/jumble-gapMatch.xml"/>
         </resource>
-        <resource href="id-377d71221b04/jumble-inlineChoice.xml" type="imsqti_item_xmlv3p0" identifier="id-377d71221b04">
+        <resource href="id-377d71221b04/jumble-inlineChoice.xml" type="imsqti_item_xmlv3p0" identifier="jumble-inlineChoice">
             <metadata>
                 <imsmd:lom>
                     <imsmd:general>
@@ -400,7 +400,7 @@
             </metadata>
             <file href="id-377d71221b04/jumble-inlineChoice.xml"/>
         </resource>
-        <resource href="id-7e4520cd463f/Likert-choice-questionSet.xml" type="imsqti_item_xmlv3p0" identifier="id-7e4520cd463f">
+        <resource href="id-7e4520cd463f/Likert-choice-questionSet.xml" type="imsqti_item_xmlv3p0" identifier="Likert-choice-questionSet">
             <metadata>
                 <imsmd:lom>
                     <imsmd:general>
@@ -412,7 +412,7 @@
             </metadata>
             <file href="id-7e4520cd463f/Likert-choice-questionSet.xml"/>
         </resource>
-        <resource href="id-2a2cfb9f4dde/Likert-match-questionSet.xml" type="imsqti_item_xmlv3p0" identifier="id-2a2cfb9f4dde">
+        <resource href="id-2a2cfb9f4dde/Likert-match-questionSet.xml" type="imsqti_item_xmlv3p0" identifier="Likert-match-questionSet">
             <metadata>
                 <imsmd:lom>
                     <imsmd:general>
@@ -424,7 +424,7 @@
             </metadata>
             <file href="id-2a2cfb9f4dde/Likert-match-questionSet.xml"/>
         </resource>
-        <resource href="id-200e2c3f7d76/matching-associate-trigDeriv.xml" type="imsqti_item_xmlv3p0" identifier="id-200e2c3f7d76">
+        <resource href="id-200e2c3f7d76/matching-associate-trigDeriv.xml" type="imsqti_item_xmlv3p0" identifier="matching-associate-trigDeriv">
             <metadata>
                 <imsmd:lom>
                     <imsmd:general>
@@ -436,7 +436,7 @@
             </metadata>
             <file href="id-200e2c3f7d76/matching-associate-trigDeriv.xml"/>
         </resource>
-        <resource href="id-7f35b6c393d5/matching-match-trigDeriv.xml" type="imsqti_item_xmlv3p0" identifier="id-7f35b6c393d5">
+        <resource href="id-7f35b6c393d5/matching-match-trigDeriv.xml" type="imsqti_item_xmlv3p0" identifier="matching-match-trigDeriv">
             <metadata>
                 <imsmd:lom>
                     <imsmd:general>
@@ -448,7 +448,7 @@
             </metadata>
             <file href="id-7f35b6c393d5/matching-match-trigDeriv.xml"/>
         </resource>
-        <resource href="id-3cd82285401e/MultipleAnswer-choice-materials.xml" type="imsqti_item_xmlv3p0" identifier="id-3cd82285401e">
+        <resource href="id-3cd82285401e/MultipleAnswer-choice-materials.xml" type="imsqti_item_xmlv3p0" identifier="MultipleAnswer-choice-materials">
             <metadata>
                 <imsmd:lom>
                     <imsmd:general>
@@ -460,7 +460,7 @@
             </metadata>
             <file href="id-3cd82285401e/MultipleAnswer-choice-materials.xml"/>
         </resource>
-        <resource href="id-371b0f88774a/MultipleChoice-choice-polynomials.xml" type="imsqti_item_xmlv3p0" identifier="id-371b0f88774a">
+        <resource href="id-371b0f88774a/MultipleChoice-choice-polynomials.xml" type="imsqti_item_xmlv3p0" identifier="MultipleChoice-choice-polynomials">
             <metadata>
                 <imsmd:lom>
                     <imsmd:general>
@@ -472,7 +472,7 @@
             </metadata>
             <file href="id-371b0f88774a/MultipleChoice-choice-polynomials.xml"/>
         </resource>
-        <resource href="id-90b59b73c8e4/upload-file.xml" type="imsqti_item_xmlv3p0" identifier="id-90b59b73c8e4">
+        <resource href="id-90b59b73c8e4/upload-file.xml" type="imsqti_item_xmlv3p0" identifier="upload-file">
             <metadata>
                 <imsmd:lom>
                     <imsmd:general>
@@ -484,7 +484,7 @@
             </metadata>
             <file href="id-90b59b73c8e4/upload-file.xml"/>
         </resource>
-        <resource href="id-e475c3c922f6/order-maths.xml" type="imsqti_item_xmlv3p0" identifier="id-e475c3c922f6">
+        <resource href="id-e475c3c922f6/order-maths.xml" type="imsqti_item_xmlv3p0" identifier="order-maths">
             <metadata>
                 <imsmd:lom>
                     <imsmd:general>
@@ -496,7 +496,7 @@
             </metadata>
             <file href="id-e475c3c922f6/order-maths.xml"/>
         </resource>
-        <resource href="id-be3cd3bdd3d4/order-mountains.xml" type="imsqti_item_xmlv3p0" identifier="id-be3cd3bdd3d4">
+        <resource href="id-be3cd3bdd3d4/order-mountains.xml" type="imsqti_item_xmlv3p0" identifier="order-mountains">
             <metadata>
                 <imsmd:lom>
                     <imsmd:general>
@@ -508,7 +508,7 @@
             </metadata>
             <file href="id-be3cd3bdd3d4/order-mountains.xml"/>
         </resource>
-        <resource href="id-8167235c360b/QuizBowl-multi-geometry.xml" type="imsqti_item_xmlv3p0" identifier="id-8167235c360b">
+        <resource href="id-8167235c360b/QuizBowl-multi-geometry.xml" type="imsqti_item_xmlv3p0" identifier="QuizBowl-multi-geometry">
             <metadata>
                 <imsmd:lom>
                     <imsmd:general>
@@ -520,7 +520,7 @@
             </metadata>
             <file href="id-8167235c360b/QuizBowl-multi-geometry.xml"/>
         </resource>
-        <resource href="id-1ccd6e04685f/ShortAnswer-extText-postcard.xml" type="imsqti_item_xmlv3p0" identifier="id-1ccd6e04685f">
+        <resource href="id-1ccd6e04685f/ShortAnswer-extText-postcard.xml" type="imsqti_item_xmlv3p0" identifier="ShortAnswer-extText-postcard">
             <metadata>
                 <imsmd:lom>
                     <imsmd:general>
@@ -532,7 +532,7 @@
             </metadata>
             <file href="id-1ccd6e04685f/ShortAnswer-extText-postcard.xml"/>
         </resource>
-        <resource href="id-bd44a757f562/SineRule-001.xml" type="imsqti_item_xmlv3p0" identifier="id-bd44a757f562">
+        <resource href="id-bd44a757f562/SineRule-001.xml" type="imsqti_item_xmlv3p0" identifier="SineRule-CalcFormQ-001">
             <metadata>
                 <imsmd:lom>
                     <imsmd:general>
@@ -544,7 +544,7 @@
             </metadata>
             <file href="id-bd44a757f562/SineRule-001.xml"/>
         </resource>
-        <resource href="id-13b92f311fc0/SineRule-002-maths.xml" type="imsqti_item_xmlv3p0" identifier="id-13b92f311fc0">
+        <resource href="id-13b92f311fc0/SineRule-002-maths.xml" type="imsqti_item_xmlv3p0" identifier="SineRule-CalcFormQ-002">
             <metadata>
                 <imsmd:lom>
                     <imsmd:general>
@@ -556,7 +556,7 @@
             </metadata>
             <file href="id-13b92f311fc0/SineRule-002-maths.xml"/>
         </resource>
-        <resource href="id-c0bdd9a130c7/text_entry-calculus.xml" type="imsqti_item_xmlv3p0" identifier="id-c0bdd9a130c7">
+        <resource href="id-c0bdd9a130c7/text_entry-calculus.xml" type="imsqti_item_xmlv3p0" identifier="text_entry-calculus">
             <metadata>
                 <imsmd:lom>
                     <imsmd:general>
@@ -568,7 +568,7 @@
             </metadata>
             <file href="id-c0bdd9a130c7/text_entry-calculus.xml"/>
         </resource>
-        <resource href="id-d565dbe89933/text_entry-Lycidas.xml" type="imsqti_item_xmlv3p0" identifier="id-d565dbe89933">
+        <resource href="id-d565dbe89933/text_entry-Lycidas.xml" type="imsqti_item_xmlv3p0" identifier="text_entry-Lycidas">
             <metadata>
                 <imsmd:lom>
                     <imsmd:general>
@@ -580,7 +580,7 @@
             </metadata>
             <file href="id-d565dbe89933/text_entry-Lycidas.xml"/>
         </resource>
-        <resource href="id-83210b60ed8f/TF-choice.xml" type="imsqti_item_xmlv3p0" identifier="id-83210b60ed8f">
+        <resource href="id-83210b60ed8f/TF-choice.xml" type="imsqti_item_xmlv3p0" identifier="TF-choice">
             <metadata>
                 <imsmd:lom>
                     <imsmd:general>
@@ -592,7 +592,7 @@
             </metadata>
             <file href="id-83210b60ed8f/TF-choice.xml"/>
         </resource>
-        <resource href="id-f9f3153e2ba4/TheAnswer-001.xml" type="imsqti_item_xmlv3p0" identifier="id-f9f3153e2ba4">
+        <resource href="id-f9f3153e2ba4/TheAnswer-001.xml" type="imsqti_item_xmlv3p0" identifier="TheAnswer-001">
             <metadata>
                 <imsmd:lom>
                     <imsmd:general>
