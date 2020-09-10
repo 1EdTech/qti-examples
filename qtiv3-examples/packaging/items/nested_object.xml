@@ -11,11 +11,13 @@
         <figure role="group">
             <figcaption>
                 <blockquote class="postcard">
-                    Here is a postcard of my town. Please send me<br/>
-                    a postcard from your town. What size is your<br/>
-                    town? What is the nicest part of your town?<br/>
-                    Where do you go in the evenings?<br/>
-                    Sam
+                    <div>
+                        Here is a postcard of my town. Please send me<br/>
+                        a postcard from your town. What size is your<br/>
+                        town? What is the nicest part of your town?<br/>
+                        Where do you go in the evenings?<br/>
+                        Sam
+                    </div>
                 </blockquote>
             </figcaption>
             <picture>

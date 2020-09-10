@@ -19,7 +19,7 @@
             <file href="images/blue_door.png"/>
             <file href="images/open_car.png"/>
         </resource>
-        <resource identifier="adaptive_template" type="imsqti_item_xmlv3p0" href="adaptive_template.xml">
+        <resource identifier="adaptiveTemplate" type="imsqti_item_xmlv3p0" href="adaptive_template.xml">
             <file href="adaptive_template.xml"/>
             <file href="images/red_door.png"/>
             <file href="images/open_goat.png"/>
@@ -43,7 +43,7 @@
             <file href="choice_fixed.xml"/>
             <file href="images/sign.png"/>
         </resource>
-        <resource identifier="choice_multiple" type="imsqti_item_xmlv3p0" href="choice_multiple.xml">
+        <resource identifier="choiceMultiple" type="imsqti_item_xmlv3p0" href="choice_multiple.xml">
             <file href="choice_multiple.xml"/>
         </resource>
         <resource identifier="choice_multiple_chocolade" type="imsqti_item_xmlv3p0" href="choice_multiple_chocolade.xml">
@@ -86,29 +86,29 @@
         <resource identifier="Example05-feedbackBlock-adaptive" type="imsqti_item_xmlv3p0" href="Example05-feedbackBlock-adaptive.xml">
             <file href="Example05-feedbackBlock-adaptive.xml"/>
         </resource>
-        <resource identifier="extended_text" type="imsqti_item_xmlv3p0" href="extended_text.xml">
+        <resource identifier="extendedText" type="imsqti_item_xmlv3p0" href="extended_text.xml">
             <file href="extended_text.xml"/>
             <file href="images/postcard.png"/>
         </resource>
-        <resource identifier="extended_text_rubric" type="imsqti_item_xmlv3p0" href="extended_text_rubric.xml">
+        <resource identifier="extendedTextRubric" type="imsqti_item_xmlv3p0" href="extended_text_rubric.xml">
             <file href="extended_text_rubric.xml"/>
             <file href="images/postcard.png"/>
         </resource>
-        <resource identifier="feedback_adaptive" type="imsqti_item_xmlv3p0" href="feedback_adaptive.xml">
+        <resource identifier="feedbackAdaptive" type="imsqti_item_xmlv3p0" href="feedback_adaptive.xml">
             <file href="feedback_adaptive.xml"/>
         </resource>
         <resource identifier="figures" type="imsqti_item_xmlv3p0" href="figures.xml">
             <file href="figures.xml"/>
             <file href="images/castle.png"/>
         </resource>
-        <resource identifier="gap_match" type="imsqti_item_xmlv3p0" href="gap_match.xml">
+        <resource identifier="gapMatch" type="imsqti_item_xmlv3p0" href="gap_match.xml">
             <file href="gap_match.xml"/>
         </resource>
-        <resource identifier="graphic_associate" type="imsqti_item_xmlv3p0" href="graphic_associate.xml">
+        <resource identifier="graphicAssociate" type="imsqti_item_xmlv3p0" href="graphic_associate.xml">
             <file href="graphic_associate.xml"/>
             <file href="images/ukair.png"/>
         </resource>
-        <resource identifier="graphic_gap_match" type="imsqti_item_xmlv3p0" href="graphic_gap_match.xml">
+        <resource identifier="graphicGapfill" type="imsqti_item_xmlv3p0" href="graphic_gap_match.xml">
             <file href="graphic_gap_match.xml"/>
             <file href="images/CBG.png"/>
             <file href="images/EBG.png"/>
@@ -118,11 +118,11 @@
             <file href="images/MCH.png"/>
             <file href="images/ukairtags.png"/>
         </resource>
-        <resource identifier="graphic_gap_match_text" type="imsqti_item_xmlv3p0" href="graphic_gap_match_text.xml">
+        <resource identifier="graphicGapMatchText" type="imsqti_item_xmlv3p0" href="graphic_gap_match_text.xml">
             <file href="graphic_gap_match_text.xml"/>
             <file href="images/ukairtags.png"/>
         </resource>
-        <resource identifier="graphic_order" type="imsqti_item_xmlv3p0" href="graphic_order.xml">
+        <resource identifier="graphicOrder" type="imsqti_item_xmlv3p0" href="graphic_order.xml">
             <file href="graphic_order.xml"/>
             <file href="images/ukair.png"/>
         </resource>
@@ -136,10 +136,10 @@
         <resource identifier="hottext" type="imsqti_item_xmlv3p0" href="hottext.xml">
             <file href="hottext.xml"/>
         </resource>
-        <resource identifier="inline_choice" type="imsqti_item_xmlv3p0" href="inline_choice.xml">
+        <resource identifier="inlineChoice" type="imsqti_item_xmlv3p0" href="inline_choice.xml">
             <file href="inline_choice.xml"/>
         </resource>
-        <resource identifier="inline_choice_math" type="imsqti_item_xmlv3p0" href="inline_choice_math.xml">
+        <resource identifier="inlineChoiceMath" type="imsqti_item_xmlv3p0" href="inline_choice_math.xml">
             <file href="inline_choice_math.xml"/>
         </resource>
         <resource identifier="likert" type="imsqti_item_xmlv3p0" href="likert.xml">
@@ -157,13 +157,13 @@
         <resource identifier="mc_calc5" type="imsqti_item_xmlv3p0" href="mc_calc5.xml">
             <file href="mc_calc5.xml"/>
         </resource>
-        <resource identifier="mc_stat2" type="imsqti_item_xmlv3p0" href="mc_stat2.xml">
+        <resource identifier="stat2" type="imsqti_item_xmlv3p0" href="mc_stat2.xml">
             <file href="mc_stat2.xml"/>
         </resource>
         <resource identifier="multi-input" type="imsqti_item_xmlv3p0" href="multi-input.xml">
             <file href="multi-input.xml"/>
         </resource>
-        <resource identifier="nested_object" type="imsqti_item_xmlv3p0" href="nested_object.xml">
+        <resource identifier="nestedObject" type="imsqti_item_xmlv3p0" href="nested_object.xml">
             <file href="nested_object.xml"/>
             <file href="images/postcard.eps"/>
             <file href="images/postcard.svg"/>
@@ -173,7 +173,7 @@
         <resource identifier="order" type="imsqti_item_xmlv3p0" href="order.xml">
             <file href="order.xml"/>
         </resource>
-        <resource identifier="order_partial_scoring" type="imsqti_item_xmlv3p0" href="order_partial_scoring.xml">
+        <resource identifier="orderPartialScoring" type="imsqti_item_xmlv3p0" href="order_partial_scoring.xml">
             <file href="order_partial_scoring.xml"/>
         </resource>
         <resource identifier="order_rtl" type="imsqti_item_xmlv3p0" href="order_rtl.xml">
@@ -189,19 +189,19 @@
             <file href="shared/orkney.css"/>
             <file href="shared/orkney.html"/>
         </resource>
-        <resource identifier="position_object" type="imsqti_item_xmlv3p0" href="position_object.xml">
+        <resource identifier="positionObjects" type="imsqti_item_xmlv3p0" href="position_object.xml">
             <file href="position_object.xml"/>
             <file href="images/uk.png"/>
             <file href="images/airport.png"/>
         </resource>
-        <resource identifier="select_point" type="imsqti_item_xmlv3p0" href="select_point.xml">
+        <resource identifier="selectPoint" type="imsqti_item_xmlv3p0" href="select_point.xml">
             <file href="select_point.xml"/>
             <file href="images/uk.png"/>
         </resource>
         <resource identifier="slider" type="imsqti_item_xmlv3p0" href="slider.xml">
             <file href="slider.xml"/>
         </resource>
-        <resource identifier="svg" type="imsqti_item_xmlv3p0" href="svg.xml">
+        <resource identifier="SVG" type="imsqti_item_xmlv3p0" href="svg.xml">
             <file href="svg.xml"/>
             <file href="images/rectangle.svg"/>
         </resource>
@@ -214,7 +214,7 @@
             <file href="images/train.png"/>
             <file href="images/bus.png"/>
         </resource>
-        <resource identifier="text_entry" type="imsqti_item_xmlv3p0" href="text_entry.xml">
+        <resource identifier="textEntry" type="imsqti_item_xmlv3p0" href="text_entry.xml">
             <file href="text_entry.xml"/>
         </resource>
         <resource identifier="upload" type="imsqti_item_xmlv3p0" href="upload.xml">
