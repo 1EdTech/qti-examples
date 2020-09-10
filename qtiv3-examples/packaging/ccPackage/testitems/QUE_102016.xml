@@ -32,6 +32,8 @@
         </qti-content-body>
     </qti-modal-feedback>
     <qti-modal-feedback outcome-identifier="FEEDBACK" show-hide="hide" identifier="solution">
-        <div class="solution"> here is the sample solution</div>
+        <qti-content-body>
+            <div class="solution"> here is the sample solution</div>
+        </qti-content-body>
     </qti-modal-feedback>
 </qti-assessment-item>
