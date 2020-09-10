@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd" identifier="adaptiveTemplate" title="Monty Hall (Take 2)" adaptive="true" time-dependent="false">
+<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+                     xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd" 
+                     identifier="adaptiveTemplate" title="Monty Hall (Take 2)" adaptive="true" time-dependent="false">
     <qti-response-declaration identifier="DOOR" cardinality="single" base-type="identifier"/>
     <qti-response-declaration identifier="RESPONSE" cardinality="single" base-type="identifier">
         <qti-correct-response>
@@ -274,20 +276,26 @@
             </qti-response-else-if>
         </qti-response-condition>
     </qti-response-processing>
-    <qti-modal-feedback outcome-identifier="FEEDBACK" show-hide="show" identifier="stickStrategy">No.
+    <qti-modal-feedback outcome-identifier="FEEDBACK" show-hide="show" identifier="stickStrategy">
+        <qti-content-body>No.
         Initially, the probability of the prize being behind each door is 1/3. Opening a losing door
         can't possibly make this go down for the remaining closed one! In fact you should
-        <em>never</em> stick to your original decision.</qti-modal-feedback>
-    <qti-modal-feedback outcome-identifier="FEEDBACK" show-hide="show" identifier="switchStrategy"> Yes,
+        <em>never</em> stick to your original decision.</qti-content-body>
+    </qti-modal-feedback>
+    <qti-modal-feedback outcome-identifier="FEEDBACK" show-hide="show" identifier="switchStrategy">
+        <qti-content-body>Yes,
         you should <em>always</em> switch doors when offered the chance. Congratulations, perhaps
-        you should think about a career as a TV game show contestant? </qti-modal-feedback>
+        you should think about a career as a TV game show contestant? </qti-content-body>
+    </qti-modal-feedback>
     <qti-modal-feedback outcome-identifier="FEEDBACK" show-hide="show" identifier="noStrategy">
-        <p>No, you should infact <em>always</em> switch doors. This problem has fooled many
-            mathematicians since it was first posed in an American magazine article and continues to
-            present a seemingly paradoxical answer!</p>
-        <p>The probability of your first choice door hiding the prize is 1/3 and this can't change.
-            But, 2/3 of the time you'll be wrong with your first choice and, by revealing a goat,
-            Monty is effectively telling you which door the prize is behind the remaining 2/3 of the
-            time! So by switching doors, your chances of getting the prize go up to 2/3!</p>
+        <qti-content-body>
+            <p>No, you should infact <em>always</em> switch doors. This problem has fooled many
+                mathematicians since it was first posed in an American magazine article and continues to
+                present a seemingly paradoxical answer!</p>
+            <p>The probability of your first choice door hiding the prize is 1/3 and this can't change.
+                But, 2/3 of the time you'll be wrong with your first choice and, by revealing a goat,
+                Monty is effectively telling you which door the prize is behind the remaining 2/3 of the
+                time! So by switching doors, your chances of getting the prize go up to 2/3!</p>
+        </qti-content-body>
     </qti-modal-feedback>
 </qti-assessment-item>
