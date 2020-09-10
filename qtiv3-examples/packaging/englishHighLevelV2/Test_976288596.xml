@@ -16,7 +16,7 @@
     <qti-time-limits max-time="10800.0"/>
     <qti-test-part identifier="testpartID" navigation-mode="nonlinear" submission-mode="simultaneous">
         <qti-assessment-section identifier="IQuestionsonthetext_1509076617" fixed="false" title="Reading Text" visible="true">
-            <qti-rubric-block view="candidate">
+            <qti-rubric-block view="candidate" use="instructions">
                 <qti-content-body>
                     <p>
                         <b>LOST IN AMERICA </b>
@@ -222,7 +222,7 @@
             </qti-rubric-block>
         </qti-assessment-section>
         <qti-assessment-section identifier="LOSTINAMERICA_408859890" fixed="false" title="I. Questions on the text" visible="true">
-            <qti-rubric-block view="candidate">
+            <qti-rubric-block view="candidate" use="instructions">
                 <qti-content-body>
                     <p>
                         <b>Read all the questions first, then answer them in the given order. <br/>Use
@@ -238,7 +238,7 @@
             <qti-assessment-item-ref identifier="Item6_1645506707" href="Item6_1645506707.xml" fixed="false"/>
         </qti-assessment-section>
         <qti-assessment-section identifier="IIComposition_437292360" fixed="false" title="II. Composition" visible="true">
-            <qti-rubric-block view="candidate">
+            <qti-rubric-block view="candidate" use="instructions">
                 <qti-content-body>
                     <p>Choose <b>one</b> of the following topics.<br/>Write about 120 to 150 words.</p>
                 </qti-content-body>
