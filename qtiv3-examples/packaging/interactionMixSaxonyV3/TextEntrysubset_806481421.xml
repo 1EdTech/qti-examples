@@ -206,14 +206,18 @@
 			</qti-response-if>
 		</qti-response-condition>
 	</qti-response-processing>
-	<qti-modal-feedback identifier="FEEDBACK_588645" outcome-identifier="FEEDBACKMODAL" show-hide="show" title="Richtig!">Sachsen enthält die drei kreisfreie Städte Chemnitz, Dresden und Leipzig,
+	<qti-modal-feedback identifier="FEEDBACK_588645" outcome-identifier="FEEDBACKMODAL" show-hide="show" title="Richtig!">
+            <qti-content-body>Sachsen enthält die drei kreisfreie Städte Chemnitz, Dresden und Leipzig,
 		welche jeweils einem Direktionsbezirk zugehörig sind. Zwickau ist die viertgrößte Stadt in
 		Sachsen. Zwickau, ist seit Ende 2003 keine Großstadt mehr, da die Einwohnerzahl
 		zurückgegangen ist. Im Rahmen der Sächsischen Kreisreform wurde der Stadt im Jahr 2008 die
-		Kreisfreiheit entzogen.</qti-modal-feedback>
-	<qti-modal-feedback identifier="FEEDBACK_28358501" outcome-identifier="FEEDBACKMODAL" show-hide="show" title="Leider Falsch!">Sachsen enthält die drei kreisfreie Städte Chemnitz, Dresden und
+		Kreisfreiheit entzogen.</qti-content-body>
+        </qti-modal-feedback>
+	<qti-modal-feedback identifier="FEEDBACK_28358501" outcome-identifier="FEEDBACKMODAL" show-hide="show" title="Leider Falsch!">
+            <qti-content-body>Sachsen enthält die drei kreisfreie Städte Chemnitz, Dresden und
 		Leipzig, welche jeweils einem Direktionsbezirk zugehörig sind. Zwickau ist die viertgrößte
 		Stadt in Sachsen. Zwickau, ist seit Ende 2003 keine Großstadt mehr, da die Einwohnerzahl
 		zurückgegangen ist. Im Rahmen der Sächsischen Kreisreform wurde der Stadt im Jahr 2008 die
-		Kreisfreiheit entzogen.</qti-modal-feedback>
+		Kreisfreiheit entzogen.</qti-content-body>
+        </qti-modal-feedback>
 </qti-assessment-item>

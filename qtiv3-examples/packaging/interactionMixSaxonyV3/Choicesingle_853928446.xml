@@ -151,9 +151,19 @@
 			</qti-response-if>
 		</qti-response-condition>
 	</qti-response-processing>
-	<qti-modal-feedback identifier="FEEDBACK_19070485" outcome-identifier="FEEDBACKMODAL" show-hide="show" title="Richtig!">Die sächsischen Landesfarben sind weiß-grün.</qti-modal-feedback>
-	<qti-modal-feedback identifier="FEEDBACK_5709968" outcome-identifier="FEEDBACKMODAL" show-hide="show" title="Leider Falsch!">Die sächsischen Landesfarben sind weiß-grün.</qti-modal-feedback>
-	<qti-modal-feedback identifier="FEEDBACK_1772719" outcome-identifier="FEEDBACKMODAL" show-hide="show" title="">Deine Auswahl zeigt die Flagge vom Land Thüringen.</qti-modal-feedback>
-	<qti-modal-feedback identifier="FEEDBACK_31321506" outcome-identifier="FEEDBACKMODAL" show-hide="show" title="">Deine Auswahl zeigt die Flagge vom Land Baden-Württemberg.</qti-modal-feedback>
-	<qti-modal-feedback identifier="FEEDBACK_18628673" outcome-identifier="FEEDBACKMODAL" show-hide="show" title="">Deine Auswahl zeigt die Flagge vom Land Sachsen-Anhalt.</qti-modal-feedback>
+	<qti-modal-feedback identifier="FEEDBACK_19070485" outcome-identifier="FEEDBACKMODAL" show-hide="show" title="Richtig!">
+            <qti-content-body>Die sächsischen Landesfarben sind weiß-grün.</qti-content-body>
+        </qti-modal-feedback>
+	<qti-modal-feedback identifier="FEEDBACK_5709968" outcome-identifier="FEEDBACKMODAL" show-hide="show" title="Leider Falsch!">
+            <qti-content-body>Die sächsischen Landesfarben sind weiß-grün.</qti-content-body>
+        </qti-modal-feedback>
+	<qti-modal-feedback identifier="FEEDBACK_1772719" outcome-identifier="FEEDBACKMODAL" show-hide="show" title="">
+            <qti-content-body>Deine Auswahl zeigt die Flagge vom Land Thüringen.</qti-content-body>
+        </qti-modal-feedback>
+	<qti-modal-feedback identifier="FEEDBACK_31321506" outcome-identifier="FEEDBACKMODAL" show-hide="show" title="">
+            <qti-content-body>Deine Auswahl zeigt die Flagge vom Land Baden-Württemberg.</qti-content-body>
+        </qti-modal-feedback>
+	<qti-modal-feedback identifier="FEEDBACK_18628673" outcome-identifier="FEEDBACKMODAL" show-hide="show" title="">
+            <qti-content-body>Deine Auswahl zeigt die Flagge vom Land Sachsen-Anhalt.</qti-content-body>
+        </qti-modal-feedback>
 </qti-assessment-item>

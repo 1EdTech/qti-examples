@@ -98,8 +98,10 @@
 			</qti-response-if>
 		</qti-response-condition>
 	</qti-response-processing>
-	<qti-modal-feedback identifier="FEEDBACK_4634459" outcome-identifier="FEEDBACKMODAL" show-hide="show" title="Richtig!">Der Freistaat Sachsen verfügt über zwei Internationale Flughäfen:
-		Leipzig/Halle und Dresden.</qti-modal-feedback>
-	<qti-modal-feedback identifier="FEEDBACK_11521292" outcome-identifier="FEEDBACKMODAL" show-hide="show" title="Leider Falsch!">Der Freistaat Sachsen verfügt über zwei Internationale Flughäfen:
-		Leipzig/Halle und Dresden.</qti-modal-feedback>
+	<qti-modal-feedback identifier="FEEDBACK_4634459" outcome-identifier="FEEDBACKMODAL" show-hide="show" title="Richtig!">
+            <qti-content-body>Der Freistaat Sachsen verfügt über zwei Internationale Flughäfen: Leipzig/Halle und Dresden.</qti-content-body>
+        </qti-modal-feedback>
+	<qti-modal-feedback identifier="FEEDBACK_11521292" outcome-identifier="FEEDBACKMODAL" show-hide="show" title="Leider Falsch!">
+            <qti-content-body>Der Freistaat Sachsen verfügt über zwei Internationale Flughäfen: Leipzig/Halle und Dresden.</qti-content-body>
+        </qti-modal-feedback>
 </qti-assessment-item>

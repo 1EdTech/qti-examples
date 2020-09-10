@@ -106,10 +106,13 @@
 			</qti-response-if>
 		</qti-response-condition>
 	</qti-response-processing>
-	<qti-modal-feedback identifier="FEEDBACK_33287150" outcome-identifier="FEEDBACKMODAL" show-hide="show" title="Richtig!">Sachsen hat rund 4,1 Millionen Einwohner bei einer Fläche von rund 18.400
-		Quadratkilometern und gehört damit zu den kleineren Ländern der
-		Bundesrepublik.</qti-modal-feedback>
-	<qti-modal-feedback identifier="FEEDBACK_4085837" outcome-identifier="FEEDBACKMODAL" show-hide="show" title="Leider Falsch!">Sachsen hat rund 4,1 Millionen Einwohner bei einer Fläche von rund
+	<qti-modal-feedback identifier="FEEDBACK_33287150" outcome-identifier="FEEDBACKMODAL" show-hide="show" title="Richtig!">
+            <qti-content-body>Sachsen hat rund 4,1 Millionen Einwohner bei einer Fläche von rund 18.400
+		Quadratkilometern und gehört damit zu den kleineren Ländern der Bundesrepublik.</qti-content-body>
+        </qti-modal-feedback>
+	<qti-modal-feedback identifier="FEEDBACK_4085837" outcome-identifier="FEEDBACKMODAL" show-hide="show" title="Leider Falsch!">
+            <qti-content-body>Sachsen hat rund 4,1 Millionen Einwohner bei einer Fläche von rund
 		18.400 Quadratkilometern und gehört damit zu den kleineren Ländern der
-		Bundesrepublik.</qti-modal-feedback>
+		Bundesrepublik.</qti-content-body>
+        </qti-modal-feedback>
 </qti-assessment-item>

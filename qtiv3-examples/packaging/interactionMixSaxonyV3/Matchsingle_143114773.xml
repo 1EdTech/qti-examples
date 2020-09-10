@@ -108,12 +108,14 @@
 			</qti-response-if>
 		</qti-response-condition>
 	</qti-response-processing>
-	<qti-modal-feedback identifier="FEEDBACK_27448254" outcome-identifier="FEEDBACKMODAL" show-hide="show" title="Richtig!">Die Elbe durchzieht den Freistaat von Südosten nach Nordwesten. Wichtige
+	<qti-modal-feedback identifier="FEEDBACK_27448254" outcome-identifier="FEEDBACKMODAL" show-hide="show" title="Richtig!">
+            <qti-content-body>Die Elbe durchzieht den Freistaat von Südosten nach Nordwesten. Wichtige
 		Quellflüsse sind die Mulde, die Weißeritz, die Zschopau, die Weiße Elster und die Spree,
-		deren allgemeine Fließrichtung Norden ist und die ebenfalls zum Fluss-System der Elbe
-		gehören.</qti-modal-feedback>
-	<qti-modal-feedback identifier="FEEDBACK_16479834" outcome-identifier="FEEDBACKMODAL" show-hide="show" title="Leider Falsch!">Die Elbe durchzieht den Freistaat von Südosten nach Nordwesten.
+		deren allgemeine Fließrichtung Norden ist und die ebenfalls zum Fluss-System der Elbe gehören.</qti-content-body>
+        </qti-modal-feedback>
+	<qti-modal-feedback identifier="FEEDBACK_16479834" outcome-identifier="FEEDBACKMODAL" show-hide="show" title="Leider Falsch!">
+            <qti-content-body>Die Elbe durchzieht den Freistaat von Südosten nach Nordwesten.
 		Wichtige Quellflüsse sind die Mulde, die Weißeritz, die Zschopau, die Weiße Elster und die
-		Spree, deren allgemeine Fließrichtung Norden ist und die ebenfalls zum Fluss-System der Elbe
-		gehören.</qti-modal-feedback>
+		Spree, deren allgemeine Fließrichtung Norden ist und die ebenfalls zum Fluss-System der Elbe gehören.</qti-content-body>
+        </qti-modal-feedback>
 </qti-assessment-item>

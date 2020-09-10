@@ -119,10 +119,12 @@
 			</qti-response-if>
 		</qti-response-condition>
 	</qti-response-processing>
-	<qti-modal-feedback identifier="FEEDBACK_9491398" outcome-identifier="FEEDBACKMODAL" show-hide="show" title="Richtig!">Abgebildet sind die Frauenkirche (Dresden), die Semperoper (Dresden), das
-		Völkerschlachtdenkmal (Leipzig), der Dom St.Marien (Freiberg) und das Karl-Marx-Monument
-		(Chemnitz).</qti-modal-feedback>
-	<qti-modal-feedback identifier="FEEDBACK_4165723" outcome-identifier="FEEDBACKMODAL" show-hide="show" title="Leider Falsch!">Abgebildet sind die Frauenkirche (Dresden), die Semperoper (Dresden),
-		das Völkerschlachtdenkmal (Leipzig), der Dom St.Marien (Freiberg) und das Karl-Marx-Monument
-		(Chemnitz).</qti-modal-feedback>
+	<qti-modal-feedback identifier="FEEDBACK_9491398" outcome-identifier="FEEDBACKMODAL" show-hide="show" title="Richtig!">
+            <qti-content-body>Abgebildet sind die Frauenkirche (Dresden), die Semperoper (Dresden), das
+		Völkerschlachtdenkmal (Leipzig), der Dom St.Marien (Freiberg) und das Karl-Marx-Monument (Chemnitz).</qti-content-body>
+        </qti-modal-feedback>
+	<qti-modal-feedback identifier="FEEDBACK_4165723" outcome-identifier="FEEDBACKMODAL" show-hide="show" title="Leider Falsch!">
+            <qti-content-body>Abgebildet sind die Frauenkirche (Dresden), die Semperoper (Dresden),
+		das Völkerschlachtdenkmal (Leipzig), der Dom St.Marien (Freiberg) und das Karl-Marx-Monument (Chemnitz).</qti-content-body>
+        </qti-modal-feedback>
 </qti-assessment-item>

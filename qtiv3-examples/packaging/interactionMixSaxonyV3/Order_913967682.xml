@@ -101,11 +101,14 @@
 			</qti-response-if>
 		</qti-response-condition>
 	</qti-response-processing>
-	<qti-modal-feedback identifier="FEEDBACK_25975631" outcome-identifier="FEEDBACKMODAL" show-hide="show" title="Richtig!">Die CDU ist in Sachsen seit der Wiedervereinigung die mit Abstand stärkste
+	<qti-modal-feedback identifier="FEEDBACK_25975631" outcome-identifier="FEEDBACKMODAL" show-hide="show" title="Richtig!">
+            <qti-content-body>Die CDU ist in Sachsen seit der Wiedervereinigung die mit Abstand stärkste
 		Partei und hat aktuell 58 Sitze im Landtag. Zweitstärkste Partei ist Die Linke (29), gefolgt
-		von der SPD (14), der FDP (14), den Grünen (9) und der NPD (8).</qti-modal-feedback>
-	<qti-modal-feedback identifier="FEEDBACK_29276140" outcome-identifier="FEEDBACKMODAL" show-hide="show" title="Leider Falsch!">Die CDU ist in Sachsen seit der Wiedervereinigung die mit Abstand
+		von der SPD (14), der FDP (14), den Grünen (9) und der NPD (8).</qti-content-body>
+        </qti-modal-feedback>
+	<qti-modal-feedback identifier="FEEDBACK_29276140" outcome-identifier="FEEDBACKMODAL" show-hide="show" title="Leider Falsch!">
+            <qti-content-body>Die CDU ist in Sachsen seit der Wiedervereinigung die mit Abstand
 		stärkste Partei und hat aktuell 58 Sitze im Landtag. Zweitstärkste Partei ist Die Linke
-		(29), gefolgt von der SPD (14), der FDP (14), den Grünen (9) und der NPD
-		(8).</qti-modal-feedback>
+		(29), gefolgt von der SPD (14), der FDP (14), den Grünen (9) und der NPD (8).</qti-content-body>
+        </qti-modal-feedback>
 </qti-assessment-item>

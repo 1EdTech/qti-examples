@@ -135,10 +135,12 @@
 			</qti-response-if>
 		</qti-response-condition>
 	</qti-response-processing>
-	<qti-modal-feedback identifier="FEEDBACK_14821822" outcome-identifier="FEEDBACKMODAL" show-hide="show" title="Richtig!">Sachsen liegt im Osten Mitteldeutschlands und grenzt an die Länder Bayern,
-		Thüringen, Sachsen-Anhalt, Brandenburg, die Republik Polen und die Tschechische
-		Republik.</qti-modal-feedback>
-	<qti-modal-feedback identifier="FEEDBACK_2275583" outcome-identifier="FEEDBACKMODAL" show-hide="show" title="Leider Falsch!">Sachsen liegt im Osten Mitteldeutschlands und grenzt an die Länder
-		Bayern, Thüringen, Sachsen-Anhalt, Brandenburg, die Republik Polen und die Tschechische
-		Republik.</qti-modal-feedback>
+	<qti-modal-feedback identifier="FEEDBACK_14821822" outcome-identifier="FEEDBACKMODAL" show-hide="show" title="Richtig!">
+            <qti-content-body>Sachsen liegt im Osten Mitteldeutschlands und grenzt an die Länder Bayern,
+		Thüringen, Sachsen-Anhalt, Brandenburg, die Republik Polen und die Tschechische Republik.</qti-content-body>
+        </qti-modal-feedback>
+	<qti-modal-feedback identifier="FEEDBACK_2275583" outcome-identifier="FEEDBACKMODAL" show-hide="show" title="Leider Falsch!">
+            <qti-content-body>Sachsen liegt im Osten Mitteldeutschlands und grenzt an die Länder
+		Bayern, Thüringen, Sachsen-Anhalt, Brandenburg, die Republik Polen und die Tschechische Republik.</qti-content-body>
+        </qti-modal-feedback>
 </qti-assessment-item>

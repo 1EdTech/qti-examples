@@ -198,11 +198,21 @@
 			</qti-response-if>
 		</qti-response-condition>
 	</qti-response-processing>
-	<qti-modal-feedback identifier="FEEDBACK_20198043" outcome-identifier="FEEDBACKMODAL" show-hide="show" title="">Richtig!</qti-modal-feedback>
-	<qti-modal-feedback identifier="FEEDBACK_31886564" outcome-identifier="FEEDBACKMODAL" show-hide="show" title="">Leider Falsch!</qti-modal-feedback>
-	<qti-modal-feedback identifier="FEEDBACK_16125728" outcome-identifier="FEEDBACKMODAL" show-hide="show" title="In deiner Auswahl fehlt die Region Lausitz">Die Lausitz ist eine Region in Deutschland und Polen. Sie umfasst den Süden Brandenburgs und den Osten des Freistaates Sachsen.</qti-modal-feedback>
-	<qti-modal-feedback identifier="FEEDBACK_5978326" outcome-identifier="FEEDBACKMODAL" show-hide="show" title="In deiner Auswahl fehlt das Erzgebirge">Das Erzgebirge ist ein Mittelgebirge und bildet die natürliche Grenze zwischen Sachsen und Böhmen.</qti-modal-feedback>
-	<qti-modal-feedback identifier="FEEDBACK_15771477" outcome-identifier="FEEDBACKMODAL" show-hide="show" title="In deiner Auswahl fehlt das Vogtland">Das Vogtland ist eine Region im Grenzgebiet der drei deutschen Bundesländer Bayern, Sachsen und Thüringen.</qti-modal-feedback>
-	<qti-modal-feedback identifier="FEEDBACK_24761471" outcome-identifier="FEEDBACKMODAL" show-hide="show" title="Die Auswahl Harz war leider falsch">Der Harz ist ein Mittelgebirge in Deutschland. Er stellt das höchste Gebirge Norddeutschlands dar und liegt am Schnittpunkt von Niedersachsen, Sachsen-Anhalt und Thüringen.</qti-modal-feedback>
-	<qti-modal-feedback identifier="FEEDBACK_23991545" outcome-identifier="FEEDBACKMODAL" show-hide="show" title="Die Auswahl Alpen war leider falsch">Die Alpen sind das höchste Gebirge im Inneren Europas. Sie erstrecken sich von Italien und der Schweiz bis in den Süden Deutschlands. Das Alpenvorland zieht sich durch die Bundesländer Bayern und Baden-Württemberg.</qti-modal-feedback>
+	<qti-modal-feedback identifier="FEEDBACK_20198043" outcome-identifier="FEEDBACKMODAL" show-hide="show" title=""><qti-content-body>Richtig!</qti-content-body></qti-modal-feedback>
+	<qti-modal-feedback identifier="FEEDBACK_31886564" outcome-identifier="FEEDBACKMODAL" show-hide="show" title=""><qti-content-body>Leider Falsch!</qti-content-body></qti-modal-feedback>
+	<qti-modal-feedback identifier="FEEDBACK_16125728" outcome-identifier="FEEDBACKMODAL" show-hide="show" title="In deiner Auswahl fehlt die Region Lausitz">
+            <qti-content-body>Die Lausitz ist eine Region in Deutschland und Polen. Sie umfasst den Süden Brandenburgs und den Osten des Freistaates Sachsen.</qti-content-body>
+        </qti-modal-feedback>
+	<qti-modal-feedback identifier="FEEDBACK_5978326" outcome-identifier="FEEDBACKMODAL" show-hide="show" title="In deiner Auswahl fehlt das Erzgebirge">
+            <qti-content-body>Das Erzgebirge ist ein Mittelgebirge und bildet die natürliche Grenze zwischen Sachsen und Böhmen.</qti-content-body>
+        </qti-modal-feedback>
+	<qti-modal-feedback identifier="FEEDBACK_15771477" outcome-identifier="FEEDBACKMODAL" show-hide="show" title="In deiner Auswahl fehlt das Vogtland">
+            <qti-content-body>Das Vogtland ist eine Region im Grenzgebiet der drei deutschen Bundesländer Bayern, Sachsen und Thüringen.</qti-content-body>
+        </qti-modal-feedback>
+	<qti-modal-feedback identifier="FEEDBACK_24761471" outcome-identifier="FEEDBACKMODAL" show-hide="show" title="Die Auswahl Harz war leider falsch">
+            <qti-content-body>Der Harz ist ein Mittelgebirge in Deutschland. Er stellt das höchste Gebirge Norddeutschlands dar und liegt am Schnittpunkt von Niedersachsen, Sachsen-Anhalt und Thüringen.</qti-content-body>
+        </qti-modal-feedback>
+	<qti-modal-feedback identifier="FEEDBACK_23991545" outcome-identifier="FEEDBACKMODAL" show-hide="show" title="Die Auswahl Alpen war leider falsch">
+            <qti-content-body>Die Alpen sind das höchste Gebirge im Inneren Europas. Sie erstrecken sich von Italien und der Schweiz bis in den Süden Deutschlands. Das Alpenvorland zieht sich durch die Bundesländer Bayern und Baden-Württemberg.</qti-content-body>
+        </qti-modal-feedback>
 </qti-assessment-item>

@@ -26,7 +26,7 @@
                         <contribute>
                             <role>
                                 <source>LOMv1.0</source>
-                                <qti-value>author</qti-value>
+                                <value>author</value>
                             </role>
                             <entity>BEGIN:VCARD VERSION:3.0 N:Winkelmann;Yvonne FN:Yvonne
                                 Winkelmann ORG:BPS Bildungsportal Sachsen GmbH
