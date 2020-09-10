@@ -48,14 +48,8 @@
     </metadata>
     <organizations/>
     <resources>
-        <resource identifier="res_-TX_G06SAMP_000" type="imsqti_item_xmlv3p0" href="testitems/-TX_G06SAMP_000.xml">
+        <resource identifier="res_-TX_G06SAMP_000" type="imsqti_test_xmlv3p0" href="testitems/-TX_G06SAMP_000.xml">
             <metadata>
-                <imsqti:qtiMetadata>
-                    <imsqti:itemTemplate>false</imsqti:itemTemplate>
-                    <imsqti:composite>false</imsqti:composite>
-                    <imsqti:interactionType>choiceInteraction</imsqti:interactionType>
-                    <imsqti:feedbackType>nonadaptive</imsqti:feedbackType>
-                </imsqti:qtiMetadata>
                 <imsmd:lom>
                     <imsmd:educational>
                         <imsmd:intendedEndUserRole>

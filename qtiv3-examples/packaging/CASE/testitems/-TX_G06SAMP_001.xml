@@ -1,20 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation=" http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd " identifier="res_-TX_G06SAMP_001" title="-TX_G06SAMP_001" adaptive="false" time-dependent="false">
- <qti-response-declaration base-type="identifier" cardinality="single" identifier="RESPONSE">
-<qti-correct-response>
-<qti-value>A_2</qti-value>
-</qti-correct-response>
-</qti-response-declaration>
-<qti-outcome-declaration identifier="FEEDBACK" cardinality="single" base-type="identifier"/>
-<qti-outcome-declaration identifier="MAXSCORE" cardinality="single" base-type="float"/>
-<qti-outcome-declaration identifier="SCORE" cardinality="single" base-type="float"/>
-<qti-item-body><div><table><tbody><tr><td>
-		</td></tr></tbody></table><br/> Which of the following shows the integers in order from <strong>least</strong> to <strong>greatest</strong>? </div>
-		  <qti-choice-interaction response-identifier="RESPONSE" shuffle="false" max-choices="1">
-		  <qti-simple-choice identifier="A_0">0, -3, 4, 8, -17, -20</qti-simple-choice>
-			  <qti-simple-choice identifier="A_1"> -3, -17, -20, 0, 4, 8</qti-simple-choice>
-			  <qti-simple-choice identifier="A_2">-20, -17, -3, 0, 4, 8</qti-simple-choice>
-			  <qti-simple-choice identifier="A_3">8, 4, 0, -3, -17, -20</qti-simple-choice>
-			  </qti-choice-interaction></qti-item-body>
-		   <qti-response-processing template="https://www.imsglobal.org/question/qti_v3p0/rptemplates/match_correct.xml"/>
-		   </qti-assessment-item>
+    <qti-response-declaration base-type="identifier" cardinality="single" identifier="RESPONSE">
+        <qti-correct-response>
+            <qti-value>A_2</qti-value>
+        </qti-correct-response>
+    </qti-response-declaration>
+    <qti-outcome-declaration identifier="FEEDBACK" cardinality="single" base-type="identifier"/>
+    <qti-outcome-declaration identifier="MAXSCORE" cardinality="single" base-type="float"/>
+    <qti-outcome-declaration identifier="SCORE" cardinality="single" base-type="float"/>
+    <qti-item-body>
+        <div>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <br/> Which of the following shows the integers in order from <strong>least</strong> to <strong>greatest</strong>? </div>
+        <qti-choice-interaction response-identifier="RESPONSE" shuffle="false" max-choices="1">
+            <qti-simple-choice identifier="A_0">0, -3, 4, 8, -17, -20</qti-simple-choice>
+            <qti-simple-choice identifier="A_1"> -3, -17, -20, 0, 4, 8</qti-simple-choice>
+            <qti-simple-choice identifier="A_2">-20, -17, -3, 0, 4, 8</qti-simple-choice>
+            <qti-simple-choice identifier="A_3">8, 4, 0, -3, -17, -20</qti-simple-choice>
+        </qti-choice-interaction>
+    </qti-item-body>
+    <qti-response-processing template="https://www.imsglobal.org/question/qti_v3p0/rptemplates/match_correct.xml"/>
+</qti-assessment-item>
