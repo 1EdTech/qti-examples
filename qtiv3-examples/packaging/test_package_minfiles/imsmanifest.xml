@@ -47,7 +47,7 @@
     </metadata>
     <organizations/>
     <resources>
-        <resource identifier="RES-BCA84FC0-53F9-ABBD-C3FE-BDB5B825CA9E" type="imsqti_test_xmlv3p0" href="example/rtest.xml">
+        <resource identifier="RTEST-02" type="imsqti_test_xmlv3p0" href="example/rtest.xml">
             <metadata>
                 <imsmd:lom>
                     <imsmd:general>
@@ -87,12 +87,12 @@
                 </imsmd:lom>
             </metadata>
             <file href="example/rtest.xml"/>
-            <dependency identifierref="RES-BCA84FC0-53F9-ABBD-C3FE-BDB5B825CA9E"/>
-            <dependency identifierref="RES-B38DF83F-A291-86DA-4EC3-B2CEBD1515A4"/>
-            <dependency identifierref="RES-3E07BB74-648D-1705-AB43-FC02920B1EAD"/>
-            <dependency identifierref="RES-1CDACE46-DD7B-719F-0D4D-BDA579A862AB"/>
+            <dependency identifierref="RTEST-02"/>
+            <dependency identifierref="choice"/>
+            <dependency identifierref="choiceMultiple"/>
+            <dependency identifierref="hotspot"/>
         </resource>
-        <resource identifier="RES-BCA84FC0-53F9-ABBD-C3FE-BDB5B825CA9F" type="imsqti_item_xmlv3p0" href="example/adaptive.xml">
+        <resource identifier="adaptiveTemplate" type="imsqti_item_xmlv3p0" href="example/adaptive.xml">
             <metadata>
                 <imsmd:lom>
                     <imsmd:general>
@@ -135,7 +135,7 @@
             <file href="example/blue_door.png"/>
             <file href="example/open_goat.png"/>
         </resource>
-        <resource identifier="RES-B38DF83F-A291-86DA-4EC3-B2CEBD1515A4" type="imsqti_item_xmlv3p0" href="example/choice.xml">
+        <resource identifier="choice" type="imsqti_item_xmlv3p0" href="example/choice.xml">
             <metadata>
                 <imsmd:lom>
                     <imsmd:general>
@@ -181,7 +181,7 @@
             <file href="example/choice.xml"/>
             <file href="example/sign.png"/>
         </resource>
-        <resource identifier="RES-3E07BB74-648D-1705-AB43-FC02920B1EAD" type="imsqti_item_xmlv3p0" href="example/choice_multiple.xml">
+        <resource identifier="choiceMultiple" type="imsqti_item_xmlv3p0" href="example/choice_multiple.xml">
             <metadata>
                 <imsmd:lom>
                     <imsmd:general>
@@ -219,7 +219,7 @@
             </metadata>
             <file href="example/choice_multiple.xml"/>
         </resource>
-        <resource identifier="RES-1CDACE46-DD7B-719F-0D4D-BDA579A862AB" type="imsqti_item_xmlv3p0" href="example/hotspot.xml">
+        <resource identifier="hotspot" type="imsqti_item_xmlv3p0" href="example/hotspot.xml">
             <metadata>
                 <imsmd:lom>
                     <imsmd:general>
