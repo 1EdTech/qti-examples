@@ -2,7 +2,7 @@
 <qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd" 
-	identifier="exemplar05" title="Where did the crocodile come from" 
+	identifier="Item3" title="Where did the crocodile come from" 
         adaptive="false" time-dependent="false">
     <qti-response-declaration identifier="RESPONSE" base-type="identifier" cardinality="single">
         <qti-correct-response>

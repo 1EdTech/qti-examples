@@ -3,8 +3,8 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xmlns:ssml="http://www.w3.org/2001/10/synthesis"
 	xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd 
-            http://www.w3.org/2001/10/synthesis http://www.w3.org/TR/speech-synthesis11/synthesis.xsd" 
-	identifier="exemplar06" title="Why did Anina call the flamingos" 
+            http://www.w3.org/2001/10/synthesis https://purl.imsglobal.org/spec/ssml/v1p1/schema/xsd/ssmlv1p1-core.xsd" 
+	identifier="Item1" title="Why did Anina call the flamingos" 
         adaptive="false" time-dependent="false">
     <qti-response-declaration identifier="RESPONSE" cardinality="single" base-type="string"/>
     
