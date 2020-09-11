@@ -10,7 +10,7 @@
     </metadata>
     <organizations/>
     <resources>
-        <resource identifier="RES-B38DF83F-A291-86DA-4EC3-B2CEBD1515b4" type="imsqti_item_xmlv3p0" href="svg.xml">
+        <resource identifier="SVG" type="imsqti_item_xmlv3p0" href="svg.xml">
             <file href="svg.xml"/>
             <file href="rectangle.svg"/>
         </resource>
