@@ -87,13 +87,18 @@
                 </imsmd:lom>
             </metadata>
             <file href="example/rtest.xml"/>
-            <dependency identifierref="RTEST-02"/>
             <dependency identifierref="choice"/>
             <dependency identifierref="choiceMultiple"/>
             <dependency identifierref="hotspot"/>
         </resource>
         <resource identifier="adaptiveTemplate" type="imsqti_item_xmlv3p0" href="example/adaptive.xml">
             <metadata>
+                <imsqti:qtiMetadata>
+                    <imsqti:timeDependent>false</imsqti:timeDependent>
+                    <imsqti:interactionType>choiceInteraction</imsqti:interactionType>
+                    <imsqti:feedbackType>adaptive</imsqti:feedbackType>
+                    <imsqti:solutionAvailable>true</imsqti:solutionAvailable>
+                </imsqti:qtiMetadata>
                 <imsmd:lom>
                     <imsmd:general>
                         <imsmd:identifier>
@@ -121,12 +126,6 @@
                         <imsmd:format>image/png</imsmd:format>
                     </imsmd:technical>
                 </imsmd:lom>
-                <imsqti:qtiMetadata>
-                    <imsqti:timeDependent>false</imsqti:timeDependent>
-                    <imsqti:interactionType>choiceInteraction</imsqti:interactionType>
-                    <imsqti:feedbackType>adaptive</imsqti:feedbackType>
-                    <imsqti:solutionAvailable>true</imsqti:solutionAvailable>
-                </imsqti:qtiMetadata>
             </metadata>
             <file href="example/adaptive.xml"/>
             <file href="example/green_door.png"/>
@@ -137,6 +136,12 @@
         </resource>
         <resource identifier="choice" type="imsqti_item_xmlv3p0" href="example/choice.xml">
             <metadata>
+                <imsqti:qtiMetadata>
+                    <imsqti:timeDependent>false</imsqti:timeDependent>
+                    <imsqti:interactionType>choiceInteraction</imsqti:interactionType>
+                    <imsqti:feedbackType>none</imsqti:feedbackType>
+                    <imsqti:solutionAvailable>true</imsqti:solutionAvailable>
+                </imsqti:qtiMetadata>
                 <imsmd:lom>
                     <imsmd:general>
                         <imsmd:identifier>
@@ -171,18 +176,18 @@
                         </imsmd:description>
                     </imsmd:rights>
                 </imsmd:lom>
-                <imsqti:qtiMetadata>
-                    <imsqti:timeDependent>false</imsqti:timeDependent>
-                    <imsqti:interactionType>choiceInteraction</imsqti:interactionType>
-                    <imsqti:feedbackType>none</imsqti:feedbackType>
-                    <imsqti:solutionAvailable>true</imsqti:solutionAvailable>
-                </imsqti:qtiMetadata>
             </metadata>
             <file href="example/choice.xml"/>
             <file href="example/sign.png"/>
         </resource>
         <resource identifier="choiceMultiple" type="imsqti_item_xmlv3p0" href="example/choice_multiple.xml">
             <metadata>
+                <imsqti:qtiMetadata>
+                    <imsqti:timeDependent>false</imsqti:timeDependent>
+                    <imsqti:interactionType>choiceInteraction</imsqti:interactionType>
+                    <imsqti:feedbackType>none</imsqti:feedbackType>
+                    <imsqti:solutionAvailable>true</imsqti:solutionAvailable>
+                </imsqti:qtiMetadata>
                 <imsmd:lom>
                     <imsmd:general>
                         <imsmd:identifier>
@@ -210,17 +215,17 @@
                         <imsmd:format>text/x-imsqti-item-xml</imsmd:format>
                     </imsmd:technical>
                 </imsmd:lom>
-                <imsqti:qtiMetadata>
-                    <imsqti:timeDependent>false</imsqti:timeDependent>
-                    <imsqti:interactionType>choiceInteraction</imsqti:interactionType>
-                    <imsqti:feedbackType>none</imsqti:feedbackType>
-                    <imsqti:solutionAvailable>true</imsqti:solutionAvailable>
-                </imsqti:qtiMetadata>
             </metadata>
             <file href="example/choice_multiple.xml"/>
         </resource>
         <resource identifier="hotspot" type="imsqti_item_xmlv3p0" href="example/hotspot.xml">
             <metadata>
+                <imsqti:qtiMetadata>
+                    <imsqti:timeDependent>false</imsqti:timeDependent>
+                    <imsqti:interactionType>hotspotInteraction</imsqti:interactionType>
+                    <imsqti:feedbackType>none</imsqti:feedbackType>
+                    <imsqti:solutionAvailable>true</imsqti:solutionAvailable>
+                </imsqti:qtiMetadata>
                 <imsmd:lom>
                     <imsmd:general>
                         <imsmd:identifier>
@@ -248,12 +253,6 @@
                         <imsmd:format>image/png</imsmd:format>
                     </imsmd:technical>
                 </imsmd:lom>
-                <imsqti:qtiMetadata>
-                    <imsqti:timeDependent>false</imsqti:timeDependent>
-                    <imsqti:interactionType>hotspotInteraction</imsqti:interactionType>
-                    <imsqti:feedbackType>none</imsqti:feedbackType>
-                    <imsqti:solutionAvailable>true</imsqti:solutionAvailable>
-                </imsqti:qtiMetadata>
             </metadata>
             <file href="example/hotspot.xml"/>
             <file href="example/ukair.png"/>
