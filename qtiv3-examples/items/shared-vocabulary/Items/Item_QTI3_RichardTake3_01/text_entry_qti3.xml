@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://www.imsglobal.org/xsd/qti/qtiv3p0/imsqti_asiv3p0_v1p0.xsd http://www.w3.org/1998/Math/MathML http://www.w3.org/Math/XMLSchema/mathml3/mathml3.xsd" adaptive="false" identifier="qti3-text-entry-01" time-dependent="false" title="Richard III (take 3) Text Entry qti3">
+<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd http://www.w3.org/1998/Math/MathML http://www.w3.org/Math/XMLSchema/mathml3/mathml3.xsd" adaptive="false" identifier="qti3-text-entry-01" time-dependent="false" title="Richard III (take 3) Text Entry qti3">
   <qti-response-declaration base-type="string" cardinality="single" identifier="RESPONSE">
     <qti-correct-response>
       <qti-value>York</qti-value>

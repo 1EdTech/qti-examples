@@ -1,8 +1,48 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <manifest xmlns="http://www.imsglobal.org/xsd/qti/qtiv3p0/imscp_v1p1" 
+          xmlns:imsmd="http://ltsc.ieee.org/xsd/LOM" 
           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
           identifier="Manifest_QTIv3p0_Item_Interaction_Vocab_Test" 
-          xsi:schemaLocation="http://www.imsglobal.org/xsd/qti/qtiv3p0/imscp_v1p1 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqtiv3p0_imscpv1p2_v1p0.xsd">
+          xsi:schemaLocation="http://www.imsglobal.org/xsd/qti/qtiv3p0/imscp_v1p1 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqtiv3p0_imscpv1p2_v1p0.xsd http://ltsc.ieee.org/xsd/LOM https://purl.imsglobal.org/spec/md/v1p3/schema/xsd/imsmd_loose_v1p3p2.xsd">
+    <metadata>
+        <schema>QTI Package</schema>
+        <schemaversion>3.0.0</schemaversion>
+        <imsmd:lom>
+            <imsmd:general>
+                <imsmd:identifier>
+                    <imsmd:entry>QTIv3p0_Item_Interaction_Vocab_Test</imsmd:entry>
+                </imsmd:identifier>
+                <imsmd:title>
+                    <imsmd:string language="en">Simple Test with items demonstrating QTI shared vocabulary</imsmd:string>
+                </imsmd:title>
+                <imsmd:language>en</imsmd:language>
+                <imsmd:description>
+                    <imsmd:string language="en">Test using items demonstrating QTI shared vocabulary to control item presentation</imsmd:string>
+                </imsmd:description>
+                <imsmd:keyword>
+                    <imsmd:string language="en">test</imsmd:string>
+                </imsmd:keyword>
+            </imsmd:general>
+            <imsmd:technical>
+                <imsmd:format>text/x-imsqti-test-xml</imsmd:format>
+                <imsmd:location/>
+                <imsmd:otherPlatformRequirements>
+                    <imsmd:string language="en">QTIv3.0</imsmd:string>
+                </imsmd:otherPlatformRequirements>
+            </imsmd:technical>
+            <imsmd:educational>
+                <imsmd:learningResourceType>
+                    <imsmd:source>RDNLTSNType</imsmd:source>
+                    <imsmd:value>ExaminationTest</imsmd:value>
+                </imsmd:learningResourceType>
+                <imsmd:context>
+                    <imsmd:source>LOMv1.0</imsmd:source>
+                    <imsmd:value>k12 education</imsmd:value>
+                </imsmd:context>
+                <imsmd:language>en</imsmd:language>
+            </imsmd:educational>
+        </imsmd:lom>
+    </metadata>
   <organizations/>   
   <resources>
     <!-- qti-choice-interaction card=single -->

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://www.imsglobal.org/xsd/qti/qtiv3p0/imsqti_asiv3p0_v1p0.xsd http://www.w3.org/1998/Math/MathML http://www.w3.org/Math/XMLSchema/mathml3/mathml3.xsd" adaptive="false" identifier="qti3-inline-choice-01" time-dependent="false" title="Richard III (take 2) Inline Choice qti3">
+<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd http://www.w3.org/1998/Math/MathML http://www.w3.org/Math/XMLSchema/mathml3/mathml3.xsd" 
+                     adaptive="false" identifier="qti3-inline-choice-01" time-dependent="false" title="Richard III (take 2) Inline Choice qti3">
   <qti-response-declaration base-type="identifier" cardinality="single" identifier="RESPONSE">
     <qti-correct-response>
       <qti-value>Y</qti-value>
@@ -17,17 +18,20 @@
   <qti-response-declaration base-type="identifier" cardinality="single" identifier="RESPONSE10"/>
   <qti-outcome-declaration base-type="float" cardinality="single" identifier="SCORE"/>
   <qti-item-body>
+    <div>
     <p>Identify the missing word in this famous quote from Shakespeare's Richard III.</p>
     <blockquote>
-      <p>Now is the winter of our discontent
-      <br/>Made glorious summer by this sun of 
-      <qti-inline-choice-interaction response-identifier="RESPONSE" shuffle="false">
-        <qti-inline-choice identifier="G">Gloucester</qti-inline-choice>
-        <qti-inline-choice identifier="L">Lancaster</qti-inline-choice>
-        <qti-inline-choice identifier="Y">York</qti-inline-choice>
-      </qti-inline-choice-interaction>;
-      <br/>And all the clouds that lour'd upon our house
-      <br/>In the deep bosom of the ocean buried.</p>
+      <div>
+        <p>Now is the winter of our discontent
+        <br/>Made glorious summer by this sun of 
+        <qti-inline-choice-interaction response-identifier="RESPONSE" shuffle="false">
+          <qti-inline-choice identifier="G">Gloucester</qti-inline-choice>
+          <qti-inline-choice identifier="L">Lancaster</qti-inline-choice>
+          <qti-inline-choice identifier="Y">York</qti-inline-choice>
+        </qti-inline-choice-interaction>;
+        <br/>And all the clouds that lour'd upon our house
+        <br/>In the deep bosom of the ocean buried.</p>
+      </div>
     </blockquote>
     
     <p>qti-input-width-1 : <qti-inline-choice-interaction class="qti-input-width-1 baseline" response-identifier="RESPONSE1" shuffle="false">
@@ -99,6 +103,7 @@
     </p>
     
     <br/><br/>
+    </div>
     
   </qti-item-body>
 </qti-assessment-item>
