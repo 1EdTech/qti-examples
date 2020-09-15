@@ -165,7 +165,6 @@
         </resource>
         <resource identifier="nestedObject" type="imsqti_item_xmlv3p0" href="nested_object.xml">
             <file href="nested_object.xml"/>
-            <file href="images/postcard.eps"/>
             <file href="images/postcard.svg"/>
             <file href="images/postcard.webp"/>
             <file href="images/postcard.png"/>
