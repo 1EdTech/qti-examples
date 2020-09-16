@@ -1,59 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-                     xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd" 
-                     identifier="data-attributes" title="Charting Data" adaptive="false" time-dependent="false">
-  <qti-response-declaration identifier="RESPONSE" cardinality="multiple" base-type="directedPair">
+<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd" 
+                     identifier="data-attributes" title="Identifying Sentence Errors" adaptive="false" time-dependent="false">
+  <qti-response-declaration identifier="RESPONSE" cardinality="single" base-type="identifier">
     <qti-correct-response>
-      <qti-value>C1 circle</qti-value>
-      <qti-value>C1 circle</qti-value>
-      <qti-value>C1 circle</qti-value>
-      <qti-value>C2 triangle</qti-value>
-      <qti-value>C2 triangle</qti-value>
-      <qti-value>C3 star</qti-value>
-      <qti-value>C3 star</qti-value>
-      <qti-value>C3 star</qti-value>
-      <qti-value>C3 star</qti-value>
+      <qti-value>B</qti-value>
     </qti-correct-response>
   </qti-response-declaration>
-  <qti-outcome-declaration identifier="SCORE" cardinality="single" base-type="float"/>
+  <qti-outcome-declaration identifier="SCORE" cardinality="single" base-type="float">
+    <qti-default-value>
+      <qti-value>0</qti-value>
+    </qti-default-value>
+  </qti-outcome-declaration>
   <qti-item-body>
-    <qti-gap-match-interaction response-identifier="RESPONSE" shuffle="false">
-      <qti-prompt>Jaiden and his friends made a chart of their favorite shapes. There were 3 circles, 2
-        triangles and 4 stars. Click the shapes to complete the chart below.</qti-prompt>
-      <qti-gap-text identifier="circle" match-max="5" data-type="clickPop" data-target-container="C1">
-      <img src="redCircle.png" width="75" height="75" alt=""/>
-      </qti-gap-text>
-      <qti-gap-text identifier="triangle" match-max="5" data-type="clickPop" data-target-container="C2">
-      <img src="greenTriangle.png" width="75" height="75" alt=""/>
-      </qti-gap-text>
-      <qti-gap-text identifier="star" match-max="5" data-type="clickPop" data-target-container="C3">
-      <img src="blueStar.png" width="75" height="75" alt=""/>
-      </qti-gap-text>
-      <blockquote>
-        <table class="chart">
-          <tbody>
-            <tr>
-              <th>Circles</th>
-              <td><p>
-                  <qti-gap identifier="C1" data-type="gridContainer" data-centerpoint="left" match-group="max-5 min-0"/>
-                </p></td>
-            </tr>
-            <tr>
-              <th>Triangles</th>
-              <td><p>
-                  <qti-gap identifier="C2" data-type="gridContainer" data-centerpoint="left" match-group="max-5 min-0"/>
-                </p></td>
-            </tr>
-            <tr>
-              <th>Stars</th>
-              <td><p>
-                  <qti-gap identifier="C3" data-type="gridContainer" data-centerpoint="left" match-group="max-5 min-0"/>
-                </p></td>
-            </tr>
-          </tbody>
-        </table>
-      </blockquote>
-    </qti-gap-match-interaction>
+    <qti-rubric-block view="candidate">
+      <qti-content-body>
+        <p>Select the error in the following passage of text (or
+          <em>No Error</em>
+          if there is
+          none).</p>
+      </qti-content-body>
+    </qti-rubric-block>
+    <qti-hottext-interaction response-identifier="RESPONSE" max-choices="1">
+      <p>Sponsors of the Olympic Games
+        <qti-hottext identifier="A" data-group-name="group1" data-deselection-allowed="false" data-dont-word-wrap="false">who bought</qti-hottext>
+        advertising time on United States television
+        <qti-hottext identifier="B" data-group-name="group1" data-deselection-allowed="false" data-dont-word-wrap="false">includes</qti-hottext>
+        <qti-hottext identifier="C" data-group-name="group1" data-deselection-allowed="false" data-dont-word-wrap="false">at least</qti-hottext>
+        a dozen international firms
+        <qti-hottext identifier="D" data-group-name="group1" data-deselection-allowed="false" data-dont-word-wrap="false">whose</qti-hottext>
+        names are familiar to American consumers.
+        <qti-hottext identifier="E" data-group-name="group1" data-deselection-allowed="false" data-dont-word-wrap="false">No error.</qti-hottext>
+      </p>
+    </qti-hottext-interaction>
   </qti-item-body>
   <qti-response-processing template="https://www.imsglobal.org/question/qti_v3p0/rptemplates/match_correct.xml"/>
 </qti-assessment-item>
