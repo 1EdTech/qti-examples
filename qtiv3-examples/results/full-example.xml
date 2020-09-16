@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+This sample is the result report of a test with the following settings:
+Non-linear testPart with a single section with 2 items:
+Item-1-choice is a choice interaction with 3 choices and response processing set to mapResponse with the following points: A: 1, B: 2, C: -1. (MAXSCORE = 3)
+Item-2-order is an order interaction with 4 choices and response processing set to correctResponse: B A D C (MAXSCORE = 1)
+
+The following testing scenario was performed:
+Begin the test.
+First response to Item-1-choice: A C (SCORE = 1 - 1 = 0).
+Move to the second item.
+First response to Item-2-order: A B C D (SCORE = 0).
+Move back to the first item.
+Skip Item-1-choice: this submits a second response (basically resets) with default values (SCORE = 0). This moves to Item-2-order.
+Move back to Item-1-choice. This creates a second response to Item-2-order with previous values (SCORE = 1 - 1 = 0).
+Third response to Item-1-choice: B C (SCORE = 2 - 1 = 1).
+Move to the second item.
+Third response to Item-2-order: B A D C (SCORE = 1).
+End the test.
+
+Assuming we perform a sum of the scores of each item modeled on the item outcome variables, the final score is computed with the last attempt of each item: TOTAL_SCORE = 2, TOTAL_MAXSCORE = 4.
+
+The following result report is sliced to show the steps enumerated above. The attempts may not occur in the same order as they are grouped by the item.
+-->
+<assessmentResult xmlns="http://www.imsglobal.org/xsd/imsqti_result_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqti_result_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_resultv3p0_v1p0.xsd"/>
+    <context sourcedId="i5f6079370572f11078000ad90e617188f4"/>
+
+    <!-- Final outcome values: TOTAL_SCORE = 2, TOTAL_MAXSCORE = 4. -->
+    <testResult identifier="test-delivery-1" datestamp="2020-09-15T08:21:44.503">
+        <responseVariable identifier="duration" cardinality="single" baseType="duration">
+            <candidateResponse>
+                <value>PT1M59,57131S</value>
+            </candidateResponse>
+        </responseVariable>
+        <outcomeVariable identifier="TOTAL_SCORE" cardinality="single" baseType="float">
+            <value>2</value>
+        </outcomeVariable>
+        <outcomeVariable identifier="TOTAL_MAXSCORE" cardinality="single" baseType="float">
+            <value>4</value>
+        </outcomeVariable>
+    </testResult>
+
+    <!-- First response to Item-1-choice: A C (SCORE = 1 - 1 = 0). -->
+    <itemResult identifier="item-1-choice" datestamp="2020-09-15T08:20:37.139" sessionStatus="final">
+        <responseVariable identifier="numAttempts" cardinality="single" baseType="integer">
+            <candidateResponse>
+                <value>1</value>
+            </candidateResponse>
+        </responseVariable>
+        <responseVariable identifier="duration" cardinality="single" baseType="duration">
+            <candidateResponse>
+                <value>PT25.266422S</value>
+            </candidateResponse>
+        </responseVariable>
+        <outcomeVariable identifier="completionStatus" cardinality="single" baseType="identifier">
+            <value>completed</value>
+        </outcomeVariable>
+        <outcomeVariable identifier="SCORE" cardinality="single" baseType="float">
+            <value>0</value>
+        </outcomeVariable>
+        <outcomeVariable identifier="MAXSCORE" cardinality="single" baseType="float">
+            <value>3</value>
+        </outcomeVariable>
+        <responseVariable identifier="RESPONSE" cardinality="multiple" baseType="identifier">
+            <candidateResponse>
+                <value>choice_A</value>
+                <value>choice_C</value>
+            </candidateResponse>
+        </responseVariable>
+    </itemResult>
+
+    <!-- Second response to Item-1-choice with default values (SCORE = 0), as the consequence of skipping the item. Note the empty candidateResponse value (identifier RESPONSE at the bottom of this part). -->
+    <itemResult identifier="item-1-choice" datestamp="2020-09-15T08:20:57.045" sessionStatus="final">
+        <responseVariable identifier="numAttempts" cardinality="single" baseType="integer">
+            <candidateResponse>
+                <value>2</value>
+            </candidateResponse>
+        </responseVariable>
+        <responseVariable identifier="duration" cardinality="single" baseType="duration">
+            <candidateResponse>
+                <value>PT45.166154S</value>
+            </candidateResponse>
+        </responseVariable>
+        <outcomeVariable identifier="completionStatus" cardinality="single" baseType="identifier">
+            <value>completed</value>
+        </outcomeVariable>
+        <outcomeVariable identifier="SCORE" cardinality="single" baseType="float">
+            <value>0</value>
+        </outcomeVariable>
+        <outcomeVariable identifier="MAXSCORE" cardinality="single" baseType="float">
+            <value>3</value>
+        </outcomeVariable>
+        <responseVariable identifier="RESPONSE" cardinality="multiple" baseType="identifier">
+            <candidateResponse>
+                <value></value>
+            </candidateResponse>
+        </responseVariable>
+    </itemResult>
+
+    <!-- Third response to Item-1-choice: B C (SCORE = 2 - 1 = 1). -->
+    <itemResult identifier="item-1-choice" datestamp="2020-09-15T08:21:06.411" sessionStatus="final">
+        <responseVariable identifier="numAttempts" cardinality="single" baseType="integer">
+            <candidateResponse>
+                <value>3</value>
+            </candidateResponse>
+        </responseVariable>
+        <responseVariable identifier="duration" cardinality="single" baseType="duration">
+            <candidateResponse>
+                <value>PT52.336744S</value>
+            </candidateResponse>
+        </responseVariable>
+        <outcomeVariable identifier="completionStatus" cardinality="single" baseType="identifier">
+            <value>completed</value>
+        </outcomeVariable>
+        <outcomeVariable identifier="SCORE" cardinality="single" baseType="float">
+            <value>1</value>
+        </outcomeVariable>
+        <outcomeVariable identifier="MAXSCORE" cardinality="single" baseType="float">
+            <value>3</value>
+        </outcomeVariable>
+        <responseVariable identifier="RESPONSE" cardinality="multiple" baseType="identifier">
+            <candidateResponse>
+                <value>choice_B</value>
+                <value>choice_C</value>
+            </candidateResponse>
+        </responseVariable>
+    </itemResult>
+
+    <!-- First response to Item-2-order: A B C D (SCORE = 0). -->
+    <itemResult identifier="item-2-order" datestamp="2020-09-15T08:20:49.743" sessionStatus="final">
+        <responseVariable identifier="numAttempts" cardinality="single" baseType="integer">
+            <candidateResponse>
+                <value>1</value>
+            </candidateResponse>
+        </responseVariable>
+        <responseVariable identifier="duration" cardinality="single" baseType="duration">
+            <candidateResponse>
+                <value>PT12.528180S</value>
+            </candidateResponse>
+        </responseVariable>
+        <outcomeVariable identifier="completionStatus" cardinality="single" baseType="identifier">
+            <value>completed</value>
+        </outcomeVariable>
+        <outcomeVariable identifier="SCORE" cardinality="single" baseType="float">
+            <value>0</value>
+        </outcomeVariable>
+        <outcomeVariable identifier="MAXSCORE" cardinality="single" baseType="float">
+            <value>1</value>
+        </outcomeVariable>
+        <responseVariable identifier="RESPONSE" cardinality="ordered" baseType="identifier">
+            <candidateResponse>
+                <value>choice_A</value>
+                <value>choice_B</value>
+                <value>choice_C</value>
+                <value>choice_D</value>
+            </candidateResponse>
+        </responseVariable>
+    </itemResult>
+
+    <!-- Second response to Item-2-order with previous values (SCORE = 1 - 1 = 0). -->
+    <itemResult identifier="item-2-order" datestamp="2020-09-15T08:20:59.181" sessionStatus="final">
+        <responseVariable identifier="numAttempts" cardinality="single" baseType="integer">
+            <candidateResponse>
+                <value>2</value>
+            </candidateResponse>
+        </responseVariable>
+        <responseVariable identifier="duration" cardinality="single" baseType="duration">
+            <candidateResponse>
+                <value>PT21.948264S</value>
+            </candidateResponse>
+        </responseVariable>
+        <outcomeVariable identifier="completionStatus" cardinality="single" baseType="identifier">
+            <value>completed</value>
+        </outcomeVariable>
+        <outcomeVariable identifier="SCORE" cardinality="single" baseType="float">
+            <value>0</value>
+        </outcomeVariable>
+        <outcomeVariable identifier="MAXSCORE" cardinality="single" baseType="float">
+            <value>1</value>
+        </outcomeVariable>
+        <responseVariable identifier="RESPONSE" cardinality="ordered" baseType="identifier">
+            <candidateResponse>
+                <value>choice_A</value>
+                <value>choice_B</value>
+                <value>choice_C</value>
+                <value>choice_D></value>
+            </candidateResponse>
+        </responseVariable>
+    </itemResult>
+
+    <!-- Third response to Item-2-order: B A D C (SCORE = 1). -->
+    <itemResult identifier="item-2-order" datestamp="2020-09-15T08:21:44.487" sessionStatus="final">
+        <responseVariable identifier="numAttempts" cardinality="single" baseType="integer">
+            <candidateResponse>
+                <value>3</value>
+            </candidateResponse>
+        </responseVariable>
+        <responseVariable identifier="duration" cardinality="single" baseType="duration">
+            <candidateResponse>
+                <value>PT1M7.234566S</value>
+            </candidateResponse>
+        </responseVariable>
+        <outcomeVariable identifier="completionStatus" cardinality="single" baseType="identifier">
+            <value>completed</value>
+        </outcomeVariable>
+        <outcomeVariable identifier="SCORE" cardinality="single" baseType="float">
+            <value>1</value>
+        </outcomeVariable>
+        <outcomeVariable identifier="MAXSCORE" cardinality="single" baseType="float">
+            <value>1</value>
+        </outcomeVariable>
+        <responseVariable identifier="RESPONSE" cardinality="ordered" baseType="identifier">
+            <candidateResponse>
+                <value>choice_B</value>
+                <value>choice_A</value>
+                <value>choice_D</value>
+                <value>choice_C></value>
+            </candidateResponse>
+        </responseVariable>
+    </itemResult>
+</assessmentResult>
