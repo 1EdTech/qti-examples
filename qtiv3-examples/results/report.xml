@@ -1,63 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <assessmentResult xmlns="http://www.imsglobal.org/xsd/imsqti_result_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqti_result_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_resultv3p0_v1p0.xsd">
     <context sourcedId="johnsmith1">
-        <sessionIdentifier sourceID="htp://www.imsglobal.org/" identifier="EXAMPLE"/>
+        <sessionIdentifier sourceID="http://www.imsglobal.org/" identifier="EXAMPLE"/>
     </context>
-    <testResult identifier="SAMPLE" datestamp="2005-12-02T15:19:20">
+    <testResult identifier="SAMPLE" datestamp="2020-08-25T18:19:20">
         <responseVariable identifier="duration" cardinality="single" baseType="duration">
             <candidateResponse>
-                <qti-value>300</qti-value>
+                <value>100</value>
             </candidateResponse>
         </responseVariable>
         <responseVariable identifier="S01.duration" cardinality="single" baseType="duration">
             <candidateResponse>
-                <qti-value>10</qti-value>
+                <value>100</value>
             </candidateResponse>
         </responseVariable>
-        <outcomeVariable identifier="SCORE" masteryValue="56" cardinality="single" baseType="float">
-            <qti-value>100</qti-value>
+        <outcomeVariable identifier="SCORE" masteryValue="1" cardinality="single" baseType="float">
+            <value>0</value>
         </outcomeVariable>
     </testResult>
-    <itemResult identifier="Q01" sequenceIndex="1" datestamp="2005-12-02T15:19:20" sessionStatus="final">
+    <itemResult identifier="Q01" sequenceIndex="1" datestamp="2020-08-25T18:18:40" sessionStatus="final">
         <responseVariable identifier="numAttempts" cardinality="single" baseType="integer">
             <candidateResponse>
-                <qti-value>1</qti-value>
+                <value>1</value>
             </candidateResponse>
         </responseVariable>
         <responseVariable identifier="RESPONSE" cardinality="single" baseType="identifier" choiceSequence="D B C A">
-            <qti-correct-response>
-                <qti-value>A</qti-value>
-            </qti-correct-response>
+            <correctResponse>
+                <value>A</value>
+            </correctResponse>
             <candidateResponse>
-                <qti-value>A</qti-value>
+                <value>A</value>
             </candidateResponse>
         </responseVariable>
         <outcomeVariable identifier="completionStatus" cardinality="single" baseType="identifier">
-            <qti-value>unknown</qti-value>
+            <value>completed</value>
         </outcomeVariable>
         <outcomeVariable identifier="SCORE" cardinality="single" baseType="float">
-            <qti-value>100</qti-value>
+            <value>1</value>
         </outcomeVariable>
     </itemResult>
-    <itemResult identifier="Q01" sequenceIndex="1" datestamp="2005-12-02T15:36:45" sessionStatus="final">
+    <itemResult identifier="Q01" sequenceIndex="1" datestamp="2020-08-25T18:19:20" sessionStatus="final">
         <responseVariable identifier="numAttempts" cardinality="single" baseType="integer">
             <candidateResponse>
-                <qti-value>2</qti-value>
+                <value>2</value>
             </candidateResponse>
         </responseVariable>
         <responseVariable identifier="RESPONSE" cardinality="single" baseType="identifier" choiceSequence="D B C A">
-            <qti-correct-response>
-                <qti-value>A</qti-value>
-            </qti-correct-response>
+            <correctResponse>
+                <value>A</value>
+            </correctResponse>
             <candidateResponse>
-                <qti-value>B</qti-value>
+                <value>B</value>
             </candidateResponse>
         </responseVariable>
         <outcomeVariable identifier="completionStatus" cardinality="single" baseType="identifier">
-            <qti-value>unknown</qti-value>
+            <value>completed</value>
         </outcomeVariable>
         <outcomeVariable identifier="SCORE" cardinality="single" baseType="float">
-            <qti-value>50</qti-value>
+            <value>0</value>
         </outcomeVariable>
     </itemResult>
 </assessmentResult>
