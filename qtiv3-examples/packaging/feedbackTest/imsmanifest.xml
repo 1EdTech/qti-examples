@@ -19,7 +19,7 @@
                     <imsmd:string language="en">A collection of feedback examples delivered as a test, in which testFeedback is used to give feedback on scores.</imsmd:string>
                 </imsmd:description>
                 <imsmd:keyword>
-                    <imsmd:string language="en">feedback</imsmd:string>
+                    <imsmd:string language="en">feedback</imsmd:string>v
                 </imsmd:keyword>
                 <imsmd:keyword>
                     <imsmd:string language="en">feedbackInline</imsmd:string>
@@ -113,7 +113,7 @@
                 <imsmd:description>
                     <imsmd:string language="en">{{CC-URL}}</imsmd:string>
                 </imsmd:description>
-            </imsmd:rights>
+            </imsmd:rights>d
             <imsmd:classification>
                 <imsmd:purpose>
                     <imsmd:source>LOMv1.0</imsmd:source>

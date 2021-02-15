@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest xmlns="http://www.imsglobal.org/xsd/qti/qtiv3p0/imscp_v1p1" xmlns:imsmd="http://ltsc.ieee.org/xsd/LOM" xmlns:imsqti="http://www.imsglobal.org/xsd/imsqti_metadata_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" identifier="usage-TEST-106391" xsi:schemaLocation="http://www.imsglobal.org/xsd/qti/qtiv3p0/imscp_v1p1 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqtiv3p0_imscpv1p2_v1p0.xsd  http://ltsc.ieee.org/xsd/LOM https://purl.imsglobal.org/spec/md/v1p3/schema/xsd/imsmd_loose_v1p3p2.xsd  http://www.imsglobal.org/xsd/imsqti_metadata_v3p0  https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_metadatav3p0_v1p0.xsd">
+   <metadata>
+      <schema>QTI Package</schema>
+      <schemaversion>3.0.0</schemaversion>
+      <imsmd:lom>
+         <imsmd:general>
+            <imsmd:title>
+               <imsmd:string>Example Usage Data Package</imsmd:string>
+            </imsmd:title>
+            <imsmd:language>en</imsmd:language>
+            <imsmd:description>
+               <imsmd:string>This is an example Content package containing usage data files
+                        for an assessment test</imsmd:string>
+            </imsmd:description>
+         </imsmd:general>
+         <imsmd:lifeCycle>
+            <imsmd:version>
+               <imsmd:string>3.0</imsmd:string>
+            </imsmd:version>
+            <imsmd:status>
+               <imsmd:source>LOMv1.0</imsmd:source>
+               <imsmd:value>Final</imsmd:value>
+            </imsmd:status>
+         </imsmd:lifeCycle>
+         <imsmd:metaMetadata>
+            <imsmd:metadataschema>LOMv1.0</imsmd:metadataschema>
+            <imsmd:language>en</imsmd:language>
+         </imsmd:metaMetadata>
+         <imsmd:technical>
+            <imsmd:format />
+         </imsmd:technical>
+         <imsmd:rights>
+            <imsmd:description>
+               <imsmd:string>(c) 2005, IMS Global Learning Consortium;
+                        individual questions may have their own copyright statements.</imsmd:string>
+            </imsmd:description>
+         </imsmd:rights>
+      </imsmd:lom>
+   </metadata>
+   <organizations />
+   <resources>
+      <resource identifier="TEST-106391" type="imsqti_test_xmlv3p0" href="test-106391.xml">
+         <metadata>
+            <imsmd:lom>
+               <imsmd:educational>
+                  <imsmd:context>
+                     <imsmd:source>LOMv1.0</imsmd:source>
+                     <imsmd:value />
+                  </imsmd:context>
+               </imsmd:educational>
+               <imsmd:general>
+                  <imsmd:identifier>
+                     <imsmd:entry>TEST-106391</imsmd:entry>
+                  </imsmd:identifier>
+                  <imsmd:title>
+                     <imsmd:string>Spring 2012 Grade 4 Math Assessment</imsmd:string>
+                  </imsmd:title>
+                  <imsmd:description>
+                     <imsmd:string />
+                  </imsmd:description>
+               </imsmd:general>
+               <imsmd:classification>
+                  <imsmd:purpose>
+                     <imsmd:source>LOMv1.0</imsmd:source>
+                     <imsmd:value>Discipline</imsmd:value>
+                  </imsmd:purpose>
+                  <imsmd:taxonPath>
+                     <imsmd:source>
+                        <imsmd:string xml:lang="x-none">jacs</imsmd:string>
+                     </imsmd:source>
+                     <imsmd:taxon>
+                        <imsmd:id>G1</imsmd:id>
+                        <imsmd:entry>
+                           <imsmd:string xml:lang="en">Mathematics</imsmd:string>
+                        </imsmd:entry>
+                     </imsmd:taxon>
+                  </imsmd:taxonPath>
+               </imsmd:classification>
+               <imsmd:classification>
+                  <imsmd:purpose>
+                     <imsmd:source>LOMv1.0</imsmd:source>
+                     <imsmd:value>Educational Level</imsmd:value>
+                  </imsmd:purpose>
+                  <imsmd:taxonPath>
+                     <imsmd:source>
+                        <imsmd:string xml:lang="x-none">UKEL</imsmd:string>
+                     </imsmd:source>
+                     <imsmd:taxon>
+                        <imsmd:id>ukel4</imsmd:id>
+                        <imsmd:entry>
+                           <imsmd:string xml:lang="en">UK Educational Level 4</imsmd:string>
+                        </imsmd:entry>
+                     </imsmd:taxon>
+                  </imsmd:taxonPath>
+               </imsmd:classification>
+            </imsmd:lom>
+         </metadata>
+         <file href="TEST-106391.xml" />
+         <dependency identifierref="ITEM-513728" />
+      </resource>
+      <resource identifier="ITEM-513728" type="imsqti_item_xmlv3p0" href="item-513728.xml">
+         <metadata>
+            <imsqti:qtiMetadata>
+               <imsqti:interactionType>choiceInteraction</imsqti:interactionType>
+            </imsqti:qtiMetadata>
+            <imsmd:lom>
+               <imsmd:educational>
+                  <imsmd:context>
+                     <imsmd:source>LOMv1.0</imsmd:source>
+                     <imsmd:value />
+                  </imsmd:context>
+               </imsmd:educational>
+               <imsmd:general>
+                  <imsmd:identifier>
+                     <imsmd:entry>ITEM-513728</imsmd:entry>
+                  </imsmd:identifier>
+                  <imsmd:title>
+                     <imsmd:string>Example assessment item for which we have usage data</imsmd:string>
+                  </imsmd:title>
+                  <imsmd:description>
+                     <imsmd:string>This example illustrates a partial usage data set for an assessment administration.</imsmd:string>
+                  </imsmd:description>
+               </imsmd:general>
+               <imsmd:classification>
+                  <imsmd:purpose>
+                     <imsmd:source>LOMv1.0</imsmd:source>
+                     <imsmd:value>Discipline</imsmd:value>
+                  </imsmd:purpose>
+                  <imsmd:taxonPath>
+                     <imsmd:source>
+                        <imsmd:string xml:lang="x-none">jacs</imsmd:string>
+                     </imsmd:source>
+                     <imsmd:taxon>
+                        <imsmd:id>G1</imsmd:id>
+                        <imsmd:entry>
+                           <imsmd:string xml:lang="en">Mathematics</imsmd:string>
+                        </imsmd:entry>
+                     </imsmd:taxon>
+                  </imsmd:taxonPath>
+               </imsmd:classification>
+               <imsmd:classification>
+                  <imsmd:purpose>
+                     <imsmd:source>LOMv1.0</imsmd:source>
+                     <imsmd:value>Educational Level</imsmd:value>
+                  </imsmd:purpose>
+                  <imsmd:taxonPath>
+                     <imsmd:source>
+                        <imsmd:string xml:lang="x-none">UKEL</imsmd:string>
+                     </imsmd:source>
+                     <imsmd:taxon>
+                        <imsmd:id>ukel4</imsmd:id>
+                        <imsmd:entry>
+                           <imsmd:string xml:lang="en">UK Educational Level 4</imsmd:string>
+                        </imsmd:entry>
+                     </imsmd:taxon>
+                  </imsmd:taxonPath>
+               </imsmd:classification>
+            </imsmd:lom>
+         </metadata>
+         <file href="item-513728.xml" />
+      </resource>
+      <resource identifier="USAGE-TOTAL-TEST-106391" type="qtiusagedata/xml" href="USAGE-TOTAL-TEST-106391.xml">
+         <metadata>
+            <imsmd:lom>
+               <imsmd:general>
+                  <imsmd:identifier>
+                     <imsmd:entry>USAGE-TOTAL-TEST-106391</imsmd:entry>
+                  </imsmd:identifier>
+                  <imsmd:title>
+                     <imsmd:string>Spring 2012 Grade 4 Math Assessment - TOTAL</imsmd:string>
+                  </imsmd:title>
+                  <imsmd:description>
+                     <imsmd:string>This example illustrates the
+                                full usage data set for an assessment administration.</imsmd:string>
+                  </imsmd:description>
+               </imsmd:general>
+            </imsmd:lom>
+         </metadata>
+         <file href="USAGE-TOTAL-TEST-106391.xml" />
+         <dependency identifierref="TEST-106391" />
+      </resource>
+      <resource identifier="USAGE-MALE-TEST-106391" type="qtiusagedata/xml" href="USAGE-MALE-TEST-106391.xml">
+         <metadata>
+            <imsmd:lom>
+               <imsmd:general>
+                  <imsmd:identifier>
+                     <imsmd:entry>USAGE-MALE-TEST-106391</imsmd:entry>
+                  </imsmd:identifier>
+                  <imsmd:title>
+                     <imsmd:string>Spring 2012 Grade 4 Math Assessment - MALE</imsmd:string>
+                  </imsmd:title>
+                  <imsmd:description>
+                     <imsmd:string>This example illustrates the MALE only usage data set for an assessment administration that can be used to determine gender discrimination.</imsmd:string>
+                  </imsmd:description>
+               </imsmd:general>
+            </imsmd:lom>
+         </metadata>
+         <file href="USAGE-MALE-TEST-106391.xml" />
+         <dependency identifierref="TEST-106391" />
+      </resource>
+      <resource identifier="USAGE-FEMALE-TEST-106391" type="qtiusagedata/xml" href="USAGE-FEMALE-TEST-106391.xml">
+         <metadata>
+            <imsmd:lom>
+               <imsmd:general>
+                  <imsmd:identifier>
+                     <imsmd:entry>USAGE-FEMALE-TEST-106391</imsmd:entry>
+                  </imsmd:identifier>
+                  <imsmd:title>
+                     <imsmd:string>Spring 2012 Grade 4 Math Assessment - FEMALE</imsmd:string>
+                  </imsmd:title>
+                  <imsmd:description>
+                     <imsmd:string>This example illustrates the FEMALE only usage data set for an assessment administration that can be used to determine gender discrimination.</imsmd:string>
+                  </imsmd:description>
+               </imsmd:general>
+            </imsmd:lom>
+         </metadata>
+         <file href="USAGE-FEMALE-TEST-106391.xml" />
+         <dependency identifierref="TEST-106391" />
+      </resource>
+   </resources>
+</manifest>

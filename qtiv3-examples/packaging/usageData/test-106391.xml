@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<qti-assessment-test xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd" identifier="TEST-106391" title="Steve's Test">
+   <qti-test-part identifier="part01" navigation-mode="nonlinear" submission-mode="simultaneous">
+      <qti-assessment-section identifier="sectionA" title="Section A" visible="true">
+         <qti-assessment-item-ref identifier="ITEM-513728" href="item-513728.xml" />
+      </qti-assessment-section>
+   </qti-test-part>
+</qti-assessment-test>
