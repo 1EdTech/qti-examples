@@ -40,126 +40,6 @@
    </metadata>
    <organizations />
    <resources>
-      <resource identifier="TEST-106391" type="imsqti_test_xmlv3p0" href="test-106391.xml">
-         <metadata>
-            <imsmd:lom>
-               <imsmd:educational>
-                  <imsmd:context>
-                     <imsmd:source>LOMv1.0</imsmd:source>
-                     <imsmd:value />
-                  </imsmd:context>
-               </imsmd:educational>
-               <imsmd:general>
-                  <imsmd:identifier>
-                     <imsmd:entry>TEST-106391</imsmd:entry>
-                  </imsmd:identifier>
-                  <imsmd:title>
-                     <imsmd:string>Spring 2012 Grade 4 Math Assessment</imsmd:string>
-                  </imsmd:title>
-                  <imsmd:description>
-                     <imsmd:string />
-                  </imsmd:description>
-               </imsmd:general>
-               <imsmd:classification>
-                  <imsmd:purpose>
-                     <imsmd:source>LOMv1.0</imsmd:source>
-                     <imsmd:value>Discipline</imsmd:value>
-                  </imsmd:purpose>
-                  <imsmd:taxonPath>
-                     <imsmd:source>
-                        <imsmd:string xml:lang="x-none">jacs</imsmd:string>
-                     </imsmd:source>
-                     <imsmd:taxon>
-                        <imsmd:id>G1</imsmd:id>
-                        <imsmd:entry>
-                           <imsmd:string xml:lang="en">Mathematics</imsmd:string>
-                        </imsmd:entry>
-                     </imsmd:taxon>
-                  </imsmd:taxonPath>
-               </imsmd:classification>
-               <imsmd:classification>
-                  <imsmd:purpose>
-                     <imsmd:source>LOMv1.0</imsmd:source>
-                     <imsmd:value>Educational Level</imsmd:value>
-                  </imsmd:purpose>
-                  <imsmd:taxonPath>
-                     <imsmd:source>
-                        <imsmd:string xml:lang="x-none">UKEL</imsmd:string>
-                     </imsmd:source>
-                     <imsmd:taxon>
-                        <imsmd:id>ukel4</imsmd:id>
-                        <imsmd:entry>
-                           <imsmd:string xml:lang="en">UK Educational Level 4</imsmd:string>
-                        </imsmd:entry>
-                     </imsmd:taxon>
-                  </imsmd:taxonPath>
-               </imsmd:classification>
-            </imsmd:lom>
-         </metadata>
-         <file href="TEST-106391.xml" />
-         <dependency identifierref="ITEM-513728" />
-      </resource>
-      <resource identifier="ITEM-513728" type="imsqti_item_xmlv3p0" href="item-513728.xml">
-         <metadata>
-            <imsqti:qtiMetadata>
-               <imsqti:interactionType>choiceInteraction</imsqti:interactionType>
-            </imsqti:qtiMetadata>
-            <imsmd:lom>
-               <imsmd:educational>
-                  <imsmd:context>
-                     <imsmd:source>LOMv1.0</imsmd:source>
-                     <imsmd:value />
-                  </imsmd:context>
-               </imsmd:educational>
-               <imsmd:general>
-                  <imsmd:identifier>
-                     <imsmd:entry>ITEM-513728</imsmd:entry>
-                  </imsmd:identifier>
-                  <imsmd:title>
-                     <imsmd:string>Example assessment item for which we have usage data</imsmd:string>
-                  </imsmd:title>
-                  <imsmd:description>
-                     <imsmd:string>This example illustrates a partial usage data set for an assessment administration.</imsmd:string>
-                  </imsmd:description>
-               </imsmd:general>
-               <imsmd:classification>
-                  <imsmd:purpose>
-                     <imsmd:source>LOMv1.0</imsmd:source>
-                     <imsmd:value>Discipline</imsmd:value>
-                  </imsmd:purpose>
-                  <imsmd:taxonPath>
-                     <imsmd:source>
-                        <imsmd:string xml:lang="x-none">jacs</imsmd:string>
-                     </imsmd:source>
-                     <imsmd:taxon>
-                        <imsmd:id>G1</imsmd:id>
-                        <imsmd:entry>
-                           <imsmd:string xml:lang="en">Mathematics</imsmd:string>
-                        </imsmd:entry>
-                     </imsmd:taxon>
-                  </imsmd:taxonPath>
-               </imsmd:classification>
-               <imsmd:classification>
-                  <imsmd:purpose>
-                     <imsmd:source>LOMv1.0</imsmd:source>
-                     <imsmd:value>Educational Level</imsmd:value>
-                  </imsmd:purpose>
-                  <imsmd:taxonPath>
-                     <imsmd:source>
-                        <imsmd:string xml:lang="x-none">UKEL</imsmd:string>
-                     </imsmd:source>
-                     <imsmd:taxon>
-                        <imsmd:id>ukel4</imsmd:id>
-                        <imsmd:entry>
-                           <imsmd:string xml:lang="en">UK Educational Level 4</imsmd:string>
-                        </imsmd:entry>
-                     </imsmd:taxon>
-                  </imsmd:taxonPath>
-               </imsmd:classification>
-            </imsmd:lom>
-         </metadata>
-         <file href="item-513728.xml" />
-      </resource>
       <resource identifier="USAGE-TOTAL-TEST-106391" type="qtiusagedata/xml" href="USAGE-TOTAL-TEST-106391.xml">
          <metadata>
             <imsmd:lom>
@@ -178,7 +58,6 @@
             </imsmd:lom>
          </metadata>
          <file href="USAGE-TOTAL-TEST-106391.xml" />
-         <dependency identifierref="TEST-106391" />
       </resource>
       <resource identifier="USAGE-MALE-TEST-106391" type="qtiusagedata/xml" href="USAGE-MALE-TEST-106391.xml">
          <metadata>
@@ -197,7 +76,6 @@
             </imsmd:lom>
          </metadata>
          <file href="USAGE-MALE-TEST-106391.xml" />
-         <dependency identifierref="TEST-106391" />
       </resource>
       <resource identifier="USAGE-FEMALE-TEST-106391" type="qtiusagedata/xml" href="USAGE-FEMALE-TEST-106391.xml">
          <metadata>
@@ -216,7 +94,6 @@
             </imsmd:lom>
          </metadata>
          <file href="USAGE-FEMALE-TEST-106391.xml" />
-         <dependency identifierref="TEST-106391" />
       </resource>
    </resources>
 </manifest>
