@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<usageData xmlns="http://www.imsglobal.org/xsd/imsqti_usagedata_v2p2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqti_usagedata_v2p2 http://www.imsglobal.org/xsd/qti/qtiv2p2/imsqti_usagedata_v2p2.xsd">
+   <ordinaryStatistic name="P-Value" context="TEST-106391" caseCount="999999" stdError="0.00" lastUpdated="2012-04-26">
+      <targetObject identifier="item-513728" />
+      <value>78.1234</value>
+   </ordinaryStatistic>
+   <ordinaryStatistic name="AIS" context="TEST-106391" caseCount="999999" stdError="0.00" lastUpdated="2012-04-26">
+      <targetObject identifier="item-513728" />
+      <value>0.123457</value>
+   </ordinaryStatistic>
+   <ordinaryStatistic name="PTbis" context="TEST-106391" caseCount="999999" stdError="0.00" lastUpdated="2012-04-26">
+      <targetObject identifier="item-513728" />
+      <value>0.23456</value>
+   </ordinaryStatistic>
+   <ordinaryStatistic name="rbis" context="TEST-106391" caseCount="999999" stdError="0.00" lastUpdated="2012-04-26">
+      <targetObject identifier="item-513728" />
+      <value>0.34567</value>
+   </ordinaryStatistic>
+   <ordinaryStatistic name="drcInfitt" context="TEST-106391" caseCount="999999" stdError="0.00" lastUpdated="2012-04-26">
+      <targetObject identifier="item-513728" />
+      <value>0.123457</value>
+   </ordinaryStatistic>
+   <ordinaryStatistic name="drcChiSquare" context="TEST-106391" caseCount="999999" stdError="0.00" lastUpdated="2012-04-26">
+      <targetObject identifier="item-513728" />
+      <value>20</value>
+   </ordinaryStatistic>
+   <ordinaryStatistic name="drcMeanSquare" context="TEST-106391" caseCount="999999" stdError="0.00" lastUpdated="2012-04-26">
+      <targetObject identifier="item-513728" />
+      <value>0.123457</value>
+   </ordinaryStatistic>
+   <ordinaryStatistic name="drcDistractorCode" context="TEST-106391" caseCount="999999" stdError="0.00" lastUpdated="2012-04-26">
+      <targetObject identifier="item-513728" partIdentifier="A" />
+      <value>A</value>
+   </ordinaryStatistic>
+   <ordinaryStatistic name="NumberChoosingResponse" context="TEST-106391" caseCount="999999" stdError="0.00" lastUpdated="2012-04-26">
+      <targetObject identifier="item-513728" partIdentifier="A" />
+      <value>900000</value>
+   </ordinaryStatistic>
+   <ordinaryStatistic name="PercentChoosingResponse" context="TEST-106391" caseCount="999999" stdError="0.00" lastUpdated="2012-04-26">
+      <targetObject identifier="item-513728" partIdentifier="A" />
+      <value>0.123457</value>
+   </ordinaryStatistic>
+   <ordinaryStatistic name="PTbis-Response" context="TEST-106391" caseCount="999999" stdError="0.00" lastUpdated="2012-04-26">
+      <targetObject identifier="item-513728" partIdentifier="A" />
+      <value>0</value>
+   </ordinaryStatistic>
+   <ordinaryStatistic name="drcDistractorCode" context="TEST-106391" caseCount="999999" stdError="0.00" lastUpdated="2012-04-26">
+      <targetObject identifier="item-513728" partIdentifier="B" />
+      <value>B</value>
+   </ordinaryStatistic>
+   <ordinaryStatistic name="NumberChoosingResponse" context="TEST-106391" caseCount="999999" stdError="0.00" lastUpdated="2012-04-26">
+      <targetObject identifier="item-513728" partIdentifier="B" />
+      <value>90000</value>
+   </ordinaryStatistic>
+   <ordinaryStatistic name="PercentChoosingResponse" context="TEST-106391" caseCount="999999" stdError="0.00" lastUpdated="2012-04-26">
+      <targetObject identifier="item-513728" partIdentifier="B" />
+      <value>0</value>
+   </ordinaryStatistic>
+   <ordinaryStatistic name="PTbis-Response" context="TEST-106391" caseCount="999999" stdError="0.00" lastUpdated="2012-04-26">
+      <targetObject identifier="item-513728" partIdentifier="B" />
+      <value>0.123457</value>
+   </ordinaryStatistic>
+   <ordinaryStatistic name="drcDistractorCode" context="TEST-106391" caseCount="999999" stdError="0.00" lastUpdated="2012-04-26">
+      <targetObject identifier="item-513728" partIdentifier="C" />
+      <value>C</value>
+   </ordinaryStatistic>
+   <ordinaryStatistic name="NumberChoosingResponse" context="TEST-106391" caseCount="999999" stdError="0.00" lastUpdated="2012-04-26">
+      <targetObject identifier="item-513728" partIdentifier="C" />
+      <value>9000</value>
+   </ordinaryStatistic>
+   <ordinaryStatistic name="PercentChoosingResponse" context="TEST-106391" caseCount="999999" stdError="0.00" lastUpdated="2012-04-26">
+      <targetObject identifier="item-513728" partIdentifier="C" />
+      <value>0</value>
+   </ordinaryStatistic>
+   <ordinaryStatistic name="PTbis-Response" context="TEST-106391" caseCount="999999" stdError="0.00" lastUpdated="2012-04-26">
+      <targetObject identifier="item-513728" partIdentifier="C" />
+      <value>0</value>
+   </ordinaryStatistic>
+   <ordinaryStatistic name="drcDistractorCode" context="TEST-106391" caseCount="999999" stdError="0.00" lastUpdated="2012-04-26">
+      <targetObject identifier="item-513728" partIdentifier="D" />
+      <value>D</value>
+   </ordinaryStatistic>
+   <ordinaryStatistic name="NumberChoosingResponse" context="TEST-106391" caseCount="999999" stdError="0.00" lastUpdated="2012-04-26">
+      <targetObject identifier="item-513728" partIdentifier="D" />
+      <value>900</value>
+   </ordinaryStatistic>
+   <ordinaryStatistic name="PercentChoosingResponse" context="TEST-106391" caseCount="999999" stdError="0.00" lastUpdated="2012-04-26">
+      <targetObject identifier="item-513728" partIdentifier="D" />
+      <value>0</value>
+   </ordinaryStatistic>
+   <ordinaryStatistic name="PTbis-Response" context="TEST-106391" caseCount="999999" stdError="0.00" lastUpdated="2012-04-26">
+      <targetObject identifier="item-513728" partIdentifier="D" />
+      <value>0</value>
+   </ordinaryStatistic>
+   <ordinaryStatistic name="drcCategory" context="TEST-106391" caseCount="999999" stdError="0.00" lastUpdated="2012-04-26">
+      <targetObject identifier="item-513728" />
+      <value>MALEFEMALE</value>
+   </ordinaryStatistic>
+   <ordinaryStatistic name="drcCategoryBiasCode" context="TEST-106391" caseCount="999999" stdError="0.00" lastUpdated="2012-04-26">
+      <targetObject identifier="item-513728" />
+      <value>B</value>
+   </ordinaryStatistic>
+   <ordinaryStatistic name="drcCategoryRefCount" context="TEST-106391" caseCount="999999" stdError="0.00" lastUpdated="2012-04-26">
+      <targetObject identifier="item-513728" />
+      <value>0.123457</value>
+   </ordinaryStatistic>
+   <ordinaryStatistic name="drcCategoryNValue" context="TEST-106391" caseCount="999999" stdError="0.00" lastUpdated="2012-04-26">
+      <targetObject identifier="item-513728" />
+      <value>-2</value>
+   </ordinaryStatistic>
+</usageData>
