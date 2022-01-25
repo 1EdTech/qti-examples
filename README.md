@@ -33,7 +33,7 @@ License. See the [LICENSE](./LICENSE.md) file for details.
 
 [**qti3p0upgrader**](https://github.com/IMSGlobal/qti3p0upgrader) = materials related to a project for converting QTI 2.x and APIP 1.x materials to the QTI 3.0 format
 
-[**QTI-PCI-Reference-Implmentation**](https://github.com/IMSGlobal/QTI-PCI-Reference-Implementation) = code and issues related to the reference implementation of Portable Custom Interactions (PCI)
+[**QTI-PCI-Reference-Implementation**](https://github.com/IMSGlobal/QTI-PCI-Reference-Implementation) = code and issues related to the reference implementation of Portable Custom Interactions (PCI)
 
 -----
 
