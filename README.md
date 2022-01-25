@@ -1,6 +1,7 @@
-# IMS Global Learning Consortium, Inc.
+# IMS Global Learning Consortium, Inc., Question and Test Interoperability&reg; (QTI&reg;) Specification
 
-# Question and Test Interoperability&reg; (QTI&reg;) Specification
+**qti-examples repo**
+
 This repository contains examples of QTI from verstion [2.2](https://www.imsglobal.org/question/index.html#version2.2) 
 and [3.0](https://www.imsglobal.org/question/index.html#version3.0). Many of these examples are referenced from within
 the Best Practice and Implementation Guide documents of the respective versions. 
