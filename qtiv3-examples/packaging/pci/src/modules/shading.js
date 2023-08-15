@@ -63,7 +63,7 @@ define([ "qtiCustomInteractionContext" ], function (ctx) {
      * Returned values are defined by the implementer.
      * Here, to minimise the risk of namespace collisions the implementation is
      * using an ID which includes a domain which they control (hmhco.com) */
-    typeIdentifier: "urn:fdc:hmhco.com:pci:shading",
+    typeIdentifier: "urn:fdc:hmhco.com:2019:ßpci:shading",
 
     /** @access public
      *  @method getInstance Create a new instance of this portable custom interaction

@@ -14,7 +14,7 @@
         <lom:lom xmlns:lom="http://ltsc.ieee.org/xsd/LOM">
             <lom:general>
                 <lom:identifier>
-                    <lom:catalog>urn:fdc:imsglobal.org:contentPackage:LTIExampleQTI3</lom:catalog>
+                    <lom:catalog>urn:fdc:imsglobal.org:2019:contentPackage:LTIExampleQTI3</lom:catalog>
                 </lom:identifier>
                 <lom:title>
                     <lom:string language="en">Example of Packaging an item launched via LTI in a QTI content package</lom:string>

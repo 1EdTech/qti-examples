@@ -10,7 +10,7 @@
         <imsmd:lom xmlns:imsmd="http://ltsc.ieee.org/xsd/LOM">
             <imsmd:general>
                 <imsmd:identifier>
-                    <imsmd:catalog>urn:fdc:imsglobal.org:contentPackage:sharedStimulusExampleQTI3</imsmd:catalog>
+                    <imsmd:catalog>urn:fdc:imsglobal.org:2019:contentPackage:sharedStimulusExampleQTI3</imsmd:catalog>
                 </imsmd:identifier>
                 <imsmd:title>
                     <imsmd:string language="en">Example of Packaging a shared stimulus in QTI 3.0</imsmd:string>
