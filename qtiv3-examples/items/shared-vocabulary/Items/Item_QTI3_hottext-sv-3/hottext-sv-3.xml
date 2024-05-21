@@ -1,1 +1,35 @@
-
+<qti-assessment-item 
+      xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" 
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+      xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd" 
+      identifier="hottext-sv-3" title="Hottext - (SV 3) - unselected hidden" 
+      adaptive="false" time-dependent="false">
+      <qti-response-declaration base-type="identifier" cardinality="single" identifier="RESPONSE">
+        <qti-correct-response>
+          <qti-value>B</qti-value>
+        </qti-correct-response>
+      </qti-response-declaration>
+      <qti-outcome-declaration base-type="float" cardinality="single" identifier="SCORE">
+        <qti-default-value>
+          <qti-value>0</qti-value>
+        </qti-default-value>
+      </qti-outcome-declaration>
+      <qti-item-body>
+        <p><strong>Demonstrates single cardinality, qti-unselected-hidden</strong></p>
+        
+        <qti-hottext-interaction class="qti-unselected-hidden" max-choices="1" response-identifier="RESPONSE">
+          <qti-prompt>
+            <p>
+              Select the error in the following passage of text (or <em>No Error</em> if there is none).
+            </p>
+          </qti-prompt>
+          <p>
+            Sponsors of the Olympic Games <qti-hottext identifier="A">who bought</qti-hottext>
+            advertising time on United States television <qti-hottext identifier="B">includes</qti-hottext>
+            <qti-hottext identifier="C">at least</qti-hottext> a dozen international firms <qti-hottext identifier="D">whose</qti-hottext> names are familiar to American consumers.
+            <qti-hottext identifier="E">No error.</qti-hottext>
+          </p>
+        </qti-hottext-interaction>  
+      </qti-item-body>
+      <qti-response-processing template="https://purl.imsglobal.org/spec/qti/v3p0/rptemplates/match_correct.xml"/>
+    </qti-assessment-item>
