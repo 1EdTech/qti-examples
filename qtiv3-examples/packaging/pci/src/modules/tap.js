@@ -9,7 +9,7 @@ define([ "qtiCustomInteractionContext" ], function (ctx) {
     // Returned values are defined by the implementer.
     // Here, to minimise the risk of namespace collisions the implementation is 
     // using an ID which includes a domain which they control (hmhco.com)
-    typeIdentifier: 'urn:fdc:hmhco.com:pci:tapToReveal',
+    typeIdentifier: 'urn:fdc:hmhco.com:2019:pci:tapToReveal',
 
     /** @access private
      *  defaults for properties (data- attributes)

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-/** @module hmhco.com:pci:shading  **/
+/** @module hmhco.com:2019:pci:shading  **/
 /** @author Padraig O hIceadha <Padraig.OhIceadha@hmhco.com> **/
 "use strict";
 
@@ -69,7 +69,7 @@ define([ "qtiCustomInteractionContext", "jquery", "eve", "raphael" ], function (
      * Returned values are defined by the implementer.
      * Here, to minimise the risk of namespace collisions the implementation is
      * using an ID which includes a domain which they control (hmhco.com) */
-    typeIdentifier: "urn:fdc:hmhco.com:pci:shading_deps",
+    typeIdentifier: "urn:fdc:hmhco.com:2019:pci:shading_deps",
 
     /** @access public */
     /** @method getInstance Create a new instance of this portable custom interaction
