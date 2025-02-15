@@ -13,7 +13,7 @@ requests from non-members.
 
 ## License
 This project is licensed under the terms of the IMS Global Learning Consortium Specification Document 
-License. See the [LICENSE](./LICENSE.md) file for details.
+License. See the [LICENSE](./LICENSE) file for details.
 
 ## QTI Related Repos:
 
