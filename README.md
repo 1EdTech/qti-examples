@@ -37,5 +37,5 @@ License. See the [LICENSE](./LICENSE) file for details.
 
 -----
 
-©2022 IMS Global Learning Consortium, Inc. All Rights Reserved.
+©2025 IMS Global Learning Consortium, Inc. All Rights Reserved.
 Trademark Information - http://www.imsglobal.org/copyright.html
