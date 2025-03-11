@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest xmlns="http://www.imsglobal.org/xsd/qti/qtiv3p0/imscp_v1p1" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.imsglobal.org/xsd/qti/qtiv3p0/imscp_v1p1 
+https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqtiv3p0_imscpv1p2_v1p0.xsd"
+identifier="beginner_examples" > 
+ <metadata> 
+   <schema>QTI Package</schema> 
+   <schemaversion>3.0.1</schemaversion> 
+ </metadata> 
+ <organizations/> 
+ <resources>
+  <resource identifier="firstexample" type="imsqti_item_xmlv3p0" href="items/firstexample.xml"> 
+      <file href="items/firstexample.xml"/>
+  </resource>
+  <resource identifier="beginnersguide007" type="imsqti_item_xmlv3p0" href="items/BG007.xml"> 
+      <file href="items/BG007.xml"/>
+  </resource>
+  <resource identifier="beginnersguide008" type="imsqti_item_xmlv3p0" href="items/BG008.xml"> 
+      <file href="items/BG008.xml"/>
+  </resource>
+  <resource identifier="beginnersguide009" type="imsqti_item_xmlv3p0" href="items/BG009.xml"> 
+      <file href="items/BG009.xml"/>
+  </resource>
+  <resource identifier="beginnersguide10" type="imsqti_item_xmlv3p0" href="items/BG010.xml"> 
+      <file href="items/BG010.xml"/>
+  </resource>
+  <resource identifier="beginnersguide011" type="imsqti_item_xmlv3p0" href="items/BG011.xml"> 
+      <file href="items/BG011.xml"/>
+      <dependency identifierref="image_resource_1"/>
+      <dependency identifierref="movie_resource_1"/>
+      <dependency identifierref="movie_resource_2"/>
+      <dependency identifierref="subtitle_resource_1"/>
+  </resource>
+  <resource identifier="image_resource_1" type="webcontent" href="items/resources/crows.jpg"> 
+    <file href="items/resources/crows.jpg"/>
+</resource>
+  <resource identifier="movie_resource_1" type="webcontent" href="items/resources/crow_movie.mp4"> 
+    <file href="items/resources/crow_movie.mp4"/>
+</resource>
+<resource identifier="movie_resource_2" type="webcontent" href="items/resources/crow_movie.ogg"> 
+    <file href="items/resources/crow_movie.ogg"/>
+</resource>
+<resource identifier="subtitle_resource_1" type="webcontent" href="items/resources/subtitles_en.vtt"> 
+    <file href="items/resources/subtitles_en.vtt"/>
+</resource>
+  <resource identifier="BGtest" type="imsqti_test_xmlv3p0" href="BGtest.xml"> 
+     <file href="BGtest.xml"/>
+  </resource>
+ </resources>
+</manifest>
