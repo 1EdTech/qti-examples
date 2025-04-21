@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" 
-xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-xmlns:m="http://www.w3.org/1998/Math/MathML"
-xsi:schemaLocation="http://www.w3.org/1998/Math/MathML 
-https://purl.imsglobal.org/spec/mathml/v3p0/schema/xsd/mathml3.xsd 
-http://www.imsglobal.org/xsd/imsqtiasi_v3p0 
-https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd"
-  identifier="feedbackBlock-solution-random" title="Using feedbackBlock to show a solution (random)"
-  adaptive="true" time-dependent="false" xml:lang="en-US" >
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:m="http://www.w3.org/1998/Math/MathML" 
+xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 
+https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd 
+http://www.w3.org/1998/Math/MathML 
+https://purl.imsglobal.org/spec/mathml/v3p0/schema/xsd/mathml3.xsd"
+identifier="feedbackBlock-solution-random" title="Using feedbackBlock to show a solution (random)"
+adaptive="true" time-dependent="false" xml:lang="en-US" >
   <qti-response-declaration base-type="float" cardinality="single" identifier="RESPONSE"/>
   <qti-response-declaration base-type="boolean" cardinality="single" identifier="SOLREQUEST"/>
   <qti-response-declaration base-type="boolean" cardinality="single" identifier="EndAttempt"/>
@@ -75,13 +75,12 @@ https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd"
         <!-- Explain why the score is zero (after viewing solution) -->
         <qti-feedback-block id="feedbackBlock4" identifier="SEEN-SOLUTION" outcome-identifier="FEEDBACK" show-hide="show">
           <qti-content-body>
-                  <p> Since you have viewed the solution, your score for this question will be 0. </p>
+            <p>Since you have viewed the solution, your score for this question will be 0.</p>
           </qti-content-body>
         </qti-feedback-block>
         <!-- show the solution button -->
         <qti-feedback-block id="feedbackBlock7" identifier="asksolution" outcome-identifier="ASKSOLUTION" show-hide="show">
           <qti-content-body>
-            <p></p>
             <p><qti-end-attempt-interaction id="endAttemptInteraction2" response-identifier="SOLREQUEST" title="Show Solution"/></p>
           </qti-content-body>
         </qti-feedback-block>
@@ -160,23 +159,26 @@ https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd"
             <qti-set-outcome-value identifier="ASKSOLUTION">
               <qti-base-value base-type="identifier">null</qti-base-value>
             </qti-set-outcome-value>
-            <qti-response-condition>
-              <qti-response-if>
-                <qti-variable identifier="seenSolution"/>
-                <qti-set-outcome-value identifier="FEEDBACK">
-                  <qti-multiple>
-                    <qti-variable identifier="FEEDBACK"/>
-                    <qti-base-value base-type="identifier">SEEN-SOLUTION</qti-base-value>
-                  </qti-multiple>
-                </qti-set-outcome-value>
-                <qti-set-outcome-value identifier="SCORE">
-                  <qti-base-value base-type="float">0.0</qti-base-value>
-                </qti-set-outcome-value>
-              </qti-response-if>
-            </qti-response-condition>
           </qti-response-else>
         </qti-response-condition>
       </qti-response-else>
+    </qti-response-condition>
+
+    <!-- When an answer has been submitted, if the solution has been displayed,
+         the message about the score is added to the FEEDBACK, and SCORE is set to 0.0 -->
+    <qti-response-condition>
+      <qti-response-if>
+        <qti-variable identifier="seenSolution"/>
+        <qti-set-outcome-value identifier="FEEDBACK">
+          <qti-multiple>
+            <qti-variable identifier="FEEDBACK"/>
+            <qti-base-value base-type="identifier">SEEN-SOLUTION</qti-base-value>
+          </qti-multiple>
+        </qti-set-outcome-value>
+        <qti-set-outcome-value identifier="SCORE">
+          <qti-base-value base-type="float">0.0</qti-base-value>
+        </qti-set-outcome-value>
+      </qti-response-if>
     </qti-response-condition>
   </qti-response-processing>
 </qti-assessment-item>
