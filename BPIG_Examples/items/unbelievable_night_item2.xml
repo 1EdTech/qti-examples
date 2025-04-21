@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 
+https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0p1_v1p0.xsd" 
+identifier="unbelievable-night-item2" title="Where did the crocodile come from?" 
+adaptive="false" time-dependent="false" xml:lang="en" >
+  <qti-response-declaration identifier="RESPONSE" cardinality="single" base-type="identifier">
+    <qti-correct-response>
+      <qti-value>B</qti-value>
+    </qti-correct-response>
+  </qti-response-declaration>
+  <qti-outcome-declaration identifier="SCORE" cardinality="single" base-type="float">
+    <qti-default-value>
+      <qti-value>0</qti-value>
+    </qti-default-value>
+  </qti-outcome-declaration>
+
+  <qti-assessment-stimulus-ref identifier="Stimulus1" 
+    href="../passages/unbelievableNight.xml" title="An Unbelievable Night" />
+
+  <qti-item-body>
+    <div class="qti-layout-row">
+      <div class="qti-layout-col6">
+
+  <!-- Be explicit about the placement of the stimulus in the qti-item-body.  Here, we place the
+          stimulus in the left-most column of the two-column item layout by specifying a docking <div> with 
+          data-stimulus-idref that refers to the identifier of the above qti-assessment-stimulus-ref.  -->
+
+        <div class="qti-shared-stimulus" data-stimulus-idref="Stimulus1"></div>
+
+      </div>
+      <div class="qti-layout-col6">
+        <p>Read the passage "The Unbelievable Night" before answering the following question.</p>
+        <qti-choice-interaction max-choices="1" response-identifier="RESPONSE">
+          <qti-prompt>Where did the crocodile come from?</qti-prompt>
+          <qti-simple-choice identifier="A">the bathroom</qti-simple-choice>
+          <qti-simple-choice identifier="B">a magazine cover</qti-simple-choice>
+          <qti-simple-choice identifier="C">under the bed</qti-simple-choice>
+          <qti-simple-choice identifier="D">a nearby river</qti-simple-choice>
+        </qti-choice-interaction>
+      </div>
+    </div>
+  </qti-item-body>
+  <qti-response-processing 
+  template="https://purl.imsglobal.org/spec/qti/v3p0/rptemplates/match_correct.xml"/>
+</qti-assessment-item>

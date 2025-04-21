@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 
+https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0p1_v1p0.xsd" 
+identifier="order_rtl_he" title="Grand Prix של בחריין" 
+adaptive="false" time-dependent="false" xml:lang="he" >
+  <qti-response-declaration identifier="RESPONSE" cardinality="ordered" base-type="identifier">
+    <qti-correct-response>
+      <qti-value>DriverC</qti-value>
+      <qti-value>DriverA</qti-value>
+      <qti-value>DriverB</qti-value>
+    </qti-correct-response>
+  </qti-response-declaration>
+  <qti-outcome-declaration identifier="SCORE" cardinality="single" base-type="float"/>
+  <qti-item-body>
+    <div dir="rtl">
+      <qti-order-interaction response-identifier="RESPONSE" >
+        <qti-prompt><bdo dir="ltr">F1</bdo> הנהגים הבאים סיימו על הפודיום בגרנד פרי בחריין
+         הראשון אי פעם.אתה יכול לארגן אותם בסדר נכון הגמר?</qti-prompt>
+        <qti-simple-choice identifier="DriverA"><bdo dir="ltr">Rubens Barrichello</bdo></qti-simple-choice>
+        <qti-simple-choice identifier="DriverB"><bdo dir="ltr">Jenson Button</bdo></qti-simple-choice>
+        <qti-simple-choice identifier="DriverC"><bdo dir="ltr">Michael Schumacher</bdo></qti-simple-choice>
+      </qti-order-interaction>
+      </div>
+  </qti-item-body>
+  <qti-response-processing 
+   template="https://www.imsglobal.org/question/qti_v3p0/rptemplates/match_correct.xml"/>
+</qti-assessment-item>

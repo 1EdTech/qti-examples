@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" 
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 
+ https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0p1_v1p0.xsd"
+ identifier="MultipleCatalogs" title="Multiple Catalogs in a Single Item"
+ time-dependent="false" xml:lang="en-US">
+ <qti-response-declaration base-type="identifier" cardinality="single" identifier="RESPONSE">
+  <qti-correct-response>
+   <qti-value>ChoiceA</qti-value>
+  </qti-correct-response>
+ </qti-response-declaration>
+ <qti-outcome-declaration identifier="SCORE" cardinality="single" base-type="float"/>
+  <qti-item-body>
+    <div class="stem" data-catalog-idref="cat123_1">
+      <p>Grace walks 2 kilometres from her house on Maple Dr. to her harmonica lessons on Chestnut St.</p>
+    </div>
+    <qti-choice-interaction response-identifier="RESPONSE" max-choices="1" data-catalog-idref="cat123_2">
+      <qti-prompt>If Grace has lessons once a week, how many kilometres will she walk in a year for
+        her harmonica lessons?</qti-prompt>
+       <qti-simple-choice identifier="ChoiceA">About 200</qti-simple-choice>
+       <qti-simple-choice identifier="ChoiceB">About 100</qti-simple-choice>
+       <qti-simple-choice identifier="ChoiceC">About 50</qti-simple-choice>
+     </qti-choice-interaction>
+  </qti-item-body>
+  <qti-catalog-info>
+    <qti-catalog id="cat123_1">
+        <qti-card support="sign-language">
+            <qti-card-entry xml:lang="ase" default="true">
+                <qti-html-content>
+                    <video width="325" height="183" controls="controls">
+                        <source src="asl/item123.mp4#t=00:00:01,00:00:10.0" type="video/mp4" />
+                    </video>
+                </qti-html-content>
+            </qti-card-entry>
+        </qti-card>
+    </qti-catalog>
+    <qti-catalog id="cat123_2">
+        <qti-card support="sign-language">
+            <qti-card-entry xml:lang="ase" default="true">
+                <qti-html-content>
+                    <video width="325" height="183" controls="controls">
+                        <source src="asl/item123.mp4#t=00:00:16.0" type="video/mp4" />
+                    </video>
+                </qti-html-content>
+            </qti-card-entry>
+        </qti-card>
+    </qti-catalog>
+  </qti-catalog-info>
+</qti-assessment-item>

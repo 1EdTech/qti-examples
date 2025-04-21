@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0
+https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0p1_v1p0.xsd"
+identifier="QTI3-graphic-order" title="Graphic Order Interaction Example" 
+time-dependent="false" xml:lang="en-GB">
+  <qti-response-declaration identifier="RESPONSE" cardinality="ordered" base-type="identifier">
+    <qti-correct-response>
+      <qti-value>A</qti-value>
+      <qti-value>D</qti-value>
+      <qti-value>C</qti-value>
+      <qti-value>B</qti-value>
+    </qti-correct-response>
+  </qti-response-declaration>
+  <qti-outcome-declaration identifier="SCORE" cardinality="single" base-type="float" />
+  <qti-item-body>
+    <p>Lorna is flying back home to the UK. Ideally, she would like to fly in directly to her 
+    home town of Glasgow. Edinburgh is her second choice and, if necessary, she could fly into 
+    London and pick up an internal connecting flight. Although she has been offered a cheap flight 
+    to Manchester it remains her least favourite option as connecting flights to Glasgow are not 
+    very reliable from there.</p>
+    <qti-graphic-order-interaction response-identifier="RESPONSE">
+      <qti-prompt>Mark the airports shown on the map according to Lorna's preferences.</qti-prompt>
+      <img src="images/ukair.png" width="206" height="280" alt="map of airports of the United Kingdom"/>
+      <qti-hotspot-choice shape="circle" coords="78,102,8" identifier="A" aria-label="Airport A" />
+      <qti-hotspot-choice shape="circle" coords="117,171,8" identifier="B" aria-label="Airport B" />
+      <qti-hotspot-choice shape="circle" coords="166,227,8" identifier="C" aria-label="Airport C" />
+      <qti-hotspot-choice shape="circle" coords="100,102,8" identifier="D" aria-label="Airport D" />
+    </qti-graphic-order-interaction>
+  </qti-item-body>
+  <qti-response-processing 
+    template="https://purl.imsglobal.org/spec/qti/v3p0/rptemplates/match_correct.xml" />  
+</qti-assessment-item>

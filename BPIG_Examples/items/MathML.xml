@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:m="http://www.w3.org/1998/Math/MathML"
+xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 
+    https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0p1_v1p0.xsd  
+    http://www.w3.org/1998/Math/MathML 
+    https://purl.imsglobal.org/spec/mathml/v3p0/schema/xsd/mathml3.xsd"
+identifier="math" title="Relativity" adaptive="false" time-dependent="false" xml:lang="en">
+<!-- This example adapted from the PET Handbook,
+  copyright University of Cambridge ESOL Examinations -->
+  <qti-response-declaration identifier="RESPONSE" cardinality="single" base-type="identifier">
+    <qti-correct-response>
+      <qti-value>E</qti-value>
+    </qti-correct-response>
+  </qti-response-declaration>
+  <qti-outcome-declaration identifier="SCORE" cardinality="single" base-type="float"/>
+  <qti-item-body>
+    <qti-choice-interaction response-identifier="RESPONSE" max-choices="1">
+    <qti-prompt>Which famous scientist is popularly associated with the equation
+        <div role="math" aria-label="E equals m c squared">
+          <math xmlns="http://www.w3.org/1998/Math/MathML" >
+            <mrow>
+              <mi>E</mi>
+              <mo>=</mo>
+              <mi>m</mi>
+              <msup>
+                <mi>c</mi>
+                <mn>2</mn>
+              </msup>
+            </mrow>
+          </math>
+          </div>
+      </qti-prompt>
+      <qti-simple-choice identifier="E">Einstein</qti-simple-choice>
+      <qti-simple-choice identifier="G">Galileo</qti-simple-choice>
+      <qti-simple-choice identifier="H">Hawking</qti-simple-choice>
+      <qti-simple-choice identifier="N">Newton</qti-simple-choice>
+    </qti-choice-interaction>
+  </qti-item-body>
+  <qti-response-processing
+   template="https://purl.imsglobal.org/spec/qti/v3p0/rptemplates/match_correct"/>
+</qti-assessment-item>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xmlns:m="http://www.w3.org/1998/Math/MathML"
+xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0  
+https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0p1_v1p0.xsd 
+http://www.w3.org/1998/Math/MathML https://purl.imsglobal.org/spec/mathml/v3p0/schema/xsd/mathml3.xsd"
+identifier="qti3-choice-aria-mathml-catalog" title="Surveyors"
+adaptive="false" time-dependent="false" xml:lang="en" >
+  <qti-response-declaration base-type="identifier" cardinality="single" identifier="RESPONSE">
+    <qti-correct-response>
+      <qti-value>ChoiceA</qti-value>
+    </qti-correct-response>
+  </qti-response-declaration>
+  <qti-outcome-declaration base-type="float" cardinality="single" identifier="SCORE"/>
+  <qti-item-body>
+    <div class="qti-layout-row">
+      <div class="qti-layout-col6">
+        <h2 class="qti-visually-hidden">Passage</h2>
+        <p><span data-catalog-idref="cat01">Examine</span> the following survey map.</p>
+        <p>
+          <img src="images/survey.jpg" class="qti-bordered" alt="Survey map with Angles" 
+          aria-describedby="imgdesc1" width="400" />
+        </p>
+        <p id="imgdesc1" class="qti-visually-hidden" data-catalog-idref="cat02">
+        Two surveyors, <span aria-label="A, ">A</span> and P, stand some distance apart on
+        the south bank of a river, looking at a tree, T, that is on the north bank of the river.
+        Points A, P, and <span aria-label="T, ">T</span> form a triangle. At points
+        <span aria-label="A, ">A</span> and P, there are two parallel sight lines pointing
+        North and forming angles outside of the triangle. At point P, angle 
+        <span aria-label="T, P, A, ">TPA</span> is 53 degrees. The adjacent angle between 
+        <span aria-label="P, T, ">PT</span> and the northern sight line is 37 degrees. 
+        At point A, angle <span aria-label="T, A, P, ">TAP</span> is not labeled, 
+        and the adjacent angle formed between <span aria-label="A, T, ">AT</span> 
+        and that northern sight line is 32 degrees.
+        </p>
+      </div>
+      <div class="qti-layout-col6">
+        <h2 class="qti-visually-hidden">Question</h2>
+        <qti-choice-interaction class="qti-labels-none qti-choices-stacking-2" max-choices="1"
+        response-identifier="RESPONSE">
+          <qti-prompt>
+            <div class="qti-well">
+              What is the value of 
+              <m:math alttext="Angle T, A, P, " display="inline" overflow="scroll">
+                <m:mstyle>
+                  <m:mrow>
+                    <m:mo>∠</m:mo><m:mi>T</m:mi><m:mi>A</m:mi><m:mi>P</m:mi>
+                  </m:mrow>
+                </m:mstyle>
+              </m:math>
+              in degrees?
+            </div>
+          </qti-prompt>
+          <qti-simple-choice identifier="ChoiceA">90</qti-simple-choice>
+          <qti-simple-choice identifier="ChoiceB">37</qti-simple-choice>
+          <qti-simple-choice identifier="ChoiceC">58</qti-simple-choice>
+          <qti-simple-choice identifier="ChoiceD">45</qti-simple-choice>
+        </qti-choice-interaction>
+      </div>
+    </div>
+  </qti-item-body>
+  
+  <qti-catalog-info>
+    <qti-catalog id="cat01">
+      <qti-card support="glossary-on-screen">
+        <qti-html-content>
+          <p>inspect (someone or something) in detail to determine their nature or condition</p>
+        </qti-html-content>
+      </qti-card>
+      <qti-card support="keyword-translation">
+        <qti-card-entry xml:lang="es">
+          <qti-html-content>
+            <p>inspeccionar, revisar, examinar</p>
+          </qti-html-content>
+        </qti-card-entry>
+      </qti-card>
+    </qti-catalog>
+    <qti-catalog id="cat02">
+      <qti-card support="spoken">
+        <qti-card-entry data-reading-type="computer-read-aloud">
+          <qti-html-content>
+            <p>Two surveyors, designated Ah and Pea, stand some distance apart on
+            the south bank of a river, looking at a tree, designated Tea, that is on the 
+            north bank of the river. Points Ah, Pea, and Tea form a triangle.
+            At points Ah and Pea, there are two parallel sight lines pointing
+            North and forming angles outside of the triangle. At point Pea, 
+            angle Tea Pea A is fifty-three degrees. The adjacent angle between Pea Tea
+            and the northern sight line is thirty-seven degrees. At point A, angle Tea-Ah-Pea 
+            is not labeled, and the adjacent angle formed between A Tea and that northern sight 
+            line is thirty-two degrees. </p>
+          </qti-html-content>
+        </qti-card-entry>
+      </qti-card>
+    </qti-catalog>
+  </qti-catalog-info>
+  <qti-response-processing
+   template="https://purl.imsglobal.org/spec/qti/v3p0/rptemplates/match_correct"/>
+</qti-assessment-item>

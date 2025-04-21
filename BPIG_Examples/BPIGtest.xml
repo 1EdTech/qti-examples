@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<qti-assessment-test xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 
+https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0p1_v1p0.xsd"
+identifier="BPIGtest" title="Best Practices and Implementation Guide Test of Example Items">
+
+  <qti-test-part identifier="testPart-1" navigation-mode="nonlinear" submission-mode="individual" title="Section 2: Structure of QTI Assessment Content">
+    <qti-assessment-section identifier="BPIG-Section-2" title="Section 2: All Example Items in Section 2" visible="true">
+      <qti-assessment-item-ref identifier="math" href="items/MathML.xml"/>
+      <qti-assessment-item-ref identifier="data-attribute-example" href="items/data_dash.xml"/>
+      <qti-assessment-item-ref identifier="choice_multiple_rtl_he" href="items/RTL_Hebrew.xml"/>
+      <qti-assessment-item-ref identifier="order_rtl_he" href="items/Order_RTL_Hebrew.xml"/>
+      <qti-assessment-item-ref identifier="choice_ruby" href="items/ruby_default.xml"/>
+      <qti-assessment-item-ref identifier="choice_ruby_i23n" href="items/ruby_i23n.xml"/>
+    </qti-assessment-section>
+  </qti-test-part>
+
+  <qti-test-part identifier="testPart-2" navigation-mode="nonlinear" submission-mode="individual" title="Section 3: Item Structure">
+    <qti-assessment-section identifier="BPIG-Section-3p1" title="Section 3.1: Item Element" visible="true">
+      <qti-assessment-item-ref identifier="beginnersguide007" href="items/BG007.xml"/>
+    </qti-assessment-section>
+    <qti-assessment-section identifier="BPIG-Section-3p2" title="Section 3.2: Interactions" visible="true">
+      <qti-assessment-item-ref identifier="QTI3multiplechoice2" href="items/QTI3multiplechoice2.xml"/>
+      <qti-assessment-item-ref identifier="beginnersguide010" href="items/BG010.xml"/>
+      <qti-assessment-item-ref identifier="beginnersguide009" href="items/BG009.xml"/>
+      <qti-assessment-item-ref identifier="gap-match-example-1" href="items/gap-match-example-1.xml"/>
+      <qti-assessment-item-ref identifier="QTI3-hotspot" href="items/QTI3-hotspot.xml"/>
+      <qti-assessment-item-ref identifier="hot-text-example-1" href="items/hot-text-example-1.xml"/>
+      <qti-assessment-item-ref identifier="QTI3-inline-choice" href="items/QTI3-inline-choice.xml"/>
+      <qti-assessment-item-ref identifier="QTI3-match" href="items/QTI3-match.xml"/>
+      <qti-assessment-item-ref identifier="QTI3-order" href="items/QTI3-order.xml"/>
+      <qti-assessment-item-ref identifier="QTI3-graphic-order" href="items/QTI3-graphic-order.xml"/>
+      <qti-assessment-item-ref identifier="QTI3-associate" href="items/QTI3-associate.xml"/>
+      <qti-assessment-item-ref identifier="example-graphic-assoc-1" href="items/example-graphic-assoc-1.xml"/>
+      <qti-assessment-item-ref identifier="example-graphic-assoc-1alt" href="items/example-graphic-assoc-1alt.xml"/>
+      <qti-assessment-item-ref identifier="graphic-gap-match-item1" href="items/graphic-gap-match-item1.xml"/>
+      <qti-assessment-item-ref identifier="media-example-1" href="items/media-example-1.xml"/>
+      <qti-assessment-item-ref identifier="position-object-1" href="items/position-object-1.xml"/>
+      <qti-assessment-item-ref identifier="select-point-item_1" href="items/select-point-item_1.xml"/>
+      <qti-assessment-item-ref identifier="slider-1" href="items/slider-1.xml"/>
+      <qti-assessment-item-ref identifier="upload-interaction" href="items/upload-interaction.xml"/>
+      <qti-assessment-item-ref identifier="drawing-interaction-1" href="items/drawing-interaction-1.xml"/>
+      <qti-assessment-item-ref identifier="end-attempt-example-1" href="items/end-attempt-example-1.xml"/>
+      <!-- did not include the custom interaction. It is deprecated in version 3. -->
+    </qti-assessment-section>
+    <qti-assessment-section identifier="BPIG-Section-3p3" title="Section 3.3: Composite Items" visible="true">
+    <qti-assessment-item-ref identifier="shakespeare_biography" href="items/shakespeare_biography.xml"/>
+    </qti-assessment-section>
+    <qti-assessment-section identifier="BPIG-Section-3p4" title="Section 3.4: Response Processing" visible="true">
+      <qti-assessment-item-ref identifier="essay" href="items/essay.xml"/>
+    </qti-assessment-section>
+    <qti-assessment-section identifier="BPIG-Section-3p6" title="Section 3.6: Stylesheets" visible="true">
+      <qti-assessment-item-ref identifier="QTI3-custom-stylesheet" href="items/QTI3-custom-stylesheet.xml"/>
+    </qti-assessment-section>
+    <qti-assessment-section identifier="BPIG-Section-3p7" title="Section 3.7: Advanced Item Structures" visible="true">
+      <qti-rubric-block view="candidate" >
+        <qti-content-body>
+          <p>This secton of the test includes complete items from the Best Practices and Implementation Guide Section 3.7. It does NOT include any PCI items.</p>
+        </qti-content-body>
+      </qti-rubric-block>
+      <qti-assessment-item-ref identifier="Example03-feedbackBlock-solution" href="items/Example03-feedbackBlock-solution.xml"/>
+      <qti-assessment-item-ref identifier="feedbackBlock-solution-random" href="items/feedbackBlock-solution-random.xml"/>
+      <qti-assessment-item-ref identifier="Example04-feedbackBlock-templateBlock" href="items/Example04-feedbackBlock-templateBlock.xml"/>
+      <qti-assessment-item-ref identifier="Example05-feedbackBlock-adaptive" href="items/Example05-feedbackBlock-adaptive.xml"/>
+      <qti-assessment-item-ref identifier="Example01-modalFeedback" href="items/Example01-modalFeedback.xml"/>
+      <qti-assessment-item-ref identifier="Example02-feedbackInline" href="items/Example02-feedbackInline.xml"/>
+      <qti-assessment-item-ref identifier="template_digging" href="items/template_digging.xml"/>
+      <qti-assessment-item-ref identifier="template_image" href="items/template_image.xml"/>
+      <qti-assessment-item-ref identifier="adaptiveTemplate" href="items/adaptiveTemplate.xml"/>
+      <qti-assessment-item-ref identifier="mc_calc3" href="items/mc_calc3.xml"/>
+      <qti-assessment-item-ref identifier="stat2" href="items/stat2.xml"/>
+      <qti-assessment-item-ref identifier="mc_calc5" href="items/mc_calc5.xml"/>
+      <qti-assessment-item-ref identifier="rubric_block" href="items/rubric_block.xml"/>
+    </qti-assessment-section>
+    <qti-assessment-section identifier="BPIG-Section-3p7-Passages" required="true" title="Section 3.7: Shared Stimulus" visible="true" keep-together="true">
+            <qti-assessment-item-ref identifier="unbelievable-night-item1" href="items/unbelievable_night_item1.xml"/>
+            <qti-assessment-item-ref identifier="unbelievable-night-item2" href="items/unbelievable_night_item2.xml"/>
+            <qti-assessment-item-ref identifier="unbelievable-night-item3" href="items/unbelievable_night_item3.xml"/>
+            <!-- weirdly, you do not reference the actual shared stimulus file. That's done within the items. -->
+     </qti-assessment-section>
+    <qti-assessment-section identifier="BPIG-Section-3p7-Catalogs" title="Section 3.7: Referencing Catalogs" visible="true">
+      <qti-assessment-item-ref identifier="ReferencingCatalogContent" href="items/ReferencingCatalogContent.xml"/>
+      <qti-assessment-item-ref identifier="CatalogWithMultipleSupports" href="items/CatalogWithMultipleSupports.xml"/>
+      <qti-assessment-item-ref identifier="MultipleCatalogs" href="items/MultipleCatalogs.xml"/>
+      <qti-assessment-item-ref identifier="CatalogsAcrossContentNodes" href="items/CatalogsAcrossContentNodes.xml"/>
+    </qti-assessment-section>
+    <qti-assessment-section identifier="BPIG-Section3p7p11" title="Section 3.7.11: Context Declarations" visible="true">
+      <qti-assessment-item-ref identifier="contexts_for_different_program_scoring" href="items/contexts_for_different_program_scoring.xml" />
+    </qti-assessment-section>
+    <!--no PCI examples in this test-->
+    <qti-assessment-section identifier="BPIG-Section-3p8" title="Section 3.8: Annotated Examples" visible="true">
+      <qti-assessment-item-ref identifier="qti3-choice-aria-mathml-catalog" href="items/qti3-choice-aria-mathml-catalog.xml"/>
+      <!-- measuringPh is a PCI and not included included in this test -->
+      <qti-assessment-item-ref identifier="adaptive_mh1" href="items/adaptive_mh1.xml"/>
+    </qti-assessment-section>
+  </qti-test-part>
+</qti-assessment-test> 

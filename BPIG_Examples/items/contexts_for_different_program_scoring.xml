@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 
+https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0p1_v1p0.xsd" 
+identifier="contexts_for_different_program_scoring" 
+title="Contexts for different partial scoring across programs" 
+adaptive="false" time-dependent="false" xml:lang="en">
+
+<!-- QTI_CONTEXT is declared here, even though it is built into the information model. -->
+  <qti-context-declaration cardinality="record" identifier="QTI_CONTEXT"/>
+
+  <qti-response-declaration base-type="string" cardinality="single" identifier="RESPONSE"/>
+  <qti-response-declaration base-type="string" cardinality="single" identifier="SCORE"/>
+  <qti-response-declaration base-type="string" cardinality="single" identifier="UNSCALED_RAW_SCORE"/>
+
+<!-- Lookup table to map an environment to a scaling factor -->
+  <qti-outcome-declaration base-type="string" cardinality="single" identifier="PROGRAM_SCALING_FACTOR">
+    <qti-match-table>
+      <qti-match-table-entry source-value="1" target-value="0.5"/>
+      <qti-match-table-entry source-value="2" target-value="0.6"/>
+    </qti-match-table>  
+  </qti-outcome-declaration>
+
+  <qti-item-body>
+    <p>Describe pros and cons of electronic personal interactions as opposed to face-to-face?</p>
+    <qti-extended-text-interaction expected-length="1000" response-identifier="RESPONSE"/>
+    </qti-item-body>
+
+  <qti-response-processing>
+<!-- Assign a raw, unscaled score for the essay -->
+    <qti-set-outcome-value identifier="UNSCALED_RAW_SCORE">
+      <qti-field-value field-identifier="overall">
+
+<!-- ScoreEssay returns a record with 6 fields, including an "overall" field for the raw essay score -->
+        <qti-custom-operator class="example.customOperators.ScoreEssay" definition="essay-rubric-1">
+          <qti-variable identifier="RESPONSE"/>
+        </qti-custom-operator>
+      </qti-field-value>
+    </qti-set-outcome-value>
+
+<!-- Now, scale the score using the environmental information passed into the item -->
+    <qti-set-outcome-value identifier="SCORE">
+      <qti-product>
+        <qti-custom-operator class="example.customOperators.stringToNumber" definition="string-to-number">
+          <qti-lookup-outcome-value identifier="PROGRAM_SCALING_FACTOR">
+            <qti-field-value field-identifier="environmentIdentifier">
+              <qti-variable identifier="QTI_CONTEXT"/>
+            </qti-field-value>
+          </qti-lookup-outcome-value>
+        </qti-custom-operator>
+        <qti-variable identifier="UNSCALED_RAW_SCORE"/>
+      </qti-product>
+    </qti-set-outcome-value>
+  </qti-response-processing>
+</qti-assessment-item>

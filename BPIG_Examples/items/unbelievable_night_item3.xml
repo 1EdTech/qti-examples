@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<qti-assessment-item 
+  xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" 
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+  xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0p1_v1p0.xsd"
+  identifier="unbelievable-night-item3" title="Why did the crocodile stop eating?" 
+  adaptive="false" time-dependent="false">
+  <qti-response-declaration identifier="RESPONSE" cardinality="single" base-type="identifier">
+    <qti-correct-response>
+      <qti-value>ChoiceB</qti-value>
+    </qti-correct-response>
+  </qti-response-declaration>
+  <qti-outcome-declaration identifier="SCORE" cardinality="single" base-type="float">
+    <qti-default-value>
+      <qti-value>0</qti-value>
+    </qti-default-value>
+  </qti-outcome-declaration>
+
+  <qti-assessment-stimulus-ref identifier="Stimulus1" href="../passages/unbelievableNight.xml" title="An Unbelievable Night" />
+
+  <qti-item-body>
+    <p>Read the passage "The Unbelievable Night" before answering the following question</p>
+
+    <qti-choice-interaction max-choices="1" response-identifier="RESPONSE">
+      <qti-prompt>Why do you think the crocodile stopped eating?</qti-prompt>
+      <qti-simple-choice identifier="ChoiceA">The crocodile had something stuck in their throat.</qti-simple-choice>
+      <qti-simple-choice identifier="ChoiceB">The crocodile had eaten enough food.</qti-simple-choice>
+      <qti-simple-choice identifier="ChoiceC">The crocodile was sent back into the magazine.</qti-simple-choice>
+    </qti-choice-interaction>
+  </qti-item-body>
+  <qti-response-processing template="https://purl.imsglobal.org/spec/qti/v3p0/rptemplates/match_correct.xml"/>
+</qti-assessment-item>

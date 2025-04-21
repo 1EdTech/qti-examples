@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 
+https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0p1_v1p0.xsd" 
+identifier="rubric_block" title="A Variety of Rubric Blocks in an Item"
+adaptive="false" time-dependent="false" xml:lang="en" >
+
+  <qti-response-declaration identifier="RESPONSE" cardinality="single" base-type="identifier">
+    <qti-correct-response>
+      <qti-value>optionD</qti-value>
+    </qti-correct-response>
+  </qti-response-declaration>
+  <qti-outcome-declaration identifier="SCORE" cardinality="single" base-type="float">
+    <qti-default-value>
+      <qti-value>0</qti-value>
+    </qti-default-value>
+  </qti-outcome-declaration>
+
+  <qti-item-body>
+
+    <qti-rubric-block class="qti-rubric-discretionary-placement" view="tutor" use="instructions">
+      <qti-content-body>
+        <p>Help the candidate understand the information that is directly supplied in the text
+          (2 km distance, a single year), and the information that is <em>implied</em> in the text
+          (walking TO and FROM the lessons, 52 weeks in a year).</p>
+      </qti-content-body>
+    </qti-rubric-block>
+
+    <qti-rubric-block class="qti-rubric-discretionary-placement" view="candidate" use="instructions" 
+    data-catalog-idref="catchoicedirs">
+      <!-- Rubric Blocks can have their own style sheet references -->
+        <qti-stylesheet href="styles/choice-instructions.css" type="text/css" />
+      <!-- The Rubric content is put inside the qti-content-body node -->
+        <qti-content-body>
+          <p class="directions">Select the option that best represents the correct answer.</p>
+        </qti-content-body>
+      <!-- Rubric Blocks can reference and contain Catalogs! -->
+        <qti-catalog-info>
+          <qti-catalog id="catchoicedirs">
+            <qti-card support="sign-language">
+              <qti-card-entry xml:lang="ase" default="true">
+                <qti-html-content>
+                  <video width="320" height="240" controls="controls">
+                    <source src="asl/ss_choice_directions.m4v" type="video/mp4" />
+                  </video>
+                </qti-html-content>
+              </qti-card-entry>
+            </qti-card>
+          </qti-catalog>
+        </qti-catalog-info>
+    </qti-rubric-block>
+
+    <p>Tom walks back and forth to his harmonica lessons once a week. His house on Ordinary Dr.
+      is a 2 kilometre walk to his teacher's house on Spectacular St.</p>
+  
+    <qti-rubric-block class="qti-rubric-inline" view="proctor" use="instructions">
+      <qti-content-body>Some instructional text for the proctor here...</qti-content-body>
+    </qti-rubric-block>
+
+    <qti-choice-interaction response-identifier="RESPONSE" max-choices="1">
+      <qti-prompt>
+        How many kilometres will Tom walk in a year for his harmonica lessons?
+      </qti-prompt>
+      <qti-simple-choice identifier="optionA" fixed="true">
+        <p>About 50</p>
+      </qti-simple-choice>
+      <qti-simple-choice identifier="optionB" fixed="true">
+        <p>About 100</p>
+      </qti-simple-choice>
+      <qti-simple-choice identifier="optionC" fixed="true">
+        <p>About 200</p>
+      </qti-simple-choice>
+      <qti-simple-choice identifier="optionD" fixed="true">
+        <p>About 400</p>
+      </qti-simple-choice>
+    </qti-choice-interaction>
+
+    <qti-rubric-block class="qti-rubric-inline" view="scorer" use="scoring">
+      <qti-stylesheet href="styles/scoring-rubric.css" type="text/css" />
+      <qti-content-body>An actual scoring rubric could go here.</qti-content-body>
+    </qti-rubric-block>
+
+  </qti-item-body>
+  <qti-response-processing 
+    template="https://www.imsglobal.org/question/qti_v3p0/rptemplates/match_correct.xml"/>
+</qti-assessment-item>

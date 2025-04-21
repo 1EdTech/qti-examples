@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0
+  https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0p1_v1p0.xsd"
+   xml:lang="en-US" identifier="shakespeare_biography" title="Shakespeare Biography" time-dependent="false">
+    <qti-response-declaration identifier="response_1" cardinality="single" base-type="identifier">
+      <qti-correct-response>
+        <qti-value>choice_1</qti-value>
+      </qti-correct-response>
+    </qti-response-declaration>
+    <qti-response-declaration identifier="response_2" cardinality="single" base-type="identifier">
+      <qti-correct-response>
+        <qti-value>choice_4</qti-value>
+      </qti-correct-response>
+    </qti-response-declaration>
+    <qti-response-declaration identifier="response_3" cardinality="single" base-type="string">
+      <qti-correct-response>
+        <qti-value>poet</qti-value>
+      </qti-correct-response>
+      <qti-mapping default-value="0">
+        <qti-map-entry map-key="poet" mapped-value="1"/>
+        <qti-map-entry map-key="playwright" mapped-value="1"/>
+        <qti-map-entry map-key="writer" mapped-value="0.5"/>
+      </qti-mapping>
+    </qti-response-declaration>
+    <qti-outcome-declaration identifier="SCORE" cardinality="single" base-type="float"/>
+    <qti-outcome-declaration identifier="SCORE_1" cardinality="single" base-type="float"/>
+    <qti-outcome-declaration identifier="SCORE_2" cardinality="single" base-type="float"/>
+    <qti-outcome-declaration identifier="SCORE_3" cardinality="single" base-type="float"/>
+    <qti-item-body>
+      <p>
+        <strong>About William Shakespeare</strong>
+      </p>
+      <p>
+        Date of birth:
+        <qti-inline-choice-interaction response-identifier="response_1">
+          <qti-inline-choice identifier="choice_1">26 April 1564</qti-inline-choice>
+          <qti-inline-choice identifier="choice_2">29 February 1664</qti-inline-choice>
+          <qti-inline-choice identifier="choice_3">2 March 2010</qti-inline-choice>
+        </qti-inline-choice-interaction>
+      </p>
+      <p>
+        Date of death:
+        <qti-inline-choice-interaction response-identifier="response_2">
+          <qti-inline-choice identifier="choice_4">23 April 1616</qti-inline-choice>
+          <qti-inline-choice identifier="choice_5">24 April 1616</qti-inline-choice>
+          <qti-inline-choice identifier="choice_6">25 April 1616</qti-inline-choice>
+        </qti-inline-choice-interaction>
+      </p>
+      <hr/>
+      <p>
+        <em>Shakespeare</em> was an English
+        <qti-text-entry-interaction response-identifier="response_3" expected-length="15"/>,
+        widely regarded as the greatest writer in the English language and the
+        world's pre-eminent dramatist.  His surviving works, including some
+        collaborations, consist of about <strong>38</strong> plays, <strong>154</strong>
+        sonnets, <strong>2</strong> long poems, and several other poems.  His plays have
+        been translated into every major living language and are performed more often than
+        those of any other playwright.
+      </p>
+    </qti-item-body>
+    <qti-response-processing>
+      <qti-response-condition>
+        <qti-response-if>
+          <qti-match>
+            <qti-variable identifier="response_1"/>
+                 <qti-correct identifier="response_1"/>
+          </qti-match>
+          <qti-set-outcome-value identifier="SCORE">
+            <qti-sum>
+              <qti-variable identifier="SCORE"/>
+              <qti-base-value base-type="float">1</qti-base-value>
+            </qti-sum>
+          </qti-set-outcome-value>
+          <qti-set-outcome-value identifier="SCORE_1">
+            <qti-base-value base-type="float">1</qti-base-value>
+          </qti-set-outcome-value>
+        </qti-response-if>
+      </qti-response-condition>
+      <qti-response-condition>
+        <qti-response-if>
+          <qti-match>
+            <qti-variable identifier="response_2"/>
+            <qti-correct identifier="response_2"/>
+          </qti-match>
+          <qti-set-outcome-value identifier="SCORE">
+            <qti-sum>
+              <qti-variable identifier="SCORE"/>
+              <qti-base-value base-type="float">1</qti-base-value>
+            </qti-sum>
+          </qti-set-outcome-value>
+          <qti-set-outcome-value identifier="SCORE_2">
+            <qti-base-value base-type="float">1</qti-base-value>
+          </qti-set-outcome-value>
+        </qti-response-if>
+      </qti-response-condition>
+      <qti-response-condition>
+        <qti-response-if>
+          <qti-not>
+            <qti-is-null>
+              <qti-variable identifier="response_3"/>
+            </qti-is-null>
+          </qti-not>
+          <qti-set-outcome-value identifier="SCORE">
+            <qti-sum>
+              <qti-variable identifier="SCORE"/>
+              <qti-map-response identifier="response_3"/>
+            </qti-sum>
+          </qti-set-outcome-value>
+          <qti-set-outcome-value identifier="SCORE_3">
+            <qti-map-response identifier="response_3"/>
+          </qti-set-outcome-value>
+        </qti-response-if>
+      </qti-response-condition>
+    </qti-response-processing>
+  </qti-assessment-item>

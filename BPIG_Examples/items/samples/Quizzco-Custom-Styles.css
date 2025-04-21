@@ -1,0 +1,14 @@
+
+#Quizzco__item123 Quizzco__item__prompt {
+     all: initial;
+     display: block;
+     margin-block-start: 1em;
+     text-align: start;
+     padding: 5px;
+     font-weight: normal;
+  }
+
+  #Quizzco__item123 Quizzco__item__passage {
+     line-height: 1.3em;
+     font-weight: bolder;
+  }

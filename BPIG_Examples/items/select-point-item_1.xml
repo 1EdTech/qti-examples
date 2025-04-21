@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<qti-assessment-item 
+  xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" 
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+  xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 
+  https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0p1_v1p0.xsd"
+  identifier="select-point-item_1" title="Classic Where is Edinburgh Example" 
+  adaptive="false" time-dependent="false" xml:lang="en-US" >
+    <qti-response-declaration identifier="RESPONSE" cardinality="single" base-type="point">
+        <qti-correct-response>
+          <qti-value>93 111</qti-value>
+        </qti-correct-response>
+        <qti-area-mapping default-value="0" >
+          <qti-area-map-entry shape="circle" coords="93,111,16" mapped-value="1"/>
+        </qti-area-mapping>
+    </qti-response-declaration>
+    <qti-outcome-declaration identifier="SCORE" cardinality="single" base-type="float"/>
+    <qti-item-body>
+        <qti-select-point-interaction max-choices="1" response-identifier="RESPONSE"  >
+          <qti-prompt>
+            <p>Mark Edinburgh on this map of the United Kingdom.</p>
+          </qti-prompt>
+          <img width="196" height="280" src="images/uk_green.png" alt="A map of the United Kingdom" />
+        </qti-select-point-interaction>
+    </qti-item-body>
+    <qti-response-processing 
+    template="https://purl.imsglobal.org/spec/qti/v3p0/rptemplates/map_response_point.xml"/>
+</qti-assessment-item>
