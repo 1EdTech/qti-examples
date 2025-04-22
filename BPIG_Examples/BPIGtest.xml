@@ -85,9 +85,10 @@ identifier="BPIGtest" title="Best Practices and Implementation Guide Test of Exa
       <qti-assessment-item-ref identifier="MultipleCatalogs" href="items/MultipleCatalogs.xml"/>
       <qti-assessment-item-ref identifier="CatalogsAcrossContentNodes" href="items/CatalogsAcrossContentNodes.xml"/>
     </qti-assessment-section>
+    <!-- Excluded because there is a bug that won't be fixed until version 3.0.2 
     <qti-assessment-section identifier="BPIG-Section3p7p11" title="Section 3.7.11: Context Declarations" visible="true">
       <qti-assessment-item-ref identifier="contexts_for_different_program_scoring" href="items/contexts_for_different_program_scoring.xml" />
-    </qti-assessment-section>
+    </qti-assessment-section> -->
     <!--no PCI examples in this test-->
     <qti-assessment-section identifier="BPIG-Section-3p8" title="Section 3.8: Annotated Examples" visible="true">
       <qti-assessment-item-ref identifier="qti3-choice-aria-mathml-catalog" href="items/qti3-choice-aria-mathml-catalog.xml"/>

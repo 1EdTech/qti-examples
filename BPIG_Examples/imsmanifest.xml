@@ -218,10 +218,11 @@ identifier="BPIG_examples" >
 <resource identifier="CatalogsAcrossContentNodes" type="imsqti_item_xmlv3p0" href="items/CatalogsAcrossContentNodes.xml"> 
     <file href="items/CatalogsAcrossContentNodes.xml"/>
 </resource>
-<!-- Context Declarations-->
+<!-- Context Declarations - - excluded because there is a bug that will be fixed in version 3.0.2 - - 
 <resource identifier="contexts_for_different_program_scoring" type="imsqti_item_xmlv3p0" href="items/contexts_for_different_program_scoring.xml"> 
     <file href="items/contexts_for_different_program_scoring.xml"/>
-</resource>
+</resource> 
+-->
 <!-- Section 3.8 -->
 <resource identifier="qti3-choice-aria-mathml-catalog" type="imsqti_item_xmlv3p0" href="items/qti3-choice-aria-mathml-catalog.xml"> 
     <file href="items/qti3-choice-aria-mathml-catalog.xml"/>
