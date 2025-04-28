@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<qti-assessment-test xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 
+https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0p1_v1p0.xsd"
+identifier="BGtest" title="Beginners Guide Example Test">
+  <qti-test-part identifier="testPart-1" navigation-mode="nonlinear" 
+   submission-mode="individual">
+    <qti-assessment-section identifier="assessmentSection-1" title="The Full Examples in the QTI 3 Beginner's Guide" visible="true">
+      <qti-assessment-item-ref identifier="firstexample" href="items/firstexample.xml"/>
+      <qti-assessment-item-ref identifier="beginnersguide007" href="items/BG007.xml"/>
+      <qti-assessment-item-ref identifier="beginnersguide008" href="items/BG008.xml"/>
+      <qti-assessment-item-ref identifier="beginnersguide009" href="items/BG009.xml"/>
+      <qti-assessment-item-ref identifier="beginnersguide010" href="items/BG010.xml"/>
+      <qti-assessment-item-ref identifier="beginnersguide011" href="items/BG011.xml"/>
+    </qti-assessment-section>
+  </qti-test-part>
+</qti-assessment-test>

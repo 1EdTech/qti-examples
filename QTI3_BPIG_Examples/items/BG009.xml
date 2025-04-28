@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<qti-assessment-item  xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" 
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 
+ https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0p1_v1p0.xsd"
+ identifier="beginnersguide009"
+ title="BG Postcard example"
+ time-dependent="false" 
+ xml:lang="en-US">
+ <qti-response-declaration identifier="RESPONSE" base-type="string" cardinality="single" />
+ <qti-outcome-declaration base-type="float" cardinality="single" identifier="SCORE" />
+ <qti-item-body>
+  <p>Read this postcard from your English pen-friend, Sam.</p> 
+   <div>
+    <blockquote class="postcard">
+     <p>Here is a postcard of my town. Please send me<br/>
+       a postcard from your town. What size is your Town?<br/>
+       What is the nicest part of your town?<br/>
+       Where do you go in the evenings?</p>
+     <p>Sam</p>
+    </blockquote>
+   </div>
+   <qti-extended-text-interaction response-identifier="RESPONSE">
+    <qti-prompt>Write Sam a postcard. Answer the questions. Write 23–30 words</qti-prompt>
+   </qti-extended-text-interaction>
+ </qti-item-body>
+</qti-assessment-item>

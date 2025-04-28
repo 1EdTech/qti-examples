@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<qti-assessment-item
+xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 
+https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0p1_v1p0.xsd"
+ identifier="beginnersguide007"
+ title="BG true false example "
+ time-dependent="false" 
+ xml:lang="en-US">
+ <qti-response-declaration base-type="identifier" cardinality="single" identifier="RESPONSE">
+  <qti-correct-response>
+   <qti-value>true</qti-value>
+  </qti-correct-response>
+ </qti-response-declaration>
+ <qti-outcome-declaration base-type="float" cardinality="single" identifier="SCORE">
+  <qti-default-value>
+   <qti-value>1</qti-value>
+  </qti-default-value>
+ </qti-outcome-declaration>
+ <qti-item-body>
+  <p>This is a True/False question?</p>
+  <qti-choice-interaction max-choices="1" response-identifier="RESPONSE">
+    <qti-simple-choice identifier="true">True</qti-simple-choice>
+    <qti-simple-choice identifier="false">False</qti-simple-choice>
+  </qti-choice-interaction>
+ </qti-item-body>
+ <qti-response-processing template="https://purl.imsglobal.org/spec/qti/v3p0/rptemplates/match_correct"/>
+</qti-assessment-item>

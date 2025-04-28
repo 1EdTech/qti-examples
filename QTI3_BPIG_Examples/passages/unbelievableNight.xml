@@ -1,0 +1,33 @@
+<qti-assessment-stimulus xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 
+https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0p1_v1p0.xsd"
+  identifier="Stimulus1" title="An Unbelievable Night" xml:lang="en">
+  <qti-stylesheet href="stylesheets/unbelievable_night.css" type="text/css" />
+  <qti-stimulus-body>
+    <!-- Use this div  to constrain the styles in the injected stylesheet and
+         avoid style collisions in the delivery platform. -->
+    <div class="qti-shared-stimulus-wrapper">
+      <div>
+        <img height="210" width="400"
+             alt="Picture of a door opening to a hallway. A person's shadow is cast on the
+             door and hallway." src="images/exemplarSection01_title.png"/>
+      </div>
+      <h2 class="passage-title">An Unbelievable Night</h2>
+      <p class="author-line">by Franz Hohler</p>
+      <p><span data-catalog-idref="et1234">Anina</span> was ten years old,
+        so even half asleep she could find her way from her room to the bathroom.
+        The door to her room was usually open a crack, and the nightlight in the hallway
+        made it light enough to get to the bathroom past the telephone stand.
+      </p>
+      <!-- Note that this is a portion of the full text -->
+    </div> <!-- /shared-stimulus-wrapper -->
+  </qti-stimulus-body>
+    <qti-catalog-info>
+      <qti-catalog id="et1234">
+        <qti-card support="linguistic-guidance">
+          <qti-html-content>Anina is the name of a girl.</qti-html-content>
+        </qti-card>
+      </qti-catalog>
+    </qti-catalog-info>
+  </qti-assessment-stimulus>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0
+    https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0p1_v1p0.xsd" 
+   identifier="essay"  title="Write an essay" 
+   adaptive="false" time-dependent="false" xml:lang="en-US">
+  <qti-response-declaration identifier="RESPONSE" cardinality="single" base-type="string"/>
+  <qti-outcome-declaration identifier="SCORE" cardinality="single" base-type="float"  external-scored="human"/>
+  <qti-item-body>
+     <p class="stem">
+        In the classroom, we discovered Martin Luther King Jr. and his devotion.
+     </p>
+     <qti-extended-text-interaction response-identifier="RESPONSE">
+        <qti-prompt>Write an abstract about the life of this historical figure.</qti-prompt>
+     </qti-extended-text-interaction>
+  </qti-item-body>
+</qti-assessment-item>

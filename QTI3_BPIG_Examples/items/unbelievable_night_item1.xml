@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qti-assessment-item 
+  xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" 
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+  xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 
+  https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0p1_v1p0.xsd"
+  adaptive="false"  time-dependent="false" 
+  identifier="unbelievable-night-item1" title="Essay on Anina calling the flamingos">
+  <qti-response-declaration base-type="string" cardinality="single" identifier="RESPONSE" />
+  <qti-outcome-declaration base-type="float" cardinality="single" identifier="SCORE"/>
+
+  <qti-assessment-stimulus-ref identifier="Stimulus1" href="../passages/unbelievableNight.xml" title="An Unbelievable Night" />
+
+  <qti-item-body>
+    <p>Read the passage "The Unbelievable Night" before answering the following question</p>
+    <qti-extended-text-interaction expected-length="300" format="plain" response-identifier="RESPONSE">
+      <qti-prompt><p>Why did Anina call the flamingos?</p></qti-prompt>
+    </qti-extended-text-interaction>
+  </qti-item-body>
+</qti-assessment-item>

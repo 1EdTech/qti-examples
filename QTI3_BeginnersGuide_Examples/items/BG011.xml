@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<qti-assessment-item 
+ xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" 
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 
+ 	https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0p1_v1p0.xsd"
+ identifier="beginnersguide011"
+ title="BG media example"
+ time-dependent="false" 
+ xml:lang="en-US">
+ <qti-response-declaration identifier="RESPONSE" base-type="string" cardinality="single" />
+ <qti-outcome-declaration base-type="float" cardinality="single" identifier="SCORE" />
+ <qti-item-body>
+  <div><img src="resources/crows.jpg" alt="Picture of crows roosting in a tree" height="215" width="320"/></div>
+  <p>Crows play an important part of the ecosystem in Corvusville, Pennsylvania.</p>
+  <p>Play this short video where a Park Ranger discusses some of the important contributions 
+    that crows make to the local ecosystem.</p>
+  <video width="320" height="240" controls="controls">
+   <source src="resources/crow_movie.mp4" type="video/mp4" />
+   <source src="resources/crow_movie.ogg" type="video/ogg" />
+   <track src="resources/subtitles_en.vtt" kind="subtitles" srclang="en" />
+  </video>
+  <p>Based on what you learned from the Ranger in the video, how do you think some kind of wild animal plays an 
+    important part of your local environment? Use examples to support your ideas. Write at least 50 words 
+    about your animal.</p>
+  <qti-extended-text-interaction response-identifier="RESPONSE" />
+ </qti-item-body>
+</qti-assessment-item>

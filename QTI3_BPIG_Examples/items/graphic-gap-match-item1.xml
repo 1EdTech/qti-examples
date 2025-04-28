@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<qti-assessment-item 
+  xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" 
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+  xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 
+  https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0p1_v1p0.xsd"
+  identifier="graphic-gap-match-item1" title="Q8 GGM Images - Airport Tags" 
+  adaptive="false" time-dependent="false" xml:lang="en-US" >
+    <qti-response-declaration identifier="RESPONSE" cardinality="multiple" base-type="directedPair">
+        <qti-correct-response>
+          <qti-value>GLA A</qti-value>
+          <qti-value>EDI B</qti-value>
+          <qti-value>MAN C</qti-value>
+        </qti-correct-response>
+        <qti-mapping default-value="-1" lower-bound="0">
+          <qti-map-entry map-key="GLA A" mapped-value="1"/>
+          <qti-map-entry map-key="EDI B" mapped-value="1"/>
+          <qti-map-entry map-key="MAN C" mapped-value="1"/>
+        </qti-mapping>
+    </qti-response-declaration>
+    <qti-outcome-declaration identifier="SCORE" cardinality="single" base-type="float"/>
+    <qti-item-body>
+        <p>The International Air Transport Association assigns three-letter codes 
+        to identify airports worldwide. For example, London Heathrow has code LHR.</p>
+        <qti-graphic-gap-match-interaction max-associations="0" response-identifier="RESPONSE" 
+         class="qti-choices-left" >
+          <qti-prompt>
+            <p>Some of the labels on the following diagram are missing: can you identify the correct 
+             three-letter codes for the unlabelled airports?</p>
+          </qti-prompt>
+          <img src="images/ukairtags2024.png" width="305" height="390" 
+          alt="Outline map of the United Kingdom" />
+          <qti-gap-img identifier="CBG" match-max="1">
+            <img src="images/cbg.png" width="53" height="29" alt="The initials CBG" />
+          </qti-gap-img>
+          <qti-gap-img identifier="EBG" match-max="1">
+            <img src="images/ebg.png" width="53" height="29" alt="The initials EBG" />
+          </qti-gap-img>
+          <qti-gap-img identifier="EDI" match-max="1">
+            <img src="images/edi.png" width="53" height="29" alt="The initials EDI" />
+          </qti-gap-img>
+          <qti-gap-img identifier="GLA" match-max="1">
+            <img src="images/gla.png" width="53" height="29" alt="The initials GLA" />
+          </qti-gap-img>
+          <qti-gap-img identifier="MAN" match-max="1">
+            <img src="images/man.png" width="53" height="29" alt="The initials MAN" />
+          </qti-gap-img>
+          <qti-gap-img identifier="MCH" match-max="1">
+            <img src="images/mch.png" width="53" height="29" alt="The initials MCH" />
+          </qti-gap-img>
+          <qti-associable-hotspot identifier="A" match-max="1" shape="rect" coords="11,122,64,151" />
+          <qti-associable-hotspot identifier="B" match-max="1" shape="rect" coords="187,105,240,134" />
+          <qti-associable-hotspot identifier="C" match-max="1" shape="rect" coords="91,206,144,235" />
+        </qti-graphic-gap-match-interaction>
+    </qti-item-body>
+    <qti-response-processing 
+    template="https://purl.imsglobal.org/spec/qti/v3p0/rptemplates/map_response.xml"/>
+</qti-assessment-item>

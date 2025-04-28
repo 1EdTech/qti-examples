@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0
+https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0p1_v1p0.xsd"
+identifier="QTI3-custom-stylesheet" title="Custom Stylesheet" 
+time-dependent="false" xml:lang="en-US">
+  <qti-response-declaration base-type="identifier" cardinality="single" identifier="RESPONSE1">
+      <qti-correct-response>
+        <qti-value>Y</qti-value>
+      </qti-correct-response>
+    </qti-response-declaration>
+  <qti-response-declaration base-type="identifier" cardinality="single" identifier="RESPONSE">
+      <qti-correct-response>
+        <qti-value>Y</qti-value>
+      </qti-correct-response>
+    </qti-response-declaration>
+  <qti-outcome-declaration base-type="float" cardinality="single" identifier="SCORE"/>
+  <qti-stylesheet href="samples/Quizzco-Custom-Styles.css" type="text/css"/>
+  <qti-item-body>
+   <div id="Quizzco__item123" class="qti-layout-row">
+    <div class="qti-layout-col7">
+     <p class="Quizzco__item__prompt">
+      Identify the missing word in this famous quote from Shakespeare's Richard III.</p>
+       <blockquote class="Quizzco__item__passage">
+        <p>Now is the winter of our discontent<br/>
+        Made glorious summer by this sun of 
+        <qti-inline-choice-interaction response-identifier="RESPONSE" shuffle="false">
+          <qti-inline-choice identifier="G">Gloucester</qti-inline-choice>
+          <qti-inline-choice identifier="L">Lancaster</qti-inline-choice>
+          <qti-inline-choice identifier="Y">York</qti-inline-choice>
+        </qti-inline-choice-interaction>;
+        <br/>And all the clouds that lour'd upon our house
+        <br/>In the deep bosom of the ocean buried.</p>
+        </blockquote>
+      
+       </div>
+   </div>
+     </qti-item-body>
+     <qti-response-processing 
+   template="https://purl.imsglobal.org/spec/qti/v3p0/rptemplates/match_correct.xml"/>
+   </qti-assessment-item>

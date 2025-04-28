@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<qti-assessment-item 
+xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 
+https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0p1_v1p0.xsd"
+identifier="drawing-interaction-1" title="Draw an Angle" 
+adaptive="false" time-dependent="false" xml:lang="en-US" >
+  <qti-response-declaration identifier="RESPONSE" cardinality="single" base-type="file" />
+  <qti-outcome-declaration identifier="SCORE" cardinality="single" base-type="float"/>
+ <qti-item-body>
+    <qti-drawing-interaction response-identifier="RESPONSE">
+      <qti-prompt>
+        <p>Use the compass provided to bisect the angle <em>PQR</em> in the figure below.</p>
+      </qti-prompt>
+      <picture>
+        <source srcset="images/anglePQR.svg" media="(min-width: 600px)" type="image/svg" />
+        <img src="images/anglePQR_HiRes.jpg" alt="drawing of angle PQR where point P connects with 
+        point Q and point Q connects to point R and length of PQ equals the length of QR" 
+        width="322" height="260" />
+      </picture>
+    </qti-drawing-interaction>
+  </qti-item-body>
+</qti-assessment-item>

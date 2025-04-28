@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+  xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 
+  https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0p1_v1p0.xsd" 
+  identifier="example-graphic-assoc-1alt" title="Alternative Graphic Associate Example" 
+  time-dependent="false" xml:lang="en-US">
+    <qti-response-declaration identifier="RESPONSE" cardinality="multiple" base-type="pair">
+        <qti-correct-response>
+            <qti-value>C B</qti-value>
+            <qti-value>C D</qti-value>
+        </qti-correct-response>
+        <qti-mapping lower-bound="0" default-value="0">
+            <qti-map-entry map-key="A B" mapped-value="-1" />
+            <qti-map-entry map-key="A C" mapped-value="-1" />
+            <qti-map-entry map-key="A D" mapped-value="-1" />
+            <qti-map-entry map-key="B D" mapped-value="-1" />
+            <qti-map-entry map-key="B C" mapped-value="1" />
+            <qti-map-entry map-key="C D" mapped-value="1" />
+        </qti-mapping>
+    </qti-response-declaration>
+    <qti-outcome-declaration identifier="SCORE" cardinality="single" base-type="float" />
+    <qti-item-body>
+        <p>
+        Frizz, a new low cost airline, already operates a service
+        connecting Manchester and Edinburgh but has recently opened two
+        new routes: a service between London and Edinburgh and one
+        between London and Manchester.
+        </p>
+        <qti-graphic-associate-interaction response-identifier="RESPONSE" max-associations="3">
+            <qti-prompt>
+          Mark the airline's new routes on the airport map:
+            </qti-prompt>
+
+            <picture>
+                <source srcset="images/ukair.svg" type="image/svg"/>
+                <img src="images/ukair.png" alt="Map of United Kingdom airports" width="206" height="280" />
+            </picture>
+
+            <qti-associable-hotspot shape="circle" coords="78,102,10" identifier="A" match-max="3"/>
+            <qti-associable-hotspot shape="circle" coords="117,171,10" identifier="B" match-max="3"/>
+            <qti-associable-hotspot shape="circle" coords="166,227,10" identifier="C" match-max="3"/>
+            <qti-associable-hotspot shape="circle" coords="100,102,10" identifier="D" match-max="3"/>
+        </qti-graphic-associate-interaction>
+        <p>Drag the route markers by their ends to connect the airports. </p>
+    </qti-item-body>
+    <qti-response-processing template="https://purl.imsglobal.org/spec/qti/v3p0/rptemplates/map_response.xml" />
+</qti-assessment-item>

@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest xmlns="http://www.imsglobal.org/xsd/qti/qtiv3p0/imscp_v1p1" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.imsglobal.org/xsd/qti/qtiv3p0/imscp_v1p1 
+https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqtiv3p0_imscpv1p2_v1p0.xsd"
+identifier="BPIG_examples" > 
+ <metadata> 
+   <schema>QTI Package</schema> 
+   <schemaversion>3.0.1</schemaversion> 
+ </metadata> 
+ <organizations/> 
+ <resources>
+    <!-- Section 2 Items -->
+  <resource identifier="math" type="imsqti_item_xmlv3p0" href="items/MathML.xml"> 
+      <file href="items/MathML.xml"/>
+  </resource>
+  <resource identifier="data-attribute-example" type="imsqti_item_xmlv3p0" href="items/data_dash.xml"> 
+      <file href="items/data_dash.xml"/>
+  </resource>
+  <resource identifier="choice_multiple_rtl_he" type="imsqti_item_xmlv3p0" href="items/RTL_Hebrew.xml"> 
+      <file href="items/RTL_Hebrew.xml"/>
+  </resource>
+  <resource identifier="order_rtl_he" type="imsqti_item_xmlv3p0" href="items/Order_RTL_Hebrew.xml"> 
+      <file href="items/Order_RTL_Hebrew.xml"/>
+  </resource>
+  <resource identifier="choice_ruby" type="imsqti_item_xmlv3p0" href="items/ruby_default.xml"> 
+      <file href="items/ruby_default.xml"/>
+  </resource>
+  <resource identifier="choice_ruby_i23n" type="imsqti_item_xmlv3p0" href="items/ruby_i23n.xml"> 
+      <file href="items/ruby_i23n.xml"/>
+  </resource>
+<!--Section 3.1 items -->
+  <resource identifier="beginnersguide007" type="imsqti_item_xmlv3p0" href="items/BG007.xml"> 
+    <file href="items/BG007.xml"/>
+ </resource>
+<!--Section 3.2 items-->
+<resource identifier="QTI3multiplechoice2" type="imsqti_item_xmlv3p0" href="items/QTI3multiplechoice2.xml"> 
+    <file href="items/QTI3multiplechoice2.xml"/>
+</resource>
+<resource identifier="beginnersguide010" type="imsqti_item_xmlv3p0" href="items/BG010.xml"> 
+    <file href="items/BG010.xml"/>
+</resource>
+<resource identifier="beginnersguide009" type="imsqti_item_xmlv3p0" href="items/BG009.xml"> 
+    <file href="items/BG009.xml"/>
+</resource>
+<resource identifier="gap-match-example-1" type="imsqti_item_xmlv3p0" href="items/gap-match-example-1.xml"> 
+    <file href="items/gap-match-example-1.xml"/>
+</resource>
+<resource identifier="QTI3-hotspot" type="imsqti_item_xmlv3p0" href="items/QTI3-hotspot.xml"> 
+    <file href="items/QTI3-hotspot.xml"/>
+    <dependency identifierref="map_cape_cod" />
+</resource>
+<resource identifier="hot-text-example-1" type="imsqti_item_xmlv3p0" href="items/hot-text-example-1.xml"> 
+    <file href="items/hot-text-example-1.xml"/>
+</resource>
+<resource identifier="QTI3-inline-choice" type="imsqti_item_xmlv3p0" href="items/QTI3-inline-choice.xml"> 
+    <file href="items/QTI3-inline-choice.xml"/>
+</resource>
+<resource identifier="QTI3-match" type="imsqti_item_xmlv3p0" href="items/QTI3-match.xml"> 
+    <file href="items/QTI3-match.xml"/>
+</resource>
+<resource identifier="QTI3-order" type="imsqti_item_xmlv3p0" href="items/QTI3-order.xml"> 
+    <file href="items/QTI3-order.xml"/>
+</resource>
+<resource identifier="QTI3-graphic-order" type="imsqti_item_xmlv3p0" href="items/QTI3-graphic-order.xml"> 
+    <file href="items/QTI3-graphic-order.xml"/>
+    <dependency identifierref="ukair_png" />
+</resource>
+<resource identifier="QTI3-associate" type="imsqti_item_xmlv3p0" href="items/QTI3-associate.xml"> 
+    <file href="items/QTI3-associate.xml"/>
+</resource>
+<resource identifier="example-graphic-assoc-1" type="imsqti_item_xmlv3p0" href="items/example-graphic-assoc-1.xml"> 
+    <file href="items/example-graphic-assoc-1.xml"/>
+    <dependency identifierref="ukair_svg" />
+</resource>
+<resource identifier="example-graphic-assoc-1alt" type="imsqti_item_xmlv3p0" href="items/example-graphic-assoc-1alt.xml"> 
+    <file href="items/example-graphic-assoc-1alt.xml"/>
+    <dependency identifierref="ukair_svg" />
+    <dependency identifierref="ukair_png" />
+</resource>
+<resource identifier="graphic-gap-match-item1" type="imsqti_item_xmlv3p0" href="items/graphic-gap-match-item1.xml"> 
+    <file href="items/graphic-gap-match-item1.xml"/>
+    <dependency identifierref="ukairtags2024" />
+    <dependency identifierref="cbg" />
+    <dependency identifierref="ebg" />
+    <dependency identifierref="edi" />
+    <dependency identifierref="gla" />
+    <dependency identifierref="man" />
+    <dependency identifierref="mch" />
+</resource>
+<resource identifier="media-example-1" type="imsqti_item_xmlv3p0" href="items/media-example-1.xml"> 
+    <file href="items/media-example-1.xml"/>
+    <dependency identifierref="bubble_ogv" />
+    <dependency identifierref="bubble_mp4" />
+</resource>
+<resource identifier="position-object-1" type="imsqti_item_xmlv3p0" href="items/position-object-1.xml"> 
+    <file href="items/position-object-1.xml"/>
+    <dependency identifierref="uk_svg" />
+    <dependency identifierref="airplane_png" />
+</resource>
+<resource identifier="select-point-item_1" type="imsqti_item_xmlv3p0" href="items/select-point-item_1.xml"> 
+    <file href="items/select-point-item_1.xml"/>
+    <dependency identifierref="uk_green" />
+</resource>
+<resource identifier="slider-1" type="imsqti_item_xmlv3p0" href="items/slider-1.xml"> 
+    <file href="items/slider-1.xml"/>
+</resource>
+<resource identifier="upload-interaction" type="imsqti_item_xmlv3p0" href="items/upload-interaction.xml"> 
+    <file href="items/upload-interaction.xml"/>
+</resource>
+<resource identifier="drawing-interaction-1" type="imsqti_item_xmlv3p0" href="items/drawing-interaction-1.xml"> 
+    <file href="items/drawing-interaction-1.xml"/>
+    <dependency identifierref="anglePQR_HiRes" />
+    <dependency identifierref="anglePQR" />
+</resource>
+<resource identifier="end-attempt-example-1" type="imsqti_item_xmlv3p0" href="items/end-attempt-example-1.xml"> 
+    <file href="items/end-attempt-example-1.xml"/>
+</resource>
+<!-- Section 3.3 items -->
+<resource identifier="shakespeare_biography" type="imsqti_item_xmlv3p0" href="items/shakespeare_biography.xml"> 
+    <file href="items/shakespeare_biography.xml"/>
+</resource>
+    <!-- Section 3.4 -->
+<resource identifier="essay" type="imsqti_item_xmlv3p0" href="items/essay.xml"> 
+    <file href="items/essay.xml"/>
+</resource>
+<!-- Section 3.6 -->
+<resource identifier="QTI3-custom-stylesheet" type="imsqti_item_xmlv3p0" href="items/QTI3-custom-stylesheet.xml"> 
+    <file href="items/QTI3-custom-stylesheet.xml"/>
+    <dependency identifierref="quizco_custom" />
+</resource>
+<!-- Section 3.7 -->
+<resource identifier="Example03-feedbackBlock-solution" type="imsqti_item_xmlv3p0" href="items/Example03-feedbackBlock-solution.xml"> 
+    <file href="items/Example03-feedbackBlock-solution.xml"/>
+</resource>
+<resource identifier="feedbackBlock-solution-random" type="imsqti_item_xmlv3p0" href="items/feedbackBlock-solution-random.xml"> 
+    <file href="items/feedbackBlock-solution-random.xml"/>
+</resource>
+<resource identifier="Example04-feedbackBlock-templateBlock" type="imsqti_item_xmlv3p0" href="items/Example04-feedbackBlock-templateBlock.xml"> 
+    <file href="items/Example04-feedbackBlock-templateBlock.xml"/>
+</resource> 
+<resource identifier="Example05-feedbackBlock-adaptive" type="imsqti_item_xmlv3p0" href="items/Example05-feedbackBlock-adaptive.xml"> 
+    <file href="items/Example05-feedbackBlock-adaptive.xml"/>
+</resource>
+<resource identifier="Example01-modalFeedback" type="imsqti_item_xmlv3p0" href="items/Example01-modalFeedback.xml"> 
+    <file href="items/Example01-modalFeedback.xml"/>
+</resource>
+<resource identifier="Example02-feedbackInline" type="imsqti_item_xmlv3p0" href="items/Example02-feedbackInline.xml"> 
+    <file href="items/Example02-feedbackInline.xml"/>
+</resource>
+<resource identifier="template_digging" type="imsqti_item_xmlv3p0" href="items/template_digging.xml"> 
+    <file href="items/template_digging.xml"/>
+</resource>
+<resource identifier="template_image" type="imsqti_item_xmlv3p0" href="items/template_image.xml"> 
+    <file href="items/template_image.xml"/>
+    <dependency identifierref="plane" />
+    <dependency identifierref="train" />
+    <dependency identifierref="bus" />
+</resource>
+<resource identifier="adaptiveTemplate" type="imsqti_item_xmlv3p0" href="items/adaptiveTemplate.xml"> 
+    <file href="items/adaptiveTemplate.xml"/>
+    <dependency identifierref="open_goat" />
+    <dependency identifierref="green_door" />
+    <dependency identifierref="open_car" />
+    <dependency identifierref="red_door" />
+    <dependency identifierref="blue_door" />
+</resource>
+<resource identifier="mc_calc3" type="imsqti_item_xmlv3p0" href="items/mc_calc3.xml"> 
+    <file href="items/mc_calc3.xml"/>
+</resource>
+<resource identifier="stat2" type="imsqti_item_xmlv3p0" href="items/stat2.xml"> 
+    <file href="items/stat2.xml"/>
+</resource>
+<resource identifier="mc_calc5" type="imsqti_item_xmlv3p0" href="items/mc_calc5.xml"> 
+    <file href="items/mc_calc5.xml"/>
+</resource>
+<resource identifier="rubric_block" type="imsqti_item_xmlv3p0" href="items/rubric_block.xml"> 
+    <file href="items/rubric_block.xml"/>
+    <dependency identifierref="choice_instructions" />
+    <dependency identifierref="ss_choice_directions" />
+    <dependency identifierref="scoring_rubric" />
+</resource>
+<!-- passage -->
+        <resource identifier="Stimulus1" type="imsqti_test_xmlv3p0" href="passages/unbelievableNight.xml">
+            <file href="passages/unbelievableNight.xml"/>
+            <dependency identifierref="unbelievable_title" />
+            <dependency identifierref="unbelievable_css" />
+        </resource>  
+        <resource identifier="unbelievable-night-item1" type="imsqti_item_xmlv3p0" href="items/unbelievable_night_item1.xml"> 
+            <file href="items/unbelievable_night_item1.xml"/> 
+            <dependency identifierref="Stimulus1"/> 
+        </resource> 
+        <resource identifier="unbelievable-night-item2" type="imsqti_item_xmlv3p0" href="items/unbelievable_night_item2.xml"> 
+            <file href="items/unbelievable_night_item2.xml"/> 
+            <dependency identifierref="Stimulus1"/> 
+        </resource> 
+        <resource identifier="unbelievable-night-item3" type="imsqti_item_xmlv3p0" href="items/unbelievable_night_item3.xml">
+            <file href="items/unbelievable_night_item3.xml"/> 
+            <dependency identifierref="Stimulus1"/> 
+        </resource> 
+        <resource identifier="unbelievable_title" type="webcontent" href="passages/images/exemplarSection01_title.png">
+            <file href="passages/images/exemplarSection01_title.png"/>
+        </resource>
+         <resource identifier="unbelievable_css" type="css3" href="passages/stylesheets/unbelievable_night.css">
+            <file href="passages/stylesheets/unbelievable_night.css"/>
+        </resource>
+<!-- Catalogs -->
+<resource identifier="ReferencingCatalogContent" type="imsqti_item_xmlv3p0" href="items/ReferencingCatalogContent.xml"> 
+    <file href="items/ReferencingCatalogContent.xml"/>
+</resource>
+<resource identifier="CatalogWithMultipleSupports" type="imsqti_item_xmlv3p0" href="items/CatalogWithMultipleSupports.xml"> 
+    <file href="items/CatalogWithMultipleSupports.xml"/>
+</resource>
+<resource identifier="MultipleCatalogs" type="imsqti_item_xmlv3p0" href="items/MultipleCatalogs.xml"> 
+    <file href="items/MultipleCatalogs.xml"/>
+    <dependency identifierref="asl_item123" />
+</resource>
+<resource identifier="CatalogsAcrossContentNodes" type="imsqti_item_xmlv3p0" href="items/CatalogsAcrossContentNodes.xml"> 
+    <file href="items/CatalogsAcrossContentNodes.xml"/>
+</resource>
+<!-- Context Declarations - - excluded because there is a bug that will be fixed in version 3.0.2 - - 
+<resource identifier="contexts_for_different_program_scoring" type="imsqti_item_xmlv3p0" href="items/contexts_for_different_program_scoring.xml"> 
+    <file href="items/contexts_for_different_program_scoring.xml"/>
+</resource> 
+-->
+<!-- Section 3.8 -->
+<resource identifier="qti3-choice-aria-mathml-catalog" type="imsqti_item_xmlv3p0" href="items/qti3-choice-aria-mathml-catalog.xml"> 
+    <file href="items/qti3-choice-aria-mathml-catalog.xml"/>
+    <dependency identifierref="survey" />
+</resource>
+<resource identifier="adaptive_mh1" type="imsqti_item_xmlv3p0" href="items/adaptive_mh1.xml"> 
+    <file href="items/adaptive_mh1.xml"/>
+    <dependency identifierref="open_goat" />
+    <dependency identifierref="green_door" />
+    <dependency identifierref="open_car" />
+    <dependency identifierref="red_door" />
+    <dependency identifierref="blue_door" />
+</resource>
+<!-- the files that are the dependencies of the items -->
+  <resource identifier="ss_choice_directions" type="webcontent" href="items/asl/ss_choice_directions.m4v"> 
+    <file href="items/asl/ss_choice_directions.m4v"/>
+</resource>
+<resource identifier="choice_instructions" type="webcontent" href="items/styles/choice-instructions.css"> 
+    <file href="items/styles/choice-instructions.css"/>
+</resource>
+<resource identifier="scoring_rubric" type="webcontent" href="items/styles/scoring-rubric.css"> 
+    <file href="items/styles/scoring-rubric.css"/>
+</resource>
+  <resource identifier="map_cape_cod" type="webcontent" href="items/images/map_cape_cod.svg"> 
+    <file href="items/images/map_cape_cod.svg"/>
+ </resource>
+<resource identifier="ukair_svg" type="webcontent" href="items/images/ukair.svg"> 
+    <file href="items/images/ukair.svg"/>
+</resource>
+<resource identifier="ukair_png" type="webcontent" href="items/images/ukair.png"> 
+    <file href="items/images/ukair.png"/>
+</resource>
+<resource identifier="ukairtags2024" type="webcontent" href="items/images/ukairtags2024.png"> 
+    <file href="items/images/ukairtags2024.png"/>
+</resource>
+<resource identifier="cbg" type="webcontent" href="items/images/cbg.png"> 
+    <file href="items/images/cbg.png"/>
+</resource>
+<resource identifier="ebg" type="webcontent" href="items/images/ebg.png"> 
+    <file href="items/images/ebg.png"/>
+</resource>
+<resource identifier="edi" type="webcontent" href="items/images/edi.png"> 
+    <file href="items/images/edi.png"/>
+</resource>
+<resource identifier="gla" type="webcontent" href="items/images/gla.png"> 
+    <file href="items/images/gla.png"/>
+</resource>
+<resource identifier="man" type="webcontent" href="items/images/man.png"> 
+    <file href="items/images/man.png"/>
+</resource>
+<resource identifier="mch" type="webcontent" href="items/images/mch.png"> 
+    <file href="items/images/mch.png"/>
+</resource>
+<resource identifier="bubble_ogv" type="webcontent" href="items/images/bubble.ogv"> 
+    <file href="items/images/bubble.ogv"/>
+</resource>
+<resource identifier="bubble_mp4" type="webcontent" href="items/images/bubble.mp4"> 
+    <file href="items/images/bubble.mp4"/>
+</resource>
+<resource identifier="uk_svg" type="webcontent" href="items/images/uk.svg"> 
+    <file href="items/images/uk.svg"/>
+</resource>
+<resource identifier="airplane_png" type="webcontent" href="items/images/airplane.png"> 
+    <file href="items/images/airplane.png"/>
+</resource>
+<resource identifier="uk_green" type="webcontent" href="items/images/uk_green.png"> 
+    <file href="items/images/uk_green.png"/>
+</resource>
+<resource identifier="quizco_custom" type="webcontent" href="items/samples/Quizzco-Custom-Styles.css"> 
+    <file href="items/samples/Quizzco-Custom-Styles.css"/>
+</resource>
+<resource identifier="anglePQR" type="webcontent" href="items/images/anglePQR.svg"> 
+    <file href="items/images/anglePQR.svg"/>
+</resource>
+<resource identifier="anglePQR_HiRes" type="webcontent" href="items/images/anglePQR_HiRes.jpg"> 
+    <file href="items/images/anglePQR_HiRes.jpg"/>
+</resource>
+<resource identifier="survey" type="webcontent" href="items/images/survey.jpg"> 
+    <file href="items/images/survey.jpg"/>
+</resource>
+<resource identifier="open_goat" type="webcontent" href="items/images/open_goat.png"> 
+    <file href="items/images/open_goat.png"/>
+</resource>
+<resource identifier="open_car" type="webcontent" href="items/images/open_car.png"> 
+    <file href="items/images/open_car.png"/>
+</resource>
+<resource identifier="blue_door" type="webcontent" href="items/images/blue_door.png"> 
+    <file href="items/images/blue_door.png"/>
+</resource>
+<resource identifier="red_door" type="webcontent" href="items/images/red_door.png"> 
+    <file href="items/images/red_door.png"/>
+</resource>
+<resource identifier="green_door" type="webcontent" href="items/images/green_door.png"> 
+    <file href="items/images/green_door.png"/>
+</resource>
+<resource identifier="plane" type="webcontent" href="items/images/plane.png"> 
+    <file href="items/images/plane.png"/>
+</resource>
+<resource identifier="train" type="webcontent" href="items/images/train.png"> 
+    <file href="items/images/train.png"/>
+</resource>
+<resource identifier="bus" type="webcontent" href="items/images/bus.png"> 
+    <file href="items/images/bus.png"/>
+</resource>
+<resource identifier="asl_item123" type="webcontent" href="items/asl/item123.mp4"> 
+    <file href="items/asl/item123.mp4"/>
+</resource>
+
+
+<!-- the test file -->
+  <resource identifier="BPIGtest" type="imsqti_test_xmlv3p0" href="BPIGtest.xml"> 
+     <file href="BPIGtest.xml"/>
+  </resource>
+
+ </resources>
+</manifest>
