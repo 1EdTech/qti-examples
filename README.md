@@ -25,7 +25,7 @@ License. See the [LICENSE](./LICENSE.md) file for details.
 
 ### Member Repositories
 
-[**qti-project-management**](https://github.com/IMSGlobal/QTI) = Project Boards and issues for the QTI Working Group, including QTI ancillary specifications. All technical proposals and their resolution should be managed here.
+[**qti-project-management**](https://github.com/1EdTech/qti-project-management) = Project Boards and issues for the QTI Working Group, including QTI ancillary specifications. All technical proposals and their resolution should be managed here.
 
 [**qti-conformance**](https://github.com/1EdTech/qti-conformance) = repo for all materials related to conformance and certification. Issues related to the process or materials should be posted here.
 
