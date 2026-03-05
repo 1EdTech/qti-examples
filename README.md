@@ -11,9 +11,7 @@ We welcome the posting of issues by non 1EdTech Consortium members (e.g., featur
 requests, bug reports, questions, etc.) but we *do not* accept contributions in the form of pull 
 requests from non-members. 
 
-## License
-This project is licensed under the terms of the 1EdTech Consortium Specification Document 
-License. See the [LICENSE](./LICENSE) file for details.
+------
 
 ## QTI Related Repos:
 
@@ -33,5 +31,10 @@ License. See the [LICENSE](./LICENSE) file for details.
 
 -----
 
+## License
+This project is licensed under the terms of the 1EdTech Consortium Specification Document 
+License. See the [LICENSE](https://github.com/1EdTech/qti-central/blob/main/LICENSE) file for details.
+
 ©2026 1EdTech Consortium, Inc. All Rights Reserved.
 Trademark Information - [http://www.1edtech.org/copyright.html](http://www.1edtech.org/copyright.html)
+
