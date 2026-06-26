@@ -19,11 +19,11 @@
         </div>
 
         <p>
-          <br/>qti-expected-length=6<br/>
-          patternmask=[0-9\.]+<br/>
-          data-patternmask-message=Maximum of 6 digits or a decimal point permitted<br/>
+          <br/>expected-length=6<br/>
+          pattern-mask="([0-9.]{0,6})"<br/>
+          data-patternmask-message="Maximum of 6 digits or decimal points permitted"<br/>
         </p>
-        <qti-extended-text-interaction class="qti-height-lines-3" patternMask="[0-9\.]+" data-patternmask-message="Maximum of 6 digits or a decimal point permitted" format="plain" expected-length="6" response-identifier="RESPONSE">
+        <qti-extended-text-interaction class="qti-height-lines-3" pattern-mask="([0-9.]{0,6})" data-patternmask-message="Maximum of 6 digits or decimal points permitted" format="plain" expected-length="6" response-identifier="RESPONSE">
           <qti-prompt>
             <p>
               <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>14</mn><mo class="sign">×</mo><mrow><mi>tan</mi><mo>⁡</mo><mfenced><mrow><mn>67</mn></mrow></mfenced></mrow></mrow></math> =

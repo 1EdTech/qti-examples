@@ -41,11 +41,11 @@
     <p>qti-input-width-20: <qti-text-entry-interaction class="qti-input-width-20" expected-length="15" response-identifier="RESPONSE8"/></p>
     <p>qti-input-width-72: <qti-text-entry-interaction class="qti-input-width-72" expected-length="15" response-identifier="RESPONSE9"/></p>
     <p>
-      qti-input-width-6, patternmask=[0-9.]+, data-patternmask-message:<br/>
+      qti-input-width-6, pattern-mask="([0-9.]{0,6})", data-patternmask-message="Maximum of 6 digits or decimal points permitted"<br/>
       <math xmlns="http://www.w3.org/1998/Math/MathML">
         <mrow> <mn>14</mn> <mo class="sign">×</mo> <mrow> <mi>tan</mi> <mo>⁡</mo> <mfenced> <mrow> <mn>67</mn> </mrow> </mfenced> </mrow>
         </mrow> 
-      </math> = <qti-text-entry-interaction class="qti-input-width-6" expected-length="6" pattern-mask="[0-9\.]+" data-patternmask-message="Maximum of 6 digits or a decimal point permitted" response-identifier="RESPONSE10"/>
+      </math> = <qti-text-entry-interaction class="qti-input-width-6" expected-length="6" pattern-mask="([0-9.]{0,6})" data-patternmask-message="Maximum of 6 digits or decimal points permitted" response-identifier="RESPONSE10"/>
     </p>   
   </qti-item-body>
 </qti-assessment-item>
