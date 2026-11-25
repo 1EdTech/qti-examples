@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0
+https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0p1_v1p0.xsd"
+identifier="likertPCI" title="PCI example" 
+time-dependent="false" xml:lang="en" >
+  <qti-response-declaration identifier="RESPONSE" cardinality="single" base-type="string"/>
+  <qti-outcome-declaration identifier="SCORE" cardinality="single" base-type="float"/>
+  <qti-item-body>
+    <div>
+      <p>How well do you think you have mastered the concepts
+         introduced in this module?</p>
+      <qti-portable-custom-interaction
+        response-identifier="RESPONSE"
+        module="exampleLikertScale"
+        custom-interaction-type-identifier=
+          "urn:fdc:example.com:202308:pci:likertScale"
+        data-label-min="Very Poorly"
+        data-label-max="Very Well" 
+        class="qti-orientation-horizontal">
+        <qti-interaction-markup/>
+      </qti-portable-custom-interaction>
+    </div>
+  </qti-item-body>
+</qti-assessment-item>
+
