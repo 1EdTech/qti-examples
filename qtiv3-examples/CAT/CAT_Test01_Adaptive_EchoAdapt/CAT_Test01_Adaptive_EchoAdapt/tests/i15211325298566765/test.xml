@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<assessmentTest 
+  xmlns="http://www.imsglobal.org/xsd/imsqti_v2p2" 
+  xmlns:ais="http://www.taotesting.com/xsd/ais_v1p0p0" 
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+  xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqti_v2p2 http://www.imsglobal.org/xsd/qti/qtiv2p2/imsqti_v2p2p1.xsd"
+  identifier="CAT_Test01_Adaptive_EchoAdapt" 
+  title="CAT Test01 Adaptive EchoAdapt" 
+  >
+  <!-- Only total score is relevant for this adaptive test -->
+  <outcomeDeclaration identifier="SCORE_TOTAL" cardinality="single" baseType="float"/>
+  <timeLimits allowLateSubmission="false"/>
+  <!-- This test contains a single testPart with three sections, of which only the second is adaptive -->
+  <testPart identifier="testPart-1" navigationMode="linear" submissionMode="individual">
+    <itemSessionControl maxAttempts="0" showFeedback="false" allowReview="true" showSolution="false" allowComment="false" allowSkipping="true" validateResponses="false"/>
+    <timeLimits allowLateSubmission="false"/>
+    <!-- The first secion contains only a single informational item and is linear and not adaptive -->
+    <assessmentSection identifier="assessmentSection-1" required="true" fixed="false" title="Section 1" visible="true" keepTogether="true">
+      <itemSessionControl maxAttempts="0" showFeedback="false" allowReview="true" showSolution="false" allowComment="false" allowSkipping="true" validateResponses="false"/>
+      <timeLimits allowLateSubmission="false"/>
+      <assessmentItemRef identifier="i15211309494372699" required="false" fixed="false" href="../../items/i15211309494372699/qti.xml">
+        <itemSessionControl maxAttempts="0" showFeedback="false" allowReview="true" showSolution="false" allowComment="false" allowSkipping="true" validateResponses="false"/>
+        <timeLimits allowLateSubmission="false"/>
+      </assessmentItemRef>
+    </assessmentSection>
+    <!-- The second secion is configured to be adaptive and contains 9 items to select from -->
+    <assessmentSection identifier="assessmentSection-2" required="false" fixed="false" title="Section 2" visible="false" keepTogether="true">
+      <!-- This is the start if the adaptive configuration, using a temporay namespace and referencing the IMS instance of the ACT EchoAdapt engine -->
+      <selection xmlns:ais="http://www.taotesting.com/xsd/ais_v1p0p0" select="1" withReplacement="false">
+        <ais:adaptiveItemSelection xmlns:ais="http://www.taotesting.com/xsd/ais_v1p0p0">
+          <ais:adaptiveEngineRef identifier="engine" href="https://echo-ims-cat-elb.echoadapt.com/cat/api/"/>
+          <ais:adaptiveSettingsRef identifier="settings" href="cat/assessmentSection-2_settings.data"/>
+          <ais:qtiUsagedataRef identifier="usagedata" href="cat/assessmentSection-2_usagedata.data"/>
+          <ais:qtiMetadataRef identifier="metadata" href="cat/assessmentSection-2_metadata.data"/>
+        </ais:adaptiveItemSelection>
+      </selection>
+      <!--<itemSessionControl maxAttempts="0" showFeedback="false" allowReview="true" showSolution="false" allowComment="false" allowSkipping="true" validateResponses="false"/>-->
+      <assessmentItemRef identifier="i15211305971467662" required="false" fixed="false" href="../../items/i15211305971467662/qti.xml" category="topica easy">
+        <itemSessionControl maxAttempts="0" showFeedback="false" allowReview="true" showSolution="false" allowComment="false" allowSkipping="true" validateResponses="false"/>
+      </assessmentItemRef>
+      <assessmentItemRef identifier="i15211315856879705" required="false" fixed="false" href="../../items/i15211315856879705/qti.xml" category="topica medium">
+        <itemSessionControl maxAttempts="0" showFeedback="false" allowReview="true" showSolution="false" allowComment="false" allowSkipping="true" validateResponses="false"/>
+      </assessmentItemRef>
+      <assessmentItemRef identifier="i15211315996386709" required="false" fixed="false" href="../../items/i15211315996386709/qti.xml" category="topica hard">
+        <itemSessionControl maxAttempts="0" showFeedback="false" allowReview="true" showSolution="false" allowComment="false" allowSkipping="true" validateResponses="false"/>
+      </assessmentItemRef>
+      <assessmentItemRef identifier="i15211316129302713" required="false" fixed="false" href="../../items/i15211316129302713/qti.xml" category="topicb easy">
+        <itemSessionControl maxAttempts="0" showFeedback="false" allowReview="true" showSolution="false" allowComment="false" allowSkipping="true" validateResponses="false"/>
+      </assessmentItemRef>
+      <assessmentItemRef identifier="i15211322604828744" required="false" fixed="false" href="../../items/i15211322604828744/qti.xml" category="topicb medium">
+        <itemSessionControl maxAttempts="0" showFeedback="false" allowReview="true" showSolution="false" allowComment="false" allowSkipping="true" validateResponses="false"/>
+      </assessmentItemRef>
+      <assessmentItemRef identifier="i15211323318070748" required="false" fixed="false" href="../../items/i15211323318070748/qti.xml" category="topicb hard">
+        <itemSessionControl maxAttempts="0" showFeedback="false" allowReview="true" showSolution="false" allowComment="false" allowSkipping="true" validateResponses="false"/>
+      </assessmentItemRef>
+      <assessmentItemRef identifier="i15211323413396752" required="false" fixed="false" href="../../items/i15211323413396752/qti.xml" category="topicc easy">
+        <itemSessionControl maxAttempts="0" showFeedback="false" allowReview="true" showSolution="false" allowComment="false" allowSkipping="true" validateResponses="false"/>
+      </assessmentItemRef>
+      <assessmentItemRef identifier="i15211323487769756" required="false" fixed="false" href="../../items/i15211323487769756/qti.xml" category="topicc medium">
+        <itemSessionControl maxAttempts="0" showFeedback="false" allowReview="true" showSolution="false" allowComment="false" allowSkipping="true" validateResponses="false"/>
+      </assessmentItemRef>
+      <assessmentItemRef identifier="i15211323542233760" required="false" fixed="false" href="../../items/i15211323542233760/qti.xml" category="topicc hard">
+        <itemSessionControl maxAttempts="0" showFeedback="false" allowReview="true" showSolution="false" allowComment="false" allowSkipping="true" validateResponses="false"/>
+      </assessmentItemRef>
+    </assessmentSection>
+    <!-- The third (linear, non-adaptive) secion contains only a single informational item to inform the student of the completion of the test -->
+    <assessmentSection identifier="assessmentSection-3" required="false" fixed="false" title="Section 3" visible="false" keepTogether="true">
+      <itemSessionControl maxAttempts="0" showFeedback="false" allowReview="true" showSolution="false" allowComment="false" allowSkipping="true" validateResponses="false"/>
+      <assessmentItemRef identifier="i15211309631889702" required="false" fixed="false" href="../../items/i15211309631889702/qti.xml">
+        <itemSessionControl maxAttempts="0" showFeedback="false" allowReview="true" showSolution="false" allowComment="false" allowSkipping="true" validateResponses="false"/>
+      </assessmentItemRef>
+    </assessmentSection>
+  </testPart>
+  <!-- Only total test score is computed -->
+  <outcomeProcessing>
+    <setOutcomeValue identifier="SCORE_TOTAL">
+      <sum>
+        <testVariables variableIdentifier="SCORE"/>
+      </sum>
+    </setOutcomeValue>
+  </outcomeProcessing>
+</assessmentTest>
