@@ -1,0 +1,94 @@
+{
+  "stopCondition": "minimumBankPercentage",
+  "stopBankPercentage": 0.8,
+  "stopAbility": 0,
+  "stopStandardError": 0,
+  "numberOfConsecutiveItems": 0,
+  "startStageLength": 3,
+  "minimumLength": 3,
+  "maximumLength": 9,
+  "nextItemsWhenStopConditionIsMet": false,
+  "itemList": [
+    {
+      "id": "i15211305971467662",
+      "maxScore": 1,
+      "curriculumTags": [
+        "topica"
+      ],
+      "weight": 1,
+      "difficulty": 0.2
+    },
+    {
+      "id": "i15211315856879705",
+      "maxScore": 1,
+      "curriculumTags": [
+        "topica"
+      ],
+      "weight": 1,
+      "difficulty": 0.5
+    },
+    {
+      "id": "i15211315996386709",
+      "maxScore": 1,
+      "curriculumTags": [
+        "topica"
+      ],
+      "weight": 1,
+      "difficulty": 0.8
+    },
+    {
+      "id": "i15211316129302713",
+      "maxScore": 1,
+      "curriculumTags": [
+        "topicb"
+      ],
+      "weight": 1,
+      "difficulty": 0.2
+    },
+    {
+      "id": "i15211322604828744",
+      "maxScore": 1,
+      "curriculumTags": [
+        "topicb"
+      ],
+      "weight": 1,
+      "difficulty": 0.5
+    },
+    {
+      "id": "i15211323318070748",
+      "maxScore": 1,
+      "curriculumTags": [
+        "topicb"
+      ],
+      "weight": 1,
+      "difficulty": 0.8
+    },
+    {
+      "id": "i15211323413396752",
+      "maxScore": 1,
+      "curriculumTags": [
+        "topicc"
+      ],
+      "weight": 1,
+      "difficulty": 0.2
+    },
+    {
+      "id": "i15211323487769756",
+      "maxScore": 1,
+      "curriculumTags": [
+        "topicc"
+      ],
+      "weight": 1,
+      "difficulty": 0.5
+    },
+    {
+      "id": "i15211323542233760",
+      "maxScore": 1,
+      "curriculumTags": [
+        "topica"
+      ],
+      "weight": 1,
+      "difficulty": 0.8
+    }
+  ]
+}

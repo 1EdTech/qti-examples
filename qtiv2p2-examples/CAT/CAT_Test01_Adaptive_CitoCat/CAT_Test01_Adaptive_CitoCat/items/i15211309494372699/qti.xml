@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<assessmentItem xmlns="http://www.imsglobal.org/xsd/imsqti_v2p2" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqti_v2p2 http://www.imsglobal.org/xsd/qti/qtiv2p2/imsqti_v2p2.xsd" identifier="i15211309494372699" title="CAT00" label="CAT00" xml:lang="en-US" adaptive="false" timeDependent="false" toolName="TAO" toolVersion="3.3.0-sprint70">
+  <stylesheet href="style/custom/tao-user-styles.css" type="text/css" media="all" title=""/>
+  <itemBody>
+    <div class="grid-row">
+      <div class="col-12">
+        <h1>Welcome to the CAT demo test</h1>
+        <p>This is <strong>CAT00</strong>: an introductional item, part of the first (non-adaptive section) of the test.</p>
+      </div>
+    </div>
+  </itemBody>
+  <responseProcessing/>
+</assessmentItem>

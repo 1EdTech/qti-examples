@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<manifest xmlns="http://www.imsglobal.org/xsd/imscp_v1p1" 
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+        xsi:schemaLocation="http://www.imsglobal.org/xsd/imscp_v1p1 http://www.imsglobal.org/xsd/qti/qtiv2p2/qtiv2p2_imscpv1p2_v1p0.xsd" 
+        identifier="QTI-TEST-MANIFEST-tao5aabb9c30ea141-46186366">
+    <metadata>
+        <schema>QTIv2.2 Package</schema>
+        <schemaversion>1.0.0</schemaversion>
+    </metadata>
+    <organizations/>
+    <resources>
+        <resource identifier="i15211309494372699" type="imsqti_item_xmlv2p2" href="items/i15211309494372699/qti.xml">
+                <file href="items/i15211309494372699/qti.xml"/>
+                <file href="items/i15211309494372699/style/custom/tao-user-styles.css"/>
+        </resource>
+        <resource identifier="i15211305971467662" type="imsqti_item_xmlv2p2" href="items/i15211305971467662/qti.xml">
+                <file href="items/i15211305971467662/qti.xml"/>
+        </resource>
+        <resource identifier="i15211315856879705" type="imsqti_item_xmlv2p2" href="items/i15211315856879705/qti.xml">
+                <file href="items/i15211315856879705/qti.xml"/>
+        </resource>
+        <resource identifier="i15211315996386709" type="imsqti_item_xmlv2p2" href="items/i15211315996386709/qti.xml">
+                <file href="items/i15211315996386709/qti.xml"/>
+        </resource>
+        <resource identifier="i15211316129302713" type="imsqti_item_xmlv2p2" href="items/i15211316129302713/qti.xml">
+                <file href="items/i15211316129302713/qti.xml"/>
+        </resource>
+        <resource identifier="i15211322604828744" type="imsqti_item_xmlv2p2" href="items/i15211322604828744/qti.xml">
+                <file href="items/i15211322604828744/qti.xml"/>
+                <file href="items/i15211322604828744/style/custom/tao-user-styles.css"/>
+        </resource>
+        <resource identifier="i15211323318070748" type="imsqti_item_xmlv2p2" href="items/i15211323318070748/qti.xml">
+                <file href="items/i15211323318070748/qti.xml"/>
+                <file href="items/i15211323318070748/style/custom/tao-user-styles.css"/>
+        </resource>
+        <resource identifier="i15211323413396752" type="imsqti_item_xmlv2p2" href="items/i15211323413396752/qti.xml">
+                <file href="items/i15211323413396752/qti.xml"/>
+                <file href="items/i15211323413396752/style/custom/tao-user-styles.css"/>
+        </resource>
+        <resource identifier="i15211323487769756" type="imsqti_item_xmlv2p2" href="items/i15211323487769756/qti.xml">
+                <file href="items/i15211323487769756/qti.xml"/>
+                <file href="items/i15211323487769756/style/custom/tao-user-styles.css"/>
+        </resource>
+        <resource identifier="i15211323542233760" type="imsqti_item_xmlv2p2" href="items/i15211323542233760/qti.xml">
+                <file href="items/i15211323542233760/qti.xml"/>
+                <file href="items/i15211323542233760/style/custom/tao-user-styles.css"/>
+        </resource>
+        <resource identifier="i15211309631889702" type="imsqti_item_xmlv2p2" href="items/i15211309631889702/qti.xml">
+                <file href="items/i15211309631889702/qti.xml"/>
+                <file href="items/i15211309631889702/style/custom/tao-user-styles.css"/>
+        </resource>
+	<resource identifier="i15211325298566765" type="imsqti_test_xmlv2p2" href="tests/i15211325298566765/test.xml">
+                <file href="tests/i15211325298566765/test.xml"/>
+                <file href="tests/i15211325298566765/cat/assessmentSection-2_metadata.data"/>
+                <file href="tests/i15211325298566765/cat/assessmentSection-2_settings.data"/>
+                <file href="tests/i15211325298566765/cat/assessmentSection-2_usagedata.data"/>
+                <dependency identifierref="i15211309494372699"/>
+                <dependency identifierref="i15211305971467662"/>
+                <dependency identifierref="i15211315856879705"/>
+                <dependency identifierref="i15211315996386709"/>
+                <dependency identifierref="i15211316129302713"/>
+                <dependency identifierref="i15211322604828744"/>
+                <dependency identifierref="i15211323318070748"/>
+                <dependency identifierref="i15211323413396752"/>
+                <dependency identifierref="i15211323487769756"/>
+                <dependency identifierref="i15211323542233760"/>
+                <dependency identifierref="i15211309631889702"/>
+        </resource>
+    </resources>
+</manifest>
